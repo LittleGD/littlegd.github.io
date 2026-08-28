@@ -121,6 +121,27 @@ a {
 .hero-top .wrap {
   max-width: none;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.hero-meta {
+  margin: 0;
+  flex-shrink: 0;
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--fg-faint);
+}
+
+.hero-meta-dot {
+  margin: 0 2px;
+  opacity: 0.6;
 }
 
 .tagline {
@@ -144,6 +165,32 @@ a {
 @keyframes fade-up {
   from { opacity: 0; transform: translateY(14px); }
   to { opacity: 1; transform: none; }
+}
+
+/* scroll cue: the only signal that content follows the full height hero */
+.hero-cue {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 clamp(24px, 5vh, 44px);
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  color: var(--fg-faint);
+  animation: fade-up 1s var(--ease-out) both 0.55s;
+}
+
+.cue-arrow {
+  display: inline-block;
+  font-size: 0.95rem;
+  line-height: 1;
+  animation: bob 2s ease-in-out infinite;
+}
+
+@keyframes bob {
+  0%, 100% { transform: translateY(-3px); }
+  50% { transform: translateY(3px); }
 }
 
 /* giant wordmark, anchored to the bottom of the viewport */
@@ -298,24 +345,25 @@ a {
 }
 
 .app-title {
-  margin: 0 0 14px;
+  margin: 0 0 18px;
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: clamp(1.5rem, 5vw, 2.4rem);
-  line-height: 1.28;
-  letter-spacing: -0.015em;
+  font-size: clamp(1.65rem, 5.6vw, 2.5rem);
+  line-height: 1.2;
+  letter-spacing: -0.025em;
 }
 
 .app-title-en {
   display: block;
-  margin-top: 6px;
-  font-size: 0.9rem;
+  margin-top: 10px;
+  font-size: 0.95rem;
   font-weight: 400;
+  letter-spacing: 0;
   color: var(--fg-faint);
 }
 
 .app-desc {
-  margin: 0 0 30px;
+  margin: 0 0 34px;
   max-width: 42ch;
   font-size: 1rem;
   line-height: 1.65;
@@ -376,9 +424,8 @@ a {
 }
 
 .app-link--soon {
-  background: transparent;
+  background: rgba(var(--tint), 0.035);
   color: var(--fg-faint);
-  padding-left: 4px;
   cursor: default;
 }
 
@@ -387,17 +434,16 @@ a {
 }
 
 .app-link--soon:hover {
-  background: transparent;
   color: var(--fg-faint);
 }
 
-.badge {
-  padding: 4px 10px;
-  border-radius: 999px;
-  background: rgba(var(--tint), 0.07);
-  font-size: 0.72rem;
-  font-weight: 500;
-  color: var(--fg-muted);
+.soon-sep {
+  margin: 0 1px;
+  opacity: 0.55;
+}
+
+.soon-label {
+  font-weight: 400;
 }
 
 /* ---------- footer ---------- */
@@ -407,7 +453,7 @@ a {
 }
 
 .footer-copy {
-  margin: 0 0 28px;
+  margin: 32px 0 0;
   font-family: var(--font-display);
   font-size: 0.72rem;
   letter-spacing: 0.08em;
@@ -475,11 +521,29 @@ a {
   transform: none;
 }
 
+/* ---------- layout: phone ---------- */
+
+@media (max-width: 639px) {
+  .hero {
+    padding-top: 26vh;
+    padding-top: 26svh;
+    /* the wordmark is anchored to the floor: about 11px under the baseline */
+    padding-bottom: 7px;
+  }
+}
+
 /* ---------- layout: tablet / desktop ---------- */
 
 @media (min-width: 640px) {
   :root {
     --edge: 40px;
+  }
+
+  .hero-top .wrap {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 32px;
   }
 
   .app-card {
@@ -543,6 +607,8 @@ a {
   }
 
   .hero-top,
+  .hero-cue,
+  .cue-arrow,
   .wm-char {
     opacity: 1;
     transform: none;
