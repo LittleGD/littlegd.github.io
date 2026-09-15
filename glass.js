@@ -40,7 +40,19 @@ const SLAB = {
 };
 
 /* colored light the icon casts on the page behind its slab */
-const GLOW = { size: 1.35, drop: 0.08, strength: 0.7 };
+const GLOW = {
+  spread: 0.38, // Gaussian sigma, as a fraction of the icon
+  strength: 0.75,
+  saturation: 1.5,
+  lift: 0.3, // how far colors are lifted toward white, so they read as light
+  shadow: 0.06, // faint neutral shadow under the slab
+  drop: 0.12, // how far below the slab the light sits
+};
+
+/* the glow is drawn on a 256px canvas with the icon 80px across in the
+   middle, leaving room for a wide blur to fade all the way out */
+const GLOW_CANVAS = 256;
+const GLOW_ICON = 80;
 
 const ICON_RADIUS = 0.225; // matches .app-icon's border-radius
 const FOV = 30;
@@ -202,49 +214,122 @@ function iconGeometry(size) {
   return geometry;
 }
 
-/* A soft, saturated blur of the icon on white. Drawn with multiply blending,
-   so it tints the page like light through colored glass. Shrinking to 12px
-   and scaling back up blurs it without canvas filters, which older Safari
-   lacks. */
-function glowTexture(img) {
-  const tiny = document.createElement('canvas');
-  tiny.width = tiny.height = 12;
-  const t = tiny.getContext('2d', { willReadFrequently: true });
-  t.drawImage(img, 0, 0, 12, 12);
-  const pixels = t.getImageData(0, 0, 12, 12);
-  const d = pixels.data;
-  for (let i = 0; i < d.length; i += 4) {
-    const grey = (d[i] + d[i + 1] + d[i + 2]) / 3;
-    for (let k = 0; k < 3; k++) d[i + k] = Math.max(0, Math.min(255, grey + (d[i + k] - grey) * 1.6));
+/* Three box blurs in a row make a close Gaussian (Kutskir's method), and
+   running sums keep each pass fast at any radius. */
+function boxSizes(sigma, passes) {
+  const ideal = Math.sqrt((12 * sigma * sigma) / passes + 1);
+  let lower = Math.floor(ideal);
+  if (lower % 2 === 0) lower--;
+  const upper = lower + 2;
+  const split = Math.round(
+    (12 * sigma * sigma - passes * lower * lower - 4 * passes * lower - 3 * passes) / (-4 * lower - 4)
+  );
+  return Array.from({ length: passes }, (_, i) => (i < split ? lower : upper));
+}
+
+function blurAxis(src, dst, w, h, radius, horizontal) {
+  const count = horizontal ? w : h;
+  const lines = horizontal ? h : w;
+  const step = horizontal ? 4 : w * 4;
+  const scale = 1 / (2 * radius + 1);
+  for (let line = 0; line < lines; line++) {
+    const base = horizontal ? line * w * 4 : line * 4;
+    for (let ch = 0; ch < 4; ch++) {
+      const start = base + ch;
+      let sum = 0;
+      for (let i = 0; i < radius && i < count; i++) sum += src[start + i * step];
+      for (let i = 0; i < count; i++) {
+        if (i + radius < count) sum += src[start + (i + radius) * step];
+        dst[start + i * step] = sum * scale;
+        if (i - radius >= 0) sum -= src[start + (i - radius) * step];
+      }
+    }
   }
-  t.putImageData(pixels, 0, 0);
+}
 
-  const mid = document.createElement('canvas');
-  mid.width = mid.height = 48;
-  mid.getContext('2d').drawImage(tiny, 0, 0, 48, 48);
+function gaussianBlur(data, w, h, sigma) {
+  const tmp = new Float32Array(data.length);
+  for (const box of boxSizes(sigma, 3)) {
+    const radius = (box - 1) / 2;
+    blurAxis(data, tmp, w, h, radius, true);
+    blurAxis(tmp, data, w, h, radius, false);
+  }
+}
 
-  const blob = document.createElement('canvas');
-  blob.width = blob.height = 256;
-  const b = blob.getContext('2d');
-  b.drawImage(mid, 0, 0, 256, 256);
-  b.globalCompositeOperation = 'destination-in';
-  const falloff = b.createRadialGradient(128, 128, 0, 128, 128, 128);
-  falloff.addColorStop(0, 'rgba(0, 0, 0, 1)');
-  falloff.addColorStop(0.4, 'rgba(0, 0, 0, 0.75)');
-  falloff.addColorStop(1, 'rgba(0, 0, 0, 0)');
-  b.fillStyle = falloff;
-  b.fillRect(0, 0, 256, 256);
+const toLinear = (c) => (c <= 0.04045 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4);
+const toSRGB = (c) => (c <= 0.0031308 ? c * 12.92 : 1.055 * c ** (1 / 2.4) - 0.055);
 
-  const out = document.createElement('canvas');
-  out.width = out.height = 256;
-  const o = out.getContext('2d');
-  o.fillStyle = '#fff';
-  o.fillRect(0, 0, 256, 256);
-  o.globalAlpha = GLOW.strength;
-  o.drawImage(blob, 0, 0);
+/* Colored light the icon throws on the page behind its slab. The icon sits
+   in a wide transparent margin and goes through a true Gaussian blur, so it
+   fades out on its own with no mask. Dark pixels give off little light and
+   the colors are lifted, so it reads as light rather than a grey smudge; a
+   faint neutral shadow sets the slab down. The result is a multiply factor
+   over white, kept in half floats (and dithered at draw time) so the long,
+   soft falloff doesn't band. */
+function glowTexture(img) {
+  const S = GLOW_CANVAS;
+  const D = GLOW_ICON;
+  const canvas = document.createElement('canvas');
+  canvas.width = canvas.height = S;
+  const ctx = canvas.getContext('2d', { willReadFrequently: true });
+  ctx.drawImage(img, (S - D) / 2, (S - D) / 2, D, D);
+  const px = ctx.getImageData(0, 0, S, S).data;
 
-  const texture = new THREE.CanvasTexture(out);
-  texture.colorSpace = THREE.SRGBColorSpace;
+  /* premultiplied linear light: bright, vivid pixels give off the most, so
+     the icon's real colors lead and dark or neutral areas stay quiet */
+  const light = new Float32Array(S * S * 4);
+  for (let i = 0; i < px.length; i += 4) {
+    const r = px[i] / 255;
+    const g = px[i + 1] / 255;
+    const b = px[i + 2] / 255;
+    const max = Math.max(r, g, b);
+    const chroma = max - Math.min(r, g, b);
+    const w = (px[i + 3] / 255) * (0.25 + 0.75 * max) * (0.4 + 1.6 * chroma);
+    light[i] = toLinear(r) * w;
+    light[i + 1] = toLinear(g) * w;
+    light[i + 2] = toLinear(b) * w;
+    light[i + 3] = w;
+  }
+  gaussianBlur(light, S, S, D * GLOW.spread);
+  /* measure strength from the brightest point, so every icon throws about
+     the same amount of light whatever its colors */
+  let peak = 0;
+  for (let i = 3; i < light.length; i += 4) peak = Math.max(peak, light[i]);
+  const gain = peak > 0 ? 1 / peak : 0;
+
+  const data = new Uint16Array(S * S * 4);
+  const shadowX = D * 0.46;
+  const shadowY = D * 0.2;
+  for (let y = 0; y < S; y++) {
+    for (let x = 0; x < S; x++) {
+      const i = (y * S + x) * 4;
+      const a = light[i + 3];
+      const out = [1, 1, 1];
+      if (a > 1e-5) {
+        const c = [0, 1, 2].map((k) => toSRGB(Math.min(1, light[i + k] / a)));
+        const luma = 0.2126 * c[0] + 0.7152 * c[1] + 0.0722 * c[2];
+        for (let k = 0; k < 3; k++) {
+          let v = luma + (c[k] - luma) * GLOW.saturation;
+          v = Math.min(1, Math.max(0, v));
+          v += (1 - v) * GLOW.lift;
+          out[k] = 1 - GLOW.strength * a * gain * (1 - v);
+        }
+      }
+      const dx = x - S / 2;
+      const dy = y - (S / 2 + D * 0.3);
+      const shade = 1 - GLOW.shadow * Math.exp(-((dx * dx) / (2 * shadowX * shadowX) + (dy * dy) / (2 * shadowY * shadowY)));
+      /* DataTexture rows run bottom up */
+      const o = ((S - 1 - y) * S + x) * 4;
+      for (let k = 0; k < 3; k++) data[o + k] = THREE.DataUtils.toHalfFloat(toLinear(out[k] * shade));
+      data[o + 3] = THREE.DataUtils.toHalfFloat(1);
+    }
+  }
+
+  const texture = new THREE.DataTexture(data, S, S, THREE.RGBAFormat, THREE.HalfFloatType);
+  texture.minFilter = THREE.LinearFilter;
+  texture.magFilter = THREE.LinearFilter;
+  texture.generateMipmaps = false;
+  texture.needsUpdate = true;
   return texture;
 }
 
@@ -304,6 +389,7 @@ async function start() {
     clearcoat: GLASS.clearcoat,
     clearcoatRoughness: 0.06,
     specularIntensity: 1,
+    dithering: true,
   });
   /* three.js floors roughness at 0.0525, so even unfrosted glass reads what
      is behind it from a blurred mip level through a bicubic B-spline filter,
@@ -340,6 +426,7 @@ async function start() {
         premultipliedAlpha: true,
         depthWrite: false,
         toneMapped: false,
+        dithering: true,
       })
     );
     body.add(slab, art);
@@ -394,7 +481,8 @@ async function start() {
     glowGeo?.dispose();
     slabGeo = slabGeometry(size);
     iconGeo = iconGeometry(size * SLAB.icon);
-    glowGeo = new THREE.PlaneGeometry(size * GLOW.size, size * GLOW.size);
+    const glowSize = (size * SLAB.icon * GLOW_CANVAS) / GLOW_ICON;
+    glowGeo = new THREE.PlaneGeometry(glowSize, glowSize);
     glass.thickness = size * SLAB.thickness;
     const pixels = size * SLAB.icon * renderer.getPixelRatio();
     for (const item of items) {

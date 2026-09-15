@@ -15,4 +15,11 @@
 1. 512×512 아이콘을 `assets/` 에 넣습니다.
 2. `index.html` 의 `<ul class="apps">` 안에 `<li class="app">` 블록을 하나 복사해 링크, 아이콘 경로(`--art` 와 `<img>` 두 곳), 이름을 바꿉니다.
 
+3. 검색엔진용 정보도 맞춥니다. `index.html` `<head>`의 JSON-LD `ItemList`에 앱을 하나 추가하고, 필요하면 `<title>`과 `description`에 앱 이름을 넣은 뒤, `sitemap.xml`의 `lastmod`를 오늘 날짜로 바꿉니다.
+
 아이콘 크기, 한 줄 개수, 유리 슬랩은 앱 수에 맞춰 알아서 조정됩니다.
+
+## 검색 노출
+
+- `robots.txt`와 `sitemap.xml`이 루트에 있습니다.
+- Google Search Console에는 URL 접두어 속성 `https://littlegd.github.io/`로 등록합니다. 소유권 확인은 HTML 파일(`google…html`)을 루트에 올리거나 메타 태그를 `<head>`에 넣는 방식으로 합니다. `github.io`의 DNS는 GitHub 소유라 도메인 속성은 쓸 수 없습니다.
