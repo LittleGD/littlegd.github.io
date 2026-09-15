@@ -22,4 +22,5 @@
 ## 검색 노출
 
 - `robots.txt`와 `sitemap.xml`이 루트에 있습니다.
-- Google Search Console에는 URL 접두어 속성 `https://littlegd.github.io/`로 등록합니다. 소유권 확인은 HTML 파일(`google…html`)을 루트에 올리거나 메타 태그를 `<head>`에 넣는 방식으로 합니다. `github.io`의 DNS는 GitHub 소유라 도메인 속성은 쓸 수 없습니다.
+- Google Search Console에 URL 접두어 속성 `https://littlegd.github.io/`로 등록돼 있습니다(2026-09-15, 사이트맵 제출과 홈 색인 요청 완료). `github.io`의 DNS는 GitHub 소유라 도메인 속성은 쓸 수 없습니다.
+- 루트의 `googlecabe5d3c993532ba.html`은 Search Console 소유권 확인 파일입니다. 지우면 소유권 확인이 풀리니 그대로 둡니다.
