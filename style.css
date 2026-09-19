@@ -252,6 +252,249 @@ a {
   transition-duration: 0.15s;
 }
 
+/* ---------- store picker ---------- */
+
+/* An app on more than one store is a button that lets a pair of store
+   buttons slip out of its icon like drops: App Store above, Google Play
+   below. main.js toggles .is-open, then .is-closing while they retract. */
+button.app-link {
+  appearance: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.app--stores {
+  position: relative;
+}
+
+.app--stores.is-open {
+  z-index: 2;
+}
+
+/* sits exactly over the icon, so each store button can hang off one edge */
+.stores {
+  --gap: 10px;
+  --drip: cubic-bezier(0.45, 0, 0.25, 1);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: var(--icon);
+  height: var(--icon);
+  margin-left: calc(var(--icon) / -2);
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.is-open .stores,
+.is-closing .stores {
+  visibility: visible;
+}
+
+/* the slot centres its button on the icon (flex centring keeps it centred
+   even when the button is wider than the icon, which margin auto does not)
+   and gives it a slow bubble drift */
+.store-slot {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.store-slot--up {
+  bottom: calc(100% + var(--gap));
+}
+
+.store-slot--down,
+.store-slot--site {
+  top: calc(100% + var(--gap));
+}
+
+/* with a second store button below, the site link sits under it */
+.stores:has(.store-slot--down) .store-slot--site {
+  top: calc(100% + var(--gap) * 2 + 40px);
+}
+
+.is-open .store-slot {
+  animation: bubble 6s ease-in-out infinite;
+}
+
+.is-open .store-slot--down {
+  animation-duration: 7.2s;
+  animation-delay: -2.4s;
+}
+
+.is-open .store-slot--site {
+  animation-duration: 8.4s;
+  animation-delay: -4s;
+}
+
+.store {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 0 16px 0 14px;
+  border-radius: 20px;
+  /* the same clear glass as the slabs: a frosted white pill */
+  background: rgba(255, 255, 255, 0.72);
+  -webkit-backdrop-filter: blur(16px) saturate(1.8);
+  backdrop-filter: blur(16px) saturate(1.8);
+  box-shadow: 0 0 0 0.5px rgba(10, 10, 10, 0.12),
+    0 1px 1px rgba(10, 10, 10, 0.04),
+    0 10px 24px -10px rgba(10, 10, 10, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  color: var(--ink);
+  pointer-events: auto;
+  transition: background-color 0.2s var(--ease);
+}
+
+.store:hover {
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.store:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+}
+
+.store--up {
+  transform-origin: 50% 100%;
+}
+
+.store--down {
+  transform-origin: 50% 0;
+}
+
+.store-logo {
+  flex: none;
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+/* squeezed out of the icon as a tall drop, it lands, spreads a little
+   wider than itself and settles; the label only shows once it has shape */
+.is-open .store--up {
+  animation: drip-up 0.62s var(--drip) both;
+}
+
+.is-open .store--down {
+  animation: drip-down 0.62s var(--drip) 0.05s both;
+}
+
+.is-open .store > * {
+  animation: store-in 0.28s var(--ease) 0.34s both;
+}
+
+.is-open .store--down > * {
+  animation-delay: 0.39s;
+}
+
+.is-closing .store--up {
+  animation: retract-up 0.22s ease-in both;
+}
+
+.is-closing .store--down {
+  animation: retract-down 0.22s ease-in both;
+}
+
+/* the app's own site, a step quieter than the store buttons: it settles in
+   under the lowest one once they have landed */
+.site {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  color: var(--ink-soft);
+  pointer-events: auto;
+  transition: color 0.2s var(--ease);
+}
+
+.site:hover {
+  color: var(--ink);
+}
+
+.site:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+.site-arrow {
+  font-size: 0.95em;
+  opacity: 0.6;
+}
+
+.is-open .site {
+  animation: site-in 0.3s var(--ease) 0.5s both;
+}
+
+.is-closing .site {
+  animation: site-out 0.16s ease-in both;
+}
+
+/* a last small drop follows each button out and is absorbed into it */
+.stores::before,
+.stores::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  margin-left: -5px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 0 0 0.5px rgba(10, 10, 10, 0.12), 0 2px 6px rgba(10, 10, 10, 0.12);
+  opacity: 0;
+}
+
+.stores::before {
+  top: -5px;
+}
+
+.stores::after {
+  bottom: -5px;
+}
+
+.is-open .stores::before {
+  animation: trail-up 0.7s var(--drip) 0.08s both;
+}
+
+.is-open .stores::after {
+  animation: trail-down 0.7s var(--drip) 0.13s both;
+}
+
+/* the name steps aside while the lower button takes its place */
+.app--stores .app-name {
+  transition: opacity 0.25s var(--ease), transform 0.25s var(--ease);
+}
+
+.app--stores.is-open .app-name {
+  opacity: 0;
+  transform: translateY(-4px);
+}
+
+/* without the glass, the CSS icon gives the same little squeeze */
+.app--stores.is-open .app-icon > img {
+  animation: squeeze 0.5s var(--ease);
+}
+
 /* ---------- glass (glass.js) ---------- */
 
 /* one WebGL canvas behind the page draws each icon inside a glass slab,
@@ -399,6 +642,74 @@ a {
 
 @keyframes fade {
   from { opacity: 0; }
+}
+
+/* store buttons: a drop pulling out of the icon, landing and settling.
+   translateY moves toward (+) or away from (-) the icon for the top one;
+   the bottom one mirrors it */
+@keyframes drip-up {
+  0% { transform: translateY(calc(var(--gap) + 70%)) scale(0.16, 0.3); opacity: 0; border-radius: 50%; }
+  15% { opacity: 1; }
+  40% { transform: translateY(30%) scale(0.3, 1.15); border-radius: 50%; }
+  64% { transform: translateY(-8%) scale(1.06, 0.88); border-radius: 20px; }
+  82% { transform: translateY(2%) scale(0.985, 1.03); }
+  100% { transform: none; }
+}
+
+@keyframes drip-down {
+  0% { transform: translateY(calc(-1 * var(--gap) - 70%)) scale(0.16, 0.3); opacity: 0; border-radius: 50%; }
+  15% { opacity: 1; }
+  40% { transform: translateY(-30%) scale(0.3, 1.15); border-radius: 50%; }
+  64% { transform: translateY(8%) scale(1.06, 0.88); border-radius: 20px; }
+  82% { transform: translateY(-2%) scale(0.985, 1.03); }
+  100% { transform: none; }
+}
+
+@keyframes retract-up {
+  to { transform: translateY(calc(var(--gap) + 50%)) scale(0.2, 0.4); opacity: 0; border-radius: 50%; }
+}
+
+@keyframes retract-down {
+  to { transform: translateY(calc(-1 * var(--gap) - 50%)) scale(0.2, 0.4); opacity: 0; border-radius: 50%; }
+}
+
+@keyframes store-in {
+  from { opacity: 0; transform: scale(0.85); }
+}
+
+/* a slow, barely-there drift, like a bubble holding its place */
+@keyframes bubble {
+  0%, 100% { transform: translate(0, 0); }
+  25% { transform: translate(1px, -2.5px); }
+  50% { transform: translate(0, -3.5px); }
+  75% { transform: translate(-1px, -1.5px); }
+}
+
+@keyframes site-in {
+  from { opacity: 0; transform: translateY(-7px); }
+}
+
+@keyframes site-out {
+  to { opacity: 0; }
+}
+
+@keyframes trail-up {
+  0% { transform: translateY(6px) scale(0); opacity: 0; }
+  25% { transform: translateY(-2px) scale(1); opacity: 1; }
+  55% { transform: translateY(calc(-1 * var(--gap))) scale(0.6); opacity: 1; }
+  75%, 100% { transform: translateY(calc(-1 * var(--gap) - 4px)) scale(0); opacity: 0; }
+}
+
+@keyframes trail-down {
+  0% { transform: translateY(-6px) scale(0); opacity: 0; }
+  25% { transform: translateY(2px) scale(1); opacity: 1; }
+  55% { transform: translateY(var(--gap)) scale(0.6); opacity: 1; }
+  75%, 100% { transform: translateY(calc(var(--gap) + 4px)) scale(0); opacity: 0; }
+}
+
+@keyframes squeeze {
+  30% { transform: scale(1.05, 0.93); }
+  60% { transform: scale(0.98, 1.03); }
 }
 
 /* the ink boils: step through three noise seeds, ~7 frames a second */

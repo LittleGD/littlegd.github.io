@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>JML.Studio · UpNext, Hidden Front · Apps by Jongmin Lee</title>
-<meta name="description" content="JML.Studio is Jongmin Lee's independent app studio, maker of UpNext, a challenge-card habit app for iPhone, and Hidden Front, an online Junqi board game.">
+<title>JML.Studio · UpNext, Reffi, Hidden Front · Jongmin Lee</title>
+<meta name="description" content="Jongmin Lee's app studio: UpNext, a challenge-card habit app, Reffi, a fridge inventory app, and Hidden Front, an online Junqi board game.">
 <meta name="author" content="Jongmin Lee">
 <link rel="canonical" href="https://littlegd.github.io/">
 <meta name="theme-color" content="#ffffff">
@@ -15,7 +15,7 @@
 <meta property="og:url" content="https://littlegd.github.io/">
 <meta property="og:locale" content="en_US">
 <meta property="og:title" content="JML.Studio · Apps by Jongmin Lee">
-<meta property="og:description" content="Makers of UpNext, a challenge-card habit app, and Hidden Front, an online Junqi board game. Apps you'll reach for every day.">
+<meta property="og:description" content="Makers of UpNext, a challenge-card habit app, Reffi, a fridge inventory app, and Hidden Front, an online Junqi board game.">
 <meta property="og:image" content="https://littlegd.github.io/assets/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -63,9 +63,10 @@
             "name": "UpNext: Challenge Card Habits",
             "description": "A roguelike habit app: draw challenge cards from your deck every day and complete them, with photo proof.",
             "url": "https://apps.apple.com/app/id6762550135",
+            "sameAs": ["https://play.google.com/store/apps/details?id=app.vercel.upnext"],
             "image": "https://littlegd.github.io/assets/upnext-icon-512.png",
             "applicationCategory": "LifestyleApplication",
-            "operatingSystem": "iOS 16.2+, macOS 13.1+, visionOS 1.0+",
+            "operatingSystem": "iOS 16.2+, macOS 13.1+, visionOS 1.0+, Android",
             "inLanguage": ["en", "ja", "ko", "zh-Hans"],
             "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
             "author": { "@id": "https://littlegd.github.io/#studio" }
@@ -74,6 +75,24 @@
         {
           "@type": "ListItem",
           "position": 2,
+          "item": {
+            "@type": "MobileApplication",
+            "name": "Reffi",
+            "alternateName": "Reffi: 냉장고 재고관리",
+            "description": "Keep track of what is in the fridge: log ingredients, watch their use-by dates and update what is left after cooking.",
+            "url": "https://apps.apple.com/app/id6795009532",
+            "sameAs": ["https://reffi-site.vercel.app"],
+            "image": "https://littlegd.github.io/assets/reffi-icon-512.png",
+            "applicationCategory": "Food & Drink",
+            "operatingSystem": "iOS 18+",
+            "inLanguage": ["en", "ko"],
+            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+            "author": { "@id": "https://littlegd.github.io/#studio" }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
           "item": {
             "@type": "WebApplication",
             "name": "Hidden Front",
@@ -113,13 +132,40 @@
 
 <main class="shelf">
   <ul class="apps" role="list" aria-label="Apps">
-    <li class="app">
-      <a class="app-link" href="https://apps.apple.com/app/id6762550135" target="_blank" rel="noopener">
+    <!-- on more than one store: the icon opens a pair of store buttons -->
+    <li class="app app--stores">
+      <button class="app-link" type="button" aria-expanded="false" aria-controls="upnext-stores">
         <span class="app-icon" style="--art: url(assets/upnext-icon-512.png)">
           <img src="assets/upnext-icon-512.png" alt="" width="512" height="512">
         </span>
         <span class="app-name">UpNext</span>
-      </a>
+      </button>
+      <div class="stores" id="upnext-stores">
+        <span class="store-slot store-slot--up"><a class="store store--up" href="https://apps.apple.com/app/id6762550135" target="_blank" rel="noopener">
+          <svg class="store-logo" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
+          <span>App Store</span>
+        </a></span>
+        <span class="store-slot store-slot--down"><a class="store store--down" href="https://play.google.com/store/apps/details?id=app.vercel.upnext" target="_blank" rel="noopener">
+          <svg class="store-logo" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22.018 13.298l-3.919 2.218-3.515-3.493 3.543-3.521 3.891 2.202a1.49 1.49 0 0 1 0 2.594zM1.337.924a1.486 1.486 0 0 0-.112.568v21.017c0 .217.045.419.124.6l11.155-11.087L1.337.924zm12.207 10.065l3.258-3.238L3.45.195a1.466 1.466 0 0 0-.946-.179l11.04 10.973zm0 2.067l-11 10.933c.298.036.612-.016.906-.183l13.324-7.54-3.23-3.21z"/></svg>
+          <span>Google Play</span>
+        </a></span>
+        <span class="store-slot store-slot--site"><a class="site" href="https://up-next-phi.vercel.app/about" target="_blank" rel="noopener">About<span class="site-arrow" aria-hidden="true">&#8599;</span></a></span>
+      </div>
+    </li>
+    <li class="app app--stores">
+      <button class="app-link" type="button" aria-expanded="false" aria-controls="reffi-stores">
+        <span class="app-icon" style="--art: url(assets/reffi-icon-512.png)">
+          <img src="assets/reffi-icon-512.png" alt="" width="512" height="512">
+        </span>
+        <span class="app-name">Reffi</span>
+      </button>
+      <div class="stores" id="reffi-stores">
+        <span class="store-slot store-slot--up"><a class="store store--up" href="https://apps.apple.com/app/id6795009532" target="_blank" rel="noopener">
+          <svg class="store-logo" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
+          <span>App Store</span>
+        </a></span>
+        <span class="store-slot store-slot--site"><a class="site" href="https://reffi-site.vercel.app" target="_blank" rel="noopener">Website<span class="site-arrow" aria-hidden="true">&#8599;</span></a></span>
+      </div>
     </li>
     <li class="app">
       <a class="app-link" href="https://hiddenfront.xyz/" target="_blank" rel="noopener">

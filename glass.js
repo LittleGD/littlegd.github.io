@@ -436,7 +436,8 @@ async function start() {
     return {
       icon,
       img,
-      link: icon.closest('a'),
+      link: icon.closest('.app-link'),
+      app: icon.closest('.app'),
       group,
       body,
       slab,
@@ -447,6 +448,9 @@ async function start() {
       press: 0,
       rx: 0,
       ry: 0,
+      open: false,
+      wobble: 0,
+      wobbleSpeed: 0,
     };
   });
 
@@ -550,8 +554,25 @@ async function start() {
         (Math.sin(e / 4) / 20) * rock
       );
       body.position.set(0, (Math.sin(e / 1.5) / 10) * bob * (size / 3), item.lift * size * SLAB.lift);
-      body.scale.setScalar(1 - item.press * 0.04);
-      if (Math.abs(item.lift - (hovered ? 1 : 0)) > 0.001 || Math.abs(item.press - (pressed ? 1 : 0)) > 0.001) {
+      /* when its store buttons squeeze out, the slab gives like jelly:
+         a kick into a damped spring, squashing one way then the other */
+      const open = item.app.classList.contains('is-open');
+      if (open && !item.open && !still) item.wobbleSpeed += 9;
+      item.open = open;
+      /* small fixed steps keep the spring stable when frames run long */
+      for (let t = 0; t < dt; t += 1 / 240) {
+        const h = Math.min(1 / 240, dt - t);
+        item.wobbleSpeed += (-260 * item.wobble - 16 * item.wobbleSpeed) * h;
+        item.wobble += item.wobbleSpeed * h;
+      }
+      const squash = Math.max(-0.1, Math.min(0.1, 0.06 * item.wobble));
+      const press = 1 - item.press * 0.04;
+      body.scale.set(press * (1 + squash), press * (1 - squash), press);
+      if (
+        Math.abs(item.lift - (hovered ? 1 : 0)) > 0.001 ||
+        Math.abs(item.press - (pressed ? 1 : 0)) > 0.001 ||
+        Math.abs(item.wobble) + Math.abs(item.wobbleSpeed) > 0.001
+      ) {
         moving = true;
       }
     }

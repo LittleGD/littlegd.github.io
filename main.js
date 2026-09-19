@@ -146,6 +146,46 @@
     app.style.setProperty('--i', i);
   });
 
+  /* An app on more than one store opens its store buttons instead of linking
+     straight out. Another click, a click elsewhere, Escape or following a
+     store link closes it; .is-closing keeps the buttons up while they
+     retract. */
+  var motion = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  each(document.querySelectorAll('.app--stores'), function (app) {
+    var button = app.querySelector('.app-link');
+    var stores = app.querySelector('.stores');
+    var closing = 0;
+
+    function setOpen(open) {
+      if (open === app.classList.contains('is-open')) return;
+      clearTimeout(closing);
+      app.classList.toggle('is-open', open);
+      app.classList.toggle('is-closing', !open && motion);
+      button.setAttribute('aria-expanded', String(open));
+      if (!open && motion) {
+        closing = setTimeout(function () {
+          app.classList.remove('is-closing');
+        }, 260);
+      }
+    }
+
+    button.addEventListener('click', function () {
+      setOpen(!app.classList.contains('is-open'));
+    });
+    stores.addEventListener('click', function (event) {
+      if (event.target.closest('a')) setOpen(false);
+    });
+    document.addEventListener('click', function (event) {
+      if (!app.contains(event.target)) setOpen(false);
+    });
+    app.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && app.classList.contains('is-open')) {
+        setOpen(false);
+        button.focus();
+      }
+    });
+  });
+
   /* iOS only paints :active when the page listens for touches; this lets the
      tap press in style.css show on iPhone */
   document.addEventListener('touchstart', function () {}, { passive: true });
