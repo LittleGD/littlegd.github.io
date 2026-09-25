@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Every language has its own address. ?lang= on any page opens that language.
+   The English address is also the default one: a visitor who comes to it from
+   outside these pages goes to the language they last picked here, or else to
+   the first of their browser's languages that FAGL has. */
+(function () {
+  var here = 'ko', urls = {"en": "/fagl/", "ko": "/fagl/ko/", "ja": "/fagl/ja/", "zh-Hant": "/fagl/zh-hant/", "de": "/fagl/de/"}, want;
+  function pick(tag) {
+    var t = String(tag || '').toLowerCase();
+    if (/^zh-(hant|tw|hk|mo)(-|$)/.test(t)) return 'zh-Hant';
+    return { en: 'en', ko: 'ko', ja: 'ja', de: 'de' }[t.split('-')[0]];
+  }
+  try { want = pick(new URLSearchParams(location.search).get('lang')); } catch (e) {}
+  if (!want && here === 'en' && document.referrer.indexOf(location.origin + '/fagl/') !== 0) {
+    try { want = pick(localStorage.getItem('fagl-lang')); } catch (e) {}
+    var list = navigator.languages || [navigator.language];
+    for (var i = 0; !want && i < list.length; i++) want = pick(list[i]);
+  }
+  if (want && want !== here) location.replace(urls[want] + location.hash);
+})();
+</script>
+<title>FAGL: 집중 타이머·목표 관리 | Mac, iPhone, iPad, Apple Watch</title>
+<meta name="description" content="할 일마다 목표 시간을 정하고, 줄어드는 시간을 보며 집중하고, 끝나면 짧게 회고하세요. 하루하루의 집중이 잔디로 쌓여요. 계정·광고·추적 없음, 한 번 구매.">
+<meta name="author" content="Jongmin Lee">
+<link rel="canonical" href="https://littlegd.github.io/fagl/ko/">
+<link rel="alternate" hreflang="en" href="https://littlegd.github.io/fagl/">
+<link rel="alternate" hreflang="ko" href="https://littlegd.github.io/fagl/ko/">
+<link rel="alternate" hreflang="ja" href="https://littlegd.github.io/fagl/ja/">
+<link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/fagl/zh-hant/">
+<link rel="alternate" hreflang="de" href="https://littlegd.github.io/fagl/de/">
+<link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/fagl/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JML.Studio">
+<meta property="og:url" content="https://littlegd.github.io/fagl/ko/">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:title" content="FAGL: 집중 타이머·목표 관리 | Mac, iPhone, iPad, Apple Watch">
+<meta property="og:description" content="할 일마다 목표 시간을 정하고, 줄어드는 시간을 보며 집중하고, 끝나면 짧게 회고하세요. 하루하루의 집중이 잔디로 쌓여요. 계정·광고·추적 없음, 한 번 구매.">
+<meta property="og:image" content="https://littlegd.github.io/fagl/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="FAGL: Focused Action, Goalful Life. A focus timer on iPhone with a red disc showing the time left.">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "FAGL: Focus Timer & Goals",
+  "alternateName": "FAGL",
+  "description": "할 일마다 목표 시간을 정하고, 줄어드는 시간을 보며 집중하고, 끝나면 짧게 회고하세요. 하루하루의 집중이 잔디로 쌓여요. 계정·광고·추적 없음, 한 번 구매.",
+  "url": "https://littlegd.github.io/fagl/ko/",
+  "image": "https://littlegd.github.io/assets/fagl-icon-512.png",
+  "screenshot": "https://littlegd.github.io/fagl/assets/ko/hero.webp",
+  "applicationCategory": "BusinessApplication",
+  "applicationSubCategory": "Productivity",
+  "operatingSystem": "macOS 26+, iOS 26.1+, iPadOS 26.1+, watchOS 26+",
+  "inLanguage": [
+    "en",
+    "ko",
+    "ja",
+    "zh-Hant",
+    "de"
+  ],
+  "author": {
+    "@type": "Organization",
+    "@id": "https://littlegd.github.io/#studio",
+    "name": "JML.Studio",
+    "url": "https://littlegd.github.io/"
+  }
+}
+</script>
+
+<link rel="icon" type="image/png" href="/fagl/assets/favicon.png">
+<link rel="apple-touch-icon" href="/fagl/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/fagl/fagl.css">
+<script src="/fagl/fagl.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+<header class="top wrap">
+  <nav class="crumbs" aria-label="JML.Studio"><a class="studio" href="/"><span class="sr">JML.Studio</span><svg class="wordmark" viewBox="0 0 108 12" width="108" height="12" aria-hidden="true" focusable="false" shape-rendering="crispEdges"><path fill="currentColor" d="M0 0h9v3h-9zM11 0h6v3h-6zM22 0h3v3h-3zM47 0h6v3h-6zM55 0h3v3h-3zM83 0h3v3h-3zM91 0h3v3h-3zM6 3h3v3h-3zM11 3h9v3h-9zM22 3h3v3h-3zM44 3h6v3h-6zM55 3h6v3h-6zM66 3h3v3h-3zM72 3h3v3h-3zM77 3h9v3h-9zM99 3h9v3h-9zM6 6h3v3h-3zM11 6h3v3h-3zM17 6h3v3h-3zM22 6h3v3h-3zM50 6h3v3h-3zM55 6h3v3h-3zM66 6h3v3h-3zM72 6h3v3h-3zM77 6h3v3h-3zM83 6h3v3h-3zM88 6h6v3h-6zM99 6h3v3h-3zM105 6h3v3h-3zM0 9h6v3h-6zM11 9h3v3h-3zM17 9h3v3h-3zM22 9h9v3h-9zM36 9h3v3h-3zM44 9h6v3h-6zM58 9h6v3h-6zM69 9h6v3h-6zM77 9h9v3h-9zM91 9h6v3h-6zM99 9h9v3h-9z"/></svg></a></nav>
+  <details class="lang">
+    <summary><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M1.75 8h12.5M8 1.75c1.7 1.8 2.6 3.9 2.6 6.25S9.7 12.45 8 14.25C6.3 12.45 5.4 10.35 5.4 8S6.3 3.55 8 1.75z"/></svg><span class="sr">언어: </span>한국어</summary>
+    <ul class="lang-menu" role="list"><li><a href="/fagl/" hreflang="en" lang="en" data-set-lang="en">English</a></li><li><a href="/fagl/ko/" hreflang="ko" lang="ko" data-set-lang="ko" aria-current="true">한국어</a></li><li><a href="/fagl/ja/" hreflang="ja" lang="ja" data-set-lang="ja">日本語</a></li><li><a href="/fagl/zh-hant/" hreflang="zh-Hant" lang="zh-Hant" data-set-lang="zh-Hant">繁體中文</a></li><li><a href="/fagl/de/" hreflang="de" lang="de" data-set-lang="de">Deutsch</a></li></ul>
+  </details>
+</header>
+<main id="main">
+<section class="hero wrap" aria-labelledby="top">
+  <span class="app-icon" style="--art: url(/fagl/assets/icon.webp)"><img src="/fagl/assets/icon.webp" alt="" width="288" height="288"></span>
+  <h1 id="top">FAGL</h1>
+  <p class="motto">Focused Action, Goalful Life.</p>
+  <p class="lead">할 일마다 목표 시간을 정하고, 줄어드는 시간을 보며 집중하세요.</p>
+  <p class="sub">끝나면 짧게 회고해요. 하루하루의 집중이 잔디로 쌓여요.</p>
+  <div class="status">
+    <span class="soon"><span class="soon-dot" aria-hidden="true"></span>곧 App Store에서 만나요</span>
+    <span>미국 기준 US$6.99, 한 번 구매</span>
+    <span>Mac · iPhone · iPad · Apple&nbsp;Watch</span>
+  </div>
+  <figure class="hero-shot device"><img src="/fagl/assets/ko/hero.webp" width="1800" height="1454" alt="Mac에서 본 FAGL: 빨간 원판으로 남은 시간을 보여 주는 어썸라이프 타이머, 오늘의 할 일, 목표, 집중 잔디" fetchpriority="high"></figure>
+</section>
+
+<section class="section wrap" aria-labelledby="timer">
+  <div class="split">
+    <div>
+      <p class="eyebrow">어썸라이프 타이머</p>
+      <h2 id="timer">눈으로 보는 남은 시간.</h2>
+      <p class="section-lead">빨간 원판이 지금 하는 일에 남은 시간을 보여 줘요. 숫자를 읽지 않아도 얼마나 남았는지 한눈에 알 수 있어요.</p>
+      <dl class="points"><div><dt>몰입 모드</dt><dd>화면 가득 타이머만 띄우고, 화면이 꺼지지 않게 해요.</dd></div><div><dt>반복 모드</dt><dd>같은 할 일을 쉬는 시간을 사이에 두고 여러 회차로 이어 가요.</dd></div><div><dt>Mac에서는</dt><dd>노치와 메뉴 막대에 남은 시간이 보여요.</dd></div></dl>
+    </div>
+    <div class="phones">
+      <figure class="device phone"><img src="/fagl/assets/ko/today.webp" width="640" height="1391" alt="iPhone의 오늘 화면: 할 일의 남은 시간을 줄여 가는 어썸라이프 타이머와 오늘의 할 일 목록" loading="lazy" decoding="async"></figure>
+      <figure class="device phone"><img src="/fagl/assets/ko/focus.webp" width="640" height="1391" alt="iPhone의 몰입 모드: 검은 화면에 빨간 원판과 남은 시간만 보여요." loading="lazy" decoding="async"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section wrap" aria-labelledby="grid">
+  <p class="eyebrow">집중 잔디</p>
+  <h2 id="grid">집중한 만큼 쌓여요.</h2>
+  <ol class="steps" role="list">
+    <li class="step">
+      <div><span class="step-num" aria-hidden="true">01</span><h3>집중</h3><p>할 일을 고르고 타이머를 시작해요.</p></div>
+      <div class="step-visual"><div class="demo" role="img" aria-label="타이머 예시: 시간이 줄어들수록 빨간 원판도 작아져요."><span class="demo-time" aria-hidden="true">18:21</span></div></div>
+    </li>
+    <li class="step">
+      <div><span class="step-num" aria-hidden="true">02</span><h3>회고</h3><p>끝나면 별점을 매기고 짧은 메모를 남겨요.</p></div>
+      <div class="step-visual"><img class="shot" src="/fagl/assets/ko/reflect.webp" width="760" height="791" alt="완료 회고 화면: 목표 시간, 집중 시간, 달성률, 1부터 5까지의 별점, 메모" loading="lazy" decoding="async"></div>
+    </li>
+    <li class="step step--wide">
+      <div><span class="step-num" aria-hidden="true">03</span><h3>잔디</h3><p>오래 집중한 날일수록 그날의 칸이 짙어져요.</p></div>
+      <div class="step-visual"><img class="shot" src="/fagl/assets/ko/grass.webp" width="1600" height="370" alt="집중 잔디: 1년 치 날짜가 칸으로 놓이고, 오래 집중한 날일수록 초록색이 짙어요." loading="lazy" decoding="async"></div>
+    </li>
+  </ol>
+  <p class="note">기록 화면에서 지난 회고와 주간 목표, 예상한 시간이 얼마나 맞았는지 볼 수 있어요.</p>
+</section>
+
+<section class="section wrap" aria-labelledby="devices">
+  <div class="split split--flip">
+    <div>
+      <p class="eyebrow">모든 기기에서</p>
+      <h2 id="devices">한 번 사면 Mac, iPhone, iPad, Apple&nbsp;Watch에서 써요.</h2>
+      <dl class="points"><div><dt>Mac</dt><dd>노치 표시와 메뉴 막대를 쓰고, 어느 앱에서든 단축키로 할 일을 빠르게 추가해요.</dd></div><div><dt>iPhone과 iPad</dt><dd>홈 화면과 잠금 화면에 위젯을 둘 수 있어요. iPhone에서는 실시간 현황으로 남은 시간을 보여 줘요.</dd></div><div><dt>Apple&nbsp;Watch</dt><dd>손목에서 시작하고 멈추고 끝낼 수 있어요. 컴플리케이션으로 남은 시간도 확인해요.</dd></div><div><dt>기록 옮기기</dt><dd>.fagl 백업 파일 하나를 AirDrop으로 보내면 다른 기기로 기록을 옮길 수 있어요.</dd></div></dl>
+    </div>
+    <div class="devices">
+      <figure class="device tablet"><img src="/fagl/assets/ko/ipad.webp" width="840" height="1120" alt="iPad의 목표 화면: 단계로 나눈 목표와 이번 단계의 할 일" loading="lazy" decoding="async"></figure>
+      <figure class="device watch"><img src="/fagl/assets/ko/watch.webp" width="422" height="514" alt="Apple&nbsp;Watch: 할 일의 남은 시간을 줄여 가는 빨간 원판과 정지, 일시 정지 버튼" loading="lazy" decoding="async"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section wrap promise" aria-labelledby="privacy">
+  <p class="eyebrow">개인정보</p>
+  <h2 id="privacy">계정도, 광고도, 추적도 없어요.</h2>
+  <p class="section-lead">할 일, 집중 기록, 목표, 회고는 내 기기에 저장돼요. 분석·광고·추적용 제3자 SDK를 쓰지 않아요.</p>
+  <ul class="chips" role="list"><li>한 번 구매</li><li>계정 없음</li><li>광고 없음</li><li>분석·추적 없음</li><li>AI는 원할 때만</li></ul>
+  <div class="ai">
+    <h3>AI는 원할 때만</h3>
+    <p>앱을 사면 클라우드 AI 무료 크레딧이 들어 있어요. Anthropic의 Claude로 동작하고, 만 18세 이상이 앱에서 동의한 경우에만 써요. 지원하는 기기에서는 Apple 기기 AI도 쓸 수 있고, AI를 꺼도 핵심 기능은 모두 그대로예요.</p>
+    <p>클라우드 AI를 더 쓰고 싶다면 선택 구독인 AI Plus(월 US$2.99)가 있어요. 가격은 나라와 지역마다 달라요.</p>
+    <p class="links"><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">이용약관(Apple 표준 사용권 계약)</a><a href="/fagl/ko/privacy/">개인정보 처리방침</a></p>
+  </div>
+</section>
+
+<section class="closing wrap" aria-labelledby="soon">
+  <span class="app-icon" style="--icon: 72px; --art: url(/fagl/assets/icon.webp)"><img src="/fagl/assets/icon.webp" alt="" width="288" height="288" loading="lazy"></span>
+  <h2 id="soon">곧 App Store에서 만나요.</h2>
+  <p>Mac, iPhone, iPad, Apple&nbsp;Watch에서 써요. US$6.99, 한 번 구매. 가격은 나라와 지역마다 달라요.</p>
+  <p class="links"><a href="/fagl/ko/support/">지원</a><a href="/fagl/ko/privacy/">개인정보 처리방침</a></p>
+</section>
+</main>
+<footer class="wrap">
+  <div class="bottom">
+    <nav aria-label="FAGL">
+      <a href="/fagl/ko/">FAGL</a>
+      <a href="/fagl/ko/support/">지원</a>
+      <a href="/fagl/ko/privacy/">개인정보 처리방침</a>
+      <a href="/">JML.Studio</a>
+    </nav>
+    <p>&copy; 2026 JML.Studio</p>
+  </div>
+</footer>
+</body>
+</html>

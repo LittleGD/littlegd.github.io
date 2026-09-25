@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Every language has its own address. ?lang= on any page opens that language.
+   The English address is also the default one: a visitor who comes to it from
+   outside these pages goes to the language they last picked here, or else to
+   the first of their browser's languages that FAGL has. */
+(function () {
+  var here = 'zh-Hant', urls = {"en": "/fagl/privacy/", "ko": "/fagl/ko/privacy/", "ja": "/fagl/ja/privacy/", "zh-Hant": "/fagl/zh-hant/privacy/", "de": "/fagl/de/privacy/"}, want;
+  function pick(tag) {
+    var t = String(tag || '').toLowerCase();
+    if (/^zh-(hant|tw|hk|mo)(-|$)/.test(t)) return 'zh-Hant';
+    return { en: 'en', ko: 'ko', ja: 'ja', de: 'de' }[t.split('-')[0]];
+  }
+  try { want = pick(new URLSearchParams(location.search).get('lang')); } catch (e) {}
+  if (!want && here === 'en' && document.referrer.indexOf(location.origin + '/fagl/') !== 0) {
+    try { want = pick(localStorage.getItem('fagl-lang')); } catch (e) {}
+    var list = navigator.languages || [navigator.language];
+    for (var i = 0; !want && i < list.length; i++) want = pick(list[i]);
+  }
+  if (want && want !== here) location.replace(urls[want] + location.hash);
+})();
+</script>
+<title>隱私權政策 · FAGL</title>
+<meta name="description" content="FAGL 如何處理你的資料：儲存在裝置上的資料、選用雲端 AI 傳送與保存的資訊，以及你的權利。">
+<meta name="author" content="Jongmin Lee">
+<link rel="canonical" href="https://littlegd.github.io/fagl/zh-hant/privacy/">
+<link rel="alternate" hreflang="en" href="https://littlegd.github.io/fagl/privacy/">
+<link rel="alternate" hreflang="ko" href="https://littlegd.github.io/fagl/ko/privacy/">
+<link rel="alternate" hreflang="ja" href="https://littlegd.github.io/fagl/ja/privacy/">
+<link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/fagl/zh-hant/privacy/">
+<link rel="alternate" hreflang="de" href="https://littlegd.github.io/fagl/de/privacy/">
+<link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/fagl/privacy/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JML.Studio">
+<meta property="og:url" content="https://littlegd.github.io/fagl/zh-hant/privacy/">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:title" content="隱私權政策 · FAGL">
+<meta property="og:description" content="FAGL 如何處理你的資料：儲存在裝置上的資料、選用雲端 AI 傳送與保存的資訊，以及你的權利。">
+<meta property="og:image" content="https://littlegd.github.io/fagl/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="FAGL: Focused Action, Goalful Life. A focus timer on iPhone with a red disc showing the time left.">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" type="image/png" href="/fagl/assets/favicon.png">
+<link rel="apple-touch-icon" href="/fagl/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/fagl/fagl.css">
+<script src="/fagl/fagl.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">跳到主要內容</a>
+<header class="top wrap">
+  <nav class="crumbs" aria-label="JML.Studio"><a class="studio" href="/"><span class="sr">JML.Studio</span><svg class="wordmark" viewBox="0 0 108 12" width="108" height="12" aria-hidden="true" focusable="false" shape-rendering="crispEdges"><path fill="currentColor" d="M0 0h9v3h-9zM11 0h6v3h-6zM22 0h3v3h-3zM47 0h6v3h-6zM55 0h3v3h-3zM83 0h3v3h-3zM91 0h3v3h-3zM6 3h3v3h-3zM11 3h9v3h-9zM22 3h3v3h-3zM44 3h6v3h-6zM55 3h6v3h-6zM66 3h3v3h-3zM72 3h3v3h-3zM77 3h9v3h-9zM99 3h9v3h-9zM6 6h3v3h-3zM11 6h3v3h-3zM17 6h3v3h-3zM22 6h3v3h-3zM50 6h3v3h-3zM55 6h3v3h-3zM66 6h3v3h-3zM72 6h3v3h-3zM77 6h3v3h-3zM83 6h3v3h-3zM88 6h6v3h-6zM99 6h3v3h-3zM105 6h3v3h-3zM0 9h6v3h-6zM11 9h3v3h-3zM17 9h3v3h-3zM22 9h9v3h-9zM36 9h3v3h-3zM44 9h6v3h-6zM58 9h6v3h-6zM69 9h6v3h-6zM77 9h9v3h-9zM91 9h6v3h-6zM99 9h9v3h-9z"/></svg></a><span class="crumb-sep" aria-hidden="true"></span><a class="crumb-app" href="/fagl/zh-hant/"><img src="/fagl/assets/icon.webp" alt="" width="24" height="24"><span>FAGL</span></a></nav>
+  <details class="lang">
+    <summary><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M1.75 8h12.5M8 1.75c1.7 1.8 2.6 3.9 2.6 6.25S9.7 12.45 8 14.25C6.3 12.45 5.4 10.35 5.4 8S6.3 3.55 8 1.75z"/></svg><span class="sr">語言: </span>繁體中文</summary>
+    <ul class="lang-menu" role="list"><li><a href="/fagl/privacy/" hreflang="en" lang="en" data-set-lang="en">English</a></li><li><a href="/fagl/ko/privacy/" hreflang="ko" lang="ko" data-set-lang="ko">한국어</a></li><li><a href="/fagl/ja/privacy/" hreflang="ja" lang="ja" data-set-lang="ja">日本語</a></li><li><a href="/fagl/zh-hant/privacy/" hreflang="zh-Hant" lang="zh-Hant" data-set-lang="zh-Hant" aria-current="true">繁體中文</a></li><li><a href="/fagl/de/privacy/" hreflang="de" lang="de" data-set-lang="de">Deutsch</a></li></ul>
+  </details>
+</header>
+<main id="main" class="wrap narrow doc">
+<article aria-labelledby="h">
+<div class="page-head"><h1 id="h">FAGL 隱私權政策</h1></div>
+<p class="meta">生效日期：2026&nbsp;年&nbsp;9&nbsp;月&nbsp;24&nbsp;日</p>
+<h2>重點摘要</h2>
+<ul><li>待辦事項、專注紀錄、目標和回顧只會儲存在你的裝置（Mac、iPhone、iPad、Apple Watch）上，不需要帳號。</li><li>AI 是選用功能。雲端 AI（Anthropic 的 Claude）僅限年滿 18 歲者使用，而且只有在你於 App 內同意後才會使用。FAGL 不會儲存你傳送的內容；Anthropic 只用它來產生回答，不會用來訓練 AI，並會在 30 天內刪除（例外情形見第 3 節）。</li><li>為了管理免費 AI 額度、AI Plus 訂閱與每日上限，FAGL 伺服器會保留經過雜湊處理的購買識別碼與使用量，但不會儲存請求內容或你的 IP 位址。</li><li>所有付款都由 Apple 處理。FAGL 只會收到確認購買與訂閱所需、經 Apple 簽署的交易資訊。</li><li>App 每天會從 picsum.photos 下載背景照片；在 Mac 上，只有在你選擇時，才會從 Hugging Face 下載 AI 模型。</li><li>沒有廣告、分析和追蹤，也不使用任何分析、廣告或追蹤用途的第三方 SDK。</li></ul>
+<h2>1. 我們是誰</h2>
+<p>FAGL 由個人開發者 Jongmin Lee（以下稱「我們」）提供。聯絡方式：<a href="mailto:lee1993ljm@gmail.com">lee1993ljm@gmail.com</a></p>
+<h2>2. 儲存在你裝置上的資料</h2>
+<ul><li>待辦事項、目標與路線圖、專注時段、回顧（星等與備註）以及設定，都儲存在你使用 FAGL 的每台裝置（Mac、iPhone、iPad、Apple Watch）上這個 App 的儲存空間中；在 Mac 上是 App 的沙盒容器。</li><li>Apple Watch App 會從已配對 iPhone 上的 FAGL 取得待辦事項與計時器，並把專注紀錄傳回 iPhone。這些資料只在你自己的裝置之間傳遞，我們不會收到。</li><li>在 Mac、iPhone 和 iPad 上，App 會在同一個儲存空間內自動建立本機備份，並保留最近 14 份。你匯出的備份檔案（.fagl）和 Mac 上匯出的 CSV 檔案，只會存到或傳送到你選擇的地方。</li><li>如果你在 Mac 上下載了裝置端 AI 模型，模型檔案也會儲存在你的 Mac 上。</li><li>我們看不到，也無法取得這些資料。若要刪除，請在每台裝置上刪除 App：在 iPhone、iPad 和 Apple Watch 上，刪除 App 就會一併刪除資料；在 Mac 上，還需要刪除 App 的資料（<code>~/<wbr>Library/<wbr>Containers/<wbr>com.<wbr>jmlee.<wbr>FAGL</code>）。你自己匯出的備份與匯出檔案也請一併刪除。</li></ul>
+<h2>3. 雲端 AI（選用）</h2>
+<p><strong>什麼時候會用到</strong>　看完首次啟動的介紹後，App 會詢問一次你是否要使用雲端 AI。只有在你確認自己年滿 18 歲並在該畫面同意後才會使用。每次購買 FAGL 都附贈一次性的雲端 AI 免費額度（大約可用數百次，另有每日上限），選用的 AI Plus 訂閱則可每月增加使用額度（見第 4 節）。TestFlight 測試版也是如此。</p>
+<p><strong>傳送哪些內容</strong></p>
+<ul><li>每次 AI 請求：只傳送該功能需要的內容，例如待辦事項標題與備註、回顧、目標、專注時間摘要，以及 App 語言。</li><li>開始工作階段時（大約一天一次）：Apple 為你這份 FAGL 簽署的 App Store 購買證明（AppTransaction）、如有訂閱 AI Plus 則包括經 Apple 簽署的訂閱交易資訊、App 版本、平台，以及 App 產生的隨機安裝 ID。</li><li>和所有網路連線一樣：你的 IP 位址。</li></ul>
+<p>我們不會傳送你的姓名、電子郵件、Apple 帳號、聯絡人、位置或硬體識別碼。</p>
+<p><strong>由誰處理、在哪裡處理</strong></p>
+<div class="table"><table><thead><tr><th scope="col">接收者</th><th scope="col">負責的工作</th><th scope="col">地點</th></tr></thead><tbody><tr><td data-label="接收者">Cloudflare, Inc.（美國公司）</td><td data-label="負責的工作">代管 FAGL 伺服器（Cloudflare Workers），負責確認購買與訂閱、計算使用量、防止濫用，並把請求轉送給 Anthropic。</td><td data-label="地點">Cloudflare 在全球各地的資料中心（通常是離你較近的一處）</td></tr><tr><td data-label="接收者">Anthropic, PBC（美國公司）</td><td data-label="負責的工作">以 Claude 模型產生回答。只會收到請求內容、App 語言，以及一組假名識別碼（雜湊值，以 <code>metadata.<wbr>user_id</code> 傳送，供 Anthropic 偵測濫用），不會收到你的姓名、電子郵件、購買資訊、安裝 ID 或 IP 位址。</td><td data-label="地點">在 Anthropic 的全球基礎設施上處理，資料儲存在美國</td></tr></tbody></table></div>
+<p><strong>目的</strong>　產生你要求的 AI 回答、確認請求來自正式購買的 FAGL（使用 AI Plus 時，確認訂閱仍有效）、管理免費額度、每月使用額度與每日上限，以及防止濫用。不會用於其他用途。</p>
+<p><strong>保存期間</strong></p>
+<ul><li>請求內容與回答：FAGL 伺服器不會儲存。Anthropic 會在回答後 30 天內自動刪除；但法律要求保存更久，或為執行 Anthropic 使用政策所需時除外。被 Anthropic 安全系統標記的內容，最長可能保存 2 年。</li><li>雜湊處理後的購買與訂閱識別碼，以及使用量累計：在服務營運期間保留（見第 4 節）。</li><li>每日使用量計數：約 3 天後自動刪除。</li><li>用於限制每分鐘請求數的 IP 位址雜湊值：每天更換，不儲存 IP 位址本身，約 3 天後隨每日計數一併刪除。</li><li>購買證明、訂閱交易資訊、App 版本、平台與安裝 ID：開始工作階段時用來確認，確認後即捨棄。</li><li>伺服器紀錄只保留技術資訊（例如錯誤代碼），不會記錄內容、識別碼或 IP 位址。</li></ul>
+<p><strong>不會用來訓練 AI</strong>　FAGL 不會用你的內容訓練 AI；Anthropic 也不會用 API 的輸入與輸出訓練模型。</p>
+<p><strong>如何關閉</strong>　在同意畫面選擇「只在裝置上使用」，或隨時在「設定 &gt; AI」關閉雲端 AI。在同一處關閉「使用 AI 功能」，就會關閉所有 AI。關閉雲端 AI 不會取消 AI Plus 訂閱，請到 App Store 帳號設定中取消。</p>
+<p><strong>關閉後會怎樣</strong>　AI 會改在你的裝置上執行：在支援的裝置上使用 Apple 裝置端 AI，在 Mac 上也可以使用裝置端 AI 模型（見第 5、6 節）。達到每日上限或用完免費額度時也一樣，這時你也可以選擇訂閱 AI Plus。如果兩者都無法使用，只有 AI 功能無法使用，其他功能都能照常使用。</p>
+<h2>4. 購買、免費額度與 AI Plus</h2>
+<p><strong>付款</strong>　FAGL 與 AI Plus 的付款全部由 Apple 處理。我們看不到你的付款資料、姓名或 Apple 帳號。FAGL 只會收到經 Apple 簽署的交易資訊（例如商品、交易 ID、訂閱到期日），而且只用來確認購買與訂閱。</p>
+<p><strong>雜湊值</strong>　為了讓每份購買都有一次性的免費額度、每個訂閱都有每月使用額度，伺服器必須在不知道你是誰的情況下，辨認出請求是否來自同一份購買或同一個訂閱。因此伺服器只儲存無法還原的 SHA-256 雜湊值：</p>
+<ul><li>App Store 購買識別碼的雜湊值，以及免費額度的累計使用量：少了這筆紀錄，一次性的額度就可能被重複領取，因此在服務營運期間保留。</li><li>如有訂閱 AI Plus：訂閱原始交易 ID 的雜湊值，以及每個計費週期的使用量，在服務營運期間保留。</li><li>每日上限所需的每日使用量計數：約 3 天後刪除。</li></ul>
+<p>我們無法從這些雜湊值還原原本的 ID，也沒有辦法把它們和你的姓名、電子郵件或 Apple 帳號連結。雜湊值不含任何請求內容。除了第 3 節所說的假名識別碼，它們不會傳給 Anthropic，也不會用於追蹤或廣告。</p>
+<p><strong>AI Plus</strong>　AI Plus 是選用的自動續訂訂閱（每月 2.99 美元，實際價格依國家或地區而異），可每月增加雲端 AI 使用額度（另有每日上限）。除非在目前訂閱期間結束前至少 24 小時到 App Store 帳號設定中取消，否則會自動續訂。AI Plus 不支援家人共享，也不影響你一次購買的 FAGL 與免費額度。使用條款：Apple 標準授權合約（<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a>）。</p>
+<h2>5. Apple 裝置端 AI</h2>
+<p>在支援 Apple Intelligence 的裝置上，FAGL 可以使用 Apple 的裝置端模型。請求都在你的裝置上處理，App 不會把資料傳到任何地方。Apple Intelligence 本身適用 Apple 的隱私權政策。</p>
+<h2>6. 裝置端 AI 模型（Mac，選擇下載）</h2>
+<p>你可以在 Mac 的「設定 &gt; AI」選擇從 Hugging Face, Inc.（美國）下載 AI 模型（約 3.6GB 或 5.2GB）。這只是下載模型檔案，不會上傳你的任何內容。和一般下載一樣，Hugging Face 會得知你的 IP 位址等基本連線資訊。下載完成後，模型會在你的 Mac 上離線執行。</p>
+<h2>7. 每日背景照片</h2>
+<p>App 每天會自動從 picsum.photos（提供 Unsplash 照片的 Lorem Picsum）下載一張隨機背景照片。這個請求不含任何個人資料。不過和所有網路請求一樣，你的 IP 位址與請求時間等基本資訊會傳給該服務及其代管業者，並依照它們各自的政策處理。</p>
+<h2>8. FAGL 不會做的事</h2>
+<p>沒有帳號，也不用登入。不使用廣告、分析、當機回報或追蹤 SDK。我們不會出售或分享個人資料，不會建立個人檔案，也不會跨 App 或網站追蹤你。</p>
+<h2>9. 法律依據與你的權利</h2>
+<p>把內容傳送給雲端 AI，是基於你的同意；你隨時可以在「設定 &gt; AI」撤回同意（撤回前已送出的請求不受影響）。確認購買與訂閱、保存額度與使用量累計，是提供你所購買服務的必要處理。每分鐘請求限制與短期保存的每日計數，是為了防止服務遭到濫用。你可以向我們要求查詢、更正、刪除或停止處理你的個人資料。不過我們只保存無法連結到你的雜湊值，通常無法找出特定人士的資料。每日計數約 3 天後就會自動刪除。你裝置上的資料則完全由你自己管理。</p>
+<h2>10. 跨境傳輸</h2>
+<p>雲端 AI 請求可能在美國，以及 Cloudflare 和 Anthropic 營運的其他國家處理。Anthropic 會在其全球基礎設施上處理請求，資料則儲存在美國。這些國家的個人資料保護規定可能與你所在地不同。你在同意畫面按下同意，即表示同意這項傳輸；你可以隨時依上述方式撤回。</p>
+<h2>11. 兒童</h2>
+<p>FAGL 沒有帳號，任何年齡都能使用，但並非以兒童為對象，我們也不會在知情的情況下蒐集兒童的個人資料。依照 Anthropic 對可能有未成年人使用之服務的規範，雲端 AI 僅限年滿 18 歲者使用，同意畫面也會請你確認年齡。未滿 18 歲請不要開啟雲端 AI。裝置端 AI（Apple Intelligence 與裝置端 AI 模型）以及其他所有功能，任何人都能使用。</p>
+<h2>12. 政策變更</h2>
+<p>本政策如有變更，會連同新的生效日期公布在這個網址。若有重大變更（例如新增資料接收者），也會在 App 的更新說明中告知。</p>
+<h2>13. 聯絡我們</h2>
+<p>Jongmin Lee · <a href="mailto:lee1993ljm@gmail.com">lee1993ljm@gmail.com</a></p>
+</article>
+</main>
+<footer class="wrap">
+  <div class="bottom">
+    <nav aria-label="FAGL">
+      <a href="/fagl/zh-hant/">FAGL</a>
+      <a href="/fagl/zh-hant/support/">支援</a>
+      <a href="/fagl/zh-hant/privacy/">隱私權政策</a>
+      <a href="/">JML.Studio</a>
+    </nav>
+    <p>&copy; 2026 JML.Studio</p>
+  </div>
+</footer>
+</body>
+</html>

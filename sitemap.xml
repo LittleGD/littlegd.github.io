@@ -1,7 +1,157 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://littlegd.github.io/</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-09-24</lastmod>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/fagl/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/fagl/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/fagl/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/fagl/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/fagl/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/fagl/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/fagl/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/fagl/ko/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/fagl/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/fagl/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/fagl/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/fagl/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/fagl/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/fagl/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/fagl/ja/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/fagl/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/fagl/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/fagl/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/fagl/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/fagl/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/fagl/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/fagl/zh-hant/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/fagl/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/fagl/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/fagl/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/fagl/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/fagl/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/fagl/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/fagl/de/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/fagl/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/fagl/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/fagl/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/fagl/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/fagl/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/fagl/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/fagl/support/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/fagl/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/fagl/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/fagl/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/fagl/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/fagl/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/fagl/support/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/fagl/ko/support/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/fagl/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/fagl/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/fagl/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/fagl/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/fagl/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/fagl/support/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/fagl/ja/support/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/fagl/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/fagl/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/fagl/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/fagl/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/fagl/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/fagl/support/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/fagl/zh-hant/support/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/fagl/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/fagl/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/fagl/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/fagl/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/fagl/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/fagl/support/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/fagl/de/support/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/fagl/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/fagl/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/fagl/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/fagl/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/fagl/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/fagl/support/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/fagl/privacy/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/fagl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/fagl/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/fagl/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/fagl/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/fagl/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/fagl/privacy/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/fagl/ko/privacy/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/fagl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/fagl/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/fagl/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/fagl/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/fagl/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/fagl/privacy/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/fagl/ja/privacy/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/fagl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/fagl/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/fagl/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/fagl/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/fagl/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/fagl/privacy/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/fagl/zh-hant/privacy/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/fagl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/fagl/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/fagl/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/fagl/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/fagl/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/fagl/privacy/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/fagl/de/privacy/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/fagl/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/fagl/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/fagl/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/fagl/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/fagl/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/fagl/privacy/"/>
   </url>
 </urlset>

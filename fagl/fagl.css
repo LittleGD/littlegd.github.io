@@ -1,0 +1,1282 @@
+/* FAGL pages on the JML.Studio site.
+   The studio's neutrals, type, glass and motion, with the app's own timer
+   red and focus-grid greens as the only accents. Light by default, dark
+   when the system asks for it. One HTML file per page carries every
+   language has its own page, and html[lang] picks the fonts and line
+   breaking for it. */
+
+:root {
+  color-scheme: light dark;
+
+  /* studio neutrals: 600 and darker pass AAA on white */
+  --white: #ffffff;
+  --n50: #fafafa;
+  --n100: #f5f5f5;
+  --n200: #e5e5e5;
+  --n400: #a3a3a3;
+  --n600: #525252;
+  --n800: #262626;
+  --n900: #171717;
+  --n950: #0a0a0a;
+
+  /* FAGL app tokens (DesignTokens.swift) */
+  --red: #eb4236;
+  --g0: #3a3a3a;
+  --g1: #80e09e;
+  --g2: #47c275;
+  --g3: #269957;
+  --g4: #12703d;
+
+  --bg: var(--white);
+  --ink: var(--n950);
+  --ink-soft: var(--n600);
+  --surface: var(--n100);
+  --line: rgba(10, 10, 10, 0.1);
+  --glass: rgba(255, 255, 255, 0.72);
+  --glass-hover: rgba(255, 255, 255, 0.92);
+  --glass-shadow: 0 0 0 0.5px rgba(10, 10, 10, 0.12),
+    0 1px 1px rgba(10, 10, 10, 0.04), 0 10px 24px -10px rgba(10, 10, 10, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  --bezel: var(--n950);
+  --bezel-edge: rgba(10, 10, 10, 0.14);
+  --shot-shadow: 0 32px 64px -32px rgba(10, 10, 10, 0.45);
+  --demo-card: var(--n800);
+
+  --font-sans: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+    "Noto Sans KR", "Segoe UI", Roboto, sans-serif;
+
+  --edge: 20px;
+  --measure: 1120px;
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: var(--n950);
+    --ink: #f5f5f5;
+    --ink-soft: var(--n400);
+    --surface: var(--n900);
+    --line: rgba(255, 255, 255, 0.12);
+    --glass: rgba(28, 28, 28, 0.72);
+    --glass-hover: rgba(44, 44, 44, 0.9);
+    --glass-shadow: 0 0 0 0.5px rgba(255, 255, 255, 0.16),
+      0 10px 24px -10px rgba(0, 0, 0, 0.7),
+      inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    --bezel: #000;
+    --bezel-edge: rgba(255, 255, 255, 0.18);
+    --shot-shadow: 0 32px 64px -32px rgba(0, 0, 0, 0.9);
+    --demo-card: #262626;
+  }
+}
+
+/* ---------- base ---------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--bg);
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 17px;
+  line-height: 1.55;
+  letter-spacing: -0.01em;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+
+html:lang(ja) body {
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Segoe UI", Roboto, sans-serif;
+  letter-spacing: 0;
+  line-break: strict;
+}
+
+html:lang(zh-Hant) body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC",
+    "Microsoft JhengHei", "Segoe UI", Roboto, sans-serif;
+  letter-spacing: 0;
+  line-break: strict;
+}
+
+/* Korean breaks at spaces, not between syllables */
+:lang(ko) {
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+h1,
+h2,
+h3,
+.lead,
+.sub {
+  text-wrap: balance;
+}
+
+/* long German compounds hyphenate instead of running off a phone screen,
+   but short words never do (10 letters or more, 4 on each side of the
+   break); any other word too long for the line may break as a last resort */
+h1,
+h2,
+h3 {
+  overflow-wrap: break-word;
+}
+
+:lang(de) :is(h1, h2, h3, .lead) {
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  hyphenate-limit-chars: 10 4 4;
+  -webkit-hyphenate-limit-before: 4;
+  -webkit-hyphenate-limit-after: 4;
+}
+
+/* Japanese: break between phrases, not inside them (where supported) */
+html:lang(ja) :is(h1, h2, h3, .lead, .sub, .section-lead, .motto, dt, dd, .step p) {
+  word-break: auto-phrase;
+}
+
+p,
+li,
+dd {
+  text-wrap: pretty;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: color-mix(in srgb, currentColor 40%, transparent);
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.3s var(--ease);
+}
+
+a:hover {
+  text-decoration-color: currentColor;
+}
+
+:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+.sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip {
+  position: absolute;
+  left: var(--edge);
+  top: 12px;
+  transform: translateY(-200%);
+  z-index: 10;
+  padding: 10px 16px;
+  border-radius: 20px;
+  background: var(--glass-hover);
+  box-shadow: var(--glass-shadow);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.skip:focus-visible {
+  transform: none;
+}
+
+.wrap {
+  width: 100%;
+  max-width: calc(var(--measure) + var(--edge) * 2);
+  margin-inline: auto;
+  padding-inline: var(--edge);
+}
+
+.narrow {
+  max-width: calc(720px + var(--edge) * 2);
+}
+
+/* ---------- header ---------- */
+
+.top {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-block: 20px;
+}
+
+.crumbs {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+
+/* the studio wordmark, small: Bytesized at 24px, traced into an inline SVG
+   (one font pixel = 3px), so no font is loaded from another server */
+.studio {
+  flex: none;
+  padding-block: 10px;
+  text-decoration: none;
+}
+
+.studio svg {
+  display: block;
+}
+
+.crumb-app {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.crumb-app img {
+  width: 24px;
+  height: 24px;
+  border-radius: 22.5%;
+  box-shadow: 0 0 0 0.5px var(--line);
+}
+
+.crumb-sep {
+  width: 1px;
+  height: 16px;
+  background: var(--line);
+}
+
+/* language switcher: a glass pill that opens a glass menu */
+.lang {
+  position: relative;
+  flex: none;
+}
+
+.lang summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  height: 36px;
+  padding: 0 14px 0 12px;
+  border-radius: 18px;
+  background: var(--glass);
+  -webkit-backdrop-filter: blur(16px) saturate(1.8);
+  backdrop-filter: blur(16px) saturate(1.8);
+  box-shadow: var(--glass-shadow);
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  list-style: none;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color 0.2s var(--ease);
+}
+
+.lang summary::-webkit-details-marker {
+  display: none;
+}
+
+.lang summary:hover {
+  background: var(--glass-hover);
+}
+
+.lang summary:focus-visible {
+  outline-offset: 3px;
+  border-radius: 18px;
+}
+
+.lang svg {
+  width: 16px;
+  height: 16px;
+  flex: none;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+}
+
+.lang-menu {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 8px);
+  min-width: 168px;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  border-radius: 18px;
+  background: var(--glass);
+  -webkit-backdrop-filter: blur(20px) saturate(1.8);
+  backdrop-filter: blur(20px) saturate(1.8);
+  box-shadow: var(--glass-shadow);
+  transform-origin: 100% 0;
+}
+
+.lang[open] .lang-menu {
+  animation: pop 0.22s var(--ease);
+}
+
+.lang-menu a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 40px;
+  padding: 0 12px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.lang-menu a:hover {
+  background: var(--line);
+}
+
+.lang-menu a:focus-visible {
+  outline-offset: -2px;
+  border-radius: 12px;
+}
+
+.lang-menu a[aria-current]::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--red);
+}
+
+/* ---------- app icon (the studio's CSS icon: colored glow + rim) ---------- */
+
+.app-icon {
+  position: relative;
+  isolation: isolate;
+  display: block;
+  width: var(--icon, 112px);
+  height: var(--icon, 112px);
+  border-radius: 22.5%;
+}
+
+.app-icon img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  box-shadow: 0 0 0 0.5px rgba(10, 10, 10, 0.1), 0 1px 2px rgba(10, 10, 10, 0.06),
+    0 12px 24px -12px rgba(10, 10, 10, 0.3);
+}
+
+.app-icon::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 10%;
+  border-radius: inherit;
+  background: var(--art) center / cover no-repeat;
+  filter: blur(calc(var(--icon, 112px) * 0.2)) saturate(1.8);
+  opacity: 0.8;
+  transform: translateY(22%) scale(0.96);
+}
+
+.app-icon::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  border-radius: inherit;
+  background: linear-gradient(
+    160deg,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.1) 30%,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(255, 255, 255, 0.1) 70%,
+    rgba(255, 255, 255, 0.5)
+  );
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .app-icon::before {
+    opacity: 0.55;
+  }
+}
+
+/* ---------- hero ---------- */
+
+.hero {
+  padding-top: 36px;
+  text-align: center;
+}
+
+.hero .app-icon {
+  margin: 0 auto 28px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 44px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.motto {
+  margin: 12px 0 0;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
+  color: var(--ink-soft);
+}
+
+.lead {
+  max-width: 17em;
+  margin: 32px auto 0;
+  font-size: 30px;
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+html:lang(ja) .sub,
+html:lang(zh-Hant) .sub {
+  max-width: 34em;
+}
+
+html:lang(ja) .lead,
+html:lang(zh-Hant) .lead {
+  max-width: 18em;
+  line-height: 1.3;
+  letter-spacing: 0;
+}
+
+.sub {
+  max-width: 30em;
+  margin: 16px auto 0;
+  font-size: 18px;
+  color: var(--ink-soft);
+}
+
+.status {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px 16px;
+  margin-top: 28px;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--ink-soft);
+}
+
+.soon {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 40px;
+  padding: 0 16px 0 14px;
+  border-radius: 20px;
+  background: var(--glass);
+  -webkit-backdrop-filter: blur(16px) saturate(1.8);
+  backdrop-filter: blur(16px) saturate(1.8);
+  box-shadow: var(--glass-shadow);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+.soon-dot {
+  flex: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: conic-gradient(var(--red) 0 270deg, var(--line) 0);
+}
+
+/* .hero .hero-shot outranks .device { margin: 0 } further down */
+.hero .hero-shot {
+  margin: 56px auto 0;
+  max-width: 1040px;
+}
+
+.hero-shot img,
+.shot {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 0 0 0.5px var(--line), var(--shot-shadow);
+}
+
+/* hero entrance, as on the studio shelf */
+.hero > * {
+  animation: rise 0.9s var(--ease) backwards;
+}
+
+.hero > :nth-child(2) { animation-delay: 0.07s; }
+.hero > :nth-child(3) { animation-delay: 0.14s; }
+.hero > :nth-child(4) { animation-delay: 0.21s; }
+.hero > :nth-child(5) { animation-delay: 0.28s; }
+.hero > :nth-child(6) { animation-delay: 0.35s; }
+.hero > :nth-child(7) { animation-delay: 0.42s; }
+
+/* ---------- sections ---------- */
+
+.section {
+  padding-top: 104px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 14px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+
+/* a tiny timer disc: the app's red wedge, three quarters left */
+.eyebrow::before {
+  content: "";
+  flex: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: conic-gradient(var(--red) 0 270deg, var(--line) 0);
+}
+
+.section h2 {
+  margin: 0;
+  font-size: 32px;
+  line-height: 1.12;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+html:lang(ja) .section h2,
+html:lang(zh-Hant) .section h2 {
+  line-height: 1.3;
+  letter-spacing: 0;
+}
+
+.section-lead {
+  max-width: 34em;
+  margin: 16px 0 0;
+  font-size: 18px;
+  color: var(--ink-soft);
+}
+
+.split {
+  display: grid;
+  gap: 48px;
+  align-items: center;
+}
+
+.points {
+  margin: 32px 0 0;
+  padding: 0;
+}
+
+.points div {
+  padding-block: 14px;
+  border-top: 1px solid var(--line);
+}
+
+.points dt {
+  font-weight: 600;
+}
+
+.points dd {
+  margin: 2px 0 0;
+  color: var(--ink-soft);
+}
+
+/* device frames: the screenshots already draw the screen, so the frame is
+   rounded corners plus a thin bezel */
+.device {
+  margin: 0;
+  container-type: inline-size;
+}
+
+.device img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.phone img {
+  border-radius: 13.5cqi;
+  box-shadow: 0 0 0 max(3px, 2.2cqi) var(--bezel),
+    0 0 0 calc(max(3px, 2.2cqi) + 1px) var(--bezel-edge), var(--shot-shadow);
+}
+
+.tablet img {
+  border-radius: 3.2cqi;
+  box-shadow: 0 0 0 max(4px, 2cqi) var(--bezel),
+    0 0 0 calc(max(4px, 2cqi) + 1px) var(--bezel-edge), var(--shot-shadow);
+}
+
+.watch img {
+  border-radius: 22cqi;
+  box-shadow: 0 0 0 max(5px, 6cqi) var(--bezel),
+    0 0 0 calc(max(5px, 6cqi) + 1px) var(--bezel-edge), var(--shot-shadow);
+}
+
+.phones {
+  display: flex;
+  justify-content: center;
+  gap: 6%;
+  padding: 8px 8px 40px;
+}
+
+.phones .phone {
+  width: 44%;
+  max-width: 290px;
+}
+
+.phones .phone + .phone {
+  transform: translateY(40px);
+}
+
+/* ---------- focus, reflect, grid ---------- */
+
+.steps {
+  display: grid;
+  gap: 16px;
+  margin: 40px 0 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: step;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 28px;
+  border-radius: 28px;
+  background: var(--surface);
+  overflow: hidden;
+}
+
+.step-num {
+  display: block;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-soft);
+}
+
+.step h3 {
+  margin: 4px 0 0;
+  font-size: 22px;
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.step p {
+  margin: 6px 0 0;
+  color: var(--ink-soft);
+}
+
+.step-visual {
+  display: grid;
+  place-items: center;
+  flex: 1;
+}
+
+.step-visual .shot {
+  max-width: 380px;
+  border-radius: 20px;
+}
+
+.step--wide .step-visual .shot {
+  max-width: none;
+  border-radius: 14px;
+}
+
+.note {
+  margin: 20px 0 0;
+  font-size: 15px;
+  color: var(--ink-soft);
+}
+
+/* a working copy of the Awesome Life Timer: the red wedge is the time left,
+   measured against the goal time, and it shrinks toward twelve o'clock */
+.demo {
+  --sweep: 264deg;
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: min(100%, 260px);
+  aspect-ratio: 1;
+  border-radius: 22%;
+  background: var(--demo-card);
+  overflow: hidden;
+  container-type: inline-size;
+  box-shadow: 0 0 0 0.5px var(--line), var(--shot-shadow);
+}
+
+.demo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: conic-gradient(var(--red) 0 var(--sweep), transparent 0);
+}
+
+.demo-time {
+  position: relative;
+  font-size: 21cqi;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  font-variant-numeric: tabular-nums;
+  color: #fff;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* ---------- devices ---------- */
+
+.devices {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 8px 8px 16px;
+}
+
+.devices .tablet {
+  width: 72%;
+  max-width: 420px;
+}
+
+.devices .watch {
+  position: absolute;
+  right: 6%;
+  bottom: 0;
+  width: 27%;
+  max-width: 150px;
+}
+
+/* ---------- privacy promise ---------- */
+
+.promise {
+  text-align: center;
+}
+
+.promise .section-lead {
+  margin-inline: auto;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 28px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.chips li {
+  display: inline-flex;
+  align-items: center;
+  height: 36px;
+  padding: 0 14px;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.ai {
+  max-width: 720px;
+  margin: 40px auto 0;
+  padding: 28px;
+  border-radius: 28px;
+  background: var(--surface);
+  text-align: left;
+}
+
+.ai h3 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.3;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
+.ai p {
+  margin: 10px 0 0;
+  color: var(--ink-soft);
+}
+
+.ai .links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  margin-top: 16px;
+  font-size: 15px;
+}
+
+/* ---------- closing ---------- */
+
+.closing {
+  padding-block: 120px 96px;
+  text-align: center;
+}
+
+.closing .app-icon {
+  margin: 0 auto 24px;
+}
+
+.closing h2 {
+  margin: 0;
+  font-size: 30px;
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+.closing p {
+  margin: 12px 0 0;
+  color: var(--ink-soft);
+}
+
+.closing .links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  margin-top: 24px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* ---------- text pages (privacy, support) ---------- */
+
+.page-head {
+  padding-block: 40px 8px;
+}
+
+.page-head h1 {
+  margin: 0;
+  font-size: 34px;
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+html:lang(ja) .page-head h1,
+html:lang(zh-Hant) .page-head h1 {
+  letter-spacing: 0;
+}
+
+.page-head p {
+  margin: 12px 0 0;
+  color: var(--ink-soft);
+}
+
+.doc {
+  padding-bottom: 96px;
+}
+
+.doc h2 {
+  margin: 48px 0 0;
+  font-size: 22px;
+  line-height: 1.3;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
+.doc p,
+.doc ul {
+  margin: 14px 0 0;
+}
+
+.doc ul {
+  padding-left: 1.2em;
+}
+
+.doc li + li {
+  margin-top: 6px;
+}
+
+.doc li::marker {
+  color: var(--ink-soft);
+}
+
+.doc code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.86em;
+  padding: 0.1em 0.35em;
+  border-radius: 6px;
+  background: var(--surface);
+  overflow-wrap: break-word; /* gen puts <wbr> after each / and . */
+}
+
+.doc a {
+  overflow-wrap: anywhere;
+}
+
+.doc .meta {
+  margin-top: 0;
+  color: var(--ink-soft);
+}
+
+.table {
+  margin: 18px 0 0;
+}
+
+.table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.table th,
+.table td {
+  padding: 12px 12px 12px 0;
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px solid var(--line);
+}
+
+.table th {
+  font-weight: 600;
+  border-top: 0;
+  color: var(--ink-soft);
+  font-size: 13px;
+}
+
+/* narrow screens: each row becomes a small card of label and value */
+@media (max-width: 719px) {
+  .table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+  }
+
+  .table table,
+  .table tbody,
+  .table tr,
+  .table td {
+    display: block;
+  }
+
+  .table tr {
+    padding: 14px 0;
+    border-top: 1px solid var(--line);
+  }
+
+  .table td {
+    padding: 4px 0;
+    border: 0;
+  }
+
+  .table td::before {
+    content: attr(data-label);
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--ink-soft);
+  }
+}
+
+/* support */
+.contact {
+  margin: 28px 0 0;
+  padding: 24px 28px;
+  border-radius: 24px;
+  background: var(--surface);
+}
+
+.contact h2 {
+  margin: 0;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+
+.contact .mail {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 22px;
+  line-height: 1.3;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  overflow-wrap: anywhere;
+}
+
+.contact p {
+  margin: 8px 0 0;
+  color: var(--ink-soft);
+  font-size: 15px;
+}
+
+.doc .faq {
+  margin: 40px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.doc .faq li {
+  margin: 0;
+  padding-block: 24px;
+  border-top: 1px solid var(--line);
+}
+
+.faq h2 {
+  margin: 0;
+  font-size: 19px;
+  line-height: 1.35;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
+.faq p {
+  margin: 8px 0 0;
+  color: var(--ink-soft);
+}
+
+.more {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  margin: 8px 0 0;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  font-size: 15px;
+}
+
+/* ---------- footer ---------- */
+
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 16px;
+  padding-block: 28px 32px;
+  border-top: 1px solid var(--line);
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--ink-soft);
+}
+
+.bottom nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+}
+
+.bottom a {
+  display: inline-block;
+  padding-block: 6px;
+  margin-block: -6px;
+  text-decoration: none;
+  background: linear-gradient(currentColor 0 0) left calc(100% - 5px) / 0 1px
+    no-repeat;
+  transition: color 0.3s var(--ease), background-size 0.45s var(--ease);
+}
+
+.bottom a:hover,
+.bottom a:focus-visible {
+  color: var(--ink);
+  background-size: 100% 1px;
+}
+
+.bottom p {
+  margin: 0;
+}
+
+/* ---------- motion ---------- */
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+    filter: blur(8px);
+  }
+}
+
+@keyframes pop {
+  from {
+    opacity: 0;
+    transform: scale(0.94) translateY(-4px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* ---------- wider screens ---------- */
+
+@media (min-width: 600px) {
+  :root {
+    --edge: 32px;
+  }
+
+  .hero {
+    padding-top: 56px;
+  }
+
+  .hero .app-icon {
+    --icon: 128px;
+  }
+
+  .hero h1 {
+    font-size: 52px;
+  }
+
+  .lead {
+    font-size: 44px;
+  }
+
+  .sub {
+    font-size: 19px;
+  }
+
+  .hero-shot img {
+    border-radius: 18px;
+  }
+
+  .section {
+    padding-top: 140px;
+  }
+
+  .section h2 {
+    font-size: 44px;
+  }
+
+  .steps {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .step--wide {
+    grid-column: 1 / -1;
+  }
+
+  .closing h2 {
+    font-size: 40px;
+  }
+
+  .page-head {
+    padding-block: 64px 8px;
+  }
+
+  .page-head h1 {
+    font-size: 44px;
+  }
+}
+
+@media (min-width: 900px) {
+  .lead {
+    font-size: 56px;
+  }
+
+  html:lang(ja) .lead,
+  html:lang(zh-Hant) .lead {
+    font-size: 48px;
+  }
+
+  .section h2 {
+    font-size: 48px;
+  }
+
+  html:lang(ja) .section h2,
+  html:lang(zh-Hant) .section h2 {
+    font-size: 40px;
+  }
+}
+
+/* two columns only once the text column is wide enough for a 40px heading
+   (about 400px); below that, text and pictures stack */
+@media (min-width: 1024px) {
+  .split {
+    grid-template-columns: 5fr 6fr;
+    gap: 64px;
+  }
+
+  .split--flip > :first-child {
+    order: 2;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .section .split h2 {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --edge: 40px;
+  }
+}
+
+/* Japanese and Chinese headlines: a clause wraps as a whole (gen wraps each
+   clause in .ph) */
+.ph {
+  display: inline-block;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+/* very narrow phones: the app crumb keeps its icon, the name stays for
+   screen readers */
+@media (max-width: 379px) {
+  .crumbs {
+    gap: 10px;
+  }
+
+  .crumb-app span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+}

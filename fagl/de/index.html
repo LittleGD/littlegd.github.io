@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Every language has its own address. ?lang= on any page opens that language.
+   The English address is also the default one: a visitor who comes to it from
+   outside these pages goes to the language they last picked here, or else to
+   the first of their browser's languages that FAGL has. */
+(function () {
+  var here = 'de', urls = {"en": "/fagl/", "ko": "/fagl/ko/", "ja": "/fagl/ja/", "zh-Hant": "/fagl/zh-hant/", "de": "/fagl/de/"}, want;
+  function pick(tag) {
+    var t = String(tag || '').toLowerCase();
+    if (/^zh-(hant|tw|hk|mo)(-|$)/.test(t)) return 'zh-Hant';
+    return { en: 'en', ko: 'ko', ja: 'ja', de: 'de' }[t.split('-')[0]];
+  }
+  try { want = pick(new URLSearchParams(location.search).get('lang')); } catch (e) {}
+  if (!want && here === 'en' && document.referrer.indexOf(location.origin + '/fagl/') !== 0) {
+    try { want = pick(localStorage.getItem('fagl-lang')); } catch (e) {}
+    var list = navigator.languages || [navigator.language];
+    for (var i = 0; !want && i < list.length; i++) want = pick(list[i]);
+  }
+  if (want && want !== here) location.replace(urls[want] + location.hash);
+})();
+</script>
+<title>FAGL: Fokus-Timer &amp; Ziele für Mac, iPhone, iPad und Apple Watch</title>
+<meta name="description" content="Gib jeder Aufgabe eine Zielzeit, fokussiere dich und blick kurz zurück. Dein Fokus-Raster füllt sich Tag für Tag. Einmal kaufen, kein Konto, keine Werbung, kein Tracking.">
+<meta name="author" content="Jongmin Lee">
+<link rel="canonical" href="https://littlegd.github.io/fagl/de/">
+<link rel="alternate" hreflang="en" href="https://littlegd.github.io/fagl/">
+<link rel="alternate" hreflang="ko" href="https://littlegd.github.io/fagl/ko/">
+<link rel="alternate" hreflang="ja" href="https://littlegd.github.io/fagl/ja/">
+<link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/fagl/zh-hant/">
+<link rel="alternate" hreflang="de" href="https://littlegd.github.io/fagl/de/">
+<link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/fagl/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JML.Studio">
+<meta property="og:url" content="https://littlegd.github.io/fagl/de/">
+<meta property="og:locale" content="de_DE">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:title" content="FAGL: Fokus-Timer &amp; Ziele für Mac, iPhone, iPad und Apple Watch">
+<meta property="og:description" content="Gib jeder Aufgabe eine Zielzeit, fokussiere dich und blick kurz zurück. Dein Fokus-Raster füllt sich Tag für Tag. Einmal kaufen, kein Konto, keine Werbung, kein Tracking.">
+<meta property="og:image" content="https://littlegd.github.io/fagl/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="FAGL: Focused Action, Goalful Life. A focus timer on iPhone with a red disc showing the time left.">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "FAGL: Focus Timer & Goals",
+  "alternateName": "FAGL",
+  "description": "Gib jeder Aufgabe eine Zielzeit, fokussiere dich und blick kurz zurück. Dein Fokus-Raster füllt sich Tag für Tag. Einmal kaufen, kein Konto, keine Werbung, kein Tracking.",
+  "url": "https://littlegd.github.io/fagl/de/",
+  "image": "https://littlegd.github.io/assets/fagl-icon-512.png",
+  "screenshot": "https://littlegd.github.io/fagl/assets/de/hero.webp",
+  "applicationCategory": "BusinessApplication",
+  "applicationSubCategory": "Productivity",
+  "operatingSystem": "macOS 26+, iOS 26.1+, iPadOS 26.1+, watchOS 26+",
+  "inLanguage": [
+    "en",
+    "ko",
+    "ja",
+    "zh-Hant",
+    "de"
+  ],
+  "author": {
+    "@type": "Organization",
+    "@id": "https://littlegd.github.io/#studio",
+    "name": "JML.Studio",
+    "url": "https://littlegd.github.io/"
+  }
+}
+</script>
+
+<link rel="icon" type="image/png" href="/fagl/assets/favicon.png">
+<link rel="apple-touch-icon" href="/fagl/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/fagl/fagl.css">
+<script src="/fagl/fagl.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Zum Inhalt springen</a>
+<header class="top wrap">
+  <nav class="crumbs" aria-label="JML.Studio"><a class="studio" href="/"><span class="sr">JML.Studio</span><svg class="wordmark" viewBox="0 0 108 12" width="108" height="12" aria-hidden="true" focusable="false" shape-rendering="crispEdges"><path fill="currentColor" d="M0 0h9v3h-9zM11 0h6v3h-6zM22 0h3v3h-3zM47 0h6v3h-6zM55 0h3v3h-3zM83 0h3v3h-3zM91 0h3v3h-3zM6 3h3v3h-3zM11 3h9v3h-9zM22 3h3v3h-3zM44 3h6v3h-6zM55 3h6v3h-6zM66 3h3v3h-3zM72 3h3v3h-3zM77 3h9v3h-9zM99 3h9v3h-9zM6 6h3v3h-3zM11 6h3v3h-3zM17 6h3v3h-3zM22 6h3v3h-3zM50 6h3v3h-3zM55 6h3v3h-3zM66 6h3v3h-3zM72 6h3v3h-3zM77 6h3v3h-3zM83 6h3v3h-3zM88 6h6v3h-6zM99 6h3v3h-3zM105 6h3v3h-3zM0 9h6v3h-6zM11 9h3v3h-3zM17 9h3v3h-3zM22 9h9v3h-9zM36 9h3v3h-3zM44 9h6v3h-6zM58 9h6v3h-6zM69 9h6v3h-6zM77 9h9v3h-9zM91 9h6v3h-6zM99 9h9v3h-9z"/></svg></a></nav>
+  <details class="lang">
+    <summary><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M1.75 8h12.5M8 1.75c1.7 1.8 2.6 3.9 2.6 6.25S9.7 12.45 8 14.25C6.3 12.45 5.4 10.35 5.4 8S6.3 3.55 8 1.75z"/></svg><span class="sr">Sprache: </span>Deutsch</summary>
+    <ul class="lang-menu" role="list"><li><a href="/fagl/" hreflang="en" lang="en" data-set-lang="en">English</a></li><li><a href="/fagl/ko/" hreflang="ko" lang="ko" data-set-lang="ko">한국어</a></li><li><a href="/fagl/ja/" hreflang="ja" lang="ja" data-set-lang="ja">日本語</a></li><li><a href="/fagl/zh-hant/" hreflang="zh-Hant" lang="zh-Hant" data-set-lang="zh-Hant">繁體中文</a></li><li><a href="/fagl/de/" hreflang="de" lang="de" data-set-lang="de" aria-current="true">Deutsch</a></li></ul>
+  </details>
+</header>
+<main id="main">
+<section class="hero wrap" aria-labelledby="top">
+  <span class="app-icon" style="--art: url(/fagl/assets/icon.webp)"><img src="/fagl/assets/icon.webp" alt="" width="288" height="288"></span>
+  <h1 id="top">FAGL</h1>
+  <p class="motto">Focused Action, Goalful Life.</p>
+  <p class="lead">Gib jeder Aufgabe eine Zielzeit und sieh zu, wie sie abläuft.</p>
+  <p class="sub">Danach blickst du kurz zurück, und dein Fokus-Raster füllt sich Tag für Tag.</p>
+  <div class="status">
+    <span class="soon"><span class="soon-dot" aria-hidden="true"></span>Bald im App Store</span>
+    <span>6,99 US-Dollar in den USA, einmaliger Kauf</span>
+    <span>Mac · iPhone · iPad · Apple&nbsp;Watch</span>
+  </div>
+  <figure class="hero-shot device"><img src="/fagl/assets/de/hero.webp" width="1800" height="1454" alt="FAGL auf dem Mac: der Awesome Life Timer mit roter Scheibe, die heutigen Aufgaben, ein Ziel und das Fokus-Raster." fetchpriority="high"></figure>
+</section>
+
+<section class="section wrap" aria-labelledby="timer">
+  <div class="split">
+    <div>
+      <p class="eyebrow">Awesome Life Timer</p>
+      <h2 id="timer">Zeit, die man sieht.</h2>
+      <p class="section-lead">Eine rote Scheibe zeigt, wie viel Zeit für die aktuelle Aufgabe noch bleibt. So weißt du auf einen Blick, wo du stehst, ohne Zahlen zu lesen.</p>
+      <dl class="points"><div><dt>Tiefenfokus</dt><dd>Nur der Timer, im Vollbild, und der Bildschirm bleibt an.</dd></div><div><dt>Wiederholungsmodus</dt><dd>Eine Aufgabe in mehreren Runden, mit Pausen dazwischen.</dd></div><div><dt>Auf dem Mac</dt><dd>Die Restzeit steht in der Notch und in der Menüleiste.</dd></div></dl>
+    </div>
+    <div class="phones">
+      <figure class="device phone"><img src="/fagl/assets/de/today.webp" width="640" height="1391" alt="Der Heute-Bildschirm auf dem iPhone: der Awesome Life Timer zählt eine Aufgabe herunter, darunter die heutigen Aufgaben." loading="lazy" decoding="async"></figure>
+      <figure class="device phone"><img src="/fagl/assets/de/focus.webp" width="640" height="1391" alt="Tiefenfokus auf dem iPhone: nur die rote Scheibe und die Restzeit auf schwarzem Grund." loading="lazy" decoding="async"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section wrap" aria-labelledby="grid">
+  <p class="eyebrow">Fokus-Raster</p>
+  <h2 id="grid">Jede Sitzung hinterlässt Spuren.</h2>
+  <ol class="steps" role="list">
+    <li class="step">
+      <div><span class="step-num" aria-hidden="true">01</span><h3>Fokussieren</h3><p>Wähle eine Aufgabe und starte den Timer.</p></div>
+      <div class="step-visual"><div class="demo" role="img" aria-label="Timer-Demo: Die rote Scheibe schrumpft, während die Minuten ablaufen."><span class="demo-time" aria-hidden="true">18:21</span></div></div>
+    </li>
+    <li class="step">
+      <div><span class="step-num" aria-hidden="true">02</span><h3>Zurückblicken</h3><p>Danach bewertest du die Sitzung und schreibst eine kurze Notiz.</p></div>
+      <div class="step-visual"><img class="shot" src="/fagl/assets/de/reflect.webp" width="760" height="889" alt="Der Rückblick: Zielzeit, Fokuszeit und Fortschritt, eine Bewertung von 1 bis 5 und eine Notiz." loading="lazy" decoding="async"></div>
+    </li>
+    <li class="step step--wide">
+      <div><span class="step-num" aria-hidden="true">03</span><h3>Raster füllen</h3><p>Je länger du dich fokussierst, desto dunkler wird das Feld des Tages.</p></div>
+      <div class="step-visual"><img class="shot" src="/fagl/assets/de/grass.webp" width="1600" height="370" alt="Das Fokus-Raster: ein Jahr in Feldern, jedes umso grüner, je länger du an dem Tag fokussiert warst." loading="lazy" decoding="async"></div>
+    </li>
+  </ol>
+  <p class="note">Im Verlauf findest du alle Rückblicke, dein Wochenziel und wie gut du Zeiten einschätzt.</p>
+</section>
+
+<section class="section wrap" aria-labelledby="devices">
+  <div class="split split--flip">
+    <div>
+      <p class="eyebrow">Auf allen Geräten</p>
+      <h2 id="devices">Einmal kaufen, auf Mac, iPhone, iPad und Apple&nbsp;Watch nutzen.</h2>
+      <dl class="points"><div><dt>Mac</dt><dd>Notch-Anzeige, Menüleiste und schnelles Hinzufügen per Tastenkürzel, aus jeder App.</dd></div><div><dt>iPhone und iPad</dt><dd>Widgets für Home- und Sperrbildschirm. Auf dem iPhone zeigt eine Live-Aktivität die Restzeit.</dd></div><div><dt>Apple&nbsp;Watch</dt><dd>Starten, pausieren und abschließen am Handgelenk, mit der Restzeit als Komplikation.</dd></div><div><dt>Deine Daten</dt><dd>Mit einer .fagl-Backup-Datei per AirDrop auf ein anderes Gerät übertragen.</dd></div></dl>
+    </div>
+    <div class="devices">
+      <figure class="device tablet"><img src="/fagl/assets/de/ipad.webp" width="840" height="1120" alt="Ziele auf dem iPad: ein Ziel in Phasen aufgeteilt, mit den Aufgaben der aktuellen Phase." loading="lazy" decoding="async"></figure>
+      <figure class="device watch"><img src="/fagl/assets/de/watch.webp" width="422" height="514" alt="Apple&nbsp;Watch: die rote Scheibe zählt eine Aufgabe herunter, mit Stopp- und Pausentaste." loading="lazy" decoding="async"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section wrap promise" aria-labelledby="privacy">
+  <p class="eyebrow">Datenschutz</p>
+  <h2 id="privacy">Kein Konto, keine Werbung, kein Tracking.</h2>
+  <p class="section-lead">Aufgaben, Fokuszeiten, Ziele und Rückblicke werden auf deinem Gerät gespeichert. FAGL nutzt keine SDKs von Drittanbietern für Analyse, Werbung oder Tracking.</p>
+  <ul class="chips" role="list"><li>Einmal kaufen</li><li>Kein Konto</li><li>Keine Werbung</li><li>Keine Analyse, kein Tracking</li><li>AI nur, wenn du willst</li></ul>
+  <div class="ai">
+    <h3>AI nur, wenn du willst</h3>
+    <p>Zu jedem Kauf gehört ein kostenloses Cloud-AI-Guthaben mit Claude von Anthropic. Die Cloud-AI ist ab 18 und läuft erst, wenn du in der App zustimmst. Auf unterstützten Geräten funktioniert auch Apples AI auf dem Gerät, und alle Kernfunktionen laufen ohne AI.</p>
+    <p>Mehr Cloud-AI gibt es mit AI Plus, einem optionalen Abo für 2,99 US-Dollar im Monat. Preise je nach Land oder Region.</p>
+    <p class="links"><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Nutzungsbedingungen (Apples Standard-Lizenzvertrag)</a><a href="/fagl/de/privacy/">Datenschutzerklärung</a></p>
+  </div>
+</section>
+
+<section class="closing wrap" aria-labelledby="soon">
+  <span class="app-icon" style="--icon: 72px; --art: url(/fagl/assets/icon.webp)"><img src="/fagl/assets/icon.webp" alt="" width="288" height="288" loading="lazy"></span>
+  <h2 id="soon">Bald im App Store.</h2>
+  <p>Für Mac, iPhone, iPad und Apple&nbsp;Watch. 6,99 US-Dollar, einmaliger Kauf. Preise je nach Land oder Region.</p>
+  <p class="links"><a href="/fagl/de/support/">Support</a><a href="/fagl/de/privacy/">Datenschutzerklärung</a></p>
+</section>
+</main>
+<footer class="wrap">
+  <div class="bottom">
+    <nav aria-label="FAGL">
+      <a href="/fagl/de/">FAGL</a>
+      <a href="/fagl/de/support/">Support</a>
+      <a href="/fagl/de/privacy/">Datenschutzerklärung</a>
+      <a href="/">JML.Studio</a>
+    </nav>
+    <p>&copy; 2026 JML.Studio</p>
+  </div>
+</footer>
+</body>
+</html>

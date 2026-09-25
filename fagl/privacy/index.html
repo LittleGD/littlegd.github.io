@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Every language has its own address. ?lang= on any page opens that language.
+   The English address is also the default one: a visitor who comes to it from
+   outside these pages goes to the language they last picked here, or else to
+   the first of their browser's languages that FAGL has. */
+(function () {
+  var here = 'en', urls = {"en": "/fagl/privacy/", "ko": "/fagl/ko/privacy/", "ja": "/fagl/ja/privacy/", "zh-Hant": "/fagl/zh-hant/privacy/", "de": "/fagl/de/privacy/"}, want;
+  function pick(tag) {
+    var t = String(tag || '').toLowerCase();
+    if (/^zh-(hant|tw|hk|mo)(-|$)/.test(t)) return 'zh-Hant';
+    return { en: 'en', ko: 'ko', ja: 'ja', de: 'de' }[t.split('-')[0]];
+  }
+  try { want = pick(new URLSearchParams(location.search).get('lang')); } catch (e) {}
+  if (!want && here === 'en' && document.referrer.indexOf(location.origin + '/fagl/') !== 0) {
+    try { want = pick(localStorage.getItem('fagl-lang')); } catch (e) {}
+    var list = navigator.languages || [navigator.language];
+    for (var i = 0; !want && i < list.length; i++) want = pick(list[i]);
+  }
+  if (want && want !== here) location.replace(urls[want] + location.hash);
+})();
+</script>
+<title>Privacy Policy · FAGL</title>
+<meta name="description" content="How FAGL handles your data: what stays on your device, what the optional cloud AI sends and keeps, and your rights.">
+<meta name="author" content="Jongmin Lee">
+<link rel="canonical" href="https://littlegd.github.io/fagl/privacy/">
+<link rel="alternate" hreflang="en" href="https://littlegd.github.io/fagl/privacy/">
+<link rel="alternate" hreflang="ko" href="https://littlegd.github.io/fagl/ko/privacy/">
+<link rel="alternate" hreflang="ja" href="https://littlegd.github.io/fagl/ja/privacy/">
+<link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/fagl/zh-hant/privacy/">
+<link rel="alternate" hreflang="de" href="https://littlegd.github.io/fagl/de/privacy/">
+<link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/fagl/privacy/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JML.Studio">
+<meta property="og:url" content="https://littlegd.github.io/fagl/privacy/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:title" content="Privacy Policy · FAGL">
+<meta property="og:description" content="How FAGL handles your data: what stays on your device, what the optional cloud AI sends and keeps, and your rights.">
+<meta property="og:image" content="https://littlegd.github.io/fagl/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="FAGL: Focused Action, Goalful Life. A focus timer on iPhone with a red disc showing the time left.">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" type="image/png" href="/fagl/assets/favicon.png">
+<link rel="apple-touch-icon" href="/fagl/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/fagl/fagl.css">
+<script src="/fagl/fagl.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top wrap">
+  <nav class="crumbs" aria-label="JML.Studio"><a class="studio" href="/"><span class="sr">JML.Studio</span><svg class="wordmark" viewBox="0 0 108 12" width="108" height="12" aria-hidden="true" focusable="false" shape-rendering="crispEdges"><path fill="currentColor" d="M0 0h9v3h-9zM11 0h6v3h-6zM22 0h3v3h-3zM47 0h6v3h-6zM55 0h3v3h-3zM83 0h3v3h-3zM91 0h3v3h-3zM6 3h3v3h-3zM11 3h9v3h-9zM22 3h3v3h-3zM44 3h6v3h-6zM55 3h6v3h-6zM66 3h3v3h-3zM72 3h3v3h-3zM77 3h9v3h-9zM99 3h9v3h-9zM6 6h3v3h-3zM11 6h3v3h-3zM17 6h3v3h-3zM22 6h3v3h-3zM50 6h3v3h-3zM55 6h3v3h-3zM66 6h3v3h-3zM72 6h3v3h-3zM77 6h3v3h-3zM83 6h3v3h-3zM88 6h6v3h-6zM99 6h3v3h-3zM105 6h3v3h-3zM0 9h6v3h-6zM11 9h3v3h-3zM17 9h3v3h-3zM22 9h9v3h-9zM36 9h3v3h-3zM44 9h6v3h-6zM58 9h6v3h-6zM69 9h6v3h-6zM77 9h9v3h-9zM91 9h6v3h-6zM99 9h9v3h-9z"/></svg></a><span class="crumb-sep" aria-hidden="true"></span><a class="crumb-app" href="/fagl/"><img src="/fagl/assets/icon.webp" alt="" width="24" height="24"><span>FAGL</span></a></nav>
+  <details class="lang">
+    <summary><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M1.75 8h12.5M8 1.75c1.7 1.8 2.6 3.9 2.6 6.25S9.7 12.45 8 14.25C6.3 12.45 5.4 10.35 5.4 8S6.3 3.55 8 1.75z"/></svg><span class="sr">Language: </span>English</summary>
+    <ul class="lang-menu" role="list"><li><a href="/fagl/privacy/" hreflang="en" lang="en" data-set-lang="en" aria-current="true">English</a></li><li><a href="/fagl/ko/privacy/" hreflang="ko" lang="ko" data-set-lang="ko">한국어</a></li><li><a href="/fagl/ja/privacy/" hreflang="ja" lang="ja" data-set-lang="ja">日本語</a></li><li><a href="/fagl/zh-hant/privacy/" hreflang="zh-Hant" lang="zh-Hant" data-set-lang="zh-Hant">繁體中文</a></li><li><a href="/fagl/de/privacy/" hreflang="de" lang="de" data-set-lang="de">Deutsch</a></li></ul>
+  </details>
+</header>
+<main id="main" class="wrap narrow doc">
+<article aria-labelledby="h">
+<div class="page-head"><h1 id="h">FAGL Privacy Policy</h1></div>
+<p class="meta"><strong>Effective date: 2026-09-24</strong> (replaces the version of 2026-06-18)</p>
+<h2>Summary</h2>
+<ul><li>FAGL keeps your to-dos, focus sessions, goals and reflections on your own devices (Mac, iPhone, iPad and Apple Watch). There is no account.</li><li>AI is optional. Cloud AI (Claude by Anthropic) is only for people 18 or older and is used only if you agree in the app. FAGL does not store what you send. Anthropic uses it only to write the answer, does not train on it, and deletes it within 30 days (with narrow exceptions, see section 3).</li><li>To manage the free AI credit, the AI Plus subscription and the daily limits, the FAGL server keeps hashed purchase identifiers with usage totals. It never stores your content or your IP address.</li><li>Apple handles all payments. FAGL only receives Apple-signed transaction information to verify your purchase and subscription.</li><li>The app downloads a daily background photo from picsum.photos and, on Mac and only if you choose, an AI model from Hugging Face.</li><li>No ads, no analytics, no tracking, and no third-party SDKs for analytics, ads or tracking.</li></ul>
+<h2>1. Who we are</h2>
+<p>FAGL is made by Jongmin Lee, an individual developer ("we", "us"). Contact: <a href="mailto:lee1993ljm@gmail.com">lee1993ljm@gmail.com</a></p>
+<h2>2. Data stored on your devices</h2>
+<ul><li>To-dos, goals and roadmaps, focus sessions, reflections (ratings and notes) and settings are stored in the app's own storage on each device where you use FAGL: Mac, iPhone, iPad and Apple Watch. On Mac, this is the app's sandbox container.</li><li>The Apple Watch app gets your to-dos and the timer from FAGL on your paired iPhone and sends its focus sessions back to it. This goes only between your own devices; we never receive it.</li><li>On Mac, iPhone and iPad, FAGL makes automatic local backups in the same storage and keeps the latest 14. Backup files (.fagl) that you export, and CSV exports on Mac, are saved or sent only where you choose.</li><li>If you download the on-device AI model (Mac only), its files are stored on your Mac too.</li><li>We cannot see or access any of this. To delete it, delete the app from each device. On iPhone, iPad and Apple Watch, this deletes its data too. On Mac, also delete the app's data (<code>~/<wbr>Library/<wbr>Containers/<wbr>com.<wbr>jmlee.<wbr>FAGL</code>). Delete any backup files or exports you made yourself.</li></ul>
+<h2>3. Optional cloud AI</h2>
+<p><strong>When it is used.</strong> After the first-launch intro, FAGL asks once whether you want to use cloud AI. It is used only if you confirm that you are 18 or older and agree on that screen. Every purchase of FAGL includes a one-time free cloud AI credit (roughly a few hundred uses) with a daily limit, and the optional AI Plus subscription adds a monthly allowance (section 4). TestFlight beta builds work the same way.</p>
+<p><strong>What is sent.</strong></p>
+<ul><li>With each AI request: only what that feature needs, such as to-do titles and notes, reflections, goals and a summary of your focus time, plus the app language.</li><li>When a session starts (about once a day): the App Store purchase proof that Apple signs for your copy of FAGL (AppTransaction), the Apple-signed subscription transaction if you subscribe to AI Plus, the app version, the platform, and a random installation ID created by the app.</li><li>As with any internet connection: your IP address.</li></ul>
+<p>FAGL does not send your name, email address, Apple Account, contacts, location or hardware identifiers.</p>
+<p><strong>Who processes it, and where.</strong></p>
+<div class="table"><table><thead><tr><th scope="col">Recipient</th><th scope="col">What it does</th><th scope="col">Where</th></tr></thead><tbody><tr><td data-label="Recipient">Cloudflare, Inc. (US company)</td><td data-label="What it does">Hosts the FAGL server (Cloudflare Workers), which verifies purchases and subscriptions, counts usage, blocks abuse and forwards the request to Anthropic.</td><td data-label="Where">Cloudflare data centers worldwide, usually one near you</td></tr><tr><td data-label="Recipient">Anthropic, PBC (US company)</td><td data-label="What it does">Writes the answer with its Claude models. Receives only the request content, the app language and a pseudonymous identifier (a hash, sent as <code>metadata.<wbr>user_id</code> so Anthropic can detect abuse), never your name, email, purchase details, installation ID or IP address.</td><td data-label="Where">Processed on Anthropic's global infrastructure, stored in the USA</td></tr></tbody></table></div>
+<p><strong>Purpose.</strong> To write the AI answer you asked for, to confirm that the request comes from a purchased copy of FAGL (and, for AI Plus, from an active subscription), to manage the free credit, the monthly allowance and the daily limits, and to prevent abuse. Nothing else.</p>
+<p><strong>How long it is kept.</strong></p>
+<ul><li>Request content and answers: the FAGL server does not store them. Anthropic deletes them automatically within 30 days after the answer, unless the law requires it to keep them longer or they are needed to enforce Anthropic's Usage Policy. Content that Anthropic's safety systems flag may be kept for up to 2 years.</li><li>Hashed purchase and subscription identifiers with usage totals: kept while the service runs (section 4).</li><li>Daily usage counters: deleted automatically after about 3 days.</li><li>Hashed IP address for per-minute rate limiting: the hash changes every day, and the IP itself is never stored. It is deleted with the daily counters after about 3 days.</li><li>Purchase proof, subscription transaction, app version, platform and installation ID: checked when the session starts, then discarded.</li><li>Server logs hold only technical events (for example, an error code), never content, identifiers or IP addresses.</li></ul>
+<p><strong>No AI training.</strong> FAGL does not use your content to train AI, and Anthropic does not use API inputs and outputs to train its models.</p>
+<p><strong>How to turn it off.</strong> Choose "On-device only" on the consent screen, or turn off cloud AI in Settings &gt; AI at any time. Turning off "Use AI features" in the same place turns off all AI. Turning off cloud AI does not cancel an AI Plus subscription; cancel it in your App Store account settings.</p>
+<p><strong>What happens instead.</strong> AI runs on your device: with Apple's on-device AI on supported devices, or, on Mac, with the on-device AI model (sections 5 and 6). The same happens when you reach the daily limit or use up the free credit; you can then also subscribe to AI Plus. If neither on-device option is available, only the AI features are unavailable; everything else keeps working.</p>
+<h2>4. Purchases, free credit and AI Plus</h2>
+<p><strong>Payment.</strong> Apple handles all payments for FAGL and AI Plus. We never see your payment details, your name or your Apple Account. FAGL receives only the transaction information that Apple signs (for example, the product, transaction IDs and the subscription's expiry date) and uses it only to verify your purchase and subscription.</p>
+<p><strong>Hashed identifiers.</strong> To give each purchase its one-time free credit, and each subscription its monthly allowance, the server has to recognize repeat requests without knowing who you are. It stores only one-way SHA-256 hashes:</p>
+<ul><li>a hash of the App Store purchase identifier, with the running total of free credit used. It is kept while the service runs, because without it the one-time credit could be claimed again;</li><li>if you subscribe, a hash of the subscription's original transaction ID, with your usage for each billing period, kept while the service runs;</li><li>daily usage counters for the daily limit, deleted after about 3 days.</li></ul>
+<p>We cannot turn these hashes back into the original IDs, and we have no way to connect them to your name, email or Apple Account. They contain no content. Apart from the pseudonymous identifier described in section 3, they are not sent to Anthropic, and they are never used for tracking or advertising.</p>
+<p><strong>AI Plus.</strong> AI Plus is an optional auto-renewable subscription (USD 2.99 per month; prices vary by country or region) that adds a monthly cloud AI allowance with a daily limit. It renews automatically unless you cancel it in your App Store account settings at least 24 hours before the current period ends. It is not available through Family Sharing, and it does not change your one-time purchase of FAGL or its free credit. Terms of Use: Apple's standard license agreement (<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a>).</p>
+<h2>5. Apple's on-device AI</h2>
+<p>On devices that support Apple Intelligence, FAGL can use Apple's on-device model. Requests are processed on your device, and FAGL sends nothing anywhere. Apple Intelligence itself is covered by Apple's privacy terms.</p>
+<h2>6. Optional on-device AI model (download, Mac only)</h2>
+<p>On Mac, in Settings &gt; AI you can choose to download an AI model (about 3.6 GB or 5.2 GB) from Hugging Face, Inc. (USA). Only model files are downloaded; none of your content is uploaded. As with any download, Hugging Face can see your IP address and standard request details. After the download, the model runs offline on your Mac.</p>
+<h2>7. Daily background photo</h2>
+<p>Once a day, FAGL automatically downloads a random background photo from picsum.photos (Lorem Picsum, which serves photos from Unsplash). No personal data is sent with this request. Like any web request, it shows your IP address and standard request details (such as the time) to that service and its hosting provider, which handle them under their own policies.</p>
+<h2>8. What FAGL does not do</h2>
+<p>No account or sign-in. No advertising, analytics, crash-reporting or tracking SDKs. We do not sell or share personal data, build profiles, or track you across apps and websites.</p>
+<h2>9. Legal bases and your rights</h2>
+<p>Where laws such as the GDPR apply: sending your content to cloud AI relies on your consent, which you can withdraw at any time in Settings &gt; AI (this does not affect requests already made). Verifying purchases and subscriptions and keeping the credit and allowance totals are needed to provide what you bought. Rate limiting and the short-lived daily counters rely on our legitimate interest in keeping the service from being abused. You can ask us for access, correction, deletion or restriction, object to processing, and complain to your data protection authority. Because we keep only hashes that we cannot link to you, we usually cannot find data about a specific person. The daily counters delete themselves after about 3 days. Everything on your devices is under your control.</p>
+<h2>10. International transfers</h2>
+<p>Cloud AI requests may be processed in the USA and other countries where Cloudflare and Anthropic operate. Anthropic processes requests on its global infrastructure and stores data in the USA. The data protection laws there may differ from those where you live. By agreeing on the consent screen, you agree to this transfer. You can withdraw at any time as described above.</p>
+<h2>11. Children</h2>
+<p>FAGL has no account and is suitable for all ages, but it is not directed at children, and we do not knowingly collect personal information from them. Cloud AI is only for people 18 or older, in line with Anthropic's rules for services that minors might use, and the consent screen asks you to confirm your age. If you are under 18, please do not turn on cloud AI. On-device AI (Apple Intelligence and the optional on-device model) and every other feature work for everyone.</p>
+<h2>12. Changes to this policy</h2>
+<p>If this policy changes, we will publish the new version at this address with a new effective date. Significant changes, such as a new recipient of data, will also be mentioned in the app's release notes.</p>
+<h2>13. Contact</h2>
+<p>Jongmin Lee · <a href="mailto:lee1993ljm@gmail.com">lee1993ljm@gmail.com</a></p>
+</article>
+</main>
+<footer class="wrap">
+  <div class="bottom">
+    <nav aria-label="FAGL">
+      <a href="/fagl/">FAGL</a>
+      <a href="/fagl/support/">Support</a>
+      <a href="/fagl/privacy/">Privacy Policy</a>
+      <a href="/">JML.Studio</a>
+    </nav>
+    <p>&copy; 2026 JML.Studio</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Every language has its own address. ?lang= on any page opens that language.
+   The English address is also the default one: a visitor who comes to it from
+   outside these pages goes to the language they last picked here, or else to
+   the first of their browser's languages that FAGL has. */
+(function () {
+  var here = 'en', urls = {"en": "/fagl/", "ko": "/fagl/ko/", "ja": "/fagl/ja/", "zh-Hant": "/fagl/zh-hant/", "de": "/fagl/de/"}, want;
+  function pick(tag) {
+    var t = String(tag || '').toLowerCase();
+    if (/^zh-(hant|tw|hk|mo)(-|$)/.test(t)) return 'zh-Hant';
+    return { en: 'en', ko: 'ko', ja: 'ja', de: 'de' }[t.split('-')[0]];
+  }
+  try { want = pick(new URLSearchParams(location.search).get('lang')); } catch (e) {}
+  if (!want && here === 'en' && document.referrer.indexOf(location.origin + '/fagl/') !== 0) {
+    try { want = pick(localStorage.getItem('fagl-lang')); } catch (e) {}
+    var list = navigator.languages || [navigator.language];
+    for (var i = 0; !want && i < list.length; i++) want = pick(list[i]);
+  }
+  if (want && want !== here) location.replace(urls[want] + location.hash);
+})();
+</script>
+<title>FAGL: Focus Timer &amp; Goals for Mac, iPhone, iPad and Apple Watch</title>
+<meta name="description" content="Give each to-do a goal time, watch it count down, and reflect when you&#x27;re done. Your focus fills a daily grid. No account, no ads, no tracking. One-time purchase.">
+<meta name="author" content="Jongmin Lee">
+<link rel="canonical" href="https://littlegd.github.io/fagl/">
+<link rel="alternate" hreflang="en" href="https://littlegd.github.io/fagl/">
+<link rel="alternate" hreflang="ko" href="https://littlegd.github.io/fagl/ko/">
+<link rel="alternate" hreflang="ja" href="https://littlegd.github.io/fagl/ja/">
+<link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/fagl/zh-hant/">
+<link rel="alternate" hreflang="de" href="https://littlegd.github.io/fagl/de/">
+<link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/fagl/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JML.Studio">
+<meta property="og:url" content="https://littlegd.github.io/fagl/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:title" content="FAGL: Focus Timer &amp; Goals for Mac, iPhone, iPad and Apple Watch">
+<meta property="og:description" content="Give each to-do a goal time, watch it count down, and reflect when you&#x27;re done. Your focus fills a daily grid. No account, no ads, no tracking. One-time purchase.">
+<meta property="og:image" content="https://littlegd.github.io/fagl/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="FAGL: Focused Action, Goalful Life. A focus timer on iPhone with a red disc showing the time left.">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "FAGL: Focus Timer & Goals",
+  "alternateName": "FAGL",
+  "description": "Give each to-do a goal time, watch it count down, and reflect when you're done. Your focus fills a daily grid. No account, no ads, no tracking. One-time purchase.",
+  "url": "https://littlegd.github.io/fagl/",
+  "image": "https://littlegd.github.io/assets/fagl-icon-512.png",
+  "screenshot": "https://littlegd.github.io/fagl/assets/en/hero.webp",
+  "applicationCategory": "BusinessApplication",
+  "applicationSubCategory": "Productivity",
+  "operatingSystem": "macOS 26+, iOS 26.1+, iPadOS 26.1+, watchOS 26+",
+  "inLanguage": [
+    "en",
+    "ko",
+    "ja",
+    "zh-Hant",
+    "de"
+  ],
+  "author": {
+    "@type": "Organization",
+    "@id": "https://littlegd.github.io/#studio",
+    "name": "JML.Studio",
+    "url": "https://littlegd.github.io/"
+  }
+}
+</script>
+
+<link rel="icon" type="image/png" href="/fagl/assets/favicon.png">
+<link rel="apple-touch-icon" href="/fagl/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/fagl/fagl.css">
+<script src="/fagl/fagl.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top wrap">
+  <nav class="crumbs" aria-label="JML.Studio"><a class="studio" href="/"><span class="sr">JML.Studio</span><svg class="wordmark" viewBox="0 0 108 12" width="108" height="12" aria-hidden="true" focusable="false" shape-rendering="crispEdges"><path fill="currentColor" d="M0 0h9v3h-9zM11 0h6v3h-6zM22 0h3v3h-3zM47 0h6v3h-6zM55 0h3v3h-3zM83 0h3v3h-3zM91 0h3v3h-3zM6 3h3v3h-3zM11 3h9v3h-9zM22 3h3v3h-3zM44 3h6v3h-6zM55 3h6v3h-6zM66 3h3v3h-3zM72 3h3v3h-3zM77 3h9v3h-9zM99 3h9v3h-9zM6 6h3v3h-3zM11 6h3v3h-3zM17 6h3v3h-3zM22 6h3v3h-3zM50 6h3v3h-3zM55 6h3v3h-3zM66 6h3v3h-3zM72 6h3v3h-3zM77 6h3v3h-3zM83 6h3v3h-3zM88 6h6v3h-6zM99 6h3v3h-3zM105 6h3v3h-3zM0 9h6v3h-6zM11 9h3v3h-3zM17 9h3v3h-3zM22 9h9v3h-9zM36 9h3v3h-3zM44 9h6v3h-6zM58 9h6v3h-6zM69 9h6v3h-6zM77 9h9v3h-9zM91 9h6v3h-6zM99 9h9v3h-9z"/></svg></a></nav>
+  <details class="lang">
+    <summary><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M1.75 8h12.5M8 1.75c1.7 1.8 2.6 3.9 2.6 6.25S9.7 12.45 8 14.25C6.3 12.45 5.4 10.35 5.4 8S6.3 3.55 8 1.75z"/></svg><span class="sr">Language: </span>English</summary>
+    <ul class="lang-menu" role="list"><li><a href="/fagl/" hreflang="en" lang="en" data-set-lang="en" aria-current="true">English</a></li><li><a href="/fagl/ko/" hreflang="ko" lang="ko" data-set-lang="ko">한국어</a></li><li><a href="/fagl/ja/" hreflang="ja" lang="ja" data-set-lang="ja">日本語</a></li><li><a href="/fagl/zh-hant/" hreflang="zh-Hant" lang="zh-Hant" data-set-lang="zh-Hant">繁體中文</a></li><li><a href="/fagl/de/" hreflang="de" lang="de" data-set-lang="de">Deutsch</a></li></ul>
+  </details>
+</header>
+<main id="main">
+<section class="hero wrap" aria-labelledby="top">
+  <span class="app-icon" style="--art: url(/fagl/assets/icon.webp)"><img src="/fagl/assets/icon.webp" alt="" width="288" height="288"></span>
+  <h1 id="top">FAGL</h1>
+  <p class="motto">Focused Action, Goalful Life.</p>
+  <p class="lead">Give each to-do a goal time, then watch it count down.</p>
+  <p class="sub">Reflect when you&#x27;re done, and your focus fills a daily grid.</p>
+  <div class="status">
+    <span class="soon"><span class="soon-dot" aria-hidden="true"></span>Coming soon to the App Store</span>
+    <span>US$6.99 in the U.S., one-time purchase</span>
+    <span>Mac · iPhone · iPad · Apple&nbsp;Watch</span>
+  </div>
+  <figure class="hero-shot device"><img src="/fagl/assets/en/hero.webp" width="1800" height="1454" alt="FAGL on a Mac: the Awesome Life Timer with its red disc, today&#x27;s to-dos, a goal and the focus grid." fetchpriority="high"></figure>
+</section>
+
+<section class="section wrap" aria-labelledby="timer">
+  <div class="split">
+    <div>
+      <p class="eyebrow">Awesome Life Timer</p>
+      <h2 id="timer">Time you can see.</h2>
+      <p class="section-lead">A red disc shows how much time is left for the to-do in front of you. You can tell where you stand at a glance, without reading a number.</p>
+      <dl class="points"><div><dt>Deep Focus</dt><dd>Just the timer, full screen, with the display kept awake.</dd></div><div><dt>Repeat mode</dt><dd>Work through one to-do in rounds, with breaks in between.</dd></div><div><dt>On Mac</dt><dd>The time left sits in the notch and the menu bar.</dd></div></dl>
+    </div>
+    <div class="phones">
+      <figure class="device phone"><img src="/fagl/assets/en/today.webp" width="640" height="1391" alt="The Today screen on iPhone: the Awesome Life Timer counting down a to-do, above the list of today&#x27;s to-dos." loading="lazy" decoding="async"></figure>
+      <figure class="device phone"><img src="/fagl/assets/en/focus.webp" width="640" height="1391" alt="Deep Focus on iPhone: only the red disc and the time left, on a black screen." loading="lazy" decoding="async"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section wrap" aria-labelledby="grid">
+  <p class="eyebrow">Focus grid</p>
+  <h2 id="grid">Every session leaves a mark.</h2>
+  <ol class="steps" role="list">
+    <li class="step">
+      <div><span class="step-num" aria-hidden="true">01</span><h3>Focus</h3><p>Pick a to-do and start the timer.</p></div>
+      <div class="step-visual"><div class="demo" role="img" aria-label="Timer demo: the red disc shrinks as the minutes count down."><span class="demo-time" aria-hidden="true">18:21</span></div></div>
+    </li>
+    <li class="step">
+      <div><span class="step-num" aria-hidden="true">02</span><h3>Reflect</h3><p>When you finish, rate the session and add a short note.</p></div>
+      <div class="step-visual"><img class="shot" src="/fagl/assets/en/reflect.webp" width="760" height="889" alt="The reflection sheet: goal time, focus time and progress, a rating from 1 to 5, and a note." loading="lazy" decoding="async"></div>
+    </li>
+    <li class="step step--wide">
+      <div><span class="step-num" aria-hidden="true">03</span><h3>Fill the grid</h3><p>The longer you focus, the darker that day&#x27;s square gets.</p></div>
+      <div class="step-visual"><img class="shot" src="/fagl/assets/en/grass.webp" width="1600" height="370" alt="The focus grid: a year of days as squares, each one greener the longer you focused." loading="lazy" decoding="async"></div>
+    </li>
+  </ol>
+  <p class="note">History keeps every reflection, your weekly goal, and how close your time estimates were.</p>
+</section>
+
+<section class="section wrap" aria-labelledby="devices">
+  <div class="split split--flip">
+    <div>
+      <p class="eyebrow">Across your devices</p>
+      <h2 id="devices">One purchase for Mac, iPhone, iPad and Apple&nbsp;Watch.</h2>
+      <dl class="points"><div><dt>Mac</dt><dd>Notch display, menu bar, and Quick Add from any app with a global shortcut.</dd></div><div><dt>iPhone and iPad</dt><dd>Widgets for the Home Screen and Lock Screen. On iPhone, a Live Activity shows the time left.</dd></div><div><dt>Apple&nbsp;Watch</dt><dd>Start, pause and finish from your wrist, with the time left on a complication.</dd></div><div><dt>Your records</dt><dd>Move them to another device in one .fagl backup file, sent over AirDrop.</dd></div></dl>
+    </div>
+    <div class="devices">
+      <figure class="device tablet"><img src="/fagl/assets/en/ipad.webp" width="840" height="1120" alt="Goals on iPad: a goal split into stages, with the to-dos for the current stage." loading="lazy" decoding="async"></figure>
+      <figure class="device watch"><img src="/fagl/assets/en/watch.webp" width="422" height="514" alt="Apple&nbsp;Watch: the red disc counting down a to-do, with stop and pause buttons." loading="lazy" decoding="async"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section wrap promise" aria-labelledby="privacy">
+  <p class="eyebrow">Privacy</p>
+  <h2 id="privacy">No account, no ads, no tracking.</h2>
+  <p class="section-lead">Your to-dos, focus sessions, goals and reflections are saved on your device. FAGL uses no third-party analytics, ad or tracking SDKs.</p>
+  <ul class="chips" role="list"><li>One-time purchase</li><li>No account</li><li>No ads</li><li>No analytics or tracking</li><li>AI only if you want it</li></ul>
+  <div class="ai">
+    <h3>AI, only if you want it</h3>
+    <p>Every purchase includes a free cloud AI credit, powered by Claude from Anthropic. It&#x27;s for ages 18 and up and runs only after you agree in the app. On supported devices, Apple&#x27;s on-device AI works too, and every core feature works with AI turned off.</p>
+    <p>Want more cloud AI? AI Plus is an optional subscription at US$2.99 a month. Prices vary by country or region.</p>
+    <p class="links"><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use (Apple&#x27;s standard EULA)</a><a href="/fagl/privacy/">Privacy Policy</a></p>
+  </div>
+</section>
+
+<section class="closing wrap" aria-labelledby="soon">
+  <span class="app-icon" style="--icon: 72px; --art: url(/fagl/assets/icon.webp)"><img src="/fagl/assets/icon.webp" alt="" width="288" height="288" loading="lazy"></span>
+  <h2 id="soon">Coming soon to the App Store.</h2>
+  <p>Mac, iPhone, iPad and Apple&nbsp;Watch. US$6.99, one-time purchase. Prices vary by country or region.</p>
+  <p class="links"><a href="/fagl/support/">Support</a><a href="/fagl/privacy/">Privacy Policy</a></p>
+</section>
+</main>
+<footer class="wrap">
+  <div class="bottom">
+    <nav aria-label="FAGL">
+      <a href="/fagl/">FAGL</a>
+      <a href="/fagl/support/">Support</a>
+      <a href="/fagl/privacy/">Privacy Policy</a>
+      <a href="/">JML.Studio</a>
+    </nav>
+    <p>&copy; 2026 JML.Studio</p>
+  </div>
+</footer>
+</body>
+</html>

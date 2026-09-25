@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Every language has its own address. ?lang= on any page opens that language.
+   The English address is also the default one: a visitor who comes to it from
+   outside these pages goes to the language they last picked here, or else to
+   the first of their browser's languages that FAGL has. */
+(function () {
+  var here = 'zh-Hant', urls = {"en": "/fagl/support/", "ko": "/fagl/ko/support/", "ja": "/fagl/ja/support/", "zh-Hant": "/fagl/zh-hant/support/", "de": "/fagl/de/support/"}, want;
+  function pick(tag) {
+    var t = String(tag || '').toLowerCase();
+    if (/^zh-(hant|tw|hk|mo)(-|$)/.test(t)) return 'zh-Hant';
+    return { en: 'en', ko: 'ko', ja: 'ja', de: 'de' }[t.split('-')[0]];
+  }
+  try { want = pick(new URLSearchParams(location.search).get('lang')); } catch (e) {}
+  if (!want && here === 'en' && document.referrer.indexOf(location.origin + '/fagl/') !== 0) {
+    try { want = pick(localStorage.getItem('fagl-lang')); } catch (e) {}
+    var list = navigator.languages || [navigator.language];
+    for (var i = 0; !want && i < list.length; i++) want = pick(list[i]);
+  }
+  if (want && want !== here) location.replace(urls[want] + location.hash);
+})();
+</script>
+<title>支援 · FAGL</title>
+<meta name="description" content="FAGL 說明：iCloud 與備份、AI 與 AI Plus、Apple Watch、恢復購買，以及聯絡方式。">
+<meta name="author" content="Jongmin Lee">
+<link rel="canonical" href="https://littlegd.github.io/fagl/zh-hant/support/">
+<link rel="alternate" hreflang="en" href="https://littlegd.github.io/fagl/support/">
+<link rel="alternate" hreflang="ko" href="https://littlegd.github.io/fagl/ko/support/">
+<link rel="alternate" hreflang="ja" href="https://littlegd.github.io/fagl/ja/support/">
+<link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/fagl/zh-hant/support/">
+<link rel="alternate" hreflang="de" href="https://littlegd.github.io/fagl/de/support/">
+<link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/fagl/support/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JML.Studio">
+<meta property="og:url" content="https://littlegd.github.io/fagl/zh-hant/support/">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:title" content="支援 · FAGL">
+<meta property="og:description" content="FAGL 說明：iCloud 與備份、AI 與 AI Plus、Apple Watch、恢復購買，以及聯絡方式。">
+<meta property="og:image" content="https://littlegd.github.io/fagl/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="FAGL: Focused Action, Goalful Life. A focus timer on iPhone with a red disc showing the time left.">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" type="image/png" href="/fagl/assets/favicon.png">
+<link rel="apple-touch-icon" href="/fagl/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/fagl/fagl.css">
+<script src="/fagl/fagl.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">跳到主要內容</a>
+<header class="top wrap">
+  <nav class="crumbs" aria-label="JML.Studio"><a class="studio" href="/"><span class="sr">JML.Studio</span><svg class="wordmark" viewBox="0 0 108 12" width="108" height="12" aria-hidden="true" focusable="false" shape-rendering="crispEdges"><path fill="currentColor" d="M0 0h9v3h-9zM11 0h6v3h-6zM22 0h3v3h-3zM47 0h6v3h-6zM55 0h3v3h-3zM83 0h3v3h-3zM91 0h3v3h-3zM6 3h3v3h-3zM11 3h9v3h-9zM22 3h3v3h-3zM44 3h6v3h-6zM55 3h6v3h-6zM66 3h3v3h-3zM72 3h3v3h-3zM77 3h9v3h-9zM99 3h9v3h-9zM6 6h3v3h-3zM11 6h3v3h-3zM17 6h3v3h-3zM22 6h3v3h-3zM50 6h3v3h-3zM55 6h3v3h-3zM66 6h3v3h-3zM72 6h3v3h-3zM77 6h3v3h-3zM83 6h3v3h-3zM88 6h6v3h-6zM99 6h3v3h-3zM105 6h3v3h-3zM0 9h6v3h-6zM11 9h3v3h-3zM17 9h3v3h-3zM22 9h9v3h-9zM36 9h3v3h-3zM44 9h6v3h-6zM58 9h6v3h-6zM69 9h6v3h-6zM77 9h9v3h-9zM91 9h6v3h-6zM99 9h9v3h-9z"/></svg></a><span class="crumb-sep" aria-hidden="true"></span><a class="crumb-app" href="/fagl/zh-hant/"><img src="/fagl/assets/icon.webp" alt="" width="24" height="24"><span>FAGL</span></a></nav>
+  <details class="lang">
+    <summary><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M1.75 8h12.5M8 1.75c1.7 1.8 2.6 3.9 2.6 6.25S9.7 12.45 8 14.25C6.3 12.45 5.4 10.35 5.4 8S6.3 3.55 8 1.75z"/></svg><span class="sr">語言: </span>繁體中文</summary>
+    <ul class="lang-menu" role="list"><li><a href="/fagl/support/" hreflang="en" lang="en" data-set-lang="en">English</a></li><li><a href="/fagl/ko/support/" hreflang="ko" lang="ko" data-set-lang="ko">한국어</a></li><li><a href="/fagl/ja/support/" hreflang="ja" lang="ja" data-set-lang="ja">日本語</a></li><li><a href="/fagl/zh-hant/support/" hreflang="zh-Hant" lang="zh-Hant" data-set-lang="zh-Hant" aria-current="true">繁體中文</a></li><li><a href="/fagl/de/support/" hreflang="de" lang="de" data-set-lang="de">Deutsch</a></li></ul>
+  </details>
+</header>
+<main id="main" class="wrap narrow doc">
+<div class="page-head">
+  <h1>FAGL 支援</h1>
+  <p>有問題、想回報錯誤或提供建議，歡迎寄電子郵件給我們，我們會盡快回覆。</p>
+</div>
+<section class="contact" id="contact" aria-labelledby="contact-title">
+  <h2 id="contact-title">聯絡我們</h2>
+  <a class="mail" href="mailto:lee1993ljm@gmail.com?subject=FAGL">lee1993ljm@gmail.com</a>
+  <p>來信時附上使用的裝置、系統版本和發生的狀況，可以幫助我們更快處理。</p>
+</section>
+<ul class="faq" role="list"><li><h2>可以透過 iCloud 同步嗎？</h2><p>可以在「設定 &gt; 資料 &gt; iCloud 同步」查看狀態。如果顯示「關閉」，紀錄只會儲存在那台裝置上。這時也可以依照下方的方式，用備份檔案把紀錄搬到其他裝置。</p></li><li><h2>要怎麼備份紀錄，或搬到其他裝置？</h2><p>在「設定 &gt; 資料 &gt; 匯出備份檔案」會產生一個 .fagl 檔案，可以存起來，或用 AirDrop 傳送。在另一台裝置上開啟這個檔案，或使用「匯入備份檔案」即可。匯入前會先列出要新增或更新的內容，並先備份目前的紀錄。在 Mac 上，也會自動保留最近 14 份本機備份。</p></li><li><h2>AI 怎麼運作？AI Plus 是什麼？</h2><p>AI 是選用功能。購買 App 就附贈一次性的雲端 AI 免費額度，另有每日上限，僅限年滿 18 歲、並在 App 內同意後才會使用。用完免費額度或每日上限，或是關閉雲端 AI 時，支援的裝置會改用 Apple Intelligence 處理；在 Mac 上也可以下載離線模型來使用。AI Plus（每月 US$2.99）是選用訂閱，可每月增加雲端 AI 使用額度。AI 可以在「設定 &gt; AI」開啟或關閉。</p></li><li><h2>Apple&nbsp;Watch 要怎麼用？</h2><p>手錶 App 會搭配已配對 iPhone 上的 FAGL 一起運作。可以在手腕上開始、暫停、完成待辦事項，並透過複雜功能查看剩餘時間。</p></li><li><h2>如何恢復購買、取消 AI Plus 或申請退款？</h2><p>FAGL 是綁定 Apple 帳號的一次性購買，只要用同一個帳號登入，再從 App Store 重新下載即可。AI Plus 可以在「設定 &gt; AI」點選「恢復購買」。若要取消，請在續訂前至少 24 小時，透過同一處的「管理訂閱」或 App Store 帳號設定取消。退款由 Apple 處理（<a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>）。</p></li><li><h2>需要什麼裝置？</h2><p>Mac 需搭載 Apple 晶片並安裝 macOS 26 以上；iPhone 和 iPad 需 iOS、iPadOS 26.1 以上。手錶 App 需要 watchOS 26 以上的 Apple&nbsp;Watch，以及已配對的 iPhone。</p></li></ul>
+<p class="more"><a href="/fagl/zh-hant/privacy/">隱私權政策</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">使用條款（Apple 標準授權合約）</a></p>
+</main>
+<footer class="wrap">
+  <div class="bottom">
+    <nav aria-label="FAGL">
+      <a href="/fagl/zh-hant/">FAGL</a>
+      <a href="/fagl/zh-hant/support/">支援</a>
+      <a href="/fagl/zh-hant/privacy/">隱私權政策</a>
+      <a href="/">JML.Studio</a>
+    </nav>
+    <p>&copy; 2026 JML.Studio</p>
+  </div>
+</footer>
+</body>
+</html>

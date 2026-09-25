@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Every language has its own address. ?lang= on any page opens that language.
+   The English address is also the default one: a visitor who comes to it from
+   outside these pages goes to the language they last picked here, or else to
+   the first of their browser's languages that FAGL has. */
+(function () {
+  var here = 'zh-Hant', urls = {"en": "/fagl/", "ko": "/fagl/ko/", "ja": "/fagl/ja/", "zh-Hant": "/fagl/zh-hant/", "de": "/fagl/de/"}, want;
+  function pick(tag) {
+    var t = String(tag || '').toLowerCase();
+    if (/^zh-(hant|tw|hk|mo)(-|$)/.test(t)) return 'zh-Hant';
+    return { en: 'en', ko: 'ko', ja: 'ja', de: 'de' }[t.split('-')[0]];
+  }
+  try { want = pick(new URLSearchParams(location.search).get('lang')); } catch (e) {}
+  if (!want && here === 'en' && document.referrer.indexOf(location.origin + '/fagl/') !== 0) {
+    try { want = pick(localStorage.getItem('fagl-lang')); } catch (e) {}
+    var list = navigator.languages || [navigator.language];
+    for (var i = 0; !want && i < list.length; i++) want = pick(list[i]);
+  }
+  if (want && want !== here) location.replace(urls[want] + location.hash);
+})();
+</script>
+<title>FAGL：專注計時器與目標管理 | Mac、iPhone、iPad、Apple Watch</title>
+<meta name="description" content="為每個待辦事項設定目標時間，看著時間倒數專心做事，完成後簡單回顧。每天的專注都會累積在方格上。一次購買、不需要帳號、沒有廣告或追蹤。">
+<meta name="author" content="Jongmin Lee">
+<link rel="canonical" href="https://littlegd.github.io/fagl/zh-hant/">
+<link rel="alternate" hreflang="en" href="https://littlegd.github.io/fagl/">
+<link rel="alternate" hreflang="ko" href="https://littlegd.github.io/fagl/ko/">
+<link rel="alternate" hreflang="ja" href="https://littlegd.github.io/fagl/ja/">
+<link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/fagl/zh-hant/">
+<link rel="alternate" hreflang="de" href="https://littlegd.github.io/fagl/de/">
+<link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/fagl/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JML.Studio">
+<meta property="og:url" content="https://littlegd.github.io/fagl/zh-hant/">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:title" content="FAGL：專注計時器與目標管理 | Mac、iPhone、iPad、Apple Watch">
+<meta property="og:description" content="為每個待辦事項設定目標時間，看著時間倒數專心做事，完成後簡單回顧。每天的專注都會累積在方格上。一次購買、不需要帳號、沒有廣告或追蹤。">
+<meta property="og:image" content="https://littlegd.github.io/fagl/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="FAGL: Focused Action, Goalful Life. A focus timer on iPhone with a red disc showing the time left.">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "FAGL: Focus Timer & Goals",
+  "alternateName": "FAGL",
+  "description": "為每個待辦事項設定目標時間，看著時間倒數專心做事，完成後簡單回顧。每天的專注都會累積在方格上。一次購買、不需要帳號、沒有廣告或追蹤。",
+  "url": "https://littlegd.github.io/fagl/zh-hant/",
+  "image": "https://littlegd.github.io/assets/fagl-icon-512.png",
+  "screenshot": "https://littlegd.github.io/fagl/assets/zh-hant/hero.webp",
+  "applicationCategory": "BusinessApplication",
+  "applicationSubCategory": "Productivity",
+  "operatingSystem": "macOS 26+, iOS 26.1+, iPadOS 26.1+, watchOS 26+",
+  "inLanguage": [
+    "en",
+    "ko",
+    "ja",
+    "zh-Hant",
+    "de"
+  ],
+  "author": {
+    "@type": "Organization",
+    "@id": "https://littlegd.github.io/#studio",
+    "name": "JML.Studio",
+    "url": "https://littlegd.github.io/"
+  }
+}
+</script>
+
+<link rel="icon" type="image/png" href="/fagl/assets/favicon.png">
+<link rel="apple-touch-icon" href="/fagl/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/fagl/fagl.css">
+<script src="/fagl/fagl.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">跳到主要內容</a>
+<header class="top wrap">
+  <nav class="crumbs" aria-label="JML.Studio"><a class="studio" href="/"><span class="sr">JML.Studio</span><svg class="wordmark" viewBox="0 0 108 12" width="108" height="12" aria-hidden="true" focusable="false" shape-rendering="crispEdges"><path fill="currentColor" d="M0 0h9v3h-9zM11 0h6v3h-6zM22 0h3v3h-3zM47 0h6v3h-6zM55 0h3v3h-3zM83 0h3v3h-3zM91 0h3v3h-3zM6 3h3v3h-3zM11 3h9v3h-9zM22 3h3v3h-3zM44 3h6v3h-6zM55 3h6v3h-6zM66 3h3v3h-3zM72 3h3v3h-3zM77 3h9v3h-9zM99 3h9v3h-9zM6 6h3v3h-3zM11 6h3v3h-3zM17 6h3v3h-3zM22 6h3v3h-3zM50 6h3v3h-3zM55 6h3v3h-3zM66 6h3v3h-3zM72 6h3v3h-3zM77 6h3v3h-3zM83 6h3v3h-3zM88 6h6v3h-6zM99 6h3v3h-3zM105 6h3v3h-3zM0 9h6v3h-6zM11 9h3v3h-3zM17 9h3v3h-3zM22 9h9v3h-9zM36 9h3v3h-3zM44 9h6v3h-6zM58 9h6v3h-6zM69 9h6v3h-6zM77 9h9v3h-9zM91 9h6v3h-6zM99 9h9v3h-9z"/></svg></a></nav>
+  <details class="lang">
+    <summary><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M1.75 8h12.5M8 1.75c1.7 1.8 2.6 3.9 2.6 6.25S9.7 12.45 8 14.25C6.3 12.45 5.4 10.35 5.4 8S6.3 3.55 8 1.75z"/></svg><span class="sr">語言: </span>繁體中文</summary>
+    <ul class="lang-menu" role="list"><li><a href="/fagl/" hreflang="en" lang="en" data-set-lang="en">English</a></li><li><a href="/fagl/ko/" hreflang="ko" lang="ko" data-set-lang="ko">한국어</a></li><li><a href="/fagl/ja/" hreflang="ja" lang="ja" data-set-lang="ja">日本語</a></li><li><a href="/fagl/zh-hant/" hreflang="zh-Hant" lang="zh-Hant" data-set-lang="zh-Hant" aria-current="true">繁體中文</a></li><li><a href="/fagl/de/" hreflang="de" lang="de" data-set-lang="de">Deutsch</a></li></ul>
+  </details>
+</header>
+<main id="main">
+<section class="hero wrap" aria-labelledby="top">
+  <span class="app-icon" style="--art: url(/fagl/assets/icon.webp)"><img src="/fagl/assets/icon.webp" alt="" width="288" height="288"></span>
+  <h1 id="top">FAGL</h1>
+  <p class="motto">Focused Action, Goalful Life.</p>
+  <p class="lead"><span class="ph">為每個待辦事項設定目標時間，</span><span class="ph">看著時間倒數專心做事。</span></p>
+  <p class="sub"><span class="ph">完成後簡單回顧，</span><span class="ph">每天的專注都會累積在方格上。</span></p>
+  <div class="status">
+    <span class="soon"><span class="soon-dot" aria-hidden="true"></span>即將在 App Store 推出</span>
+    <span>一次購買 US$6.99（美國售價）</span>
+    <span>Mac · iPhone · iPad · Apple&nbsp;Watch</span>
+  </div>
+  <figure class="hero-shot device"><img src="/fagl/assets/zh-hant/hero.webp" width="1800" height="1454" alt="Mac 上的 FAGL：用紅色圓盤顯示剩餘時間的 Awesome Life Timer、今日待辦事項、目標與專注方格" fetchpriority="high"></figure>
+</section>
+
+<section class="section wrap" aria-labelledby="timer">
+  <div class="split">
+    <div>
+      <p class="eyebrow">Awesome Life Timer</p>
+      <h2 id="timer"><span class="ph">看得見的剩餘時間。</span></h2>
+      <p class="section-lead">紅色圓盤會顯示眼前這件待辦事項還剩多少時間。不用讀數字，一眼就知道進度。</p>
+      <dl class="points"><div><dt>沉浸模式</dt><dd>全螢幕只顯示計時器，螢幕也不會自動關閉。</dd></div><div><dt>重複模式</dt><dd>同一件待辦事項分成好幾輪進行，中間穿插休息。</dd></div><div><dt>在 Mac 上</dt><dd>剩餘時間會顯示在瀏海和選單列。</dd></div></dl>
+    </div>
+    <div class="phones">
+      <figure class="device phone"><img src="/fagl/assets/zh-hant/today.webp" width="640" height="1391" alt="iPhone 的今天畫面：為待辦事項倒數的 Awesome Life Timer，以及今日待辦事項清單" loading="lazy" decoding="async"></figure>
+      <figure class="device phone"><img src="/fagl/assets/zh-hant/focus.webp" width="640" height="1391" alt="iPhone 的沉浸模式：黑色畫面上只有紅色圓盤和剩餘時間" loading="lazy" decoding="async"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section wrap" aria-labelledby="grid">
+  <p class="eyebrow">專注方格</p>
+  <h2 id="grid"><span class="ph">專注多少，</span><span class="ph">就累積多少。</span></h2>
+  <ol class="steps" role="list">
+    <li class="step">
+      <div><span class="step-num" aria-hidden="true">01</span><h3>專注</h3><p>選一件待辦事項，啟動計時器。</p></div>
+      <div class="step-visual"><div class="demo" role="img" aria-label="計時器示範：時間越少，紅色圓盤也跟著縮小。"><span class="demo-time" aria-hidden="true">18:21</span></div></div>
+    </li>
+    <li class="step">
+      <div><span class="step-num" aria-hidden="true">02</span><h3>回顧</h3><p>完成後打個分數，留下簡短備註。</p></div>
+      <div class="step-visual"><img class="shot" src="/fagl/assets/zh-hant/reflect.webp" width="760" height="791" alt="完成回顧畫面：目標時間、專注時間、達成率、1 到 5 的評分與備註" loading="lazy" decoding="async"></div>
+    </li>
+    <li class="step step--wide">
+      <div><span class="step-num" aria-hidden="true">03</span><h3>方格</h3><p>專注越久，當天的方格顏色就越深。</p></div>
+      <div class="step-visual"><img class="shot" src="/fagl/assets/zh-hant/grass.webp" width="1600" height="370" alt="專注方格：一整年的每一天排成方格，專注越久，綠色越深。" loading="lazy" decoding="async"></div>
+    </li>
+  </ol>
+  <p class="note">在紀錄畫面可以看到過去的回顧、每週目標，以及預估的時間準不準。</p>
+</section>
+
+<section class="section wrap" aria-labelledby="devices">
+  <div class="split split--flip">
+    <div>
+      <p class="eyebrow">在所有裝置上</p>
+      <h2 id="devices"><span class="ph">買一次，</span><span class="ph">Mac、</span><span class="ph">iPhone、</span><span class="ph">iPad、</span><span class="ph">Apple&nbsp;Watch 都能用。</span></h2>
+      <dl class="points"><div><dt>Mac</dt><dd>瀏海顯示、選單列，還能在任何 App 裡用快捷鍵快速新增待辦事項。</dd></div><div><dt>iPhone 與 iPad</dt><dd>支援主畫面與鎖定畫面小工具。在 iPhone 上，即時動態會顯示剩餘時間。</dd></div><div><dt>Apple&nbsp;Watch</dt><dd>在手腕上開始、暫停、完成，也能透過複雜功能查看剩餘時間。</dd></div><div><dt>搬移紀錄</dt><dd>用 AirDrop 傳送一個 .fagl 備份檔案，就能把紀錄搬到其他裝置。</dd></div></dl>
+    </div>
+    <div class="devices">
+      <figure class="device tablet"><img src="/fagl/assets/zh-hant/ipad.webp" width="840" height="1120" alt="iPad 的目標畫面：分成幾個階段的目標，以及目前階段的待辦事項" loading="lazy" decoding="async"></figure>
+      <figure class="device watch"><img src="/fagl/assets/zh-hant/watch.webp" width="422" height="514" alt="Apple&nbsp;Watch：為待辦事項倒數的紅色圓盤，以及停止、暫停按鈕" loading="lazy" decoding="async"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section wrap promise" aria-labelledby="privacy">
+  <p class="eyebrow">隱私</p>
+  <h2 id="privacy"><span class="ph">不需要帳號，</span><span class="ph">沒有廣告，</span><span class="ph">也不追蹤。</span></h2>
+  <p class="section-lead">待辦事項、專注紀錄、目標和回顧都儲存在你的裝置上。不使用任何分析、廣告或追蹤用途的第三方 SDK。</p>
+  <ul class="chips" role="list"><li>一次購買</li><li>不需要帳號</li><li>沒有廣告</li><li>沒有分析或追蹤</li><li>AI 需要時再用</li></ul>
+  <div class="ai">
+    <h3>AI 需要時再用</h3>
+    <p>購買 App 就附贈雲端 AI 免費額度，由 Anthropic 的 Claude 提供，僅限年滿 18 歲、並在 App 內同意後才會使用。在支援的裝置上也可以使用 Apple 裝置端 AI；就算關閉 AI，所有核心功能都能照常使用。</p>
+    <p>想多用一點雲端 AI，可以訂閱選用的 AI Plus（每月 US$2.99）。實際價格依國家或地區而異。</p>
+    <p class="links"><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">使用條款（Apple 標準授權合約）</a><a href="/fagl/zh-hant/privacy/">隱私權政策</a></p>
+  </div>
+</section>
+
+<section class="closing wrap" aria-labelledby="soon">
+  <span class="app-icon" style="--icon: 72px; --art: url(/fagl/assets/icon.webp)"><img src="/fagl/assets/icon.webp" alt="" width="288" height="288" loading="lazy"></span>
+  <h2 id="soon"><span class="ph">即將在 App Store 推出。</span></h2>
+  <p>支援 Mac、iPhone、iPad 與 Apple&nbsp;Watch。一次購買 US$6.99，實際價格依國家或地區而異。</p>
+  <p class="links"><a href="/fagl/zh-hant/support/">支援</a><a href="/fagl/zh-hant/privacy/">隱私權政策</a></p>
+</section>
+</main>
+<footer class="wrap">
+  <div class="bottom">
+    <nav aria-label="FAGL">
+      <a href="/fagl/zh-hant/">FAGL</a>
+      <a href="/fagl/zh-hant/support/">支援</a>
+      <a href="/fagl/zh-hant/privacy/">隱私權政策</a>
+      <a href="/">JML.Studio</a>
+    </nav>
+    <p>&copy; 2026 JML.Studio</p>
+  </div>
+</footer>
+</body>
+</html>

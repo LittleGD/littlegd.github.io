@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Every language has its own address. ?lang= on any page opens that language.
+   The English address is also the default one: a visitor who comes to it from
+   outside these pages goes to the language they last picked here, or else to
+   the first of their browser's languages that FAGL has. */
+(function () {
+  var here = 'ja', urls = {"en": "/fagl/", "ko": "/fagl/ko/", "ja": "/fagl/ja/", "zh-Hant": "/fagl/zh-hant/", "de": "/fagl/de/"}, want;
+  function pick(tag) {
+    var t = String(tag || '').toLowerCase();
+    if (/^zh-(hant|tw|hk|mo)(-|$)/.test(t)) return 'zh-Hant';
+    return { en: 'en', ko: 'ko', ja: 'ja', de: 'de' }[t.split('-')[0]];
+  }
+  try { want = pick(new URLSearchParams(location.search).get('lang')); } catch (e) {}
+  if (!want && here === 'en' && document.referrer.indexOf(location.origin + '/fagl/') !== 0) {
+    try { want = pick(localStorage.getItem('fagl-lang')); } catch (e) {}
+    var list = navigator.languages || [navigator.language];
+    for (var i = 0; !want && i < list.length; i++) want = pick(list[i]);
+  }
+  if (want && want !== here) location.replace(urls[want] + location.hash);
+})();
+</script>
+<title>FAGL: 集中タイマーと目標管理 | Mac、iPhone、iPad、Apple Watch</title>
+<meta name="description" content="タスクごとに目標時間を決めて、減っていく残り時間を見ながら集中。終わったら軽く振り返り。毎日の集中がグリッドに積み上がります。買い切り、アカウント不要。">
+<meta name="author" content="Jongmin Lee">
+<link rel="canonical" href="https://littlegd.github.io/fagl/ja/">
+<link rel="alternate" hreflang="en" href="https://littlegd.github.io/fagl/">
+<link rel="alternate" hreflang="ko" href="https://littlegd.github.io/fagl/ko/">
+<link rel="alternate" hreflang="ja" href="https://littlegd.github.io/fagl/ja/">
+<link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/fagl/zh-hant/">
+<link rel="alternate" hreflang="de" href="https://littlegd.github.io/fagl/de/">
+<link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/fagl/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JML.Studio">
+<meta property="og:url" content="https://littlegd.github.io/fagl/ja/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:title" content="FAGL: 集中タイマーと目標管理 | Mac、iPhone、iPad、Apple Watch">
+<meta property="og:description" content="タスクごとに目標時間を決めて、減っていく残り時間を見ながら集中。終わったら軽く振り返り。毎日の集中がグリッドに積み上がります。買い切り、アカウント不要。">
+<meta property="og:image" content="https://littlegd.github.io/fagl/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="FAGL: Focused Action, Goalful Life. A focus timer on iPhone with a red disc showing the time left.">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "FAGL: Focus Timer & Goals",
+  "alternateName": "FAGL",
+  "description": "タスクごとに目標時間を決めて、減っていく残り時間を見ながら集中。終わったら軽く振り返り。毎日の集中がグリッドに積み上がります。買い切り、アカウント不要。",
+  "url": "https://littlegd.github.io/fagl/ja/",
+  "image": "https://littlegd.github.io/assets/fagl-icon-512.png",
+  "screenshot": "https://littlegd.github.io/fagl/assets/ja/hero.webp",
+  "applicationCategory": "BusinessApplication",
+  "applicationSubCategory": "Productivity",
+  "operatingSystem": "macOS 26+, iOS 26.1+, iPadOS 26.1+, watchOS 26+",
+  "inLanguage": [
+    "en",
+    "ko",
+    "ja",
+    "zh-Hant",
+    "de"
+  ],
+  "author": {
+    "@type": "Organization",
+    "@id": "https://littlegd.github.io/#studio",
+    "name": "JML.Studio",
+    "url": "https://littlegd.github.io/"
+  }
+}
+</script>
+
+<link rel="icon" type="image/png" href="/fagl/assets/favicon.png">
+<link rel="apple-touch-icon" href="/fagl/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/fagl/fagl.css">
+<script src="/fagl/fagl.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">本文へスキップ</a>
+<header class="top wrap">
+  <nav class="crumbs" aria-label="JML.Studio"><a class="studio" href="/"><span class="sr">JML.Studio</span><svg class="wordmark" viewBox="0 0 108 12" width="108" height="12" aria-hidden="true" focusable="false" shape-rendering="crispEdges"><path fill="currentColor" d="M0 0h9v3h-9zM11 0h6v3h-6zM22 0h3v3h-3zM47 0h6v3h-6zM55 0h3v3h-3zM83 0h3v3h-3zM91 0h3v3h-3zM6 3h3v3h-3zM11 3h9v3h-9zM22 3h3v3h-3zM44 3h6v3h-6zM55 3h6v3h-6zM66 3h3v3h-3zM72 3h3v3h-3zM77 3h9v3h-9zM99 3h9v3h-9zM6 6h3v3h-3zM11 6h3v3h-3zM17 6h3v3h-3zM22 6h3v3h-3zM50 6h3v3h-3zM55 6h3v3h-3zM66 6h3v3h-3zM72 6h3v3h-3zM77 6h3v3h-3zM83 6h3v3h-3zM88 6h6v3h-6zM99 6h3v3h-3zM105 6h3v3h-3zM0 9h6v3h-6zM11 9h3v3h-3zM17 9h3v3h-3zM22 9h9v3h-9zM36 9h3v3h-3zM44 9h6v3h-6zM58 9h6v3h-6zM69 9h6v3h-6zM77 9h9v3h-9zM91 9h6v3h-6zM99 9h9v3h-9z"/></svg></a></nav>
+  <details class="lang">
+    <summary><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M1.75 8h12.5M8 1.75c1.7 1.8 2.6 3.9 2.6 6.25S9.7 12.45 8 14.25C6.3 12.45 5.4 10.35 5.4 8S6.3 3.55 8 1.75z"/></svg><span class="sr">言語: </span>日本語</summary>
+    <ul class="lang-menu" role="list"><li><a href="/fagl/" hreflang="en" lang="en" data-set-lang="en">English</a></li><li><a href="/fagl/ko/" hreflang="ko" lang="ko" data-set-lang="ko">한국어</a></li><li><a href="/fagl/ja/" hreflang="ja" lang="ja" data-set-lang="ja" aria-current="true">日本語</a></li><li><a href="/fagl/zh-hant/" hreflang="zh-Hant" lang="zh-Hant" data-set-lang="zh-Hant">繁體中文</a></li><li><a href="/fagl/de/" hreflang="de" lang="de" data-set-lang="de">Deutsch</a></li></ul>
+  </details>
+</header>
+<main id="main">
+<section class="hero wrap" aria-labelledby="top">
+  <span class="app-icon" style="--art: url(/fagl/assets/icon.webp)"><img src="/fagl/assets/icon.webp" alt="" width="288" height="288"></span>
+  <h1 id="top">FAGL</h1>
+  <p class="motto">Focused Action, Goalful Life.</p>
+  <p class="lead"><span class="ph">タスクごとに目標時間を決めて、</span><span class="ph">減っていく残り時間を見ながら集中。</span></p>
+  <p class="sub"><span class="ph">終わったら軽く振り返り。</span><span class="ph">毎日の集中がグリッドに積み上がります。</span></p>
+  <div class="status">
+    <span class="soon"><span class="soon-dot" aria-hidden="true"></span>まもなく App Store で公開</span>
+    <span>買い切り 6.99 米ドル（米国価格）</span>
+    <span>Mac · iPhone · iPad · Apple&nbsp;Watch</span>
+  </div>
+  <figure class="hero-shot device"><img src="/fagl/assets/ja/hero.webp" width="1800" height="1454" alt="Mac の FAGL：赤い円盤で残り時間を表す Awesome Life Timer、今日のタスク、目標、集中グリッド" fetchpriority="high"></figure>
+</section>
+
+<section class="section wrap" aria-labelledby="timer">
+  <div class="split">
+    <div>
+      <p class="eyebrow">Awesome Life Timer</p>
+      <h2 id="timer"><span class="ph">残り時間が、</span><span class="ph">目で見える。</span></h2>
+      <p class="section-lead">赤い円盤が、いま取り組んでいるタスクの残り時間を表します。数字を読まなくても、あとどれくらいかがひと目でわかります。</p>
+      <dl class="points"><div><dt>没入モード</dt><dd>画面いっぱいにタイマーだけを表示し、画面が消えないようにします。</dd></div><div><dt>繰り返しモード</dt><dd>同じタスクを、休憩をはさみながら何ラウンドでも。</dd></div><div><dt>Mac では</dt><dd>残り時間がノッチとメニューバーに表示されます。</dd></div></dl>
+    </div>
+    <div class="phones">
+      <figure class="device phone"><img src="/fagl/assets/ja/today.webp" width="640" height="1391" alt="iPhone の今日の画面：タスクの残り時間を刻む Awesome Life Timer と、今日のタスクの一覧" loading="lazy" decoding="async"></figure>
+      <figure class="device phone"><img src="/fagl/assets/ja/focus.webp" width="640" height="1391" alt="iPhone の没入モード：黒い画面に赤い円盤と残り時間だけを表示" loading="lazy" decoding="async"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section wrap" aria-labelledby="grid">
+  <p class="eyebrow">集中グリッド</p>
+  <h2 id="grid"><span class="ph">集中した分だけ、</span><span class="ph">積み上がる。</span></h2>
+  <ol class="steps" role="list">
+    <li class="step">
+      <div><span class="step-num" aria-hidden="true">01</span><h3>集中</h3><p>タスクを選んで、タイマーをスタート。</p></div>
+      <div class="step-visual"><div class="demo" role="img" aria-label="タイマーのデモ：時間が減るにつれて、赤い円盤も小さくなります。"><span class="demo-time" aria-hidden="true">18:21</span></div></div>
+    </li>
+    <li class="step">
+      <div><span class="step-num" aria-hidden="true">02</span><h3>振り返り</h3><p>終わったら評価をつけて、短いメモを残します。</p></div>
+      <div class="step-visual"><img class="shot" src="/fagl/assets/ja/reflect.webp" width="760" height="791" alt="振り返りの画面：目標時間、集中時間、達成率、1から5までの評価、メモ" loading="lazy" decoding="async"></div>
+    </li>
+    <li class="step step--wide">
+      <div><span class="step-num" aria-hidden="true">03</span><h3>グリッド</h3><p>長く集中した日ほど、その日のマスが濃くなります。</p></div>
+      <div class="step-visual"><img class="shot" src="/fagl/assets/ja/grass.webp" width="1600" height="370" alt="集中グリッド：1年分の日がマスに並び、長く集中した日ほど緑が濃くなります。" loading="lazy" decoding="async"></div>
+    </li>
+  </ol>
+  <p class="note">履歴では、これまでの振り返り、週間目標、見積もった時間がどれだけ当たったかを確認できます。</p>
+</section>
+
+<section class="section wrap" aria-labelledby="devices">
+  <div class="split split--flip">
+    <div>
+      <p class="eyebrow">すべてのデバイスで</p>
+      <h2 id="devices"><span class="ph">一度の購入で、</span><span class="ph">Mac、</span><span class="ph">iPhone、</span><span class="ph">iPad、</span><span class="ph">Apple&nbsp;Watch に。</span></h2>
+      <dl class="points"><div><dt>Mac</dt><dd>ノッチ表示とメニューバー。どのアプリからでも、ショートカットでタスクをすばやく追加できます。</dd></div><div><dt>iPhone と iPad</dt><dd>ホーム画面とロック画面のウィジェットに対応。iPhone では、ライブアクティビティで残り時間を表示します。</dd></div><div><dt>Apple&nbsp;Watch</dt><dd>手首で開始、一時停止、完了。コンプリケーションで残り時間も確認できます。</dd></div><div><dt>記録の移行</dt><dd>.fagl のバックアップファイルを AirDrop で送れば、別のデバイスに記録を移せます。</dd></div></dl>
+    </div>
+    <div class="devices">
+      <figure class="device tablet"><img src="/fagl/assets/ja/ipad.webp" width="840" height="1120" alt="iPad の目標画面：ステージに分けた目標と、いまのステージのタスク" loading="lazy" decoding="async"></figure>
+      <figure class="device watch"><img src="/fagl/assets/ja/watch.webp" width="422" height="514" alt="Apple&nbsp;Watch：タスクの残り時間を刻む赤い円盤と、停止・一時停止ボタン" loading="lazy" decoding="async"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section wrap promise" aria-labelledby="privacy">
+  <p class="eyebrow">プライバシー</p>
+  <h2 id="privacy"><span class="ph">アカウントも、</span><span class="ph">広告も、</span><span class="ph">トラッキングもなし。</span></h2>
+  <p class="section-lead">タスク、集中の記録、目標、振り返りは、お使いのデバイスに保存されます。分析・広告・トラッキング用のサードパーティ SDK は使いません。</p>
+  <ul class="chips" role="list"><li>買い切り</li><li>アカウント不要</li><li>広告なし</li><li>分析・トラッキングなし</li><li>AI は使いたいときだけ</li></ul>
+  <div class="ai">
+    <h3>AI は使いたいときだけ</h3>
+    <p>購入すると、クラウド AI の無料クレジットが付いてきます。Anthropic の Claude で動作し、18歳以上の方がアプリ内で同意した場合にだけ使います。対応デバイスでは Apple デバイス上の AI も使えて、AI をオフにしても主な機能はすべてそのまま使えます。</p>
+    <p>クラウド AI をもっと使いたいときは、任意のサブスクリプション「AI Plus」（月額 2.99 米ドル）があります。価格は国や地域によって異なります。</p>
+    <p class="links"><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">利用規約（Apple の標準使用許諾契約）</a><a href="/fagl/ja/privacy/">プライバシーポリシー</a></p>
+  </div>
+</section>
+
+<section class="closing wrap" aria-labelledby="soon">
+  <span class="app-icon" style="--icon: 72px; --art: url(/fagl/assets/icon.webp)"><img src="/fagl/assets/icon.webp" alt="" width="288" height="288" loading="lazy"></span>
+  <h2 id="soon"><span class="ph">まもなく App Store で公開。</span></h2>
+  <p>Mac、iPhone、iPad、Apple&nbsp;Watch に対応。買い切り 6.99 米ドル。価格は国や地域によって異なります。</p>
+  <p class="links"><a href="/fagl/ja/support/">サポート</a><a href="/fagl/ja/privacy/">プライバシーポリシー</a></p>
+</section>
+</main>
+<footer class="wrap">
+  <div class="bottom">
+    <nav aria-label="FAGL">
+      <a href="/fagl/ja/">FAGL</a>
+      <a href="/fagl/ja/support/">サポート</a>
+      <a href="/fagl/ja/privacy/">プライバシーポリシー</a>
+      <a href="/">JML.Studio</a>
+    </nav>
+    <p>&copy; 2026 JML.Studio</p>
+  </div>
+</footer>
+</body>
+</html>

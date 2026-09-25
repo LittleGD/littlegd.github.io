@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Every language has its own address. ?lang= on any page opens that language.
+   The English address is also the default one: a visitor who comes to it from
+   outside these pages goes to the language they last picked here, or else to
+   the first of their browser's languages that FAGL has. */
+(function () {
+  var here = 'ja', urls = {"en": "/fagl/privacy/", "ko": "/fagl/ko/privacy/", "ja": "/fagl/ja/privacy/", "zh-Hant": "/fagl/zh-hant/privacy/", "de": "/fagl/de/privacy/"}, want;
+  function pick(tag) {
+    var t = String(tag || '').toLowerCase();
+    if (/^zh-(hant|tw|hk|mo)(-|$)/.test(t)) return 'zh-Hant';
+    return { en: 'en', ko: 'ko', ja: 'ja', de: 'de' }[t.split('-')[0]];
+  }
+  try { want = pick(new URLSearchParams(location.search).get('lang')); } catch (e) {}
+  if (!want && here === 'en' && document.referrer.indexOf(location.origin + '/fagl/') !== 0) {
+    try { want = pick(localStorage.getItem('fagl-lang')); } catch (e) {}
+    var list = navigator.languages || [navigator.language];
+    for (var i = 0; !want && i < list.length; i++) want = pick(list[i]);
+  }
+  if (want && want !== here) location.replace(urls[want] + location.hash);
+})();
+</script>
+<title>プライバシーポリシー · FAGL</title>
+<meta name="description" content="FAGL のデータの扱い：デバイスに保存されるデータ、任意のクラウド AI が送信・保持する情報、お客様の権利。">
+<meta name="author" content="Jongmin Lee">
+<link rel="canonical" href="https://littlegd.github.io/fagl/ja/privacy/">
+<link rel="alternate" hreflang="en" href="https://littlegd.github.io/fagl/privacy/">
+<link rel="alternate" hreflang="ko" href="https://littlegd.github.io/fagl/ko/privacy/">
+<link rel="alternate" hreflang="ja" href="https://littlegd.github.io/fagl/ja/privacy/">
+<link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/fagl/zh-hant/privacy/">
+<link rel="alternate" hreflang="de" href="https://littlegd.github.io/fagl/de/privacy/">
+<link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/fagl/privacy/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JML.Studio">
+<meta property="og:url" content="https://littlegd.github.io/fagl/ja/privacy/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:title" content="プライバシーポリシー · FAGL">
+<meta property="og:description" content="FAGL のデータの扱い：デバイスに保存されるデータ、任意のクラウド AI が送信・保持する情報、お客様の権利。">
+<meta property="og:image" content="https://littlegd.github.io/fagl/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="FAGL: Focused Action, Goalful Life. A focus timer on iPhone with a red disc showing the time left.">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" type="image/png" href="/fagl/assets/favicon.png">
+<link rel="apple-touch-icon" href="/fagl/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/fagl/fagl.css">
+<script src="/fagl/fagl.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">本文へスキップ</a>
+<header class="top wrap">
+  <nav class="crumbs" aria-label="JML.Studio"><a class="studio" href="/"><span class="sr">JML.Studio</span><svg class="wordmark" viewBox="0 0 108 12" width="108" height="12" aria-hidden="true" focusable="false" shape-rendering="crispEdges"><path fill="currentColor" d="M0 0h9v3h-9zM11 0h6v3h-6zM22 0h3v3h-3zM47 0h6v3h-6zM55 0h3v3h-3zM83 0h3v3h-3zM91 0h3v3h-3zM6 3h3v3h-3zM11 3h9v3h-9zM22 3h3v3h-3zM44 3h6v3h-6zM55 3h6v3h-6zM66 3h3v3h-3zM72 3h3v3h-3zM77 3h9v3h-9zM99 3h9v3h-9zM6 6h3v3h-3zM11 6h3v3h-3zM17 6h3v3h-3zM22 6h3v3h-3zM50 6h3v3h-3zM55 6h3v3h-3zM66 6h3v3h-3zM72 6h3v3h-3zM77 6h3v3h-3zM83 6h3v3h-3zM88 6h6v3h-6zM99 6h3v3h-3zM105 6h3v3h-3zM0 9h6v3h-6zM11 9h3v3h-3zM17 9h3v3h-3zM22 9h9v3h-9zM36 9h3v3h-3zM44 9h6v3h-6zM58 9h6v3h-6zM69 9h6v3h-6zM77 9h9v3h-9zM91 9h6v3h-6zM99 9h9v3h-9z"/></svg></a><span class="crumb-sep" aria-hidden="true"></span><a class="crumb-app" href="/fagl/ja/"><img src="/fagl/assets/icon.webp" alt="" width="24" height="24"><span>FAGL</span></a></nav>
+  <details class="lang">
+    <summary><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M1.75 8h12.5M8 1.75c1.7 1.8 2.6 3.9 2.6 6.25S9.7 12.45 8 14.25C6.3 12.45 5.4 10.35 5.4 8S6.3 3.55 8 1.75z"/></svg><span class="sr">言語: </span>日本語</summary>
+    <ul class="lang-menu" role="list"><li><a href="/fagl/privacy/" hreflang="en" lang="en" data-set-lang="en">English</a></li><li><a href="/fagl/ko/privacy/" hreflang="ko" lang="ko" data-set-lang="ko">한국어</a></li><li><a href="/fagl/ja/privacy/" hreflang="ja" lang="ja" data-set-lang="ja" aria-current="true">日本語</a></li><li><a href="/fagl/zh-hant/privacy/" hreflang="zh-Hant" lang="zh-Hant" data-set-lang="zh-Hant">繁體中文</a></li><li><a href="/fagl/de/privacy/" hreflang="de" lang="de" data-set-lang="de">Deutsch</a></li></ul>
+  </details>
+</header>
+<main id="main" class="wrap narrow doc">
+<article aria-labelledby="h">
+<div class="page-head"><h1 id="h">FAGL プライバシーポリシー</h1></div>
+<p class="meta">施行日：2026年9月24日</p>
+<h2>概要</h2>
+<ul><li>タスク、集中の記録、目標、振り返りは、お使いのデバイス（Mac、iPhone、iPad、Apple Watch）にだけ保存されます。アカウントはありません。</li><li>AI は任意の機能です。クラウド AI（Anthropic の Claude）は、18歳以上の方がアプリ内で同意した場合にだけ使います。送信した内容を FAGL が保存することはありません。Anthropic は回答の作成にだけ使い、AI の学習には使わず、30日以内に削除します（例外は3項を参照）。</li><li>無料の AI クレジット、AI Plus サブスクリプション、1日の上限を管理するため、FAGL のサーバーはハッシュ化した購入 ID と利用量を保持します。リクエストの内容や IP アドレスは保存しません。</li><li>お支払いはすべて Apple が処理します。FAGL が受け取るのは、購入とサブスクリプションの確認に必要な、Apple が署名した取引情報だけです。</li><li>アプリは毎日 picsum.photos から背景写真を、Mac で希望した場合にだけ Hugging Face から AI モデルをダウンロードします。</li><li>広告、分析、トラッキングはなく、分析・広告・トラッキング用のサードパーティ SDK も使いません。</li></ul>
+<h2>1. 運営者</h2>
+<p>FAGL は個人開発者 Jongmin Lee（以下「私たち」）が提供しています。お問い合わせ：<a href="mailto:lee1993ljm@gmail.com">lee1993ljm@gmail.com</a></p>
+<h2>2. デバイスに保存されるデータ</h2>
+<ul><li>タスク、目標とロードマップ、集中セッション、振り返り（評価とメモ）、設定は、FAGL を使う各デバイス（Mac、iPhone、iPad、Apple Watch）のアプリの保存領域に保存されます。Mac では、アプリのサンドボックスコンテナです。</li><li>Apple Watch アプリは、ペアリングした iPhone の FAGL からタスクとタイマーを受け取り、集中の記録を iPhone に送り返します。このやり取りはお客様のデバイスの間だけで行われ、私たちには届きません。</li><li>Mac、iPhone、iPad では、同じ保存領域に自動でローカルバックアップを作成し、最新の14件を保持します。書き出したバックアップファイル（.fagl）と Mac の CSV エクスポートは、指定した場所にだけ保存・送信されます。</li><li>Mac でデバイス用 AI モデルをダウンロードした場合、そのファイルも Mac に保存されます。</li><li>私たちはこれらのデータを見ることも、取得することもできません。削除するには、各デバイスからアプリを削除してください。iPhone、iPad、Apple Watch では、アプリを削除するとデータも削除されます。Mac では、アプリのデータ（<code>~/<wbr>Library/<wbr>Containers/<wbr>com.<wbr>jmlee.<wbr>FAGL</code>）も削除してください。作成したバックアップファイルやエクスポートファイルもあわせて削除してください。</li></ul>
+<h2>3. クラウド AI（任意）</h2>
+<p><strong>使われるとき</strong>　初回起動時の紹介のあと、クラウド AI を使うかどうかを一度だけ確認します。18歳以上であることを確認し、その画面で同意した場合にだけ使います。FAGL の購入ごとに、1回かぎりの無料クラウド AI クレジット（目安は数百回分、1日の上限あり）が付いており、任意の AI Plus サブスクリプションで毎月の利用枠を追加できます（4項）。TestFlight のベータ版でも同じです。</p>
+<p><strong>送信する内容</strong></p>
+<ul><li>AI のリクエストごと：その機能に必要な内容だけ（タスク名とメモ、振り返り、目標、集中時間のまとめなど）と、アプリの言語</li><li>セッション開始時（1日1回程度）：Apple がお使いの FAGL に対して署名した App Store の購入証明（AppTransaction）、AI Plus をご利用の場合は Apple が署名したサブスクリプションの取引情報、アプリのバージョン、プラットフォーム、アプリが作成したランダムなインストール ID</li><li>すべてのインターネット通信と同じく：IP アドレス</li></ul>
+<p>氏名、メールアドレス、Apple アカウント、連絡先、位置情報、ハードウェア識別子は送信しません。</p>
+<p><strong>処理する事業者と場所</strong></p>
+<div class="table"><table><thead><tr><th scope="col">受領者</th><th scope="col">役割</th><th scope="col">場所</th></tr></thead><tbody><tr><td data-label="受領者">Cloudflare, Inc.（米国企業）</td><td data-label="役割">FAGL サーバー（Cloudflare Workers）を運用し、購入とサブスクリプションの確認、利用量の集計、不正利用の防止、Anthropic へのリクエストの中継を行います。</td><td data-label="場所">世界各地の Cloudflare データセンター（通常は利用者に近い場所）</td></tr><tr><td data-label="受領者">Anthropic, PBC（米国企業）</td><td data-label="役割">Claude モデルで回答を作成します。受け取るのはリクエストの内容、アプリの言語、仮名の識別子（ハッシュ値。不正利用の検知のため <code>metadata.<wbr>user_id</code> として送信）だけで、氏名、メールアドレス、購入情報、インストール ID、IP アドレスは受け取りません。</td><td data-label="場所">Anthropic の世界各地のインフラで処理、保存は米国</td></tr></tbody></table></div>
+<p><strong>目的</strong>　ご依頼の AI 回答を作成すること、正規に購入された FAGL（AI Plus の場合は有効なサブスクリプション）からのリクエストであることを確認すること、無料クレジット、毎月の利用枠、1日の上限を管理し、不正利用を防ぐこと。それ以外には使いません。</p>
+<p><strong>保存期間</strong></p>
+<ul><li>リクエストの内容と回答：FAGL のサーバーには保存しません。Anthropic は回答後30日以内に自動で削除します。ただし、法令で保存が求められる場合や、Anthropic の利用ポリシーへの違反に対応するために必要な場合は除きます。Anthropic の安全システムが問題として検出した内容は、最長2年間保存されることがあります。</li><li>ハッシュ化した購入 ID とサブスクリプション ID、利用量の累計：サービスを運営している間、保持します（4項）。</li><li>1日ごとの利用カウンター：約3日後に自動で削除します。</li><li>1分あたりのリクエスト数を制限するための IP アドレスのハッシュ値：毎日変わり、IP アドレス自体は保存しません。1日ごとのカウンターと一緒に約3日後に削除します。</li><li>購入証明、サブスクリプションの取引情報、アプリのバージョン、プラットフォーム、インストール ID：セッション開始時の確認に使い、その後は破棄します。</li><li>サーバーのログには、エラーコードなどの技術的な記録だけを残し、内容、識別子、IP アドレスは記録しません。</li></ul>
+<p><strong>AI の学習には使いません</strong>　FAGL はお客様の内容を AI の学習に使いません。Anthropic も、API の入力と出力をモデルの学習に使いません。</p>
+<p><strong>オフにする方法</strong>　同意画面で「デバイス上だけで使う」を選ぶか、いつでも 設定 &gt; AI でクラウド AI をオフにしてください。同じ場所の「AI機能を使う」をオフにすると、AI はすべてオフになります。クラウド AI をオフにしても AI Plus は解約されません。解約は App Store のアカウント設定から行ってください。</p>
+<p><strong>その場合の動作</strong>　AI はお使いのデバイスの中で、対応デバイスでは Apple デバイス上の AI、Mac ではデバイス用 AI モデル（5・6項）で動きます。1日の上限に達した場合や無料クレジットを使い切った場合も同じで、そのときは AI Plus に登録することもできます。どちらも使えない場合は AI 機能だけが使えなくなり、それ以外はすべてそのまま使えます。</p>
+<h2>4. 購入、無料クレジット、AI Plus</h2>
+<p><strong>お支払い</strong>　FAGL と AI Plus のお支払いは、すべて Apple が処理します。私たちがお支払い情報、氏名、Apple アカウントを知ることはありません。FAGL が受け取るのは Apple が署名した取引情報（商品、取引 ID、サブスクリプションの有効期限など）だけで、購入とサブスクリプションの確認にだけ使います。</p>
+<p><strong>ハッシュ値</strong>　購入ごとに1回かぎりの無料クレジットを、サブスクリプションごとに毎月の利用枠を提供するには、利用者が誰かを知らないまま、同じ購入やサブスクリプションからのリクエストかどうかだけを見分ける必要があります。そのため、元に戻せない SHA-256 のハッシュ値だけを保存します。</p>
+<ul><li>App Store の購入 ID のハッシュ値と、無料クレジットの利用量の累計：これがないと1回かぎりのクレジットを何度も受け取れてしまうため、サービスを運営している間、保持します。</li><li>AI Plus をご利用の場合、サブスクリプションの元の取引 ID のハッシュ値と、請求期間ごとの利用量：サービスを運営している間、保持します。</li><li>1日の上限のための1日ごとの利用カウンター：約3日後に削除します。</li></ul>
+<p>私たちはこれらの値から元の ID を復元できず、氏名やメールアドレス、Apple アカウントと結びつける手段もありません。ハッシュ値には内容は含まれません。3項の仮名の識別子を除いて Anthropic に渡されることはなく、トラッキングや広告に使われることもありません。</p>
+<p><strong>AI Plus</strong>　AI Plus は、クラウド AI の毎月の利用枠（1日の上限あり）を追加する任意の自動更新サブスクリプションです（月額 2.99 米ドル。価格は国や地域によって異なります）。現在の期間が終わる 24時間前までに App Store のアカウント設定で解約しない限り、自動で更新されます。ファミリー共有には対応しておらず、FAGL の買い切り購入と無料クレジットには影響しません。利用規約：Apple の標準使用許諾契約（<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a>）。</p>
+<h2>5. Apple デバイス上の AI</h2>
+<p>Apple Intelligence に対応したデバイスでは、Apple のデバイス上のモデルを使えます。処理はデバイスの中で行われ、アプリがどこかにデータを送ることはありません。Apple Intelligence 自体には Apple のプライバシーポリシーが適用されます。</p>
+<h2>6. デバイス用 AI モデル（Mac、任意のダウンロード）</h2>
+<p>Mac の 設定 &gt; AI で希望した場合、Hugging Face, Inc.（米国）から AI モデル（約3.6GB または5.2GB）をダウンロードできます。モデルファイルを受け取るだけで、お客様の内容をアップロードすることはありません。一般的なダウンロードと同じく、Hugging Face には IP アドレスなどの通常のリクエスト情報が伝わります。ダウンロード後は、オフラインのまま Mac の中で動作します。</p>
+<h2>7. 毎日の背景写真</h2>
+<p>アプリは1日に1回、picsum.photos（Unsplash の写真を配信する Lorem Picsum）から背景写真を自動でダウンロードします。このリクエストに個人情報は含めません。ただし一般的な Web リクエストと同様に、IP アドレスやリクエスト時刻などの情報がそのサービスとホスティング事業者に伝わり、各社のポリシーに従って扱われます。</p>
+<h2>8. FAGL がしないこと</h2>
+<p>アカウントやログインはありません。広告、分析、クラッシュレポート、トラッキングの SDK は使いません。個人情報を販売・共有したり、プロファイルを作成したり、他社のアプリや Web サイトをまたいで追跡したりすることはありません。</p>
+<h2>9. 法的根拠とお客様の権利</h2>
+<p>クラウド AI への内容の送信は、お客様の同意に基づいて行います。同意は 設定 &gt; AI からいつでも撤回できます（撤回前の処理には影響しません）。購入とサブスクリプションの確認、クレジットと利用枠の累計の保持は、ご購入いただいたサービスを提供するために必要なものです。1分あたりの制限と短期間の利用カウンターは、サービスの不正利用を防ぐという正当な目的のために扱います。お客様は、開示、訂正、削除、利用停止を求めることができます。ただし私たちが保持するのは、個人と結びつけられないハッシュ値だけのため、特定の方のデータを見つけられない場合がほとんどです。1日ごとのカウンターは約3日で自動的に消えます。お使いのデバイス内のデータは、すべてお客様自身が管理できます。</p>
+<h2>10. 外国への移転</h2>
+<p>クラウド AI のリクエストは、米国のほか Cloudflare と Anthropic が事業を行う国で処理される場合があります。Anthropic は世界各地のインフラでリクエストを処理し、データを米国で保存します。これらの国の個人情報保護制度は、日本とは異なることがあります。同意画面で同意した時点で、この移転に同意したことになります。同意は上記の方法でいつでも撤回できます。</p>
+<h2>11. お子さま</h2>
+<p>FAGL はアカウントがなく、どの年齢の方でも使えますが、お子さま向けのサービスではなく、お子さまの個人情報を意図して収集することはありません。クラウド AI は、未成年者が利用しうるサービスに関する Anthropic の方針に従い、18歳以上の方だけが使えます。同意画面で年齢を確認します。18歳未満の方はクラウド AI をオンにしないでください。デバイス上の AI（Apple Intelligence とデバイス用 AI モデル）とそれ以外の機能は、どなたでも使えます。</p>
+<h2>12. ポリシーの変更</h2>
+<p>このポリシーを変更した場合は、新しい施行日とともにこのページで公開します。データの提供先が増えるなどの重要な変更は、アプリのアップデート情報でもお知らせします。</p>
+<h2>13. お問い合わせ</h2>
+<p>Jongmin Lee · <a href="mailto:lee1993ljm@gmail.com">lee1993ljm@gmail.com</a></p>
+</article>
+</main>
+<footer class="wrap">
+  <div class="bottom">
+    <nav aria-label="FAGL">
+      <a href="/fagl/ja/">FAGL</a>
+      <a href="/fagl/ja/support/">サポート</a>
+      <a href="/fagl/ja/privacy/">プライバシーポリシー</a>
+      <a href="/">JML.Studio</a>
+    </nav>
+    <p>&copy; 2026 JML.Studio</p>
+  </div>
+</footer>
+</body>
+</html>

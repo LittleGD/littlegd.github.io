@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Every language has its own address. ?lang= on any page opens that language.
+   The English address is also the default one: a visitor who comes to it from
+   outside these pages goes to the language they last picked here, or else to
+   the first of their browser's languages that FAGL has. */
+(function () {
+  var here = 'ko', urls = {"en": "/fagl/support/", "ko": "/fagl/ko/support/", "ja": "/fagl/ja/support/", "zh-Hant": "/fagl/zh-hant/support/", "de": "/fagl/de/support/"}, want;
+  function pick(tag) {
+    var t = String(tag || '').toLowerCase();
+    if (/^zh-(hant|tw|hk|mo)(-|$)/.test(t)) return 'zh-Hant';
+    return { en: 'en', ko: 'ko', ja: 'ja', de: 'de' }[t.split('-')[0]];
+  }
+  try { want = pick(new URLSearchParams(location.search).get('lang')); } catch (e) {}
+  if (!want && here === 'en' && document.referrer.indexOf(location.origin + '/fagl/') !== 0) {
+    try { want = pick(localStorage.getItem('fagl-lang')); } catch (e) {}
+    var list = navigator.languages || [navigator.language];
+    for (var i = 0; !want && i < list.length; i++) want = pick(list[i]);
+  }
+  if (want && want !== here) location.replace(urls[want] + location.hash);
+})();
+</script>
+<title>지원 · FAGL</title>
+<meta name="description" content="FAGL 도움말: iCloud와 백업, AI와 AI Plus, Apple Watch, 구매 복원, 문의 방법.">
+<meta name="author" content="Jongmin Lee">
+<link rel="canonical" href="https://littlegd.github.io/fagl/ko/support/">
+<link rel="alternate" hreflang="en" href="https://littlegd.github.io/fagl/support/">
+<link rel="alternate" hreflang="ko" href="https://littlegd.github.io/fagl/ko/support/">
+<link rel="alternate" hreflang="ja" href="https://littlegd.github.io/fagl/ja/support/">
+<link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/fagl/zh-hant/support/">
+<link rel="alternate" hreflang="de" href="https://littlegd.github.io/fagl/de/support/">
+<link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/fagl/support/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JML.Studio">
+<meta property="og:url" content="https://littlegd.github.io/fagl/ko/support/">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:title" content="지원 · FAGL">
+<meta property="og:description" content="FAGL 도움말: iCloud와 백업, AI와 AI Plus, Apple Watch, 구매 복원, 문의 방법.">
+<meta property="og:image" content="https://littlegd.github.io/fagl/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="FAGL: Focused Action, Goalful Life. A focus timer on iPhone with a red disc showing the time left.">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" type="image/png" href="/fagl/assets/favicon.png">
+<link rel="apple-touch-icon" href="/fagl/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/fagl/fagl.css">
+<script src="/fagl/fagl.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+<header class="top wrap">
+  <nav class="crumbs" aria-label="JML.Studio"><a class="studio" href="/"><span class="sr">JML.Studio</span><svg class="wordmark" viewBox="0 0 108 12" width="108" height="12" aria-hidden="true" focusable="false" shape-rendering="crispEdges"><path fill="currentColor" d="M0 0h9v3h-9zM11 0h6v3h-6zM22 0h3v3h-3zM47 0h6v3h-6zM55 0h3v3h-3zM83 0h3v3h-3zM91 0h3v3h-3zM6 3h3v3h-3zM11 3h9v3h-9zM22 3h3v3h-3zM44 3h6v3h-6zM55 3h6v3h-6zM66 3h3v3h-3zM72 3h3v3h-3zM77 3h9v3h-9zM99 3h9v3h-9zM6 6h3v3h-3zM11 6h3v3h-3zM17 6h3v3h-3zM22 6h3v3h-3zM50 6h3v3h-3zM55 6h3v3h-3zM66 6h3v3h-3zM72 6h3v3h-3zM77 6h3v3h-3zM83 6h3v3h-3zM88 6h6v3h-6zM99 6h3v3h-3zM105 6h3v3h-3zM0 9h6v3h-6zM11 9h3v3h-3zM17 9h3v3h-3zM22 9h9v3h-9zM36 9h3v3h-3zM44 9h6v3h-6zM58 9h6v3h-6zM69 9h6v3h-6zM77 9h9v3h-9zM91 9h6v3h-6zM99 9h9v3h-9z"/></svg></a><span class="crumb-sep" aria-hidden="true"></span><a class="crumb-app" href="/fagl/ko/"><img src="/fagl/assets/icon.webp" alt="" width="24" height="24"><span>FAGL</span></a></nav>
+  <details class="lang">
+    <summary><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M1.75 8h12.5M8 1.75c1.7 1.8 2.6 3.9 2.6 6.25S9.7 12.45 8 14.25C6.3 12.45 5.4 10.35 5.4 8S6.3 3.55 8 1.75z"/></svg><span class="sr">언어: </span>한국어</summary>
+    <ul class="lang-menu" role="list"><li><a href="/fagl/support/" hreflang="en" lang="en" data-set-lang="en">English</a></li><li><a href="/fagl/ko/support/" hreflang="ko" lang="ko" data-set-lang="ko" aria-current="true">한국어</a></li><li><a href="/fagl/ja/support/" hreflang="ja" lang="ja" data-set-lang="ja">日本語</a></li><li><a href="/fagl/zh-hant/support/" hreflang="zh-Hant" lang="zh-Hant" data-set-lang="zh-Hant">繁體中文</a></li><li><a href="/fagl/de/support/" hreflang="de" lang="de" data-set-lang="de">Deutsch</a></li></ul>
+  </details>
+</header>
+<main id="main" class="wrap narrow doc">
+<div class="page-head">
+  <h1>FAGL 지원</h1>
+  <p>궁금한 점이나 버그, 제안이 있으면 이메일로 보내 주세요. 최대한 빨리 답장드릴게요.</p>
+</div>
+<section class="contact" id="contact" aria-labelledby="contact-title">
+  <h2 id="contact-title">문의</h2>
+  <a class="mail" href="mailto:lee1993ljm@gmail.com?subject=FAGL">lee1993ljm@gmail.com</a>
+  <p>사용하는 기기와 OS 버전, 어떤 일이 있었는지 함께 적어 주시면 더 빨리 도와드릴 수 있어요.</p>
+</section>
+<ul class="faq" role="list"><li><h2>iCloud로 동기화되나요?</h2><p>설정 &gt; 데이터 &gt; iCloud 동기화에서 확인할 수 있어요. &#x27;꺼짐&#x27;으로 보이면 기록은 그 기기에만 저장돼요. 이때도 아래처럼 백업 파일로 다른 기기에 옮길 수 있어요.</p></li><li><h2>기록을 백업하거나 다른 기기로 옮기려면 어떻게 하나요?</h2><p>설정 &gt; 데이터 &gt; 백업 파일 내보내기를 누르면 .fagl 파일 하나가 만들어져요. 저장해 두거나 AirDrop으로 보내세요. 다른 기기에서 그 파일을 열거나 &#x27;백업 파일 가져오기&#x27;를 쓰면 돼요. 가져오기 전에 무엇이 추가되고 업데이트되는지 보여 주고, 지금 기록도 먼저 백업해요. Mac에서는 자동 백업도 최근 14개까지 보관해요.</p></li><li><h2>AI는 어떻게 동작하나요? AI Plus는 뭔가요?</h2><p>AI는 선택 기능이에요. 앱을 사면 한 번 쓰는 클라우드 AI 무료 크레딧이 들어 있고, 하루 한도가 있어요. 만 18세 이상이 앱에서 동의한 경우에만 써요. 크레딧이나 하루 한도를 다 쓰거나 클라우드 AI를 끄면, 지원하는 기기에서는 Apple Intelligence로 처리해요. Mac에서는 오프라인 모델을 받아 쓸 수도 있어요. AI Plus(월 US$2.99)는 클라우드 AI 월 사용량을 더해 주는 선택 구독이에요. AI는 설정 &gt; AI에서 켜고 끌 수 있어요.</p></li><li><h2>Apple&nbsp;Watch에서는 어떻게 쓰나요?</h2><p>워치 앱은 짝지은 iPhone의 FAGL과 함께 동작해요. 손목에서 할 일을 시작하고 멈추고 끝낼 수 있고, 컴플리케이션으로 남은 시간을 볼 수 있어요.</p></li><li><h2>구매 복원, AI Plus 해지, 환불은 어떻게 하나요?</h2><p>FAGL은 Apple 계정에 연결된 한 번 구매라서, 같은 계정으로 로그인해 App Store에서 다시 받으면 돼요. AI Plus는 설정 &gt; AI의 &#x27;구매 복원&#x27;으로 되살릴 수 있어요. 해지는 같은 곳의 &#x27;구독 관리&#x27;나 App Store 계정 설정에서, 갱신 24시간 전까지 해 주세요. 환불은 Apple이 처리해요(<a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>).</p></li><li><h2>어떤 기기에서 쓸 수 있나요?</h2><p>Mac은 Apple 실리콘과 macOS 26 이상, iPhone과 iPad는 iOS·iPadOS 26.1 이상이 필요해요. 워치 앱은 watchOS 26 이상의 Apple&nbsp;Watch와 짝지은 iPhone이 있어야 해요.</p></li></ul>
+<p class="more"><a href="/fagl/ko/privacy/">개인정보 처리방침</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">이용약관(Apple 표준 사용권 계약)</a></p>
+</main>
+<footer class="wrap">
+  <div class="bottom">
+    <nav aria-label="FAGL">
+      <a href="/fagl/ko/">FAGL</a>
+      <a href="/fagl/ko/support/">지원</a>
+      <a href="/fagl/ko/privacy/">개인정보 처리방침</a>
+      <a href="/">JML.Studio</a>
+    </nav>
+    <p>&copy; 2026 JML.Studio</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Every language has its own address. ?lang= on any page opens that language.
+   The English address is also the default one: a visitor who comes to it from
+   outside these pages goes to the language they last picked here, or else to
+   the first of their browser's languages that FAGL has. */
+(function () {
+  var here = 'de', urls = {"en": "/fagl/support/", "ko": "/fagl/ko/support/", "ja": "/fagl/ja/support/", "zh-Hant": "/fagl/zh-hant/support/", "de": "/fagl/de/support/"}, want;
+  function pick(tag) {
+    var t = String(tag || '').toLowerCase();
+    if (/^zh-(hant|tw|hk|mo)(-|$)/.test(t)) return 'zh-Hant';
+    return { en: 'en', ko: 'ko', ja: 'ja', de: 'de' }[t.split('-')[0]];
+  }
+  try { want = pick(new URLSearchParams(location.search).get('lang')); } catch (e) {}
+  if (!want && here === 'en' && document.referrer.indexOf(location.origin + '/fagl/') !== 0) {
+    try { want = pick(localStorage.getItem('fagl-lang')); } catch (e) {}
+    var list = navigator.languages || [navigator.language];
+    for (var i = 0; !want && i < list.length; i++) want = pick(list[i]);
+  }
+  if (want && want !== here) location.replace(urls[want] + location.hash);
+})();
+</script>
+<title>Support · FAGL</title>
+<meta name="description" content="Hilfe zu FAGL: iCloud und Backups, AI und AI Plus, Apple Watch, Käufe wiederherstellen und Kontakt.">
+<meta name="author" content="Jongmin Lee">
+<link rel="canonical" href="https://littlegd.github.io/fagl/de/support/">
+<link rel="alternate" hreflang="en" href="https://littlegd.github.io/fagl/support/">
+<link rel="alternate" hreflang="ko" href="https://littlegd.github.io/fagl/ko/support/">
+<link rel="alternate" hreflang="ja" href="https://littlegd.github.io/fagl/ja/support/">
+<link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/fagl/zh-hant/support/">
+<link rel="alternate" hreflang="de" href="https://littlegd.github.io/fagl/de/support/">
+<link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/fagl/support/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JML.Studio">
+<meta property="og:url" content="https://littlegd.github.io/fagl/de/support/">
+<meta property="og:locale" content="de_DE">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:title" content="Support · FAGL">
+<meta property="og:description" content="Hilfe zu FAGL: iCloud und Backups, AI und AI Plus, Apple Watch, Käufe wiederherstellen und Kontakt.">
+<meta property="og:image" content="https://littlegd.github.io/fagl/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="FAGL: Focused Action, Goalful Life. A focus timer on iPhone with a red disc showing the time left.">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" type="image/png" href="/fagl/assets/favicon.png">
+<link rel="apple-touch-icon" href="/fagl/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/fagl/fagl.css">
+<script src="/fagl/fagl.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Zum Inhalt springen</a>
+<header class="top wrap">
+  <nav class="crumbs" aria-label="JML.Studio"><a class="studio" href="/"><span class="sr">JML.Studio</span><svg class="wordmark" viewBox="0 0 108 12" width="108" height="12" aria-hidden="true" focusable="false" shape-rendering="crispEdges"><path fill="currentColor" d="M0 0h9v3h-9zM11 0h6v3h-6zM22 0h3v3h-3zM47 0h6v3h-6zM55 0h3v3h-3zM83 0h3v3h-3zM91 0h3v3h-3zM6 3h3v3h-3zM11 3h9v3h-9zM22 3h3v3h-3zM44 3h6v3h-6zM55 3h6v3h-6zM66 3h3v3h-3zM72 3h3v3h-3zM77 3h9v3h-9zM99 3h9v3h-9zM6 6h3v3h-3zM11 6h3v3h-3zM17 6h3v3h-3zM22 6h3v3h-3zM50 6h3v3h-3zM55 6h3v3h-3zM66 6h3v3h-3zM72 6h3v3h-3zM77 6h3v3h-3zM83 6h3v3h-3zM88 6h6v3h-6zM99 6h3v3h-3zM105 6h3v3h-3zM0 9h6v3h-6zM11 9h3v3h-3zM17 9h3v3h-3zM22 9h9v3h-9zM36 9h3v3h-3zM44 9h6v3h-6zM58 9h6v3h-6zM69 9h6v3h-6zM77 9h9v3h-9zM91 9h6v3h-6zM99 9h9v3h-9z"/></svg></a><span class="crumb-sep" aria-hidden="true"></span><a class="crumb-app" href="/fagl/de/"><img src="/fagl/assets/icon.webp" alt="" width="24" height="24"><span>FAGL</span></a></nav>
+  <details class="lang">
+    <summary><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M1.75 8h12.5M8 1.75c1.7 1.8 2.6 3.9 2.6 6.25S9.7 12.45 8 14.25C6.3 12.45 5.4 10.35 5.4 8S6.3 3.55 8 1.75z"/></svg><span class="sr">Sprache: </span>Deutsch</summary>
+    <ul class="lang-menu" role="list"><li><a href="/fagl/support/" hreflang="en" lang="en" data-set-lang="en">English</a></li><li><a href="/fagl/ko/support/" hreflang="ko" lang="ko" data-set-lang="ko">한국어</a></li><li><a href="/fagl/ja/support/" hreflang="ja" lang="ja" data-set-lang="ja">日本語</a></li><li><a href="/fagl/zh-hant/support/" hreflang="zh-Hant" lang="zh-Hant" data-set-lang="zh-Hant">繁體中文</a></li><li><a href="/fagl/de/support/" hreflang="de" lang="de" data-set-lang="de" aria-current="true">Deutsch</a></li></ul>
+  </details>
+</header>
+<main id="main" class="wrap narrow doc">
+<div class="page-head">
+  <h1>FAGL Support</h1>
+  <p>Fragen, Fehler oder Ideen? Schreib uns eine E-Mail, wir antworten so schnell wie möglich.</p>
+</div>
+<section class="contact" id="contact" aria-labelledby="contact-title">
+  <h2 id="contact-title">Kontakt</h2>
+  <a class="mail" href="mailto:lee1993ljm@gmail.com?subject=FAGL">lee1993ljm@gmail.com</a>
+  <p>Am besten nennst du dein Gerät, die Systemversion und was passiert ist.</p>
+</section>
+<ul class="faq" role="list"><li><h2>Synchronisiert FAGL über iCloud?</h2><p>Das siehst du unter Einstellungen &gt; Daten &gt; iCloud-Synchronisierung. Steht dort „Aus“, bleiben deine Daten nur auf diesem Gerät. Übertragen kannst du sie trotzdem, mit einer Backup-Datei (siehe unten).</p></li><li><h2>Wie sichere ich meine Daten oder übertrage sie auf ein anderes Gerät?</h2><p>Unter Einstellungen &gt; Daten &gt; Backup-Datei exportieren entsteht eine .fagl-Datei. Speichere sie oder schick sie per AirDrop. Auf dem anderen Gerät öffnest du die Datei oder nutzt „Backup-Datei importieren“. Vor dem Import zeigt FAGL, was hinzukommt oder aktualisiert wird, und sichert zuerst deine aktuellen Daten. Auf dem Mac behält FAGL außerdem die letzten 14 automatischen Backups.</p></li><li><h2>Wie funktioniert die AI, und was ist AI Plus?</h2><p>AI ist optional. Zu jedem Kauf gehört ein einmaliges kostenloses Cloud-AI-Guthaben mit Tageslimit. Die Cloud-AI ist ab 18 und läuft erst, wenn du in der App zustimmst. Sind Guthaben oder Tageslimit aufgebraucht oder ist die Cloud-AI aus, nutzt FAGL auf unterstützten Geräten Apple Intelligence. Auf dem Mac kannst du auch ein Offline-Modell laden. AI Plus (2,99 US-Dollar im Monat) ist ein optionales Abo mit zusätzlichem monatlichem Cloud-AI-Kontingent. Ein- und ausschalten kannst du die AI unter Einstellungen &gt; AI.</p></li><li><h2>Wie funktioniert die Apple&nbsp;Watch-App?</h2><p>Die Watch-App arbeitet mit FAGL auf deinem gekoppelten iPhone zusammen. Du startest, pausierst und beendest Aufgaben am Handgelenk und siehst die Restzeit als Komplikation.</p></li><li><h2>Wie stelle ich Käufe wieder her, kündige AI Plus oder bekomme eine Erstattung?</h2><p>FAGL ist ein einmaliger Kauf, der an deinen Apple Account gebunden ist: Melde dich mit demselben Account an und lade die App im App Store erneut. AI Plus stellst du unter Einstellungen &gt; AI mit „Käufe wiederherstellen“ wieder her. Kündigen kannst du dort über „Abo verwalten“ oder in den Account-Einstellungen des App Store, spätestens 24 Stunden vor der Verlängerung. Erstattungen wickelt Apple ab (<a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>).</p></li><li><h2>Was brauche ich für FAGL?</h2><p>Einen Mac mit Apple Chip und macOS 26 oder neuer oder ein iPhone oder iPad mit iOS bzw. iPadOS 26.1 oder neuer. Für die Watch-App brauchst du eine Apple&nbsp;Watch mit watchOS 26 oder neuer, gekoppelt mit einem iPhone.</p></li></ul>
+<p class="more"><a href="/fagl/de/privacy/">Datenschutzerklärung</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Nutzungsbedingungen (Apples Standard-Lizenzvertrag)</a></p>
+</main>
+<footer class="wrap">
+  <div class="bottom">
+    <nav aria-label="FAGL">
+      <a href="/fagl/de/">FAGL</a>
+      <a href="/fagl/de/support/">Support</a>
+      <a href="/fagl/de/privacy/">Datenschutzerklärung</a>
+      <a href="/">JML.Studio</a>
+    </nav>
+    <p>&copy; 2026 JML.Studio</p>
+  </div>
+</footer>
+</body>
+</html>
