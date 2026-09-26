@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://littlegd.github.io/</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-09-26</lastmod>
   </url>
   <url>
     <loc>https://littlegd.github.io/fagl/</loc>
@@ -153,5 +153,77 @@
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/fagl/zh-hant/privacy/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/fagl/de/privacy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/fagl/privacy/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/moraro/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/moraro/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moraro/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moraro/ja/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moraro/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/moraro/ko/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/moraro/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moraro/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moraro/ja/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moraro/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/moraro/ja/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/moraro/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moraro/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moraro/ja/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moraro/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/moraro/support/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/moraro/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moraro/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moraro/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moraro/support/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/moraro/ko/support/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/moraro/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moraro/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moraro/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moraro/support/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/moraro/ja/support/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/moraro/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moraro/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moraro/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moraro/support/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/moraro/privacy/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/moraro/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moraro/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moraro/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moraro/privacy/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/moraro/ko/privacy/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/moraro/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moraro/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moraro/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moraro/privacy/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/moraro/ja/privacy/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/moraro/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moraro/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moraro/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moraro/privacy/"/>
   </url>
 </urlset>

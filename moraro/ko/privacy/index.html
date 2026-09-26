@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Every language has its own address. ?lang= on any page opens that language.
+   The English address is also the default one: a visitor who comes to it from
+   outside these pages goes to the language they last picked here, or else to
+   the first of their browser's languages that Moraro has. */
+(function () {
+  var here = 'ko', urls = {"en": "/moraro/privacy/", "ko": "/moraro/ko/privacy/", "ja": "/moraro/ja/privacy/"}, want;
+  function pick(tag) {
+    return { en: 'en', ko: 'ko', ja: 'ja' }[String(tag || '').toLowerCase().split('-')[0]];
+  }
+  try { want = pick(new URLSearchParams(location.search).get('lang')); } catch (e) {}
+  if (!want && here === 'en' && document.referrer.indexOf(location.origin + '/moraro/') !== 0) {
+    try { want = pick(localStorage.getItem('moraro-lang')); } catch (e) {}
+    var list = navigator.languages || [navigator.language];
+    for (var i = 0; !want && i < list.length; i++) want = pick(list[i]);
+  }
+  if (want && want !== here) location.replace(urls[want] + location.hash);
+})();
+</script>
+<title>개인정보 처리방침 · Moraro</title>
+<meta name="description" content="Moraro가 개인정보를 처리하는 방법: 기기에 저장되는 정보, 로그인했을 때 서버에 저장되는 정보, 마이크와 음성 인식, 정보주체의 권리.">
+<meta name="author" content="Jongmin Lee">
+<link rel="canonical" href="https://littlegd.github.io/moraro/ko/privacy/">
+<link rel="alternate" hreflang="en" href="https://littlegd.github.io/moraro/privacy/">
+<link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moraro/ko/privacy/">
+<link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moraro/ja/privacy/">
+<link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moraro/privacy/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JML.Studio">
+<meta property="og:url" content="https://littlegd.github.io/moraro/ko/privacy/">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:title" content="개인정보 처리방침 · Moraro">
+<meta property="og:description" content="Moraro가 개인정보를 처리하는 방법: 기기에 저장되는 정보, 로그인했을 때 서버에 저장되는 정보, 마이크와 음성 인식, 정보주체의 권리.">
+<meta property="og:image" content="https://littlegd.github.io/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="JML.Studio">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/moraro/moraro.css">
+<script src="/moraro/moraro.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+<header class="top">
+ <div class="top-inner wrap">
+  <nav class="crumbs" aria-label="JML.Studio"><a class="studio" href="/"><span class="sr">JML.Studio</span><svg class="wordmark" viewBox="0 0 108 12" width="108" height="12" aria-hidden="true" focusable="false" shape-rendering="crispEdges"><path fill="currentColor" d="M0 0h9v3h-9zM11 0h6v3h-6zM22 0h3v3h-3zM47 0h6v3h-6zM55 0h3v3h-3zM83 0h3v3h-3zM91 0h3v3h-3zM6 3h3v3h-3zM11 3h9v3h-9zM22 3h3v3h-3zM44 3h6v3h-6zM55 3h6v3h-6zM66 3h3v3h-3zM72 3h3v3h-3zM77 3h9v3h-9zM99 3h9v3h-9zM6 6h3v3h-3zM11 6h3v3h-3zM17 6h3v3h-3zM22 6h3v3h-3zM50 6h3v3h-3zM55 6h3v3h-3zM66 6h3v3h-3zM72 6h3v3h-3zM77 6h3v3h-3zM83 6h3v3h-3zM88 6h6v3h-6zM99 6h3v3h-3zM105 6h3v3h-3zM0 9h6v3h-6zM11 9h3v3h-3zM17 9h3v3h-3zM22 9h9v3h-9zM36 9h3v3h-3zM44 9h6v3h-6zM58 9h6v3h-6zM69 9h6v3h-6zM77 9h9v3h-9zM91 9h6v3h-6zM99 9h9v3h-9z"/></svg></a><span class="crumb-sep" aria-hidden="true"></span><a class="crumb-app" href="/moraro/ko/">Moraro</a></nav>
+  <details class="lang">
+    <summary><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M1.75 8h12.5M8 1.75c1.7 1.8 2.6 3.9 2.6 6.25S9.7 12.45 8 14.25C6.3 12.45 5.4 10.35 5.4 8S6.3 3.55 8 1.75z"/></svg><span class="sr">언어: </span>한국어</summary>
+    <ul class="lang-menu" role="list"><li><a href="/moraro/privacy/" hreflang="en" lang="en" data-set-lang="en">English</a></li><li><a href="/moraro/ko/privacy/" hreflang="ko" lang="ko" data-set-lang="ko" aria-current="true">한국어</a></li><li><a href="/moraro/ja/privacy/" hreflang="ja" lang="ja" data-set-lang="ja">日本語</a></li></ul>
+  </details>
+ </div>
+</header>
+<main id="main" class="wrap narrow doc">
+<article aria-labelledby="h">
+<div class="page-head"><h1 id="h">Moraro 개인정보 처리방침</h1></div>
+<p class="meta">시행일: 2026년&nbsp;9월&nbsp;26일</p>
+<p>Moraro(이하 '앱')를 만든 개인 개발자 Jongmin Lee(이하 '개발자')는 「개인정보 보호법」 등 관련 법령을 지키며, 아래와 같이 개인정보를 처리합니다.</p>
+<h2>요약</h2>
+<ul><li>로그인하지 않으면 학습 기록은 기기에만 저장됩니다. 앱을 실행할 때 로그인 방법을 확인하는 요청만 서버로 가며, 여기에는 계정도 학습 기록도 없습니다.</li><li>Apple이나 Google로 로그인하면, 다른 기기에서 이어서 학습할 수 있도록 계정 정보와 학습 기록을 Supabase 서버(미국)에 저장합니다.</li><li>음성 인식은 기기 안에서만 합니다. 섀도잉 녹음은 기기에 잠시 두었다가 지우며, 개발자에게 보내지 않습니다.</li><li>현재 버전에는 광고와 분석, 추적 도구가 없습니다.</li><li>계정과 서버의 기록은 앱에서 언제든 직접 지울 수 있습니다.</li></ul>
+<nav class="toc" aria-labelledby="toc"><h2 id="toc">목차</h2><ol><li><a href="#s1">1. 기기에 저장되는 정보</a></li><li><a href="#s2">2. 처리하는 개인정보의 항목, 목적, 보유 기간</a></li><li><a href="#s3">3. 개인정보 처리 위탁 및 국외 이전</a></li><li><a href="#s4">4. Apple 로그인과 Google 로그인</a></li><li><a href="#s5">5. 마이크와 음성 인식</a></li><li><a href="#s6">6. 번역과 읽기 음성</a></li><li><a href="#s7">7. 현재 버전에서 쓰지 않는 것</a></li><li><a href="#s8">8. 개인정보의 파기</a></li><li><a href="#s9">9. 정보주체의 권리와 행사 방법</a></li><li><a href="#s10">10. 안전성 확보 조치</a></li><li><a href="#s11">11. 아동의 개인정보</a></li><li><a href="#s12">12. 개인정보 보호책임자</a></li><li><a href="#s13">13. 권익침해 구제 방법</a></li><li><a href="#s14">14. 처리방침의 변경</a></li></ol></nav>
+<h2 id="s1">1. 기기에 저장되는 정보</h2>
+<ul><li>학습 기록: 읽은 글과 읽은 위치, 저장한 단어와 표현, 복습 상태, 메모와 생각, 스크랩북, 항해 기록과 보상(조개, 종이배 꾸미기), 관심사와 수준, 설명 언어와 학습 언어 같은 설정. 앱의 저장 공간에 저장됩니다.</li><li>첫 읽기 관찰(읽은 시간과 뜻을 확인한 횟수처럼 수준을 가늠하는 값)은 로그인해도 서버로 보내지 않고 기기에만 남깁니다.</li><li>기기별 하루 활동 횟수를 합치기 위해 앱이 만든 무작위 설치 ID. 광고 식별자나 기기 고유 식별자가 아니며, 추적에 쓰지 않습니다.</li><li>소리 설정과, 로그인했다면 로그인 상태를 유지하는 인증 토큰(iOS 키체인에 저장).</li><li>지우는 방법: 나의 항해 &gt; 설정 &gt; 데이터와 계정 &gt; 모든 학습 기록 초기화를 누르거나 앱을 삭제하세요.</li></ul>
+<h2 id="s2">2. 처리하는 개인정보의 항목, 목적, 보유 기간</h2>
+<p>계정 정보와 학습 기록은 로그인한 경우에만 처리합니다. 접속 기록은 게스트에게도 생깁니다. 앱은 실행할 때 로그인 방법을 쓸 수 있는지 서버에 확인하는데, 이 요청에는 계정이나 학습 기록이 담기지 않지만 모든 웹 요청처럼 IP 주소와 요청 시각이 남습니다. TestFlight 베타 버전에서도 똑같이 처리합니다.</p>
+<div class="table"><table><thead><tr><th scope="col">구분</th><th scope="col">항목</th><th scope="col">목적</th><th scope="col">보유 기간</th></tr></thead><tbody><tr><td data-label="구분">계정</td><td data-label="항목">Supabase 사용자 ID, 로그인 방식(Apple 또는 Google), 이메일 주소, 가입 시각과 최근 로그인 시각. Apple 로그인은 Apple이 알려 주는 이메일(실제 주소 또는 Apple의 비공개 전달 주소)만 받고 이름은 요청하지 않습니다. Google 로그인은 Google이 알려 주는 이메일, 이름, 프로필 사진 주소가 인증 기록에 함께 저장됩니다.</td><td data-label="목적">로그인, 여러 기기의 기록 연결, 계정 삭제 처리</td><td data-label="보유 기간">계정을 삭제할 때까지</td></tr><tr><td data-label="구분">학습 기록</td><td data-label="항목">1항의 학습 기록(첫 읽기 관찰 제외), 무작위 설치 ID가 들어간 하루 활동 기록, 기록 버전과 초기화 시각</td><td data-label="목적">여러 기기에서 이어서 학습, 보상 계산</td><td data-label="보유 기간">계정을 삭제할 때까지. 모든 학습 기록 초기화를 하면 이전 기록은 서버에서도 지워집니다.</td></tr><tr><td data-label="구분">접속 기록</td><td data-label="항목">서버에 요청한 시각, IP 주소, 기기와 앱 정보 같은 요청 정보, 오류 기록</td><td data-label="목적">서비스 보안, 오류 대응</td><td data-label="보유 기간">서버 요청 로그는 1일 뒤 자동 삭제. 인증 시스템이 보안을 위해 남기는 로그인 기록(시각, IP 주소)은 보안 사고 대응에 필요한 기간 동안 보관하며, 요청하면 지체 없이 삭제합니다.</td></tr></tbody></table></div>
+<h2 id="s3">3. 개인정보 처리 위탁 및 국외 이전</h2>
+<p>서버 운영을 아래와 같이 위탁하며, 이 과정에서 개인정보가 국외로 이전됩니다(「개인정보 보호법」 제28조의8). 게스트는 2항의 접속 기록만 이전됩니다. 개발자는 이 밖에 개인정보를 제3자에게 제공하지 않습니다.</p>
+<p><strong>Supabase Pte. Ltd.</strong> (서버 운영: 로그인 방법 확인, 계정 인증, 학습 기록 저장)</p>
+<ul><li>이전받는 자와 연락처: Supabase Pte. Ltd.(싱가포르 법인), <a href="mailto:privacy@supabase.com">privacy@supabase.com</a></li><li>이전되는 국가: 미국(Amazon Web Services 미국 동부 오하이오 리전에 저장)</li><li>이전 일시와 방법: 앱을 실행할 때(로그인 방법 확인)와 로그인, 동기화, 계정 삭제를 할 때마다 네트워크를 통해 암호화(HTTPS)해 전송</li><li>이전 항목: 2항의 접속 기록, 로그인한 경우 계정 정보와 학습 기록</li><li>이전 목적: 로그인 방법 확인, 로그인 처리, 학습 기록 저장과 동기화, 계정 삭제</li><li>보유·이용 기간: 계정을 삭제할 때까지(접속 기록은 2항과 같음)</li></ul>
+<p><strong>국외 이전을 거부하는 방법과 그 효과</strong></p>
+<ul><li>방법: 로그인하지 않고 게스트로 쓰거나, 로그아웃하거나 계정을 삭제하면 계정 정보와 학습 기록의 이전이 멈춥니다. 앱을 실행할 때의 로그인 방법 확인 요청은 게스트에게도 계속됩니다.</li><li>효과: 학습 기록이 그 기기에만 남고 다른 기기와 이어지지 않습니다. 나머지 기능은 모두 그대로 쓸 수 있습니다.</li></ul>
+<h2 id="s4">4. Apple 로그인과 Google 로그인</h2>
+<ul><li>로그인 화면은 Apple과 Google이 직접 보여 주며, 이 과정에는 각 회사의 개인정보 처리방침이 적용됩니다. 개발자는 비밀번호를 받지 않습니다.</li><li>계정을 삭제하면 Apple 로그인의 연결도 해지합니다. 해지하지 못했다면 앱이 iOS 설정에서 직접 연결을 해제하는 방법을 안내합니다. Google 연결은 Google 계정 설정의 서드 파티 앱 및 서비스에서 해제할 수 있습니다.</li></ul>
+<h2 id="s5">5. 마이크와 음성 인식</h2>
+<ul><li>섀도잉(문장을 소리 내어 따라 하기)과 생각을 말로 적는 음성 메모에서만 마이크를 씁니다. 권한은 iOS 설정 &gt; 개인정보 보호 및 보안의 마이크와 음성 인식에서 언제든 끌 수 있습니다.</li><li>음성 인식은 Apple의 기기 내 인식만 씁니다. 기기에서 인식할 수 없는 경우에도 음성을 서버로 보내지 않고, 그 기능만 쓸 수 없습니다.</li><li>섀도잉 녹음은 기기의 임시 폴더에 두고 원문과 비교하는 데만 쓰며, 섀도잉 화면을 닫으면 지웁니다. 녹음은 개발자에게 전달되지 않습니다.</li><li>현재 버전은 녹음을 서버로 보내는 온라인 발음 평가를 쓰지 않습니다. 이 기능을 켜게 되면 이 방침을 먼저 고치고, 사용자가 녹음마다 직접 고른 경우에만 보냅니다.</li></ul>
+<h2 id="s6">6. 번역과 읽기 음성</h2>
+<ul><li>단어와 구절의 뜻은 앱에 들어 있는 설명을 먼저 쓰고, 없으면 Apple의 번역 기능으로 기기 안에서 번역합니다. 필요한 언어 자료는 처음 한 번 Apple에서 내려받으며, 이 과정에는 Apple의 개인정보 처리방침이 적용됩니다.</li><li>읽기 음성은 앱에 들어 있는 음성 파일을 재생합니다.</li></ul>
+<h2 id="s7">7. 현재 버전에서 쓰지 않는 것</h2>
+<p>광고, 분석, 오류 보고, 추적 SDK를 쓰지 않고, 쿠키 같은 자동 수집 장치도 쓰지 않습니다. 개인정보를 팔지 않으며, 다른 앱과 웹사이트에 걸쳐 사용자를 추적하지 않습니다. 조개와 종이배 꾸미기는 학습으로 얻는 앱 안 보상이며, 현재 버전에는 결제 기능이 없습니다.</p>
+<h2 id="s8">8. 개인정보의 파기</h2>
+<ul><li>계정 삭제: 나의 항해 &gt; 설정 &gt; 데이터와 계정 &gt; 계정 삭제를 누르면 서버의 계정과 학습 기록을 바로 삭제하며 복구할 수 없습니다. 이 기기에 남은 계정 기록도 함께 지웁니다. 다른 기기에 남은 기록은 그 기기에서 로그인이 풀리고, 앱을 삭제하면 지워집니다.</li><li>서버 요청 로그는 2항의 기간이 지나면 자동으로 삭제됩니다. 현재 서버에는 별도의 백업 사본을 두지 않습니다.</li><li>기기의 기록은 모든 학습 기록 초기화를 하거나 앱을 삭제하면 지워집니다.</li></ul>
+<h2 id="s9">9. 정보주체의 권리와 행사 방법</h2>
+<p>사용자는 언제든 개인정보의 열람, 정정, 삭제, 처리정지, 동의 철회를 요구할 수 있으며, 아래 이메일로 요청하면 지체 없이 처리합니다. 로그아웃, 모든 학습 기록 초기화, 계정 삭제는 앱 안에서 바로 할 수 있습니다. 요청하실 때는 본인 확인을 위해 로그인에 쓴 이메일 주소를 알려 주세요.</p>
+<h2 id="s10">10. 안전성 확보 조치</h2>
+<p>모든 전송은 HTTPS로 암호화합니다. 서버는 행 단위 보안(RLS)으로 각 사용자가 자기 기록만 읽을 수 있게 하고, 저장은 본인 계정에만 쓰는 함수로만 허용합니다. 로그인 토큰은 iOS 키체인에 저장하며, 서버 관리용 비밀 키는 앱과 코드 저장소에 넣지 않습니다. 기능에 꼭 필요한 정보만 처리합니다.</p>
+<h2 id="s11">11. 아동의 개인정보</h2>
+<p>앱은 누구나 게스트로 쓸 수 있습니다. 만 14세 미만 아동은 법정대리인의 동의 없이 계정을 만들지 말아 주세요. 법정대리인의 동의 없이 만 14세 미만 아동의 계정이 만들어진 것을 알게 되면 지체 없이 삭제합니다.</p>
+<h2 id="s12">12. 개인정보 보호책임자</h2>
+<ul><li>개인정보 보호책임자: Jongmin Lee(개발자)</li><li>이메일: <a href="mailto:lee1993ljm@gmail.com">lee1993ljm@gmail.com</a></li></ul>
+<h2 id="s13">13. 권익침해 구제 방법</h2>
+<p>개인정보 침해에 대한 상담이나 피해 구제가 필요하면 아래 기관에 문의할 수 있습니다.</p>
+<ul><li>개인정보분쟁조정위원회: 1833-6972 (<a href="https://www.kopico.go.kr">www.kopico.go.kr</a>)</li><li>개인정보침해신고센터: 국번 없이 118 (<a href="https://privacy.kisa.or.kr">privacy.kisa.or.kr</a>)</li><li>대검찰청: 국번 없이 1301 (<a href="https://www.spo.go.kr">www.spo.go.kr</a>)</li><li>경찰청: 국번 없이 182 (<a href="https://ecrm.police.go.kr">ecrm.police.go.kr</a>)</li></ul>
+<h2 id="s14">14. 처리방침의 변경</h2>
+<p>이 처리방침이 바뀌면 새 시행일과 함께 이 주소에 게시합니다. 유료 구독 같은 결제 기능이나 광고처럼 개인정보 처리가 달라지는 기능은, 출시하기 전에 이 방침을 먼저 고칩니다. 앱 안 결제는 Apple이 처리하므로 개발자는 카드 정보 같은 결제 정보를 받지 않습니다. 중요한 변경은 앱 업데이트 안내에도 함께 알립니다.</p>
+</article>
+</main>
+<footer class="wrap">
+  <div class="bottom">
+    <nav aria-label="Moraro">
+      <a href="/moraro/ko/">Moraro</a>
+      <a href="/moraro/ko/support/">지원</a>
+      <a href="/moraro/ko/privacy/">개인정보 처리방침</a>
+      <a href="/">JML.Studio</a>
+    </nav>
+    <p>&copy; 2026 JML.Studio</p>
+  </div>
+</footer>
+</body>
+</html>

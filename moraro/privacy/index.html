@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Every language has its own address. ?lang= on any page opens that language.
+   The English address is also the default one: a visitor who comes to it from
+   outside these pages goes to the language they last picked here, or else to
+   the first of their browser's languages that Moraro has. */
+(function () {
+  var here = 'en', urls = {"en": "/moraro/privacy/", "ko": "/moraro/ko/privacy/", "ja": "/moraro/ja/privacy/"}, want;
+  function pick(tag) {
+    return { en: 'en', ko: 'ko', ja: 'ja' }[String(tag || '').toLowerCase().split('-')[0]];
+  }
+  try { want = pick(new URLSearchParams(location.search).get('lang')); } catch (e) {}
+  if (!want && here === 'en' && document.referrer.indexOf(location.origin + '/moraro/') !== 0) {
+    try { want = pick(localStorage.getItem('moraro-lang')); } catch (e) {}
+    var list = navigator.languages || [navigator.language];
+    for (var i = 0; !want && i < list.length; i++) want = pick(list[i]);
+  }
+  if (want && want !== here) location.replace(urls[want] + location.hash);
+})();
+</script>
+<title>Privacy Policy · Moraro</title>
+<meta name="description" content="How Moraro handles your data: what stays on your device, what is stored on the server when you sign in, the microphone and speech recognition, and your rights.">
+<meta name="author" content="Jongmin Lee">
+<link rel="canonical" href="https://littlegd.github.io/moraro/privacy/">
+<link rel="alternate" hreflang="en" href="https://littlegd.github.io/moraro/privacy/">
+<link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moraro/ko/privacy/">
+<link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moraro/ja/privacy/">
+<link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moraro/privacy/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JML.Studio">
+<meta property="og:url" content="https://littlegd.github.io/moraro/privacy/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:title" content="Privacy Policy · Moraro">
+<meta property="og:description" content="How Moraro handles your data: what stays on your device, what is stored on the server when you sign in, the microphone and speech recognition, and your rights.">
+<meta property="og:image" content="https://littlegd.github.io/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="JML.Studio">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/moraro/moraro.css">
+<script src="/moraro/moraro.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+ <div class="top-inner wrap">
+  <nav class="crumbs" aria-label="JML.Studio"><a class="studio" href="/"><span class="sr">JML.Studio</span><svg class="wordmark" viewBox="0 0 108 12" width="108" height="12" aria-hidden="true" focusable="false" shape-rendering="crispEdges"><path fill="currentColor" d="M0 0h9v3h-9zM11 0h6v3h-6zM22 0h3v3h-3zM47 0h6v3h-6zM55 0h3v3h-3zM83 0h3v3h-3zM91 0h3v3h-3zM6 3h3v3h-3zM11 3h9v3h-9zM22 3h3v3h-3zM44 3h6v3h-6zM55 3h6v3h-6zM66 3h3v3h-3zM72 3h3v3h-3zM77 3h9v3h-9zM99 3h9v3h-9zM6 6h3v3h-3zM11 6h3v3h-3zM17 6h3v3h-3zM22 6h3v3h-3zM50 6h3v3h-3zM55 6h3v3h-3zM66 6h3v3h-3zM72 6h3v3h-3zM77 6h3v3h-3zM83 6h3v3h-3zM88 6h6v3h-6zM99 6h3v3h-3zM105 6h3v3h-3zM0 9h6v3h-6zM11 9h3v3h-3zM17 9h3v3h-3zM22 9h9v3h-9zM36 9h3v3h-3zM44 9h6v3h-6zM58 9h6v3h-6zM69 9h6v3h-6zM77 9h9v3h-9zM91 9h6v3h-6zM99 9h9v3h-9z"/></svg></a><span class="crumb-sep" aria-hidden="true"></span><a class="crumb-app" href="/moraro/">Moraro</a></nav>
+  <details class="lang">
+    <summary><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M1.75 8h12.5M8 1.75c1.7 1.8 2.6 3.9 2.6 6.25S9.7 12.45 8 14.25C6.3 12.45 5.4 10.35 5.4 8S6.3 3.55 8 1.75z"/></svg><span class="sr">Language: </span>English</summary>
+    <ul class="lang-menu" role="list"><li><a href="/moraro/privacy/" hreflang="en" lang="en" data-set-lang="en" aria-current="true">English</a></li><li><a href="/moraro/ko/privacy/" hreflang="ko" lang="ko" data-set-lang="ko">한국어</a></li><li><a href="/moraro/ja/privacy/" hreflang="ja" lang="ja" data-set-lang="ja">日本語</a></li></ul>
+  </details>
+ </div>
+</header>
+<main id="main" class="wrap narrow doc">
+<article aria-labelledby="h">
+<div class="page-head"><h1 id="h">Moraro Privacy Policy</h1></div>
+<p class="meta">Effective September&nbsp;26, 2026</p>
+<p>Moraro (the "app") is made by Jongmin Lee, an independent developer ("we"). This policy explains what the app does with your information.</p>
+<h2>Summary</h2>
+<ul><li>If you don't sign in, your progress stays on your device. The only request that reaches our server is a check, at launch, of which sign-in methods are available. It carries no account and no progress.</li><li>If you sign in with Apple or Google, we store your account details and progress on Supabase servers in the United States, so you can continue on another device.</li><li>Speech recognition runs only on your device. Shadowing recordings are kept there briefly, then deleted, and never sent to us.</li><li>This version has no ads, analytics or tracking tools.</li><li>You can delete your account and the progress on our server yourself, at any time, in the app.</li></ul>
+<nav class="toc" aria-labelledby="toc"><h2 id="toc">Contents</h2><ol><li><a href="#s1">1. Information on your device</a></li><li><a href="#s2">2. What we process, why, and for how long</a></li><li><a href="#s3">3. Service provider and international transfer</a></li><li><a href="#s4">4. Sign in with Apple and Google</a></li><li><a href="#s5">5. Microphone and speech recognition</a></li><li><a href="#s6">6. Translation and reading audio</a></li><li><a href="#s7">7. What this version doesn't use</a></li><li><a href="#s8">8. Deleting your data</a></li><li><a href="#s9">9. Your rights</a></li><li><a href="#s10">10. Security</a></li><li><a href="#s11">11. Children</a></li><li><a href="#s12">12. Changes to this policy</a></li><li><a href="#s13">13. Contact</a></li></ol></nav>
+<h2 id="s1">1. Information on your device</h2>
+<ul><li>Learning progress: readings you opened and where you stopped, words and phrases you saved and their review state, notes and thoughts, scrapbooks, your voyage and rewards (shells and boat styles), interests and level, and settings such as your explanation and learning languages. It is kept in the app's storage.</li><li>First-reading observations (reading time and how often you checked a meaning, used to estimate your level) stay on the device even when you sign in. They are never uploaded.</li><li>A random installation ID the app creates to add up daily activity across your devices. It is not an advertising identifier or a device identifier, and it is not used for tracking.</li><li>Sound settings and, if you signed in, the sign-in token that keeps you signed in, stored in the iOS Keychain.</li><li>To clear it, go to My voyage &gt; Settings &gt; Data &amp; account &gt; Reset all learning data, or delete the app.</li></ul>
+<h2 id="s2">2. What we process, why, and for how long</h2>
+<p>We process account details and learning progress only if you sign in. Access records exist for guests too: when the app starts, it asks our server which sign-in methods are available. That request carries no account or progress, but like any web request, its IP address and time are recorded. TestFlight beta versions work the same way.</p>
+<div class="table"><table><thead><tr><th scope="col">Category</th><th scope="col">Data</th><th scope="col">Purpose</th><th scope="col">Kept</th></tr></thead><tbody><tr><td data-label="Category">Account</td><td data-label="Data">Supabase user ID, sign-in method (Apple or Google), email address, sign-up and last sign-in times. With Apple, we receive only the email Apple shares (your address or Apple's private relay address) and we do not ask for your name. With Google, the email, name and profile picture address that Google shares are stored with the sign-in record.</td><td data-label="Purpose">Signing in, linking your devices, handling account deletion</td><td data-label="Kept">Until you delete your account</td></tr><tr><td data-label="Category">Learning progress</td><td data-label="Data">The progress in section 1 (without first-reading observations), daily activity keyed by the random installation ID, record version and reset time</td><td data-label="Purpose">Continuing on your other devices, working out rewards</td><td data-label="Kept">Until you delete your account. Reset all learning data also removes earlier progress from the server.</td></tr><tr><td data-label="Category">Access records</td><td data-label="Data">Request time, IP address, request details such as device and app information, error records</td><td data-label="Purpose">Security and fixing problems</td><td data-label="Kept">Server request logs are deleted automatically after 1 day. Sign-in records kept by the authentication system for security (time and IP address) are kept as long as needed to handle security incidents, and deleted without delay on request.</td></tr></tbody></table></div>
+<h2 id="s3">3. Service provider and international transfer</h2>
+<p>We use Supabase to run our server, which involves transferring personal information outside your country. For guests, only the access records in section 2 are transferred. We do not share personal information with anyone else.</p>
+<ul><li>Provider and contact: Supabase Pte. Ltd. (Singapore), <a href="mailto:privacy@supabase.com">privacy@supabase.com</a></li><li>Where data is stored: United States (Amazon Web Services, US East, Ohio)</li><li>When and how: when the app starts (the sign-in check), and each time you sign in, sync or delete your account, encrypted in transit (HTTPS)</li><li>What: the access records in section 2 and, if you sign in, your account details and learning progress</li><li>Why: checking which sign-in methods are available, signing in, storing and syncing your progress, deleting your account</li><li>How long: until you delete your account (access records as in section 2)</li><li>How to refuse: use the app as a guest, sign out, or delete your account. Your account details and progress are then no longer transferred, your progress stays on that one device, and every other feature keeps working. The sign-in check when the app starts still happens.</li></ul>
+<p>The data protection laws in the United States may differ from those where you live. You can stop the transfer of your account details and progress at any time, as described above.</p>
+<h2 id="s4">4. Sign in with Apple and Google</h2>
+<ul><li>Apple and Google show their own sign-in screens, and their privacy policies apply to that step. We never receive your password.</li><li>When you delete your account, the app also revokes its Sign in with Apple connection. If that fails, the app shows how to remove it in iOS Settings. You can remove the Google connection under Third-party apps &amp; services in your Google Account.</li></ul>
+<h2 id="s5">5. Microphone and speech recognition</h2>
+<ul><li>The microphone is used only for shadowing (repeating a sentence out loud) and voice notes. You can turn access off at any time in iOS Settings &gt; Privacy &amp; Security &gt; Microphone and Speech Recognition.</li><li>Speech recognition uses only Apple's on-device recognition. If the device cannot recognize speech, nothing is sent to a server; that feature is simply unavailable.</li><li>Shadowing recordings are kept in the device's temporary folder, used only to compare with the original, and deleted when you close the shadowing screen. They are never sent to us.</li><li>This version does not use online pronunciation assessment, which would send recordings to a server. If we turn it on, we will update this policy first, and a recording will be sent only when you choose to send it.</li></ul>
+<h2 id="s6">6. Translation and reading audio</h2>
+<ul><li>Meanings of words and phrases come from explanations built into the app first. When there is none, Apple's translation feature translates on the device. The language data it needs is downloaded from Apple once, under Apple's privacy policy.</li><li>Reading audio plays speech files bundled with the app.</li></ul>
+<h2 id="s7">7. What this version doesn't use</h2>
+<p>No ads, analytics, crash reporting or tracking SDKs, and no cookies or similar automatic collection. We don't sell personal information or track you across other apps and websites. Shells and boat styles are in-app rewards you earn by learning, and this version has no payments.</p>
+<h2 id="s8">8. Deleting your data</h2>
+<ul><li>Account deletion: My voyage &gt; Settings &gt; Data &amp; account &gt; Delete account removes your account and the progress on the server immediately and permanently, and clears the account records on this device. On your other devices, you are signed out, and deleting the app there removes what is left.</li><li>Server request logs are deleted automatically after the period in section 2. There is currently no separate backup copy on the server.</li><li>Progress on the device is removed with Reset all learning data or by deleting the app.</li></ul>
+<h2 id="s9">9. Your rights</h2>
+<p>You can ask to access, correct or delete your personal information, to stop its processing, or to withdraw your consent at any time. Email us and we will act on it without delay. You can sign out, reset your learning data or delete your account yourself in the app. To help us find your records, please tell us the email address you signed in with.</p>
+<h2 id="s10">10. Security</h2>
+<p>Everything is sent over HTTPS. On the server, row-level security lets each user read only their own records, and saving goes only through functions that write to the caller's own account. Sign-in tokens are kept in the iOS Keychain, and server admin keys are never included in the app or its code repository. We process only what each feature needs.</p>
+<h2 id="s11">11. Children</h2>
+<p>Anyone can use the app as a guest. Children should not create an account without a parent or guardian's consent where the law requires it (in Korea, under 14). If we learn that such an account was created without consent, we will delete it without delay.</p>
+<h2 id="s12">12. Changes to this policy</h2>
+<p>If this policy changes, we will publish the new version at this address with a new effective date. Before we release anything that changes how data is handled, such as a paid subscription or ads, we will update this policy first. In-app payments are processed by Apple, so we never receive your card details. Significant changes will also be mentioned in the app's release notes.</p>
+<h2 id="s13">13. Contact</h2>
+<p>Jongmin Lee · <a href="mailto:lee1993ljm@gmail.com">lee1993ljm@gmail.com</a></p>
+</article>
+</main>
+<footer class="wrap">
+  <div class="bottom">
+    <nav aria-label="Moraro">
+      <a href="/moraro/">Moraro</a>
+      <a href="/moraro/support/">Support</a>
+      <a href="/moraro/privacy/">Privacy Policy</a>
+      <a href="/">JML.Studio</a>
+    </nav>
+    <p>&copy; 2026 JML.Studio</p>
+  </div>
+</footer>
+</body>
+</html>

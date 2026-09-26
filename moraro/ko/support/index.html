@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Every language has its own address. ?lang= on any page opens that language.
+   The English address is also the default one: a visitor who comes to it from
+   outside these pages goes to the language they last picked here, or else to
+   the first of their browser's languages that Moraro has. */
+(function () {
+  var here = 'ko', urls = {"en": "/moraro/support/", "ko": "/moraro/ko/support/", "ja": "/moraro/ja/support/"}, want;
+  function pick(tag) {
+    return { en: 'en', ko: 'ko', ja: 'ja' }[String(tag || '').toLowerCase().split('-')[0]];
+  }
+  try { want = pick(new URLSearchParams(location.search).get('lang')); } catch (e) {}
+  if (!want && here === 'en' && document.referrer.indexOf(location.origin + '/moraro/') !== 0) {
+    try { want = pick(localStorage.getItem('moraro-lang')); } catch (e) {}
+    var list = navigator.languages || [navigator.language];
+    for (var i = 0; !want && i < list.length; i++) want = pick(list[i]);
+  }
+  if (want && want !== here) location.replace(urls[want] + location.hash);
+})();
+</script>
+<title>지원 · Moraro</title>
+<meta name="description" content="Moraro 도움말: 문의, 로그인과 동기화, 계정 삭제, 녹음, 지원 기기.">
+<meta name="author" content="Jongmin Lee">
+<link rel="canonical" href="https://littlegd.github.io/moraro/ko/support/">
+<link rel="alternate" hreflang="en" href="https://littlegd.github.io/moraro/support/">
+<link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moraro/ko/support/">
+<link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moraro/ja/support/">
+<link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moraro/support/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JML.Studio">
+<meta property="og:url" content="https://littlegd.github.io/moraro/ko/support/">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:title" content="지원 · Moraro">
+<meta property="og:description" content="Moraro 도움말: 문의, 로그인과 동기화, 계정 삭제, 녹음, 지원 기기.">
+<meta property="og:image" content="https://littlegd.github.io/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="JML.Studio">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/moraro/moraro.css">
+<script src="/moraro/moraro.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+<header class="top">
+ <div class="top-inner wrap">
+  <nav class="crumbs" aria-label="JML.Studio"><a class="studio" href="/"><span class="sr">JML.Studio</span><svg class="wordmark" viewBox="0 0 108 12" width="108" height="12" aria-hidden="true" focusable="false" shape-rendering="crispEdges"><path fill="currentColor" d="M0 0h9v3h-9zM11 0h6v3h-6zM22 0h3v3h-3zM47 0h6v3h-6zM55 0h3v3h-3zM83 0h3v3h-3zM91 0h3v3h-3zM6 3h3v3h-3zM11 3h9v3h-9zM22 3h3v3h-3zM44 3h6v3h-6zM55 3h6v3h-6zM66 3h3v3h-3zM72 3h3v3h-3zM77 3h9v3h-9zM99 3h9v3h-9zM6 6h3v3h-3zM11 6h3v3h-3zM17 6h3v3h-3zM22 6h3v3h-3zM50 6h3v3h-3zM55 6h3v3h-3zM66 6h3v3h-3zM72 6h3v3h-3zM77 6h3v3h-3zM83 6h3v3h-3zM88 6h6v3h-6zM99 6h3v3h-3zM105 6h3v3h-3zM0 9h6v3h-6zM11 9h3v3h-3zM17 9h3v3h-3zM22 9h9v3h-9zM36 9h3v3h-3zM44 9h6v3h-6zM58 9h6v3h-6zM69 9h6v3h-6zM77 9h9v3h-9zM91 9h6v3h-6zM99 9h9v3h-9z"/></svg></a><span class="crumb-sep" aria-hidden="true"></span><a class="crumb-app" href="/moraro/ko/">Moraro</a></nav>
+  <details class="lang">
+    <summary><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M1.75 8h12.5M8 1.75c1.7 1.8 2.6 3.9 2.6 6.25S9.7 12.45 8 14.25C6.3 12.45 5.4 10.35 5.4 8S6.3 3.55 8 1.75z"/></svg><span class="sr">언어: </span>한국어</summary>
+    <ul class="lang-menu" role="list"><li><a href="/moraro/support/" hreflang="en" lang="en" data-set-lang="en">English</a></li><li><a href="/moraro/ko/support/" hreflang="ko" lang="ko" data-set-lang="ko" aria-current="true">한국어</a></li><li><a href="/moraro/ja/support/" hreflang="ja" lang="ja" data-set-lang="ja">日本語</a></li></ul>
+  </details>
+ </div>
+</header>
+<main id="main" class="wrap narrow doc">
+<div class="page-head">
+  <h1>Moraro 지원</h1>
+  <p>궁금한 점이나 불편한 점이 있으면 메일로 알려 주세요.</p>
+</div>
+<section class="contact" id="contact" aria-labelledby="contact-title">
+  <h2 id="contact-title">문의</h2>
+  <a class="mail" href="mailto:lee1993ljm@gmail.com?subject=Moraro">lee1993ljm@gmail.com</a>
+  <p>기기 모델과 iOS 버전, 어떤 화면에서 무슨 일이 있었는지 적어 주시면 더 빨리 도와드릴 수 있어요.</p>
+</section>
+<ul class="faq" role="list"><li><h2>로그인해야 쓸 수 있나요?</h2><p>아니요, 로그인 없이 바로 시작할 수 있어요. 다른 기기에서도 이어서 하고 싶을 때만 Apple이나 Google로 로그인하면 돼요.</p></li><li><h2>다른 기기에서 이어서 하고 싶어요</h2><p>두 기기에서 같은 계정으로 로그인하세요. 기록은 자동으로 맞춰져요.</p></li><li><h2>계정을 지우고 싶어요</h2><p>나의 항해 &gt; 설정 &gt; 데이터와 계정에서 계정 삭제를 누르세요. 계정과 서버에 있는 기록이 바로 지워지고, 되돌릴 수 없어요. 계정은 두고 처음부터 다시 하려면 같은 곳의 모든 학습 기록 초기화를 누르세요.</p></li><li><h2>녹음은 어디에 남나요?</h2><p>섀도잉 녹음은 기기에만 있다가, 섀도잉 화면을 닫으면 지워져요. 음성 인식도 기기 안에서 해요.</p></li><li><h2>어떤 기기에서 쓸 수 있나요?</h2><p>iOS 18 이상인 iPhone과 iPad에서 쓸 수 있어요.</p></li></ul>
+<p class="more"><a href="/moraro/ko/privacy/">개인정보 처리방침</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">이용약관(Apple 표준 사용권 계약)</a></p>
+</main>
+<footer class="wrap">
+  <div class="bottom">
+    <nav aria-label="Moraro">
+      <a href="/moraro/ko/">Moraro</a>
+      <a href="/moraro/ko/support/">지원</a>
+      <a href="/moraro/ko/privacy/">개인정보 처리방침</a>
+      <a href="/">JML.Studio</a>
+    </nav>
+    <p>&copy; 2026 JML.Studio</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Every language has its own address. ?lang= on any page opens that language.
+   The English address is also the default one: a visitor who comes to it from
+   outside these pages goes to the language they last picked here, or else to
+   the first of their browser's languages that Moraro has. */
+(function () {
+  var here = 'ja', urls = {"en": "/moraro/support/", "ko": "/moraro/ko/support/", "ja": "/moraro/ja/support/"}, want;
+  function pick(tag) {
+    return { en: 'en', ko: 'ko', ja: 'ja' }[String(tag || '').toLowerCase().split('-')[0]];
+  }
+  try { want = pick(new URLSearchParams(location.search).get('lang')); } catch (e) {}
+  if (!want && here === 'en' && document.referrer.indexOf(location.origin + '/moraro/') !== 0) {
+    try { want = pick(localStorage.getItem('moraro-lang')); } catch (e) {}
+    var list = navigator.languages || [navigator.language];
+    for (var i = 0; !want && i < list.length; i++) want = pick(list[i]);
+  }
+  if (want && want !== here) location.replace(urls[want] + location.hash);
+})();
+</script>
+<title>サポート · Moraro</title>
+<meta name="description" content="Moraro のヘルプ：お問い合わせ、ログインと同期、アカウントの削除、録音、対応端末。">
+<meta name="author" content="Jongmin Lee">
+<link rel="canonical" href="https://littlegd.github.io/moraro/ja/support/">
+<link rel="alternate" hreflang="en" href="https://littlegd.github.io/moraro/support/">
+<link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moraro/ko/support/">
+<link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moraro/ja/support/">
+<link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moraro/support/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JML.Studio">
+<meta property="og:url" content="https://littlegd.github.io/moraro/ja/support/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:title" content="サポート · Moraro">
+<meta property="og:description" content="Moraro のヘルプ：お問い合わせ、ログインと同期、アカウントの削除、録音、対応端末。">
+<meta property="og:image" content="https://littlegd.github.io/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="JML.Studio">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/moraro/moraro.css">
+<script src="/moraro/moraro.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">本文へスキップ</a>
+<header class="top">
+ <div class="top-inner wrap">
+  <nav class="crumbs" aria-label="JML.Studio"><a class="studio" href="/"><span class="sr">JML.Studio</span><svg class="wordmark" viewBox="0 0 108 12" width="108" height="12" aria-hidden="true" focusable="false" shape-rendering="crispEdges"><path fill="currentColor" d="M0 0h9v3h-9zM11 0h6v3h-6zM22 0h3v3h-3zM47 0h6v3h-6zM55 0h3v3h-3zM83 0h3v3h-3zM91 0h3v3h-3zM6 3h3v3h-3zM11 3h9v3h-9zM22 3h3v3h-3zM44 3h6v3h-6zM55 3h6v3h-6zM66 3h3v3h-3zM72 3h3v3h-3zM77 3h9v3h-9zM99 3h9v3h-9zM6 6h3v3h-3zM11 6h3v3h-3zM17 6h3v3h-3zM22 6h3v3h-3zM50 6h3v3h-3zM55 6h3v3h-3zM66 6h3v3h-3zM72 6h3v3h-3zM77 6h3v3h-3zM83 6h3v3h-3zM88 6h6v3h-6zM99 6h3v3h-3zM105 6h3v3h-3zM0 9h6v3h-6zM11 9h3v3h-3zM17 9h3v3h-3zM22 9h9v3h-9zM36 9h3v3h-3zM44 9h6v3h-6zM58 9h6v3h-6zM69 9h6v3h-6zM77 9h9v3h-9zM91 9h6v3h-6zM99 9h9v3h-9z"/></svg></a><span class="crumb-sep" aria-hidden="true"></span><a class="crumb-app" href="/moraro/ja/">Moraro</a></nav>
+  <details class="lang">
+    <summary><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M1.75 8h12.5M8 1.75c1.7 1.8 2.6 3.9 2.6 6.25S9.7 12.45 8 14.25C6.3 12.45 5.4 10.35 5.4 8S6.3 3.55 8 1.75z"/></svg><span class="sr">言語: </span>日本語</summary>
+    <ul class="lang-menu" role="list"><li><a href="/moraro/support/" hreflang="en" lang="en" data-set-lang="en">English</a></li><li><a href="/moraro/ko/support/" hreflang="ko" lang="ko" data-set-lang="ko">한국어</a></li><li><a href="/moraro/ja/support/" hreflang="ja" lang="ja" data-set-lang="ja" aria-current="true">日本語</a></li></ul>
+  </details>
+ </div>
+</header>
+<main id="main" class="wrap narrow doc">
+<div class="page-head">
+  <h1>Moraro サポート</h1>
+  <p>質問や、うまく動かないことがあれば、メールでお知らせください。</p>
+</div>
+<section class="contact" id="contact" aria-labelledby="contact-title">
+  <h2 id="contact-title">お問い合わせ</h2>
+  <a class="mail" href="mailto:lee1993ljm@gmail.com?subject=Moraro">lee1993ljm@gmail.com</a>
+  <p>お使いの機種と iOS のバージョン、どの画面で何が起きたかを書いていただけると、より早くお手伝いできます。</p>
+</section>
+<ul class="faq" role="list"><li><h2>ログインしないと使えませんか？</h2><p>いいえ、ログインせずにすぐ始められます。ほかの端末でも続けたいときだけ、Apple か Google でログインしてください。</p></li><li><h2>ほかの端末で続けたい</h2><p>両方の端末で、同じアカウントでログインしてください。記録は自動でそろいます。</p></li><li><h2>アカウントを削除したい</h2><p>私の航海 &gt; 設定 &gt; データとアカウント で「アカウントを削除」を押してください。アカウントとサーバーの記録がすぐに削除され、元に戻せません。アカウントは残して最初からやり直すなら、同じ場所の「すべての学習記録をリセット」を押してください。</p></li><li><h2>録音はどこに残りますか？</h2><p>シャドーイングの録音は端末にだけあり、シャドーイングの画面を閉じると削除されます。音声認識も端末の中で行います。</p></li><li><h2>どの端末で使えますか？</h2><p>iOS 18 以降の iPhone と iPad で使えます。</p></li></ul>
+<p class="more"><a href="/moraro/ja/privacy/">プライバシーポリシー</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">利用規約（Apple 標準使用許諾契約）</a></p>
+</main>
+<footer class="wrap">
+  <div class="bottom">
+    <nav aria-label="Moraro">
+      <a href="/moraro/ja/">Moraro</a>
+      <a href="/moraro/ja/support/">サポート</a>
+      <a href="/moraro/ja/privacy/">プライバシーポリシー</a>
+      <a href="/">JML.Studio</a>
+    </nav>
+    <p>&copy; 2026 JML.Studio</p>
+  </div>
+</footer>
+</body>
+</html>

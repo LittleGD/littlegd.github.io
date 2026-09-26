@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Every language has its own address. ?lang= on any page opens that language.
+   The English address is also the default one: a visitor who comes to it from
+   outside these pages goes to the language they last picked here, or else to
+   the first of their browser's languages that Moraro has. */
+(function () {
+  var here = 'en', urls = {"en": "/moraro/", "ko": "/moraro/ko/", "ja": "/moraro/ja/"}, want;
+  function pick(tag) {
+    return { en: 'en', ko: 'ko', ja: 'ja' }[String(tag || '').toLowerCase().split('-')[0]];
+  }
+  try { want = pick(new URLSearchParams(location.search).get('lang')); } catch (e) {}
+  if (!want && here === 'en' && document.referrer.indexOf(location.origin + '/moraro/') !== 0) {
+    try { want = pick(localStorage.getItem('moraro-lang')); } catch (e) {}
+    var list = navigator.languages || [navigator.language];
+    for (var i = 0; !want && i < list.length; i++) want = pick(list[i]);
+  }
+  if (want && want !== here) location.replace(urls[want] + location.hash);
+})();
+</script>
+<title>Moraro · Read the language you&#x27;re learning</title>
+<meta name="description" content="Moraro is an iPhone and iPad app for reading short pieces on topics you like, in the language you are learning. Coming soon to the App Store.">
+<meta name="author" content="Jongmin Lee">
+<link rel="canonical" href="https://littlegd.github.io/moraro/">
+<link rel="alternate" hreflang="en" href="https://littlegd.github.io/moraro/">
+<link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moraro/ko/">
+<link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moraro/ja/">
+<link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moraro/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JML.Studio">
+<meta property="og:url" content="https://littlegd.github.io/moraro/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:title" content="Moraro · Read the language you&#x27;re learning">
+<meta property="og:description" content="Moraro is an iPhone and iPad app for reading short pieces on topics you like, in the language you are learning. Coming soon to the App Store.">
+<meta property="og:image" content="https://littlegd.github.io/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="JML.Studio">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/moraro/moraro.css">
+<script src="/moraro/moraro.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+ <div class="top-inner wrap">
+  <nav class="crumbs" aria-label="JML.Studio"><a class="studio" href="/"><span class="sr">JML.Studio</span><svg class="wordmark" viewBox="0 0 108 12" width="108" height="12" aria-hidden="true" focusable="false" shape-rendering="crispEdges"><path fill="currentColor" d="M0 0h9v3h-9zM11 0h6v3h-6zM22 0h3v3h-3zM47 0h6v3h-6zM55 0h3v3h-3zM83 0h3v3h-3zM91 0h3v3h-3zM6 3h3v3h-3zM11 3h9v3h-9zM22 3h3v3h-3zM44 3h6v3h-6zM55 3h6v3h-6zM66 3h3v3h-3zM72 3h3v3h-3zM77 3h9v3h-9zM99 3h9v3h-9zM6 6h3v3h-3zM11 6h3v3h-3zM17 6h3v3h-3zM22 6h3v3h-3zM50 6h3v3h-3zM55 6h3v3h-3zM66 6h3v3h-3zM72 6h3v3h-3zM77 6h3v3h-3zM83 6h3v3h-3zM88 6h6v3h-6zM99 6h3v3h-3zM105 6h3v3h-3zM0 9h6v3h-6zM11 9h3v3h-3zM17 9h3v3h-3zM22 9h9v3h-9zM36 9h3v3h-3zM44 9h6v3h-6zM58 9h6v3h-6zM69 9h6v3h-6zM77 9h9v3h-9zM91 9h6v3h-6zM99 9h9v3h-9z"/></svg></a><span class="crumb-sep" aria-hidden="true"></span><a class="crumb-app" href="/moraro/">Moraro</a></nav>
+  <details class="lang">
+    <summary><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M1.75 8h12.5M8 1.75c1.7 1.8 2.6 3.9 2.6 6.25S9.7 12.45 8 14.25C6.3 12.45 5.4 10.35 5.4 8S6.3 3.55 8 1.75z"/></svg><span class="sr">Language: </span>English</summary>
+    <ul class="lang-menu" role="list"><li><a href="/moraro/" hreflang="en" lang="en" data-set-lang="en" aria-current="true">English</a></li><li><a href="/moraro/ko/" hreflang="ko" lang="ko" data-set-lang="ko">한국어</a></li><li><a href="/moraro/ja/" hreflang="ja" lang="ja" data-set-lang="ja">日本語</a></li></ul>
+  </details>
+ </div>
+</header>
+<main id="main">
+<section class="hero wrap" aria-labelledby="top">
+  <h1 id="top">Moraro</h1>
+  <p class="motto">A little curiosity. A wider world.</p>
+  <p class="lead">Learn a language by reading what you like.</p>
+  <p class="sub">Short pieces picked for your level. Tap anything you don&#x27;t know to see what it means.</p>
+  <div class="status">
+    <span class="soon"><span class="soon-dot" aria-hidden="true"></span>Coming soon to the App Store</span>
+    <span>iPhone · iPad</span>
+  </div>
+</section>
+
+<section class="section wrap narrow" aria-labelledby="how">
+  <h2 id="how">One short read a day is enough.</h2>
+  <p class="section-lead">Steer your paper boat to today&#x27;s reading, and tap only the words that stop you.</p><p class="section-lead">When you finish, write one sentence of your own. Those sentences become your scrapbook.</p>
+</section>
+</main>
+<footer class="wrap">
+  <div class="bottom">
+    <nav aria-label="Moraro">
+      <a href="/moraro/">Moraro</a>
+      <a href="/moraro/support/">Support</a>
+      <a href="/moraro/privacy/">Privacy Policy</a>
+      <a href="/">JML.Studio</a>
+    </nav>
+    <p>&copy; 2026 JML.Studio</p>
+  </div>
+</footer>
+</body>
+</html>

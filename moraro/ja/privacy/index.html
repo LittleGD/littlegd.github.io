@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Every language has its own address. ?lang= on any page opens that language.
+   The English address is also the default one: a visitor who comes to it from
+   outside these pages goes to the language they last picked here, or else to
+   the first of their browser's languages that Moraro has. */
+(function () {
+  var here = 'ja', urls = {"en": "/moraro/privacy/", "ko": "/moraro/ko/privacy/", "ja": "/moraro/ja/privacy/"}, want;
+  function pick(tag) {
+    return { en: 'en', ko: 'ko', ja: 'ja' }[String(tag || '').toLowerCase().split('-')[0]];
+  }
+  try { want = pick(new URLSearchParams(location.search).get('lang')); } catch (e) {}
+  if (!want && here === 'en' && document.referrer.indexOf(location.origin + '/moraro/') !== 0) {
+    try { want = pick(localStorage.getItem('moraro-lang')); } catch (e) {}
+    var list = navigator.languages || [navigator.language];
+    for (var i = 0; !want && i < list.length; i++) want = pick(list[i]);
+  }
+  if (want && want !== here) location.replace(urls[want] + location.hash);
+})();
+</script>
+<title>プライバシーポリシー · Moraro</title>
+<meta name="description" content="Moraro の個人情報の取り扱い：端末に保存される情報、ログインしたときにサーバーに保存される情報、マイクと音声認識、利用者の権利。">
+<meta name="author" content="Jongmin Lee">
+<link rel="canonical" href="https://littlegd.github.io/moraro/ja/privacy/">
+<link rel="alternate" hreflang="en" href="https://littlegd.github.io/moraro/privacy/">
+<link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moraro/ko/privacy/">
+<link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moraro/ja/privacy/">
+<link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moraro/privacy/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JML.Studio">
+<meta property="og:url" content="https://littlegd.github.io/moraro/ja/privacy/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:title" content="プライバシーポリシー · Moraro">
+<meta property="og:description" content="Moraro の個人情報の取り扱い：端末に保存される情報、ログインしたときにサーバーに保存される情報、マイクと音声認識、利用者の権利。">
+<meta property="og:image" content="https://littlegd.github.io/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="JML.Studio">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/moraro/moraro.css">
+<script src="/moraro/moraro.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">本文へスキップ</a>
+<header class="top">
+ <div class="top-inner wrap">
+  <nav class="crumbs" aria-label="JML.Studio"><a class="studio" href="/"><span class="sr">JML.Studio</span><svg class="wordmark" viewBox="0 0 108 12" width="108" height="12" aria-hidden="true" focusable="false" shape-rendering="crispEdges"><path fill="currentColor" d="M0 0h9v3h-9zM11 0h6v3h-6zM22 0h3v3h-3zM47 0h6v3h-6zM55 0h3v3h-3zM83 0h3v3h-3zM91 0h3v3h-3zM6 3h3v3h-3zM11 3h9v3h-9zM22 3h3v3h-3zM44 3h6v3h-6zM55 3h6v3h-6zM66 3h3v3h-3zM72 3h3v3h-3zM77 3h9v3h-9zM99 3h9v3h-9zM6 6h3v3h-3zM11 6h3v3h-3zM17 6h3v3h-3zM22 6h3v3h-3zM50 6h3v3h-3zM55 6h3v3h-3zM66 6h3v3h-3zM72 6h3v3h-3zM77 6h3v3h-3zM83 6h3v3h-3zM88 6h6v3h-6zM99 6h3v3h-3zM105 6h3v3h-3zM0 9h6v3h-6zM11 9h3v3h-3zM17 9h3v3h-3zM22 9h9v3h-9zM36 9h3v3h-3zM44 9h6v3h-6zM58 9h6v3h-6zM69 9h6v3h-6zM77 9h9v3h-9zM91 9h6v3h-6zM99 9h9v3h-9z"/></svg></a><span class="crumb-sep" aria-hidden="true"></span><a class="crumb-app" href="/moraro/ja/">Moraro</a></nav>
+  <details class="lang">
+    <summary><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M1.75 8h12.5M8 1.75c1.7 1.8 2.6 3.9 2.6 6.25S9.7 12.45 8 14.25C6.3 12.45 5.4 10.35 5.4 8S6.3 3.55 8 1.75z"/></svg><span class="sr">言語: </span>日本語</summary>
+    <ul class="lang-menu" role="list"><li><a href="/moraro/privacy/" hreflang="en" lang="en" data-set-lang="en">English</a></li><li><a href="/moraro/ko/privacy/" hreflang="ko" lang="ko" data-set-lang="ko">한국어</a></li><li><a href="/moraro/ja/privacy/" hreflang="ja" lang="ja" data-set-lang="ja" aria-current="true">日本語</a></li></ul>
+  </details>
+ </div>
+</header>
+<main id="main" class="wrap narrow doc">
+<article aria-labelledby="h">
+<div class="page-head"><h1 id="h">Moraro プライバシーポリシー</h1></div>
+<p class="meta">施行日：2026年9月26日</p>
+<p>Moraro（以下「本アプリ」）は、個人開発者の Jongmin Lee（以下「開発者」）が提供しています。このポリシーでは、本アプリが利用者の情報をどのように取り扱うかを説明します。</p>
+<h2>概要</h2>
+<ul><li>ログインしなければ、学習記録は端末にだけ保存されます。サーバーに届くのは起動時にログイン方法を確認するリクエストだけで、アカウントも学習記録も含みません。</li><li>Apple か Google でログインすると、ほかの端末で続けられるように、アカウント情報と学習記録を Supabase のサーバー（米国）に保存します。</li><li>音声認識は端末の中だけで行います。シャドーイングの録音は端末に一時的に置いたあと削除し、開発者には送りません。</li><li>現在のバージョンには、広告、分析、トラッキングの仕組みはありません。</li><li>アカウントとサーバーの記録は、アプリでいつでもご自身で削除できます。</li></ul>
+<nav class="toc" aria-labelledby="toc"><h2 id="toc">目次</h2><ol><li><a href="#s1">1. 端末に保存される情報</a></li><li><a href="#s2">2. 取り扱う情報、目的、保存期間</a></li><li><a href="#s3">3. 委託先と外国への移転</a></li><li><a href="#s4">4. Apple と Google でのログイン</a></li><li><a href="#s5">5. マイクと音声認識</a></li><li><a href="#s6">6. 翻訳と読み上げ音声</a></li><li><a href="#s7">7. 現在のバージョンで使わないもの</a></li><li><a href="#s8">8. 個人情報の削除</a></li><li><a href="#s9">9. 利用者の権利</a></li><li><a href="#s10">10. 安全管理措置</a></li><li><a href="#s11">11. お子さま</a></li><li><a href="#s12">12. ポリシーの変更</a></li><li><a href="#s13">13. お問い合わせ</a></li></ol></nav>
+<h2 id="s1">1. 端末に保存される情報</h2>
+<ul><li>学習記録：開いた読みものと読んだ位置、保存した単語と表現、復習の状態、メモと考え、スクラップブック、航海の記録と報酬（貝がら、舟の飾り）、興味とレベル、説明の言語と学ぶ言語などの設定。アプリの保存領域に保存されます。</li><li>初回の読みの観察（読んだ時間や意味を確認した回数など、レベルの推定に使う値）は、ログインしてもサーバーに送らず、端末にだけ残します。</li><li>端末ごとの1日の活動回数を合算するために本アプリが作る、ランダムなインストール ID。広告識別子や端末固有の識別子ではなく、トラッキングには使いません。</li><li>サウンドの設定と、ログインしている場合はログイン状態を保つ認証トークン（iOS のキーチェーンに保存）。</li><li>消す方法：私の航海 &gt; 設定 &gt; データとアカウント &gt; すべての学習記録をリセット を押すか、アプリを削除してください。</li></ul>
+<h2 id="s2">2. 取り扱う情報、目的、保存期間</h2>
+<p>アカウント情報と学習記録は、ログインした場合にだけ取り扱います。アクセス記録はゲストにも生じます。アプリは起動時にログイン方法が使えるかをサーバーに確認します。このリクエストにアカウントや学習記録は含まれませんが、ほかのウェブのリクエストと同じく、IP アドレスと日時が記録されます。TestFlight のベータ版でも同じです。</p>
+<div class="table"><table><thead><tr><th scope="col">区分</th><th scope="col">項目</th><th scope="col">目的</th><th scope="col">保存期間</th></tr></thead><tbody><tr><td data-label="区分">アカウント</td><td data-label="項目">Supabase のユーザー ID、ログイン方法（Apple または Google）、メールアドレス、登録日時と最終ログイン日時。Apple でログインした場合は Apple が提供するメール（実際のアドレスまたは Apple のプライベートリレーアドレス）だけを受け取り、名前は求めません。Google でログインした場合は、Google が提供するメール、名前、プロフィール写真のアドレスが認証記録に保存されます。</td><td data-label="目的">ログイン、端末間の記録の連携、アカウント削除の処理</td><td data-label="保存期間">アカウントを削除するまで</td></tr><tr><td data-label="区分">学習記録</td><td data-label="項目">1項の学習記録（初回の読みの観察を除く）、ランダムなインストール ID を含む1日の活動記録、記録のバージョンとリセット日時</td><td data-label="目的">ほかの端末での学習の継続、報酬の計算</td><td data-label="保存期間">アカウントを削除するまで。「すべての学習記録をリセット」を行うと、以前の記録はサーバーからも削除されます。</td></tr><tr><td data-label="区分">アクセス記録</td><td data-label="項目">リクエストの日時、IP アドレス、端末やアプリの情報などのリクエスト情報、エラー記録</td><td data-label="目的">セキュリティ、不具合への対応</td><td data-label="保存期間">サーバーのリクエストログは1日後に自動削除。認証システムがセキュリティのために残すログイン記録（日時、IP アドレス）は、セキュリティ上の問題への対応に必要な期間保存し、ご依頼があれば速やかに削除します。</td></tr></tbody></table></div>
+<h2 id="s3">3. 委託先と外国への移転</h2>
+<p>サーバーの運用を Supabase に委託しており、このとき個人情報が外国に移転されます。ゲストの場合に移転されるのは、2項のアクセス記録だけです。開発者はこれ以外に個人情報を第三者に提供しません。</p>
+<ul><li>委託先と連絡先：Supabase Pte. Ltd.（シンガポール法人）、<a href="mailto:privacy@supabase.com">privacy@supabase.com</a></li><li>保存される国：米国（Amazon Web Services の米国東部オハイオリージョン）</li><li>移転の時期と方法：アプリの起動時（ログイン方法の確認）と、ログイン、同期、アカウント削除のたびに、通信を暗号化（HTTPS）して送信</li><li>項目：2項のアクセス記録と、ログインした場合はアカウント情報と学習記録</li><li>目的：ログイン方法の確認、ログインの処理、学習記録の保存と同期、アカウントの削除</li><li>保存期間：アカウントを削除するまで（アクセス記録は2項のとおり）</li><li>拒否する方法と影響：ログインせずにゲストとして使うか、ログアウトまたはアカウントを削除すると、アカウント情報と学習記録の移転は止まります。学習記録はその端末にだけ残り、ほかの端末とはつながりませんが、それ以外の機能はすべてそのまま使えます。起動時のログイン方法の確認は、ゲストでも続きます。</li></ul>
+<p>米国の個人情報保護制度は、日本とは異なることがあります。アカウント情報と学習記録の移転は、上記の方法でいつでも止められます。</p>
+<h2 id="s4">4. Apple と Google でのログイン</h2>
+<ul><li>ログイン画面は Apple と Google が直接表示し、その手続きにはそれぞれのプライバシーポリシーが適用されます。開発者がパスワードを受け取ることはありません。</li><li>アカウントを削除すると、Apple でのログインの連携も解除します。解除できなかった場合は、iOS の設定で連携を外す方法をアプリがご案内します。Google の連携は、Google アカウントの「サードパーティ製のアプリとサービス」から外せます。</li></ul>
+<h2 id="s5">5. マイクと音声認識</h2>
+<ul><li>マイクは、シャドーイング（文を声に出してまねること）と、考えを声で書き取る音声メモでだけ使います。アクセスは iOS の設定 &gt; プライバシーとセキュリティ の「マイク」と「音声認識」で、いつでもオフにできます。</li><li>音声認識は Apple の端末内認識だけを使います。端末で認識できない場合も音声をサーバーに送らず、その機能だけが使えなくなります。</li><li>シャドーイングの録音は端末の一時フォルダに置き、原文との比較にだけ使い、シャドーイングの画面を閉じると削除します。録音が開発者に送られることはありません。</li><li>現在のバージョンでは、録音をサーバーに送るオンラインの発音評価は使いません。この機能を有効にする場合は、先にこのポリシーを改め、利用者が録音ごとに選んだときにだけ送ります。</li></ul>
+<h2 id="s6">6. 翻訳と読み上げ音声</h2>
+<ul><li>単語やフレーズの意味は、まずアプリに含まれる説明を使い、ない場合は Apple の翻訳機能で端末内で翻訳します。必要な言語データは最初に一度 Apple からダウンロードされ、その手続きには Apple のプライバシーポリシーが適用されます。</li><li>読み上げ音声は、アプリに含まれる音声ファイルを再生します。</li></ul>
+<h2 id="s7">7. 現在のバージョンで使わないもの</h2>
+<p>広告、分析、クラッシュレポート、トラッキングの SDK は使わず、Cookie などの自動収集の仕組みも使いません。個人情報を販売したり、ほかのアプリやウェブサイトをまたいで追跡したりしません。貝がらと舟の飾りは学習で得られるアプリ内の報酬で、現在のバージョンに決済機能はありません。</p>
+<h2 id="s8">8. 個人情報の削除</h2>
+<ul><li>アカウントの削除：私の航海 &gt; 設定 &gt; データとアカウント &gt; アカウントを削除 を押すと、サーバーのアカウントと学習記録がすぐに削除され、元に戻せません。この端末に残るアカウントの記録も一緒に削除します。ほかの端末ではログインが解除され、アプリを削除すると残りの記録も消えます。</li><li>サーバーのリクエストログは、2項の期間が過ぎると自動で削除されます。現在、サーバーに別のバックアップコピーは置いていません。</li><li>端末の記録は「すべての学習記録をリセット」を行うか、アプリを削除すると消えます。</li></ul>
+<h2 id="s9">9. 利用者の権利</h2>
+<p>利用者は、いつでも個人情報の開示、訂正、削除、利用停止、同意の撤回を求めることができます。下記のメールアドレスにご連絡いただければ、速やかに対応します。ログアウト、すべての学習記録のリセット、アカウントの削除は、アプリ内ですぐにできます。ご依頼の際は、ご本人確認のため、ログインに使ったメールアドレスをお知らせください。</p>
+<h2 id="s10">10. 安全管理措置</h2>
+<p>すべての通信は HTTPS で暗号化します。サーバーでは行単位のセキュリティ（RLS）により、各利用者が自分の記録だけを読めるようにし、保存はご本人のアカウントにだけ書き込む関数に限っています。ログインのトークンは iOS のキーチェーンに保存し、サーバー管理用の秘密鍵はアプリやコードのリポジトリに含めません。機能に必要な情報だけを取り扱います。</p>
+<h2 id="s11">11. お子さま</h2>
+<p>本アプリはどなたでもゲストとして使えます。法令で保護者の同意が必要な年齢（韓国では14歳未満）のお子さまは、保護者の同意なくアカウントを作らないでください。同意のないアカウントが作られたことがわかった場合は、速やかに削除します。</p>
+<h2 id="s12">12. ポリシーの変更</h2>
+<p>このポリシーを変更した場合は、新しい施行日とともにこのページで公開します。有料のサブスクリプションや広告など、情報の取り扱いが変わる機能は、公開する前にこのポリシーを改めます。アプリ内の決済は Apple が処理するため、開発者がカード情報などを受け取ることはありません。重要な変更は、アプリのアップデート情報でもお知らせします。</p>
+<h2 id="s13">13. お問い合わせ</h2>
+<p>Jongmin Lee · <a href="mailto:lee1993ljm@gmail.com">lee1993ljm@gmail.com</a></p>
+</article>
+</main>
+<footer class="wrap">
+  <div class="bottom">
+    <nav aria-label="Moraro">
+      <a href="/moraro/ja/">Moraro</a>
+      <a href="/moraro/ja/support/">サポート</a>
+      <a href="/moraro/ja/privacy/">プライバシーポリシー</a>
+      <a href="/">JML.Studio</a>
+    </nav>
+    <p>&copy; 2026 JML.Studio</p>
+  </div>
+</footer>
+</body>
+</html>
