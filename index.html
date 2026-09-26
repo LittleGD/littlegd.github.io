@@ -191,13 +191,21 @@
         <span class="app-name">Hidden Front</span>
       </a>
     </li>
-    <li class="app">
-      <a class="app-link" href="fagl/">
+    <!-- not on a store yet: the site takes the store button's place, and the
+         privacy policy sits under it as the quiet link -->
+    <li class="app app--stores">
+      <button class="app-link" type="button" aria-expanded="false" aria-controls="fagl-stores">
         <span class="app-icon" style="--art: url(assets/fagl-icon-512.png)">
           <img src="assets/fagl-icon-512.png" alt="" width="512" height="512">
         </span>
         <span class="app-name">FAGL</span>
-      </a>
+      </button>
+      <div class="stores" id="fagl-stores">
+        <span class="store-slot store-slot--up"><a class="store store--up store--text" href="fagl/">
+          <span>Website</span>
+        </a></span>
+        <span class="store-slot store-slot--site"><a class="site" href="fagl/privacy/">Privacy</a></span>
+      </div>
     </li>
   </ul>
 </main>

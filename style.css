@@ -360,6 +360,11 @@ button.app-link {
   transition: background-color 0.2s var(--ease);
 }
 
+/* a pill without a store logo keeps even padding on both sides */
+.store--text {
+  padding: 0 16px;
+}
+
 .store:hover {
   background: rgba(255, 255, 255, 0.92);
 }
