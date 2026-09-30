@@ -24,3 +24,12 @@
 - `robots.txt`와 `sitemap.xml`이 루트에 있습니다.
 - Google Search Console에 URL 접두어 속성 `https://littlegd.github.io/`로 등록돼 있습니다(2026-09-15, 사이트맵 제출과 홈 색인 요청 완료). `github.io`의 DNS는 GitHub 소유라 도메인 속성은 쓸 수 없습니다.
 - 루트의 `googlecabe5d3c993532ba.html`은 Search Console 소유권 확인 파일입니다. 지우면 소유권 확인이 풀리니 그대로 둡니다.
+
+## GA4 웹 분석
+
+- 속성: [JML Studio](https://analytics.google.com/analytics/web/#/a389775117p556799574/reports/intelligenthome). 포트폴리오와 별도 속성입니다.
+- 웹 스트림: `JML Studio Web`, URL `https://littlegd.github.io`, 측정 ID `G-1L3JRK6FVG`, 스트림 ID `15887249636`.
+- 공통 태그는 루트의 `analytics.js`에서 관리합니다. 실제 `littlegd.github.io`에서만 로드되므로 로컬 미리보기는 집계되지 않습니다.
+- 홈과 FAGL·Moraro의 다국어 소개, 지원, 개인정보 처리방침 페이지에 `<script defer src="/analytics.js"></script>`를 한 번씩 넣습니다. 새 HTML 페이지에도 같은 태그를 추가하세요. Search Console 인증 파일과 `app-ads.txt`에는 넣지 않습니다.
+- GA4 향상된 측정은 페이지 조회, 스크롤, 외부 링크 클릭 등을 측정합니다. 앱 자체의 분석 설정과는 별개이며, 웹 태그를 중복 삽입하지 않습니다.
+- `main` 변경으로 GitHub Pages가 배포된 뒤 실제 사이트에 방문하고 GA4 실시간 보고서에서 수신을 확인합니다.
