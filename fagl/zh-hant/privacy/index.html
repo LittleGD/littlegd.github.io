@@ -72,15 +72,15 @@
 <main id="main" class="wrap narrow doc">
 <article aria-labelledby="h">
 <div class="page-head"><h1 id="h">FAGL 隱私權政策</h1></div>
-<p class="meta">生效日期：2026&nbsp;年&nbsp;9&nbsp;月&nbsp;25&nbsp;日</p>
+<p class="meta">生效日期：2026&nbsp;年&nbsp;10&nbsp;月&nbsp;1&nbsp;日</p>
 <h2>重點摘要</h2>
-<ul><li>待辦事項、專注紀錄、目標和回顧只會儲存在你的裝置（Mac、iPhone、iPad、Apple Watch）上，不需要帳號。</li><li>AI 是選用功能。雲端 AI（Anthropic 的 Claude）僅限年滿 18 歲者使用，而且只有在你於 App 內同意後才會使用。FAGL 不會儲存你傳送的內容；Anthropic 只用它來產生回答，不會用來訓練 AI，並會在 30 天內刪除（例外情形見第 3 節）。</li><li>為了管理免費 AI 額度、AI Plus 訂閱與每日上限，FAGL 伺服器會保留經過雜湊處理的購買識別碼與使用量，但不會儲存請求內容或你的 IP 位址。</li><li>所有付款都由 Apple 處理。FAGL 只會收到確認購買與訂閱所需、經 Apple 簽署的交易資訊。</li><li>如果你連線自己的 AI API 金鑰（選用），請求會從你的裝置直接傳送到你選擇的公司。FAGL 不會收到金鑰或內容（見第 6-1 節）。</li><li>App 每天會從 picsum.photos 下載背景照片；在 Mac 上，只有在你選擇時，才會從 Hugging Face 下載 AI 模型。</li><li>沒有廣告、分析和追蹤，也不使用任何分析、廣告或追蹤用途的第三方 SDK。</li></ul>
+<ul><li>待辦事項、專注紀錄、目標和回顧儲存在你的裝置上；可以使用 iCloud 時，會透過你的私人 iCloud 儲存空間同步。不需要 FAGL 帳號。</li><li>AI 是選用功能。雲端 AI（Anthropic 的 Claude）僅限年滿 18 歲者使用，而且只有在你於 App 內同意後才會使用。FAGL 不會儲存你傳送的內容；Anthropic 只用它來產生回答，不會用來訓練 AI，並會在 30 天內刪除（例外情形見第 3 節）。</li><li>為了管理免費 AI 額度、AI Plus 訂閱與每日上限，FAGL 伺服器會保留經過雜湊處理的購買識別碼與使用量，但不會儲存請求內容或你的 IP 位址。</li><li>所有付款都由 Apple 處理。FAGL 只會收到確認購買與訂閱所需、經 Apple 簽署的交易資訊。</li><li>如果你連線自己的 AI API 金鑰（選用），請求會從你的裝置直接傳送到你選擇的公司。FAGL 不會收到金鑰或內容（見第 6-1 節）。</li><li>App 每天會從 picsum.photos 下載背景照片；在 Mac 上，只有在你選擇時，才會從 Hugging Face 下載 AI 模型。</li><li>沒有廣告、分析和追蹤，也不使用任何分析、廣告或追蹤用途的第三方 SDK。</li></ul>
 <h2>1. 我們是誰</h2>
 <p>FAGL 由個人開發者 Jongmin Lee（以下稱「我們」）提供。聯絡方式：<a href="mailto:lee1993ljm@gmail.com">lee1993ljm@gmail.com</a></p>
-<h2>2. 儲存在你裝置上的資料</h2>
-<ul><li>待辦事項、目標與路線圖、專注時段、回顧（星等與備註）以及設定，都儲存在你使用 FAGL 的每台裝置（Mac、iPhone、iPad、Apple Watch）上這個 App 的儲存空間中；在 Mac 上是 App 的沙盒容器。</li><li>Apple Watch App 會從已配對 iPhone 上的 FAGL 取得待辦事項與計時器，並把專注紀錄傳回 iPhone。這些資料只在你自己的裝置之間傳遞，我們不會收到。</li><li>在 Mac、iPhone 和 iPad 上，App 會在同一個儲存空間內自動建立本機備份，並保留最近 14 份。你匯出的備份檔案（.fagl）和 Mac 上匯出的 CSV 檔案，只會存到或傳送到你選擇的地方。</li><li>如果你在 Mac 上下載了裝置端 AI 模型，模型檔案也會儲存在你的 Mac 上。</li><li>我們看不到，也無法取得這些資料。若要刪除，請在每台裝置上刪除 App：在 iPhone、iPad 和 Apple Watch 上，刪除 App 就會一併刪除資料；在 Mac 上，還需要刪除 App 的資料（<code>~/<wbr>Library/<wbr>Containers/<wbr>com.<wbr>jmlee.<wbr>FAGL</code>）。你自己匯出的備份與匯出檔案也請一併刪除。</li></ul>
+<h2>2. 儲存在裝置與 iCloud 的資料</h2>
+<ul><li>待辦事項、目標與路線圖、專注時段、回顧（星等與備註）以及設定，都儲存在你使用 FAGL 的每台裝置（Mac、iPhone、iPad、Apple Watch）上這個 App 的儲存空間中；在 Mac 上是 App 的沙盒容器。</li><li>可以使用 iCloud 時，紀錄和共用計時器狀態會透過 Apple 的私人 iCloud 資料庫（CloudKit），在使用同一個 Apple 帳號的裝置之間同步。每週目標與休息設定等部分設定使用 Apple 的 iCloud 鍵值儲存空間。這些服務由 Apple 依其條款營運。此同步不會將紀錄傳送到 FAGL 伺服器，我們也無法存取。可在「設定 &gt; 資料 &gt; iCloud 同步」查看狀態。</li><li>Apple Watch App 會從已配對 iPhone 上的 FAGL 取得待辦事項與計時器，並把專注紀錄傳回 iPhone。這些資料只在你自己的裝置之間傳遞，我們不會收到。</li><li>在 Mac、iPhone 和 iPad 上，App 會在同一個儲存空間內自動建立本機備份，並保留最近 14 份。你匯出的備份檔案（.fagl）和 Mac、iPhone、iPad 上匯出的 CSV 檔案，只會存到或傳送到你選擇的地方。</li><li>如果你在 Mac 上下載了裝置端 AI 模型，模型檔案也會儲存在你的 Mac 上。</li><li>我們看不到，也無法取得這些紀錄。若要刪除每台裝置上的本機副本，請在該裝置上刪除 App：在 iPhone、iPad 和 Apple Watch 上，刪除 App 就會一併刪除資料；在 Mac 上，還需要刪除 App 的資料（<code>~/<wbr>Library/<wbr>Containers/<wbr>com.<wbr>jmlee.<wbr>FAGL</code>）。你自己匯出的備份與匯出檔案也請一併刪除。 刪除 App 或本機資料，不會自動刪除已同步到 iCloud 或其他裝置上的副本。</li></ul>
 <h2>3. 雲端 AI（選用）</h2>
-<p><strong>什麼時候會用到</strong>　看完首次啟動的介紹後，App 會詢問一次你是否要使用雲端 AI。只有在你確認自己年滿 18 歲並在該畫面同意後才會使用。每次購買 FAGL 都附贈一次性的雲端 AI 免費額度（大約可用數百次，另有每日上限），選用的 AI Plus 訂閱則可每月增加使用額度（見第 4 節）。TestFlight 測試版也是如此。</p>
+<p><strong>什麼時候會用到</strong>　使用雲端 AI 前，FAGL 會先徵求你的同意。只有在你確認自己年滿 18 歲並在該畫面同意後才會使用。每次購買 FAGL 都附贈一次性的雲端 AI 免費額度（大約可用數百次，另有每日上限），選用的 AI Plus 訂閱則可每月增加使用額度（見第 4 節）。TestFlight 測試版也是如此。</p>
 <p><strong>傳送哪些內容</strong></p>
 <ul><li>每次 AI 請求：只傳送該功能需要的內容，例如待辦事項標題與備註、回顧、目標、專注時間摘要，以及 App 語言。</li><li>開始工作階段時（大約一天一次）：Apple 為你這份 FAGL 簽署的 App Store 購買證明（AppTransaction）、如有訂閱 AI Plus 則包括經 Apple 簽署的訂閱交易資訊、App 版本、平台，以及 App 產生的隨機安裝 ID。</li><li>和所有網路連線一樣：你的 IP 位址。</li></ul>
 <p>我們不會傳送你的姓名、電子郵件、Apple 帳號、聯絡人、位置或硬體識別碼。</p>
@@ -91,7 +91,7 @@
 <ul><li>請求內容與回答：FAGL 伺服器不會儲存。Anthropic 會在回答後 30 天內自動刪除；但法律要求保存更久，或為執行 Anthropic 使用政策所需時除外。被 Anthropic 安全系統標記的內容，最長可能保存 2 年。</li><li>雜湊處理後的購買與訂閱識別碼，以及使用量累計：在服務營運期間保留（見第 4 節）。</li><li>每日使用量計數：約 3 天後自動刪除。</li><li>用於限制每分鐘請求數的 IP 位址雜湊值：每天更換，不儲存 IP 位址本身，約 3 天後隨每日計數一併刪除。</li><li>購買證明、訂閱交易資訊、App 版本、平台與安裝 ID：開始工作階段時用來確認，確認後即捨棄。</li><li>伺服器紀錄只保留技術資訊（例如錯誤代碼），不會記錄內容、識別碼或 IP 位址。</li></ul>
 <p><strong>不會用來訓練 AI</strong>　FAGL 不會用你的內容訓練 AI；Anthropic 也不會用 API 的輸入與輸出訓練模型。</p>
 <p><strong>如何關閉</strong>　在同意畫面選擇「只在裝置上使用」，或隨時在「設定 &gt; AI」關閉雲端 AI。在同一處關閉「使用 AI 功能」，就會關閉所有 AI。關閉雲端 AI 不會取消 AI Plus 訂閱，請到 App Store 帳號設定中取消。</p>
-<p><strong>關閉後會怎樣</strong>　AI 會改在你的裝置上執行：在支援的裝置上使用 Apple 裝置端 AI，在 Mac 上也可以使用裝置端 AI 模型（見第 5、6 節）。達到每日上限或用完免費額度時也一樣，這時你也可以選擇訂閱 AI Plus。如果兩者都無法使用，只有 AI 功能無法使用，其他功能都能照常使用。</p>
+<p><strong>關閉後會怎樣</strong>　如果已連線自己的 API 金鑰，即使關閉 FAGL 雲端 AI，請求仍會直接傳送到你選擇的公司（第 6-1 節）。未連線自己的 API 金鑰時，AI 會改在你的裝置上執行：在支援的裝置上使用 Apple 裝置端 AI，在 Mac 上也可以使用裝置端 AI 模型（見第 5、6 節）。達到每日上限或用完免費額度時也一樣，這時你也可以選擇訂閱 AI Plus。如果兩者都無法使用，只有 AI 功能無法使用，其他功能都能照常使用。</p>
 <h2>4. 購買、免費額度與 AI Plus</h2>
 <p><strong>付款</strong>　FAGL 與 AI Plus 的付款全部由 Apple 處理。我們看不到你的付款資料、姓名或 Apple 帳號。FAGL 只會收到經 Apple 簽署的交易資訊（例如商品、交易 ID、訂閱到期日），而且只用來確認購買與訂閱。</p>
 <p><strong>雜湊值</strong>　為了讓每份購買都有一次性的免費額度、每個訂閱都有每月使用額度，伺服器必須在不知道你是誰的情況下，辨認出請求是否來自同一份購買或同一個訂閱。因此伺服器只儲存無法還原的 SHA-256 雜湊值：</p>
@@ -107,7 +107,8 @@
 <h2>7. 每日背景照片</h2>
 <p>App 每天會自動從 picsum.photos（提供 Unsplash 照片的 Lorem Picsum）下載一張隨機背景照片。這個請求不含任何個人資料。不過和所有網路請求一樣，你的 IP 位址與請求時間等基本資訊會傳給該服務及其代管業者，並依照它們各自的政策處理。</p>
 <h2>8. FAGL 不會做的事</h2>
-<p>沒有帳號，也不用登入。不使用廣告、分析、當機回報或追蹤 SDK。我們不會出售或分享個人資料，不會建立個人檔案，也不會跨 App 或網站追蹤你。</p>
+<p>不需要 FAGL 帳號，也不用登入 FAGL。iCloud 同步使用你的 Apple 帳號。FAGL App 不使用廣告、分析、當機回報或追蹤 SDK。我們不會出售或分享個人資料，不會建立個人檔案，也不會跨 App 或網站追蹤你。</p>
+<p>這個公開網站使用 Google Analytics 4 了解造訪與頁面互動情形。這是網站分析，與未使用分析 SDK 的 FAGL App 分開。Google 可能依其政策收到瀏覽器與裝置資訊、由 IP 位址推估的大致位置、頁面網址與互動，以及 Cookie 或類似識別碼。請參閱 <a href="https://policies.google.com/privacy">Google 隱私權政策</a>。</p>
 <h2>9. 法律依據與你的權利</h2>
 <p>把內容傳送給雲端 AI，是基於你的同意；你隨時可以在「設定 &gt; AI」撤回同意（撤回前已送出的請求不受影響）。確認購買與訂閱、保存額度與使用量累計，是提供你所購買服務的必要處理。每分鐘請求限制與短期保存的每日計數，是為了防止服務遭到濫用。你可以向我們要求查詢、更正、刪除或停止處理你的個人資料。不過我們只保存無法連結到你的雜湊值，通常無法找出特定人士的資料。每日計數約 3 天後就會自動刪除。你裝置上的資料則完全由你自己管理。</p>
 <h2>10. 跨境傳輸</h2>

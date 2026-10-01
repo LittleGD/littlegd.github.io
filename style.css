@@ -365,6 +365,19 @@ button.app-link {
   padding: 0 16px;
 }
 
+.store-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.2;
+}
+
+.store-note {
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--ink-soft);
+}
+
 .store:hover {
   background: rgba(255, 255, 255, 0.92);
 }

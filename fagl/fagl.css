@@ -494,7 +494,7 @@ html:lang(zh-Hant) .lead {
   color: var(--ink-soft);
 }
 
-.soon {
+.released {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -511,12 +511,80 @@ html:lang(zh-Hant) .lead {
   white-space: nowrap;
 }
 
-.soon-dot {
+.released-dot {
   flex: none;
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: conic-gradient(var(--red) 0 270deg, var(--line) 0);
+  background: var(--g3);
+}
+
+.app-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  max-width: 620px;
+  margin: 24px auto 0;
+  text-align: left;
+}
+
+.app-option {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+  min-height: 114px;
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--surface);
+  text-decoration: none;
+}
+
+.app-option--available {
+  color: var(--bg);
+  background: var(--ink);
+  border-color: var(--ink);
+}
+
+.app-option-title {
+  font-size: 20px;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.app-option-action {
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration-line: underline;
+  text-decoration-color: color-mix(in srgb, currentColor 40%, transparent);
+  text-underline-offset: 3px;
+}
+
+.app-option:hover .app-option-action {
+  text-decoration-color: currentColor;
+}
+
+.app-option-platform {
+  margin-top: auto;
+  padding-top: 6px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.requirements {
+  max-width: 44em;
+  margin: 14px auto 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 480px) {
+  .app-options {
+    grid-template-columns: 1fr;
+    max-width: 340px;
+  }
 }
 
 /* .hero .hero-shot outranks .device { margin: 0 } further down */
@@ -532,6 +600,12 @@ html:lang(zh-Hant) .lead {
   height: auto;
   border-radius: 14px;
   box-shadow: 0 0 0 0.5px var(--line), var(--shot-shadow);
+}
+
+.hero-shot figcaption {
+  margin-top: 16px;
+  font-size: 13px;
+  color: var(--ink-soft);
 }
 
 /* hero entrance, as on the studio shelf */
@@ -729,6 +803,12 @@ html:lang(zh-Hant) .section h2 {
   margin: 20px 0 0;
   font-size: 15px;
   color: var(--ink-soft);
+}
+
+.availability-note {
+  padding-left: 12px;
+  border-left: 3px solid var(--red);
+  scroll-margin-top: 24px;
 }
 
 /* a working copy of the Awesome Life Timer: the red wedge is the time left,

@@ -155,10 +155,13 @@
     var button = app.querySelector('.app-link');
     var stores = app.querySelector('.stores');
     var closing = 0;
+    stores.inert = true;
 
     function setOpen(open) {
       if (open === app.classList.contains('is-open')) return;
       clearTimeout(closing);
+      if (!open && stores.contains(document.activeElement)) button.focus();
+      stores.inert = !open;
       app.classList.toggle('is-open', open);
       app.classList.toggle('is-closing', !open && motion);
       button.setAttribute('aria-expanded', String(open));
@@ -180,9 +183,13 @@
     });
     app.addEventListener('keydown', function (event) {
       if (event.key === 'Escape' && app.classList.contains('is-open')) {
+        event.preventDefault();
         setOpen(false);
         button.focus();
       }
+    });
+    app.addEventListener('focusout', function (event) {
+      if (event.relatedTarget && !app.contains(event.relatedTarget)) setOpen(false);
     });
   });
 

@@ -24,7 +24,7 @@
   if (want && want !== here) location.replace(urls[want] + location.hash);
 })();
 </script>
-<title>FAGL: Focus Timer &amp; Goals for Mac, iPhone, iPad and Apple Watch</title>
+<title>FAGL: Focus Timer &amp; Goals for iPhone, iPad and Apple Watch</title>
 <meta name="description" content="Give each to-do a goal time, watch it count down, and reflect when you&#x27;re done. Your focus fills a daily grid. No account, no ads, no tracking. One-time purchase.">
 <meta name="author" content="Jongmin Lee">
 <link rel="canonical" href="https://littlegd.github.io/fagl/">
@@ -46,7 +46,7 @@
 <meta property="og:locale:alternate" content="ja_JP">
 <meta property="og:locale:alternate" content="zh_TW">
 <meta property="og:locale:alternate" content="de_DE">
-<meta property="og:title" content="FAGL: Focus Timer &amp; Goals for Mac, iPhone, iPad and Apple Watch">
+<meta property="og:title" content="FAGL: Focus Timer &amp; Goals for iPhone, iPad and Apple Watch">
 <meta property="og:description" content="Give each to-do a goal time, watch it count down, and reflect when you&#x27;re done. Your focus fills a daily grid. No account, no ads, no tracking. One-time purchase.">
 <meta property="og:image" content="https://littlegd.github.io/fagl/assets/og.png">
 <meta property="og:image:width" content="1200">
@@ -62,10 +62,12 @@
   "description": "Give each to-do a goal time, watch it count down, and reflect when you're done. Your focus fills a daily grid. No account, no ads, no tracking. One-time purchase.",
   "url": "https://littlegd.github.io/fagl/",
   "image": "https://littlegd.github.io/assets/fagl-icon-512.png",
-  "screenshot": "https://littlegd.github.io/fagl/assets/en/hero.webp",
+  "screenshot": "https://littlegd.github.io/fagl/assets/en/today.webp",
   "applicationCategory": "BusinessApplication",
   "applicationSubCategory": "Productivity",
-  "operatingSystem": "macOS 26+, iOS 26.1+, iPadOS 26.1+, watchOS 26+",
+  "operatingSystem": "iOS 26.1+, iPadOS 26.1+, watchOS 26+ (paired iPhone)",
+  "softwareVersion": "1.0",
+  "downloadUrl": "https://apps.apple.com/us/app/id6815960743",
   "inLanguage": [
     "en",
     "ko",
@@ -105,11 +107,24 @@
   <p class="lead">Give each to-do a goal time, then watch it count down.</p>
   <p class="sub">Reflect when you&#x27;re done, and your focus fills a daily grid.</p>
   <div class="status">
-    <span class="soon"><span class="soon-dot" aria-hidden="true"></span>Coming soon to the App Store</span>
+    <span class="released"><span class="released-dot" aria-hidden="true"></span>iOS 1.0 is now available</span>
     <span>US$6.99 in the U.S., one-time purchase</span>
-    <span>Mac · iPhone · iPad · Apple&nbsp;Watch</span>
+    <span>iPhone · iPad · Apple&nbsp;Watch</span>
   </div>
-  <figure class="hero-shot device"><img src="/fagl/assets/en/hero.webp" width="1800" height="1454" alt="FAGL on a Mac: the Awesome Life Timer with its red disc, today&#x27;s to-dos, a goal and the focus grid." fetchpriority="high"></figure>
+  <div class="app-options" id="apps">
+    <a class="app-option app-option--available" href="https://apps.apple.com/us/app/id6815960743">
+      <span class="app-option-title">iOS App</span>
+      <span class="app-option-action">Get on the App Store <span aria-hidden="true">↗</span></span>
+      <span class="app-option-platform">iPhone · iPad · Apple&nbsp;Watch</span>
+    </a>
+    <a class="app-option" href="#mac-app">
+      <span class="app-option-title">Mac App</span>
+      <span class="app-option-action">In App Store review</span>
+      <span class="app-option-platform">Apple silicon · macOS 26.0+</span>
+    </a>
+  </div>
+  <p class="requirements">Requires iOS or iPadOS 26.1+. Apple Watch requires watchOS 26+ and a paired iPhone.</p>
+  <figure class="hero-shot device"><img src="/fagl/assets/en/hero.webp" width="1800" height="1454" alt="FAGL on a Mac: the Awesome Life Timer with its red disc, today&#x27;s to-dos, a goal and the focus grid." fetchpriority="high"><figcaption>Mac app preview · App Store review in progress</figcaption></figure>
 </section>
 
 <section class="section wrap" aria-labelledby="timer">
@@ -118,7 +133,7 @@
       <p class="eyebrow">Awesome Life Timer</p>
       <h2 id="timer">Time you can see.</h2>
       <p class="section-lead">A red disc shows how much time is left for the to-do in front of you. You can tell where you stand at a glance, without reading a number.</p>
-      <dl class="points"><div><dt>Deep Focus</dt><dd>Just the timer, full screen, with the display kept awake.</dd></div><div><dt>Repeat mode</dt><dd>Work through one to-do in rounds, with breaks in between.</dd></div><div><dt>On Mac</dt><dd>The time left sits in the notch and the menu bar.</dd></div></dl>
+      <dl class="points"><div><dt>Deep Focus</dt><dd>Just the timer, full screen, with the display kept awake.</dd></div><div><dt>Repeat mode</dt><dd>Work through one to-do in rounds, with breaks in between.</dd></div><div><dt>On Mac (under review)</dt><dd>The time left sits in the notch and the menu bar.</dd></div></dl>
     </div>
     <div class="phones">
       <figure class="device phone"><img src="/fagl/assets/en/today.webp" width="640" height="1391" alt="The Today screen on iPhone: the Awesome Life Timer counting down a to-do, above the list of today&#x27;s to-dos." loading="lazy" decoding="async"></figure>
@@ -151,8 +166,10 @@
   <div class="split split--flip">
     <div>
       <p class="eyebrow">Across your devices</p>
-      <h2 id="devices">One purchase for Mac, iPhone, iPad and Apple&nbsp;Watch.</h2>
-      <dl class="points"><div><dt>Mac</dt><dd>Notch display, menu bar, and Quick Add from any app with a global shortcut.</dd></div><div><dt>iPhone and iPad</dt><dd>Widgets for the Home Screen and Lock Screen. On iPhone, a Live Activity shows the time left.</dd></div><div><dt>Apple&nbsp;Watch</dt><dd>Start, pause and finish from your wrist, with the time left on a complication.</dd></div><div><dt>Your records</dt><dd>Move them to another device in one .fagl backup file, sent over AirDrop.</dd></div></dl>
+      <h2 id="devices">Focus across your Apple devices.</h2>
+      <p class="section-lead">One-time purchase for iPhone, iPad and paired Apple Watch. The Mac app is planned as part of the same purchase after App Store review.</p>
+      <p class="note availability-note" id="mac-app" tabindex="-1">Mac 1.0 is under App Store review. It requires an Apple silicon Mac with macOS 26.0 or later.</p>
+      <dl class="points"><div><dt>Mac (under review)</dt><dd>Notch display, menu bar, and Quick Add from any app with a global shortcut.</dd></div><div><dt>iPhone and iPad</dt><dd>Widgets for the Home Screen and Lock Screen. On iPhone, a Live Activity shows the time left.</dd></div><div><dt>Apple&nbsp;Watch</dt><dd>Start, pause and finish from your wrist, with the time left on a complication.</dd></div><div><dt>Your records</dt><dd>With iCloud enabled, records sync between devices using the same Apple Account. You can also move them in a .fagl backup file over AirDrop.</dd></div></dl>
     </div>
     <div class="devices">
       <figure class="device tablet"><img src="/fagl/assets/en/ipad.webp" width="840" height="1120" alt="Goals on iPad: a goal split into stages, with the to-dos for the current stage." loading="lazy" decoding="async"></figure>
@@ -164,7 +181,7 @@
 <section class="section wrap promise" aria-labelledby="privacy">
   <p class="eyebrow">Privacy</p>
   <h2 id="privacy">No account, no ads, no tracking.</h2>
-  <p class="section-lead">Your to-dos, focus sessions, goals and reflections are saved on your device. FAGL uses no third-party analytics, ad or tracking SDKs.</p>
+  <p class="section-lead">Your to-dos, focus sessions, goals and reflections are saved on your device. With iCloud enabled, they also sync through your Apple Account. FAGL uses no third-party analytics, ad or tracking SDKs.</p>
   <ul class="chips" role="list"><li>One-time purchase</li><li>No account</li><li>No ads</li><li>No analytics or tracking</li><li>AI only if you want it</li></ul>
   <div class="ai">
     <h3>AI, only if you want it</h3>
@@ -174,10 +191,22 @@
   </div>
 </section>
 
-<section class="closing wrap" aria-labelledby="soon">
+<section class="closing wrap" aria-labelledby="released">
   <span class="app-icon" style="--icon: 72px; --art: url(/fagl/assets/icon.webp)"><img src="/fagl/assets/icon.webp" alt="" width="288" height="288" loading="lazy"></span>
-  <h2 id="soon">Coming soon to the App Store.</h2>
-  <p>Mac, iPhone, iPad and Apple&nbsp;Watch. US$6.99, one-time purchase. Prices vary by country or region.</p>
+  <h2 id="released">FAGL for iPhone, iPad and Apple Watch is here.</h2>
+  <p>US$6.99 in the U.S., one-time purchase. Prices vary by country or region. The Mac app is under App Store review.</p>
+  <div class="app-options">
+    <a class="app-option app-option--available" href="https://apps.apple.com/us/app/id6815960743">
+      <span class="app-option-title">iOS App</span>
+      <span class="app-option-action">Get on the App Store <span aria-hidden="true">↗</span></span>
+      <span class="app-option-platform">iPhone · iPad · Apple&nbsp;Watch</span>
+    </a>
+    <a class="app-option" href="#mac-app">
+      <span class="app-option-title">Mac App</span>
+      <span class="app-option-action">In App Store review</span>
+      <span class="app-option-platform">Apple silicon · macOS 26.0+</span>
+    </a>
+  </div>
   <p class="links"><a href="/fagl/support/">Support</a><a href="/fagl/privacy/">Privacy Policy</a></p>
 </section>
 </main>

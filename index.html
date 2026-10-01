@@ -112,12 +112,14 @@
             "@type": "SoftwareApplication",
             "name": "FAGL: Focus Timer & Goals",
             "alternateName": "FAGL",
-            "description": "A focus timer and to-do app: give each to-do a goal time, watch a visual countdown, reflect, and fill a daily focus grid.",
+            "description": "A focus timer and to-do app for iPhone, iPad and a paired Apple Watch: give each to-do a goal time, watch a visual countdown, reflect, and fill a daily focus grid. The Mac App Store version is under review.",
             "url": "https://littlegd.github.io/fagl/",
+            "downloadUrl": "https://apps.apple.com/us/app/id6815960743",
             "image": "https://littlegd.github.io/assets/fagl-icon-512.png",
             "applicationCategory": "BusinessApplication",
-            "operatingSystem": "macOS 26+, iOS 26.1+, iPadOS 26.1+, watchOS 26+",
+            "operatingSystem": "iOS 26.1+, iPadOS 26.1+, watchOS 26+ (paired iPhone required)",
             "inLanguage": ["en", "ko", "ja", "zh-Hant", "de"],
+            "offers": { "@type": "Offer", "price": "6.99", "priceCurrency": "USD" },
             "author": { "@id": "https://littlegd.github.io/#studio" }
           }
         },
@@ -206,8 +208,7 @@
         <span class="app-name">Hidden Front</span>
       </a>
     </li>
-    <!-- not on a store yet: the site takes the store button's place, and the
-         privacy policy sits under it as the quiet link -->
+    <!-- iOS is available; the Mac option opens its current review status. -->
     <li class="app app--stores">
       <button class="app-link" type="button" aria-expanded="false" aria-controls="fagl-stores">
         <span class="app-icon" style="--art: url(assets/fagl-icon-512.png)">
@@ -215,11 +216,14 @@
         </span>
         <span class="app-name">FAGL</span>
       </button>
-      <div class="stores" id="fagl-stores">
-        <span class="store-slot store-slot--up"><a class="store store--up store--text" href="fagl/">
-          <span>Website</span>
+      <div class="stores" id="fagl-stores" inert>
+        <span class="store-slot store-slot--up"><a class="store store--up store--text" href="https://apps.apple.com/us/app/id6815960743" target="_blank" rel="noopener">
+          <span>iOS App</span>
         </a></span>
-        <span class="store-slot store-slot--site"><a class="site" href="fagl/privacy/">Privacy</a></span>
+        <span class="store-slot store-slot--down"><a class="store store--down store--text" href="fagl/#mac-app">
+          <span class="store-label">Mac App<small class="store-note">In review</small></span>
+        </a></span>
+        <span class="store-slot store-slot--site"><a class="site" href="fagl/">Website</a><a class="site" href="fagl/privacy/">Privacy</a></span>
       </div>
     </li>
     <!-- icon not final yet: a plain "Coming soon" tile holds its place -->
