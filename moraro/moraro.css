@@ -430,7 +430,7 @@ html:lang(ja) .lead {
   color: var(--ink-soft);
 }
 
-.soon {
+.download {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -445,9 +445,10 @@ html:lang(ja) .lead {
   font-weight: 600;
   color: var(--ink);
   white-space: nowrap;
+  text-decoration: none;
 }
 
-.soon-dot {
+.download-dot {
   flex: none;
   width: 10px;
   height: 10px;
@@ -844,7 +845,7 @@ html:lang(ja) .page-head h1 {
     --glass-hover: var(--surface);
   }
 
-  .soon,
+  .download,
   .skip,
   .lang summary,
   .lang-menu,
