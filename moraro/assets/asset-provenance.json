@@ -115,6 +115,20 @@
       "alphaQuality": 100,
       "method": 6,
       "transform": "WebP compression only; original canvas and full alpha channel preserved; no crop, resize, recolor, composition or UI change"
+    },
+    {
+      "source": "docs/store-art/share/moraro-share-header-v1.png",
+      "output": "moraro-share-v1.png",
+      "use": "Open Graph and Twitter card for Moraro landing pages",
+      "imageTool": "OpenAI image_gen, based on official App Store header docs/store-art/v5/moraro-header-v5.png",
+      "processing": "Copied unchanged from the user-selected sharing artwork",
+      "sourceBytes": 1896498,
+      "outputBytes": 1896498,
+      "sourceSHA256": "32281bcd31469ff5bfbc8405a7c07c98033782631bceb2269c2b55f23c01b27a",
+      "outputSHA256": "32281bcd31469ff5bfbc8405a7c07c98033782631bceb2269c2b55f23c01b27a",
+      "width": 1730,
+      "height": 909,
+      "date": "2026-10-17"
     }
   ],
   "inlineSources": [

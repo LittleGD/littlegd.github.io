@@ -1,11 +1,12 @@
 # Moraro website assets
 
-These assets come from the existing **MoraroOcean** app repository. The web exports preserve the source composition and product UI. Images were only proportionally resized and compressed; no cropping, retouching, recoloring, text replacement, or synthetic app screens were used.
+These assets come from the existing **MoraroOcean** app repository. Product screenshots and icon exports preserve the source composition and product UI, with proportional resizing and compression only. The separate social-sharing artwork below was generated from the official App Store header and is not an app screenshot.
 
 ## Sources and exports
 
 | Web asset | Original in MoraroOcean | Output size |
 | --- | --- | --- |
+| `moraro-share-v1.png` | `docs/store-art/share/moraro-share-header-v1.png`, generated from the official v5 App Store header | 1730 × 909, PNG, copied unchanged |
 | `hero-boat.webp` | `Moraro_icon.icon/Assets/Moraro-icon5.png` | 1254 × 1254, transparent, 83,566 bytes |
 | `{en,ko,ja}/03-lookup.webp` | `docs/store-screenshots/2026-10-07/iphone-6.9/{en,ko,ja}/03-lookup.png` | 960 × 2086 |
 | `{en,ko,ja}/06-scrapbook.webp` | Same locale directory, `06-scrapbook.png` | 960 × 2086 |
@@ -42,3 +43,7 @@ The source screenshot dimensions are 1320 × 2868. In source coordinates, the sc
 The inline arrow is from Moraro's own **Tide** set, governed by the app's `docs/ICONS.md`, `docs/ICON-STYLE.md`, and `docs/ICON-MOTION.md`. It retains the approved 24 × 24 coordinate system, 2-unit round stroke, and `currentColor`. Both source `path` values were verified unchanged in EN/KO/JA landing pages. Its source hash is recorded under `inlineSources` in the manifest. No standalone icon files remain in this directory.
 
 Decorative icons should be hidden from assistive technology; functional icon controls need visible or accessible labels. A reduced-motion preference should retain the resting SVG shapes. The original icon source files were not edited.
+
+## Social sharing
+
+The EN, KO and JA landing pages use `moraro-share-v1.png` for `og:image` and `twitter:image`, with matching dimensions and localized alternative text. The versioned URL avoids stale copies of the previous icon preview. App Store URL previews are controlled by Apple and LinkedIn; changing this website artwork changes previews of `littlegd.github.io/moraro/` and its localized URLs. LinkedIn Post Inspector can refresh a URL for new posts; existing published cards may keep their original preview.
