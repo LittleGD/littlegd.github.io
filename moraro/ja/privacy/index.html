@@ -4,21 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
-/* Every language has its own address. ?lang= on any page opens that language.
-   The English address is also the default one: a visitor who comes to it from
-   outside these pages goes to the language they last picked here, or else to
-   the first of their browser's languages that Moraro has. */
+/* Each language has a stable address. Only an explicit ?lang= request
+   changes language; browser settings never redirect a page. */
 (function () {
   var here = 'ja', urls = {"en": "/moraro/privacy/", "ko": "/moraro/ko/privacy/", "ja": "/moraro/ja/privacy/"}, want;
   function pick(tag) {
     return { en: 'en', ko: 'ko', ja: 'ja' }[String(tag || '').toLowerCase().split('-')[0]];
   }
   try { want = pick(new URLSearchParams(location.search).get('lang')); } catch (e) {}
-  if (!want && here === 'en' && document.referrer.indexOf(location.origin + '/moraro/') !== 0) {
-    try { want = pick(localStorage.getItem('moraro-lang')); } catch (e) {}
-    var list = navigator.languages || [navigator.language];
-    for (var i = 0; !want && i < list.length; i++) want = pick(list[i]);
-  }
   if (want && want !== here) location.replace(urls[want] + location.hash);
 })();
 </script>

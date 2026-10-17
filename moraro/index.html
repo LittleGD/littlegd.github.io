@@ -4,26 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
-/* Every language has its own address. ?lang= on any page opens that language.
-   The English address is also the default one: a visitor who comes to it from
-   outside these pages goes to the language they last picked here, or else to
-   the first of their browser's languages that Moraro has. */
+/* Each language has a stable address. Only an explicit ?lang= request
+   changes language; browser settings never redirect a page. */
 (function () {
   var here = 'en', urls = {"en": "/moraro/", "ko": "/moraro/ko/", "ja": "/moraro/ja/"}, want;
   function pick(tag) {
     return { en: 'en', ko: 'ko', ja: 'ja' }[String(tag || '').toLowerCase().split('-')[0]];
   }
   try { want = pick(new URLSearchParams(location.search).get('lang')); } catch (e) {}
-  if (!want && here === 'en' && document.referrer.indexOf(location.origin + '/moraro/') !== 0) {
-    try { want = pick(localStorage.getItem('moraro-lang')); } catch (e) {}
-    var list = navigator.languages || [navigator.language];
-    for (var i = 0; !want && i < list.length; i++) want = pick(list[i]);
-  }
   if (want && want !== here) location.replace(urls[want] + location.hash);
 })();
 </script>
-<title>Moraro · Read the language you&#x27;re learning</title>
-<meta name="description" content="Moraro is an iPhone and iPad app for reading short pieces on topics you like, in the language you are learning. Available on the App Store.">
+<title>Moraro — Language Learning with Short Readings</title>
+<meta name="description" content="Learn Korean, English, and Japanese with short readings in Moraro for iPhone and iPad. Save expressions, review in context, and practice shadowing when audio is available.">
 <meta name="author" content="Jongmin Lee">
 <link rel="canonical" href="https://littlegd.github.io/moraro/">
 <link rel="alternate" hreflang="en" href="https://littlegd.github.io/moraro/">
@@ -39,13 +32,40 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="ko_KR">
 <meta property="og:locale:alternate" content="ja_JP">
-<meta property="og:title" content="Moraro · Read the language you&#x27;re learning">
-<meta property="og:description" content="Moraro is an iPhone and iPad app for reading short pieces on topics you like, in the language you are learning. Available on the App Store.">
-<meta property="og:image" content="https://littlegd.github.io/assets/og.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="JML.Studio">
-<meta name="twitter:card" content="summary_large_image">
+<meta property="og:title" content="Moraro — Language Learning with Short Readings">
+<meta property="og:description" content="Learn Korean, English, and Japanese with short readings in Moraro for iPhone and iPad. Save expressions, review in context, and practice shadowing when audio is available.">
+<meta property="og:image" content="https://littlegd.github.io/assets/moraro-icon-512.jpg">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta property="og:image:alt" content="Moraro app icon: a paper boat on a blue ocean">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://littlegd.github.io/assets/moraro-icon-512.jpg">
+<meta name="twitter:image:alt" content="Moraro app icon: a paper boat on a blue ocean">
+<meta name="apple-itunes-app" content="app-id=6809738672">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://littlegd.github.io/moraro/#app",
+  "name": "Moraro",
+  "description": "Learn Korean, English, and Japanese with short readings in Moraro for iPhone and iPad. Save expressions, review in context, and practice shadowing when audio is available.",
+  "url": "https://littlegd.github.io/moraro/",
+  "downloadUrl": "https://apps.apple.com/app/id6809738672",
+  "image": "https://littlegd.github.io/assets/moraro-icon-512.jpg",
+  "applicationCategory": "EducationalApplication",
+  "operatingSystem": "iOS, iPadOS",
+  "inLanguage": [
+    "en",
+    "ko",
+    "ja"
+  ],
+  "author": {
+    "@type": "Person",
+    "name": "Jongmin Lee"
+  }
+}
+</script>
 
 <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -67,9 +87,9 @@
 <main id="main">
 <section class="hero wrap" aria-labelledby="top">
   <h1 id="top">Moraro</h1>
-  <p class="motto">A little curiosity. A wider world.</p>
-  <p class="lead">Learn a language by reading what you like.</p>
-  <p class="sub">Short pieces picked for your level. Tap anything you don&#x27;t know to see what it means.</p>
+  <p class="motto">Read. Keep what stays.</p>
+  <p class="lead">Learn Korean, English, and Japanese through short readings.</p>
+  <p class="sub">Find stories that match your interests and reading level. Tap unfamiliar expressions to see what they mean.</p>
   <div class="status">
     <a class="download" href="https://apps.apple.com/app/id6809738672" target="_blank" rel="noopener"><span class="download-dot" aria-hidden="true"></span>Download on the App Store</a>
     <span>iPhone · iPad</span>
@@ -77,8 +97,10 @@
 </section>
 
 <section class="section wrap narrow" aria-labelledby="how">
-  <h2 id="how">One short read a day is enough.</h2>
-  <p class="section-lead">Steer your paper boat to today&#x27;s reading, and tap only the words that stop you.</p><p class="section-lead">When you finish, write one sentence of your own. Those sentences become your scrapbook.</p>
+  <h2 id="how">Read, listen, and keep what you learn.</h2>
+  <p class="section-lead">Read short pieces in Korean, English, and Japanese on topics you like. Check expressions in context and save the ones you want to remember. Start with one free Daily Read each day.</p>
+  <p class="section-lead">When a reading includes audio, listen and practice with shadowing. Saved expressions return in review with their context.</p>
+  <p class="section-lead">Finish with a sentence of your own, written or spoken. Keep your expressions and notes together in your scrapbook.</p>
 </section>
 </main>
 <footer class="wrap">

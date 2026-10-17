@@ -4,26 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
-/* Every language has its own address. ?lang= on any page opens that language.
-   The English address is also the default one: a visitor who comes to it from
-   outside these pages goes to the language they last picked here, or else to
-   the first of their browser's languages that Moraro has. */
+/* Each language has a stable address. Only an explicit ?lang= request
+   changes language; browser settings never redirect a page. */
 (function () {
   var here = 'ja', urls = {"en": "/moraro/", "ko": "/moraro/ko/", "ja": "/moraro/ja/"}, want;
   function pick(tag) {
     return { en: 'en', ko: 'ko', ja: 'ja' }[String(tag || '').toLowerCase().split('-')[0]];
   }
   try { want = pick(new URLSearchParams(location.search).get('lang')); } catch (e) {}
-  if (!want && here === 'en' && document.referrer.indexOf(location.origin + '/moraro/') !== 0) {
-    try { want = pick(localStorage.getItem('moraro-lang')); } catch (e) {}
-    var list = navigator.languages || [navigator.language];
-    for (var i = 0; !want && i < list.length; i++) want = pick(list[i]);
-  }
   if (want && want !== here) location.replace(urls[want] + location.hash);
 })();
 </script>
-<title>Moraro · 好きな話題で、外国語を読む</title>
-<meta name="description" content="Moraro は、興味のある話題の短い読みもので外国語を読む iPhone、iPad アプリです。App Store で配信中です。">
+<title>Moraro — 短い文章で英語・韓国語・日本語を学ぶ</title>
+<meta name="description" content="Moraroは短い文章で英語・韓国語・日本語を学ぶiPhone・iPadアプリです。表現を保存して文脈とともに復習し、音声がある文章はリスニングとシャドーイングで練習できます。">
 <meta name="author" content="Jongmin Lee">
 <link rel="canonical" href="https://littlegd.github.io/moraro/ja/">
 <link rel="alternate" hreflang="en" href="https://littlegd.github.io/moraro/">
@@ -39,13 +32,40 @@
 <meta property="og:locale" content="ja_JP">
 <meta property="og:locale:alternate" content="en_US">
 <meta property="og:locale:alternate" content="ko_KR">
-<meta property="og:title" content="Moraro · 好きな話題で、外国語を読む">
-<meta property="og:description" content="Moraro は、興味のある話題の短い読みもので外国語を読む iPhone、iPad アプリです。App Store で配信中です。">
-<meta property="og:image" content="https://littlegd.github.io/assets/og.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="JML.Studio">
-<meta name="twitter:card" content="summary_large_image">
+<meta property="og:title" content="Moraro — 短い文章で英語・韓国語・日本語を学ぶ">
+<meta property="og:description" content="Moraroは短い文章で英語・韓国語・日本語を学ぶiPhone・iPadアプリです。表現を保存して文脈とともに復習し、音声がある文章はリスニングとシャドーイングで練習できます。">
+<meta property="og:image" content="https://littlegd.github.io/assets/moraro-icon-512.jpg">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta property="og:image:alt" content="青い海に浮かぶ紙の舟のMoraroアプリアイコン">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://littlegd.github.io/assets/moraro-icon-512.jpg">
+<meta name="twitter:image:alt" content="青い海に浮かぶ紙の舟のMoraroアプリアイコン">
+<meta name="apple-itunes-app" content="app-id=6809738672">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://littlegd.github.io/moraro/#app",
+  "name": "Moraro",
+  "description": "Moraroは短い文章で英語・韓国語・日本語を学ぶiPhone・iPadアプリです。表現を保存して文脈とともに復習し、音声がある文章はリスニングとシャドーイングで練習できます。",
+  "url": "https://littlegd.github.io/moraro/ja/",
+  "downloadUrl": "https://apps.apple.com/app/id6809738672",
+  "image": "https://littlegd.github.io/assets/moraro-icon-512.jpg",
+  "applicationCategory": "EducationalApplication",
+  "operatingSystem": "iOS, iPadOS",
+  "inLanguage": [
+    "en",
+    "ko",
+    "ja"
+  ],
+  "author": {
+    "@type": "Person",
+    "name": "Jongmin Lee"
+  }
+}
+</script>
 
 <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -67,9 +87,9 @@
 <main id="main">
 <section class="hero wrap" aria-labelledby="top">
   <h1 id="top">Moraro</h1>
-  <p class="motto">好きな考えを、自分の言葉に。</p>
-  <p class="lead"><span class="ph">好きな話題で、</span><span class="ph">外国語を読む。</span></p>
-  <p class="sub"><span class="ph">レベルに合った短い読みものを選べます。</span><span class="ph">わからない表現は、</span><span class="ph">タップすればすぐにわかります。</span></p>
+  <p class="motto">短い読書を、自分の言葉へ</p>
+  <p class="lead">短い文章で、英語・韓国語・日本語を学ぶ。</p>
+  <p class="sub">興味や読むレベルに合った文章を選べます。わからない表現は、タップして意味を確かめましょう。</p>
   <div class="status">
     <a class="download" href="https://apps.apple.com/app/id6809738672" target="_blank" rel="noopener"><span class="download-dot" aria-hidden="true"></span>App Store でダウンロード</a>
     <span>iPhone · iPad</span>
@@ -77,8 +97,10 @@
 </section>
 
 <section class="section wrap narrow" aria-labelledby="how">
-  <h2 id="how"><span class="ph">一日一編で、</span><span class="ph">じゅうぶん。</span></h2>
-  <p class="section-lead">紙の舟で今日の読みものを選び、つまずいた表現だけタップして意味を確かめます。</p><p class="section-lead">読み終えたら、自分の考えを一文で残します。その一文が、あなたのスクラップブックになります。</p>
+  <h2 id="how">読んで、聞いて、覚えたい表現を残す。</h2>
+  <p class="section-lead">好きな話題の短い文章を、英語・韓国語・日本語で読みましょう。文脈の中で意味を確かめ、覚えておきたい表現を保存できます。毎日1編の無料デイリーリードから始められます。</p>
+  <p class="section-lead">音声がある文章は、聞いてからシャドーイングでも練習できます。保存した表現は、文脈とともに復習できます。</p>
+  <p class="section-lead">読み終えたら、自分の考えを一文にして、書くか話して残してみましょう。表現とメモをスクラップブックにまとめられます。</p>
 </section>
 </main>
 <footer class="wrap">
