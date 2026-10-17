@@ -23,9 +23,8 @@
 <link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moraro/ko/">
 <link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moraro/ja/">
 <link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moraro/">
-<meta name="color-scheme" content="light dark">
-<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#ffffff">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="JML.Studio">
 <meta property="og:url" content="https://littlegd.github.io/moraro/ko/">
@@ -67,52 +66,40 @@
 }
 </script>
 
-<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
-<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-<link rel="stylesheet" href="/moraro/moraro.css">
+<link rel="icon" type="image/jpeg" href="/assets/moraro-icon-512.jpg">
+<link rel="apple-touch-icon" href="/assets/moraro-icon-512.jpg">
+<link rel="preload" href="/moraro/assets/fonts/changwon.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/moraro/assets/fonts/pretendard-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/moraro/landing.css">
 <script src="/moraro/moraro.js" defer></script>
 <script defer src="/analytics.js"></script>
 </head>
 <body>
-<a class="skip" href="#main">본문으로 건너뛰기</a>
-<header class="top">
- <div class="top-inner wrap">
-  <nav class="crumbs" aria-label="JML.Studio"><a class="studio" href="/"><span class="sr">JML.Studio</span><svg class="wordmark" viewBox="0 0 108 12" width="108" height="12" aria-hidden="true" focusable="false" shape-rendering="crispEdges"><path fill="currentColor" d="M0 0h9v3h-9zM11 0h6v3h-6zM22 0h3v3h-3zM47 0h6v3h-6zM55 0h3v3h-3zM83 0h3v3h-3zM91 0h3v3h-3zM6 3h3v3h-3zM11 3h9v3h-9zM22 3h3v3h-3zM44 3h6v3h-6zM55 3h6v3h-6zM66 3h3v3h-3zM72 3h3v3h-3zM77 3h9v3h-9zM99 3h9v3h-9zM6 6h3v3h-3zM11 6h3v3h-3zM17 6h3v3h-3zM22 6h3v3h-3zM50 6h3v3h-3zM55 6h3v3h-3zM66 6h3v3h-3zM72 6h3v3h-3zM77 6h3v3h-3zM83 6h3v3h-3zM88 6h6v3h-6zM99 6h3v3h-3zM105 6h3v3h-3zM0 9h6v3h-6zM11 9h3v3h-3zM17 9h3v3h-3zM22 9h9v3h-9zM36 9h3v3h-3zM44 9h6v3h-6zM58 9h6v3h-6zM69 9h6v3h-6zM77 9h9v3h-9zM91 9h6v3h-6zM99 9h9v3h-9z"/></svg></a><span class="crumb-sep" aria-hidden="true"></span><a class="crumb-app" href="/moraro/ko/">Moraro</a></nav>
-  <details class="lang">
-    <summary><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M1.75 8h12.5M8 1.75c1.7 1.8 2.6 3.9 2.6 6.25S9.7 12.45 8 14.25C6.3 12.45 5.4 10.35 5.4 8S6.3 3.55 8 1.75z"/></svg><span class="sr">언어: </span>한국어</summary>
-    <ul class="lang-menu" role="list"><li><a href="/moraro/" hreflang="en" lang="en" data-set-lang="en">English</a></li><li><a href="/moraro/ko/" hreflang="ko" lang="ko" data-set-lang="ko" aria-current="true">한국어</a></li><li><a href="/moraro/ja/" hreflang="ja" lang="ja" data-set-lang="ja">日本語</a></li></ul>
-  </details>
- </div>
-</header>
+<a class="skip" href="#main">본문으로 바로가기</a>
+<header class="site-header"><div class="header-inner container">
+ <a class="brand" href="/moraro/ko/" aria-label="Moraro"><img src="/assets/moraro-icon-512.jpg" width="32" height="32" alt=""><span translate="no">moraro</span></a>
+ <nav class="section-nav" aria-label="Moraro 둘러보기"><a href="#reading">읽기</a><a href="#scrapbook">스크랩북</a><a href="#review">복습</a></nav>
+ <details class="lang"><summary><span class="sr">언어: </span>한국어<span class="chevron" aria-hidden="true"></span></summary><ul class="lang-menu" role="list"><li><a href="/moraro/" lang="en" hreflang="en">English</a></li><li><a href="/moraro/ko/" lang="ko" hreflang="ko" aria-current="true">한국어</a></li><li><a href="/moraro/ja/" lang="ja" hreflang="ja">日本語</a></li></ul></details>
+</div></header>
 <main id="main">
-<section class="hero wrap" aria-labelledby="top">
-  <h1 id="top">Moraro</h1>
-  <p class="motto">짧은 글에서 내 문장까지</p>
-  <p class="lead">짧은 글로 영어·일본어·한국어를 배워요.</p>
-  <p class="sub">내 관심사와 읽기 수준에 맞는 글을 만나 보세요. 모르는 표현은 눌러 뜻을 확인해요.</p>
-  <div class="status">
-    <a class="download" href="https://apps.apple.com/app/id6809738672" target="_blank" rel="noopener"><span class="download-dot" aria-hidden="true"></span>App Store에서 다운로드</a>
-    <span>iPhone · iPad</span>
-  </div>
-</section>
-
-<section class="section wrap narrow" aria-labelledby="how">
-  <h2 id="how">읽고, 듣고, 기억할 표현을 모아요.</h2>
-  <p class="section-lead">관심 있는 주제의 영어·일본어·한국어 글을 짧게 읽어요. 문맥 속에서 표현의 뜻을 살피고, 기억하고 싶은 표현을 저장해요. 매일 무료 데일리 리드 한 편으로 시작해 보세요.</p>
-  <p class="section-lead">음성이 있는 글은 듣고 따라 말하는 섀도잉으로 익혀요. 저장한 표현은 다시 문맥 속에서 복습할 수 있어요.</p>
-  <p class="section-lead">다 읽으면 내 생각을 한 문장으로 적거나 말해 보세요. 표현과 메모를 스크랩북에 함께 모아 두세요.</p>
-</section>
+ <section class="hero container" aria-labelledby="hero-title">
+  <div class="hero-copy"><h1 id="hero-title"><span class="sr" translate="no">Moraro. </span>짧은 글에서<br> 내 문장까지</h1><p class="hero-description">영어·일본어·한국어, 짧은 글로 읽고<br> 마음에 남는 표현을 나의 말로 남겨요.</p><a class="primary-action" href="https://apps.apple.com/app/id6809738672" target="_blank" rel="noopener"><span>App Store에서 다운로드</span><span class="action-knob"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M4.9 12L19.1 12"/>
+  <path d="M14.87 7.23C16.66 8.64 18.2 10.05 18.9 11.2Q19.3 12 18.9 12.8C18.2 13.95 16.66 15.36 14.87 16.77"/>
+</svg></span></a><p class="device-note">iPhone과 iPad에서 만나요</p></div>
+  <div class="boat-art"><img src="/moraro/assets/hero-boat.webp" width="1254" height="1254" alt="코발트 무늬가 있는 Moraro의 도자기 종이배." fetchpriority="high" decoding="async"></div>
+ </section>
+ <div class="feature-grid container">
+  <section class="feature-panel screen-first" id="reading" aria-labelledby="reading-title"><div class="panel-copy"><h2 id="reading-title">궁금한 표현은<br> 문맥 속에서 바로.</h2><p>모르는 표현을 눌러 뜻을 확인하세요.<br> 기억하고 싶다면, 처음 만난 문장과 함께 담아요.</p></div><div class="phone-stage"><div class="phone-window"><img src="/moraro/assets/ko/03-lookup.webp" width="960" height="2086" alt="Moraro 읽기 화면. 영어 문장 속 cook의 뜻을 확인하고 표현을 저장할 수 있습니다." loading="lazy" decoding="async"></div></div></section>
+  <section class="feature-panel screen-last" id="scrapbook" aria-labelledby="scrapbook-title"><div class="panel-copy"><h2 id="scrapbook-title">담아 둔 표현이<br> 나만의 한 권으로.</h2><p>모아 둔 표현 곁에 내 생각도 한 문장.<br> 나만의 스크랩북을 채워 가세요.</p></div><div class="phone-stage"><div class="phone-window"><img src="/moraro/assets/ko/06-scrapbook.webp" width="960" height="2086" alt="저장한 단어 스티커와 직접 쓴 메모가 함께 있는 Moraro 스크랩북 화면." loading="lazy" decoding="async"></div></div></section>
+  <section class="feature-panel review-panel" id="review" aria-labelledby="review-title"><div class="panel-copy"><h2 id="review-title">한 번 읽은 표현을<br> 내 말로 익혀요.</h2><p>저장한 표현을 다시 만나 보세요. 처음 읽었던 문맥 속에서 뜻을 떠올리며, 익숙한 문장으로 만들어 가요.</p></div><div class="phone-stage"><div class="phone-window"><img src="/moraro/assets/ko/07-review.webp" width="960" height="2086" alt="읽었던 글의 표현을 문맥과 함께 다시 떠올리는 Moraro 복습 화면." loading="lazy" decoding="async"></div></div></section>
+ </div>
+ <section class="audio-note container" aria-labelledby="audio-title"><h2 id="audio-title">듣고, 따라 말하고,<br> 내 문장으로.</h2><p>오디오가 있는 글은 듣기와 섀도잉으로 이어 가세요. 마지막에는 직접 쓰거나 말하며 나만의 한 문장을 남겨요.</p></section>
+ <section class="last-call container" aria-labelledby="last-title"><span class="closing-wordmark" translate="no">moraro</span><h2 id="last-title">오늘 읽은 짧은 글이<br> 내일의 한 문장으로.</h2><p>매일 무료 Daily Read 한 편으로 시작하세요.</p><a class="primary-action" href="https://apps.apple.com/app/id6809738672" target="_blank" rel="noopener"><span>App Store에서 다운로드</span><span class="action-knob"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M4.9 12L19.1 12"/>
+  <path d="M14.87 7.23C16.66 8.64 18.2 10.05 18.9 11.2Q19.3 12 18.9 12.8C18.2 13.95 16.66 15.36 14.87 16.77"/>
+</svg></span></a><p class="device-note">iPhone과 iPad에서 만나요</p></section>
 </main>
-<footer class="wrap">
-  <div class="bottom">
-    <nav aria-label="Moraro">
-      <a href="/moraro/ko/">Moraro</a>
-      <a href="/moraro/ko/support/">지원</a>
-      <a href="/moraro/ko/privacy/">개인정보 처리방침</a>
-      <a href="/">JML.Studio</a>
-    </nav>
-    <p>&copy; 2026 JML.Studio</p>
-  </div>
-</footer>
+<footer class="site-footer container"><a class="brand" href="/moraro/ko/" aria-label="Moraro"><span translate="no">moraro</span></a><nav aria-label="지원 및 안내"><a href="/moraro/ko/support/">고객 지원</a><a href="/moraro/ko/privacy/">개인정보 처리방침</a><a href="/">JML.Studio</a></nav><p>© 2026 JML.Studio</p></footer>
 </body>
 </html>

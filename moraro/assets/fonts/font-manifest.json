@@ -1,0 +1,119 @@
+{
+  "generator": "moraro/assets/fonts/build-fonts.py",
+  "tool": "fontTools 4.63.0 with Brotli",
+  "source_directory": "MoraroOcean/Resources/Fonts (external app source; unmodified)",
+  "page_sha256": {
+    "moraro/index.html": "2daa8b9eb263ee314ec5034712d34718d0226414abcb0c19460b28f2394ffbd7",
+    "moraro/ko/index.html": "1ccaa899d7a46d7ef24f7dfae4996d58a2f0c7c15e7488ca517c2962e47089da",
+    "moraro/ja/index.html": "df064b8b22d4bcb365fa1ce7e1bbfe26edb92af5dbca0fa575bd0fb1df3063bb"
+  },
+  "scope": "Full Changwon; full printable ASCII and current landing body text/labels; EN+KO share body subset, JA has its own body and heading subsets.",
+  "font_outline_change": "None for retained characters; unneeded glyphs removed in subsets. OFL subsets renamed internally. Original copyright/license metadata retained.",
+  "fonts": [
+    {
+      "source": "ChangwonDangamRound.otf",
+      "file": "changwon.woff2",
+      "source_bytes": 1767880,
+      "woff2_bytes": 270376,
+      "source_sha256": "51905eab258e605438b58d922d54c1d9450ef3bc42e1af07c64819db2a128e3b",
+      "woff2_sha256": "4e4729aa75528846ed540d74f064ed32d47ae521a2f80134974e60c23ca3ba91",
+      "subset": false,
+      "family": "ChangwonDangamRound",
+      "unicode_mappings": 12306,
+      "glyphs": 12258,
+      "missing_from_original": [],
+      "verified_all_retained_outlines_and_advances": true,
+      "layout_feature_selection": "* (all features relevant to retained glyphs)"
+    },
+    {
+      "source": "KosugiMaru-Regular.ttf",
+      "file": "kosugi-maru.woff2",
+      "source_bytes": 3565716,
+      "woff2_bytes": 39180,
+      "source_sha256": "4b8d0022c8dadd090ef67cd1f71f130714767af7806cba2eb4ebe4b0271c1d68",
+      "woff2_sha256": "8901b30b356d58018c4d6420bf727c50d021f0ab8667c814cecc9ce99a658639",
+      "subset": true,
+      "family": "Kosugi Maru",
+      "unicode_mappings": 237,
+      "glyphs": 380,
+      "missing_from_original": [
+        "U+00A9 ©",
+        "U+2013 –",
+        "U+2014 —",
+        "U+AD6D 국",
+        "U+C5B4 어",
+        "U+D55C 한"
+      ],
+      "verified_all_retained_outlines_and_advances": true,
+      "layout_feature_selection": "* (all features relevant to retained glyphs)"
+    },
+    {
+      "source": "Pretendard-Regular.otf",
+      "file": "pretendard-regular.woff2",
+      "source_bytes": 1574352,
+      "woff2_bytes": 34412,
+      "source_sha256": "3ffbacde6ab8411f1d2db54bb9b1f0b3ee2a738932033722cf0388c06aed1c93",
+      "woff2_sha256": "6fc093d8155b5da7f2d9275e16df53e9dd75cb83dccb34d60133734a0477a37e",
+      "subset": true,
+      "family": "Moraro Web UI",
+      "unicode_mappings": 242,
+      "glyphs": 576,
+      "missing_from_original": [
+        "U+65E5 日",
+        "U+672C 本",
+        "U+8A9E 語"
+      ],
+      "verified_all_retained_outlines_and_advances": true,
+      "layout_feature_selection": "* (all features relevant to retained glyphs)"
+    },
+    {
+      "source": "Pretendard-SemiBold.otf",
+      "file": "pretendard-semibold.woff2",
+      "source_bytes": 1583704,
+      "woff2_bytes": 34520,
+      "source_sha256": "c89bc43027dc7cde5726e96223376f8eec09302b2fc1f8147fd5b57cfc376118",
+      "woff2_sha256": "31eab23b36b5a30c870e72a2af90e7a89c82b884d1fb90d3a46db600616e3d66",
+      "subset": true,
+      "family": "Moraro Web UI",
+      "unicode_mappings": 242,
+      "glyphs": 576,
+      "missing_from_original": [
+        "U+65E5 日",
+        "U+672C 本",
+        "U+8A9E 語"
+      ],
+      "verified_all_retained_outlines_and_advances": true,
+      "layout_feature_selection": "* (all features relevant to retained glyphs)"
+    },
+    {
+      "source": "PretendardJP-Regular.otf",
+      "file": "pretendard-jp-regular.woff2",
+      "source_bytes": 3652728,
+      "woff2_bytes": 43436,
+      "source_sha256": "8e45c1999c941e8237e52c650c64667638cff1e50b9492c7b02ee1d380b7d06d",
+      "woff2_sha256": "3c89786889aa760bbb417bbc70b8a4dc6b6002d922ae9627a2a43f0b0a1361f9",
+      "subset": true,
+      "family": "Moraro Web UI JP",
+      "unicode_mappings": 244,
+      "glyphs": 585,
+      "missing_from_original": [],
+      "verified_all_retained_outlines_and_advances": true,
+      "layout_feature_selection": "* (all features relevant to retained glyphs)"
+    },
+    {
+      "source": "PretendardJP-SemiBold.otf",
+      "file": "pretendard-jp-semibold.woff2",
+      "source_bytes": 3781740,
+      "woff2_bytes": 44024,
+      "source_sha256": "7cd2b757bd8b8db79b4b87c3b402aa62aca666b55ff50ae0799e14ece1942314",
+      "woff2_sha256": "918c6c9ae439cc6edab44c4b6330c5e0139e86feaab66bf17a21dabc588e2bfa",
+      "subset": true,
+      "family": "Moraro Web UI JP",
+      "unicode_mappings": 244,
+      "glyphs": 585,
+      "missing_from_original": [],
+      "verified_all_retained_outlines_and_advances": true,
+      "layout_feature_selection": "* (all features relevant to retained glyphs)"
+    }
+  ]
+}

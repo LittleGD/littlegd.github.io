@@ -1,0 +1,145 @@
+{
+  "sourceRepository": "MoraroOcean",
+  "imageTool": "cwebp 1.6.0\nlibsharpyuv: 0.4.2",
+  "date": "2026-10-17",
+  "assets": [
+    {
+      "source": "docs/store-screenshots/2026-10-07/iphone-6.9/en/03-lookup.png",
+      "output": "en/03-lookup.webp",
+      "sourceBytes": 3514219,
+      "outputBytes": 197284,
+      "sourceSHA256": "8cf2084f26f1e9c2028f8557a7bd157c843c619ff469c85f92462fd679f44107",
+      "outputSHA256": "0c3335cd8f96bf16b87ff0ed0969dd80b4da0d243c59cf91433690527097f32c",
+      "width": 960,
+      "quality": 85,
+      "method": 6
+    },
+    {
+      "source": "docs/store-screenshots/2026-10-07/iphone-6.9/en/06-scrapbook.png",
+      "output": "en/06-scrapbook.webp",
+      "sourceBytes": 3008042,
+      "outputBytes": 155470,
+      "sourceSHA256": "23c2985c6788be4fcc26159530ca012b054a42b6a298a8268da6a57ce6c578c6",
+      "outputSHA256": "f1dbcedbe3fdfd0f04c47cf9d1b963be093b203b89020c4639340e05cfc3cf3b",
+      "width": 960,
+      "quality": 85,
+      "method": 6
+    },
+    {
+      "source": "docs/store-screenshots/2026-10-07/iphone-6.9/en/07-review.png",
+      "output": "en/07-review.webp",
+      "sourceBytes": 2925879,
+      "outputBytes": 172046,
+      "sourceSHA256": "ff146af8dca39dd7d45a9e021034f8b6e44d0753487beeaa8e1abc78ed3026bf",
+      "outputSHA256": "7b4e19c3053f2bee232111b320e3c0719cfedecc2eec9361d17c71686eb9398c",
+      "width": 960,
+      "quality": 85,
+      "method": 6
+    },
+    {
+      "source": "docs/store-screenshots/2026-10-07/iphone-6.9/ko/03-lookup.png",
+      "output": "ko/03-lookup.webp",
+      "sourceBytes": 3360031,
+      "outputBytes": 167060,
+      "sourceSHA256": "c61861aa0de506f4f71503fd30d77d98210b4a21e50c3454a88d897bf2f62cee",
+      "outputSHA256": "bc9d72087263d607551414ddd336c4f8b909bd069743f1c18c125c699a593fed",
+      "width": 960,
+      "quality": 85,
+      "method": 6
+    },
+    {
+      "source": "docs/store-screenshots/2026-10-07/iphone-6.9/ko/06-scrapbook.png",
+      "output": "ko/06-scrapbook.webp",
+      "sourceBytes": 2985991,
+      "outputBytes": 153646,
+      "sourceSHA256": "5b3dec34c846f7141fee0837d992ff77ee6cb5fd5196db64bc9bf84be3929755",
+      "outputSHA256": "31cb10ca7ca7606608ae65ebc23dcd71a989120473015a1422cd4804bcd12369",
+      "width": 960,
+      "quality": 85,
+      "method": 6
+    },
+    {
+      "source": "docs/store-screenshots/2026-10-07/iphone-6.9/ko/07-review.png",
+      "output": "ko/07-review.webp",
+      "sourceBytes": 3030122,
+      "outputBytes": 181836,
+      "sourceSHA256": "9cf45d30f6010643b017b7db745d7554a147afd7a487f0fefc5184761efaa3ad",
+      "outputSHA256": "b68928acc90a935144e2ac427eb25974beae589895054bbb43d8d6563c4ab182",
+      "width": 960,
+      "quality": 85,
+      "method": 6
+    },
+    {
+      "source": "docs/store-screenshots/2026-10-07/iphone-6.9/ja/03-lookup.png",
+      "output": "ja/03-lookup.webp",
+      "sourceBytes": 3374147,
+      "outputBytes": 175070,
+      "sourceSHA256": "d25850cd0bb3d2773689fc406cb63fdb6d7706b7e72939f622b8b63b1f0d18a4",
+      "outputSHA256": "9406abfd9afc55e8aae680abb3fccd395950b68d4f53929bb4be629de9fd892a",
+      "width": 960,
+      "quality": 85,
+      "method": 6
+    },
+    {
+      "source": "docs/store-screenshots/2026-10-07/iphone-6.9/ja/06-scrapbook.png",
+      "output": "ja/06-scrapbook.webp",
+      "sourceBytes": 3002333,
+      "outputBytes": 163604,
+      "sourceSHA256": "60b902b2fad2eb4a0aae4a78d105fb7030d2d83ac1f0a10edc7520dd39e082ca",
+      "outputSHA256": "f59644eb284f026b71caea881644f2983cac4d9010c242fdd011e4395493236e",
+      "width": 960,
+      "quality": 85,
+      "method": 6
+    },
+    {
+      "source": "docs/store-screenshots/2026-10-07/iphone-6.9/ja/07-review.png",
+      "output": "ja/07-review.webp",
+      "sourceBytes": 3035124,
+      "outputBytes": 187072,
+      "sourceSHA256": "70466f824ca7cae971f9dfd8a72ee43cf4dab27bf5dc4b91c1e2e7ab8c2417e6",
+      "outputSHA256": "9f67734f24352bc14b10057129345342a2c4d67352b2833d9a50bab0bd76f91d",
+      "width": 960,
+      "quality": 85,
+      "method": 6
+    },
+    {
+      "source": "Moraro_icon.icon/Assets/Moraro-icon5.png",
+      "output": "hero-boat.webp",
+      "sourceBytes": 476682,
+      "outputBytes": 83566,
+      "sourceSHA256": "60da5201d7cca1701eca1ef4175567c0d44dbe5b9dc3acacc163548634d36efc",
+      "outputSHA256": "375f7780be73bb281494ae52343439f33373dfaea8ad3eae336e09e1628fc5fc",
+      "width": 1254,
+      "height": 1254,
+      "quality": 90,
+      "alphaQuality": 100,
+      "method": 6,
+      "transform": "WebP compression only; original canvas and full alpha channel preserved; no crop, resize, recolor, composition or UI change"
+    }
+  ],
+  "inlineSources": [
+    {
+      "source": "scripts/icons/arrow-right.svg",
+      "sourceBytes": 307,
+      "sourceSHA256": "242ad22ae647f32f5fe0a0b4c46109b731b5478578793465f51bc9c27891bc3d",
+      "usedIn": [
+        "moraro/index.html",
+        "moraro/ko/index.html",
+        "moraro/ja/index.html"
+      ],
+      "integration": "Official Tide arrow SVG path data is embedded inline; no separate SVG file shipped.",
+      "validation": "Both original path d attributes found unchanged in all three landing pages."
+    }
+  ],
+  "relatedAssets": [
+    {
+      "path": "fonts/",
+      "provenance": "fonts/font-manifest.json",
+      "documentation": "fonts/README.md"
+    },
+    {
+      "path": "../../assets/moraro-icon-512.jpg",
+      "integration": "Existing shared official Moraro app icon; unchanged."
+    }
+  ]
+}
