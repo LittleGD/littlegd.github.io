@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>JML.Studio · UpNext, Reffi, Hidden Front, FAGL, Moraro · Jongmin Lee</title>
-<meta name="description" content="Jongmin Lee's app studio: UpNext, a challenge-card habit app, Reffi, a fridge inventory app, Hidden Front, an online Junqi board game, FAGL, a focus timer and goals app, and Moraro, a language-learning app of short readings.">
+<title>JML.Studio · Moraro, UpNext, Reffi, Hidden Front, FAGL · Jongmin Lee</title>
+<meta name="description" content="Jongmin Lee's app studio: Moraro, a language-learning app of short readings, UpNext, a challenge-card habit app, Reffi, a fridge inventory app, Hidden Front, an online Junqi board game, and FAGL, a focus timer and goals app.">
 <meta name="author" content="Jongmin Lee">
 <link rel="canonical" href="https://littlegd.github.io/">
 <meta name="theme-color" content="#ffffff">
@@ -15,7 +15,7 @@
 <meta property="og:url" content="https://littlegd.github.io/">
 <meta property="og:locale" content="en_US">
 <meta property="og:title" content="JML.Studio · Apps by Jongmin Lee">
-<meta property="og:description" content="Makers of UpNext, a challenge-card habit app, Reffi, a fridge inventory app, Hidden Front, an online Junqi board game, FAGL, a focus timer and goals app, and Moraro, a language-learning app of short readings.">
+<meta property="og:description" content="Makers of Moraro, a language-learning app of short readings, UpNext, a challenge-card habit app, Reffi, a fridge inventory app, Hidden Front, an online Junqi board game, and FAGL, a focus timer and goals app.">
 <meta property="og:image" content="https://littlegd.github.io/assets/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -60,6 +60,22 @@
           "position": 1,
           "item": {
             "@type": "MobileApplication",
+            "name": "Moraro",
+            "description": "A language-learning app: sail a paper boat to short readings in Korean, English or Japanese, keep the phrases you find, and leave a thought in your own words.",
+            "url": "https://littlegd.github.io/moraro/",
+            "downloadUrl": "https://apps.apple.com/app/id6809738672",
+            "image": "https://littlegd.github.io/assets/moraro-icon-512.jpg",
+            "applicationCategory": "EducationalApplication",
+            "operatingSystem": "iOS 18+, iPadOS 18+",
+            "inLanguage": ["en", "ko", "ja"],
+            "author": { "@id": "https://littlegd.github.io/#studio" }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "MobileApplication",
             "name": "UpNext: Challenge Card Habits",
             "description": "A roguelike habit app: draw challenge cards from your deck every day and complete them, with photo proof.",
             "url": "https://apps.apple.com/app/id6762550135",
@@ -74,7 +90,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 2,
+          "position": 3,
           "item": {
             "@type": "MobileApplication",
             "name": "Reffi",
@@ -92,7 +108,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 3,
+          "position": 4,
           "item": {
             "@type": "WebApplication",
             "name": "Hidden Front",
@@ -107,7 +123,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 4,
+          "position": 5,
           "item": {
             "@type": "SoftwareApplication",
             "name": "FAGL: Focus Timer & Goals",
@@ -120,22 +136,6 @@
             "operatingSystem": "macOS 26+ (Apple silicon), iOS 26.1+, iPadOS 26.1+, watchOS 26+ (paired iPhone required)",
             "inLanguage": ["en", "ko", "ja", "zh-Hant", "de"],
             "offers": { "@type": "Offer", "price": "6.99", "priceCurrency": "USD" },
-            "author": { "@id": "https://littlegd.github.io/#studio" }
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "item": {
-            "@type": "MobileApplication",
-            "name": "Moraro",
-            "description": "A language-learning app: sail a paper boat to short readings in Korean, English or Japanese, keep the phrases you find, and leave a thought in your own words.",
-            "url": "https://littlegd.github.io/moraro/",
-            "downloadUrl": "https://apps.apple.com/app/id6809738672",
-            "image": "https://littlegd.github.io/assets/moraro-icon-512.jpg",
-            "applicationCategory": "EducationalApplication",
-            "operatingSystem": "iOS 18+, iPadOS 18+",
-            "inLanguage": ["en", "ko", "ja"],
             "author": { "@id": "https://littlegd.github.io/#studio" }
           }
         }
@@ -168,6 +168,20 @@
 <main class="shelf">
   <ul class="apps" role="list" aria-label="Apps">
     <!-- on more than one store: the icon opens a pair of store buttons -->
+    <li class="app app--stores">
+      <button class="app-link" type="button" aria-expanded="false" aria-controls="moraro-stores">
+        <span class="app-icon" style="--art: url(assets/moraro-icon-512.jpg)">
+          <img src="assets/moraro-icon-512.jpg" alt="" width="512" height="512">
+        </span>
+        <span class="app-name">Moraro</span>
+      </button>
+      <div class="stores" id="moraro-stores">
+        <span class="store-slot store-slot--up"><a class="store store--up store--text" href="https://apps.apple.com/app/id6809738672" target="_blank" rel="noopener">
+          <span>App Store</span>
+        </a></span>
+        <span class="store-slot store-slot--site"><a class="site" href="moraro/">Website</a><a class="site" href="moraro/privacy/">Privacy</a></span>
+      </div>
+    </li>
     <li class="app app--stores">
       <button class="app-link" type="button" aria-expanded="false" aria-controls="upnext-stores">
         <span class="app-icon" style="--art: url(assets/upnext-icon-512.png)">
@@ -226,20 +240,6 @@
           <span>Mac App</span>
         </a></span>
         <span class="store-slot store-slot--site"><a class="site" href="fagl/">Website</a><a class="site" href="fagl/privacy/">Privacy</a></span>
-      </div>
-    </li>
-    <li class="app app--stores">
-      <button class="app-link" type="button" aria-expanded="false" aria-controls="moraro-stores">
-        <span class="app-icon" style="--art: url(assets/moraro-icon-512.jpg)">
-          <img src="assets/moraro-icon-512.jpg" alt="" width="512" height="512">
-        </span>
-        <span class="app-name">Moraro</span>
-      </button>
-      <div class="stores" id="moraro-stores">
-        <span class="store-slot store-slot--up"><a class="store store--up store--text" href="https://apps.apple.com/app/id6809738672" target="_blank" rel="noopener">
-          <span>App Store</span>
-        </a></span>
-        <span class="store-slot store-slot--site"><a class="site" href="moraro/">Website</a><a class="site" href="moraro/privacy/">Privacy</a></span>
       </div>
     </li>
   </ul>
