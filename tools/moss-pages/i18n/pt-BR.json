@@ -9,32 +9,37 @@
     "home": "Moss’s Club house",
     "studio": "JML.Studio",
     "soon": "Em breve para iPhone e Android",
-    "free": "Grátis. Sem anúncios.",
     "effective": "Data de vigência: {date}",
     "date": "1 de novembro de 2026"
   },
   "landing": {
-    "title": "Moss’s Club house · Cartas anônimas, levadas por Moss",
-    "description": "Escreva uma preocupação numa máquina de escrever antiga. Moss, um pequeno gnomo de jardim, leva a carta para outra cidade, e um desconhecido responde. Escritas por pessoas, nunca por IA. Grátis para iPhone e Android.",
-    "h1": "Escreva.<br> Moss vai levar.",
-    "lede": "Digite uma preocupação numa máquina de escrever antiga. Moss, um pequeno gnomo de jardim, leva sua carta para outra cidade, onde um desconhecido a lê e responde.",
+    "title": "Moss’s Club house · Cartas anônimas levadas pelo Moss",
+    "description": "Escreva uma preocupação numa máquina de escrever. O Moss leva a carta para outra cidade e um desconhecido responde. Cada carta é escrita por uma pessoa. Grátis no iPhone e no Android, sem anúncios.",
+    "h1": "Escreva uma preocupação.<br> O Moss entrega.",
+    "lede": "Alguém em outra cidade lê e responde.",
     "artAlt": "Moss, um gnomo de jardim com chapéu vermelho pontudo e barba branca",
     "howTitle": "Como funciona",
     "steps": [
-      {"t": "Escreva uma preocupação por dia", "b": "Sente-se à máquina de escrever e conte o que está no seu coração. Sem nome, sem perfil. Só a carta."},
-      {"t": "Moss leva a carta", "b": "Moss leva sua carta para outra cidade. Todo dia ele também traz algumas cartas de outros lugares para você."},
-      {"t": "Um desconhecido responde", "b": "Alguém escolhe sua carta e escreve uma resposta. Quando ela voltar, você pode enviar um pequeno agradecimento."}
+      {
+        "t": "Escreva",
+        "b": "Uma carta por dia, numa máquina de escrever. Sem nome e sem perfil."
+      },
+      {
+        "t": "O Moss entrega",
+        "b": "Sua carta vai para outra cidade. Você também recebe até 3 cartas por dia."
+      },
+      {
+        "t": "Receba uma resposta",
+        "b": "Alguém escolhe sua carta e responde. Você pode enviar um agradecimento."
+      }
     ],
-    "promiseTitle": "Pequenas promessas",
-    "promises": [
-      {"t": "Escritas por pessoas", "b": "Toda carta e toda resposta é escrita por uma pessoa. A IA só verifica a segurança das cartas e as traduz, para que elas possam viajar entre idiomas."},
-      {"t": "Anônimo", "b": "As outras pessoas veem sua carta, não você. Elas veem apenas a cidade aproximada de onde ela veio."},
-      {"t": "Grátis, sem anúncios", "b": "Sem anúncios, sem recursos pagos, sem rastreamento."}
+    "factsTitle": "Bom saber",
+    "facts": [
+      "Cada carta é escrita por uma pessoa. A IA só revisa e traduz.",
+      "Os outros veem sua carta e uma cidade aproximada. Nada mais.",
+      "Grátis e sem anúncios."
     ],
-    "safetyTitle": "Um lugar gentil, cuidado por todos",
-    "safetyBody": "As cartas são analisadas antes de Moss entregá-las. Se uma carta não parecer certa, você pode denunciá-la ou bloquear quem a enviou, direto na própria carta. Moss’s Club house não é um serviço de crise. Se você pode estar em perigo, entre em contato agora com os serviços de emergência locais ou com alguém por perto.",
-    "closingTitle": "Em algum lugar, alguém<br> está respondendo.",
-    "closingBody": "Disponível em English, Español, Português, Français, Deutsch, 한국어, 日本語, 简体中文 e 繁體中文."
+    "safety": "Você pode denunciar ou bloquear uma carta direto nela. Se estiver em perigo, não espere uma resposta. Ligue agora para os serviços de emergência da sua região."
   },
   "support": {
     "title": "Suporte · Moss’s Club house",
@@ -49,14 +54,38 @@
     "dangerTitle": "Se você está em perigo",
     "dangerBody": "O Moss’s Club house não consegue atender emergências. Se você ou outra pessoa pode estar em perigo imediato, entre em contato agora com os serviços de emergência locais ou com alguém por perto. Não espere pela resposta de uma carta.",
     "faq": [
-      {"q": "Preciso de uma conta?", "a": "Sim. Entre com a Apple ou o Google para que suas cartas encontrem o caminho de volta até você. Outras pessoas nunca veem seu nome nem seu e-mail."},
-      {"q": "Quantas cartas posso escrever?", "a": "Uma carta de preocupação por dia. Todo dia Moss também traz até três cartas de outras pessoas. Escolha uma para responder, e você terá 48 horas para escrever a resposta."},
-      {"q": "Minha carta voltou sem resposta", "a": "Às vezes ninguém escolhe uma carta a tempo. Quando isso acontece, Moss a traz de volta para você. Você pode escrever uma nova carta no dia seguinte."},
-      {"q": "Quem lê minha carta?", "a": "A pessoa que a recebe. Antes da entrega, uma análise automática verifica a carta e a traduz para o idioma de quem vai ler. A IA não escreve nem altera o que você diz. Se uma carta precisar de ajustes antes de ser enviada, o app avisa você."},
-      {"q": "As pessoas podem ver onde eu moro?", "a": "Não. Moss usa apenas uma cidade aproximada, com base na sua conexão de rede, e quem lê vê somente essa cidade aproximada. O app não usa o GPS do seu celular."},
-      {"q": "O que acontece quando queimo uma carta?", "a": "Ao segurar para queimar um rascunho, ele é apagado do seu celular sem ser enviado. Depois que uma resposta volta, você também pode queimar a carta e a resposta para removê-las do seu arquivo. Isso não pode ser desfeito."},
-      {"q": "Como excluo minha conta?", "a": "Abra Configurações no app e toque em Excluir conta. Sua conta, suas cartas e as respostas que você escreveu são excluídas, e isso não pode ser desfeito. Veja a Política de Privacidade para saber quais poucos registros são mantidos por segurança."},
-      {"q": "Custa alguma coisa?", "a": "Não. O Moss’s Club house é grátis, sem anúncios e sem recursos pagos."}
+      {
+        "q": "Preciso de uma conta?",
+        "a": "Sim. Entre com a Apple ou o Google para que suas cartas encontrem o caminho de volta até você. Outras pessoas nunca veem seu nome nem seu e-mail."
+      },
+      {
+        "q": "Quantas cartas posso escrever?",
+        "a": "Uma carta de preocupação por dia. Todo dia Moss também traz até três cartas de outras pessoas. Escolha uma para responder, e você terá 48 horas para escrever a resposta."
+      },
+      {
+        "q": "Minha carta voltou sem resposta",
+        "a": "Às vezes ninguém escolhe uma carta a tempo. Quando isso acontece, Moss a traz de volta para você. Você pode escrever uma nova carta no dia seguinte."
+      },
+      {
+        "q": "Quem lê minha carta?",
+        "a": "A pessoa que a recebe. Antes da entrega, uma análise automática verifica a carta e a traduz para o idioma de quem vai ler. A IA não escreve nem altera o que você diz. Se uma carta precisar de ajustes antes de ser enviada, o app avisa você."
+      },
+      {
+        "q": "As pessoas podem ver onde eu moro?",
+        "a": "Não. Moss usa apenas uma cidade aproximada, com base na sua conexão de rede, e quem lê vê somente essa cidade aproximada. O app não usa o GPS do seu celular."
+      },
+      {
+        "q": "O que acontece quando queimo uma carta?",
+        "a": "Ao segurar para queimar um rascunho, ele é apagado do seu celular sem ser enviado. Depois que uma resposta volta, você também pode queimar a carta e a resposta para removê-las do seu arquivo. Isso não pode ser desfeito."
+      },
+      {
+        "q": "Como excluo minha conta?",
+        "a": "Abra Configurações no app e toque em Excluir conta. Sua conta, suas cartas e as respostas que você escreveu são excluídas, e isso não pode ser desfeito. Veja a Política de Privacidade para saber quais poucos registros são mantidos por segurança."
+      },
+      {
+        "q": "Custa alguma coisa?",
+        "a": "Não. O Moss’s Club house é grátis, sem anúncios e sem recursos pagos."
+      }
     ]
   },
   "terms": {
@@ -65,18 +94,94 @@
     "h1": "Termos de Uso do Moss’s Club house",
     "intro": "O Moss’s Club house (o “app”) é feito por Jongmin Lee, desenvolvedor independente da JML.Studio (“nós”). Ao criar uma conta ou usar o app, você concorda com estes termos. Se não concordar, por favor, não use o app.",
     "sections": [
-      {"h": "1. O que é o app", "p": ["O app permite que as pessoas troquem cartas anônimas sobre suas preocupações. Você pode escrever uma carta por dia. Outras pessoas podem recebê-la e escrever uma resposta. As cartas são analisadas automaticamente e traduzidas para que possam viajar entre idiomas.", "O app não é terapia nem apoio médico, jurídico ou em situações de crise. As respostas vêm de outros usuários, não de profissionais, e não verificamos se os conselhos deles são adequados para você. Se você pode estar em perigo, entre em contato imediatamente com os serviços de emergência locais."]},
-      {"h": "2. Quem pode usar", "p": ["Você precisa ter pelo menos {age} anos para usar o app. Se você ainda não atingiu a maioridade onde mora, precisa da permissão de um responsável. Você não pode usar o app se restringimos sua conta ou se a lei do lugar onde você mora proíbe."]},
-      {"h": "3. Sua conta", "p": ["Você entra com a Apple ou o Google. Mantenha seu dispositivo e seu acesso seguros, pois você é responsável pelo que for enviado da sua conta. Uma pessoa, uma conta: não crie contas para contornar uma restrição."]},
-      {"h": "4. Regras das cartas", "p": ["O Moss’s Club house funciona porque as pessoas são gentis com desconhecidos. Ao escrever uma carta ou uma resposta, você concorda em não:"], "list": ["assediar, ameaçar, insultar ou envergonhar ninguém, nem incentivar alguém a machucar a si mesmo ou a outras pessoas;", "publicar discurso de ódio ou conteúdo que ataque pessoas por quem elas são;", "publicar conteúdo sexual, ou qualquer conteúdo que sexualize menores;", "compartilhar informações pessoais que possam identificar você ou outra pessoa, como nomes, telefones, endereços, contas de redes sociais ou fotos;", "pedir para se encontrar, levar a conversa para outro lugar ou pedir dinheiro;", "fazer propaganda, enviar spam ou links;", "publicar conteúdo ilegal ou que viole direitos de outras pessoas;", "se passar por outra pessoa ou usar meios automatizados para enviar cartas."], "after": ["Temos tolerância zero com conteúdo ofensivo e usuários abusivos. Você pode falar sobre sentimentos difíceis e experiências dolorosas: é para isso que o app existe. O que importa é como você trata as pessoas que vão ler."]},
-      {"h": "5. Análise, denúncias e bloqueios", "p": ["Toda carta e toda resposta é verificada antes da entrega por uma análise automática que usa IA. Uma carta pode ser entregue, devolvida para você revisar, retida ou não entregue. A análise pode cometer erros e não garante que todas as cartas que você receber serão adequadas.", "Você pode denunciar qualquer carta ou resposta que receber e bloquear quem a enviou. Analisamos as denúncias e agimos contra conteúdo ofensivo o mais rápido possível, com a meta de fazê-lo em até 24 horas. Podemos remover conteúdo e podemos restringir ou encerrar contas que descumpram estes termos, com ou sem aviso prévio. Uma conta restringida não pode enviar, responder nem receber novas cartas."]},
-      {"h": "6. Suas cartas", "p": ["Você continua sendo o dono do que escreve. Você nos concede uma licença mundial, não exclusiva e gratuita para armazenar, analisar, traduzir, entregar e exibir suas cartas e respostas a fim de operar o app, e para guardá-las como descrito na Política de Privacidade. Depois que uma carta é entregue, quem a recebeu pode lê-la, e não temos controle sobre o que a pessoa faz com o que leu.", "Não envie nada que você não se sinta à vontade para compartilhar com um desconhecido."]},
-      {"h": "7. Serviço gratuito e alterações", "p": ["O app é gratuito. Podemos alterar, pausar ou encerrar o app ou qualquer recurso, incluindo limites de cartas e prazos de entrega. Cartas em trânsito podem ser perdidas se o serviço for encerrado. Tentaremos avisar sobre mudanças importantes no app ou nesta página."]},
-      {"h": "8. Isenções e responsabilidade", "p": ["O app é fornecido “como está” e “conforme disponível”. Na medida em que a lei permitir, não damos nenhuma garantia sobre o app, sobre outros usuários ou sobre o conteúdo das cartas e respostas, e não somos responsáveis por danos indiretos, incidentais ou consequentes, nem por perda de dados. Nada nestes termos limita direitos que você tenha por leis que não podem ser alteradas por contrato."]},
-      {"h": "9. Encerrando o uso", "p": ["Você pode parar de usar o app a qualquer momento e excluir sua conta em Configurações. Podemos suspender ou encerrar seu acesso se você descumprir estes termos ou se precisarmos fazê-lo para proteger outros usuários ou cumprir a lei."]},
-      {"h": "10. Lojas de aplicativos", "p": ["Se você baixou o app da App Store da Apple, o Contrato de Licença de Usuário Final de Aplicativos Licenciados da Apple também se aplica, e estes termos o complementam. A Apple e o Google não são responsáveis pelo app nem por seu conteúdo."]},
-      {"h": "11. Alterações nestes termos", "p": ["Podemos atualizar estes termos. Quando isso acontecer, mudaremos a data de vigência acima e, se a mudança for importante, avisaremos você no app. Se você continuar usando o app após a mudança, aceita os novos termos."]},
-      {"h": "12. Contato", "p": ["Dúvidas sobre estes termos: {emailLink}"]}
+      {
+        "h": "1. O que é o app",
+        "p": [
+          "O app permite que as pessoas troquem cartas anônimas sobre suas preocupações. Você pode escrever uma carta por dia. Outras pessoas podem recebê-la e escrever uma resposta. As cartas são analisadas automaticamente e traduzidas para que possam viajar entre idiomas.",
+          "O app não é terapia nem apoio médico, jurídico ou em situações de crise. As respostas vêm de outros usuários, não de profissionais, e não verificamos se os conselhos deles são adequados para você. Se você pode estar em perigo, entre em contato imediatamente com os serviços de emergência locais."
+        ]
+      },
+      {
+        "h": "2. Quem pode usar",
+        "p": [
+          "Você precisa ter pelo menos {age} anos para usar o app. Se você ainda não atingiu a maioridade onde mora, precisa da permissão de um responsável. Você não pode usar o app se restringimos sua conta ou se a lei do lugar onde você mora proíbe."
+        ]
+      },
+      {
+        "h": "3. Sua conta",
+        "p": [
+          "Você entra com a Apple ou o Google. Mantenha seu dispositivo e seu acesso seguros, pois você é responsável pelo que for enviado da sua conta. Uma pessoa, uma conta: não crie contas para contornar uma restrição."
+        ]
+      },
+      {
+        "h": "4. Regras das cartas",
+        "p": [
+          "O Moss’s Club house funciona porque as pessoas são gentis com desconhecidos. Ao escrever uma carta ou uma resposta, você concorda em não:"
+        ],
+        "list": [
+          "assediar, ameaçar, insultar ou envergonhar ninguém, nem incentivar alguém a machucar a si mesmo ou a outras pessoas;",
+          "publicar discurso de ódio ou conteúdo que ataque pessoas por quem elas são;",
+          "publicar conteúdo sexual, ou qualquer conteúdo que sexualize menores;",
+          "compartilhar informações pessoais que possam identificar você ou outra pessoa, como nomes, telefones, endereços, contas de redes sociais ou fotos;",
+          "pedir para se encontrar, levar a conversa para outro lugar ou pedir dinheiro;",
+          "fazer propaganda, enviar spam ou links;",
+          "publicar conteúdo ilegal ou que viole direitos de outras pessoas;",
+          "se passar por outra pessoa ou usar meios automatizados para enviar cartas."
+        ],
+        "after": [
+          "Temos tolerância zero com conteúdo ofensivo e usuários abusivos. Você pode falar sobre sentimentos difíceis e experiências dolorosas: é para isso que o app existe. O que importa é como você trata as pessoas que vão ler."
+        ]
+      },
+      {
+        "h": "5. Análise, denúncias e bloqueios",
+        "p": [
+          "Toda carta e toda resposta é verificada antes da entrega por uma análise automática que usa IA. Uma carta pode ser entregue, devolvida para você revisar, retida ou não entregue. A análise pode cometer erros e não garante que todas as cartas que você receber serão adequadas.",
+          "Você pode denunciar qualquer carta ou resposta que receber e bloquear quem a enviou. Analisamos as denúncias e agimos contra conteúdo ofensivo o mais rápido possível, com a meta de fazê-lo em até 24 horas. Podemos remover conteúdo e podemos restringir ou encerrar contas que descumpram estes termos, com ou sem aviso prévio. Uma conta restringida não pode enviar, responder nem receber novas cartas."
+        ]
+      },
+      {
+        "h": "6. Suas cartas",
+        "p": [
+          "Você continua sendo o dono do que escreve. Você nos concede uma licença mundial, não exclusiva e gratuita para armazenar, analisar, traduzir, entregar e exibir suas cartas e respostas a fim de operar o app, e para guardá-las como descrito na Política de Privacidade. Depois que uma carta é entregue, quem a recebeu pode lê-la, e não temos controle sobre o que a pessoa faz com o que leu.",
+          "Não envie nada que você não se sinta à vontade para compartilhar com um desconhecido."
+        ]
+      },
+      {
+        "h": "7. Serviço gratuito e alterações",
+        "p": [
+          "O app é gratuito. Podemos alterar, pausar ou encerrar o app ou qualquer recurso, incluindo limites de cartas e prazos de entrega. Cartas em trânsito podem ser perdidas se o serviço for encerrado. Tentaremos avisar sobre mudanças importantes no app ou nesta página."
+        ]
+      },
+      {
+        "h": "8. Isenções e responsabilidade",
+        "p": [
+          "O app é fornecido “como está” e “conforme disponível”. Na medida em que a lei permitir, não damos nenhuma garantia sobre o app, sobre outros usuários ou sobre o conteúdo das cartas e respostas, e não somos responsáveis por danos indiretos, incidentais ou consequentes, nem por perda de dados. Nada nestes termos limita direitos que você tenha por leis que não podem ser alteradas por contrato."
+        ]
+      },
+      {
+        "h": "9. Encerrando o uso",
+        "p": [
+          "Você pode parar de usar o app a qualquer momento e excluir sua conta em Configurações. Podemos suspender ou encerrar seu acesso se você descumprir estes termos ou se precisarmos fazê-lo para proteger outros usuários ou cumprir a lei."
+        ]
+      },
+      {
+        "h": "10. Lojas de aplicativos",
+        "p": [
+          "Se você baixou o app da App Store da Apple, o Contrato de Licença de Usuário Final de Aplicativos Licenciados da Apple também se aplica, e estes termos o complementam. A Apple e o Google não são responsáveis pelo app nem por seu conteúdo."
+        ]
+      },
+      {
+        "h": "11. Alterações nestes termos",
+        "p": [
+          "Podemos atualizar estes termos. Quando isso acontecer, mudaremos a data de vigência acima e, se a mudança for importante, avisaremos você no app. Se você continuar usando o app após a mudança, aceita os novos termos."
+        ]
+      },
+      {
+        "h": "12. Contato",
+        "p": [
+          "Dúvidas sobre estes termos: {emailLink}"
+        ]
+      }
     ]
   },
   "privacy": {
@@ -93,18 +198,96 @@
       "Você pode excluir sua conta e suas cartas no app a qualquer momento."
     ],
     "sections": [
-      {"h": "1. Informações que coletamos", "p": ["<strong>Conta.</strong> Quando você entra com a Apple ou o Google, recebemos um identificador de conta e seu endereço de e-mail (a Apple pode nos fornecer um endereço de retransmissão privado). Não guardamos seu nome nem sua foto de perfil desses provedores. Se você usa o Login com a Apple, também guardamos um token da Apple criptografado para poder revogar seu login da Apple quando você excluir sua conta.", "<strong>Perfil.</strong> O idioma do seu app, seu fuso horário, sua cidade aproximada, a versão dos termos que você aceitou e a data da sua última atividade.", "<strong>Cartas e respostas.</strong> O texto das cartas e respostas que você escreve, as traduções, os resultados da análise, os bilhetes de agradecimento e os detalhes de entrega, como datas e quais cartas foram oferecidas a você ou escolhidas por você.", "<strong>Registros de segurança.</strong> As denúncias que você envia, as denúncias feitas sobre seu conteúdo, uma cópia do conteúdo denunciado como quem denunciou o viu, as pessoas que você bloqueia e as restrições de conta.", "<strong>Notificações.</strong> Se você permitir notificações, o token de push do seu dispositivo e a plataforma.", "<strong>Toques em promoções.</strong> Quando você toca em um link para outro dos nossos apps, o app envia qual app é, onde o link estava e sua plataforma. Eles são contados por dia, sem o ID da sua conta nem seu endereço IP.", "<strong>Mensagens para nós.</strong> Se você nos enviar um e-mail, seu endereço de e-mail e o que você escrever."]},
-      {"h": "2. Localização aproximada", "p": ["Moss precisa saber mais ou menos de onde e para onde as cartas viajam. Quando seu dispositivo se conecta ao nosso servidor, nosso provedor de hospedagem estima uma cidade a partir do seu endereço IP. Arredondamos as coordenadas para cerca de 10 km e salvamos uma cidade, não seu endereço residencial nem seu endereço IP. Quem lê vê somente essa cidade aproximada. O app não solicita nem usa os serviços de localização do seu dispositivo."]},
-      {"h": "3. Como usamos as informações", "p": ["Usamos estas informações para fazer o app funcionar: para fazer seu login, entregar cartas entre cidades e fusos horários, traduzir cartas, analisar o conteúdo por segurança, mostrar recursos de ajuda quando uma carta sugere que alguém pode precisar deles, enviar notificações, tratar denúncias e bloqueios, evitar abusos e limitar a frequência das solicitações, corrigir problemas e responder às suas mensagens. Não vendemos suas informações, não as usamos para publicidade nem criamos perfis sobre você."]},
-      {"h": "4. Análise e tradução por IA", "p": ["Antes de uma carta ou resposta ser entregue, enviamos o texto, o idioma e, no caso das respostas, a carta original como contexto, para a OpenAI. A OpenAI verifica o conteúdo de acordo com as nossas regras das cartas e o traduz. A IA nunca escreve nem edita suas cartas. Você concorda com isso ao aceitar os Termos de Uso antes da sua primeira carta.", "Enviamos as solicitações com a opção de armazenamento da OpenAI desativada. De acordo com as políticas de API da OpenAI, os dados da API não são usados por padrão para treinar os modelos dela, mas a OpenAI pode guardá-los por um período limitado para monitorar abusos. Veja a <a href=\"https://openai.com/policies/privacy-policy/\">Política de Privacidade da OpenAI</a>."]},
-      {"h": "5. Provedores de serviços", "p": ["Usamos poucos provedores para fazer o app funcionar:"], "list": ["<strong>Cloudflare</strong> hospeda nosso servidor e nosso banco de dados e estima sua cidade a partir do seu endereço IP.", "<strong>OpenAI</strong> analisa e traduz cartas e respostas.", "<strong>Apple e Google</strong> oferecem o login e entregam as notificações por meio dos serviços de push deles.", "<strong>Expo</strong> repassa as notificações para a Apple e o Google. As notificações não contêm o texto das cartas."], "after": ["Esses provedores podem processar informações nos Estados Unidos e em outros países. Eles as tratam de acordo com seus próprios termos e políticas de privacidade."]},
-      {"h": "6. Por quanto tempo guardamos as informações", "p": ["Guardamos sua conta e suas cartas enquanto sua conta existir. Uma carta viaja por no máximo 14 dias. Se ninguém responder, ela volta para você. Você pode queimar uma carta devolvida e sua resposta, o que exclui o texto, as traduções e os dados de análise e deixa apenas um registro mínimo de que a carta existiu.", "Quando você exclui sua conta, excluímos sua conta, suas sessões, suas cartas, as respostas que você escreveu e as denúncias que você enviou, e revogamos seu login da Apple, quando for o caso. As denúncias que outras pessoas fizeram sobre seu conteúdo são mantidas, sem o ID da sua conta, por até 90 dias para que possamos concluir o tratamento delas, e depois são excluídas. Os backups do banco de dados podem manter dados excluídos por até 30 dias. Os registros mantidos pela OpenAI, Apple, Google ou outros provedores seguem as regras de retenção deles."]},
-      {"h": "7. Suas escolhas e direitos", "p": ["Você pode excluir sua conta em Configurações &gt; Excluir conta. Você pode desativar as notificações nas configurações do seu dispositivo. Você pode bloquear qualquer pessoa que escreva para você.", "Dependendo de onde você mora, você pode ter o direito de acessar, corrigir, excluir ou exportar suas informações, ou de se opor ao modo como as usamos ou restringi-lo. Para fazer uma solicitação, envie um e-mail para {emailLink}. Você também pode reclamar à autoridade de proteção de dados do seu país."]},
-      {"h": "8. Crianças", "p": ["O app não é destinado a crianças menores de {age} anos. Se você acredita que uma criança com menos de {age} anos está usando o app, entre em contato conosco e excluiremos a conta."]},
-      {"h": "9. Segurança", "p": ["Os dados são enviados por HTTPS, o acesso aos nossos sistemas é limitado e nossos registros guardam códigos de erro, não o texto das cartas nem IDs de conta. Nenhum serviço pode ser perfeitamente seguro, então, por favor, não coloque informações que identifiquem você nas suas cartas."]},
-      {"h": "10. Este site", "p": ["Este site, incluindo a página onde esta política é publicada, usa o Google Analytics 4 para entender as visitas. O Google pode receber informações do navegador e do dispositivo, uma localização aproximada a partir do seu endereço IP, as páginas que você vê e cookies ou identificadores semelhantes, conforme a <a href=\"https://policies.google.com/privacy\">Política de Privacidade do Google</a>. O app em si não usa o Google Analytics."]},
-      {"h": "11. Alterações", "p": ["Se mudarmos esta política, atualizaremos a data de vigência acima. Se a mudança for importante, avisaremos você no app antes de ela entrar em vigor."]},
-      {"h": "12. Contato", "p": ["Jongmin Lee, JML.Studio: {emailLink}"]}
+      {
+        "h": "1. Informações que coletamos",
+        "p": [
+          "<strong>Conta.</strong> Quando você entra com a Apple ou o Google, recebemos um identificador de conta e seu endereço de e-mail (a Apple pode nos fornecer um endereço de retransmissão privado). Não guardamos seu nome nem sua foto de perfil desses provedores. Se você usa o Login com a Apple, também guardamos um token da Apple criptografado para poder revogar seu login da Apple quando você excluir sua conta.",
+          "<strong>Perfil.</strong> O idioma do seu app, seu fuso horário, sua cidade aproximada, a versão dos termos que você aceitou e a data da sua última atividade.",
+          "<strong>Cartas e respostas.</strong> O texto das cartas e respostas que você escreve, as traduções, os resultados da análise, os bilhetes de agradecimento e os detalhes de entrega, como datas e quais cartas foram oferecidas a você ou escolhidas por você.",
+          "<strong>Registros de segurança.</strong> As denúncias que você envia, as denúncias feitas sobre seu conteúdo, uma cópia do conteúdo denunciado como quem denunciou o viu, as pessoas que você bloqueia e as restrições de conta.",
+          "<strong>Notificações.</strong> Se você permitir notificações, o token de push do seu dispositivo e a plataforma.",
+          "<strong>Toques em promoções.</strong> Quando você toca em um link para outro dos nossos apps, o app envia qual app é, onde o link estava e sua plataforma. Eles são contados por dia, sem o ID da sua conta nem seu endereço IP.",
+          "<strong>Mensagens para nós.</strong> Se você nos enviar um e-mail, seu endereço de e-mail e o que você escrever."
+        ]
+      },
+      {
+        "h": "2. Localização aproximada",
+        "p": [
+          "Moss precisa saber mais ou menos de onde e para onde as cartas viajam. Quando seu dispositivo se conecta ao nosso servidor, nosso provedor de hospedagem estima uma cidade a partir do seu endereço IP. Arredondamos as coordenadas para cerca de 10 km e salvamos uma cidade, não seu endereço residencial nem seu endereço IP. Quem lê vê somente essa cidade aproximada. O app não solicita nem usa os serviços de localização do seu dispositivo."
+        ]
+      },
+      {
+        "h": "3. Como usamos as informações",
+        "p": [
+          "Usamos estas informações para fazer o app funcionar: para fazer seu login, entregar cartas entre cidades e fusos horários, traduzir cartas, analisar o conteúdo por segurança, mostrar recursos de ajuda quando uma carta sugere que alguém pode precisar deles, enviar notificações, tratar denúncias e bloqueios, evitar abusos e limitar a frequência das solicitações, corrigir problemas e responder às suas mensagens. Não vendemos suas informações, não as usamos para publicidade nem criamos perfis sobre você."
+        ]
+      },
+      {
+        "h": "4. Análise e tradução por IA",
+        "p": [
+          "Antes de uma carta ou resposta ser entregue, enviamos o texto, o idioma e, no caso das respostas, a carta original como contexto, para a OpenAI. A OpenAI verifica o conteúdo de acordo com as nossas regras das cartas e o traduz. A IA nunca escreve nem edita suas cartas. Você concorda com isso ao aceitar os Termos de Uso antes da sua primeira carta.",
+          "Enviamos as solicitações com a opção de armazenamento da OpenAI desativada. De acordo com as políticas de API da OpenAI, os dados da API não são usados por padrão para treinar os modelos dela, mas a OpenAI pode guardá-los por um período limitado para monitorar abusos. Veja a <a href=\"https://openai.com/policies/privacy-policy/\">Política de Privacidade da OpenAI</a>."
+        ]
+      },
+      {
+        "h": "5. Provedores de serviços",
+        "p": [
+          "Usamos poucos provedores para fazer o app funcionar:"
+        ],
+        "list": [
+          "<strong>Cloudflare</strong> hospeda nosso servidor e nosso banco de dados e estima sua cidade a partir do seu endereço IP.",
+          "<strong>OpenAI</strong> analisa e traduz cartas e respostas.",
+          "<strong>Apple e Google</strong> oferecem o login e entregam as notificações por meio dos serviços de push deles.",
+          "<strong>Expo</strong> repassa as notificações para a Apple e o Google. As notificações não contêm o texto das cartas."
+        ],
+        "after": [
+          "Esses provedores podem processar informações nos Estados Unidos e em outros países. Eles as tratam de acordo com seus próprios termos e políticas de privacidade."
+        ]
+      },
+      {
+        "h": "6. Por quanto tempo guardamos as informações",
+        "p": [
+          "Guardamos sua conta e suas cartas enquanto sua conta existir. Uma carta viaja por no máximo 14 dias. Se ninguém responder, ela volta para você. Você pode queimar uma carta devolvida e sua resposta, o que exclui o texto, as traduções e os dados de análise e deixa apenas um registro mínimo de que a carta existiu.",
+          "Quando você exclui sua conta, excluímos sua conta, suas sessões, suas cartas, as respostas que você escreveu e as denúncias que você enviou, e revogamos seu login da Apple, quando for o caso. As denúncias que outras pessoas fizeram sobre seu conteúdo são mantidas, sem o ID da sua conta, por até 90 dias para que possamos concluir o tratamento delas, e depois são excluídas. Os backups do banco de dados podem manter dados excluídos por até 30 dias. Os registros mantidos pela OpenAI, Apple, Google ou outros provedores seguem as regras de retenção deles."
+        ]
+      },
+      {
+        "h": "7. Suas escolhas e direitos",
+        "p": [
+          "Você pode excluir sua conta em Configurações &gt; Excluir conta. Você pode desativar as notificações nas configurações do seu dispositivo. Você pode bloquear qualquer pessoa que escreva para você.",
+          "Dependendo de onde você mora, você pode ter o direito de acessar, corrigir, excluir ou exportar suas informações, ou de se opor ao modo como as usamos ou restringi-lo. Para fazer uma solicitação, envie um e-mail para {emailLink}. Você também pode reclamar à autoridade de proteção de dados do seu país."
+        ]
+      },
+      {
+        "h": "8. Crianças",
+        "p": [
+          "O app não é destinado a crianças menores de {age} anos. Se você acredita que uma criança com menos de {age} anos está usando o app, entre em contato conosco e excluiremos a conta."
+        ]
+      },
+      {
+        "h": "9. Segurança",
+        "p": [
+          "Os dados são enviados por HTTPS, o acesso aos nossos sistemas é limitado e nossos registros guardam códigos de erro, não o texto das cartas nem IDs de conta. Nenhum serviço pode ser perfeitamente seguro, então, por favor, não coloque informações que identifiquem você nas suas cartas."
+        ]
+      },
+      {
+        "h": "10. Este site",
+        "p": [
+          "Este site, incluindo a página onde esta política é publicada, usa o Google Analytics 4 para entender as visitas. O Google pode receber informações do navegador e do dispositivo, uma localização aproximada a partir do seu endereço IP, as páginas que você vê e cookies ou identificadores semelhantes, conforme a <a href=\"https://policies.google.com/privacy\">Política de Privacidade do Google</a>. O app em si não usa o Google Analytics."
+        ]
+      },
+      {
+        "h": "11. Alterações",
+        "p": [
+          "Se mudarmos esta política, atualizaremos a data de vigência acima. Se a mudança for importante, avisaremos você no app antes de ela entrar em vigor."
+        ]
+      },
+      {
+        "h": "12. Contato",
+        "p": [
+          "Jongmin Lee, JML.Studio: {emailLink}"
+        ]
+      }
     ]
   }
 }

@@ -156,14 +156,14 @@ def stores(t):
             links += f'<a class="store" href="{STORE_IOS}" target="_blank" rel="noopener">App Store</a>'
         if STORE_ANDROID:
             links += f'<a class="store" href="{STORE_ANDROID}" target="_blank" rel="noopener">Google Play</a>'
-        return f'<div class="stores">{links}</div><p class="note">{esc(t["common"]["free"])}</p>'
-    return f'<p class="soon"><span class="dot" aria-hidden="true"></span>{esc(t["common"]["soon"])}</p><p class="note">{esc(t["common"]["free"])}</p>'
+        return f'<div class="stores">{links}</div>'
+    return f'<p class="soon"><span class="dot" aria-hidden="true"></span>{esc(t["common"]["soon"])}</p>'
 
 
 def landing(t):
     L = t['landing']
-    steps = ''.join(f'<li><span class="num" aria-hidden="true">{i}</span><h3>{esc(s["t"])}</h3><p>{esc(s["b"])}</p></li>' for i, s in enumerate(L['steps'], 1))
-    promises = ''.join(f'<li><h3>{esc(p["t"])}</h3><p>{esc(p["b"])}</p></li>' for p in L['promises'])
+    steps = ''.join(f'<li><span class="num" aria-hidden="true">{i:02d}</span><h3>{esc(s["t"])}</h3><p>{esc(s["b"])}</p></li>' for i, s in enumerate(L['steps'], 1))
+    facts = ''.join(f'<li>{esc(f)}</li>' for f in L['facts'])
     return f'''<main id="main">
  <section class="hero wrap" aria-labelledby="hero-title">
   <div class="hero-copy">
@@ -174,21 +174,16 @@ def landing(t):
   <figure class="portrait"><img src="/moss/assets/moss-portrait.webp" width="720" height="720" alt="{esc(L['artAlt'])}" fetchpriority="high" decoding="async"></figure>
  </section>
  <section class="how wrap" aria-labelledby="how-title">
-  <h2 id="how-title">{esc(L['howTitle'])}</h2>
+  <h2 id="how-title" class="label">{esc(L['howTitle'])}</h2>
   <ol class="steps" role="list">{steps}</ol>
  </section>
  <div class="road" aria-hidden="true"><span class="walker"></span></div>
- <section class="promise wrap" aria-labelledby="promise-title">
-  <h2 id="promise-title">{esc(L['promiseTitle'])}</h2>
-  <ul class="cards" role="list">{promises}</ul>
- </section>
- <section class="safety wrap" aria-labelledby="safety-title">
-  <div class="letter"><h2 id="safety-title">{esc(L['safetyTitle'])}</h2><p>{esc(L['safetyBody'])}</p></div>
- </section>
- <section class="closing wrap" aria-labelledby="closing-title">
-  <h2 id="closing-title">{L['closingTitle']}</h2>
-  {stores(t)}
-  <p class="langs">{esc(L['closingBody'])}</p>
+ <section class="facts wrap" aria-labelledby="facts-title">
+  <div class="letter">
+   <h2 id="facts-title" class="label">{esc(L['factsTitle'])}</h2>
+   <ul role="list">{facts}</ul>
+   <p class="safety">{esc(L['safety'])}</p>
+  </div>
  </section>
 </main>'''
 
