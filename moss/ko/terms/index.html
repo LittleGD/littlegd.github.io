@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Each language has a stable address. Only an explicit ?lang= request
+   changes language; browser settings never redirect a page. */
+(function () {
+  var here = "ko", urls = {"en": "/moss/terms/", "es": "/moss/es/terms/", "pt-BR": "/moss/pt-br/terms/", "fr": "/moss/fr/terms/", "de": "/moss/de/terms/", "ko": "/moss/ko/terms/", "ja": "/moss/ja/terms/", "zh-Hans": "/moss/zh-hans/terms/", "zh-Hant": "/moss/zh-hant/terms/"}, want;
+  function pick(tag) {
+    tag = String(tag || '').toLowerCase();
+    if (/^zh-(hant|tw|hk|mo)/.test(tag)) return 'zh-Hant';
+    if (/^zh/.test(tag)) return 'zh-Hans';
+    return { en: 'en', es: 'es', pt: 'pt-BR', fr: 'fr', de: 'de', ko: 'ko', ja: 'ja' }[tag.split('-')[0]];
+  }
+  try { want = pick(new URLSearchParams(location.search).get('lang')); } catch (e) {}
+  if (want && want !== here) location.replace(urls[want] + location.hash);
+})();
+</script>
+<title>이용약관 · Moss’s Club house</title>
+<meta name="description" content="Moss’s Club house 이용 규칙입니다. 이용 자격, 편지에 담을 수 있는 내용, 신고, AI 검토, 계정에 대해 안내합니다.">
+<meta name="author" content="Jongmin Lee">
+<link rel="canonical" href="https://littlegd.github.io/moss/ko/terms/">
+<link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/terms/">
+<link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/terms/">
+<link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/terms/">
+<link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/terms/">
+<link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/terms/">
+<link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/terms/">
+<link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/terms/">
+<link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/terms/">
+<link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/terms/">
+<link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/terms/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ECEEE9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#202521" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JML.Studio">
+<meta property="og:url" content="https://littlegd.github.io/moss/ko/terms/">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:title" content="이용약관 · Moss’s Club house">
+<meta property="og:description" content="Moss’s Club house 이용 규칙입니다. 이용 자격, 편지에 담을 수 있는 내용, 신고, AI 검토, 계정에 대해 안내합니다.">
+<meta property="og:image" content="https://littlegd.github.io/assets/moss-icon-512.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta property="og:image:alt" content="빨간 뾰족 모자를 쓰고 흰 수염을 기른 정원 요정 Moss">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" href="/assets/moss-icon-512.png">
+<link rel="apple-touch-icon" href="/moss/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/moss/moss.css">
+<script src="/moss/moss.js" defer></script>
+<script defer src="/analytics.js"></script>
+</head>
+<body class="page-terms">
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+<header class="top"><div class="top-inner wrap">
+ <a class="brand" href="/moss/ko/"><img src="/assets/moss-icon-512.png" width="36" height="36" alt=""><span translate="no">Moss’s Club house</span></a>
+ <details class="lang"><summary><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M1.75 8h12.5M8 1.75c1.7 1.8 2.6 3.9 2.6 6.25S9.7 12.45 8 14.25C6.3 12.45 5.4 10.35 5.4 8S6.3 3.55 8 1.75z"/></svg><span class="sr">언어: </span>한국어</summary><ul class="lang-menu" role="list"><li><a href="/moss/terms/" hreflang="en" lang="en">English</a></li><li><a href="/moss/es/terms/" hreflang="es" lang="es">Español</a></li><li><a href="/moss/pt-br/terms/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li><li><a href="/moss/fr/terms/" hreflang="fr" lang="fr">Français</a></li><li><a href="/moss/de/terms/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/moss/ko/terms/" hreflang="ko" lang="ko" aria-current="true">한국어</a></li><li><a href="/moss/ja/terms/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/moss/zh-hans/terms/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="/moss/zh-hant/terms/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li></ul></details>
+</div></header>
+<main id="main" class="wrap narrow doc"><article aria-labelledby="h">
+<div class="page-head"><h1 id="h">Moss’s Club house 이용약관</h1></div>
+<p class="meta">시행일: 2026년 11월 1일</p>
+<p>Moss’s Club house(이하 “앱”)는 독립 개발자 Jongmin Lee이 JML.Studio(이하 “회사”)에서 만들었습니다. 계정을 만들거나 앱을 이용하면 이 약관에 동의한 것으로 봅니다. 동의하지 않으면 앱을 이용하지 말아 주세요.</p>
+<h2 id="s1">1. 앱 소개</h2>
+<p>앱은 사람들이 고민을 담은 익명의 편지를 주고받을 수 있게 합니다. 편지는 하루에 한 통 쓸 수 있고, 다른 사람이 그 편지를 받아 답장을 한 통 쓸 수 있습니다. 편지는 자동으로 검토되고, 서로 다른 언어 사이에서도 전달될 수 있도록 번역됩니다.</p>
+<p>앱은 심리 상담, 의료, 법률 또는 위기 지원 서비스가 아닙니다. 답장은 전문가가 아닌 다른 이용자가 보내며, 그 조언이 이용자에게 적합한지는 회사가 확인하지 않습니다. 위험한 상황일 수 있다면 즉시 현지 응급 서비스에 연락해 주세요.</p>
+<h2 id="s2">2. 이용 자격</h2>
+<p>앱을 이용하려면 만 13세 이상이어야 합니다. 거주 지역에서 성년이 아닌 경우에는 부모 또는 법정대리인의 허락이 필요합니다. 회사가 계정을 제한했거나 거주 지역의 법률이 금지하는 경우에는 앱을 이용할 수 없습니다.</p>
+<h2 id="s3">3. 계정</h2>
+<p>Apple 또는 Google로 로그인합니다. 계정에서 발송된 내용은 이용자 본인의 책임이므로 기기와 로그인 정보를 안전하게 관리해 주세요. 한 사람이 계정 하나만 사용할 수 있으며, 제한을 피하려고 계정을 새로 만들어서는 안 됩니다.</p>
+<h2 id="s4">4. 편지 작성 규칙</h2>
+<p>Moss’s Club house는 낯선 사람에게 다정하게 대하는 마음으로 운영됩니다. 편지나 답장을 쓸 때 다음 행위를 하지 않는 데 동의합니다.</p>
+<ul><li>누군가를 괴롭히거나 위협하거나 모욕하거나 수치심을 주는 행위, 또는 자신이나 타인을 해치도록 부추기는 행위</li><li>혐오 표현이나 사람을 있는 그대로의 모습으로 공격하는 내용을 올리는 행위</li><li>성적인 내용, 또는 미성년자를 성적으로 다루는 내용을 올리는 행위</li><li>이름, 전화번호, 주소, 소셜 미디어 계정, 사진처럼 본인이나 타인을 알아볼 수 있는 개인정보를 공유하는 행위</li><li>만남을 요구하거나 대화를 다른 곳으로 옮기자고 하거나 금전을 요구하는 행위</li><li>광고, 스팸 또는 링크를 보내는 행위</li><li>불법이거나 타인의 권리를 침해하는 내용을 올리는 행위</li><li>다른 사람을 사칭하거나 자동화된 수단으로 편지를 보내는 행위</li></ul>
+<p>회사는 부적절한 콘텐츠와 악의적인 이용자를 용인하지 않습니다. 힘든 감정과 아픈 경험은 얼마든지 이야기해도 됩니다. 그것이 이 앱의 목적입니다. 중요한 것은 읽는 사람을 어떻게 대하느냐입니다.</p>
+<h2 id="s5">5. 검토, 신고, 차단</h2>
+<p>모든 편지와 답장은 배달 전에 AI를 활용한 자동 검토를 거칩니다. 편지는 그대로 배달되거나, 수정하도록 돌려보내지거나, 보류되거나, 배달되지 않을 수 있습니다. 검토에는 오류가 있을 수 있으며, 받는 모든 편지가 적절하다고 보장하지는 않습니다.</p>
+<p>받은 편지나 답장은 누구나 신고할 수 있고, 보낸 사람을 차단할 수 있습니다. 회사는 신고를 검토하고 부적절한 콘텐츠에 가능한 한 빨리, 24시간 이내를 목표로 조치합니다. 회사는 콘텐츠를 삭제할 수 있으며, 이 약관을 위반한 계정을 사전 통지 여부와 관계없이 제한하거나 종료할 수 있습니다. 제한된 계정은 새 편지를 보내거나 답장하거나 받을 수 없습니다.</p>
+<h2 id="s6">6. 이용자의 편지</h2>
+<p>이용자가 쓴 글의 소유권은 이용자에게 있습니다. 이용자는 앱을 운영하고 개인정보 처리방침에 따라 보관하기 위해 편지와 답장을 저장, 검토, 번역, 배달, 표시할 수 있는 전 세계적이고 비독점적이며 무상인 이용 권한을 회사에 부여합니다. 편지가 배달되면 받는 사람이 그 내용을 읽을 수 있으며, 회사는 받는 사람이 읽은 내용을 어떻게 사용하는지 통제할 수 없습니다.</p>
+<p>낯선 사람과 나누기 불편한 내용은 보내지 마세요.</p>
+<h2 id="s7">7. 무료 서비스와 변경</h2>
+<p>앱은 무료입니다. 회사는 편지 수 제한과 배달 시간을 포함해 앱이나 기능을 변경, 일시 중단 또는 종료할 수 있습니다. 서비스가 종료되면 전달 중이던 편지가 사라질 수 있습니다. 중요한 변경은 앱이나 이 페이지에서 미리 알리도록 노력하겠습니다.</p>
+<h2 id="s8">8. 면책 및 책임 제한</h2>
+<p>앱은 “있는 그대로” “제공 가능한 범위에서” 제공됩니다. 법이 허용하는 범위에서 회사는 앱, 다른 이용자, 편지와 답장의 내용에 대해 어떠한 보증도 하지 않으며, 간접 손해, 부수적 손해, 결과적 손해 또는 데이터 손실에 대해 책임지지 않습니다. 이 약관의 어떤 내용도 계약으로 바꿀 수 없는 법률상 이용자의 권리를 제한하지 않습니다.</p>
+<h2 id="s9">9. 이용 종료</h2>
+<p>이용자는 언제든지 앱 이용을 중단하고 설정에서 계정을 삭제할 수 있습니다. 이용자가 이 약관을 위반하거나, 다른 이용자를 보호하거나 법령을 준수하기 위해 필요한 경우 회사는 이용을 중지하거나 종료할 수 있습니다.</p>
+<h2 id="s10">10. 앱 스토어</h2>
+<p>Apple App Store에서 앱을 내려받은 경우 Apple의 Licensed Application End User License Agreement도 함께 적용되며, 이 약관은 그 내용에 더해 적용됩니다. Apple과 Google은 앱이나 앱의 콘텐츠에 대해 책임지지 않습니다.</p>
+<h2 id="s11">11. 약관 변경</h2>
+<p>회사는 이 약관을 변경할 수 있습니다. 변경하는 경우 위의 시행일을 수정하며, 중요한 변경은 앱에서 알립니다. 변경 후에도 앱을 계속 이용하면 새 약관에 동의한 것으로 봅니다.</p>
+<h2 id="s12">12. 문의</h2>
+<p>이 약관에 관한 문의: <a href="mailto:lee1993ljm@gmail.com">lee1993ljm@gmail.com</a></p>
+</article></main>
+<footer class="foot"><div class="wrap foot-inner">
+ <nav aria-label="Moss’s Club house"><a href="/moss/ko/" translate="no">Moss’s Club house</a><a href="/moss/ko/support/">고객지원</a><a href="/moss/ko/terms/">이용약관</a><a href="/moss/ko/privacy/">개인정보 처리방침</a><a href="/">JML.Studio</a></nav>
+ <p>&copy; 2026 JML.Studio</p>
+</div></footer>
+</body>
+</html>

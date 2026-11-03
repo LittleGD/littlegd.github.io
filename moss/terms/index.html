@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Each language has a stable address. Only an explicit ?lang= request
+   changes language; browser settings never redirect a page. */
+(function () {
+  var here = "en", urls = {"en": "/moss/terms/", "es": "/moss/es/terms/", "pt-BR": "/moss/pt-br/terms/", "fr": "/moss/fr/terms/", "de": "/moss/de/terms/", "ko": "/moss/ko/terms/", "ja": "/moss/ja/terms/", "zh-Hans": "/moss/zh-hans/terms/", "zh-Hant": "/moss/zh-hant/terms/"}, want;
+  function pick(tag) {
+    tag = String(tag || '').toLowerCase();
+    if (/^zh-(hant|tw|hk|mo)/.test(tag)) return 'zh-Hant';
+    if (/^zh/.test(tag)) return 'zh-Hans';
+    return { en: 'en', es: 'es', pt: 'pt-BR', fr: 'fr', de: 'de', ko: 'ko', ja: 'ja' }[tag.split('-')[0]];
+  }
+  try { want = pick(new URLSearchParams(location.search).get('lang')); } catch (e) {}
+  if (want && want !== here) location.replace(urls[want] + location.hash);
+})();
+</script>
+<title>Terms of Use · Moss’s Club house</title>
+<meta name="description" content="The rules for using Moss’s Club house: who can use it, what letters may contain, reporting, AI review and your account.">
+<meta name="author" content="Jongmin Lee">
+<link rel="canonical" href="https://littlegd.github.io/moss/terms/">
+<link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/terms/">
+<link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/terms/">
+<link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/terms/">
+<link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/terms/">
+<link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/terms/">
+<link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/terms/">
+<link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/terms/">
+<link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/terms/">
+<link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/terms/">
+<link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/terms/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ECEEE9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#202521" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JML.Studio">
+<meta property="og:url" content="https://littlegd.github.io/moss/terms/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:title" content="Terms of Use · Moss’s Club house">
+<meta property="og:description" content="The rules for using Moss’s Club house: who can use it, what letters may contain, reporting, AI review and your account.">
+<meta property="og:image" content="https://littlegd.github.io/assets/moss-icon-512.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta property="og:image:alt" content="Moss, a garden gnome with a red pointed hat and a white beard">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" href="/assets/moss-icon-512.png">
+<link rel="apple-touch-icon" href="/moss/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/moss/moss.css">
+<script src="/moss/moss.js" defer></script>
+<script defer src="/analytics.js"></script>
+</head>
+<body class="page-terms">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="top-inner wrap">
+ <a class="brand" href="/moss/"><img src="/assets/moss-icon-512.png" width="36" height="36" alt=""><span translate="no">Moss’s Club house</span></a>
+ <details class="lang"><summary><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M1.75 8h12.5M8 1.75c1.7 1.8 2.6 3.9 2.6 6.25S9.7 12.45 8 14.25C6.3 12.45 5.4 10.35 5.4 8S6.3 3.55 8 1.75z"/></svg><span class="sr">Language: </span>English</summary><ul class="lang-menu" role="list"><li><a href="/moss/terms/" hreflang="en" lang="en" aria-current="true">English</a></li><li><a href="/moss/es/terms/" hreflang="es" lang="es">Español</a></li><li><a href="/moss/pt-br/terms/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li><li><a href="/moss/fr/terms/" hreflang="fr" lang="fr">Français</a></li><li><a href="/moss/de/terms/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/moss/ko/terms/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/moss/ja/terms/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/moss/zh-hans/terms/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="/moss/zh-hant/terms/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li></ul></details>
+</div></header>
+<main id="main" class="wrap narrow doc"><article aria-labelledby="h">
+<div class="page-head"><h1 id="h">Moss’s Club house Terms of Use</h1></div>
+<p class="meta">Effective date: November 1, 2026</p>
+<p>Moss’s Club house (the “app”) is made by Jongmin Lee, an independent developer at JML.Studio (“we”). By creating an account or using the app, you agree to these terms. If you don’t agree, please don’t use the app.</p>
+<h2 id="s1">1. What the app is</h2>
+<p>The app lets people exchange anonymous letters about their worries. You can write one letter a day. Other people may receive it and write one reply. Letters are reviewed automatically and translated so they can travel between languages.</p>
+<p>The app is not therapy, medical, legal or crisis support. Replies come from other users, not from professionals, and we don’t check whether their advice is right for you. If you might be in danger, contact local emergency services right away.</p>
+<h2 id="s2">2. Who can use it</h2>
+<p>You must be at least 13 years old to use the app. If you are under the age of majority where you live, you need permission from a parent or guardian. You may not use the app if we have restricted your account or if the law where you live forbids it.</p>
+<h2 id="s3">3. Your account</h2>
+<p>You sign in with Apple or Google. Keep your device and sign-in secure, because you are responsible for what is sent from your account. One person, one account: don’t create accounts to get around a restriction.</p>
+<h2 id="s4">4. Letter rules</h2>
+<p>Moss’s Club house works because people are kind to strangers. When you write a letter or a reply, you agree not to:</p>
+<ul><li>harass, threaten, insult or shame anyone, or encourage anyone to hurt themselves or others;</li><li>post hate speech or content that attacks people for who they are;</li><li>post sexual content, or any content that sexualizes minors;</li><li>share personal information that could identify you or anyone else, such as names, phone numbers, addresses, social media accounts or photos;</li><li>ask to meet, move the conversation elsewhere, or ask for money;</li><li>advertise, spam, or send links;</li><li>post content that is illegal, or that infringes someone else’s rights;</li><li>pretend to be someone else, or use automated means to send letters.</li></ul>
+<p>We have zero tolerance for objectionable content and abusive users. You can talk about hard feelings and painful experiences. That is what the app is for. What matters is how you treat the people reading.</p>
+<h2 id="s5">5. Review, reporting and blocking</h2>
+<p>Every letter and reply is checked before delivery by an automated review that uses AI. A letter may be delivered, returned to you to revise, held, or not delivered. The review can make mistakes, and it doesn’t guarantee that every letter you receive will be appropriate.</p>
+<p>You can report any letter or reply you receive, and you can block its sender. We review reports and act on objectionable content as quickly as we can, aiming for within 24 hours. We may remove content, and we may restrict or end accounts that break these terms, with or without notice. A restricted account can’t send, reply or receive new letters.</p>
+<h2 id="s6">6. Your letters</h2>
+<p>You keep ownership of what you write. You give us a worldwide, non-exclusive, royalty-free license to store, review, translate, deliver and display your letters and replies to operate the app, and to keep them as described in the Privacy Policy. Once a letter is delivered, its reader can read it, and we can’t control what a reader does with what they read.</p>
+<p>Don’t send anything you aren’t comfortable sharing with a stranger.</p>
+<h2 id="s7">7. Free service and changes</h2>
+<p>The app is free. We may change, pause or stop the app or any feature, including letter limits and delivery timing. Letters in transit may be lost if the service stops. We will try to give notice of major changes in the app or on this page.</p>
+<h2 id="s8">8. Disclaimers and liability</h2>
+<p>The app is provided “as is” and “as available”. To the extent the law allows, we make no warranties about the app, about other users or about the content of letters and replies, and we are not liable for indirect, incidental or consequential damages, or for loss of data. Nothing in these terms limits rights you have under laws that can’t be changed by contract.</p>
+<h2 id="s9">9. Ending your use</h2>
+<p>You can stop using the app at any time and delete your account in Settings. We may suspend or end your access if you break these terms or if we need to in order to protect other users or comply with the law.</p>
+<h2 id="s10">10. App stores</h2>
+<p>If you downloaded the app from Apple’s App Store, Apple’s Licensed Application End User License Agreement also applies, and these terms add to it. Apple and Google are not responsible for the app or its content.</p>
+<h2 id="s11">11. Changes to these terms</h2>
+<p>We may update these terms. When we do, we will change the effective date above, and if the change matters, we will tell you in the app. If you keep using the app after the change, you accept the new terms.</p>
+<h2 id="s12">12. Contact</h2>
+<p>Questions about these terms: <a href="mailto:lee1993ljm@gmail.com">lee1993ljm@gmail.com</a></p>
+</article></main>
+<footer class="foot"><div class="wrap foot-inner">
+ <nav aria-label="Moss’s Club house"><a href="/moss/" translate="no">Moss’s Club house</a><a href="/moss/support/">Support</a><a href="/moss/terms/">Terms of Use</a><a href="/moss/privacy/">Privacy Policy</a><a href="/">JML.Studio</a></nav>
+ <p>&copy; 2026 JML.Studio</p>
+</div></footer>
+</body>
+</html>

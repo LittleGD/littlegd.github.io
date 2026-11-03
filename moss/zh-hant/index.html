@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Each language has a stable address. Only an explicit ?lang= request
+   changes language; browser settings never redirect a page. */
+(function () {
+  var here = "zh-Hant", urls = {"en": "/moss/", "es": "/moss/es/", "pt-BR": "/moss/pt-br/", "fr": "/moss/fr/", "de": "/moss/de/", "ko": "/moss/ko/", "ja": "/moss/ja/", "zh-Hans": "/moss/zh-hans/", "zh-Hant": "/moss/zh-hant/"}, want;
+  function pick(tag) {
+    tag = String(tag || '').toLowerCase();
+    if (/^zh-(hant|tw|hk|mo)/.test(tag)) return 'zh-Hant';
+    if (/^zh/.test(tag)) return 'zh-Hans';
+    return { en: 'en', es: 'es', pt: 'pt-BR', fr: 'fr', de: 'de', ko: 'ko', ja: 'ja' }[tag.split('-')[0]];
+  }
+  try { want = pick(new URLSearchParams(location.search).get('lang')); } catch (e) {}
+  if (want && want !== here) location.replace(urls[want] + location.hash);
+})();
+</script>
+<title>Moss’s Club house · 由 Moss 遞送的匿名信件</title>
+<meta name="description" content="在老打字機上寫下一個煩惱。園藝小矮人 Moss 會把它帶到另一座城市，由一位陌生人回信給你。信由人來寫，絕不由 AI 代筆。iPhone 和 Android 免費使用。">
+<meta name="author" content="Jongmin Lee">
+<link rel="canonical" href="https://littlegd.github.io/moss/zh-hant/">
+<link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/">
+<link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/">
+<link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/">
+<link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/">
+<link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/">
+<link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/">
+<link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/">
+<link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/">
+<link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/">
+<link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ECEEE9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#202521" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JML.Studio">
+<meta property="og:url" content="https://littlegd.github.io/moss/zh-hant/">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:title" content="Moss’s Club house · 由 Moss 遞送的匿名信件">
+<meta property="og:description" content="在老打字機上寫下一個煩惱。園藝小矮人 Moss 會把它帶到另一座城市，由一位陌生人回信給你。信由人來寫，絕不由 AI 代筆。iPhone 和 Android 免費使用。">
+<meta property="og:image" content="https://littlegd.github.io/assets/moss-icon-512.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta property="og:image:alt" content="Moss，一位戴著紅色尖帽、留著白鬍子的園藝小矮人">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "@id": "https://littlegd.github.io/moss/#app",
+  "name": "Moss’s Club house",
+  "description": "在老打字機上寫下一個煩惱。園藝小矮人 Moss 會把它帶到另一座城市，由一位陌生人回信給你。信由人來寫，絕不由 AI 代筆。iPhone 和 Android 免費使用。",
+  "url": "https://littlegd.github.io/moss/zh-hant/",
+  "image": "https://littlegd.github.io/assets/moss-icon-512.png",
+  "applicationCategory": "SocialNetworkingApplication",
+  "operatingSystem": "iOS, Android",
+  "inLanguage": [
+    "en",
+    "es",
+    "pt-BR",
+    "fr",
+    "de",
+    "ko",
+    "ja",
+    "zh-Hans",
+    "zh-Hant"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Jongmin Lee"
+  }
+}
+</script>
+<link rel="icon" type="image/png" href="/assets/moss-icon-512.png">
+<link rel="apple-touch-icon" href="/moss/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/moss/moss.css">
+<script src="/moss/moss.js" defer></script>
+<script defer src="/analytics.js"></script>
+</head>
+<body class="page-home">
+<a class="skip" href="#main">跳至主要內容</a>
+<header class="top"><div class="top-inner wrap">
+ <a class="brand" href="/moss/zh-hant/"><img src="/assets/moss-icon-512.png" width="36" height="36" alt=""><span translate="no">Moss’s Club house</span></a>
+ <details class="lang"><summary><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M1.75 8h12.5M8 1.75c1.7 1.8 2.6 3.9 2.6 6.25S9.7 12.45 8 14.25C6.3 12.45 5.4 10.35 5.4 8S6.3 3.55 8 1.75z"/></svg><span class="sr">語言: </span>繁體中文</summary><ul class="lang-menu" role="list"><li><a href="/moss/" hreflang="en" lang="en">English</a></li><li><a href="/moss/es/" hreflang="es" lang="es">Español</a></li><li><a href="/moss/pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li><li><a href="/moss/fr/" hreflang="fr" lang="fr">Français</a></li><li><a href="/moss/de/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/moss/ko/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/moss/ja/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/moss/zh-hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="/moss/zh-hant/" hreflang="zh-Hant" lang="zh-Hant" aria-current="true">繁體中文</a></li></ul></details>
+</div></header>
+<main id="main">
+ <section class="hero wrap" aria-labelledby="hero-title">
+  <div class="hero-copy">
+   <h1 id="hero-title"><span class="sr" translate="no">Moss’s Club house. </span>寫下來，<br>Moss 會帶走它。</h1>
+   <p class="lede">在老打字機上敲出一個煩惱。園藝小矮人 Moss 會把你的信帶到另一座城市，由一位陌生人讀完，再回信給你。</p>
+   <p class="soon"><span class="dot" aria-hidden="true"></span>即將在 iPhone 和 Android 上架</p><p class="note">免費，沒有廣告。</p>
+  </div>
+  <figure class="portrait"><img src="/moss/assets/moss-portrait.webp" width="720" height="720" alt="Moss，一位戴著紅色尖帽、留著白鬍子的園藝小矮人" fetchpriority="high" decoding="async"></figure>
+ </section>
+ <section class="how wrap" aria-labelledby="how-title">
+  <h2 id="how-title">怎麼運作</h2>
+  <ol class="steps" role="list"><li><span class="num" aria-hidden="true">1</span><h3>每天寫一個煩惱</h3><p>坐到打字機前，寫下心裡的事。沒有名字，沒有個人檔案，只有這封信。</p></li><li><span class="num" aria-hidden="true">2</span><h3>Moss 把信帶走</h3><p>Moss 會把你的信帶到另一座城市。每天，Moss 也會帶幾封來自遠方的信給你。</p></li><li><span class="num" aria-hidden="true">3</span><h3>陌生人回信給你</h3><p>有人挑中你的信，寫下一封回信。回信送回來時，你可以寄出一句小小的謝謝。</p></li></ol>
+ </section>
+ <div class="road" aria-hidden="true"><span class="walker"></span></div>
+ <section class="promise wrap" aria-labelledby="promise-title">
+  <h2 id="promise-title">幾個小小的承諾</h2>
+  <ul class="cards" role="list"><li><h3>由人來寫</h3><p>每一封信和每一封回信，都出自真人之手。AI 只負責檢查信件是否安全，並把信翻譯成對方的語言，讓信可以跨越語言往來。</p></li><li><h3>匿名</h3><p>別人看到的是你的信，而不是你。他們只能看到信來自哪個大概的城市。</p></li><li><h3>免費，沒有廣告</h3><p>沒有廣告，沒有付費功能，也沒有追蹤。</p></li></ul>
+ </section>
+ <section class="safety wrap" aria-labelledby="safety-title">
+  <div class="letter"><h2 id="safety-title">一個溫柔的地方，大家一起守護</h2><p>信件在 Moss 送達之前都會經過審核。如果某封信讓你覺得不對勁，可以直接在信裡檢舉，或封鎖寄件者。Moss’s Club house 不是危機處理服務。如果你可能身處危險之中，請立刻聯絡當地的緊急服務，或身邊的人。</p></div>
+ </section>
+ <section class="closing wrap" aria-labelledby="closing-title">
+  <h2 id="closing-title">此刻，某個地方的某個人<br>正在回信給你。</h2>
+  <p class="soon"><span class="dot" aria-hidden="true"></span>即將在 iPhone 和 Android 上架</p><p class="note">免費，沒有廣告。</p>
+  <p class="langs">支援 English、Español、Português、Français、Deutsch、한국어、日本語、简体中文與繁體中文。</p>
+ </section>
+</main>
+<footer class="foot"><div class="wrap foot-inner">
+ <nav aria-label="Moss’s Club house"><a href="/moss/zh-hant/" translate="no">Moss’s Club house</a><a href="/moss/zh-hant/support/">支援</a><a href="/moss/zh-hant/terms/">使用條款</a><a href="/moss/zh-hant/privacy/">隱私權政策</a><a href="/">JML.Studio</a></nav>
+ <p>&copy; 2026 JML.Studio</p>
+</div></footer>
+</body>
+</html>

@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://littlegd.github.io/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-11-03</lastmod>
   </url>
   <url>
     <loc>https://littlegd.github.io/fagl/</loc>
@@ -225,5 +225,509 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moraro/ko/privacy/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moraro/ja/privacy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moraro/privacy/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/moss/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/moss/es/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/moss/pt-br/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/moss/fr/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/moss/de/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/moss/ko/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/moss/ja/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/moss/zh-hans/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/moss/zh-hant/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/moss/support/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/support/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/moss/es/support/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/support/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/moss/pt-br/support/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/support/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/moss/fr/support/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/support/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/moss/de/support/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/support/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/moss/ko/support/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/support/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/moss/ja/support/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/support/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/moss/zh-hans/support/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/support/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/moss/zh-hant/support/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/support/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/support/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/support/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/support/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/support/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/moss/terms/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/terms/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/moss/es/terms/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/terms/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/moss/pt-br/terms/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/terms/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/moss/fr/terms/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/terms/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/moss/de/terms/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/terms/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/moss/ko/terms/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/terms/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/moss/ja/terms/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/terms/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/moss/zh-hans/terms/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/terms/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/moss/zh-hant/terms/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/terms/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/terms/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/terms/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/moss/privacy/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/privacy/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/moss/es/privacy/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/privacy/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/moss/pt-br/privacy/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/privacy/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/moss/fr/privacy/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/privacy/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/moss/de/privacy/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/privacy/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/moss/ko/privacy/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/privacy/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/moss/ja/privacy/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/privacy/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/moss/zh-hans/privacy/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/privacy/"/>
+  </url>
+  <url>
+    <loc>https://littlegd.github.io/moss/zh-hant/privacy/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/privacy/"/>
   </url>
 </urlset>

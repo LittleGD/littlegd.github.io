@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Each language has a stable address. Only an explicit ?lang= request
+   changes language; browser settings never redirect a page. */
+(function () {
+  var here = "es", urls = {"en": "/moss/privacy/", "es": "/moss/es/privacy/", "pt-BR": "/moss/pt-br/privacy/", "fr": "/moss/fr/privacy/", "de": "/moss/de/privacy/", "ko": "/moss/ko/privacy/", "ja": "/moss/ja/privacy/", "zh-Hans": "/moss/zh-hans/privacy/", "zh-Hant": "/moss/zh-hant/privacy/"}, want;
+  function pick(tag) {
+    tag = String(tag || '').toLowerCase();
+    if (/^zh-(hant|tw|hk|mo)/.test(tag)) return 'zh-Hant';
+    if (/^zh/.test(tag)) return 'zh-Hans';
+    return { en: 'en', es: 'es', pt: 'pt-BR', fr: 'fr', de: 'de', ko: 'ko', ja: 'ja' }[tag.split('-')[0]];
+  }
+  try { want = pick(new URLSearchParams(location.search).get('lang')); } catch (e) {}
+  if (want && want !== here) location.replace(urls[want] + location.hash);
+})();
+</script>
+<title>Política de privacidad · Moss’s Club house</title>
+<meta name="description" content="Cómo trata Moss’s Club house tus datos: tu cuenta, cartas y respuestas, ubicación aproximada, revisión y traducción con IA, notificaciones y tus opciones.">
+<meta name="author" content="Jongmin Lee">
+<link rel="canonical" href="https://littlegd.github.io/moss/es/privacy/">
+<link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/privacy/">
+<link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/privacy/">
+<link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/privacy/">
+<link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/privacy/">
+<link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/privacy/">
+<link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/privacy/">
+<link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/privacy/">
+<link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/privacy/">
+<link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/privacy/">
+<link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/privacy/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ECEEE9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#202521" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JML.Studio">
+<meta property="og:url" content="https://littlegd.github.io/moss/es/privacy/">
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:title" content="Política de privacidad · Moss’s Club house">
+<meta property="og:description" content="Cómo trata Moss’s Club house tus datos: tu cuenta, cartas y respuestas, ubicación aproximada, revisión y traducción con IA, notificaciones y tus opciones.">
+<meta property="og:image" content="https://littlegd.github.io/assets/moss-icon-512.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta property="og:image:alt" content="Moss, un gnomo de jardín con gorro rojo puntiagudo y barba blanca">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" href="/assets/moss-icon-512.png">
+<link rel="apple-touch-icon" href="/moss/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/moss/moss.css">
+<script src="/moss/moss.js" defer></script>
+<script defer src="/analytics.js"></script>
+</head>
+<body class="page-privacy">
+<a class="skip" href="#main">Saltar al contenido</a>
+<header class="top"><div class="top-inner wrap">
+ <a class="brand" href="/moss/es/"><img src="/assets/moss-icon-512.png" width="36" height="36" alt=""><span translate="no">Moss’s Club house</span></a>
+ <details class="lang"><summary><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M1.75 8h12.5M8 1.75c1.7 1.8 2.6 3.9 2.6 6.25S9.7 12.45 8 14.25C6.3 12.45 5.4 10.35 5.4 8S6.3 3.55 8 1.75z"/></svg><span class="sr">Idioma: </span>Español</summary><ul class="lang-menu" role="list"><li><a href="/moss/privacy/" hreflang="en" lang="en">English</a></li><li><a href="/moss/es/privacy/" hreflang="es" lang="es" aria-current="true">Español</a></li><li><a href="/moss/pt-br/privacy/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li><li><a href="/moss/fr/privacy/" hreflang="fr" lang="fr">Français</a></li><li><a href="/moss/de/privacy/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/moss/ko/privacy/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/moss/ja/privacy/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/moss/zh-hans/privacy/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="/moss/zh-hant/privacy/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li></ul></details>
+</div></header>
+<main id="main" class="wrap narrow doc"><article aria-labelledby="h">
+<div class="page-head"><h1 id="h">Política de privacidad de Moss’s Club house</h1></div>
+<p class="meta">Fecha de entrada en vigor: 1 de noviembre de 2026</p>
+<p>Moss’s Club house (la «app») está creada por Jongmin Lee, desarrollador independiente de JML.Studio («nosotros»). Esta política explica qué información usa la app, para qué, quién nos ayuda a procesarla y cuánto tiempo la conservamos.</p>
+<h2>Resumen</h2><ul><li>Los demás usuarios nunca ven tu nombre ni tu correo. Ven tu carta y una ciudad aproximada.</li><li>Las cartas y respuestas se envían a OpenAI para su revisión de seguridad y su traducción. OpenAI no las escribe.</li><li>Tu ciudad aproximada se obtiene de tu conexión de red. La app no usa GPS.</li><li>Sin anuncios, sin seguimiento, sin SDK de analítica ni de publicidad en la app.</li><li>Puedes eliminar tu cuenta y tus cartas desde la app en cualquier momento.</li></ul>
+<h2 id="s1">1. Información que recopilamos</h2>
+<p><strong>Cuenta.</strong> Cuando inicias sesión con Apple o Google, recibimos un identificador de cuenta y tu dirección de correo (Apple puede darnos una dirección de reenvío privada). No guardamos tu nombre ni tu foto de perfil de estos proveedores. Si usas Iniciar sesión con Apple, también guardamos un token de Apple cifrado para poder revocar tu inicio de sesión de Apple cuando elimines tu cuenta.</p>
+<p><strong>Perfil.</strong> El idioma de tu app, tu zona horaria, tu ciudad aproximada, la versión de los términos que aceptaste y cuándo estuviste activo por última vez.</p>
+<p><strong>Cartas y respuestas.</strong> El texto de las cartas y respuestas que escribes, sus traducciones, los resultados de la revisión, las notas de agradecimiento y los datos de entrega, como las fechas y qué cartas se te ofrecieron o elegiste.</p>
+<p><strong>Registros de seguridad.</strong> Las denuncias que envías, las denuncias sobre tu contenido, una copia del contenido denunciado tal como lo vio quien denunció, las personas que bloqueas y las restricciones de cuenta.</p>
+<p><strong>Notificaciones.</strong> Si permites las notificaciones, el token push de tu dispositivo y su plataforma.</p>
+<p><strong>Toques en promociones.</strong> Cuando tocas un enlace a otra de nuestras apps, la app envía qué app es, dónde estaba el enlace y tu plataforma. Se cuentan por día sin tu ID de cuenta ni tu dirección IP.</p>
+<p><strong>Mensajes para nosotros.</strong> Si nos escribes un correo, tu dirección de correo y lo que escribas.</p>
+<h2 id="s2">2. Ubicación aproximada</h2>
+<p>Moss necesita saber más o menos desde dónde y hacia dónde viajan las cartas. Cuando tu dispositivo se conecta a nuestro servidor, nuestro proveedor de alojamiento estima una ciudad a partir de tu dirección IP. Redondeamos las coordenadas a unos 10 km y guardamos una ciudad, no tu dirección postal ni tu dirección IP. Quien lee solo ve esa ciudad aproximada. La app no solicita ni usa los servicios de ubicación de tu dispositivo.</p>
+<h2 id="s3">3. Cómo usamos la información</h2>
+<p>Usamos esta información para hacer funcionar la app: para iniciar tu sesión, entregar cartas entre ciudades y zonas horarias, traducirlas, revisar el contenido por seguridad, mostrar recursos de ayuda cuando una carta sugiere que alguien puede necesitarlos, enviar notificaciones, gestionar denuncias y bloqueos, evitar abusos y limitar la frecuencia de las solicitudes, resolver problemas y responder a tus mensajes. No vendemos tu información, no la usamos para publicidad ni creamos perfiles sobre ti.</p>
+<h2 id="s4">4. Revisión y traducción con IA</h2>
+<p>Antes de entregar una carta o una respuesta, enviamos su texto, su idioma y, en el caso de las respuestas, la carta original como contexto, a OpenAI. OpenAI la comprueba según nuestras reglas de cartas y la traduce. La IA nunca escribe ni edita tus cartas. Aceptas esto al aceptar los Términos de uso antes de tu primera carta.</p>
+<p>Enviamos las solicitudes con la opción de almacenamiento de OpenAI desactivada. Según las políticas de API de OpenAI, los datos de la API no se usan por defecto para entrenar sus modelos, pero OpenAI puede conservarlos durante un periodo limitado para detectar abusos. Consulta la <a href="https://openai.com/policies/privacy-policy/">Política de privacidad de OpenAI</a>.</p>
+<h2 id="s5">5. Proveedores de servicios</h2>
+<p>Usamos unos pocos proveedores para hacer funcionar la app:</p>
+<ul><li><strong>Cloudflare</strong> aloja nuestro servidor y nuestra base de datos y estima tu ciudad a partir de tu dirección IP.</li><li><strong>OpenAI</strong> revisa y traduce las cartas y respuestas.</li><li><strong>Apple y Google</strong> ofrecen el inicio de sesión y entregan las notificaciones mediante sus servicios push.</li><li><strong>Expo</strong> retransmite las notificaciones a Apple y Google. Las notificaciones no contienen texto de las cartas.</li></ul>
+<p>Estos proveedores pueden procesar información en Estados Unidos y en otros países. La tratan según sus propios términos y políticas de privacidad.</p>
+<h2 id="s6">6. Cuánto tiempo conservamos la información</h2>
+<p>Conservamos tu cuenta y tus cartas mientras exista tu cuenta. Una carta viaja un máximo de 14 días. Si nadie responde, te vuelve a llegar. Puedes quemar una carta devuelta y su respuesta, lo que elimina su texto, sus traducciones y los datos de revisión y deja solo un registro mínimo de que la carta existió.</p>
+<p>Cuando eliminas tu cuenta, eliminamos tu cuenta, tus sesiones, tus cartas, las respuestas que escribiste y las denuncias que enviaste, y revocamos tu inicio de sesión de Apple cuando corresponda. Las denuncias que otras personas hicieron sobre tu contenido se conservan sin tu ID de cuenta hasta 90 días para que podamos terminar de gestionarlas, y después se eliminan. Las copias de seguridad de la base de datos pueden conservar datos eliminados hasta 30 días. Los registros que conserven OpenAI, Apple, Google u otros proveedores siguen sus propias normas de conservación.</p>
+<h2 id="s7">7. Tus opciones y derechos</h2>
+<p>Puedes eliminar tu cuenta en Ajustes &gt; Eliminar cuenta. Puedes desactivar las notificaciones en los ajustes de tu dispositivo. Puedes bloquear a cualquiera que te escriba.</p>
+<p>Según dónde vivas, puedes tener derecho a acceder a tu información, corregirla, eliminarla o exportarla, o a oponerte a cómo la usamos o a limitarlo. Para hacer una solicitud, escribe a <a href="mailto:lee1993ljm@gmail.com">lee1993ljm@gmail.com</a>. También puedes presentar una queja ante tu autoridad local de protección de datos.</p>
+<h2 id="s8">8. Menores</h2>
+<p>La app no está dirigida a menores de 13 años. Si crees que un menor de esa edad usa la app, contacta con nosotros y eliminaremos la cuenta.</p>
+<h2 id="s9">9. Seguridad</h2>
+<p>Los datos se envían por HTTPS, el acceso a nuestros sistemas es limitado y nuestros registros guardan códigos de error, no texto de cartas ni ID de cuenta. Ningún servicio puede ser perfectamente seguro, así que por favor no incluyas información que te identifique en tus cartas.</p>
+<h2 id="s10">10. Este sitio web</h2>
+<p>Este sitio web, incluida la página donde se publica esta política, usa Google Analytics 4 para entender las visitas. Google puede recibir información del navegador y del dispositivo, una ubicación aproximada a partir de tu dirección IP, las páginas que ves y cookies o identificadores similares, conforme a la <a href="https://policies.google.com/privacy">Política de privacidad de Google</a>. La app en sí no usa Google Analytics.</p>
+<h2 id="s11">11. Cambios</h2>
+<p>Si cambiamos esta política, actualizaremos la fecha de entrada en vigor indicada arriba. Si el cambio es importante, te lo diremos en la app antes de que surta efecto.</p>
+<h2 id="s12">12. Contacto</h2>
+<p>Jongmin Lee, JML.Studio: <a href="mailto:lee1993ljm@gmail.com">lee1993ljm@gmail.com</a></p>
+</article></main>
+<footer class="foot"><div class="wrap foot-inner">
+ <nav aria-label="Moss’s Club house"><a href="/moss/es/" translate="no">Moss’s Club house</a><a href="/moss/es/support/">Ayuda</a><a href="/moss/es/terms/">Términos de uso</a><a href="/moss/es/privacy/">Política de privacidad</a><a href="/">JML.Studio</a></nav>
+ <p>&copy; 2026 JML.Studio</p>
+</div></footer>
+</body>
+</html>

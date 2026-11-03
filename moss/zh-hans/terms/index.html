@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Each language has a stable address. Only an explicit ?lang= request
+   changes language; browser settings never redirect a page. */
+(function () {
+  var here = "zh-Hans", urls = {"en": "/moss/terms/", "es": "/moss/es/terms/", "pt-BR": "/moss/pt-br/terms/", "fr": "/moss/fr/terms/", "de": "/moss/de/terms/", "ko": "/moss/ko/terms/", "ja": "/moss/ja/terms/", "zh-Hans": "/moss/zh-hans/terms/", "zh-Hant": "/moss/zh-hant/terms/"}, want;
+  function pick(tag) {
+    tag = String(tag || '').toLowerCase();
+    if (/^zh-(hant|tw|hk|mo)/.test(tag)) return 'zh-Hant';
+    if (/^zh/.test(tag)) return 'zh-Hans';
+    return { en: 'en', es: 'es', pt: 'pt-BR', fr: 'fr', de: 'de', ko: 'ko', ja: 'ja' }[tag.split('-')[0]];
+  }
+  try { want = pick(new URLSearchParams(location.search).get('lang')); } catch (e) {}
+  if (want && want !== here) location.replace(urls[want] + location.hash);
+})();
+</script>
+<title>使用条款 · Moss’s Club house</title>
+<meta name="description" content="使用 Moss’s Club house 的规则：谁可以使用、信件可以包含什么、举报、AI 审核，以及你的账户。">
+<meta name="author" content="Jongmin Lee">
+<link rel="canonical" href="https://littlegd.github.io/moss/zh-hans/terms/">
+<link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/terms/">
+<link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/terms/">
+<link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/terms/">
+<link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/terms/">
+<link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/terms/">
+<link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/terms/">
+<link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/terms/">
+<link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/terms/">
+<link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/terms/">
+<link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/terms/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ECEEE9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#202521" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JML.Studio">
+<meta property="og:url" content="https://littlegd.github.io/moss/zh-hans/terms/">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:title" content="使用条款 · Moss’s Club house">
+<meta property="og:description" content="使用 Moss’s Club house 的规则：谁可以使用、信件可以包含什么、举报、AI 审核，以及你的账户。">
+<meta property="og:image" content="https://littlegd.github.io/assets/moss-icon-512.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta property="og:image:alt" content="Moss，一位戴红色尖帽、留白胡子的园艺小矮人">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" href="/assets/moss-icon-512.png">
+<link rel="apple-touch-icon" href="/moss/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/moss/moss.css">
+<script src="/moss/moss.js" defer></script>
+<script defer src="/analytics.js"></script>
+</head>
+<body class="page-terms">
+<a class="skip" href="#main">跳到正文</a>
+<header class="top"><div class="top-inner wrap">
+ <a class="brand" href="/moss/zh-hans/"><img src="/assets/moss-icon-512.png" width="36" height="36" alt=""><span translate="no">Moss’s Club house</span></a>
+ <details class="lang"><summary><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M1.75 8h12.5M8 1.75c1.7 1.8 2.6 3.9 2.6 6.25S9.7 12.45 8 14.25C6.3 12.45 5.4 10.35 5.4 8S6.3 3.55 8 1.75z"/></svg><span class="sr">语言: </span>简体中文</summary><ul class="lang-menu" role="list"><li><a href="/moss/terms/" hreflang="en" lang="en">English</a></li><li><a href="/moss/es/terms/" hreflang="es" lang="es">Español</a></li><li><a href="/moss/pt-br/terms/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li><li><a href="/moss/fr/terms/" hreflang="fr" lang="fr">Français</a></li><li><a href="/moss/de/terms/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/moss/ko/terms/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/moss/ja/terms/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/moss/zh-hans/terms/" hreflang="zh-Hans" lang="zh-Hans" aria-current="true">简体中文</a></li><li><a href="/moss/zh-hant/terms/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li></ul></details>
+</div></header>
+<main id="main" class="wrap narrow doc"><article aria-labelledby="h">
+<div class="page-head"><h1 id="h">Moss’s Club house 使用条款</h1></div>
+<p class="meta">生效日期：2026年11月1日</p>
+<p>Moss’s Club house（以下简称“App”）由独立开发者 Jongmin Lee 在 JML.Studio（以下简称“我们”）制作。创建账户或使用 App，即表示你同意本条款。如果你不同意，请不要使用 App。</p>
+<h2 id="s1">1. App 是什么</h2>
+<p>App 让人们互相交换关于烦恼的匿名信件。你每天可以写一封信，其他人可能会收到它，并写下一封回信。信件会经过自动审核和翻译，以便跨越语言来往。</p>
+<p>App 不是心理治疗，也不提供医疗、法律或危机支持。回信来自其他用户，而不是专业人士，我们也不会检查他们的建议是否适合你。如果你可能处于危险之中，请立刻联系当地紧急服务。</p>
+<h2 id="s2">2. 谁可以使用</h2>
+<p>你必须年满 13 岁才能使用 App。如果你尚未达到所在地的成年年龄，需要得到父母或监护人的许可。如果我们已限制你的账户，或你所在地的法律禁止你使用，则不得使用 App。</p>
+<h2 id="s3">3. 你的账户</h2>
+<p>你通过 Apple 或 Google 登录。请保管好你的设备和登录方式，因为你要对从你账户发出的内容负责。一人一个账户：请不要为了绕开限制而创建账户。</p>
+<h2 id="s4">4. 写信规则</h2>
+<p>Moss’s Club house 能够运转，是因为大家善待陌生人。写信或回信时，你同意不做以下事情：</p>
+<ul><li>骚扰、威胁、侮辱或羞辱任何人，或怂恿任何人伤害自己或他人；</li><li>发布仇恨言论，或因人的身份而攻击他人的内容；</li><li>发布色情内容，或任何将未成年人性化的内容；</li><li>分享能识别你或他人的个人信息，例如姓名、电话号码、地址、社交媒体账号或照片；</li><li>要求见面、把对话转移到别处，或索要钱财；</li><li>做广告、发送垃圾信息或链接；</li><li>发布违法内容，或侵犯他人权利的内容；</li><li>冒充他人，或使用自动化手段发送信件。</li></ul>
+<p>我们对不当内容和滥用行为零容忍。你可以谈论艰难的情绪和痛苦的经历，这正是 App 存在的意义。重要的是你如何对待读信的人。</p>
+<h2 id="s5">5. 审核、举报与屏蔽</h2>
+<p>每封信和每封回信在送达之前，都会经过使用 AI 的自动审核。一封信可能被送达、退回给你修改、被暂扣，或不被送达。审核可能出错，也不能保证你收到的每封信都是合适的。</p>
+<p>你可以举报收到的任何信件或回信，也可以屏蔽其发信人。我们会审核举报，并尽快处理不当内容，目标是在 24 小时内。我们可能会删除内容，也可能限制或终止违反本条款的账户，不论是否事先通知。被限制的账户无法寄信、回信或接收新的信件。</p>
+<h2 id="s6">6. 你的信件</h2>
+<p>你写的内容归你所有。你授予我们一项全球性的、非独占的、免版税的许可，让我们为运营 App 而存储、审核、翻译、递送并展示你的信件和回信，并按隐私政策所述保留它们。信件一旦送达，读信人就可以阅读，我们无法控制读信人会如何处理他们读到的内容。</p>
+<p>请不要寄出任何你不愿意与陌生人分享的内容。</p>
+<h2 id="s7">7. 免费服务与变更</h2>
+<p>App 免费。我们可能会更改、暂停或停止 App 或其中任何功能，包括写信数量限制和递送时间。如果服务停止，递送途中的信件可能会遗失。重大变更，我们会尽量在 App 或本页面上通知。</p>
+<h2 id="s8">8. 免责声明与责任</h2>
+<p>App 按“现状”和“可用状态”提供。在法律允许的范围内，我们不对 App、其他用户或信件和回信的内容作任何保证，也不对间接的、附带的或后果性的损害，或数据丢失承担责任。本条款中的任何内容，都不会限制你依据无法通过合同变更的法律所享有的权利。</p>
+<h2 id="s9">9. 结束使用</h2>
+<p>你可以随时停止使用 App，并在“设置”中删除你的账户。如果你违反本条款，或我们为保护其他用户、遵守法律而有必要这样做，我们可能会暂停或终止你的使用权限。</p>
+<h2 id="s10">10. 应用商店</h2>
+<p>如果你是从 Apple 的 App Store 下载的 App，Apple 的《Licensed Application End User License Agreement》也同样适用，本条款是对它的补充。Apple 和 Google 不对 App 或其内容负责。</p>
+<h2 id="s11">11. 本条款的变更</h2>
+<p>我们可能会更新本条款。更新时，我们会修改上方的生效日期；如果变更重要，我们会在 App 中告知你。变更之后你继续使用 App，即表示你接受新的条款。</p>
+<h2 id="s12">12. 联系我们</h2>
+<p>对本条款有疑问：<a href="mailto:lee1993ljm@gmail.com">lee1993ljm@gmail.com</a></p>
+</article></main>
+<footer class="foot"><div class="wrap foot-inner">
+ <nav aria-label="Moss’s Club house"><a href="/moss/zh-hans/" translate="no">Moss’s Club house</a><a href="/moss/zh-hans/support/">支持</a><a href="/moss/zh-hans/terms/">使用条款</a><a href="/moss/zh-hans/privacy/">隐私政策</a><a href="/">JML.Studio</a></nav>
+ <p>&copy; 2026 JML.Studio</p>
+</div></footer>
+</body>
+</html>

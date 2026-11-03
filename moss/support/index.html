@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Each language has a stable address. Only an explicit ?lang= request
+   changes language; browser settings never redirect a page. */
+(function () {
+  var here = "en", urls = {"en": "/moss/support/", "es": "/moss/es/support/", "pt-BR": "/moss/pt-br/support/", "fr": "/moss/fr/support/", "de": "/moss/de/support/", "ko": "/moss/ko/support/", "ja": "/moss/ja/support/", "zh-Hans": "/moss/zh-hans/support/", "zh-Hant": "/moss/zh-hant/support/"}, want;
+  function pick(tag) {
+    tag = String(tag || '').toLowerCase();
+    if (/^zh-(hant|tw|hk|mo)/.test(tag)) return 'zh-Hant';
+    if (/^zh/.test(tag)) return 'zh-Hans';
+    return { en: 'en', es: 'es', pt: 'pt-BR', fr: 'fr', de: 'de', ko: 'ko', ja: 'ja' }[tag.split('-')[0]];
+  }
+  try { want = pick(new URLSearchParams(location.search).get('lang')); } catch (e) {}
+  if (want && want !== here) location.replace(urls[want] + location.hash);
+})();
+</script>
+<title>Support · Moss’s Club house</title>
+<meta name="description" content="Help with Moss’s Club house: contact, letters and replies, reporting and blocking, and deleting your account.">
+<meta name="author" content="Jongmin Lee">
+<link rel="canonical" href="https://littlegd.github.io/moss/support/">
+<link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/support/">
+<link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/support/">
+<link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/support/">
+<link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/support/">
+<link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/support/">
+<link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/support/">
+<link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/support/">
+<link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/support/">
+<link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/support/">
+<link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/support/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ECEEE9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#202521" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JML.Studio">
+<meta property="og:url" content="https://littlegd.github.io/moss/support/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:title" content="Support · Moss’s Club house">
+<meta property="og:description" content="Help with Moss’s Club house: contact, letters and replies, reporting and blocking, and deleting your account.">
+<meta property="og:image" content="https://littlegd.github.io/assets/moss-icon-512.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta property="og:image:alt" content="Moss, a garden gnome with a red pointed hat and a white beard">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" href="/assets/moss-icon-512.png">
+<link rel="apple-touch-icon" href="/moss/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/moss/moss.css">
+<script src="/moss/moss.js" defer></script>
+<script defer src="/analytics.js"></script>
+</head>
+<body class="page-support">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="top-inner wrap">
+ <a class="brand" href="/moss/"><img src="/assets/moss-icon-512.png" width="36" height="36" alt=""><span translate="no">Moss’s Club house</span></a>
+ <details class="lang"><summary><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M1.75 8h12.5M8 1.75c1.7 1.8 2.6 3.9 2.6 6.25S9.7 12.45 8 14.25C6.3 12.45 5.4 10.35 5.4 8S6.3 3.55 8 1.75z"/></svg><span class="sr">Language: </span>English</summary><ul class="lang-menu" role="list"><li><a href="/moss/support/" hreflang="en" lang="en" aria-current="true">English</a></li><li><a href="/moss/es/support/" hreflang="es" lang="es">Español</a></li><li><a href="/moss/pt-br/support/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li><li><a href="/moss/fr/support/" hreflang="fr" lang="fr">Français</a></li><li><a href="/moss/de/support/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/moss/ko/support/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/moss/ja/support/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/moss/zh-hans/support/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="/moss/zh-hant/support/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li></ul></details>
+</div></header>
+<main id="main" class="wrap narrow doc">
+<div class="page-head"><h1>Moss’s Club house Support</h1><p>Questions, or something not working? Write to us.</p></div>
+<section class="panel" id="contact" aria-labelledby="contact-title">
+ <h2 id="contact-title">Contact</h2>
+ <a class="mail" href="mailto:lee1993ljm@gmail.com?subject=Moss%E2%80%99s%20Club%20house">lee1993ljm@gmail.com</a>
+ <p>Tell us your phone model, its OS version and what happened on which screen, and we can help faster. You can write in any language. Please don’t include the text of anyone else’s letter.</p>
+</section>
+<section class="panel" id="report" aria-labelledby="report-title">
+ <h2 id="report-title">Reporting a letter</h2>
+ <p>To report a letter or reply, open it in the app and tap Report letter. Your report reaches us with the letter attached, so you don’t need to copy anything. You can also tap Block this sender so you won’t exchange letters with that person again.</p>
+</section>
+<section class="panel danger" id="danger" aria-labelledby="danger-title">
+ <h2 id="danger-title">If you are in danger</h2>
+ <p>Moss’s Club house can’t respond to emergencies. If you or someone else might be in immediate danger, contact local emergency services or someone nearby now. Don’t wait for a letter reply.</p>
+</section>
+<ul class="faq" role="list"><li><h2>Do I need an account?</h2><p>Yes. Sign in with Apple or Google so your letters can find their way back to you. Other people never see your name or email.</p></li><li><h2>How many letters can I write?</h2><p>One worry letter a day. Each day Moss also brings you up to three letters from other people. Choose one to answer, and you have 48 hours to write your reply.</p></li><li><h2>My letter came back without a reply</h2><p>Sometimes nobody picks a letter in time. When that happens, Moss brings it back to you. You can write a new letter the next day.</p></li><li><h2>Who reads my letter?</h2><p>The person who receives it. Before delivery, an automated review checks the letter and translates it into the reader’s language. AI does not write or change what you say. If a letter needs changes before it can be sent, the app tells you.</p></li><li><h2>Can people see where I live?</h2><p>No. Moss only uses an approximate city based on your network connection, and readers see only that approximate city. The app doesn’t use your phone’s GPS.</p></li><li><h2>What does burning a letter do?</h2><p>Holding to burn a draft clears it from your phone without sending it. After a reply comes back, you can also burn the letter and its reply to remove them from your archive. This can’t be undone.</p></li><li><h2>How do I delete my account?</h2><p>Open Settings in the app and tap Delete account. Your account, your letters and the replies you wrote are deleted, and this can’t be undone. See the Privacy Policy for the few records kept for safety.</p></li><li><h2>Does it cost anything?</h2><p>No. Moss’s Club house is free, with no ads and no paid features.</p></li></ul>
+</main>
+<footer class="foot"><div class="wrap foot-inner">
+ <nav aria-label="Moss’s Club house"><a href="/moss/" translate="no">Moss’s Club house</a><a href="/moss/support/">Support</a><a href="/moss/terms/">Terms of Use</a><a href="/moss/privacy/">Privacy Policy</a><a href="/">JML.Studio</a></nav>
+ <p>&copy; 2026 JML.Studio</p>
+</div></footer>
+</body>
+</html>

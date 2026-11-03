@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Each language has a stable address. Only an explicit ?lang= request
+   changes language; browser settings never redirect a page. */
+(function () {
+  var here = "de", urls = {"en": "/moss/terms/", "es": "/moss/es/terms/", "pt-BR": "/moss/pt-br/terms/", "fr": "/moss/fr/terms/", "de": "/moss/de/terms/", "ko": "/moss/ko/terms/", "ja": "/moss/ja/terms/", "zh-Hans": "/moss/zh-hans/terms/", "zh-Hant": "/moss/zh-hant/terms/"}, want;
+  function pick(tag) {
+    tag = String(tag || '').toLowerCase();
+    if (/^zh-(hant|tw|hk|mo)/.test(tag)) return 'zh-Hant';
+    if (/^zh/.test(tag)) return 'zh-Hans';
+    return { en: 'en', es: 'es', pt: 'pt-BR', fr: 'fr', de: 'de', ko: 'ko', ja: 'ja' }[tag.split('-')[0]];
+  }
+  try { want = pick(new URLSearchParams(location.search).get('lang')); } catch (e) {}
+  if (want && want !== here) location.replace(urls[want] + location.hash);
+})();
+</script>
+<title>Nutzungsbedingungen · Moss’s Club house</title>
+<meta name="description" content="Die Regeln für die Nutzung von Moss’s Club house: wer es nutzen darf, was Briefe enthalten dürfen, Meldungen, KI-Prüfung und dein Konto.">
+<meta name="author" content="Jongmin Lee">
+<link rel="canonical" href="https://littlegd.github.io/moss/de/terms/">
+<link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/terms/">
+<link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/terms/">
+<link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/terms/">
+<link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/terms/">
+<link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/terms/">
+<link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/terms/">
+<link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/terms/">
+<link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/terms/">
+<link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/terms/">
+<link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/terms/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ECEEE9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#202521" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JML.Studio">
+<meta property="og:url" content="https://littlegd.github.io/moss/de/terms/">
+<meta property="og:locale" content="de_DE">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:title" content="Nutzungsbedingungen · Moss’s Club house">
+<meta property="og:description" content="Die Regeln für die Nutzung von Moss’s Club house: wer es nutzen darf, was Briefe enthalten dürfen, Meldungen, KI-Prüfung und dein Konto.">
+<meta property="og:image" content="https://littlegd.github.io/assets/moss-icon-512.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta property="og:image:alt" content="Moss, ein Gartenzwerg mit roter Zipfelmütze und weißem Bart">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" href="/assets/moss-icon-512.png">
+<link rel="apple-touch-icon" href="/moss/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/moss/moss.css">
+<script src="/moss/moss.js" defer></script>
+<script defer src="/analytics.js"></script>
+</head>
+<body class="page-terms">
+<a class="skip" href="#main">Zum Inhalt springen</a>
+<header class="top"><div class="top-inner wrap">
+ <a class="brand" href="/moss/de/"><img src="/assets/moss-icon-512.png" width="36" height="36" alt=""><span translate="no">Moss’s Club house</span></a>
+ <details class="lang"><summary><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M1.75 8h12.5M8 1.75c1.7 1.8 2.6 3.9 2.6 6.25S9.7 12.45 8 14.25C6.3 12.45 5.4 10.35 5.4 8S6.3 3.55 8 1.75z"/></svg><span class="sr">Sprache: </span>Deutsch</summary><ul class="lang-menu" role="list"><li><a href="/moss/terms/" hreflang="en" lang="en">English</a></li><li><a href="/moss/es/terms/" hreflang="es" lang="es">Español</a></li><li><a href="/moss/pt-br/terms/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li><li><a href="/moss/fr/terms/" hreflang="fr" lang="fr">Français</a></li><li><a href="/moss/de/terms/" hreflang="de" lang="de" aria-current="true">Deutsch</a></li><li><a href="/moss/ko/terms/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/moss/ja/terms/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/moss/zh-hans/terms/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="/moss/zh-hant/terms/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li></ul></details>
+</div></header>
+<main id="main" class="wrap narrow doc"><article aria-labelledby="h">
+<div class="page-head"><h1 id="h">Nutzungsbedingungen von Moss’s Club house</h1></div>
+<p class="meta">Gültig ab: 1. November 2026</p>
+<p>Moss’s Club house (die „App“) wird von Jongmin Lee entwickelt, einem unabhängigen Entwickler bei JML.Studio („wir“). Indem du ein Konto erstellst oder die App nutzt, stimmst du diesen Bedingungen zu. Wenn du nicht zustimmst, nutze die App bitte nicht.</p>
+<h2 id="s1">1. Was die App ist</h2>
+<p>Mit der App können Menschen anonyme Briefe über ihre Sorgen austauschen. Du kannst einen Brief pro Tag schreiben. Andere Menschen können ihn erhalten und eine Antwort schreiben. Briefe werden automatisch geprüft und übersetzt, damit sie zwischen Sprachen reisen können.</p>
+<p>Die App ist keine Therapie und keine medizinische, rechtliche oder Krisenhilfe. Antworten stammen von anderen Nutzern, nicht von Fachleuten, und wir prüfen nicht, ob ihr Rat für dich passt. Wenn du in Gefahr sein könntest, wende dich sofort an den örtlichen Notruf.</p>
+<h2 id="s2">2. Wer die App nutzen darf</h2>
+<p>Du musst mindestens 13 Jahre alt sein, um die App zu nutzen. Wenn du an deinem Wohnort noch nicht volljährig bist, brauchst du die Erlaubnis eines Elternteils oder Erziehungsberechtigten. Du darfst die App nicht nutzen, wenn wir dein Konto eingeschränkt haben oder das Gesetz an deinem Wohnort es verbietet.</p>
+<h2 id="s3">3. Dein Konto</h2>
+<p>Du meldest dich mit Apple oder Google an. Halte dein Gerät und deine Anmeldung sicher, denn du bist dafür verantwortlich, was von deinem Konto aus gesendet wird. Eine Person, ein Konto: Erstelle keine Konten, um eine Einschränkung zu umgehen.</p>
+<h2 id="s4">4. Regeln für Briefe</h2>
+<p>Moss’s Club house funktioniert, weil Menschen zu Fremden freundlich sind. Wenn du einen Brief oder eine Antwort schreibst, stimmst du zu, Folgendes nicht zu tun:</p>
+<ul><li>jemanden zu belästigen, zu bedrohen, zu beleidigen oder zu beschämen oder jemanden dazu zu ermutigen, sich selbst oder anderen etwas anzutun;</li><li>Hassrede zu verbreiten oder Inhalte, die Menschen für das angreifen, was sie sind;</li><li>sexuelle Inhalte zu veröffentlichen oder Inhalte, die Minderjährige sexualisieren;</li><li>persönliche Informationen weiterzugeben, die dich oder andere identifizieren könnten, etwa Namen, Telefonnummern, Adressen, Social-Media-Konten oder Fotos;</li><li>um ein Treffen zu bitten, das Gespräch anderswohin zu verlegen oder um Geld zu bitten;</li><li>Werbung oder Spam zu schicken oder Links zu senden;</li><li>Inhalte zu veröffentlichen, die rechtswidrig sind oder Rechte anderer verletzen;</li><li>dich als jemand anderen auszugeben oder Briefe mit automatisierten Mitteln zu senden.</li></ul>
+<p>Wir dulden keine anstößigen Inhalte und keine missbräuchlichen Nutzer. Du kannst über schwierige Gefühle und schmerzhafte Erfahrungen sprechen. Dafür ist die App da. Entscheidend ist, wie du mit den Menschen umgehst, die deine Briefe lesen.</p>
+<h2 id="s5">5. Prüfung, Melden und Blockieren</h2>
+<p>Jeder Brief und jede Antwort wird vor der Zustellung von einer automatischen Prüfung kontrolliert, die KI verwendet. Ein Brief kann zugestellt, zur Überarbeitung an dich zurückgegeben, zurückgehalten oder nicht zugestellt werden. Die Prüfung kann Fehler machen und garantiert nicht, dass jeder Brief, den du erhältst, angemessen ist.</p>
+<p>Du kannst jeden Brief und jede Antwort, die du erhältst, melden und den Absender blockieren. Wir prüfen Meldungen und gehen so schnell wie möglich gegen anstößige Inhalte vor, mit dem Ziel, innerhalb von 24 Stunden zu handeln. Wir können Inhalte entfernen und Konten, die gegen diese Bedingungen verstoßen, mit oder ohne Vorankündigung einschränken oder beenden. Ein eingeschränktes Konto kann keine neuen Briefe senden, beantworten oder empfangen.</p>
+<h2 id="s6">6. Deine Briefe</h2>
+<p>Was du schreibst, gehört weiterhin dir. Du räumst uns eine weltweite, nicht ausschließliche, gebührenfreie Lizenz ein, deine Briefe und Antworten zu speichern, zu prüfen, zu übersetzen, zuzustellen und anzuzeigen, um die App zu betreiben, und sie so aufzubewahren, wie es in der Datenschutzerklärung beschrieben ist. Sobald ein Brief zugestellt ist, kann ihn sein Leser lesen, und wir können nicht kontrollieren, was ein Leser mit dem Gelesenen macht.</p>
+<p>Schick nichts, was du nicht auch einem Fremden anvertrauen würdest.</p>
+<h2 id="s7">7. Kostenloser Dienst und Änderungen</h2>
+<p>Die App ist kostenlos. Wir können die App oder einzelne Funktionen ändern, pausieren oder einstellen, einschließlich Briefgrenzen und Zustellzeiten. Briefe, die unterwegs sind, können verloren gehen, wenn der Dienst eingestellt wird. Wir bemühen uns, wesentliche Änderungen in der App oder auf dieser Seite anzukündigen.</p>
+<h2 id="s8">8. Haftungsausschluss und Haftung</h2>
+<p>Die App wird „wie besehen“ und „wie verfügbar“ bereitgestellt. Soweit gesetzlich zulässig, geben wir keine Gewährleistungen für die App, für andere Nutzer oder für den Inhalt von Briefen und Antworten, und wir haften nicht für mittelbare, zufällige oder Folgeschäden oder für Datenverlust. Nichts in diesen Bedingungen schränkt Rechte ein, die dir nach Gesetzen zustehen, von denen sich nicht per Vertrag abweichen lässt.</p>
+<h2 id="s9">9. Die Nutzung beenden</h2>
+<p>Du kannst die App jederzeit nicht mehr nutzen und dein Konto in den Einstellungen löschen. Wir können deinen Zugang sperren oder beenden, wenn du gegen diese Bedingungen verstößt oder wenn wir es tun müssen, um andere Nutzer zu schützen oder das Gesetz einzuhalten.</p>
+<h2 id="s10">10. App-Stores</h2>
+<p>Wenn du die App aus dem App Store von Apple geladen hast, gilt zusätzlich der Endnutzer-Lizenzvertrag für lizenzierte Apps von Apple, und diese Bedingungen ergänzen ihn. Apple und Google sind für die App und ihre Inhalte nicht verantwortlich.</p>
+<h2 id="s11">11. Änderungen dieser Bedingungen</h2>
+<p>Wir können diese Bedingungen aktualisieren. Dann ändern wir das oben genannte Datum, ab dem sie gelten, und wenn die Änderung wichtig ist, sagen wir es dir in der App. Wenn du die App nach der Änderung weiter nutzt, akzeptierst du die neuen Bedingungen.</p>
+<h2 id="s12">12. Kontakt</h2>
+<p>Fragen zu diesen Bedingungen: <a href="mailto:lee1993ljm@gmail.com">lee1993ljm@gmail.com</a></p>
+</article></main>
+<footer class="foot"><div class="wrap foot-inner">
+ <nav aria-label="Moss’s Club house"><a href="/moss/de/" translate="no">Moss’s Club house</a><a href="/moss/de/support/">Hilfe</a><a href="/moss/de/terms/">Nutzungsbedingungen</a><a href="/moss/de/privacy/">Datenschutzerklärung</a><a href="/">JML.Studio</a></nav>
+ <p>&copy; 2026 JML.Studio</p>
+</div></footer>
+</body>
+</html>

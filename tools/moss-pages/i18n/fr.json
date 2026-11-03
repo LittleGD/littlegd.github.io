@@ -1,0 +1,110 @@
+{
+  "langName": "Français",
+  "common": {
+    "skip": "Aller au contenu",
+    "language": "Langue",
+    "support": "Aide",
+    "terms": "Conditions d’utilisation",
+    "privacy": "Politique de confidentialité",
+    "home": "Moss’s Club house",
+    "studio": "JML.Studio",
+    "soon": "Bientôt sur iPhone et Android",
+    "free": "Gratuit. Sans publicité.",
+    "effective": "Date d’entrée en vigueur : {date}",
+    "date": "1er novembre 2026"
+  },
+  "landing": {
+    "title": "Moss’s Club house · Des lettres anonymes, portées par Moss",
+    "description": "Écrivez un souci sur une vieille machine à écrire. Moss, un petit gnome de jardin, le porte dans une autre ville, et un inconnu vous répond. Écrit par des personnes, jamais par une IA. Gratuit sur iPhone et Android.",
+    "h1": "Écrivez-le.<br> Moss le portera.",
+    "lede": "Tapez un souci sur une vieille machine à écrire. Moss, un petit gnome de jardin, porte votre lettre dans une autre ville, où un inconnu la lit et vous répond.",
+    "artAlt": "Moss, un gnome de jardin avec un bonnet rouge pointu et une barbe blanche",
+    "howTitle": "Comment ça marche",
+    "steps": [
+      {"t": "Un souci par jour", "b": "Installez-vous devant la machine à écrire et écrivez ce qui vous préoccupe. Pas de nom, pas de profil. Juste la lettre."},
+      {"t": "Moss l’emporte", "b": "Moss emmène votre lettre dans une autre ville. Chaque jour, il vous rapporte aussi quelques lettres venues d’ailleurs."},
+      {"t": "Un inconnu vous répond", "b": "Quelqu’un choisit votre lettre et écrit une réponse. Quand elle revient, vous pouvez envoyer un petit remerciement."}
+    ],
+    "promiseTitle": "Quelques petites promesses",
+    "promises": [
+      {"t": "Écrit par des personnes", "b": "Chaque lettre et chaque réponse est écrite par une personne. L’IA sert uniquement à vérifier la sécurité des lettres et à les traduire, pour qu’elles voyagent d’une langue à l’autre."},
+      {"t": "Anonyme", "b": "Les autres voient votre lettre, pas vous. Ils voient seulement la ville approximative d’où elle vient."},
+      {"t": "Gratuit, sans publicité", "b": "Pas de publicité, pas de fonctions payantes, pas de suivi."}
+    ],
+    "safetyTitle": "Un lieu bienveillant, entretenu ensemble",
+    "safetyBody": "Les lettres sont examinées avant que Moss les livre. Si une lettre vous semble inappropriée, vous pouvez la signaler ou bloquer son expéditeur depuis la lettre elle-même. Moss’s Club house n’est pas un service d’urgence. Si vous êtes peut-être en danger, contactez dès maintenant les services d’urgence locaux ou une personne près de vous.",
+    "closingTitle": "Quelque part, quelqu’un<br> vous répond.",
+    "closingBody": "Disponible en English, Español, Português, Français, Deutsch, 한국어, 日本語, 简体中文 et 繁體中文."
+  },
+  "support": {
+    "title": "Aide · Moss’s Club house",
+    "description": "De l’aide pour Moss’s Club house : nous contacter, lettres et réponses, signalement et blocage, suppression de votre compte.",
+    "h1": "Aide de Moss’s Club house",
+    "lede": "Une question, ou quelque chose qui ne marche pas ? Écrivez-nous.",
+    "contactTitle": "Nous contacter",
+    "contactBody": "Indiquez-nous le modèle de votre téléphone, la version de son système et ce qui s’est passé sur quel écran, et nous pourrons vous aider plus vite. Vous pouvez écrire dans n’importe quelle langue. Merci de ne pas recopier le texte de la lettre de quelqu’un d’autre.",
+    "subject": "Moss’s Club house",
+    "reportTitle": "Signaler une lettre",
+    "reportBody": "Pour signaler une lettre ou une réponse, ouvrez-la dans l’app et touchez Signaler la lettre. Votre signalement nous parvient avec la lettre jointe, inutile de rien copier. Vous pouvez aussi toucher Bloquer cet expéditeur pour ne plus échanger de lettres avec cette personne.",
+    "dangerTitle": "Si vous êtes en danger",
+    "dangerBody": "Moss’s Club house ne peut pas répondre aux urgences. Si vous ou quelqu’un d’autre êtes peut-être en danger immédiat, contactez dès maintenant les services d’urgence locaux ou une personne à proximité. N’attendez pas la réponse à une lettre.",
+    "faq": [
+      {"q": "Faut-il un compte ?", "a": "Oui. Connectez-vous avec Apple ou Google pour que vos lettres puissent retrouver leur chemin jusqu’à vous. Les autres ne voient jamais votre nom ni votre adresse e-mail."},
+      {"q": "Combien de lettres puis-je écrire ?", "a": "Une lettre de souci par jour. Chaque jour, Moss vous apporte aussi jusqu’à trois lettres d’autres personnes. Choisissez-en une pour y répondre : vous avez 48 heures pour écrire votre réponse."},
+      {"q": "Ma lettre est revenue sans réponse", "a": "Il arrive que personne ne choisisse une lettre à temps. Dans ce cas, Moss vous la rapporte. Vous pouvez écrire une nouvelle lettre dès le lendemain."},
+      {"q": "Qui lit ma lettre ?", "a": "La personne qui la reçoit. Avant la livraison, un examen automatisé vérifie la lettre et la traduit dans la langue du lecteur. L’IA n’écrit pas et ne modifie pas ce que vous dites. Si une lettre doit être modifiée avant de pouvoir partir, l’app vous le dit."},
+      {"q": "Les autres peuvent-ils voir où j’habite ?", "a": "Non. Moss utilise seulement une ville approximative, déduite de votre connexion réseau, et les lecteurs ne voient que cette ville approximative. L’app n’utilise pas le GPS de votre téléphone."},
+      {"q": "Que fait le fait de brûler une lettre ?", "a": "Maintenir pour brûler un brouillon l’efface de votre téléphone sans l’envoyer. Une fois qu’une réponse est revenue, vous pouvez aussi brûler la lettre et sa réponse pour les retirer de vos archives. Cette action est irréversible."},
+      {"q": "Comment supprimer mon compte ?", "a": "Ouvrez Réglages dans l’app et touchez Supprimer le compte. Votre compte, vos lettres et les réponses que vous avez écrites sont supprimés, et cette action est irréversible. Consultez la Politique de confidentialité pour les quelques éléments conservés pour des raisons de sécurité."},
+      {"q": "Est-ce que ça coûte quelque chose ?", "a": "Non. Moss’s Club house est gratuit, sans publicité et sans fonctions payantes."}
+    ]
+  },
+  "terms": {
+    "title": "Conditions d’utilisation · Moss’s Club house",
+    "description": "Les règles d’utilisation de Moss’s Club house : qui peut l’utiliser, ce que les lettres peuvent contenir, le signalement, l’examen par IA et votre compte.",
+    "h1": "Conditions d’utilisation de Moss’s Club house",
+    "intro": "Moss’s Club house (l’« app ») est créé par Jongmin Lee, développeur indépendant chez JML.Studio (« nous »). En créant un compte ou en utilisant l’app, vous acceptez ces conditions. Si vous ne les acceptez pas, merci de ne pas utiliser l’app.",
+    "sections": [
+      {"h": "1. Ce qu’est l’app", "p": ["L’app permet d’échanger des lettres anonymes sur ses soucis. Vous pouvez écrire une lettre par jour. D’autres personnes peuvent la recevoir et écrire une réponse. Les lettres sont examinées automatiquement et traduites pour pouvoir voyager d’une langue à l’autre.", "L’app n’est pas un service de thérapie, de conseil médical, juridique ou de soutien en situation de crise. Les réponses viennent d’autres utilisateurs, pas de professionnels, et nous ne vérifions pas si leurs conseils vous conviennent. Si vous êtes peut-être en danger, contactez immédiatement les services d’urgence locaux."]},
+      {"h": "2. Qui peut l’utiliser", "p": ["Vous devez avoir au moins {age} ans pour utiliser l’app. Si vous n’avez pas atteint l’âge de la majorité là où vous vivez, vous avez besoin de l’autorisation d’un parent ou d’un tuteur. Vous ne pouvez pas utiliser l’app si nous avons restreint votre compte ou si la loi de votre pays vous l’interdit."]},
+      {"h": "3. Votre compte", "p": ["Vous vous connectez avec Apple ou Google. Protégez votre appareil et votre connexion, car vous êtes responsable de ce qui est envoyé depuis votre compte. Une personne, un compte : ne créez pas de comptes pour contourner une restriction."]},
+      {"h": "4. Règles d’écriture", "p": ["Moss’s Club house fonctionne parce que les gens sont bienveillants envers des inconnus. Lorsque vous écrivez une lettre ou une réponse, vous vous engagez à ne pas :"], "list": ["harceler, menacer, insulter ou humilier qui que ce soit, ni encourager quiconque à se faire du mal ou à en faire à autrui ;", "publier des propos haineux ou des contenus qui s’en prennent aux gens pour ce qu’ils sont ;", "publier du contenu sexuel, ou tout contenu qui sexualise des mineurs ;", "partager des informations personnelles permettant de vous identifier ou d’identifier quelqu’un d’autre, comme des noms, numéros de téléphone, adresses, comptes de réseaux sociaux ou photos ;", "demander à rencontrer quelqu’un, déplacer la conversation ailleurs ou demander de l’argent ;", "faire de la publicité, du spam ou envoyer des liens ;", "publier du contenu illégal ou qui porte atteinte aux droits d’autrui ;", "vous faire passer pour quelqu’un d’autre, ou utiliser des moyens automatisés pour envoyer des lettres."], "after": ["Nous avons une tolérance zéro envers les contenus répréhensibles et les utilisateurs abusifs. Vous pouvez parler d’émotions difficiles et d’expériences douloureuses : c’est à cela que sert l’app. Ce qui compte, c’est la façon dont vous traitez les personnes qui vous lisent."]},
+      {"h": "5. Examen, signalement et blocage", "p": ["Chaque lettre et chaque réponse est vérifiée avant sa livraison par un examen automatisé qui utilise l’IA. Une lettre peut être livrée, vous être renvoyée pour modification, retenue ou ne pas être livrée. L’examen peut se tromper et ne garantit pas que chaque lettre que vous recevez sera appropriée.", "Vous pouvez signaler toute lettre ou réponse que vous recevez, et bloquer son expéditeur. Nous examinons les signalements et agissons contre les contenus répréhensibles aussi vite que possible, avec pour objectif un délai de 24 heures. Nous pouvons supprimer des contenus, et restreindre ou fermer les comptes qui enfreignent ces conditions, avec ou sans préavis. Un compte restreint ne peut ni envoyer, ni répondre, ni recevoir de nouvelles lettres."]},
+      {"h": "6. Vos lettres", "p": ["Vous restez propriétaire de ce que vous écrivez. Vous nous accordez une licence mondiale, non exclusive et gratuite pour stocker, examiner, traduire, livrer et afficher vos lettres et réponses afin de faire fonctionner l’app, et pour les conserver comme décrit dans la Politique de confidentialité. Une fois une lettre livrée, son lecteur peut la lire, et nous ne pouvons pas contrôler ce qu’un lecteur fait de ce qu’il a lu.", "N’envoyez rien que vous ne seriez pas à l’aise de partager avec un inconnu."]},
+      {"h": "7. Service gratuit et modifications", "p": ["L’app est gratuite. Nous pouvons modifier, suspendre ou arrêter l’app ou l’une de ses fonctions, y compris les limites de lettres et les délais de livraison. Les lettres en cours d’acheminement peuvent être perdues si le service s’arrête. Nous essaierons de prévenir des changements importants dans l’app ou sur cette page."]},
+      {"h": "8. Exclusions de garantie et responsabilité", "p": ["L’app est fournie « en l’état » et « selon disponibilité ». Dans la mesure permise par la loi, nous ne donnons aucune garantie concernant l’app, les autres utilisateurs ou le contenu des lettres et réponses, et nous ne sommes pas responsables des dommages indirects, accessoires ou consécutifs, ni de la perte de données. Aucune disposition de ces conditions ne limite les droits que vous tenez de lois auxquelles un contrat ne peut pas déroger."]},
+      {"h": "9. Mettre fin à votre utilisation", "p": ["Vous pouvez cesser d’utiliser l’app à tout moment et supprimer votre compte dans Réglages. Nous pouvons suspendre ou mettre fin à votre accès si vous enfreignez ces conditions ou si nous devons le faire pour protéger d’autres utilisateurs ou respecter la loi."]},
+      {"h": "10. Boutiques d’applications", "p": ["Si vous avez téléchargé l’app depuis l’App Store d’Apple, le contrat de licence d’utilisateur final des applications sous licence d’Apple s’applique aussi, et ces conditions viennent s’y ajouter. Apple et Google ne sont pas responsables de l’app ni de son contenu."]},
+      {"h": "11. Modification de ces conditions", "p": ["Nous pouvons mettre à jour ces conditions. Dans ce cas, nous modifierons la date d’entrée en vigueur indiquée plus haut et, si le changement est important, nous vous en informerons dans l’app. Si vous continuez à utiliser l’app après le changement, vous acceptez les nouvelles conditions."]},
+      {"h": "12. Contact", "p": ["Questions sur ces conditions : {emailLink}"]}
+    ]
+  },
+  "privacy": {
+    "title": "Politique de confidentialité · Moss’s Club house",
+    "description": "Comment Moss’s Club house traite vos données : votre compte, vos lettres et réponses, la localisation approximative, l’examen par IA et la traduction, les notifications, et vos choix.",
+    "h1": "Politique de confidentialité de Moss’s Club house",
+    "intro": "Moss’s Club house (l’« app ») est créé par Jongmin Lee, développeur indépendant chez JML.Studio (« nous »). Cette politique explique quelles informations l’app utilise, pourquoi, qui nous aide à les traiter et combien de temps nous les conservons.",
+    "summaryTitle": "En bref",
+    "summary": [
+      "Les autres utilisateurs ne voient jamais votre nom ni votre adresse e-mail. Ils voient votre lettre et une ville approximative.",
+      "Les lettres et les réponses sont envoyées à OpenAI pour l’examen de sécurité et la traduction. OpenAI ne les écrit pas.",
+      "Votre ville approximative est déduite de votre connexion réseau. L’app n’utilise pas le GPS.",
+      "Pas de publicité, pas de suivi, pas de SDK d’analyse ou de publicité dans l’app.",
+      "Vous pouvez supprimer votre compte et vos lettres dans l’app à tout moment."
+    ],
+    "sections": [
+      {"h": "1. Informations que nous collectons", "p": ["<strong>Compte.</strong> Lorsque vous vous connectez avec Apple ou Google, nous recevons un identifiant de compte et votre adresse e-mail (Apple peut nous fournir une adresse de relais privée). Nous ne conservons ni votre nom ni votre photo de profil provenant de ces services. Si vous utilisez la connexion avec Apple, nous conservons aussi un jeton Apple chiffré afin de pouvoir révoquer votre connexion Apple lorsque vous supprimez votre compte.", "<strong>Profil.</strong> La langue de votre app, votre fuseau horaire, votre ville approximative, la version des conditions que vous avez acceptée et la date de votre dernière activité.", "<strong>Lettres et réponses.</strong> Le texte des lettres et des réponses que vous écrivez, leurs traductions, les résultats de l’examen, les remerciements, et les informations de livraison comme les dates et les lettres qui vous ont été proposées ou que vous avez choisies.", "<strong>Données de sécurité.</strong> Les signalements que vous envoyez, les signalements concernant vos contenus, une copie du contenu signalé tel que l’a vu la personne qui a signalé, les personnes que vous bloquez et les restrictions de compte.", "<strong>Notifications.</strong> Si vous autorisez les notifications, le jeton de notification de votre appareil et sa plateforme.", "<strong>Touches sur les promotions.</strong> Lorsque vous touchez un lien vers l’une de nos autres apps, l’app envoie de quelle app il s’agit, où se trouvait le lien et votre plateforme. Ces touches sont comptées par jour sans votre identifiant de compte ni votre adresse IP.", "<strong>Messages que vous nous envoyez.</strong> Si vous nous écrivez, votre adresse e-mail et ce que vous écrivez."]},
+      {"h": "2. Localisation approximative", "p": ["Moss a besoin de savoir à peu près d’où et vers où voyagent les lettres. Lorsque votre appareil se connecte à notre serveur, notre hébergeur estime une ville à partir de votre adresse IP. Nous arrondissons les coordonnées à environ 10 km et enregistrons une ville, pas votre adresse ni votre adresse IP. Les lecteurs ne voient que cette ville approximative. L’app ne demande pas et n’utilise pas les services de localisation de votre appareil."]},
+      {"h": "3. Comment nous utilisons les informations", "p": ["Nous utilisons ces informations pour faire fonctionner l’app : vous connecter, livrer les lettres entre villes et fuseaux horaires, les traduire, examiner les contenus pour la sécurité, afficher des ressources d’aide quand une lettre laisse penser que quelqu’un peut en avoir besoin, envoyer des notifications, traiter les signalements et les blocages, prévenir les abus et limiter le nombre de requêtes, corriger les problèmes et répondre à vos messages. Nous ne vendons pas vos informations, ne les utilisons pas à des fins publicitaires et ne constituons pas de profils vous concernant."]},
+      {"h": "4. Examen par IA et traduction", "p": ["Avant qu’une lettre ou une réponse soit livrée, nous envoyons son texte, sa langue et, pour une réponse, la lettre d’origine comme contexte, à OpenAI. OpenAI la vérifie au regard de nos règles d’écriture et la traduit. L’IA n’écrit ni ne modifie jamais vos lettres. Vous y consentez en acceptant les Conditions d’utilisation avant votre première lettre.", "Nous envoyons les requêtes avec l’option de stockage d’OpenAI désactivée. Selon les politiques d’API d’OpenAI, les données de l’API ne servent pas à entraîner ses modèles par défaut, mais OpenAI peut les conserver pendant une durée limitée pour détecter les abus. Consultez la <a href=\"https://openai.com/policies/privacy-policy/\">politique de confidentialité d’OpenAI</a>."]},
+      {"h": "5. Prestataires de services", "p": ["Nous faisons appel à un petit nombre de prestataires pour faire fonctionner l’app :"], "list": ["<strong>Cloudflare</strong> héberge notre serveur et notre base de données et estime votre ville à partir de votre adresse IP ;", "<strong>OpenAI</strong> examine et traduit les lettres et les réponses ;", "<strong>Apple et Google</strong> fournissent la connexion et acheminent les notifications via leurs services de notifications push ;", "<strong>Expo</strong> relaie les notifications vers Apple et Google. Les notifications ne contiennent aucun texte de lettre."], "after": ["Ces prestataires peuvent traiter les informations aux États-Unis et dans d’autres pays. Ils les traitent selon leurs propres conditions et politiques de confidentialité."]},
+      {"h": "6. Durée de conservation", "p": ["Nous conservons votre compte et vos lettres tant que votre compte existe. Une lettre voyage au maximum 14 jours. Si personne ne répond, elle vous revient. Vous pouvez brûler une lettre retournée et sa réponse, ce qui supprime leur texte, leurs traductions et les données d’examen, et ne laisse qu’une trace minimale indiquant que la lettre a existé.", "Lorsque vous supprimez votre compte, nous supprimons votre compte, vos sessions, vos lettres, les réponses que vous avez écrites et les signalements que vous avez envoyés, et nous révoquons votre connexion Apple le cas échéant. Les signalements faits par d’autres personnes au sujet de vos contenus sont conservés sans votre identifiant de compte pendant 90 jours au maximum, le temps de finir de les traiter, puis supprimés. Les sauvegardes de la base de données peuvent conserver les données supprimées jusqu’à 30 jours. Les données détenues par OpenAI, Apple, Google ou d’autres prestataires suivent leurs propres règles de conservation."]},
+      {"h": "7. Vos choix et vos droits", "p": ["Vous pouvez supprimer votre compte dans Réglages &gt; Supprimer le compte. Vous pouvez désactiver les notifications dans les réglages de votre appareil. Vous pouvez bloquer toute personne qui vous écrit.", "Selon l’endroit où vous vivez, vous pouvez avoir le droit d’accéder à vos informations, de les corriger, de les supprimer ou de les exporter, ou de vous opposer à leur utilisation ou d’en demander la limitation. Pour faire une demande, écrivez à {emailLink}. Vous pouvez aussi déposer une réclamation auprès de votre autorité locale de protection des données."]},
+      {"h": "8. Enfants", "p": ["L’app n’est pas destinée aux enfants de moins de {age} ans. Si vous pensez qu’un enfant de moins de cet âge utilise l’app, contactez-nous et nous supprimerons le compte."]},
+      {"h": "9. Sécurité", "p": ["Les données sont transmises en HTTPS, l’accès à nos systèmes est limité, et nos journaux enregistrent des codes d’erreur, pas le texte des lettres ni les identifiants de compte. Aucun service ne peut être parfaitement sûr : merci de ne pas mettre d’informations permettant de vous identifier dans vos lettres."]},
+      {"h": "10. Ce site web", "p": ["Ce site web, y compris la page où cette politique est publiée, utilise Google Analytics 4 pour comprendre les visites. Google peut recevoir des informations sur le navigateur et l’appareil, une localisation approximative déduite de votre adresse IP, les pages que vous consultez et des cookies ou identifiants similaires, conformément aux <a href=\"https://policies.google.com/privacy\">règles de confidentialité de Google</a>. L’app elle-même n’utilise pas Google Analytics."]},
+      {"h": "11. Modifications", "p": ["Si nous modifions cette politique, nous mettrons à jour la date d’entrée en vigueur indiquée plus haut. Si le changement est important, nous vous en informerons dans l’app avant son entrée en vigueur."]},
+      {"h": "12. Contact", "p": ["Jongmin Lee, JML.Studio : {emailLink}"]}
+    ]
+  }
+}

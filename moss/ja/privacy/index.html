@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Each language has a stable address. Only an explicit ?lang= request
+   changes language; browser settings never redirect a page. */
+(function () {
+  var here = "ja", urls = {"en": "/moss/privacy/", "es": "/moss/es/privacy/", "pt-BR": "/moss/pt-br/privacy/", "fr": "/moss/fr/privacy/", "de": "/moss/de/privacy/", "ko": "/moss/ko/privacy/", "ja": "/moss/ja/privacy/", "zh-Hans": "/moss/zh-hans/privacy/", "zh-Hant": "/moss/zh-hant/privacy/"}, want;
+  function pick(tag) {
+    tag = String(tag || '').toLowerCase();
+    if (/^zh-(hant|tw|hk|mo)/.test(tag)) return 'zh-Hant';
+    if (/^zh/.test(tag)) return 'zh-Hans';
+    return { en: 'en', es: 'es', pt: 'pt-BR', fr: 'fr', de: 'de', ko: 'ko', ja: 'ja' }[tag.split('-')[0]];
+  }
+  try { want = pick(new URLSearchParams(location.search).get('lang')); } catch (e) {}
+  if (want && want !== here) location.replace(urls[want] + location.hash);
+})();
+</script>
+<title>プライバシーポリシー · Moss’s Club house</title>
+<meta name="description" content="Moss’s Club houseがあなたのデータをどう扱うか：アカウント、手紙と返事、おおよその位置情報、AIによる確認と翻訳、通知、そしてあなたの選択について。">
+<meta name="author" content="Jongmin Lee">
+<link rel="canonical" href="https://littlegd.github.io/moss/ja/privacy/">
+<link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/privacy/">
+<link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/privacy/">
+<link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/privacy/">
+<link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/privacy/">
+<link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/privacy/">
+<link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/privacy/">
+<link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/privacy/">
+<link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/privacy/">
+<link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/privacy/">
+<link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/privacy/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ECEEE9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#202521" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JML.Studio">
+<meta property="og:url" content="https://littlegd.github.io/moss/ja/privacy/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:title" content="プライバシーポリシー · Moss’s Club house">
+<meta property="og:description" content="Moss’s Club houseがあなたのデータをどう扱うか：アカウント、手紙と返事、おおよその位置情報、AIによる確認と翻訳、通知、そしてあなたの選択について。">
+<meta property="og:image" content="https://littlegd.github.io/assets/moss-icon-512.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta property="og:image:alt" content="赤いとんがり帽子をかぶり、白いひげを生やした庭の妖精Moss">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" href="/assets/moss-icon-512.png">
+<link rel="apple-touch-icon" href="/moss/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/moss/moss.css">
+<script src="/moss/moss.js" defer></script>
+<script defer src="/analytics.js"></script>
+</head>
+<body class="page-privacy">
+<a class="skip" href="#main">本文へスキップ</a>
+<header class="top"><div class="top-inner wrap">
+ <a class="brand" href="/moss/ja/"><img src="/assets/moss-icon-512.png" width="36" height="36" alt=""><span translate="no">Moss’s Club house</span></a>
+ <details class="lang"><summary><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M1.75 8h12.5M8 1.75c1.7 1.8 2.6 3.9 2.6 6.25S9.7 12.45 8 14.25C6.3 12.45 5.4 10.35 5.4 8S6.3 3.55 8 1.75z"/></svg><span class="sr">言語: </span>日本語</summary><ul class="lang-menu" role="list"><li><a href="/moss/privacy/" hreflang="en" lang="en">English</a></li><li><a href="/moss/es/privacy/" hreflang="es" lang="es">Español</a></li><li><a href="/moss/pt-br/privacy/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li><li><a href="/moss/fr/privacy/" hreflang="fr" lang="fr">Français</a></li><li><a href="/moss/de/privacy/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/moss/ko/privacy/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/moss/ja/privacy/" hreflang="ja" lang="ja" aria-current="true">日本語</a></li><li><a href="/moss/zh-hans/privacy/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="/moss/zh-hant/privacy/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li></ul></details>
+</div></header>
+<main id="main" class="wrap narrow doc"><article aria-labelledby="h">
+<div class="page-head"><h1 id="h">Moss’s Club house プライバシーポリシー</h1></div>
+<p class="meta">施行日：2026年11月1日</p>
+<p>Moss’s Club house（以下「本アプリ」）は、JML.Studioの個人開発者Jongmin Lee（以下「当方」）が提供しています。このポリシーでは、本アプリがどの情報を何のために使うのか、処理を手伝う事業者は誰か、どのくらいの期間保管するのかを説明します。</p>
+<h2>概要</h2><ul><li>ほかの利用者に、あなたの名前やメールアドレスが見えることはありません。見えるのは手紙とおおよその街だけです。</li><li>手紙と返事は、安全の確認と翻訳のためにOpenAIへ送信されます。OpenAIが手紙を書くことはありません。</li><li>おおよその街は、ネットワーク接続から判定します。GPSは使いません。</li><li>広告も、トラッキングも、分析や広告用のSDKも本アプリにはありません。</li><li>アカウントと手紙は、本アプリからいつでも削除できます。</li></ul>
+<h2 id="s1">1. 収集する情報</h2>
+<p><strong>アカウント。</strong>AppleまたはGoogleでサインインすると、アカウント識別子とメールアドレスを受け取ります（Appleは非公開のリレーアドレスを提供する場合があります）。これらの事業者から、名前やプロフィール写真は保存しません。Appleでサインインする場合は、アカウント削除時にAppleのサインインを取り消せるよう、暗号化したAppleのトークンも保管します。</p>
+<p><strong>プロフィール。</strong>アプリの言語、タイムゾーン、おおよその街、同意した規約のバージョン、最後に利用した日時です。</p>
+<p><strong>手紙と返事。</strong>あなたが書いた手紙と返事の本文、その翻訳、確認結果、お礼のメッセージ、そして日付や、提示された手紙・選んだ手紙といった配達の情報です。</p>
+<p><strong>安全に関する記録。</strong>あなたが送った報告、あなたのコンテンツに対する報告、報告者が見たままの報告対象コンテンツの控え、ブロックした相手、アカウントの制限です。</p>
+<p><strong>通知。</strong>通知を許可した場合は、端末のプッシュトークンとプラットフォームです。</p>
+<p><strong>宣伝リンクのタップ。</strong>当方の別のアプリへのリンクをタップすると、どのアプリか、リンクがどこにあったか、お使いのプラットフォームが送信されます。これらはアカウントIDやIPアドレスなしで、1日単位で集計されます。</p>
+<p><strong>当方へのメッセージ。</strong>メールでお問い合わせいただいた場合は、メールアドレスと書かれた内容です。</p>
+<h2 id="s2">2. おおよその位置情報</h2>
+<p>Mossは、手紙がおおよそどこからどこへ旅するのかを知る必要があります。端末が当方のサーバーに接続すると、ホスティング事業者がIPアドレスから街を推定します。座標は約10km単位に丸め、住所やIPアドレスではなく街だけを保存します。読む人に見えるのは、そのおおよその街だけです。本アプリは、端末の位置情報サービスを要求も使用もしません。</p>
+<h2 id="s3">3. 情報の利用目的</h2>
+<p>当方は、サインイン、街やタイムゾーンをまたぐ手紙の配達、手紙の翻訳、安全のためのコンテンツ確認、手紙から助けが必要かもしれないと思われる場合の相談先の表示、通知の送信、報告とブロックの対応、不正利用の防止とリクエストの制限、不具合の修正、お問い合わせへの返信といった、本アプリの運営のためにこれらの情報を使います。あなたの情報を販売したり、広告に使ったり、あなたに関するプロファイルを作成したりすることはありません。</p>
+<h2 id="s4">4. AIによる確認と翻訳</h2>
+<p>手紙や返事が配達される前に、本文とその言語、返事の場合は文脈として元の手紙を、OpenAIに送信します。OpenAIは、当方の手紙のルールに合っているかを確認し、翻訳します。AIがあなたの手紙を書いたり編集したりすることはありません。最初の手紙を書く前に利用規約に同意することで、この処理にも同意したものとみなします。</p>
+<p>リクエストは、OpenAIの保存オプションをオフにして送信します。OpenAIのAPIポリシーによると、APIのデータは既定ではモデルの学習に使われませんが、不正利用の監視のために一定期間保持される場合があります。<a href="https://openai.com/policies/privacy-policy/">OpenAIのプライバシーポリシー</a>をご覧ください。</p>
+<h2 id="s5">5. サービス提供事業者</h2>
+<p>本アプリの運営には、ごく少数の事業者を利用しています。</p>
+<ul><li><strong>Cloudflare</strong>は、サーバーとデータベースをホストし、IPアドレスから街を推定します。</li><li><strong>OpenAI</strong>は、手紙と返事の確認と翻訳を行います。</li><li><strong>AppleとGoogle</strong>は、サインインを提供し、プッシュサービスを通じて通知を配信します。</li><li><strong>Expo</strong>は、通知をAppleとGoogleに中継します。通知に手紙の本文は含まれません。</li></ul>
+<p>これらの事業者は、米国やその他の国で情報を処理することがあります。各事業者は、それぞれの規約とプライバシーポリシーに従って情報を扱います。</p>
+<h2 id="s6">6. 保管期間</h2>
+<p>アカウントと手紙は、アカウントが存在する間保管します。手紙の旅は最長14日間です。誰からも返事がない場合、手紙はあなたのもとに戻ります。戻ってきた手紙とその返事は燃やすことができ、燃やすと本文、翻訳、確認データが削除され、手紙が存在したという最小限の記録だけが残ります。</p>
+<p>アカウントを削除すると、アカウント、セッション、あなたの手紙、あなたが書いた返事、あなたが送った報告を削除し、該当する場合はAppleのサインインを取り消します。ほかの人があなたのコンテンツについて行った報告は、対応を完了できるよう、アカウントIDを除いた状態で最長90日間保管し、その後削除します。データベースのバックアップには、削除したデータが最長30日間残ることがあります。OpenAI、Apple、Google、その他の事業者が保有する記録は、それぞれの保管ルールに従います。</p>
+<h2 id="s7">7. あなたの選択と権利</h2>
+<p>アカウントは「設定」&gt;「アカウントを削除」から削除できます。通知は端末の設定でオフにできます。手紙を送ってきた相手は、誰でもブロックできます。</p>
+<p>お住まいの地域によっては、ご自身の情報へのアクセス、訂正、削除、エクスポートを求める権利や、利用への異議申し立てや制限を求める権利があります。ご請求は<a href="mailto:lee1993ljm@gmail.com">lee1993ljm@gmail.com</a>へメールでお送りください。お住まいの地域のデータ保護当局に申し立てることもできます。</p>
+<h2 id="s8">8. お子さま</h2>
+<p>本アプリは、13歳未満のお子さまを対象としていません。その年齢未満のお子さまが利用していると思われる場合は、当方にご連絡ください。アカウントを削除します。</p>
+<h2 id="s9">9. セキュリティ</h2>
+<p>データはHTTPSで送信し、システムへのアクセスは制限し、ログには手紙の本文やアカウントIDではなくエラーコードだけを記録します。完全に安全なサービスはないため、手紙には個人を特定できる情報を書かないでください。</p>
+<h2 id="s10">10. このウェブサイト</h2>
+<p>このポリシーを掲載しているページを含むこのウェブサイトでは、訪問状況を把握するためにGoogle Analytics 4を使用しています。Googleは、<a href="https://policies.google.com/privacy">Googleのプライバシーポリシー</a>に基づき、ブラウザや端末の情報、IPアドレスから推定したおおよその位置、閲覧したページ、Cookieまたは同様の識別子を受け取ることがあります。本アプリ自体はGoogle Analyticsを使用しません。</p>
+<h2 id="s11">11. 変更</h2>
+<p>このポリシーを変更する場合は、上記の施行日を更新します。重要な変更は、効力が生じる前に本アプリでお知らせします。</p>
+<h2 id="s12">12. お問い合わせ</h2>
+<p>Jongmin Lee、JML.Studio：<a href="mailto:lee1993ljm@gmail.com">lee1993ljm@gmail.com</a></p>
+</article></main>
+<footer class="foot"><div class="wrap foot-inner">
+ <nav aria-label="Moss’s Club house"><a href="/moss/ja/" translate="no">Moss’s Club house</a><a href="/moss/ja/support/">サポート</a><a href="/moss/ja/terms/">利用規約</a><a href="/moss/ja/privacy/">プライバシーポリシー</a><a href="/">JML.Studio</a></nav>
+ <p>&copy; 2026 JML.Studio</p>
+</div></footer>
+</body>
+</html>

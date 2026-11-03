@@ -33,3 +33,10 @@
 - 홈과 FAGL·Moraro의 다국어 소개, 지원, 개인정보 처리방침 페이지에 `<script defer src="/analytics.js"></script>`를 한 번씩 넣습니다. 새 HTML 페이지에도 같은 태그를 추가하세요. Search Console 인증 파일과 `app-ads.txt`에는 넣지 않습니다.
 - GA4 향상된 측정은 페이지 조회, 스크롤, 외부 링크 클릭 등을 측정합니다. 앱 자체의 분석 설정과는 별개이며, 웹 태그를 중복 삽입하지 않습니다.
 - `main` 변경으로 GitHub Pages가 배포된 뒤 실제 사이트에 방문하고 GA4 실시간 보고서에서 수신을 확인합니다.
+
+## Moss’s Club house 페이지
+
+- `/moss/`에 소개·지원·이용약관·개인정보 처리방침이 9개 언어(en, es, pt-BR, fr, de, ko, ja, zh-Hans, zh-Hant)로 있습니다. 언어마다 고정 주소(`/moss/ko/privacy/` 등)이고 `?lang=`으로만 바뀝니다.
+- HTML은 손으로 고치지 않습니다. 문구는 `tools/moss-pages/i18n/<언어>.json`, 틀은 `tools/moss-pages/build.py`에서 고친 뒤 저장소 루트에서 `python3 tools/moss-pages/build.py .`로 다시 만듭니다. 모든 언어 파일은 `en.json`과 같은 키 구조를 유지합니다.
+- 최소 이용 연령(`AGE`)과 스토어 링크(`STORE_IOS`, `STORE_ANDROID`)는 `build.py` 맨 위에 있습니다. 스토어 링크를 넣으면 "곧 출시" 표시가 스토어 버튼으로 바뀝니다.
+- 사용자에게 보이는 문구에 em-dash를 쓰지 않습니다. 빌드가 본문에서 발견하면 멈춥니다.

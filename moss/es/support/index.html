@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Each language has a stable address. Only an explicit ?lang= request
+   changes language; browser settings never redirect a page. */
+(function () {
+  var here = "es", urls = {"en": "/moss/support/", "es": "/moss/es/support/", "pt-BR": "/moss/pt-br/support/", "fr": "/moss/fr/support/", "de": "/moss/de/support/", "ko": "/moss/ko/support/", "ja": "/moss/ja/support/", "zh-Hans": "/moss/zh-hans/support/", "zh-Hant": "/moss/zh-hant/support/"}, want;
+  function pick(tag) {
+    tag = String(tag || '').toLowerCase();
+    if (/^zh-(hant|tw|hk|mo)/.test(tag)) return 'zh-Hant';
+    if (/^zh/.test(tag)) return 'zh-Hans';
+    return { en: 'en', es: 'es', pt: 'pt-BR', fr: 'fr', de: 'de', ko: 'ko', ja: 'ja' }[tag.split('-')[0]];
+  }
+  try { want = pick(new URLSearchParams(location.search).get('lang')); } catch (e) {}
+  if (want && want !== here) location.replace(urls[want] + location.hash);
+})();
+</script>
+<title>Ayuda · Moss’s Club house</title>
+<meta name="description" content="Ayuda con Moss’s Club house: contacto, cartas y respuestas, denuncias y bloqueos, y cómo eliminar tu cuenta.">
+<meta name="author" content="Jongmin Lee">
+<link rel="canonical" href="https://littlegd.github.io/moss/es/support/">
+<link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/support/">
+<link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/support/">
+<link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/support/">
+<link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/support/">
+<link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/support/">
+<link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/support/">
+<link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/support/">
+<link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/support/">
+<link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/support/">
+<link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/support/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ECEEE9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#202521" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JML.Studio">
+<meta property="og:url" content="https://littlegd.github.io/moss/es/support/">
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:title" content="Ayuda · Moss’s Club house">
+<meta property="og:description" content="Ayuda con Moss’s Club house: contacto, cartas y respuestas, denuncias y bloqueos, y cómo eliminar tu cuenta.">
+<meta property="og:image" content="https://littlegd.github.io/assets/moss-icon-512.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta property="og:image:alt" content="Moss, un gnomo de jardín con gorro rojo puntiagudo y barba blanca">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" href="/assets/moss-icon-512.png">
+<link rel="apple-touch-icon" href="/moss/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/moss/moss.css">
+<script src="/moss/moss.js" defer></script>
+<script defer src="/analytics.js"></script>
+</head>
+<body class="page-support">
+<a class="skip" href="#main">Saltar al contenido</a>
+<header class="top"><div class="top-inner wrap">
+ <a class="brand" href="/moss/es/"><img src="/assets/moss-icon-512.png" width="36" height="36" alt=""><span translate="no">Moss’s Club house</span></a>
+ <details class="lang"><summary><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M1.75 8h12.5M8 1.75c1.7 1.8 2.6 3.9 2.6 6.25S9.7 12.45 8 14.25C6.3 12.45 5.4 10.35 5.4 8S6.3 3.55 8 1.75z"/></svg><span class="sr">Idioma: </span>Español</summary><ul class="lang-menu" role="list"><li><a href="/moss/support/" hreflang="en" lang="en">English</a></li><li><a href="/moss/es/support/" hreflang="es" lang="es" aria-current="true">Español</a></li><li><a href="/moss/pt-br/support/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li><li><a href="/moss/fr/support/" hreflang="fr" lang="fr">Français</a></li><li><a href="/moss/de/support/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/moss/ko/support/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/moss/ja/support/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/moss/zh-hans/support/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="/moss/zh-hant/support/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li></ul></details>
+</div></header>
+<main id="main" class="wrap narrow doc">
+<div class="page-head"><h1>Ayuda de Moss’s Club house</h1><p>¿Tienes dudas o algo no funciona? Escríbenos.</p></div>
+<section class="panel" id="contact" aria-labelledby="contact-title">
+ <h2 id="contact-title">Contacto</h2>
+ <a class="mail" href="mailto:lee1993ljm@gmail.com?subject=Moss%E2%80%99s%20Club%20house">lee1993ljm@gmail.com</a>
+ <p>Cuéntanos el modelo de tu teléfono, la versión de su sistema operativo y qué pasó en qué pantalla, y podremos ayudarte más rápido. Puedes escribirnos en cualquier idioma. Por favor, no incluyas el texto de la carta de otra persona.</p>
+</section>
+<section class="panel" id="report" aria-labelledby="report-title">
+ <h2 id="report-title">Denunciar una carta</h2>
+ <p>Para denunciar una carta o una respuesta, ábrela en la app y toca Denunciar carta. Tu denuncia nos llega con la carta adjunta, así que no hace falta copiar nada. También puedes tocar Bloquear a quien la envió para no volver a intercambiar cartas con esa persona.</p>
+</section>
+<section class="panel danger" id="danger" aria-labelledby="danger-title">
+ <h2 id="danger-title">Si estás en peligro</h2>
+ <p>Moss’s Club house no puede atender emergencias. Si tú o alguien más podéis estar en peligro inmediato, contacta ahora con los servicios de emergencia locales o con alguien cercano. No esperes a la respuesta de una carta.</p>
+</section>
+<ul class="faq" role="list"><li><h2>¿Necesito una cuenta?</h2><p>Sí. Inicia sesión con Apple o Google para que tus cartas puedan encontrar el camino de vuelta. Los demás nunca ven tu nombre ni tu correo.</p></li><li><h2>¿Cuántas cartas puedo escribir?</h2><p>Una carta de preocupación al día. Cada día Moss también te trae hasta tres cartas de otras personas. Elige una para responder y tendrás 48 horas para escribir tu respuesta.</p></li><li><h2>Mi carta volvió sin respuesta</h2><p>A veces nadie elige una carta a tiempo. Cuando pasa, Moss te la devuelve. Puedes escribir una carta nueva al día siguiente.</p></li><li><h2>¿Quién lee mi carta?</h2><p>La persona que la recibe. Antes de la entrega, una revisión automática comprueba la carta y la traduce al idioma de quien la lee. La IA no escribe ni cambia lo que dices. Si una carta necesita cambios antes de poder enviarse, la app te lo indica.</p></li><li><h2>¿Pueden ver dónde vivo?</h2><p>No. Moss solo usa una ciudad aproximada según tu conexión de red, y quien lee solo ve esa ciudad aproximada. La app no usa el GPS de tu teléfono.</p></li><li><h2>¿Qué hace quemar una carta?</h2><p>Al mantener pulsado para quemar un borrador, se borra de tu teléfono sin enviarse. Cuando llega una respuesta, también puedes quemar la carta y su respuesta para eliminarlas de tu archivo. No se puede deshacer.</p></li><li><h2>¿Cómo elimino mi cuenta?</h2><p>Abre Ajustes en la app y toca Eliminar cuenta. Se eliminan tu cuenta, tus cartas y las respuestas que escribiste, y no se puede deshacer. Consulta la Política de privacidad para ver los pocos registros que se conservan por seguridad.</p></li><li><h2>¿Tiene algún coste?</h2><p>No. Moss’s Club house es gratis, sin anuncios y sin funciones de pago.</p></li></ul>
+</main>
+<footer class="foot"><div class="wrap foot-inner">
+ <nav aria-label="Moss’s Club house"><a href="/moss/es/" translate="no">Moss’s Club house</a><a href="/moss/es/support/">Ayuda</a><a href="/moss/es/terms/">Términos de uso</a><a href="/moss/es/privacy/">Política de privacidad</a><a href="/">JML.Studio</a></nav>
+ <p>&copy; 2026 JML.Studio</p>
+</div></footer>
+</body>
+</html>

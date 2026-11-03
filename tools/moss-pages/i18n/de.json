@@ -1,0 +1,110 @@
+{
+  "langName": "Deutsch",
+  "common": {
+    "skip": "Zum Inhalt springen",
+    "language": "Sprache",
+    "support": "Hilfe",
+    "terms": "Nutzungsbedingungen",
+    "privacy": "Datenschutzerklärung",
+    "home": "Moss’s Club house",
+    "studio": "JML.Studio",
+    "soon": "Bald für iPhone und Android",
+    "free": "Kostenlos. Ohne Werbung.",
+    "effective": "Gültig ab: {date}",
+    "date": "1. November 2026"
+  },
+  "landing": {
+    "title": "Moss’s Club house · Anonyme Briefe, von Moss getragen",
+    "description": "Schreib deine Sorge auf einer alten Schreibmaschine auf. Moss, ein kleiner Gartenzwerg, trägt sie in eine andere Stadt, und ein Fremder schreibt dir zurück. Von Menschen geschrieben, nie von KI. Kostenlos für iPhone und Android.",
+    "h1": "Schreib es auf.<br> Moss trägt es fort.",
+    "lede": "Tipp eine Sorge auf einer alten Schreibmaschine. Moss, ein kleiner Gartenzwerg, trägt deinen Brief in eine andere Stadt, wo ein Fremder ihn liest und dir antwortet.",
+    "artAlt": "Moss, ein Gartenzwerg mit roter Zipfelmütze und weißem Bart",
+    "howTitle": "So funktioniert es",
+    "steps": [
+      {"t": "Eine Sorge pro Tag", "b": "Setz dich an die Schreibmaschine und schreib, was dich beschäftigt. Kein Name, kein Profil. Nur der Brief."},
+      {"t": "Moss trägt ihn fort", "b": "Moss bringt deinen Brief in eine andere Stadt. Jeden Tag bringt Moss dir auch ein paar Briefe von anderswo."},
+      {"t": "Ein Fremder schreibt zurück", "b": "Jemand wählt deinen Brief aus und schreibt eine Antwort. Wenn sie zurückkommt, kannst du ein kleines Dankeschön schicken."}
+    ],
+    "promiseTitle": "Kleine Versprechen",
+    "promises": [
+      {"t": "Von Menschen geschrieben", "b": "Jeder Brief und jede Antwort stammt von einem Menschen. KI prüft Briefe nur auf Sicherheit und übersetzt sie, damit sie zwischen Sprachen reisen können."},
+      {"t": "Anonym", "b": "Andere sehen deinen Brief, nicht dich. Sie sehen nur die ungefähre Stadt, aus der er kommt."},
+      {"t": "Kostenlos, ohne Werbung", "b": "Keine Werbung, keine kostenpflichtigen Funktionen, kein Tracking."}
+    ],
+    "safetyTitle": "Ein freundlicher Ort, den wir gemeinsam pflegen",
+    "safetyBody": "Briefe werden geprüft, bevor Moss sie zustellt. Wenn sich ein Brief nicht richtig anfühlt, kannst du ihn direkt im Brief melden oder den Absender blockieren. Moss’s Club house ist kein Krisendienst. Wenn du in Gefahr sein könntest, wende dich jetzt an den örtlichen Notruf oder an jemanden in deiner Nähe.",
+    "closingTitle": "Irgendwo schreibt jemand<br> dir zurück.",
+    "closingBody": "Verfügbar in English, Español, Português, Français, Deutsch, 한국어, 日本語, 简体中文 und 繁體中文."
+  },
+  "support": {
+    "title": "Hilfe · Moss’s Club house",
+    "description": "Hilfe zu Moss’s Club house: Kontakt, Briefe und Antworten, Melden und Blockieren und das Löschen deines Kontos.",
+    "h1": "Hilfe zu Moss’s Club house",
+    "lede": "Fragen, oder funktioniert etwas nicht? Schreib uns.",
+    "contactTitle": "Kontakt",
+    "contactBody": "Nenn uns dein Handymodell, die Version des Betriebssystems und was auf welchem Bildschirm passiert ist, dann können wir schneller helfen. Du kannst in jeder Sprache schreiben. Bitte füge nicht den Text eines fremden Briefs ein.",
+    "subject": "Moss’s Club house",
+    "reportTitle": "Einen Brief melden",
+    "reportBody": "Um einen Brief oder eine Antwort zu melden, öffne sie in der App und tippe auf Brief melden. Deine Meldung erreicht uns mit dem angehängten Brief, du musst also nichts kopieren. Du kannst auch auf Absender blockieren tippen, dann tauschst du mit dieser Person keine Briefe mehr aus.",
+    "dangerTitle": "Wenn du in Gefahr bist",
+    "dangerBody": "Moss’s Club house kann nicht auf Notfälle reagieren. Wenn du oder jemand anderes in unmittelbarer Gefahr sein könnte, wende dich jetzt an den örtlichen Notruf oder an jemanden in der Nähe. Warte nicht auf die Antwort auf einen Brief.",
+    "faq": [
+      {"q": "Brauche ich ein Konto?", "a": "Ja. Melde dich mit Apple oder Google an, damit deine Briefe den Weg zu dir zurückfinden. Andere sehen nie deinen Namen oder deine E-Mail-Adresse."},
+      {"q": "Wie viele Briefe kann ich schreiben?", "a": "Einen Sorgenbrief pro Tag. Jeden Tag bringt dir Moss außerdem bis zu drei Briefe von anderen Menschen. Wähl einen zum Antworten aus, dann hast du 48 Stunden Zeit für deine Antwort."},
+      {"q": "Mein Brief kam ohne Antwort zurück", "a": "Manchmal wählt niemand einen Brief rechtzeitig aus. Dann bringt Moss ihn dir zurück. Am nächsten Tag kannst du einen neuen Brief schreiben."},
+      {"q": "Wer liest meinen Brief?", "a": "Die Person, die ihn bekommt. Vor der Zustellung prüft eine automatische Kontrolle den Brief und übersetzt ihn in die Sprache des Lesers. KI schreibt oder verändert nicht, was du sagst. Wenn ein Brief geändert werden muss, bevor er verschickt werden kann, sagt dir die App Bescheid."},
+      {"q": "Können andere sehen, wo ich wohne?", "a": "Nein. Moss verwendet nur eine ungefähre Stadt auf Grundlage deiner Netzwerkverbindung, und Leser sehen nur diese ungefähre Stadt. Die App nutzt nicht das GPS deines Handys."},
+      {"q": "Was bewirkt das Verbrennen eines Briefs?", "a": "Wenn du bei einem Entwurf Gedrückt halten zum Verbrennen wählst, wird er von deinem Handy gelöscht, ohne gesendet zu werden. Nachdem eine Antwort zurückgekommen ist, kannst du den Brief und seine Antwort auch verbrennen, um sie aus deinem Archiv zu entfernen. Das lässt sich nicht rückgängig machen."},
+      {"q": "Wie lösche ich mein Konto?", "a": "Öffne in der App die Einstellungen und tippe auf Konto löschen. Dein Konto, deine Briefe und die Antworten, die du geschrieben hast, werden gelöscht, und das lässt sich nicht rückgängig machen. Welche wenigen Datensätze aus Sicherheitsgründen bleiben, steht in der Datenschutzerklärung."},
+      {"q": "Kostet es etwas?", "a": "Nein. Moss’s Club house ist kostenlos, ohne Werbung und ohne kostenpflichtige Funktionen."}
+    ]
+  },
+  "terms": {
+    "title": "Nutzungsbedingungen · Moss’s Club house",
+    "description": "Die Regeln für die Nutzung von Moss’s Club house: wer es nutzen darf, was Briefe enthalten dürfen, Meldungen, KI-Prüfung und dein Konto.",
+    "h1": "Nutzungsbedingungen von Moss’s Club house",
+    "intro": "Moss’s Club house (die „App“) wird von Jongmin Lee entwickelt, einem unabhängigen Entwickler bei JML.Studio („wir“). Indem du ein Konto erstellst oder die App nutzt, stimmst du diesen Bedingungen zu. Wenn du nicht zustimmst, nutze die App bitte nicht.",
+    "sections": [
+      {"h": "1. Was die App ist", "p": ["Mit der App können Menschen anonyme Briefe über ihre Sorgen austauschen. Du kannst einen Brief pro Tag schreiben. Andere Menschen können ihn erhalten und eine Antwort schreiben. Briefe werden automatisch geprüft und übersetzt, damit sie zwischen Sprachen reisen können.", "Die App ist keine Therapie und keine medizinische, rechtliche oder Krisenhilfe. Antworten stammen von anderen Nutzern, nicht von Fachleuten, und wir prüfen nicht, ob ihr Rat für dich passt. Wenn du in Gefahr sein könntest, wende dich sofort an den örtlichen Notruf."]},
+      {"h": "2. Wer die App nutzen darf", "p": ["Du musst mindestens {age} Jahre alt sein, um die App zu nutzen. Wenn du an deinem Wohnort noch nicht volljährig bist, brauchst du die Erlaubnis eines Elternteils oder Erziehungsberechtigten. Du darfst die App nicht nutzen, wenn wir dein Konto eingeschränkt haben oder das Gesetz an deinem Wohnort es verbietet."]},
+      {"h": "3. Dein Konto", "p": ["Du meldest dich mit Apple oder Google an. Halte dein Gerät und deine Anmeldung sicher, denn du bist dafür verantwortlich, was von deinem Konto aus gesendet wird. Eine Person, ein Konto: Erstelle keine Konten, um eine Einschränkung zu umgehen."]},
+      {"h": "4. Regeln für Briefe", "p": ["Moss’s Club house funktioniert, weil Menschen zu Fremden freundlich sind. Wenn du einen Brief oder eine Antwort schreibst, stimmst du zu, Folgendes nicht zu tun:"], "list": ["jemanden zu belästigen, zu bedrohen, zu beleidigen oder zu beschämen oder jemanden dazu zu ermutigen, sich selbst oder anderen etwas anzutun;", "Hassrede zu verbreiten oder Inhalte, die Menschen für das angreifen, was sie sind;", "sexuelle Inhalte zu veröffentlichen oder Inhalte, die Minderjährige sexualisieren;", "persönliche Informationen weiterzugeben, die dich oder andere identifizieren könnten, etwa Namen, Telefonnummern, Adressen, Social-Media-Konten oder Fotos;", "um ein Treffen zu bitten, das Gespräch anderswohin zu verlegen oder um Geld zu bitten;", "Werbung oder Spam zu schicken oder Links zu senden;", "Inhalte zu veröffentlichen, die rechtswidrig sind oder Rechte anderer verletzen;", "dich als jemand anderen auszugeben oder Briefe mit automatisierten Mitteln zu senden."], "after": ["Wir dulden keine anstößigen Inhalte und keine missbräuchlichen Nutzer. Du kannst über schwierige Gefühle und schmerzhafte Erfahrungen sprechen. Dafür ist die App da. Entscheidend ist, wie du mit den Menschen umgehst, die deine Briefe lesen."]},
+      {"h": "5. Prüfung, Melden und Blockieren", "p": ["Jeder Brief und jede Antwort wird vor der Zustellung von einer automatischen Prüfung kontrolliert, die KI verwendet. Ein Brief kann zugestellt, zur Überarbeitung an dich zurückgegeben, zurückgehalten oder nicht zugestellt werden. Die Prüfung kann Fehler machen und garantiert nicht, dass jeder Brief, den du erhältst, angemessen ist.", "Du kannst jeden Brief und jede Antwort, die du erhältst, melden und den Absender blockieren. Wir prüfen Meldungen und gehen so schnell wie möglich gegen anstößige Inhalte vor, mit dem Ziel, innerhalb von 24 Stunden zu handeln. Wir können Inhalte entfernen und Konten, die gegen diese Bedingungen verstoßen, mit oder ohne Vorankündigung einschränken oder beenden. Ein eingeschränktes Konto kann keine neuen Briefe senden, beantworten oder empfangen."]},
+      {"h": "6. Deine Briefe", "p": ["Was du schreibst, gehört weiterhin dir. Du räumst uns eine weltweite, nicht ausschließliche, gebührenfreie Lizenz ein, deine Briefe und Antworten zu speichern, zu prüfen, zu übersetzen, zuzustellen und anzuzeigen, um die App zu betreiben, und sie so aufzubewahren, wie es in der Datenschutzerklärung beschrieben ist. Sobald ein Brief zugestellt ist, kann ihn sein Leser lesen, und wir können nicht kontrollieren, was ein Leser mit dem Gelesenen macht.", "Schick nichts, was du nicht auch einem Fremden anvertrauen würdest."]},
+      {"h": "7. Kostenloser Dienst und Änderungen", "p": ["Die App ist kostenlos. Wir können die App oder einzelne Funktionen ändern, pausieren oder einstellen, einschließlich Briefgrenzen und Zustellzeiten. Briefe, die unterwegs sind, können verloren gehen, wenn der Dienst eingestellt wird. Wir bemühen uns, wesentliche Änderungen in der App oder auf dieser Seite anzukündigen."]},
+      {"h": "8. Haftungsausschluss und Haftung", "p": ["Die App wird „wie besehen“ und „wie verfügbar“ bereitgestellt. Soweit gesetzlich zulässig, geben wir keine Gewährleistungen für die App, für andere Nutzer oder für den Inhalt von Briefen und Antworten, und wir haften nicht für mittelbare, zufällige oder Folgeschäden oder für Datenverlust. Nichts in diesen Bedingungen schränkt Rechte ein, die dir nach Gesetzen zustehen, von denen sich nicht per Vertrag abweichen lässt."]},
+      {"h": "9. Die Nutzung beenden", "p": ["Du kannst die App jederzeit nicht mehr nutzen und dein Konto in den Einstellungen löschen. Wir können deinen Zugang sperren oder beenden, wenn du gegen diese Bedingungen verstößt oder wenn wir es tun müssen, um andere Nutzer zu schützen oder das Gesetz einzuhalten."]},
+      {"h": "10. App-Stores", "p": ["Wenn du die App aus dem App Store von Apple geladen hast, gilt zusätzlich der Endnutzer-Lizenzvertrag für lizenzierte Apps von Apple, und diese Bedingungen ergänzen ihn. Apple und Google sind für die App und ihre Inhalte nicht verantwortlich."]},
+      {"h": "11. Änderungen dieser Bedingungen", "p": ["Wir können diese Bedingungen aktualisieren. Dann ändern wir das oben genannte Datum, ab dem sie gelten, und wenn die Änderung wichtig ist, sagen wir es dir in der App. Wenn du die App nach der Änderung weiter nutzt, akzeptierst du die neuen Bedingungen."]},
+      {"h": "12. Kontakt", "p": ["Fragen zu diesen Bedingungen: {emailLink}"]}
+    ]
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung · Moss’s Club house",
+    "description": "Wie Moss’s Club house mit deinen Daten umgeht: dein Konto, Briefe und Antworten, ungefährer Standort, KI-Prüfung und Übersetzung, Mitteilungen und deine Wahlmöglichkeiten.",
+    "h1": "Datenschutzerklärung von Moss’s Club house",
+    "intro": "Moss’s Club house (die „App“) wird von Jongmin Lee entwickelt, einem unabhängigen Entwickler bei JML.Studio („wir“). Diese Erklärung beschreibt, welche Informationen die App verwendet, warum, wer uns bei der Verarbeitung hilft und wie lange wir sie aufbewahren.",
+    "summaryTitle": "Kurz gesagt",
+    "summary": [
+      "Andere Nutzer sehen nie deinen Namen oder deine E-Mail-Adresse. Sie sehen deinen Brief und eine ungefähre Stadt.",
+      "Briefe und Antworten werden zur Sicherheitsprüfung und Übersetzung an OpenAI gesendet. OpenAI schreibt sie nicht.",
+      "Deine ungefähre Stadt ergibt sich aus deiner Netzwerkverbindung. Die App nutzt kein GPS.",
+      "Keine Werbung, kein Tracking, keine Analyse- oder Werbe-SDKs in der App.",
+      "Du kannst dein Konto und deine Briefe jederzeit in der App löschen."
+    ],
+    "sections": [
+      {"h": "1. Welche Informationen wir erheben", "p": ["<strong>Konto.</strong> Wenn du dich mit Apple oder Google anmeldest, erhalten wir eine Konto-Kennung und deine E-Mail-Adresse (Apple gibt uns möglicherweise eine private Weiterleitungsadresse). Deinen Namen und dein Profilfoto von diesen Anbietern speichern wir nicht. Wenn du „Mit Apple anmelden“ nutzt, speichern wir außerdem ein verschlüsseltes Apple-Token, damit wir deine Apple-Anmeldung widerrufen können, wenn du dein Konto löschst.", "<strong>Profil.</strong> Deine App-Sprache, deine Zeitzone, deine ungefähre Stadt, die Version der Bedingungen, der du zugestimmt hast, und wann du zuletzt aktiv warst.", "<strong>Briefe und Antworten.</strong> Der Text der Briefe und Antworten, die du schreibst, ihre Übersetzungen, Prüfergebnisse, Dankesnachrichten und Zustelldetails wie Daten und welche Briefe dir angeboten oder von dir ausgewählt wurden.", "<strong>Sicherheitsdaten.</strong> Meldungen, die du sendest, Meldungen über deine Inhalte, eine Kopie des gemeldeten Inhalts, so wie die meldende Person ihn gesehen hat, die Personen, die du blockierst, und Kontoeinschränkungen.", "<strong>Mitteilungen.</strong> Wenn du Mitteilungen erlaubst, das Push-Token deines Geräts und die Plattform.", "<strong>Tipps auf Links zu unseren Apps.</strong> Wenn du auf einen Link zu einer unserer anderen Apps tippst, sendet die App, um welche App es geht, wo der Link war und welche Plattform du nutzt. Diese Tipps werden pro Tag gezählt, ohne deine Konto-Kennung oder IP-Adresse.", "<strong>Nachrichten an uns.</strong> Wenn du uns eine E-Mail schreibst, deine E-Mail-Adresse und was du schreibst."]},
+      {"h": "2. Ungefährer Standort", "p": ["Moss muss grob wissen, woher und wohin Briefe reisen. Wenn sich dein Gerät mit unserem Server verbindet, schätzt unser Hosting-Anbieter anhand deiner IP-Adresse eine Stadt. Wir runden die Koordinaten auf etwa 10 km und speichern eine Stadt, nicht deine Adresse oder deine IP-Adresse. Leser sehen nur diese ungefähre Stadt. Die App fragt die Ortungsdienste deines Geräts weder an noch nutzt sie sie."]},
+      {"h": "3. Wie wir Informationen verwenden", "p": ["Wir verwenden diese Informationen, um die App zu betreiben: um dich anzumelden, Briefe zwischen Städten und Zeitzonen zuzustellen, Briefe zu übersetzen, Inhalte auf Sicherheit zu prüfen, Hilfsangebote anzuzeigen, wenn ein Brief darauf hindeutet, dass jemand sie brauchen könnte, Mitteilungen zu senden, Meldungen und Blockierungen zu bearbeiten, Missbrauch zu verhindern und Anfragen zu begrenzen, Probleme zu beheben und deine Nachrichten zu beantworten. Wir verkaufen deine Informationen nicht, nutzen sie nicht für Werbung und erstellen keine Profile über dich."]},
+      {"h": "4. KI-Prüfung und Übersetzung", "p": ["Bevor ein Brief oder eine Antwort zugestellt wird, senden wir seinen Text, seine Sprache und bei Antworten den ursprünglichen Brief als Kontext an OpenAI. OpenAI prüft ihn anhand unserer Briefregeln und übersetzt ihn. KI schreibt oder bearbeitet deine Briefe nie. Du stimmst dem zu, wenn du vor deinem ersten Brief die Nutzungsbedingungen akzeptierst.", "Wir senden Anfragen mit ausgeschalteter Speicheroption von OpenAI. Nach den API-Richtlinien von OpenAI werden API-Daten standardmäßig nicht zum Training seiner Modelle verwendet, OpenAI kann sie aber für begrenzte Zeit aufbewahren, um Missbrauch zu erkennen. Siehe die <a href=\"https://openai.com/policies/privacy-policy/\">Datenschutzerklärung von OpenAI</a>."]},
+      {"h": "5. Dienstleister", "p": ["Wir setzen eine kleine Zahl von Dienstleistern ein, um die App zu betreiben:"], "list": ["<strong>Cloudflare</strong> hostet unseren Server und unsere Datenbank und schätzt anhand deiner IP-Adresse deine Stadt;", "<strong>OpenAI</strong> prüft und übersetzt Briefe und Antworten;", "<strong>Apple und Google</strong> stellen die Anmeldung bereit und liefern Mitteilungen über ihre Push-Dienste aus;", "<strong>Expo</strong> leitet Mitteilungen an Apple und Google weiter. Mitteilungen enthalten keinen Brieftext."], "after": ["Diese Dienstleister können Informationen in den USA und in anderen Ländern verarbeiten. Sie behandeln sie nach ihren eigenen Bedingungen und Datenschutzerklärungen."]},
+      {"h": "6. Wie lange wir Informationen aufbewahren", "p": ["Wir bewahren dein Konto und deine Briefe auf, solange dein Konto besteht. Ein Brief ist höchstens 14 Tage unterwegs. Wenn niemand antwortet, kommt er zu dir zurück. Du kannst einen zurückgekehrten Brief und seine Antwort verbrennen, wodurch ihr Text, ihre Übersetzungen und die Prüfdaten gelöscht werden und nur ein minimaler Vermerk bleibt, dass es den Brief gab.", "Wenn du dein Konto löschst, löschen wir dein Konto, deine Sitzungen, deine Briefe, die Antworten, die du geschrieben hast, und die Meldungen, die du gesendet hast, und widerrufen gegebenenfalls deine Apple-Anmeldung. Meldungen, die andere über deine Inhalte gemacht haben, werden ohne deine Konto-Kennung bis zu 90 Tage aufbewahrt, damit wir sie fertig bearbeiten können, und danach gelöscht. Datenbank-Backups können gelöschte Daten bis zu 30 Tage behalten. Daten bei OpenAI, Apple, Google oder anderen Dienstleistern unterliegen deren eigenen Aufbewahrungsregeln."]},
+      {"h": "7. Deine Wahlmöglichkeiten und Rechte", "p": ["Du kannst dein Konto unter Einstellungen &gt; Konto löschen löschen. Mitteilungen kannst du in den Geräteeinstellungen ausschalten. Du kannst jeden blockieren, der dir schreibt.", "Je nachdem, wo du wohnst, hast du möglicherweise das Recht, auf deine Informationen zuzugreifen, sie zu berichtigen, zu löschen oder zu exportieren oder der Nutzung zu widersprechen oder sie einzuschränken. Für eine Anfrage schreib an {emailLink}. Du kannst dich außerdem bei deiner örtlichen Datenschutzbehörde beschweren."]},
+      {"h": "8. Kinder", "p": ["Die App richtet sich nicht an Kinder unter {age} Jahren. Wenn du glaubst, dass ein Kind unter diesem Alter die App nutzt, kontaktiere uns, und wir löschen das Konto."]},
+      {"h": "9. Sicherheit", "p": ["Daten werden über HTTPS übertragen, der Zugriff auf unsere Systeme ist beschränkt, und unsere Protokolle enthalten Fehlercodes, keinen Brieftext und keine Konto-Kennungen. Kein Dienst kann vollkommen sicher sein, deshalb schreib bitte keine identifizierenden Informationen in deine Briefe."]},
+      {"h": "10. Diese Website", "p": ["Diese Website, einschließlich der Seite, auf der diese Erklärung veröffentlicht ist, nutzt Google Analytics 4, um Besuche zu verstehen. Google kann Browser- und Geräteinformationen, einen ungefähren Standort anhand deiner IP-Adresse, die Seiten, die du aufrufst, und Cookies oder ähnliche Kennungen erhalten, gemäß der <a href=\"https://policies.google.com/privacy\">Datenschutzerklärung von Google</a>. Die App selbst nutzt Google Analytics nicht."]},
+      {"h": "11. Änderungen", "p": ["Wenn wir diese Erklärung ändern, aktualisieren wir das oben genannte Datum, ab dem sie gilt. Wenn die Änderung wichtig ist, sagen wir es dir in der App, bevor sie wirksam wird."]},
+      {"h": "12. Kontakt", "p": ["Jongmin Lee, JML.Studio: {emailLink}"]}
+    ]
+  }
+}

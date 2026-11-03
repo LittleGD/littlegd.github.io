@@ -1,0 +1,110 @@
+{
+  "langName": "English",
+  "common": {
+    "skip": "Skip to content",
+    "language": "Language",
+    "support": "Support",
+    "terms": "Terms of Use",
+    "privacy": "Privacy Policy",
+    "home": "Moss’s Club house",
+    "studio": "JML.Studio",
+    "soon": "Coming soon to iPhone and Android",
+    "free": "Free. No ads.",
+    "effective": "Effective date: {date}",
+    "date": "November 1, 2026"
+  },
+  "landing": {
+    "title": "Moss’s Club house · Anonymous letters, carried by Moss",
+    "description": "Write a worry on an old typewriter. Moss, a little garden gnome, carries it to another city, and a stranger writes back. Written by people, never by AI. Free for iPhone and Android.",
+    "h1": "Write it down.<br> Moss will carry it.",
+    "lede": "Type out a worry on an old typewriter. Moss, a little garden gnome, carries your letter to another city, where a stranger reads it and writes back.",
+    "artAlt": "Moss, a garden gnome with a red pointed hat and a white beard",
+    "howTitle": "How it works",
+    "steps": [
+      {"t": "Write one worry a day", "b": "Sit at the typewriter and write what’s on your mind. No name, no profile. Just the letter."},
+      {"t": "Moss carries it away", "b": "Moss takes your letter to another city. Each day Moss brings you a few letters from elsewhere, too."},
+      {"t": "A stranger writes back", "b": "Someone picks your letter and writes one reply. When it comes back, you can send a small thank-you."}
+    ],
+    "promiseTitle": "Small promises",
+    "promises": [
+      {"t": "Written by people", "b": "Every letter and reply is written by a person. AI only checks letters for safety and translates them, so letters can travel between languages."},
+      {"t": "Anonymous", "b": "Other people see your letter, not you. They only see the approximate city it came from."},
+      {"t": "Free, without ads", "b": "No ads, no paid features, no tracking."}
+    ],
+    "safetyTitle": "A kind place, kept together",
+    "safetyBody": "Letters are reviewed before Moss delivers them. If a letter feels wrong, you can report it or block the sender from inside the letter. Moss’s Club house is not a crisis service. If you might be in danger, contact local emergency services or someone near you now.",
+    "closingTitle": "Somewhere, someone is<br> writing back.",
+    "closingBody": "Available in English, Español, Português, Français, Deutsch, 한국어, 日本語, 简体中文 and 繁體中文."
+  },
+  "support": {
+    "title": "Support · Moss’s Club house",
+    "description": "Help with Moss’s Club house: contact, letters and replies, reporting and blocking, and deleting your account.",
+    "h1": "Moss’s Club house Support",
+    "lede": "Questions, or something not working? Write to us.",
+    "contactTitle": "Contact",
+    "contactBody": "Tell us your phone model, its OS version and what happened on which screen, and we can help faster. You can write in any language. Please don’t include the text of anyone else’s letter.",
+    "subject": "Moss’s Club house",
+    "reportTitle": "Reporting a letter",
+    "reportBody": "To report a letter or reply, open it in the app and tap Report letter. Your report reaches us with the letter attached, so you don’t need to copy anything. You can also tap Block this sender so you won’t exchange letters with that person again.",
+    "dangerTitle": "If you are in danger",
+    "dangerBody": "Moss’s Club house can’t respond to emergencies. If you or someone else might be in immediate danger, contact local emergency services or someone nearby now. Don’t wait for a letter reply.",
+    "faq": [
+      {"q": "Do I need an account?", "a": "Yes. Sign in with Apple or Google so your letters can find their way back to you. Other people never see your name or email."},
+      {"q": "How many letters can I write?", "a": "One worry letter a day. Each day Moss also brings you up to three letters from other people. Choose one to answer, and you have 48 hours to write your reply."},
+      {"q": "My letter came back without a reply", "a": "Sometimes nobody picks a letter in time. When that happens, Moss brings it back to you. You can write a new letter the next day."},
+      {"q": "Who reads my letter?", "a": "The person who receives it. Before delivery, an automated review checks the letter and translates it into the reader’s language. AI does not write or change what you say. If a letter needs changes before it can be sent, the app tells you."},
+      {"q": "Can people see where I live?", "a": "No. Moss only uses an approximate city based on your network connection, and readers see only that approximate city. The app doesn’t use your phone’s GPS."},
+      {"q": "What does burning a letter do?", "a": "Holding to burn a draft clears it from your phone without sending it. After a reply comes back, you can also burn the letter and its reply to remove them from your archive. This can’t be undone."},
+      {"q": "How do I delete my account?", "a": "Open Settings in the app and tap Delete account. Your account, your letters and the replies you wrote are deleted, and this can’t be undone. See the Privacy Policy for the few records kept for safety."},
+      {"q": "Does it cost anything?", "a": "No. Moss’s Club house is free, with no ads and no paid features."}
+    ]
+  },
+  "terms": {
+    "title": "Terms of Use · Moss’s Club house",
+    "description": "The rules for using Moss’s Club house: who can use it, what letters may contain, reporting, AI review and your account.",
+    "h1": "Moss’s Club house Terms of Use",
+    "intro": "Moss’s Club house (the “app”) is made by Jongmin Lee, an independent developer at JML.Studio (“we”). By creating an account or using the app, you agree to these terms. If you don’t agree, please don’t use the app.",
+    "sections": [
+      {"h": "1. What the app is", "p": ["The app lets people exchange anonymous letters about their worries. You can write one letter a day. Other people may receive it and write one reply. Letters are reviewed automatically and translated so they can travel between languages.", "The app is not therapy, medical, legal or crisis support. Replies come from other users, not from professionals, and we don’t check whether their advice is right for you. If you might be in danger, contact local emergency services right away."]},
+      {"h": "2. Who can use it", "p": ["You must be at least {age} years old to use the app. If you are under the age of majority where you live, you need permission from a parent or guardian. You may not use the app if we have restricted your account or if the law where you live forbids it."]},
+      {"h": "3. Your account", "p": ["You sign in with Apple or Google. Keep your device and sign-in secure, because you are responsible for what is sent from your account. One person, one account: don’t create accounts to get around a restriction."]},
+      {"h": "4. Letter rules", "p": ["Moss’s Club house works because people are kind to strangers. When you write a letter or a reply, you agree not to:"], "list": ["harass, threaten, insult or shame anyone, or encourage anyone to hurt themselves or others;", "post hate speech or content that attacks people for who they are;", "post sexual content, or any content that sexualizes minors;", "share personal information that could identify you or anyone else, such as names, phone numbers, addresses, social media accounts or photos;", "ask to meet, move the conversation elsewhere, or ask for money;", "advertise, spam, or send links;", "post content that is illegal, or that infringes someone else’s rights;", "pretend to be someone else, or use automated means to send letters."], "after": ["We have zero tolerance for objectionable content and abusive users. You can talk about hard feelings and painful experiences. That is what the app is for. What matters is how you treat the people reading."]},
+      {"h": "5. Review, reporting and blocking", "p": ["Every letter and reply is checked before delivery by an automated review that uses AI. A letter may be delivered, returned to you to revise, held, or not delivered. The review can make mistakes, and it doesn’t guarantee that every letter you receive will be appropriate.", "You can report any letter or reply you receive, and you can block its sender. We review reports and act on objectionable content as quickly as we can, aiming for within 24 hours. We may remove content, and we may restrict or end accounts that break these terms, with or without notice. A restricted account can’t send, reply or receive new letters."]},
+      {"h": "6. Your letters", "p": ["You keep ownership of what you write. You give us a worldwide, non-exclusive, royalty-free license to store, review, translate, deliver and display your letters and replies to operate the app, and to keep them as described in the Privacy Policy. Once a letter is delivered, its reader can read it, and we can’t control what a reader does with what they read.", "Don’t send anything you aren’t comfortable sharing with a stranger."]},
+      {"h": "7. Free service and changes", "p": ["The app is free. We may change, pause or stop the app or any feature, including letter limits and delivery timing. Letters in transit may be lost if the service stops. We will try to give notice of major changes in the app or on this page."]},
+      {"h": "8. Disclaimers and liability", "p": ["The app is provided “as is” and “as available”. To the extent the law allows, we make no warranties about the app, about other users or about the content of letters and replies, and we are not liable for indirect, incidental or consequential damages, or for loss of data. Nothing in these terms limits rights you have under laws that can’t be changed by contract."]},
+      {"h": "9. Ending your use", "p": ["You can stop using the app at any time and delete your account in Settings. We may suspend or end your access if you break these terms or if we need to in order to protect other users or comply with the law."]},
+      {"h": "10. App stores", "p": ["If you downloaded the app from Apple’s App Store, Apple’s Licensed Application End User License Agreement also applies, and these terms add to it. Apple and Google are not responsible for the app or its content."]},
+      {"h": "11. Changes to these terms", "p": ["We may update these terms. When we do, we will change the effective date above, and if the change matters, we will tell you in the app. If you keep using the app after the change, you accept the new terms."]},
+      {"h": "12. Contact", "p": ["Questions about these terms: {emailLink}"]}
+    ]
+  },
+  "privacy": {
+    "title": "Privacy Policy · Moss’s Club house",
+    "description": "How Moss’s Club house handles your data: your account, letters and replies, approximate location, AI review and translation, notifications, and your choices.",
+    "h1": "Moss’s Club house Privacy Policy",
+    "intro": "Moss’s Club house (the “app”) is made by Jongmin Lee, an independent developer at JML.Studio (“we”). This policy explains what information the app uses, why, who helps us process it and how long we keep it.",
+    "summaryTitle": "Summary",
+    "summary": [
+      "Other users never see your name or email. They see your letter and an approximate city.",
+      "Letters and replies are sent to OpenAI for safety review and translation. OpenAI does not write them.",
+      "Your approximate city comes from your network connection. The app doesn’t use GPS.",
+      "No ads, no tracking, no analytics or advertising SDKs in the app.",
+      "You can delete your account and letters in the app at any time."
+    ],
+    "sections": [
+      {"h": "1. Information we collect", "p": ["<strong>Account.</strong> When you sign in with Apple or Google, we receive an account identifier and your email address (Apple may give us a private relay address). We don’t store your name or profile photo from these providers. If you use Sign in with Apple, we also keep an encrypted Apple token so we can revoke your Apple sign-in when you delete your account.", "<strong>Profile.</strong> Your app language, your time zone, your approximate city, the version of the terms you accepted and when you were last active.", "<strong>Letters and replies.</strong> The text of letters and replies you write, their translations, review results, thank-you notes, and delivery details such as dates and which letters you were offered or chose.", "<strong>Safety records.</strong> Reports you send, reports about your content, a copy of the reported content as the reporter saw it, the people you block, and account restrictions.", "<strong>Notifications.</strong> If you allow notifications, your device’s push token and platform.", "<strong>Promotion taps.</strong> When you tap a link to one of our other apps, the app sends which app, where the link was and your platform. These are counted per day without your account ID or IP address.", "<strong>Messages to us.</strong> If you email us, your email address and what you write."]},
+      {"h": "2. Approximate location", "p": ["Moss needs to know roughly where letters travel from and to. When your device connects to our server, our hosting provider estimates a city from your IP address. We round coordinates to about 10 km and save a city, not your address or your IP address. Readers see only that approximate city. The app does not ask for or use your device’s location services."]},
+      {"h": "3. How we use information", "p": ["We use this information to run the app: to sign you in, deliver letters between cities and time zones, translate letters, review content for safety, show help resources when a letter suggests someone may need them, send notifications, handle reports and blocks, prevent abuse and rate limit requests, fix problems and answer your messages. We don’t sell your information, use it for advertising, or build profiles about you."]},
+      {"h": "4. AI review and translation", "p": ["Before a letter or reply is delivered, we send its text, its language and, for replies, the original letter as context, to OpenAI. OpenAI checks it against our letter rules and translates it. AI never writes or edits your letters. You agree to this when you accept the Terms of Use before your first letter.", "We send requests with OpenAI’s storage option turned off. According to OpenAI’s API policies, API data is not used to train their models by default, but OpenAI may keep it for a limited period to monitor abuse. See <a href=\"https://openai.com/policies/privacy-policy/\">OpenAI’s Privacy Policy</a>."]},
+      {"h": "5. Service providers", "p": ["We use a small number of providers to run the app:"], "list": ["<strong>Cloudflare</strong> hosts our server and database and estimates your city from your IP address.", "<strong>OpenAI</strong> reviews and translates letters and replies.", "<strong>Apple and Google</strong> provide sign-in, and deliver notifications through their push services.", "<strong>Expo</strong> relays notifications to Apple and Google. Notifications contain no letter text."], "after": ["These providers may process information in the United States and other countries. They handle it under their own terms and privacy policies."]},
+      {"h": "6. How long we keep information", "p": ["We keep your account and letters while your account exists. A letter travels for at most 14 days. If nobody replies, it comes back to you. You can burn a returned letter and its reply, which deletes their text, translations and review data and leaves only a minimal record that the letter existed.", "When you delete your account, we delete your account, sessions, your letters, the replies you wrote and the reports you sent, and revoke your Apple sign-in where it applies. Reports other people made about your content are kept without your account ID for up to 90 days so we can finish handling them, and then deleted. Database backups may keep deleted data for up to 30 days. Records held by OpenAI, Apple, Google or other providers follow their own retention rules."]},
+      {"h": "7. Your choices and rights", "p": ["You can delete your account in Settings &gt; Delete account. You can turn notifications off in your device settings. You can block anyone who writes to you.", "Depending on where you live, you may have the right to access, correct, delete or export your information, or to object to or restrict how we use it. To make a request, email {emailLink}. You can also complain to your local data protection authority."]},
+      {"h": "8. Children", "p": ["The app is not intended for children under {age}. If you believe a child under that age is using the app, contact us and we will delete the account."]},
+      {"h": "9. Security", "p": ["Data is sent over HTTPS, access to our systems is limited, and our logs record error codes, not letter text or account IDs. No service can be perfectly secure, so please don’t put identifying information in your letters."]},
+      {"h": "10. This website", "p": ["This website, including the page where this policy is published, uses Google Analytics 4 to understand visits. Google may receive browser and device information, an approximate location from your IP address, the pages you view and cookies or similar identifiers, under <a href=\"https://policies.google.com/privacy\">Google’s Privacy Policy</a>. The app itself does not use Google Analytics."]},
+      {"h": "11. Changes", "p": ["If we change this policy, we will update the effective date above. If the change matters, we will tell you in the app before it takes effect."]},
+      {"h": "12. Contact", "p": ["Jongmin Lee, JML.Studio: {emailLink}"]}
+    ]
+  }
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Each language has a stable address. Only an explicit ?lang= request
+   changes language; browser settings never redirect a page. */
+(function () {
+  var here = "zh-Hant", urls = {"en": "/moss/privacy/", "es": "/moss/es/privacy/", "pt-BR": "/moss/pt-br/privacy/", "fr": "/moss/fr/privacy/", "de": "/moss/de/privacy/", "ko": "/moss/ko/privacy/", "ja": "/moss/ja/privacy/", "zh-Hans": "/moss/zh-hans/privacy/", "zh-Hant": "/moss/zh-hant/privacy/"}, want;
+  function pick(tag) {
+    tag = String(tag || '').toLowerCase();
+    if (/^zh-(hant|tw|hk|mo)/.test(tag)) return 'zh-Hant';
+    if (/^zh/.test(tag)) return 'zh-Hans';
+    return { en: 'en', es: 'es', pt: 'pt-BR', fr: 'fr', de: 'de', ko: 'ko', ja: 'ja' }[tag.split('-')[0]];
+  }
+  try { want = pick(new URLSearchParams(location.search).get('lang')); } catch (e) {}
+  if (want && want !== here) location.replace(urls[want] + location.hash);
+})();
+</script>
+<title>隱私權政策 · Moss’s Club house</title>
+<meta name="description" content="Moss’s Club house 如何處理你的資料：你的帳戶、信件與回信、大概位置、AI 審核與翻譯、通知，以及你的選擇。">
+<meta name="author" content="Jongmin Lee">
+<link rel="canonical" href="https://littlegd.github.io/moss/zh-hant/privacy/">
+<link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/privacy/">
+<link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/privacy/">
+<link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/privacy/">
+<link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/privacy/">
+<link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/privacy/">
+<link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/privacy/">
+<link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/privacy/">
+<link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/privacy/">
+<link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/privacy/">
+<link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/privacy/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ECEEE9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#202521" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JML.Studio">
+<meta property="og:url" content="https://littlegd.github.io/moss/zh-hant/privacy/">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:title" content="隱私權政策 · Moss’s Club house">
+<meta property="og:description" content="Moss’s Club house 如何處理你的資料：你的帳戶、信件與回信、大概位置、AI 審核與翻譯、通知，以及你的選擇。">
+<meta property="og:image" content="https://littlegd.github.io/assets/moss-icon-512.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta property="og:image:alt" content="Moss，一位戴著紅色尖帽、留著白鬍子的園藝小矮人">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" href="/assets/moss-icon-512.png">
+<link rel="apple-touch-icon" href="/moss/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/moss/moss.css">
+<script src="/moss/moss.js" defer></script>
+<script defer src="/analytics.js"></script>
+</head>
+<body class="page-privacy">
+<a class="skip" href="#main">跳至主要內容</a>
+<header class="top"><div class="top-inner wrap">
+ <a class="brand" href="/moss/zh-hant/"><img src="/assets/moss-icon-512.png" width="36" height="36" alt=""><span translate="no">Moss’s Club house</span></a>
+ <details class="lang"><summary><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M1.75 8h12.5M8 1.75c1.7 1.8 2.6 3.9 2.6 6.25S9.7 12.45 8 14.25C6.3 12.45 5.4 10.35 5.4 8S6.3 3.55 8 1.75z"/></svg><span class="sr">語言: </span>繁體中文</summary><ul class="lang-menu" role="list"><li><a href="/moss/privacy/" hreflang="en" lang="en">English</a></li><li><a href="/moss/es/privacy/" hreflang="es" lang="es">Español</a></li><li><a href="/moss/pt-br/privacy/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li><li><a href="/moss/fr/privacy/" hreflang="fr" lang="fr">Français</a></li><li><a href="/moss/de/privacy/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/moss/ko/privacy/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/moss/ja/privacy/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/moss/zh-hans/privacy/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="/moss/zh-hant/privacy/" hreflang="zh-Hant" lang="zh-Hant" aria-current="true">繁體中文</a></li></ul></details>
+</div></header>
+<main id="main" class="wrap narrow doc"><article aria-labelledby="h">
+<div class="page-head"><h1 id="h">Moss’s Club house 隱私權政策</h1></div>
+<p class="meta">生效日期：2026年11月1日</p>
+<p>Moss’s Club house（以下簡稱「App」）由獨立開發者 Jongmin Lee 在 JML.Studio（以下簡稱「我們」）製作。本政策說明 App 使用哪些資訊、為什麼使用、誰協助我們處理這些資訊，以及我們保留多久。</p>
+<h2>摘要</h2><ul><li>其他使用者永遠看不到你的姓名或電子郵件，只能看到你的信和一個大概的城市。</li><li>信件和回信會傳送給 OpenAI 進行安全審核和翻譯。信不是由 OpenAI 寫的。</li><li>你的大概城市來自你的網路連線。App 不使用 GPS。</li><li>沒有廣告，沒有追蹤，App 中沒有分析或廣告 SDK。</li><li>你可以隨時在 App 中刪除你的帳戶和信件。</li></ul>
+<h2 id="s1">1. 我們蒐集的資訊</h2>
+<p><strong>帳戶。</strong>當你用 Apple 或 Google 登入時，我們會收到一個帳戶識別碼和你的電子郵件地址（Apple 可能會提供一個私密轉傳地址）。我們不會儲存這些服務提供的你的姓名或大頭貼。如果你使用「使用 Apple 登入」，我們還會儲存一個加密的 Apple 權杖，以便在你刪除帳戶時撤銷你的 Apple 登入。</p>
+<p><strong>個人檔案。</strong>你的 App 語言、時區、大概的城市、你接受的條款版本，以及你上次活躍的時間。</p>
+<p><strong>信件和回信。</strong>你寫下的信件和回信的文字、它們的譯文、審核結果、感謝留言，以及遞送詳情，例如日期，以及你被提供或選擇了哪些信件。</p>
+<p><strong>安全紀錄。</strong>你送出的檢舉、針對你內容的檢舉、檢舉人所看到的被檢舉內容的副本、你封鎖的人，以及帳戶限制。</p>
+<p><strong>通知。</strong>如果你允許通知，則包括你裝置的推播權杖和平台。</p>
+<p><strong>推廣點按。</strong>當你點按指向我們其他 App 的連結時，App 會傳送是哪個 App、連結在哪裡，以及你的平台。這些資料按天計數，不含你的帳戶 ID 或 IP 位址。</p>
+<p><strong>給我們的訊息。</strong>如果你寄電子郵件給我們，則包括你的電子郵件地址和你寫的內容。</p>
+<h2 id="s2">2. 大概位置</h2>
+<p>Moss 需要大致知道信件從哪裡來、到哪裡去。當你的裝置連線到我們的伺服器時，我們的代管服務商會根據你的 IP 位址估算一個城市。我們會把座標取整到大約 10 公里，只儲存一個城市，而不是你的地址或 IP 位址。讀信的人只能看到這個大概的城市。App 不會要求或使用你裝置的定位服務。</p>
+<h2 id="s3">3. 我們如何使用資訊</h2>
+<p>我們使用這些資訊來營運 App：讓你登入、在不同城市和時區之間遞送信件、翻譯信件、審核內容的安全性、在信件顯示有人可能需要協助時提供求助資源、發送通知、處理檢舉和封鎖、防止濫用並限制請求頻率、修正問題，以及回覆你的訊息。我們不會出售你的資訊，不會將其用於廣告，也不會建立關於你的使用者輪廓。</p>
+<h2 id="s4">4. AI 審核與翻譯</h2>
+<p>在信件或回信送達之前，我們會把它的文字、語言，以及（對回信而言）作為上下文的原信，傳送給 OpenAI。OpenAI 會依照我們的寫信規則進行檢查，並加以翻譯。AI 從不撰寫或編輯你的信。你在寫第一封信之前接受使用條款，即表示你同意這個做法。</p>
+<p>我們傳送請求時關閉了 OpenAI 的儲存選項。根據 OpenAI 的 API 政策，API 資料預設不會用於訓練其模型，但 OpenAI 可能會為了監測濫用而在有限期間內保留這些資料。請參閱 <a href="https://openai.com/policies/privacy-policy/">OpenAI 的隱私權政策</a>。</p>
+<h2 id="s5">5. 服務提供者</h2>
+<p>我們使用少數幾家服務提供者來營運 App：</p>
+<ul><li><strong>Cloudflare</strong> 代管我們的伺服器和資料庫，並根據你的 IP 位址估算你的城市。</li><li><strong>OpenAI</strong> 審核並翻譯信件和回信。</li><li><strong>Apple 和 Google</strong> 提供登入服務，並透過它們的推播服務送達通知。</li><li><strong>Expo</strong> 將通知轉送給 Apple 和 Google。通知中不包含信件文字。</li></ul>
+<p>這些服務提供者可能會在美國和其他國家或地區處理資訊，並依照它們各自的條款和隱私權政策處理。</p>
+<h2 id="s6">6. 我們保留資訊多久</h2>
+<p>只要你的帳戶存在，我們就會保留你的帳戶和信件。一封信最多遞送 14 天。如果無人回信，它會回到你手中。你可以燒掉一封退回的信和它的回信，這會刪除它們的文字、譯文和審核資料，只留下一筆表示這封信曾經存在的最少紀錄。</p>
+<p>當你刪除帳戶時，我們會刪除你的帳戶、工作階段、你的信件、你寫的回信，以及你送出的檢舉，並在適用時撤銷你的 Apple 登入。其他人針對你內容所做的檢舉，會在去除你帳戶 ID 的情況下保留最多 90 天，以便我們處理完畢，之後刪除。資料庫備份可能會將已刪除的資料保留最多 30 天。OpenAI、Apple、Google 或其他服務提供者所持有的紀錄，依循它們各自的保留規則。</p>
+<h2 id="s7">7. 你的選擇與權利</h2>
+<p>你可以在「設定」&gt;「刪除帳戶」中刪除你的帳戶。你可以在裝置設定中關閉通知。你可以封鎖任何寫信給你的人。</p>
+<p>依據你所在的地區，你可能有權存取、更正、刪除或匯出你的資訊，或反對或限制我們對其的使用。如需提出請求，請寄電子郵件至 <a href="mailto:lee1993ljm@gmail.com">lee1993ljm@gmail.com</a>。你也可以向當地的資料保護主管機關申訴。</p>
+<h2 id="s8">8. 兒童</h2>
+<p>App 不是為 13 歲以下的兒童設計的。如果你認為有低於該年齡的兒童正在使用 App，請聯絡我們，我們會刪除該帳戶。</p>
+<h2 id="s9">9. 安全</h2>
+<p>資料透過 HTTPS 傳輸，對我們系統的存取受到限制，我們的記錄檔只記錄錯誤代碼，不記錄信件文字或帳戶 ID。沒有任何服務能做到絕對安全，所以請不要在信裡寫下可識別身分的資訊。</p>
+<h2 id="s10">10. 本網站</h2>
+<p>本網站（包括發布本政策的頁面）使用 Google Analytics 4 來瞭解造訪情況。Google 可能會依據 <a href="https://policies.google.com/privacy">Google 的隱私權政策</a>，收到瀏覽器和裝置資訊、根據你的 IP 位址得出的大概位置、你瀏覽的頁面，以及 Cookie 或類似識別碼。App 本身不使用 Google Analytics。</p>
+<h2 id="s11">11. 變更</h2>
+<p>如果我們更改本政策，會更新上方的生效日期。如果變更重要，我們會在其生效之前在 App 中告知你。</p>
+<h2 id="s12">12. 聯絡我們</h2>
+<p>Jongmin Lee，JML.Studio：<a href="mailto:lee1993ljm@gmail.com">lee1993ljm@gmail.com</a></p>
+</article></main>
+<footer class="foot"><div class="wrap foot-inner">
+ <nav aria-label="Moss’s Club house"><a href="/moss/zh-hant/" translate="no">Moss’s Club house</a><a href="/moss/zh-hant/support/">支援</a><a href="/moss/zh-hant/terms/">使用條款</a><a href="/moss/zh-hant/privacy/">隱私權政策</a><a href="/">JML.Studio</a></nav>
+ <p>&copy; 2026 JML.Studio</p>
+</div></footer>
+</body>
+</html>

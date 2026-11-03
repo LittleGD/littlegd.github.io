@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Each language has a stable address. Only an explicit ?lang= request
+   changes language; browser settings never redirect a page. */
+(function () {
+  var here = "fr", urls = {"en": "/moss/", "es": "/moss/es/", "pt-BR": "/moss/pt-br/", "fr": "/moss/fr/", "de": "/moss/de/", "ko": "/moss/ko/", "ja": "/moss/ja/", "zh-Hans": "/moss/zh-hans/", "zh-Hant": "/moss/zh-hant/"}, want;
+  function pick(tag) {
+    tag = String(tag || '').toLowerCase();
+    if (/^zh-(hant|tw|hk|mo)/.test(tag)) return 'zh-Hant';
+    if (/^zh/.test(tag)) return 'zh-Hans';
+    return { en: 'en', es: 'es', pt: 'pt-BR', fr: 'fr', de: 'de', ko: 'ko', ja: 'ja' }[tag.split('-')[0]];
+  }
+  try { want = pick(new URLSearchParams(location.search).get('lang')); } catch (e) {}
+  if (want && want !== here) location.replace(urls[want] + location.hash);
+})();
+</script>
+<title>Moss’s Club house · Des lettres anonymes, portées par Moss</title>
+<meta name="description" content="Écrivez un souci sur une vieille machine à écrire. Moss, un petit gnome de jardin, le porte dans une autre ville, et un inconnu vous répond. Écrit par des personnes, jamais par une IA. Gratuit sur iPhone et Android.">
+<meta name="author" content="Jongmin Lee">
+<link rel="canonical" href="https://littlegd.github.io/moss/fr/">
+<link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/">
+<link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/">
+<link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/">
+<link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/">
+<link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/">
+<link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/">
+<link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/">
+<link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/">
+<link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/">
+<link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ECEEE9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#202521" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JML.Studio">
+<meta property="og:url" content="https://littlegd.github.io/moss/fr/">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:title" content="Moss’s Club house · Des lettres anonymes, portées par Moss">
+<meta property="og:description" content="Écrivez un souci sur une vieille machine à écrire. Moss, un petit gnome de jardin, le porte dans une autre ville, et un inconnu vous répond. Écrit par des personnes, jamais par une IA. Gratuit sur iPhone et Android.">
+<meta property="og:image" content="https://littlegd.github.io/assets/moss-icon-512.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta property="og:image:alt" content="Moss, un gnome de jardin avec un bonnet rouge pointu et une barbe blanche">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "@id": "https://littlegd.github.io/moss/#app",
+  "name": "Moss’s Club house",
+  "description": "Écrivez un souci sur une vieille machine à écrire. Moss, un petit gnome de jardin, le porte dans une autre ville, et un inconnu vous répond. Écrit par des personnes, jamais par une IA. Gratuit sur iPhone et Android.",
+  "url": "https://littlegd.github.io/moss/fr/",
+  "image": "https://littlegd.github.io/assets/moss-icon-512.png",
+  "applicationCategory": "SocialNetworkingApplication",
+  "operatingSystem": "iOS, Android",
+  "inLanguage": [
+    "en",
+    "es",
+    "pt-BR",
+    "fr",
+    "de",
+    "ko",
+    "ja",
+    "zh-Hans",
+    "zh-Hant"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Jongmin Lee"
+  }
+}
+</script>
+<link rel="icon" type="image/png" href="/assets/moss-icon-512.png">
+<link rel="apple-touch-icon" href="/moss/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/moss/moss.css">
+<script src="/moss/moss.js" defer></script>
+<script defer src="/analytics.js"></script>
+</head>
+<body class="page-home">
+<a class="skip" href="#main">Aller au contenu</a>
+<header class="top"><div class="top-inner wrap">
+ <a class="brand" href="/moss/fr/"><img src="/assets/moss-icon-512.png" width="36" height="36" alt=""><span translate="no">Moss’s Club house</span></a>
+ <details class="lang"><summary><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M1.75 8h12.5M8 1.75c1.7 1.8 2.6 3.9 2.6 6.25S9.7 12.45 8 14.25C6.3 12.45 5.4 10.35 5.4 8S6.3 3.55 8 1.75z"/></svg><span class="sr">Langue: </span>Français</summary><ul class="lang-menu" role="list"><li><a href="/moss/" hreflang="en" lang="en">English</a></li><li><a href="/moss/es/" hreflang="es" lang="es">Español</a></li><li><a href="/moss/pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li><li><a href="/moss/fr/" hreflang="fr" lang="fr" aria-current="true">Français</a></li><li><a href="/moss/de/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/moss/ko/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/moss/ja/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/moss/zh-hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="/moss/zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li></ul></details>
+</div></header>
+<main id="main">
+ <section class="hero wrap" aria-labelledby="hero-title">
+  <div class="hero-copy">
+   <h1 id="hero-title"><span class="sr" translate="no">Moss’s Club house. </span>Écrivez-le.<br> Moss le portera.</h1>
+   <p class="lede">Tapez un souci sur une vieille machine à écrire. Moss, un petit gnome de jardin, porte votre lettre dans une autre ville, où un inconnu la lit et vous répond.</p>
+   <p class="soon"><span class="dot" aria-hidden="true"></span>Bientôt sur iPhone et Android</p><p class="note">Gratuit. Sans publicité.</p>
+  </div>
+  <figure class="portrait"><img src="/moss/assets/moss-portrait.webp" width="720" height="720" alt="Moss, un gnome de jardin avec un bonnet rouge pointu et une barbe blanche" fetchpriority="high" decoding="async"></figure>
+ </section>
+ <section class="how wrap" aria-labelledby="how-title">
+  <h2 id="how-title">Comment ça marche</h2>
+  <ol class="steps" role="list"><li><span class="num" aria-hidden="true">1</span><h3>Un souci par jour</h3><p>Installez-vous devant la machine à écrire et écrivez ce qui vous préoccupe. Pas de nom, pas de profil. Juste la lettre.</p></li><li><span class="num" aria-hidden="true">2</span><h3>Moss l’emporte</h3><p>Moss emmène votre lettre dans une autre ville. Chaque jour, il vous rapporte aussi quelques lettres venues d’ailleurs.</p></li><li><span class="num" aria-hidden="true">3</span><h3>Un inconnu vous répond</h3><p>Quelqu’un choisit votre lettre et écrit une réponse. Quand elle revient, vous pouvez envoyer un petit remerciement.</p></li></ol>
+ </section>
+ <div class="road" aria-hidden="true"><span class="walker"></span></div>
+ <section class="promise wrap" aria-labelledby="promise-title">
+  <h2 id="promise-title">Quelques petites promesses</h2>
+  <ul class="cards" role="list"><li><h3>Écrit par des personnes</h3><p>Chaque lettre et chaque réponse est écrite par une personne. L’IA sert uniquement à vérifier la sécurité des lettres et à les traduire, pour qu’elles voyagent d’une langue à l’autre.</p></li><li><h3>Anonyme</h3><p>Les autres voient votre lettre, pas vous. Ils voient seulement la ville approximative d’où elle vient.</p></li><li><h3>Gratuit, sans publicité</h3><p>Pas de publicité, pas de fonctions payantes, pas de suivi.</p></li></ul>
+ </section>
+ <section class="safety wrap" aria-labelledby="safety-title">
+  <div class="letter"><h2 id="safety-title">Un lieu bienveillant, entretenu ensemble</h2><p>Les lettres sont examinées avant que Moss les livre. Si une lettre vous semble inappropriée, vous pouvez la signaler ou bloquer son expéditeur depuis la lettre elle-même. Moss’s Club house n’est pas un service d’urgence. Si vous êtes peut-être en danger, contactez dès maintenant les services d’urgence locaux ou une personne près de vous.</p></div>
+ </section>
+ <section class="closing wrap" aria-labelledby="closing-title">
+  <h2 id="closing-title">Quelque part, quelqu’un<br> vous répond.</h2>
+  <p class="soon"><span class="dot" aria-hidden="true"></span>Bientôt sur iPhone et Android</p><p class="note">Gratuit. Sans publicité.</p>
+  <p class="langs">Disponible en English, Español, Português, Français, Deutsch, 한국어, 日本語, 简体中文 et 繁體中文.</p>
+ </section>
+</main>
+<footer class="foot"><div class="wrap foot-inner">
+ <nav aria-label="Moss’s Club house"><a href="/moss/fr/" translate="no">Moss’s Club house</a><a href="/moss/fr/support/">Aide</a><a href="/moss/fr/terms/">Conditions d’utilisation</a><a href="/moss/fr/privacy/">Politique de confidentialité</a><a href="/">JML.Studio</a></nav>
+ <p>&copy; 2026 JML.Studio</p>
+</div></footer>
+</body>
+</html>

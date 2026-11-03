@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Each language has a stable address. Only an explicit ?lang= request
+   changes language; browser settings never redirect a page. */
+(function () {
+  var here = "es", urls = {"en": "/moss/terms/", "es": "/moss/es/terms/", "pt-BR": "/moss/pt-br/terms/", "fr": "/moss/fr/terms/", "de": "/moss/de/terms/", "ko": "/moss/ko/terms/", "ja": "/moss/ja/terms/", "zh-Hans": "/moss/zh-hans/terms/", "zh-Hant": "/moss/zh-hant/terms/"}, want;
+  function pick(tag) {
+    tag = String(tag || '').toLowerCase();
+    if (/^zh-(hant|tw|hk|mo)/.test(tag)) return 'zh-Hant';
+    if (/^zh/.test(tag)) return 'zh-Hans';
+    return { en: 'en', es: 'es', pt: 'pt-BR', fr: 'fr', de: 'de', ko: 'ko', ja: 'ja' }[tag.split('-')[0]];
+  }
+  try { want = pick(new URLSearchParams(location.search).get('lang')); } catch (e) {}
+  if (want && want !== here) location.replace(urls[want] + location.hash);
+})();
+</script>
+<title>Términos de uso · Moss’s Club house</title>
+<meta name="description" content="Las reglas para usar Moss’s Club house: quién puede usarla, qué pueden contener las cartas, denuncias, revisión con IA y tu cuenta.">
+<meta name="author" content="Jongmin Lee">
+<link rel="canonical" href="https://littlegd.github.io/moss/es/terms/">
+<link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/terms/">
+<link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/terms/">
+<link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/terms/">
+<link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/terms/">
+<link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/terms/">
+<link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/terms/">
+<link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/terms/">
+<link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/terms/">
+<link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/terms/">
+<link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/terms/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ECEEE9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#202521" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JML.Studio">
+<meta property="og:url" content="https://littlegd.github.io/moss/es/terms/">
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:title" content="Términos de uso · Moss’s Club house">
+<meta property="og:description" content="Las reglas para usar Moss’s Club house: quién puede usarla, qué pueden contener las cartas, denuncias, revisión con IA y tu cuenta.">
+<meta property="og:image" content="https://littlegd.github.io/assets/moss-icon-512.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta property="og:image:alt" content="Moss, un gnomo de jardín con gorro rojo puntiagudo y barba blanca">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" href="/assets/moss-icon-512.png">
+<link rel="apple-touch-icon" href="/moss/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/moss/moss.css">
+<script src="/moss/moss.js" defer></script>
+<script defer src="/analytics.js"></script>
+</head>
+<body class="page-terms">
+<a class="skip" href="#main">Saltar al contenido</a>
+<header class="top"><div class="top-inner wrap">
+ <a class="brand" href="/moss/es/"><img src="/assets/moss-icon-512.png" width="36" height="36" alt=""><span translate="no">Moss’s Club house</span></a>
+ <details class="lang"><summary><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M1.75 8h12.5M8 1.75c1.7 1.8 2.6 3.9 2.6 6.25S9.7 12.45 8 14.25C6.3 12.45 5.4 10.35 5.4 8S6.3 3.55 8 1.75z"/></svg><span class="sr">Idioma: </span>Español</summary><ul class="lang-menu" role="list"><li><a href="/moss/terms/" hreflang="en" lang="en">English</a></li><li><a href="/moss/es/terms/" hreflang="es" lang="es" aria-current="true">Español</a></li><li><a href="/moss/pt-br/terms/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li><li><a href="/moss/fr/terms/" hreflang="fr" lang="fr">Français</a></li><li><a href="/moss/de/terms/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/moss/ko/terms/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/moss/ja/terms/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/moss/zh-hans/terms/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="/moss/zh-hant/terms/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li></ul></details>
+</div></header>
+<main id="main" class="wrap narrow doc"><article aria-labelledby="h">
+<div class="page-head"><h1 id="h">Términos de uso de Moss’s Club house</h1></div>
+<p class="meta">Fecha de entrada en vigor: 1 de noviembre de 2026</p>
+<p>Moss’s Club house (la «app») está creada por Jongmin Lee, desarrollador independiente de JML.Studio («nosotros»). Al crear una cuenta o usar la app, aceptas estos términos. Si no estás de acuerdo, por favor no uses la app.</p>
+<h2 id="s1">1. Qué es la app</h2>
+<p>La app permite a las personas intercambiar cartas anónimas sobre sus preocupaciones. Puedes escribir una carta al día. Otras personas pueden recibirla y escribir una respuesta. Las cartas se revisan automáticamente y se traducen para que puedan viajar entre idiomas.</p>
+<p>La app no es terapia ni apoyo médico, legal o en situaciones de crisis. Las respuestas vienen de otros usuarios, no de profesionales, y no comprobamos si sus consejos son adecuados para ti. Si puedes estar en peligro, contacta de inmediato con los servicios de emergencia locales.</p>
+<h2 id="s2">2. Quién puede usarla</h2>
+<p>Debes tener al menos 13 años para usar la app. Si no has alcanzado la mayoría de edad donde vives, necesitas el permiso de un padre, madre o tutor. No puedes usar la app si hemos restringido tu cuenta o si la ley de donde vives lo prohíbe.</p>
+<h2 id="s3">3. Tu cuenta</h2>
+<p>Inicias sesión con Apple o Google. Mantén seguros tu dispositivo y tu inicio de sesión, porque eres responsable de lo que se envíe desde tu cuenta. Una persona, una cuenta: no crees cuentas para eludir una restricción.</p>
+<h2 id="s4">4. Reglas de las cartas</h2>
+<p>Moss’s Club house funciona porque las personas son amables con desconocidos. Al escribir una carta o una respuesta, te comprometes a no:</p>
+<ul><li>acosar, amenazar, insultar o avergonzar a nadie, ni animar a nadie a hacerse daño a sí mismo o a otros;</li><li>publicar discurso de odio ni contenido que ataque a las personas por lo que son;</li><li>publicar contenido sexual, ni ningún contenido que sexualice a menores;</li><li>compartir información personal que pueda identificarte a ti o a otra persona, como nombres, números de teléfono, direcciones, cuentas de redes sociales o fotos;</li><li>pedir quedar, llevar la conversación a otro lugar o pedir dinero;</li><li>hacer publicidad, enviar spam o enviar enlaces;</li><li>publicar contenido ilegal o que infrinja los derechos de otra persona;</li><li>hacerte pasar por otra persona ni usar medios automatizados para enviar cartas.</li></ul>
+<p>Tenemos tolerancia cero con el contenido censurable y con los usuarios abusivos. Puedes hablar de sentimientos difíciles y de experiencias dolorosas: para eso está la app. Lo que importa es cómo tratas a quienes te leen.</p>
+<h2 id="s5">5. Revisión, denuncias y bloqueos</h2>
+<p>Cada carta y cada respuesta se comprueba antes de la entrega mediante una revisión automática que usa IA. Una carta puede entregarse, devolverse para que la revises, retenerse o no entregarse. La revisión puede cometer errores y no garantiza que todas las cartas que recibas sean adecuadas.</p>
+<p>Puedes denunciar cualquier carta o respuesta que recibas y bloquear a quien la envió. Revisamos las denuncias y actuamos contra el contenido censurable lo más rápido posible, con el objetivo de hacerlo en menos de 24 horas. Podemos eliminar contenido y podemos restringir o cerrar cuentas que incumplan estos términos, con o sin previo aviso. Una cuenta restringida no puede enviar, responder ni recibir cartas nuevas.</p>
+<h2 id="s6">6. Tus cartas</h2>
+<p>Conservas la propiedad de lo que escribes. Nos concedes una licencia mundial, no exclusiva y gratuita para almacenar, revisar, traducir, entregar y mostrar tus cartas y respuestas con el fin de operar la app, y para conservarlas como se describe en la Política de privacidad. Una vez entregada una carta, quien la recibe puede leerla, y no podemos controlar lo que haga con lo que lee.</p>
+<p>No envíes nada que no te sientas cómodo compartiendo con un desconocido.</p>
+<h2 id="s7">7. Servicio gratuito y cambios</h2>
+<p>La app es gratuita. Podemos cambiar, pausar o detener la app o cualquiera de sus funciones, incluidos los límites de cartas y los plazos de entrega. Las cartas en tránsito pueden perderse si el servicio se detiene. Intentaremos avisar de los cambios importantes en la app o en esta página.</p>
+<h2 id="s8">8. Exención de garantías y responsabilidad</h2>
+<p>La app se ofrece «tal cual» y «según disponibilidad». En la medida en que la ley lo permita, no damos ninguna garantía sobre la app, sobre otros usuarios ni sobre el contenido de las cartas y respuestas, y no somos responsables de daños indirectos, incidentales o consecuentes, ni de la pérdida de datos. Nada de lo dispuesto en estos términos limita los derechos que tengas según leyes que no pueden modificarse por contrato.</p>
+<h2 id="s9">9. Dejar de usar la app</h2>
+<p>Puedes dejar de usar la app en cualquier momento y eliminar tu cuenta en Ajustes. Podemos suspender o cerrar tu acceso si incumples estos términos o si lo necesitamos para proteger a otros usuarios o cumplir la ley.</p>
+<h2 id="s10">10. Tiendas de aplicaciones</h2>
+<p>Si descargaste la app desde la App Store de Apple, también se aplica el Contrato de licencia de usuario final de aplicaciones con licencia de Apple, y estos términos lo complementan. Apple y Google no son responsables de la app ni de su contenido.</p>
+<h2 id="s11">11. Cambios en estos términos</h2>
+<p>Podemos actualizar estos términos. Cuando lo hagamos, cambiaremos la fecha de entrada en vigor indicada arriba y, si el cambio es importante, te lo diremos en la app. Si sigues usando la app después del cambio, aceptas los nuevos términos.</p>
+<h2 id="s12">12. Contacto</h2>
+<p>Preguntas sobre estos términos: <a href="mailto:lee1993ljm@gmail.com">lee1993ljm@gmail.com</a></p>
+</article></main>
+<footer class="foot"><div class="wrap foot-inner">
+ <nav aria-label="Moss’s Club house"><a href="/moss/es/" translate="no">Moss’s Club house</a><a href="/moss/es/support/">Ayuda</a><a href="/moss/es/terms/">Términos de uso</a><a href="/moss/es/privacy/">Política de privacidad</a><a href="/">JML.Studio</a></nav>
+ <p>&copy; 2026 JML.Studio</p>
+</div></footer>
+</body>
+</html>

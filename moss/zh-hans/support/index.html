@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Each language has a stable address. Only an explicit ?lang= request
+   changes language; browser settings never redirect a page. */
+(function () {
+  var here = "zh-Hans", urls = {"en": "/moss/support/", "es": "/moss/es/support/", "pt-BR": "/moss/pt-br/support/", "fr": "/moss/fr/support/", "de": "/moss/de/support/", "ko": "/moss/ko/support/", "ja": "/moss/ja/support/", "zh-Hans": "/moss/zh-hans/support/", "zh-Hant": "/moss/zh-hant/support/"}, want;
+  function pick(tag) {
+    tag = String(tag || '').toLowerCase();
+    if (/^zh-(hant|tw|hk|mo)/.test(tag)) return 'zh-Hant';
+    if (/^zh/.test(tag)) return 'zh-Hans';
+    return { en: 'en', es: 'es', pt: 'pt-BR', fr: 'fr', de: 'de', ko: 'ko', ja: 'ja' }[tag.split('-')[0]];
+  }
+  try { want = pick(new URLSearchParams(location.search).get('lang')); } catch (e) {}
+  if (want && want !== here) location.replace(urls[want] + location.hash);
+})();
+</script>
+<title>支持 · Moss’s Club house</title>
+<meta name="description" content="Moss’s Club house 使用帮助：联系我们、信件与回信、举报与屏蔽，以及删除账户。">
+<meta name="author" content="Jongmin Lee">
+<link rel="canonical" href="https://littlegd.github.io/moss/zh-hans/support/">
+<link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/support/">
+<link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/support/">
+<link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/support/">
+<link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/support/">
+<link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/support/">
+<link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/support/">
+<link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/support/">
+<link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/support/">
+<link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/support/">
+<link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/support/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ECEEE9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#202521" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JML.Studio">
+<meta property="og:url" content="https://littlegd.github.io/moss/zh-hans/support/">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:title" content="支持 · Moss’s Club house">
+<meta property="og:description" content="Moss’s Club house 使用帮助：联系我们、信件与回信、举报与屏蔽，以及删除账户。">
+<meta property="og:image" content="https://littlegd.github.io/assets/moss-icon-512.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta property="og:image:alt" content="Moss，一位戴红色尖帽、留白胡子的园艺小矮人">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" href="/assets/moss-icon-512.png">
+<link rel="apple-touch-icon" href="/moss/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/moss/moss.css">
+<script src="/moss/moss.js" defer></script>
+<script defer src="/analytics.js"></script>
+</head>
+<body class="page-support">
+<a class="skip" href="#main">跳到正文</a>
+<header class="top"><div class="top-inner wrap">
+ <a class="brand" href="/moss/zh-hans/"><img src="/assets/moss-icon-512.png" width="36" height="36" alt=""><span translate="no">Moss’s Club house</span></a>
+ <details class="lang"><summary><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M1.75 8h12.5M8 1.75c1.7 1.8 2.6 3.9 2.6 6.25S9.7 12.45 8 14.25C6.3 12.45 5.4 10.35 5.4 8S6.3 3.55 8 1.75z"/></svg><span class="sr">语言: </span>简体中文</summary><ul class="lang-menu" role="list"><li><a href="/moss/support/" hreflang="en" lang="en">English</a></li><li><a href="/moss/es/support/" hreflang="es" lang="es">Español</a></li><li><a href="/moss/pt-br/support/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li><li><a href="/moss/fr/support/" hreflang="fr" lang="fr">Français</a></li><li><a href="/moss/de/support/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/moss/ko/support/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/moss/ja/support/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/moss/zh-hans/support/" hreflang="zh-Hans" lang="zh-Hans" aria-current="true">简体中文</a></li><li><a href="/moss/zh-hant/support/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li></ul></details>
+</div></header>
+<main id="main" class="wrap narrow doc">
+<div class="page-head"><h1>Moss’s Club house 支持</h1><p>有疑问，或是哪里出了问题？写信告诉我们吧。</p></div>
+<section class="panel" id="contact" aria-labelledby="contact-title">
+ <h2 id="contact-title">联系我们</h2>
+ <a class="mail" href="mailto:lee1993ljm@gmail.com?subject=Moss%E2%80%99s%20Club%20house">lee1993ljm@gmail.com</a>
+ <p>请告诉我们你的手机型号、系统版本，以及在哪个画面发生了什么，这样我们能更快帮到你。用任何语言写都可以。请不要附上别人写的信的内容。</p>
+</section>
+<section class="panel" id="report" aria-labelledby="report-title">
+ <h2 id="report-title">举报信件</h2>
+ <p>要举报某封信或回信，请在 App 中打开它，点按“举报信件”。举报会连同这封信一起送到我们这里，你不需要复制任何内容。你也可以点按“屏蔽发信人”，之后就不会再与这个人互寄信件。</p>
+</section>
+<section class="panel danger" id="danger" aria-labelledby="danger-title">
+ <h2 id="danger-title">如果你正处于危险之中</h2>
+ <p>Moss’s Club house 无法应对紧急情况。如果你或他人可能面临紧迫的危险，请立刻联系当地紧急服务，或身边的人，不要等待信件的回复。</p>
+</section>
+<ul class="faq" role="list"><li><h2>需要账户吗？</h2><p>需要。请用 Apple 或 Google 登录，这样你的信才能找到回家的路。其他人永远看不到你的姓名或邮箱。</p></li><li><h2>我能写多少封信？</h2><p>每天一封烦恼信。同时，Moss 每天最多会带给你三封来自其他人的信。选一封来回复，你有 48 小时的时间写下回信。</p></li><li><h2>我的信没有收到回信就回来了</h2><p>有时没有人及时选中某封信。这时，Moss 会把信带回给你。你可以在第二天写一封新的信。</p></li><li><h2>谁会读我的信？</h2><p>收到它的那个人。送达之前，自动审核会检查这封信，并把它翻译成读信人的语言。AI 不会代写，也不会改动你说的话。如果信需要修改才能寄出，App 会告诉你。</p></li><li><h2>别人能看到我住在哪里吗？</h2><p>不能。Moss 只会根据你的网络连接得出一个大概的城市，读信的人也只能看到这个大概的城市。App 不会使用手机的 GPS。</p></li><li><h2>烧掉信件会怎样？</h2><p>长按烧掉草稿，会把它从你的手机上清除，不会寄出。回信送回来之后，你也可以烧掉这封信和它的回信，把它们从存档中移除。此操作无法撤销。</p></li><li><h2>怎么删除账户？</h2><p>在 App 里打开“设置”，点按“删除账户”。你的账户、你的信，以及你写的回信都会被删除，且无法撤销。出于安全考虑保留的少量记录，请参阅隐私政策。</p></li><li><h2>要花钱吗？</h2><p>不用。Moss’s Club house 免费，没有广告，也没有付费功能。</p></li></ul>
+</main>
+<footer class="foot"><div class="wrap foot-inner">
+ <nav aria-label="Moss’s Club house"><a href="/moss/zh-hans/" translate="no">Moss’s Club house</a><a href="/moss/zh-hans/support/">支持</a><a href="/moss/zh-hans/terms/">使用条款</a><a href="/moss/zh-hans/privacy/">隐私政策</a><a href="/">JML.Studio</a></nav>
+ <p>&copy; 2026 JML.Studio</p>
+</div></footer>
+</body>
+</html>

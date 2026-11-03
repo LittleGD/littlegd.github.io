@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Each language has a stable address. Only an explicit ?lang= request
+   changes language; browser settings never redirect a page. */
+(function () {
+  var here = "de", urls = {"en": "/moss/support/", "es": "/moss/es/support/", "pt-BR": "/moss/pt-br/support/", "fr": "/moss/fr/support/", "de": "/moss/de/support/", "ko": "/moss/ko/support/", "ja": "/moss/ja/support/", "zh-Hans": "/moss/zh-hans/support/", "zh-Hant": "/moss/zh-hant/support/"}, want;
+  function pick(tag) {
+    tag = String(tag || '').toLowerCase();
+    if (/^zh-(hant|tw|hk|mo)/.test(tag)) return 'zh-Hant';
+    if (/^zh/.test(tag)) return 'zh-Hans';
+    return { en: 'en', es: 'es', pt: 'pt-BR', fr: 'fr', de: 'de', ko: 'ko', ja: 'ja' }[tag.split('-')[0]];
+  }
+  try { want = pick(new URLSearchParams(location.search).get('lang')); } catch (e) {}
+  if (want && want !== here) location.replace(urls[want] + location.hash);
+})();
+</script>
+<title>Hilfe · Moss’s Club house</title>
+<meta name="description" content="Hilfe zu Moss’s Club house: Kontakt, Briefe und Antworten, Melden und Blockieren und das Löschen deines Kontos.">
+<meta name="author" content="Jongmin Lee">
+<link rel="canonical" href="https://littlegd.github.io/moss/de/support/">
+<link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/support/">
+<link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/support/">
+<link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/support/">
+<link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/support/">
+<link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/support/">
+<link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/support/">
+<link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/support/">
+<link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/support/">
+<link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/support/">
+<link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/support/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ECEEE9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#202521" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JML.Studio">
+<meta property="og:url" content="https://littlegd.github.io/moss/de/support/">
+<meta property="og:locale" content="de_DE">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:title" content="Hilfe · Moss’s Club house">
+<meta property="og:description" content="Hilfe zu Moss’s Club house: Kontakt, Briefe und Antworten, Melden und Blockieren und das Löschen deines Kontos.">
+<meta property="og:image" content="https://littlegd.github.io/assets/moss-icon-512.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta property="og:image:alt" content="Moss, ein Gartenzwerg mit roter Zipfelmütze und weißem Bart">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" href="/assets/moss-icon-512.png">
+<link rel="apple-touch-icon" href="/moss/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/moss/moss.css">
+<script src="/moss/moss.js" defer></script>
+<script defer src="/analytics.js"></script>
+</head>
+<body class="page-support">
+<a class="skip" href="#main">Zum Inhalt springen</a>
+<header class="top"><div class="top-inner wrap">
+ <a class="brand" href="/moss/de/"><img src="/assets/moss-icon-512.png" width="36" height="36" alt=""><span translate="no">Moss’s Club house</span></a>
+ <details class="lang"><summary><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M1.75 8h12.5M8 1.75c1.7 1.8 2.6 3.9 2.6 6.25S9.7 12.45 8 14.25C6.3 12.45 5.4 10.35 5.4 8S6.3 3.55 8 1.75z"/></svg><span class="sr">Sprache: </span>Deutsch</summary><ul class="lang-menu" role="list"><li><a href="/moss/support/" hreflang="en" lang="en">English</a></li><li><a href="/moss/es/support/" hreflang="es" lang="es">Español</a></li><li><a href="/moss/pt-br/support/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li><li><a href="/moss/fr/support/" hreflang="fr" lang="fr">Français</a></li><li><a href="/moss/de/support/" hreflang="de" lang="de" aria-current="true">Deutsch</a></li><li><a href="/moss/ko/support/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/moss/ja/support/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/moss/zh-hans/support/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="/moss/zh-hant/support/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li></ul></details>
+</div></header>
+<main id="main" class="wrap narrow doc">
+<div class="page-head"><h1>Hilfe zu Moss’s Club house</h1><p>Fragen, oder funktioniert etwas nicht? Schreib uns.</p></div>
+<section class="panel" id="contact" aria-labelledby="contact-title">
+ <h2 id="contact-title">Kontakt</h2>
+ <a class="mail" href="mailto:lee1993ljm@gmail.com?subject=Moss%E2%80%99s%20Club%20house">lee1993ljm@gmail.com</a>
+ <p>Nenn uns dein Handymodell, die Version des Betriebssystems und was auf welchem Bildschirm passiert ist, dann können wir schneller helfen. Du kannst in jeder Sprache schreiben. Bitte füge nicht den Text eines fremden Briefs ein.</p>
+</section>
+<section class="panel" id="report" aria-labelledby="report-title">
+ <h2 id="report-title">Einen Brief melden</h2>
+ <p>Um einen Brief oder eine Antwort zu melden, öffne sie in der App und tippe auf Brief melden. Deine Meldung erreicht uns mit dem angehängten Brief, du musst also nichts kopieren. Du kannst auch auf Absender blockieren tippen, dann tauschst du mit dieser Person keine Briefe mehr aus.</p>
+</section>
+<section class="panel danger" id="danger" aria-labelledby="danger-title">
+ <h2 id="danger-title">Wenn du in Gefahr bist</h2>
+ <p>Moss’s Club house kann nicht auf Notfälle reagieren. Wenn du oder jemand anderes in unmittelbarer Gefahr sein könnte, wende dich jetzt an den örtlichen Notruf oder an jemanden in der Nähe. Warte nicht auf die Antwort auf einen Brief.</p>
+</section>
+<ul class="faq" role="list"><li><h2>Brauche ich ein Konto?</h2><p>Ja. Melde dich mit Apple oder Google an, damit deine Briefe den Weg zu dir zurückfinden. Andere sehen nie deinen Namen oder deine E-Mail-Adresse.</p></li><li><h2>Wie viele Briefe kann ich schreiben?</h2><p>Einen Sorgenbrief pro Tag. Jeden Tag bringt dir Moss außerdem bis zu drei Briefe von anderen Menschen. Wähl einen zum Antworten aus, dann hast du 48 Stunden Zeit für deine Antwort.</p></li><li><h2>Mein Brief kam ohne Antwort zurück</h2><p>Manchmal wählt niemand einen Brief rechtzeitig aus. Dann bringt Moss ihn dir zurück. Am nächsten Tag kannst du einen neuen Brief schreiben.</p></li><li><h2>Wer liest meinen Brief?</h2><p>Die Person, die ihn bekommt. Vor der Zustellung prüft eine automatische Kontrolle den Brief und übersetzt ihn in die Sprache des Lesers. KI schreibt oder verändert nicht, was du sagst. Wenn ein Brief geändert werden muss, bevor er verschickt werden kann, sagt dir die App Bescheid.</p></li><li><h2>Können andere sehen, wo ich wohne?</h2><p>Nein. Moss verwendet nur eine ungefähre Stadt auf Grundlage deiner Netzwerkverbindung, und Leser sehen nur diese ungefähre Stadt. Die App nutzt nicht das GPS deines Handys.</p></li><li><h2>Was bewirkt das Verbrennen eines Briefs?</h2><p>Wenn du bei einem Entwurf Gedrückt halten zum Verbrennen wählst, wird er von deinem Handy gelöscht, ohne gesendet zu werden. Nachdem eine Antwort zurückgekommen ist, kannst du den Brief und seine Antwort auch verbrennen, um sie aus deinem Archiv zu entfernen. Das lässt sich nicht rückgängig machen.</p></li><li><h2>Wie lösche ich mein Konto?</h2><p>Öffne in der App die Einstellungen und tippe auf Konto löschen. Dein Konto, deine Briefe und die Antworten, die du geschrieben hast, werden gelöscht, und das lässt sich nicht rückgängig machen. Welche wenigen Datensätze aus Sicherheitsgründen bleiben, steht in der Datenschutzerklärung.</p></li><li><h2>Kostet es etwas?</h2><p>Nein. Moss’s Club house ist kostenlos, ohne Werbung und ohne kostenpflichtige Funktionen.</p></li></ul>
+</main>
+<footer class="foot"><div class="wrap foot-inner">
+ <nav aria-label="Moss’s Club house"><a href="/moss/de/" translate="no">Moss’s Club house</a><a href="/moss/de/support/">Hilfe</a><a href="/moss/de/terms/">Nutzungsbedingungen</a><a href="/moss/de/privacy/">Datenschutzerklärung</a><a href="/">JML.Studio</a></nav>
+ <p>&copy; 2026 JML.Studio</p>
+</div></footer>
+</body>
+</html>
