@@ -50,7 +50,7 @@
     "contactBody": "Wir prüfen und bearbeiten Anfragen aus der App einmal pro Woche. Nenn uns dein Handymodell, die Version des Betriebssystems und was auf welchem Bildschirm passiert ist, dann können wir schneller helfen. Du kannst in jeder Sprache schreiben. Bitte füge nicht den Text eines fremden Briefs ein. Sicherheitsmeldungen werden getrennt bearbeitet.",
     "subject": "Moss’s Club house",
     "reportTitle": "Einen Brief melden",
-    "reportBody": "Um einen Brief oder eine Antwort zu melden, öffne sie in der App und tippe auf Brief melden. Deine Meldung erreicht uns mit dem angehängten Brief, du musst also nichts kopieren. Du kannst auch auf Absender blockieren tippen, dann tauschst du mit dieser Person keine Briefe mehr aus.",
+    "reportBody": "Um einen Brief oder eine Antwort zu melden, öffne sie in der App und tippe auf Brief melden. Der Grund und der Inhalt, wie du ihn gesehen hast, erreichen das Betreiberteam vertraulich. Du musst nichts kopieren. Du kannst auch auf Absender blockieren tippen, dann tauschst du mit dieser Person keine Briefe mehr aus.",
     "dangerTitle": "Wenn du in Gefahr bist",
     "dangerBody": "Moss’s Club house kann nicht auf Notfälle reagieren. Wenn du oder jemand anderes in unmittelbarer Gefahr sein könnte, wende dich jetzt an den örtlichen Notruf oder an jemanden in der Nähe. Warte nicht auf die Antwort auf einen Brief.",
     "faq": [
@@ -245,7 +245,7 @@
           "<strong>OpenAI</strong> prüft und übersetzt Briefe und Antworten;",
           "<strong>Apple und Google</strong> stellen die Anmeldung bereit und liefern Mitteilungen über ihre Push-Dienste aus;",
           "<strong>Expo</strong> leitet Mitteilungen an Apple und Google weiter. Mitteilungen enthalten keinen Brieftext.",
-          "<strong>GitHub</strong> verarbeitet Feedback aus der App in einem privaten Repository, nicht in öffentlichen Issues."
+          "<strong>GitHub</strong> verarbeitet Feedback aus der App und Meldungen zu Briefen oder Antworten als Issues in einem privaten Repository. Meldungen enthalten den Grund, den Inhalt aus Sicht der meldenden Person, die Art des Inhalts, Sprache, Datum und eine Meldungsreferenz. Wir fügen keine Konto-IDs oder E-Mail-Adressen hinzu, der Text kann aber Personen erkennbar machen."
         ],
         "after": [
           "Diese Dienstleister können Informationen in den USA und in anderen Ländern verarbeiten. Sie behandeln sie nach ihren eigenen Bedingungen und Datenschutzerklärungen."
@@ -257,6 +257,7 @@
           "Wir bewahren dein Konto und deine Briefe auf, solange dein Konto besteht. Ein Brief ist höchstens 14 Tage unterwegs. Wenn niemand antwortet, kommt er zu dir zurück. Du kannst einen zurückgekehrten Brief und seine Antwort verbrennen, wodurch ihr Text, ihre Übersetzungen und die Prüfdaten gelöscht werden und nur ein minimaler Vermerk bleibt, dass es den Brief gab.",
           "Wenn du dein Konto löschst, löschen wir das Konto, Sitzungen, deine Briefe und deine geschriebenen Antworten. Wir widerrufen die uns verfügbaren Apple-Anmeldetokens und zeigen dir bei Bedarf, wie du den Apple-Zugriff manuell entfernst. Verknüpftes privates GitHub-Feedback entfernen wir innerhalb von 7 Tagen asynchron; erst danach ist die Löschung abgeschlossen. Zur Prüfung von Sicherheitsfragen speichern wir Grund, gemeldeten Inhalt und Bearbeitungsstatus der von dir oder zu deinen Inhalten eingereichten Meldungen bis zu 90 Tage ohne Nutzer-IDs und löschen sie anschließend. Der Text kann weiterhin Personen erkennbar machen. Der Wiederherstellungsverlauf von Cloudflare D1 kann je nach Tarif gelöschte Daten bis zu 30 Tage enthalten. Für andere Anbieter gelten deren eigene Aufbewahrungsregeln.",
           "Nach der Zustellung löschen wir den Feedbacktext aus unserer Cloudflare-D1-Datenbank. Das Issue mit dem ursprünglichen Feedback und zugehörige Kopien löschen wir spätestens 90 Tage nach dem Schließen oder 180 Tage nach Eingang, je nachdem, welcher Zeitpunkt früher liegt. Ungelöstes Feedback wird innerhalb von 180 Tagen nach Eingang gelöscht.",
+          "Wir löschen Meldungs-Issues auf GitHub und zugehörige Kopien bis zum frühesten dieser Zeitpunkte: 180 Tage nach Eingang, 90 Tage nach Schließen des Issues oder Lösung der Meldung durch eine Administration oder 90 Tage nach Kontolöschung. Diese Frist gilt für GitHub-Kopien; für die oben beschriebenen Sicherheitsunterlagen gilt ihre eigene Aufbewahrungsfrist.",
           "Nach Abschluss eines Löschantrags bewahren wir den Verifizierungsnachweis und die Metadaten des Antrags bis zum früheren Zeitpunkt auf: 90 Tage nach Abschluss oder 180 Tage nach Eingang. Bei offenen Anträgen behalten wir das für die Bearbeitung notwendige Minimum."
         ]
       },

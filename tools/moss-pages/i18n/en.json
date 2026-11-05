@@ -50,7 +50,7 @@
     "contactBody": "We review and handle in-app feedback once a week. Tell us your phone model, its OS version and what happened on which screen, and we can help faster. You can write in any language. Please don’t include the text of anyone else’s letter. Safety reports are handled separately.",
     "subject": "Moss’s Club house",
     "reportTitle": "Reporting a letter",
-    "reportBody": "To report a letter or reply, open it in the app and tap Report letter. Your report reaches us with the letter attached, so you don’t need to copy anything. You can also tap Block this sender so you won’t exchange letters with that person again.",
+    "reportBody": "To report a letter or reply, open it in the app and tap Report letter. Your reason and the content as you saw it reach our operators privately, so you don’t need to copy anything. You can also tap Block this sender so you won’t exchange letters with that person again.",
     "dangerTitle": "If you are in danger",
     "dangerBody": "Moss’s Club house can’t respond to emergencies. If you or someone else might be in immediate danger, contact local emergency services or someone nearby now. Don’t wait for a letter reply.",
     "faq": [
@@ -245,7 +245,7 @@
           "<strong>OpenAI</strong> reviews and translates letters and replies.",
           "<strong>Apple and Google</strong> provide sign-in, and deliver notifications through their push services.",
           "<strong>Expo</strong> relays notifications to Apple and Google. Notifications contain no letter text.",
-          "<strong>GitHub</strong> processes in-app feedback in a private repository, not public issues."
+          "<strong>GitHub</strong> processes in-app feedback and letter or reply reports as issues in a private repository. Reports include the reason, content as the reporter saw it, content type, language, date and a report reference. We do not add account IDs or email addresses, though text may identify someone."
         ],
         "after": [
           "These providers may process information in the United States and other countries. They handle it under their own terms and privacy policies."
@@ -257,6 +257,7 @@
           "We keep your account and letters while your account exists. A letter travels for at most 14 days. If nobody replies, it comes back to you. You can burn a returned letter and its reply, which deletes their text, translations and review data and leaves only a minimal record that the letter existed.",
           "When you delete your account, we delete the account, sessions, your letters and replies you wrote. We revoke the Apple sign-in tokens available to us and guide you if you need to remove Apple access manually. We remove linked private GitHub feedback asynchronously within 7 days; deletion is complete only after that cleanup. To review safety issues, we retain reports you filed or received, including their reason, reported content and handling status, without user IDs for up to 90 days, then delete them. The text may still identify someone. Cloudflare D1 recovery history may retain deleted data for up to 30 days, depending on the plan. Other provider records follow their own retention rules.",
           "After delivery, we clear feedback text from our Cloudflare D1 database. We delete the raw feedback issue and related copies no later than 90 days after it is closed or 180 days after receipt, whichever comes first. Unresolved feedback is deleted within 180 days of receipt.",
+          "We delete GitHub report issues and related copies by the earliest of 180 days after receipt, 90 days after the issue is closed or the report is resolved by an administrator, or 90 days after account deletion. This deadline applies to GitHub copies; the safety records described above follow their own retention period.",
           "After a deletion request is completed, we keep verification evidence and request metadata until the earlier of 90 days after completion or 180 days after receipt. For unfinished requests, we retain the minimum needed to complete the work."
         ]
       },

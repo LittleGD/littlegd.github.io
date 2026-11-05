@@ -50,7 +50,7 @@
     "contactBody": "Analisamos e tratamos as mensagens enviadas pelo app uma vez por semana. Conte o modelo do seu celular, a versão do sistema e o que aconteceu em qual tela, e poderemos ajudar mais rápido. Você pode escrever em qualquer idioma. Por favor, não inclua o texto da carta de outra pessoa. Denúncias de segurança são tratadas separadamente.",
     "subject": "Moss’s Club house",
     "reportTitle": "Denunciar uma carta",
-    "reportBody": "Para denunciar uma carta ou uma resposta, abra-a no app e toque em Denunciar carta. Sua denúncia chega até nós com a carta anexada, então você não precisa copiar nada. Você também pode tocar em Bloquear quem enviou para não trocar mais cartas com essa pessoa.",
+    "reportBody": "Para denunciar uma carta ou uma resposta, abra-a no app e toque em Denunciar carta. O motivo e o conteúdo como você o viu chegam de forma privada à equipe responsável, então você não precisa copiar nada. Você também pode tocar em Bloquear quem enviou para não trocar mais cartas com essa pessoa.",
     "dangerTitle": "Se você está em perigo",
     "dangerBody": "O Moss’s Club house não consegue atender emergências. Se você ou outra pessoa pode estar em perigo imediato, entre em contato agora com os serviços de emergência locais ou com alguém por perto. Não espere pela resposta de uma carta.",
     "faq": [
@@ -245,7 +245,7 @@
           "<strong>OpenAI</strong> analisa e traduz cartas e respostas.",
           "<strong>Apple e Google</strong> oferecem o login e entregam as notificações por meio dos serviços de push deles.",
           "<strong>Expo</strong> repassa as notificações para a Apple e o Google. As notificações não contêm o texto das cartas.",
-          "<strong>GitHub</strong> processa feedback do app em um repositório privado, não em issues públicas."
+          "<strong>GitHub</strong> processa feedback do app e denúncias de cartas ou respostas como issues em um repositório privado. As denúncias incluem o motivo, o conteúdo como foi visto por quem denunciou, o tipo de conteúdo, o idioma, a data e uma referência da denúncia. Não adicionamos IDs de conta nem endereços de email, embora o texto possa identificar alguém."
         ],
         "after": [
           "Esses provedores podem processar informações nos Estados Unidos e em outros países. Eles as tratam de acordo com seus próprios termos e políticas de privacidade."
@@ -257,6 +257,7 @@
           "Guardamos sua conta e suas cartas enquanto sua conta existir. Uma carta viaja por no máximo 14 dias. Se ninguém responder, ela volta para você. Você pode queimar uma carta devolvida e sua resposta, o que exclui o texto, as traduções e os dados de análise e deixa apenas um registro mínimo de que a carta existiu.",
           "Ao excluir sua conta, apagamos a conta, as sessões, suas cartas e as respostas que você escreveu. Revogamos os tokens de acesso pela Apple que temos disponíveis e orientamos você a remover o acesso da Apple manualmente, se necessário. Removemos o feedback privado vinculado no GitHub de forma assíncrona em até 7 dias; a exclusão só termina após essa limpeza. Para analisar questões de segurança, mantemos por até 90 dias o motivo, o conteúdo denunciado e o status do tratamento das denúncias feitas por você ou sobre seu conteúdo, sem IDs de usuário, e depois os apagamos. O texto ainda pode identificar alguém. O histórico de recuperação do Cloudflare D1 pode manter dados excluídos por até 30 dias, dependendo do plano. Os demais provedores seguem suas próprias regras de retenção.",
           "Após a entrega, apagamos o texto do feedback do banco de dados Cloudflare D1. Excluímos a issue original e as cópias relacionadas em até 90 dias após o encerramento ou 180 dias após o recebimento, o que ocorrer primeiro. Feedback não resolvido é excluído em até 180 dias após o recebimento.",
+          "Excluímos as issues de denúncias no GitHub e as cópias relacionadas no primeiro destes prazos: 180 dias após o recebimento, 90 dias após o encerramento da issue ou a resolução da denúncia por um administrador, ou 90 dias após a exclusão da conta. Esse prazo vale para as cópias no GitHub; os registros de segurança descritos acima seguem seu próprio prazo de retenção.",
           "Após concluir um pedido de exclusão, mantemos a prova de verificação e os metadados do pedido até o menor prazo entre 90 dias após a conclusão e 180 dias após o recebimento. Para pedidos pendentes, mantemos o mínimo necessário para concluí-los."
         ]
       },
