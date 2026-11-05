@@ -8,7 +8,7 @@ import html, json, pathlib, sys
 SITE = pathlib.Path(sys.argv[1] if len(sys.argv) > 1 else '.')
 SRC = pathlib.Path(__file__).parent / 'i18n'
 BASE = 'https://littlegd.github.io'
-EMAIL = 'lee1993ljm@gmail.com'
+EMAIL = 'jmjplearner@gmail.com'
 AGE = 13  # minimum age in terms and privacy; product decision pending
 STORE_IOS = ''      # App Store URL once published
 STORE_ANDROID = ''  # Google Play URL once published
@@ -188,7 +188,7 @@ def landing(t):
 </main>'''
 
 
-def support(t):
+def support(t, code):
     S = t['support']
     faq = ''.join(f'<li><h2>{esc(f["q"])}</h2><p>{esc(f["a"])}</p></li>' for f in S['faq'])
     subj = S['subject'].replace(' ', '%20').replace('’', '%E2%80%99')
@@ -198,6 +198,13 @@ def support(t):
  <h2 id="contact-title">{esc(S['contactTitle'])}</h2>
  <a class="mail" href="mailto:{EMAIL}?subject={subj}">{EMAIL}</a>
  <p>{esc(S['contactBody'])}</p>
+</section>
+<section class="panel" id="delete-account" aria-labelledby="delete-account-title">
+ <h2 id="delete-account-title">{esc(S['deleteTitle'])}</h2>
+ <p>{esc(S['deleteParagraphs'][0])}</p>
+ <p><a href="https://moss-clubhouse-api-production.motrix.workers.dev/account-deletion?lang={esc(code)}">{esc(S['deleteLink'])}</a></p>
+ <p>{esc(S['deleteParagraphs'][1])}</p>
+ <p>{esc(S['deleteParagraphs'][2])}</p>
 </section>
 <section class="panel" id="report" aria-labelledby="report-title">
  <h2 id="report-title">{esc(S['reportTitle'])}</h2>
@@ -215,7 +222,7 @@ def legal(t, key):
     D = t[key]
     out = [f'<main id="main" class="wrap narrow doc"><article aria-labelledby="h">',
            f'<div class="page-head"><h1 id="h">{esc(D["h1"])}</h1></div>',
-           f'<p class="meta">{esc(fill(t["common"]["effective"], t))}</p>',
+           f'<p class="meta">{esc(t["common"]["effective"].replace("{date}", D.get("date", t["common"]["date"])))}</p>',
            f'<p>{fill(D["intro"], t)}</p>']
     if 'summary' in D:
         out.append(f'<h2>{esc(D["summaryTitle"])}</h2><ul>' + ''.join(f'<li>{fill(s, t)}</li>' for s in D['summary']) + '</ul>')
@@ -238,7 +245,7 @@ def main():
             if page == '':
                 title, desc, body = t['landing']['title'], t['landing']['description'], landing(t)
             elif page == 'support/':
-                title, desc, body = t['support']['title'], t['support']['description'], support(t)
+                title, desc, body = t['support']['title'], t['support']['description'], support(t, code)
             elif page == 'terms/':
                 title, desc, body = t['terms']['title'], t['terms']['description'], legal(t, 'terms')
             else:

@@ -47,7 +47,7 @@
     "h1": "Aide de Moss’s Club house",
     "lede": "Une question, ou quelque chose qui ne marche pas ? Écrivez-nous.",
     "contactTitle": "Nous contacter",
-    "contactBody": "Nous examinons et traitons les demandes envoyées depuis l’app une fois par semaine. Indiquez-nous le modèle de votre téléphone, la version de son système et ce qui s’est passé sur quel écran, et nous pourrons vous aider plus vite. Vous pouvez écrire dans n’importe quelle langue. Merci de ne pas recopier le texte de la lettre de quelqu’un d’autre.",
+    "contactBody": "Nous examinons et traitons les demandes envoyées depuis l’app une fois par semaine. Indiquez-nous le modèle de votre téléphone, la version de son système et ce qui s’est passé sur quel écran, et nous pourrons vous aider plus vite. Vous pouvez écrire dans n’importe quelle langue. Merci de ne pas recopier le texte de la lettre de quelqu’un d’autre. Les signalements de sécurité sont traités séparément.",
     "subject": "Moss’s Club house",
     "reportTitle": "Signaler une lettre",
     "reportBody": "Pour signaler une lettre ou une réponse, ouvrez-la dans l’app et touchez Signaler la lettre. Votre signalement nous parvient avec la lettre jointe, inutile de rien copier. Vous pouvez aussi toucher Bloquer cet expéditeur pour ne plus échanger de lettres avec cette personne.",
@@ -79,13 +79,16 @@
         "a": "Maintenir pour brûler un brouillon l’efface de votre téléphone sans l’envoyer. Une fois qu’une réponse est revenue, vous pouvez aussi brûler la lettre et sa réponse pour les retirer de vos archives. Cette action est irréversible."
       },
       {
-        "q": "Comment supprimer mon compte ?",
-        "a": "Ouvrez Réglages dans l’app et touchez Supprimer le compte. Votre compte, vos lettres et les réponses que vous avez écrites sont supprimés, et cette action est irréversible. Consultez la Politique de confidentialité pour les quelques éléments conservés pour des raisons de sécurité."
-      },
-      {
         "q": "Est-ce que ça coûte quelque chose ?",
         "a": "Non. Moss’s Club house est gratuit, sans publicité et sans fonctions payantes."
       }
+    ],
+    "deleteTitle": "Supprimer votre compte",
+    "deleteLink": "Demander la suppression du compte",
+    "deleteParagraphs": [
+      "Dans l’application, ouvrez Réglages et touchez Supprimer le compte. Vous pouvez aussi demander la suppression avec le lien ci-dessous ou par e-mail. Il n’est pas nécessaire de réinstaller l’application.",
+      "Pour une demande hors de l’application, nous vérifions votre identité avec un lien de confirmation à usage unique envoyé à l’adresse enregistrée sur votre compte, y compris l’adresse relais privée Apple si vous l’utilisez. Si cette option est disponible, vous pouvez aussi vous réauthentifier auprès du même fournisseur de connexion. Nous ne demandons ni pièce d’identité, ni mot de passe, ni texte de lettre.",
+      "Nous cherchons à accuser réception sous 7 jours et à supprimer le compte dans les 7 jours suivant la vérification, généralement sous 28 jours au total. Les commentaires privés associés sont supprimés de façon asynchrone. La suppression n’est complète qu’une fois ce nettoyage terminé. Consultez la Politique de confidentialité pour les données conservées à des fins de sécurité."
     ]
   },
   "terms": {
@@ -194,7 +197,7 @@
       "Les autres utilisateurs ne voient jamais votre nom ni votre adresse e-mail. Ils voient votre lettre et une ville approximative.",
       "Les lettres et les réponses sont envoyées à OpenAI pour l’examen de sécurité et la traduction. OpenAI ne les écrit pas.",
       "Votre ville approximative est déduite de votre connexion réseau. L’app n’utilise pas le GPS.",
-      "Pas de publicité, pas de suivi, pas de SDK d’analyse ou de publicité dans l’app.",
+      "Aucune publicité tierce ni suivi des comportements individuels. Nous comptons par jour les ouvertures de liens vers nos apps, sans SDK d’analyse ou de publicité.",
       "Vous pouvez supprimer votre compte et vos lettres dans l’app à tout moment."
     ],
     "sections": [
@@ -206,26 +209,29 @@
           "<strong>Lettres et réponses.</strong> Le texte des lettres et des réponses que vous écrivez, leurs traductions, les résultats de l’examen, les remerciements, et les informations de livraison comme les dates et les lettres qui vous ont été proposées ou que vous avez choisies.",
           "<strong>Données de sécurité.</strong> Les signalements que vous envoyez, les signalements concernant vos contenus, une copie du contenu signalé tel que l’a vu la personne qui a signalé, les personnes que vous bloquez et les restrictions de compte.",
           "<strong>Notifications.</strong> Si vous autorisez les notifications, le jeton de notification de votre appareil et sa plateforme.",
-          "<strong>Touches sur les promotions.</strong> Lorsque vous touchez un lien vers l’une de nos autres apps, l’app envoie de quelle app il s’agit, où se trouvait le lien et votre plateforme. Ces touches sont comptées par jour sans votre identifiant de compte ni votre adresse IP.",
-          "<strong>Messages que vous nous envoyez.</strong> Si vous nous écrivez, votre adresse e-mail et ce que vous écrivez."
+          "<strong>Liens promotionnels.</strong> Lorsque vous ouvrez un lien vers une autre de nos apps, l’app, l’emplacement du lien, la plateforme et la destination sont transmis. La requête utilise votre session connectée. La table des totaux quotidiens conserve les nombres par ces champs, sans identifiant de compte ni adresse IP.",
+          "<strong>Messages que vous nous envoyez.</strong> Si vous nous écrivez, votre adresse e-mail et ce que vous écrivez.",
+          "<strong>Commentaires.</strong> Les commentaires envoyés dans l’application comprennent leur type et leur texte, la langue, la plateforme, la version de l’application, la date de réception et le compte associé.",
+          "<strong>Brouillons locaux.</strong> Les brouillons non envoyés sont conservés sur votre appareil et ne sont transmis au serveur que lorsque vous les envoyez. Les règles Android excluent les données de l’app des sauvegardes automatiques dans le cloud et des transferts entre appareils. Sur iOS, le dossier contenant les brouillons est marqué comme exclu des sauvegardes. Cette indication au système ne garantit pas que les sauvegardes ou restaurations soient empêchées. Brûler un brouillon n’efface pas les copies présentes dans d’anciennes sauvegardes."
         ]
       },
       {
         "h": "2. Localisation approximative",
         "p": [
-          "Moss a besoin de savoir à peu près d’où et vers où voyagent les lettres. Lorsque votre appareil se connecte à notre serveur, notre hébergeur estime une ville à partir de votre adresse IP. Nous arrondissons les coordonnées à environ 10 km et enregistrons une ville, pas votre adresse ni votre adresse IP. Les lecteurs ne voient que cette ville approximative. L’app ne demande pas et n’utilise pas les services de localisation de votre appareil."
+          "Moss a besoin de savoir approximativement d’où partent les lettres et où elles vont. Notre hébergeur estime une ville à partir de votre adresse IP. Nous arrondissons les coordonnées à environ 10 km et conservons la ville approximative séparément des dossiers de sécurité. Les lecteurs ne voient que cette ville. L’app ne demande ni n’utilise les services de localisation de votre appareil.",
+          "Pour protéger la connexion, les données temporaires de limitation des requêtes contiennent des clés fondées sur l’IP. Une tâche planifiée supprime les enregistrements plus de deux jours après leur dernière requête ; tout retard de cette tâche peut retarder la suppression. Les sessions ne conservent ni adresse IP ni valeur User-Agent. Cela ne signifie pas que notre hébergeur ne conserve aucun journal réseau ou de sécurité."
         ]
       },
       {
         "h": "3. Comment nous utilisons les informations",
         "p": [
-          "Nous utilisons ces informations pour faire fonctionner l’app : vous connecter, livrer les lettres entre villes et fuseaux horaires, les traduire, examiner les contenus pour la sécurité, afficher des ressources d’aide quand une lettre laisse penser que quelqu’un peut en avoir besoin, envoyer des notifications, traiter les signalements et les blocages, prévenir les abus et limiter le nombre de requêtes, corriger les problèmes et répondre à vos messages. Nous ne vendons pas vos informations, ne les utilisons pas à des fins publicitaires et ne constituons pas de profils vous concernant."
+          "Nous utilisons ces informations pour faire fonctionner l’app : vous connecter, livrer les lettres entre villes et fuseaux horaires, les traduire, examiner les contenus pour la sécurité, afficher des ressources d’aide quand une lettre laisse penser que quelqu’un peut en avoir besoin, envoyer des notifications, traiter les signalements et les blocages, prévenir les abus et limiter le nombre de requêtes, corriger les problèmes et répondre à vos messages. Nous utilisons aussi les totaux des ouvertures de liens pour mesurer la promotion de nos apps. Nous ne vendons pas vos informations, ne créons pas de profils publicitaires individuels et ne vous adressons pas de publicités ciblées."
         ]
       },
       {
         "h": "4. Examen par IA et traduction",
         "p": [
-          "Avant qu’une lettre ou une réponse soit livrée, nous envoyons son texte, sa langue et, pour une réponse, la lettre d’origine comme contexte, à OpenAI. OpenAI la vérifie au regard de nos règles d’écriture et la traduit. L’IA n’écrit ni ne modifie jamais vos lettres. Vous y consentez en acceptant les Conditions d’utilisation avant votre première lettre.",
+          "Avant qu’une lettre ou une réponse soit livrée, nous envoyons son texte, sa langue et, pour une réponse, la lettre d’origine comme contexte, à OpenAI. OpenAI la vérifie au regard de nos règles d’écriture et la traduit. L’IA n’écrit ni ne modifie jamais vos lettres. Avant chaque envoi de lettre, de réponse ou de modification, l’app vous demande votre accord pour ce traitement par OpenAI, séparément de l’acceptation des Conditions d’utilisation. Le contenu n’est transmis qu’après votre accord.",
           "Nous envoyons les requêtes avec l’option de stockage d’OpenAI désactivée. Selon les politiques d’API d’OpenAI, les données de l’API ne servent pas à entraîner ses modèles par défaut, mais OpenAI peut les conserver pendant une durée limitée pour détecter les abus. Consultez la <a href=\"https://openai.com/policies/privacy-policy/\">politique de confidentialité d’OpenAI</a>."
         ]
       },
@@ -238,7 +244,8 @@
           "<strong>Cloudflare</strong> héberge notre serveur et notre base de données et estime votre ville à partir de votre adresse IP ;",
           "<strong>OpenAI</strong> examine et traduit les lettres et les réponses ;",
           "<strong>Apple et Google</strong> fournissent la connexion et acheminent les notifications via leurs services de notifications push ;",
-          "<strong>Expo</strong> relaie les notifications vers Apple et Google. Les notifications ne contiennent aucun texte de lettre."
+          "<strong>Expo</strong> relaie les notifications vers Apple et Google. Les notifications ne contiennent aucun texte de lettre.",
+          "<strong>GitHub</strong> traite les commentaires de l’application dans un dépôt privé, et non dans des tickets publics."
         ],
         "after": [
           "Ces prestataires peuvent traiter les informations aux États-Unis et dans d’autres pays. Ils les traitent selon leurs propres conditions et politiques de confidentialité."
@@ -248,7 +255,9 @@
         "h": "6. Durée de conservation",
         "p": [
           "Nous conservons votre compte et vos lettres tant que votre compte existe. Une lettre voyage au maximum 14 jours. Si personne ne répond, elle vous revient. Vous pouvez brûler une lettre retournée et sa réponse, ce qui supprime leur texte, leurs traductions et les données d’examen, et ne laisse qu’une trace minimale indiquant que la lettre a existé.",
-          "Lorsque vous supprimez votre compte, nous supprimons votre compte, vos sessions, vos lettres, les réponses que vous avez écrites et les signalements que vous avez envoyés, et nous révoquons votre connexion Apple le cas échéant. Les signalements faits par d’autres personnes au sujet de vos contenus sont conservés sans votre identifiant de compte pendant 90 jours au maximum, le temps de finir de les traiter, puis supprimés. Les sauvegardes de la base de données peuvent conserver les données supprimées jusqu’à 30 jours. Les données détenues par OpenAI, Apple, Google ou d’autres prestataires suivent leurs propres règles de conservation."
+          "Lorsque vous supprimez votre compte, nous supprimons le compte, les sessions, vos lettres et les réponses que vous avez écrites. Nous révoquons les jetons de connexion Apple dont nous disposons et vous indiquons comment retirer manuellement l’accès Apple si nécessaire. Les commentaires privés GitHub associés sont supprimés de façon asynchrone sous 7 jours ; la suppression n’est complète qu’après ce nettoyage. Pour examiner les questions de sécurité, nous conservons jusqu’à 90 jours le motif, le contenu signalé et l’état du traitement des signalements que vous avez faits ou reçus, sans identifiants utilisateur, puis les supprimons. Le texte peut encore permettre d’identifier une personne. L’historique de restauration Cloudflare D1 peut conserver des données supprimées jusqu’à 30 jours, selon le forfait. Les autres prestataires appliquent leurs propres règles de conservation.",
+          "Après leur livraison, nous effaçons le texte des commentaires de notre base Cloudflare D1. Nous supprimons le ticket contenant le commentaire brut et les copies associées au plus tard 90 jours après sa clôture ou 180 jours après sa réception, selon la première échéance. Les commentaires non résolus sont supprimés dans les 180 jours suivant leur réception.",
+          "Après la clôture d’une demande de suppression, nous conservons la preuve de vérification et les métadonnées de la demande jusqu’à la première échéance entre 90 jours après la clôture et 180 jours après la réception. Pour une demande non terminée, nous conservons le minimum nécessaire pour la traiter."
         ]
       },
       {
@@ -288,6 +297,7 @@
           "Jongmin Lee, JML.Studio : {emailLink}"
         ]
       }
-    ]
+    ],
+    "date": "4 novembre 2026"
   }
 }

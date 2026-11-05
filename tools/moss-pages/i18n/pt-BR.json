@@ -47,7 +47,7 @@
     "h1": "Suporte do Moss’s Club house",
     "lede": "Tem alguma dúvida ou algo não está funcionando? Escreva para nós.",
     "contactTitle": "Contato",
-    "contactBody": "Analisamos e tratamos as mensagens enviadas pelo app uma vez por semana. Conte o modelo do seu celular, a versão do sistema e o que aconteceu em qual tela, e poderemos ajudar mais rápido. Você pode escrever em qualquer idioma. Por favor, não inclua o texto da carta de outra pessoa.",
+    "contactBody": "Analisamos e tratamos as mensagens enviadas pelo app uma vez por semana. Conte o modelo do seu celular, a versão do sistema e o que aconteceu em qual tela, e poderemos ajudar mais rápido. Você pode escrever em qualquer idioma. Por favor, não inclua o texto da carta de outra pessoa. Denúncias de segurança são tratadas separadamente.",
     "subject": "Moss’s Club house",
     "reportTitle": "Denunciar uma carta",
     "reportBody": "Para denunciar uma carta ou uma resposta, abra-a no app e toque em Denunciar carta. Sua denúncia chega até nós com a carta anexada, então você não precisa copiar nada. Você também pode tocar em Bloquear quem enviou para não trocar mais cartas com essa pessoa.",
@@ -79,13 +79,16 @@
         "a": "Ao segurar para queimar um rascunho, ele é apagado do seu celular sem ser enviado. Depois que uma resposta volta, você também pode queimar a carta e a resposta para removê-las do seu arquivo. Isso não pode ser desfeito."
       },
       {
-        "q": "Como excluo minha conta?",
-        "a": "Abra Configurações no app e toque em Excluir conta. Sua conta, suas cartas e as respostas que você escreveu são excluídas, e isso não pode ser desfeito. Veja a Política de Privacidade para saber quais poucos registros são mantidos por segurança."
-      },
-      {
         "q": "Custa alguma coisa?",
         "a": "Não. O Moss’s Club house é grátis, sem anúncios e sem recursos pagos."
       }
+    ],
+    "deleteTitle": "Excluir sua conta",
+    "deleteLink": "Solicitar exclusão da conta",
+    "deleteParagraphs": [
+      "No app, abra Ajustes e toque em Excluir conta. Você também pode solicitar a exclusão pelo link abaixo ou por e-mail. Não é necessário reinstalar o app.",
+      "Para solicitações fora do app, verificamos sua identidade com um link de confirmação de uso único enviado ao e-mail cadastrado na conta, inclusive o endereço privado da Apple, se você o usar. Quando disponível, você também pode se autenticar novamente com o mesmo provedor de acesso. Não pedimos documento de identidade, senha ou texto de carta.",
+      "Buscamos confirmar o recebimento em até 7 dias e excluir a conta em até 7 dias após a verificação, normalmente em até 28 dias no total. O feedback privado vinculado é removido de forma assíncrona. A exclusão só é considerada concluída após essa limpeza. Consulte a Política de Privacidade sobre os registros de segurança mantidos."
     ]
   },
   "terms": {
@@ -194,7 +197,7 @@
       "Outros usuários nunca veem seu nome nem seu e-mail. Eles veem sua carta e uma cidade aproximada.",
       "Cartas e respostas são enviadas à OpenAI para análise de segurança e tradução. A OpenAI não as escreve.",
       "Sua cidade aproximada vem da sua conexão de rede. O app não usa GPS.",
-      "Sem anúncios, sem rastreamento, sem SDKs de análise ou de publicidade no app.",
+      "Não há anúncios de terceiros nem rastreamento do comportamento individual. Contamos por dia as aberturas de links para nossos apps, sem SDKs de análise ou publicidade.",
       "Você pode excluir sua conta e suas cartas no app a qualquer momento."
     ],
     "sections": [
@@ -206,26 +209,29 @@
           "<strong>Cartas e respostas.</strong> O texto das cartas e respostas que você escreve, as traduções, os resultados da análise, os bilhetes de agradecimento e os detalhes de entrega, como datas e quais cartas foram oferecidas a você ou escolhidas por você.",
           "<strong>Registros de segurança.</strong> As denúncias que você envia, as denúncias feitas sobre seu conteúdo, uma cópia do conteúdo denunciado como quem denunciou o viu, as pessoas que você bloqueia e as restrições de conta.",
           "<strong>Notificações.</strong> Se você permitir notificações, o token de push do seu dispositivo e a plataforma.",
-          "<strong>Toques em promoções.</strong> Quando você toca em um link para outro dos nossos apps, o app envia qual app é, onde o link estava e sua plataforma. Eles são contados por dia, sem o ID da sua conta nem seu endereço IP.",
-          "<strong>Mensagens para nós.</strong> Se você nos enviar um e-mail, seu endereço de e-mail e o que você escrever."
+          "<strong>Links promocionais.</strong> Ao abrir um link para outro dos nossos apps, são enviados o app, o local do link, a plataforma e o destino. A solicitação usa sua sessão conectada. A tabela de totais diários guarda contagens por esses campos, sem IDs de conta ou endereços IP.",
+          "<strong>Mensagens para nós.</strong> Se você nos enviar um e-mail, seu endereço de e-mail e o que você escrever.",
+          "<strong>Feedback.</strong> O feedback enviado no app inclui tipo e texto, idioma, plataforma, versão do app, data de recebimento e conta vinculada.",
+          "<strong>Rascunhos locais.</strong> Os rascunhos não enviados ficam no seu dispositivo e só são enviados ao servidor quando você os manda. As regras do Android excluem os dados do app do backup automático na nuvem e da transferência entre dispositivos. No iOS, a pasta que guarda os rascunhos é marcada para exclusão do backup. Essa indicação ao sistema operacional não garante que backups ou restaurações sejam impedidos. Queimar um rascunho não apaga cópias em backups anteriores."
         ]
       },
       {
         "h": "2. Localização aproximada",
         "p": [
-          "Moss precisa saber mais ou menos de onde e para onde as cartas viajam. Quando seu dispositivo se conecta ao nosso servidor, nosso provedor de hospedagem estima uma cidade a partir do seu endereço IP. Arredondamos as coordenadas para cerca de 10 km e salvamos uma cidade, não seu endereço residencial nem seu endereço IP. Quem lê vê somente essa cidade aproximada. O app não solicita nem usa os serviços de localização do seu dispositivo."
+          "Moss precisa saber aproximadamente de onde e para onde as cartas viajam. Nosso provedor de hospedagem estima uma cidade pelo seu endereço IP. Arredondamos as coordenadas para cerca de 10 km e guardamos a cidade aproximada separadamente dos registros de segurança. Quem lê vê apenas essa cidade. O app não solicita nem usa os serviços de localização do dispositivo.",
+          "Para proteger o login, os registros temporários de limitação de solicitações contêm chaves baseadas em IP. Uma tarefa agendada apaga os registros mais de dois dias após a última solicitação; atrasos nessa tarefa podem atrasar a exclusão. Os registros de sessão não guardam endereços IP nem valores User-Agent. Isso não significa que o provedor de hospedagem não mantenha registros de rede ou segurança."
         ]
       },
       {
         "h": "3. Como usamos as informações",
         "p": [
-          "Usamos estas informações para fazer o app funcionar: para fazer seu login, entregar cartas entre cidades e fusos horários, traduzir cartas, analisar o conteúdo por segurança, mostrar recursos de ajuda quando uma carta sugere que alguém pode precisar deles, enviar notificações, tratar denúncias e bloqueios, evitar abusos e limitar a frequência das solicitações, corrigir problemas e responder às suas mensagens. Não vendemos suas informações, não as usamos para publicidade nem criamos perfis sobre você."
+          "Usamos estas informações para fazer o app funcionar: para fazer seu login, entregar cartas entre cidades e fusos horários, traduzir cartas, analisar o conteúdo por segurança, mostrar recursos de ajuda quando uma carta sugere que alguém pode precisar deles, enviar notificações, tratar denúncias e bloqueios, evitar abusos e limitar a frequência das solicitações, corrigir problemas e responder às suas mensagens. Também usamos as contagens agregadas de links para medir a promoção dos nossos apps. Não vendemos suas informações, não criamos perfis pessoais de publicidade nem direcionamos anúncios a você."
         ]
       },
       {
         "h": "4. Análise e tradução por IA",
         "p": [
-          "Antes de uma carta ou resposta ser entregue, enviamos o texto, o idioma e, no caso das respostas, a carta original como contexto, para a OpenAI. A OpenAI verifica o conteúdo de acordo com as nossas regras das cartas e o traduz. A IA nunca escreve nem edita suas cartas. Você concorda com isso ao aceitar os Termos de Uso antes da sua primeira carta.",
+          "Antes de uma carta ou resposta ser entregue, enviamos o texto, o idioma e, no caso das respostas, a carta original como contexto, para a OpenAI. A OpenAI verifica o conteúdo de acordo com as nossas regras das cartas e o traduz. A IA nunca escreve nem edita suas cartas. Antes de enviar cada carta, resposta ou revisão, o app pede seu consentimento para esse processamento pela OpenAI, separado da aceitação dos Termos de Uso. O conteúdo só é enviado depois que você concorda.",
           "Enviamos as solicitações com a opção de armazenamento da OpenAI desativada. De acordo com as políticas de API da OpenAI, os dados da API não são usados por padrão para treinar os modelos dela, mas a OpenAI pode guardá-los por um período limitado para monitorar abusos. Veja a <a href=\"https://openai.com/policies/privacy-policy/\">Política de Privacidade da OpenAI</a>."
         ]
       },
@@ -238,7 +244,8 @@
           "<strong>Cloudflare</strong> hospeda nosso servidor e nosso banco de dados e estima sua cidade a partir do seu endereço IP.",
           "<strong>OpenAI</strong> analisa e traduz cartas e respostas.",
           "<strong>Apple e Google</strong> oferecem o login e entregam as notificações por meio dos serviços de push deles.",
-          "<strong>Expo</strong> repassa as notificações para a Apple e o Google. As notificações não contêm o texto das cartas."
+          "<strong>Expo</strong> repassa as notificações para a Apple e o Google. As notificações não contêm o texto das cartas.",
+          "<strong>GitHub</strong> processa feedback do app em um repositório privado, não em issues públicas."
         ],
         "after": [
           "Esses provedores podem processar informações nos Estados Unidos e em outros países. Eles as tratam de acordo com seus próprios termos e políticas de privacidade."
@@ -248,7 +255,9 @@
         "h": "6. Por quanto tempo guardamos as informações",
         "p": [
           "Guardamos sua conta e suas cartas enquanto sua conta existir. Uma carta viaja por no máximo 14 dias. Se ninguém responder, ela volta para você. Você pode queimar uma carta devolvida e sua resposta, o que exclui o texto, as traduções e os dados de análise e deixa apenas um registro mínimo de que a carta existiu.",
-          "Quando você exclui sua conta, excluímos sua conta, suas sessões, suas cartas, as respostas que você escreveu e as denúncias que você enviou, e revogamos seu login da Apple, quando for o caso. As denúncias que outras pessoas fizeram sobre seu conteúdo são mantidas, sem o ID da sua conta, por até 90 dias para que possamos concluir o tratamento delas, e depois são excluídas. Os backups do banco de dados podem manter dados excluídos por até 30 dias. Os registros mantidos pela OpenAI, Apple, Google ou outros provedores seguem as regras de retenção deles."
+          "Ao excluir sua conta, apagamos a conta, as sessões, suas cartas e as respostas que você escreveu. Revogamos os tokens de acesso pela Apple que temos disponíveis e orientamos você a remover o acesso da Apple manualmente, se necessário. Removemos o feedback privado vinculado no GitHub de forma assíncrona em até 7 dias; a exclusão só termina após essa limpeza. Para analisar questões de segurança, mantemos por até 90 dias o motivo, o conteúdo denunciado e o status do tratamento das denúncias feitas por você ou sobre seu conteúdo, sem IDs de usuário, e depois os apagamos. O texto ainda pode identificar alguém. O histórico de recuperação do Cloudflare D1 pode manter dados excluídos por até 30 dias, dependendo do plano. Os demais provedores seguem suas próprias regras de retenção.",
+          "Após a entrega, apagamos o texto do feedback do banco de dados Cloudflare D1. Excluímos a issue original e as cópias relacionadas em até 90 dias após o encerramento ou 180 dias após o recebimento, o que ocorrer primeiro. Feedback não resolvido é excluído em até 180 dias após o recebimento.",
+          "Após concluir um pedido de exclusão, mantemos a prova de verificação e os metadados do pedido até o menor prazo entre 90 dias após a conclusão e 180 dias após o recebimento. Para pedidos pendentes, mantemos o mínimo necessário para concluí-los."
         ]
       },
       {
@@ -288,6 +297,7 @@
           "Jongmin Lee, JML.Studio: {emailLink}"
         ]
       }
-    ]
+    ],
+    "date": "4 de novembro de 2026"
   }
 }

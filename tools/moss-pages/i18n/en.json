@@ -47,7 +47,7 @@
     "h1": "Moss’s Club house Support",
     "lede": "Questions, or something not working? Write to us.",
     "contactTitle": "Contact",
-    "contactBody": "We review and handle in-app feedback once a week. Tell us your phone model, its OS version and what happened on which screen, and we can help faster. You can write in any language. Please don’t include the text of anyone else’s letter.",
+    "contactBody": "We review and handle in-app feedback once a week. Tell us your phone model, its OS version and what happened on which screen, and we can help faster. You can write in any language. Please don’t include the text of anyone else’s letter. Safety reports are handled separately.",
     "subject": "Moss’s Club house",
     "reportTitle": "Reporting a letter",
     "reportBody": "To report a letter or reply, open it in the app and tap Report letter. Your report reaches us with the letter attached, so you don’t need to copy anything. You can also tap Block this sender so you won’t exchange letters with that person again.",
@@ -79,13 +79,16 @@
         "a": "Holding to burn a draft clears it from your phone without sending it. After a reply comes back, you can also burn the letter and its reply to remove them from your archive. This can’t be undone."
       },
       {
-        "q": "How do I delete my account?",
-        "a": "Open Settings in the app and tap Delete account. Your account, your letters and the replies you wrote are deleted, and this can’t be undone. See the Privacy Policy for the few records kept for safety."
-      },
-      {
         "q": "Does it cost anything?",
         "a": "No. Moss’s Club house is free, with no ads and no paid features."
       }
+    ],
+    "deleteTitle": "Delete your account",
+    "deleteLink": "Request account deletion",
+    "deleteParagraphs": [
+      "In the app, open Settings and tap Delete account. You can also request deletion using the link below or by emailing us. You do not need to reinstall the app.",
+      "For a request outside the app, we verify you using a single-use confirmation link sent to the email address registered with your account, including an Apple private relay address if you use one. Where available, you may instead reauthenticate with the same sign-in provider. We do not ask for an ID, password or letter text.",
+      "We aim to acknowledge requests within 7 days and delete the account within 7 days of verification, usually within 28 days in total. Linked private feedback is removed asynchronously. We do not consider deletion complete until that cleanup is done. See the Privacy Policy for records kept for safety."
     ]
   },
   "terms": {
@@ -194,7 +197,7 @@
       "Other users never see your name or email. They see your letter and an approximate city.",
       "Letters and replies are sent to OpenAI for safety review and translation. OpenAI does not write them.",
       "Your approximate city comes from your network connection. The app doesn’t use GPS.",
-      "No ads, no tracking, no analytics or advertising SDKs in the app.",
+      "No third-party ads or behavioral tracking. We count links opened to our own apps by day, without analytics or advertising SDKs.",
       "You can delete your account and letters in the app at any time."
     ],
     "sections": [
@@ -206,26 +209,29 @@
           "<strong>Letters and replies.</strong> The text of letters and replies you write, their translations, review results, thank-you notes, and delivery details such as dates and which letters you were offered or chose.",
           "<strong>Safety records.</strong> Reports you send, reports about your content, a copy of the reported content as the reporter saw it, the people you block, and account restrictions.",
           "<strong>Notifications.</strong> If you allow notifications, your device’s push token and platform.",
-          "<strong>Promotion taps.</strong> When you tap a link to one of our other apps, the app sends which app, where the link was and your platform. These are counted per day without your account ID or IP address.",
-          "<strong>Messages to us.</strong> If you email us, your email address and what you write."
+          "<strong>Promotion taps.</strong> When you open a link to one of our other apps, the app sends the app, link placement, platform and destination. The request uses your signed-in session. The daily aggregate table stores counts by those fields without account IDs or IP addresses.",
+          "<strong>Messages to us.</strong> If you email us, your email address and what you write.",
+          "<strong>Feedback.</strong> In-app feedback includes its type and text, language, platform, app version, receipt time and linked account.",
+          "<strong>Local drafts.</strong> Unsent drafts are stored on your device and are not submitted to the server until you send them. Android backup rules exclude app data from automatic cloud backup and device transfer. On iOS, the folder holding drafts is marked as excluded from backup. This setting guides the OS and does not guarantee that backups or restores are prevented. Burning a draft does not erase copies in past backups."
         ]
       },
       {
         "h": "2. Approximate location",
         "p": [
-          "Moss needs to know roughly where letters travel from and to. When your device connects to our server, our hosting provider estimates a city from your IP address. We round coordinates to about 10 km and save a city, not your address or your IP address. Readers see only that approximate city. The app does not ask for or use your device’s location services."
+          "Moss needs to know roughly where letters travel from and to. Our hosting provider estimates a city from your IP address. We round coordinates to about 10 km and store the approximate city separately from security records. Readers see only that city. The app does not request or use device location services.",
+          "For sign-in security, temporary rate-limit records contain IP-based keys. A scheduled cleanup removes records more than two days after their last request; delays in that job can delay removal. Session records do not store IP addresses or User-Agent values. This does not mean our hosting provider keeps no network or security logs."
         ]
       },
       {
         "h": "3. How we use information",
         "p": [
-          "We use this information to run the app: to sign you in, deliver letters between cities and time zones, translate letters, review content for safety, show help resources when a letter suggests someone may need them, send notifications, handle reports and blocks, prevent abuse and rate limit requests, fix problems and answer your messages. We don’t sell your information, use it for advertising, or build profiles about you."
+          "We use this information to run the app: to sign you in, deliver letters between cities and time zones, translate letters, review content for safety, show help resources when a letter suggests someone may need them, send notifications, handle reports and blocks, prevent abuse and rate limit requests, fix problems and answer your messages. We also use aggregate link counts to measure promotion of our own apps. We do not sell your information, build personal advertising profiles or target ads to you."
         ]
       },
       {
         "h": "4. AI review and translation",
         "p": [
-          "Before a letter or reply is delivered, we send its text, its language and, for replies, the original letter as context, to OpenAI. OpenAI checks it against our letter rules and translates it. AI never writes or edits your letters. You agree to this when you accept the Terms of Use before your first letter.",
+          "Before a letter or reply is delivered, we send its text, its language and, for replies, the original letter as context, to OpenAI. OpenAI checks it against our letter rules and translates it. AI never writes or edits your letters. Before each letter, reply or revision is sent, the app asks for your agreement to this OpenAI processing, separately from acceptance of the Terms of Use. It sends the content only after you agree.",
           "We send requests with OpenAI’s storage option turned off. According to OpenAI’s API policies, API data is not used to train their models by default, but OpenAI may keep it for a limited period to monitor abuse. See <a href=\"https://openai.com/policies/privacy-policy/\">OpenAI’s Privacy Policy</a>."
         ]
       },
@@ -238,7 +244,8 @@
           "<strong>Cloudflare</strong> hosts our server and database and estimates your city from your IP address.",
           "<strong>OpenAI</strong> reviews and translates letters and replies.",
           "<strong>Apple and Google</strong> provide sign-in, and deliver notifications through their push services.",
-          "<strong>Expo</strong> relays notifications to Apple and Google. Notifications contain no letter text."
+          "<strong>Expo</strong> relays notifications to Apple and Google. Notifications contain no letter text.",
+          "<strong>GitHub</strong> processes in-app feedback in a private repository, not public issues."
         ],
         "after": [
           "These providers may process information in the United States and other countries. They handle it under their own terms and privacy policies."
@@ -248,7 +255,9 @@
         "h": "6. How long we keep information",
         "p": [
           "We keep your account and letters while your account exists. A letter travels for at most 14 days. If nobody replies, it comes back to you. You can burn a returned letter and its reply, which deletes their text, translations and review data and leaves only a minimal record that the letter existed.",
-          "When you delete your account, we delete your account, sessions, your letters, the replies you wrote and the reports you sent, and revoke your Apple sign-in where it applies. Reports other people made about your content are kept without your account ID for up to 90 days so we can finish handling them, and then deleted. Database backups may keep deleted data for up to 30 days. Records held by OpenAI, Apple, Google or other providers follow their own retention rules."
+          "When you delete your account, we delete the account, sessions, your letters and replies you wrote. We revoke the Apple sign-in tokens available to us and guide you if you need to remove Apple access manually. We remove linked private GitHub feedback asynchronously within 7 days; deletion is complete only after that cleanup. To review safety issues, we retain reports you filed or received, including their reason, reported content and handling status, without user IDs for up to 90 days, then delete them. The text may still identify someone. Cloudflare D1 recovery history may retain deleted data for up to 30 days, depending on the plan. Other provider records follow their own retention rules.",
+          "After delivery, we clear feedback text from our Cloudflare D1 database. We delete the raw feedback issue and related copies no later than 90 days after it is closed or 180 days after receipt, whichever comes first. Unresolved feedback is deleted within 180 days of receipt.",
+          "After a deletion request is completed, we keep verification evidence and request metadata until the earlier of 90 days after completion or 180 days after receipt. For unfinished requests, we retain the minimum needed to complete the work."
         ]
       },
       {
@@ -288,6 +297,7 @@
           "Jongmin Lee, JML.Studio: {emailLink}"
         ]
       }
-    ]
+    ],
+    "date": "November 4, 2026"
   }
 }

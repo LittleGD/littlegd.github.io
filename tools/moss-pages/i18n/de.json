@@ -47,7 +47,7 @@
     "h1": "Hilfe zu Moss’s Club house",
     "lede": "Fragen, oder funktioniert etwas nicht? Schreib uns.",
     "contactTitle": "Kontakt",
-    "contactBody": "Wir prüfen und bearbeiten Anfragen aus der App einmal pro Woche. Nenn uns dein Handymodell, die Version des Betriebssystems und was auf welchem Bildschirm passiert ist, dann können wir schneller helfen. Du kannst in jeder Sprache schreiben. Bitte füge nicht den Text eines fremden Briefs ein.",
+    "contactBody": "Wir prüfen und bearbeiten Anfragen aus der App einmal pro Woche. Nenn uns dein Handymodell, die Version des Betriebssystems und was auf welchem Bildschirm passiert ist, dann können wir schneller helfen. Du kannst in jeder Sprache schreiben. Bitte füge nicht den Text eines fremden Briefs ein. Sicherheitsmeldungen werden getrennt bearbeitet.",
     "subject": "Moss’s Club house",
     "reportTitle": "Einen Brief melden",
     "reportBody": "Um einen Brief oder eine Antwort zu melden, öffne sie in der App und tippe auf Brief melden. Deine Meldung erreicht uns mit dem angehängten Brief, du musst also nichts kopieren. Du kannst auch auf Absender blockieren tippen, dann tauschst du mit dieser Person keine Briefe mehr aus.",
@@ -79,13 +79,16 @@
         "a": "Wenn du bei einem Entwurf Gedrückt halten zum Verbrennen wählst, wird er von deinem Handy gelöscht, ohne gesendet zu werden. Nachdem eine Antwort zurückgekommen ist, kannst du den Brief und seine Antwort auch verbrennen, um sie aus deinem Archiv zu entfernen. Das lässt sich nicht rückgängig machen."
       },
       {
-        "q": "Wie lösche ich mein Konto?",
-        "a": "Öffne in der App die Einstellungen und tippe auf Konto löschen. Dein Konto, deine Briefe und die Antworten, die du geschrieben hast, werden gelöscht, und das lässt sich nicht rückgängig machen. Welche wenigen Datensätze aus Sicherheitsgründen bleiben, steht in der Datenschutzerklärung."
-      },
-      {
         "q": "Kostet es etwas?",
         "a": "Nein. Moss’s Club house ist kostenlos, ohne Werbung und ohne kostenpflichtige Funktionen."
       }
+    ],
+    "deleteTitle": "Konto löschen",
+    "deleteLink": "Kontolöschung beantragen",
+    "deleteParagraphs": [
+      "Öffne in der App die Einstellungen und tippe auf Konto löschen. Du kannst die Löschung auch über den Link unten oder per E-Mail beantragen. Du musst die App nicht neu installieren.",
+      "Bei einer Anfrage außerhalb der App prüfen wir deine Identität mit einem einmalig verwendbaren Bestätigungslink an die in deinem Konto hinterlegte E-Mail-Adresse, einschließlich einer privaten Apple-Relay-Adresse, falls du diese verwendest. Falls verfügbar, kannst du dich stattdessen erneut beim selben Anmeldeanbieter anmelden. Wir fragen nicht nach Ausweis, Passwort oder Brieftext.",
+      "Wir möchten den Eingang innerhalb von 7 Tagen bestätigen und das Konto innerhalb von 7 Tagen nach der Überprüfung löschen, üblicherweise innerhalb von insgesamt 28 Tagen. Verknüpftes privates Feedback wird asynchron entfernt. Die Löschung gilt erst nach dieser Bereinigung als abgeschlossen. Welche Sicherheitsdaten aufbewahrt werden, steht in der Datenschutzerklärung."
     ]
   },
   "terms": {
@@ -194,7 +197,7 @@
       "Andere Nutzer sehen nie deinen Namen oder deine E-Mail-Adresse. Sie sehen deinen Brief und eine ungefähre Stadt.",
       "Briefe und Antworten werden zur Sicherheitsprüfung und Übersetzung an OpenAI gesendet. OpenAI schreibt sie nicht.",
       "Deine ungefähre Stadt ergibt sich aus deiner Netzwerkverbindung. Die App nutzt kein GPS.",
-      "Keine Werbung, kein Tracking, keine Analyse- oder Werbe-SDKs in der App.",
+      "Keine Werbung Dritter und kein Tracking des individuellen Verhaltens. Wir zählen täglich, wie oft Links zu unseren Apps geöffnet werden, ohne Analyse- oder Werbe-SDKs.",
       "Du kannst dein Konto und deine Briefe jederzeit in der App löschen."
     ],
     "sections": [
@@ -206,26 +209,29 @@
           "<strong>Briefe und Antworten.</strong> Der Text der Briefe und Antworten, die du schreibst, ihre Übersetzungen, Prüfergebnisse, Dankesnachrichten und Zustelldetails wie Daten und welche Briefe dir angeboten oder von dir ausgewählt wurden.",
           "<strong>Sicherheitsdaten.</strong> Meldungen, die du sendest, Meldungen über deine Inhalte, eine Kopie des gemeldeten Inhalts, so wie die meldende Person ihn gesehen hat, die Personen, die du blockierst, und Kontoeinschränkungen.",
           "<strong>Mitteilungen.</strong> Wenn du Mitteilungen erlaubst, das Push-Token deines Geräts und die Plattform.",
-          "<strong>Tipps auf Links zu unseren Apps.</strong> Wenn du auf einen Link zu einer unserer anderen Apps tippst, sendet die App, um welche App es geht, wo der Link war und welche Plattform du nutzt. Diese Tipps werden pro Tag gezählt, ohne deine Konto-Kennung oder IP-Adresse.",
-          "<strong>Nachrichten an uns.</strong> Wenn du uns eine E-Mail schreibst, deine E-Mail-Adresse und was du schreibst."
+          "<strong>Werbelinks zu unseren Apps.</strong> Beim Öffnen eines Links zu einer unserer anderen Apps werden App, Linkposition, Plattform und Ziel übermittelt. Die Anfrage nutzt deine angemeldete Sitzung. Die Tabelle mit den Tagessummen speichert Zählwerte nach diesen Feldern, ohne Konto-IDs oder IP-Adressen.",
+          "<strong>Nachrichten an uns.</strong> Wenn du uns eine E-Mail schreibst, deine E-Mail-Adresse und was du schreibst.",
+          "<strong>Feedback.</strong> In der App gesendetes Feedback umfasst Art und Text, Sprache, Plattform, App-Version, Eingangszeitpunkt und verknüpftes Konto.",
+          "<strong>Lokale Entwürfe.</strong> Ungesendete Entwürfe liegen auf deinem Gerät und werden erst beim Senden an den Server übermittelt. Die Android-Regeln schließen App-Daten von automatischen Cloud-Sicherungen und Geräteübertragungen aus. Unter iOS wird der Ordner mit den Entwürfen als von Sicherungen ausgeschlossen markiert. Diese Vorgabe an das Betriebssystem garantiert nicht, dass Sicherungen oder Wiederherstellungen verhindert werden. Das Verbrennen eines Entwurfs löscht keine Kopien in früheren Sicherungen."
         ]
       },
       {
         "h": "2. Ungefährer Standort",
         "p": [
-          "Moss muss grob wissen, woher und wohin Briefe reisen. Wenn sich dein Gerät mit unserem Server verbindet, schätzt unser Hosting-Anbieter anhand deiner IP-Adresse eine Stadt. Wir runden die Koordinaten auf etwa 10 km und speichern eine Stadt, nicht deine Adresse oder deine IP-Adresse. Leser sehen nur diese ungefähre Stadt. Die App fragt die Ortungsdienste deines Geräts weder an noch nutzt sie sie."
+          "Moss muss ungefähr wissen, woher und wohin Briefe reisen. Unser Hosting-Anbieter schätzt anhand deiner IP-Adresse eine Stadt. Wir runden die Koordinaten auf etwa 10 km und speichern die ungefähre Stadt getrennt von Sicherheitsaufzeichnungen. Lesende sehen nur diese Stadt. Die App fordert die Ortungsdienste deines Geräts weder an noch nutzt sie sie.",
+          "Zum Schutz der Anmeldung enthalten vorübergehende Daten zur Anfragebegrenzung IP-basierte Schlüssel. Ein geplanter Vorgang löscht Einträge mehr als zwei Tage nach ihrer letzten Anfrage; Verzögerungen dieses Vorgangs können die Löschung verzögern. Sitzungsdaten speichern weder IP-Adressen noch User-Agent-Werte. Das bedeutet nicht, dass unser Hosting-Anbieter keine Netzwerk- oder Sicherheitsprotokolle führt."
         ]
       },
       {
         "h": "3. Wie wir Informationen verwenden",
         "p": [
-          "Wir verwenden diese Informationen, um die App zu betreiben: um dich anzumelden, Briefe zwischen Städten und Zeitzonen zuzustellen, Briefe zu übersetzen, Inhalte auf Sicherheit zu prüfen, Hilfsangebote anzuzeigen, wenn ein Brief darauf hindeutet, dass jemand sie brauchen könnte, Mitteilungen zu senden, Meldungen und Blockierungen zu bearbeiten, Missbrauch zu verhindern und Anfragen zu begrenzen, Probleme zu beheben und deine Nachrichten zu beantworten. Wir verkaufen deine Informationen nicht, nutzen sie nicht für Werbung und erstellen keine Profile über dich."
+          "Wir verwenden diese Informationen, um die App zu betreiben: um dich anzumelden, Briefe zwischen Städten und Zeitzonen zuzustellen, Briefe zu übersetzen, Inhalte auf Sicherheit zu prüfen, Hilfsangebote anzuzeigen, wenn ein Brief darauf hindeutet, dass jemand sie brauchen könnte, Mitteilungen zu senden, Meldungen und Blockierungen zu bearbeiten, Missbrauch zu verhindern und Anfragen zu begrenzen, Probleme zu beheben und deine Nachrichten zu beantworten. Wir verwenden außerdem zusammengefasste Linkzählungen, um die Werbung für unsere eigenen Apps auszuwerten. Wir verkaufen deine Informationen nicht, erstellen keine persönlichen Werbeprofile und richten keine gezielte Werbung an dich."
         ]
       },
       {
         "h": "4. KI-Prüfung und Übersetzung",
         "p": [
-          "Bevor ein Brief oder eine Antwort zugestellt wird, senden wir seinen Text, seine Sprache und bei Antworten den ursprünglichen Brief als Kontext an OpenAI. OpenAI prüft ihn anhand unserer Briefregeln und übersetzt ihn. KI schreibt oder bearbeitet deine Briefe nie. Du stimmst dem zu, wenn du vor deinem ersten Brief die Nutzungsbedingungen akzeptierst.",
+          "Bevor ein Brief oder eine Antwort zugestellt wird, senden wir seinen Text, seine Sprache und bei Antworten den ursprünglichen Brief als Kontext an OpenAI. OpenAI prüft ihn anhand unserer Briefregeln und übersetzt ihn. KI schreibt oder bearbeitet deine Briefe nie. Vor jedem Senden eines Briefs, einer Antwort oder einer Überarbeitung bittet die App getrennt von der Annahme der Nutzungsbedingungen um deine Zustimmung zu dieser Verarbeitung durch OpenAI. Sie übermittelt den Inhalt erst nach deiner Zustimmung.",
           "Wir senden Anfragen mit ausgeschalteter Speicheroption von OpenAI. Nach den API-Richtlinien von OpenAI werden API-Daten standardmäßig nicht zum Training seiner Modelle verwendet, OpenAI kann sie aber für begrenzte Zeit aufbewahren, um Missbrauch zu erkennen. Siehe die <a href=\"https://openai.com/policies/privacy-policy/\">Datenschutzerklärung von OpenAI</a>."
         ]
       },
@@ -238,7 +244,8 @@
           "<strong>Cloudflare</strong> hostet unseren Server und unsere Datenbank und schätzt anhand deiner IP-Adresse deine Stadt;",
           "<strong>OpenAI</strong> prüft und übersetzt Briefe und Antworten;",
           "<strong>Apple und Google</strong> stellen die Anmeldung bereit und liefern Mitteilungen über ihre Push-Dienste aus;",
-          "<strong>Expo</strong> leitet Mitteilungen an Apple und Google weiter. Mitteilungen enthalten keinen Brieftext."
+          "<strong>Expo</strong> leitet Mitteilungen an Apple und Google weiter. Mitteilungen enthalten keinen Brieftext.",
+          "<strong>GitHub</strong> verarbeitet Feedback aus der App in einem privaten Repository, nicht in öffentlichen Issues."
         ],
         "after": [
           "Diese Dienstleister können Informationen in den USA und in anderen Ländern verarbeiten. Sie behandeln sie nach ihren eigenen Bedingungen und Datenschutzerklärungen."
@@ -248,7 +255,9 @@
         "h": "6. Wie lange wir Informationen aufbewahren",
         "p": [
           "Wir bewahren dein Konto und deine Briefe auf, solange dein Konto besteht. Ein Brief ist höchstens 14 Tage unterwegs. Wenn niemand antwortet, kommt er zu dir zurück. Du kannst einen zurückgekehrten Brief und seine Antwort verbrennen, wodurch ihr Text, ihre Übersetzungen und die Prüfdaten gelöscht werden und nur ein minimaler Vermerk bleibt, dass es den Brief gab.",
-          "Wenn du dein Konto löschst, löschen wir dein Konto, deine Sitzungen, deine Briefe, die Antworten, die du geschrieben hast, und die Meldungen, die du gesendet hast, und widerrufen gegebenenfalls deine Apple-Anmeldung. Meldungen, die andere über deine Inhalte gemacht haben, werden ohne deine Konto-Kennung bis zu 90 Tage aufbewahrt, damit wir sie fertig bearbeiten können, und danach gelöscht. Datenbank-Backups können gelöschte Daten bis zu 30 Tage behalten. Daten bei OpenAI, Apple, Google oder anderen Dienstleistern unterliegen deren eigenen Aufbewahrungsregeln."
+          "Wenn du dein Konto löschst, löschen wir das Konto, Sitzungen, deine Briefe und deine geschriebenen Antworten. Wir widerrufen die uns verfügbaren Apple-Anmeldetokens und zeigen dir bei Bedarf, wie du den Apple-Zugriff manuell entfernst. Verknüpftes privates GitHub-Feedback entfernen wir innerhalb von 7 Tagen asynchron; erst danach ist die Löschung abgeschlossen. Zur Prüfung von Sicherheitsfragen speichern wir Grund, gemeldeten Inhalt und Bearbeitungsstatus der von dir oder zu deinen Inhalten eingereichten Meldungen bis zu 90 Tage ohne Nutzer-IDs und löschen sie anschließend. Der Text kann weiterhin Personen erkennbar machen. Der Wiederherstellungsverlauf von Cloudflare D1 kann je nach Tarif gelöschte Daten bis zu 30 Tage enthalten. Für andere Anbieter gelten deren eigene Aufbewahrungsregeln.",
+          "Nach der Zustellung löschen wir den Feedbacktext aus unserer Cloudflare-D1-Datenbank. Das Issue mit dem ursprünglichen Feedback und zugehörige Kopien löschen wir spätestens 90 Tage nach dem Schließen oder 180 Tage nach Eingang, je nachdem, welcher Zeitpunkt früher liegt. Ungelöstes Feedback wird innerhalb von 180 Tagen nach Eingang gelöscht.",
+          "Nach Abschluss eines Löschantrags bewahren wir den Verifizierungsnachweis und die Metadaten des Antrags bis zum früheren Zeitpunkt auf: 90 Tage nach Abschluss oder 180 Tage nach Eingang. Bei offenen Anträgen behalten wir das für die Bearbeitung notwendige Minimum."
         ]
       },
       {
@@ -288,6 +297,7 @@
           "Jongmin Lee, JML.Studio: {emailLink}"
         ]
       }
-    ]
+    ],
+    "date": "4. November 2026"
   }
 }
