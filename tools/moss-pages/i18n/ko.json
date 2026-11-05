@@ -243,8 +243,7 @@
         "list": [
           "<strong>Cloudflare</strong>는 서버와 데이터베이스를 호스팅하고 IP 주소로 도시를 추정합니다.",
           "<strong>OpenAI</strong>는 편지와 답장을 검토하고 번역합니다.",
-          "<strong>Apple과 Google</strong>은 로그인을 제공하고, 푸시 서비스를 통해 알림을 전달합니다.",
-          "<strong>Expo</strong>는 Apple과 Google로 알림을 중계합니다. 알림에는 편지 내용이 포함되지 않습니다.",
+          "<strong>Apple과 Google</strong>은 로그인을 제공하고, 푸시 서비스를 통해 알림을 전달합니다. 알림에는 편지 내용이 포함되지 않습니다.",
           "<strong>GitHub</strong>는 앱 피드백과 편지·답장 신고를 비공개 저장소의 이슈로 처리합니다. 신고에는 사유, 신고자가 본 내용, 콘텐츠 종류, 언어, 날짜와 신고 참조번호가 포함됩니다. 계정 ID나 이메일 주소는 추가하지 않지만, 본문으로 개인을 알아볼 수는 있습니다."
         ],
         "after": [

@@ -243,8 +243,7 @@
         "list": [
           "<strong>Cloudflare</strong> hospeda nosso servidor e nosso banco de dados e estima sua cidade a partir do seu endereço IP.",
           "<strong>OpenAI</strong> analisa e traduz cartas e respostas.",
-          "<strong>Apple e Google</strong> oferecem o login e entregam as notificações por meio dos serviços de push deles.",
-          "<strong>Expo</strong> repassa as notificações para a Apple e o Google. As notificações não contêm o texto das cartas.",
+          "<strong>Apple e Google</strong> oferecem o login e entregam as notificações por meio dos serviços de push deles. As notificações não contêm o texto das cartas.",
           "<strong>GitHub</strong> processa feedback do app e denúncias de cartas ou respostas como issues em um repositório privado. As denúncias incluem o motivo, o conteúdo como foi visto por quem denunciou, o tipo de conteúdo, o idioma, a data e uma referência da denúncia. Não adicionamos IDs de conta nem endereços de email, embora o texto possa identificar alguém."
         ],
         "after": [

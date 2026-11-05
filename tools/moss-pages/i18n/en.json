@@ -243,8 +243,7 @@
         "list": [
           "<strong>Cloudflare</strong> hosts our server and database and estimates your city from your IP address.",
           "<strong>OpenAI</strong> reviews and translates letters and replies.",
-          "<strong>Apple and Google</strong> provide sign-in, and deliver notifications through their push services.",
-          "<strong>Expo</strong> relays notifications to Apple and Google. Notifications contain no letter text.",
+          "<strong>Apple and Google</strong> provide sign-in, and deliver notifications through their push services. Notifications contain no letter text.",
           "<strong>GitHub</strong> processes in-app feedback and letter or reply reports as issues in a private repository. Reports include the reason, content as the reporter saw it, content type, language, date and a report reference. We do not add account IDs or email addresses, though text may identify someone."
         ],
         "after": [

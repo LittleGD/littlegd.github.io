@@ -243,8 +243,7 @@
         "list": [
           "<strong>Cloudflare</strong> 托管我们的服务器和数据库，并根据你的 IP 地址估算你的城市。",
           "<strong>OpenAI</strong> 审核并翻译信件和回信。",
-          "<strong>Apple 和 Google</strong> 提供登录服务，并通过它们的推送服务送达通知。",
-          "<strong>Expo</strong> 将通知转发给 Apple 和 Google。通知中不包含信件文本。",
+          "<strong>Apple 和 Google</strong> 提供登录服务，并通过它们的推送服务送达通知。通知中不包含信件文本。",
           "<strong>GitHub</strong> 在私有仓库中以议题形式处理应用内反馈和信件或回信举报。举报包括原因、举报人看到的内容、内容类型、语言、日期和举报编号。我们不会额外添加账户 ID 或电子邮箱地址，但文本仍可能识别个人。"
         ],
         "after": [

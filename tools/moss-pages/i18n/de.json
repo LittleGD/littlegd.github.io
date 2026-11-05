@@ -243,8 +243,7 @@
         "list": [
           "<strong>Cloudflare</strong> hostet unseren Server und unsere Datenbank und schätzt anhand deiner IP-Adresse deine Stadt;",
           "<strong>OpenAI</strong> prüft und übersetzt Briefe und Antworten;",
-          "<strong>Apple und Google</strong> stellen die Anmeldung bereit und liefern Mitteilungen über ihre Push-Dienste aus;",
-          "<strong>Expo</strong> leitet Mitteilungen an Apple und Google weiter. Mitteilungen enthalten keinen Brieftext.",
+          "<strong>Apple und Google</strong> stellen die Anmeldung bereit und liefern Mitteilungen über ihre Push-Dienste aus. Mitteilungen enthalten keinen Brieftext.",
           "<strong>GitHub</strong> verarbeitet Feedback aus der App und Meldungen zu Briefen oder Antworten als Issues in einem privaten Repository. Meldungen enthalten den Grund, den Inhalt aus Sicht der meldenden Person, die Art des Inhalts, Sprache, Datum und eine Meldungsreferenz. Wir fügen keine Konto-IDs oder E-Mail-Adressen hinzu, der Text kann aber Personen erkennbar machen."
         ],
         "after": [

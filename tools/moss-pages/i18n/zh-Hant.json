@@ -243,8 +243,7 @@
         "list": [
           "<strong>Cloudflare</strong> 代管我們的伺服器和資料庫，並根據你的 IP 位址估算你的城市。",
           "<strong>OpenAI</strong> 審核並翻譯信件和回信。",
-          "<strong>Apple 和 Google</strong> 提供登入服務，並透過它們的推播服務送達通知。",
-          "<strong>Expo</strong> 將通知轉送給 Apple 和 Google。通知中不包含信件文字。",
+          "<strong>Apple 和 Google</strong> 提供登入服務，並透過它們的推播服務送達通知。通知中不包含信件文字。",
           "<strong>GitHub</strong> 在私人儲存庫中以議題形式處理 App 內意見回饋和信件或回信檢舉。檢舉包括原因、檢舉人看到的內容、內容類型、語言、日期和檢舉編號。我們不會額外加入帳戶 ID 或電子郵件地址，但文字仍可能識別個人。"
         ],
         "after": [
