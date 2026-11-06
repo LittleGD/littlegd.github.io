@@ -80,7 +80,7 @@
       },
       {
         "q": "Est-ce que ça coûte quelque chose ?",
-        "a": "Non. L’app et les échanges de lettres sont gratuits, sans achats. Après avoir ouvert les trois coffrets gratuits, vous pouvez obtenir une étincelle par jour si vous avez 18 ans ou moins, ou choisir de regarder une publicité avec récompense si vous avez 19 ans ou plus."
+        "a": "Non. L’app et les échanges de lettres sont gratuits, sans achats. Après avoir ouvert les trois coffrets gratuits, vous pouvez obtenir une étincelle par jour si vous avez 18 ans ou moins, ou choisir de regarder une publicité avec récompense si vous avez 19 ans ou plus. Vous pouvez choisir des annonces personnalisées ou générales. Ce choix ne change ni les chances de récompense ni la limite quotidienne."
       }
     ],
     "deleteTitle": "Supprimer votre compte",
@@ -152,7 +152,7 @@
       {
         "h": "7. Service gratuit et modifications",
         "p": [
-          "Une fois les trois coffrets gratuits de la boutique ouverts, vous pouvez recevoir une récompense par jour. Si vous avez 18 ans ou moins, vous pouvez réclamer une étincelle chaque jour, sans publicité. À partir de 19 ans, vous pouvez choisir de regarder une publicité avec récompense jusqu’au bout si elle est disponible. Probabilités : 1 étincelle, 2 % ; 2, 20 % ; 3, 50 % ; 4, 20 % ; 5, 8 %. Les deux modes partagent la même limite d’une récompense par jour et par compte, renouvelée à minuit, heure locale. Vous pouvez corriger votre tranche d’âge dans les Réglages. Vous pouvez utiliser des étincelles pour ouvrir des coffrets dans la boutique. Les étincelles et les objets n’ont aucune valeur monétaire. Ils ne peuvent être ni achetés avec de l’argent réel, ni transférés, ni convertis en argent.",
+          "Une fois les trois coffrets gratuits de la boutique ouverts, vous pouvez recevoir une récompense par jour. Si vous avez 18 ans ou moins, vous pouvez réclamer une étincelle chaque jour, sans publicité. À partir de 19 ans, vous pouvez choisir de regarder une publicité avec récompense jusqu’au bout si elle est disponible. Avant de regarder une publicité avec récompense, choisissez des annonces personnalisées ou générales. Les chances de récompense et la limite quotidienne sont les mêmes. Probabilités : 1 étincelle, 2 % ; 2, 20 % ; 3, 50 % ; 4, 20 % ; 5, 8 %. Les deux modes partagent la même limite d’une récompense par jour et par compte, renouvelée à minuit, heure locale. Vous pouvez corriger votre tranche d’âge dans les Réglages. Vous pouvez utiliser des étincelles pour ouvrir des coffrets dans la boutique. Les étincelles et les objets n’ont aucune valeur monétaire. Ils ne peuvent être ni achetés avec de l’argent réel, ni transférés, ni convertis en argent.",
           "L’app est gratuite. Nous pouvons modifier, suspendre ou arrêter l’app ou l’une de ses fonctions, y compris les limites de lettres et les délais de livraison. Les lettres en cours d’acheminement peuvent être perdues si le service s’arrête. Nous essaierons de prévenir des changements importants dans l’app ou sur cette page."
         ]
       },
@@ -199,7 +199,7 @@
       "Les autres utilisateurs ne voient jamais votre nom ni votre adresse e-mail. Ils voient votre lettre et une ville approximative.",
       "Les lettres et les réponses sont envoyées à OpenAI pour l’examen de sécurité et la traduction. OpenAI ne les écrit pas.",
       "Votre ville approximative est déduite de votre connexion réseau. L’app n’utilise pas le GPS.",
-      "La boutique propose des publicités non personnalisées et facultatives aux personnes qui déclarent avoir 19 ans ou plus. À 18 ans ou moins, la récompense quotidienne s’obtient sans publicité.",
+      "Si vous indiquez avoir au moins 19 ans, vous pouvez choisir des annonces personnalisées ou générales pour recevoir une récompense. À 18 ans ou moins, vous pouvez obtenir une étincelle par jour en signalant votre présence.",
       "Vous pouvez supprimer votre compte et vos lettres dans l’app à tout moment."
     ],
     "sections": [
@@ -228,7 +228,7 @@
       {
         "h": "3. Comment nous utilisons les informations",
         "p": [
-          "Nous utilisons ces informations pour faire fonctionner l’app : vous connecter, livrer les lettres entre villes et fuseaux horaires, les traduire, examiner les contenus pour la sécurité, afficher des ressources d’aide quand une lettre laisse penser que quelqu’un peut en avoir besoin, envoyer des notifications, traiter les signalements et les blocages, prévenir les abus et limiter le nombre de requêtes, corriger les problèmes et répondre à vos messages. Nous utilisons aussi les totaux des ouvertures de liens pour mesurer la promotion de nos apps. Nous ne vendons pas vos informations, ne créons pas de profils publicitaires individuels et ne vous adressons pas de publicités ciblées.",
+          "Nous utilisons ces informations pour faire fonctionner l’app : vous connecter, livrer les lettres entre villes et fuseaux horaires, les traduire, examiner les contenus pour la sécurité, afficher des ressources d’aide quand une lettre laisse penser que quelqu’un peut en avoir besoin, envoyer des notifications, traiter les signalements et les blocages, prévenir les abus et limiter le nombre de requêtes, corriger les problèmes et répondre à vos messages. Nous utilisons aussi les totaux des ouvertures de liens pour mesurer la promotion de nos apps.",
           "Nous utilisons les données de la boutique pour appliquer les limites d’âge et de fréquence, vérifier le visionnage complet, créditer les étincelles et éviter la fraude et les doubles versements."
         ]
       },
@@ -248,10 +248,11 @@
           "<strong>Cloudflare</strong> héberge notre serveur et notre base de données et estime votre ville à partir de votre adresse IP ;",
           "<strong>OpenAI</strong> examine et traduit les lettres et les réponses ;",
           "Apple et Google fournissent la connexion. Apple Push Notification service (APNs) et Firebase Cloud Messaging (FCM) acheminent les notifications, qui ne contiennent aucun texte de lettre.",
-          "Google AdMob et son outil de consentement peuvent recevoir votre adresse IP et en déduire une position approximative, ainsi que des informations sur l’app et l’appareil (dont les identifiants d’app ou d’appareil disponibles), les affichages et interactions publicitaires, les plantages et les performances. Google s’en sert pour gérer le consentement, diffuser et mesurer les annonces et prévenir la fraude. Nous ne demandons que des annonces non personnalisées, ne demandons pas d’autorisation de suivi et n’utilisons ni l’IDFA ni l’identifiant publicitaire Android. L’identifiant propriétaire de l’éditeur est désactivé. Pour vérifier l’annonce, nous transmettons comme donnée personnalisée uniquement un jeton opaque de tentative, sans votre identifiant dans l’app, votre adresse e-mail ni le contenu de vos lettres. Google traite et conserve les données du SDK selon ses <a href=\"https://policies.google.com/privacy\">Règles de confidentialité</a>.",
+          "Google AdMob et son outil de consentement (UMP) peuvent recevoir votre adresse IP, la localisation approximative qui en découle, des informations sur l’app et l’appareil (dont les identifiants disponibles), les affichages et interactions publicitaires, ainsi que des données de plantage ou de performance. Google utilise ces données pour gérer le consentement, diffuser et mesurer les publicités et lutter contre la fraude. Nous désactivons les identifiants propriétaires de l’éditeur. Pour vérifier une récompense, nous envoyons uniquement un jeton de tentative opaque comme donnée personnalisée. Nous ne transmettons aux fournisseurs de publicités ni votre identifiant de compte, ni votre adresse e-mail, ni le contenu de vos lettres. Google traite et conserve les données du SDK selon ses <a href=\"https://policies.google.com/privacy\">Règles de confidentialité</a>.",
           "<strong>GitHub</strong> traite les commentaires de l’app et les signalements de lettres ou de réponses sous forme de tickets dans un dépôt privé. Les signalements comprennent le motif, le contenu tel que la personne l’a vu, le type de contenu, la langue, la date et une référence. Nous n’ajoutons ni identifiant de compte ni adresse e-mail, mais le texte peut identifier une personne."
         ],
         "after": [
+          "Sur iOS, nous demandons des annonces personnalisées uniquement si vous les choisissez, si l’outil de consentement de Google autorise la personnalisation et si vous autorisez le suivi de votre activité sur les apps et sites d’autres entreprises via la transparence du suivi des apps d’Apple (ATT). Lorsque l’autorisation ATT et les autres consentements requis le permettent, Google peut utiliser l’identifiant publicitaire iOS (IDFA) pour mesurer les annonces ou limiter leur fréquence, y compris pour les annonces générales. Sur Android, nous bloquons l’identifiant publicitaire et les autorisations publicitaires d’AdServices. Si vous choisissez des annonces personnalisées, la demande dépend des règles de Google et des données disponibles. Google peut tout de même diffuser des annonces générales. Si la personnalisation n’est pas autorisée, nous demandons des annonces générales lorsque l’outil de Google permet les demandes. Sinon, nous ne demandons aucune publicité.",
           "Ces prestataires peuvent traiter les informations aux États-Unis et dans d’autres pays. Ils les traitent selon leurs propres conditions et politiques de confidentialité."
         ]
       },
@@ -263,14 +264,14 @@
           "Après leur livraison, nous effaçons le texte des commentaires de notre base Cloudflare D1. Nous supprimons le ticket contenant le commentaire brut et les copies associées au plus tard 90 jours après sa clôture ou 180 jours après sa réception, selon la première échéance. Les commentaires non résolus sont supprimés dans les 180 jours suivant leur réception.",
           "Nous supprimons les tickets de signalement sur GitHub et les copies associées à la première de ces échéances : 180 jours après réception, 90 jours après la clôture du ticket ou la résolution du signalement par un administrateur, ou 90 jours après la suppression du compte. Ce délai concerne les copies sur GitHub ; les dossiers de sécurité décrits ci-dessus suivent leur propre durée de conservation.",
           "Après la clôture d’une demande de suppression, nous conservons la preuve de vérification et les métadonnées de la demande jusqu’à la première échéance entre 90 jours après la clôture et 180 jours après la réception. Pour une demande non terminée, nous conservons le minimum nécessaire pour la traiter.",
-          "Nous conservons la tranche d’âge actuelle, le moment où elle a été définie et l’historique des récompenses créditées jusqu’à la suppression du compte. Une tâche planifiée efface les tentatives de visionnage une fois écoulée une journée après la fin de la période de récompense concernée. La suppression du compte les efface également. Les données traitées par Google suivent ses propres règles de conservation."
+          "Votre choix publicitaire est enregistré sur cet appareil pour votre compte. Nous conservons la tranche d’âge actuelle, le moment où elle a été définie et l’historique des récompenses créditées jusqu’à la suppression du compte. Une tâche planifiée efface les tentatives de visionnage une fois écoulée une journée après la fin de la période de récompense concernée. La suppression du compte les efface également. Les données traitées par Google suivent ses propres règles de conservation."
         ]
       },
       {
         "h": "7. Vos choix et vos droits",
         "p": [
           "Vous pouvez supprimer votre compte dans Réglages &gt; Supprimer le compte. Vous pouvez désactiver les notifications dans les réglages de votre appareil. Vous pouvez bloquer toute personne qui vous écrit.",
-          "Vous pouvez corriger votre tranche d’âge dans les Réglages. Lorsqu’elles sont disponibles, les options de confidentialité des annonces dans les Réglages vous permettent de gérer votre consentement. Vous pouvez échanger des lettres sans regarder de publicités.",
+          "Dans les réglages de l’app, vous pouvez corriger votre tranche d’âge ou retirer votre choix d’annonces personnalisées en passant aux annonces générales. Lorsqu’elles sont disponibles, les options de confidentialité des publicités vous permettent de gérer séparément le consentement régional de Google. Sur iOS, vous pouvez modifier l’autorisation ATT séparément dans Réglages &gt; Confidentialité et sécurité &gt; Suivi. Vous pouvez échanger des lettres sans regarder de publicités.",
           "Selon l’endroit où vous vivez, vous pouvez avoir le droit d’accéder à vos informations, de les corriger, de les supprimer ou de les exporter, ou de vous opposer à leur utilisation ou d’en demander la limitation. Pour faire une demande, écrivez à {emailLink}. Vous pouvez aussi déposer une réclamation auprès de votre autorité locale de protection des données."
         ]
       },

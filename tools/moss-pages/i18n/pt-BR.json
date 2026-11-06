@@ -80,7 +80,7 @@
       },
       {
         "q": "Custa alguma coisa?",
-        "a": "Não. O app e a troca de cartas são grátis e não há compras. Depois de abrir o pacote grátis de três caixas, você pode resgatar uma faísca por dia se tiver 18 anos ou menos ou optar por assistir a um anúncio premiado se tiver 19 anos ou mais."
+        "a": "Não. O app e a troca de cartas são grátis e não há compras. Depois de abrir o pacote grátis de três caixas, você pode resgatar uma faísca por dia se tiver 18 anos ou menos ou optar por assistir a um anúncio premiado se tiver 19 anos ou mais. Você pode escolher anúncios personalizados ou gerais. A escolha não muda as chances de recompensa nem o limite diário."
       }
     ],
     "deleteTitle": "Excluir sua conta",
@@ -152,7 +152,7 @@
       {
         "h": "7. Serviço gratuito e alterações",
         "p": [
-          "Depois de abrir o pacote grátis de três caixas da loja, você pode receber uma recompensa diária. Se tiver 18 anos ou menos, pode resgatar uma faísca pela presença, sem anúncio. Se tiver 19 anos ou mais, pode escolher assistir até o fim a um anúncio premiado quando houver um disponível. As chances são: 1 faísca, 2%; 2, 20%; 3, 50%; 4, 20%; 5, 8%. As duas formas compartilham o limite de uma recompensa por conta por dia, que é renovado à meia-noite no seu horário local. Você pode corrigir a faixa etária nos Ajustes. Você pode usar faíscas para abrir caixas na loja. Faíscas e itens não têm valor em dinheiro e não podem ser comprados com dinheiro real, transferidos nem trocados por dinheiro.",
+          "Depois de abrir o pacote grátis de três caixas da loja, você pode receber uma recompensa diária. Se tiver 18 anos ou menos, pode resgatar uma faísca pela presença, sem anúncio. Se tiver 19 anos ou mais, pode escolher assistir até o fim a um anúncio premiado quando houver um disponível. Antes de assistir a um anúncio premiado, escolha anúncios personalizados ou gerais. As chances de recompensa e o limite diário são os mesmos nas duas opções. As chances são: 1 faísca, 2%; 2, 20%; 3, 50%; 4, 20%; 5, 8%. As duas formas compartilham o limite de uma recompensa por conta por dia, que é renovado à meia-noite no seu horário local. Você pode corrigir a faixa etária nos Ajustes. Você pode usar faíscas para abrir caixas na loja. Faíscas e itens não têm valor em dinheiro e não podem ser comprados com dinheiro real, transferidos nem trocados por dinheiro.",
           "O app é gratuito. Podemos alterar, pausar ou encerrar o app ou qualquer recurso, incluindo limites de cartas e prazos de entrega. Cartas em trânsito podem ser perdidas se o serviço for encerrado. Tentaremos avisar sobre mudanças importantes no app ou nesta página."
         ]
       },
@@ -199,7 +199,7 @@
       "Outros usuários nunca veem seu nome nem seu e-mail. Eles veem sua carta e uma cidade aproximada.",
       "Cartas e respostas são enviadas à OpenAI para análise de segurança e tradução. A OpenAI não as escreve.",
       "Sua cidade aproximada vem da sua conexão de rede. O app não usa GPS.",
-      "Na loja, quem declara ter 19 anos ou mais pode escolher assistir a anúncios não personalizados. Quem tem 18 anos ou menos pode resgatar uma recompensa diária sem anúncios.",
+      "Se você informar que tem 19 anos ou mais, pode escolher anúncios premiados personalizados ou gerais. Com 18 anos ou menos, você pode resgatar uma faísca por dia pelo registro de presença.",
       "Você pode excluir sua conta e suas cartas no app a qualquer momento."
     ],
     "sections": [
@@ -228,7 +228,7 @@
       {
         "h": "3. Como usamos as informações",
         "p": [
-          "Usamos estas informações para fazer o app funcionar: para fazer seu login, entregar cartas entre cidades e fusos horários, traduzir cartas, analisar o conteúdo por segurança, mostrar recursos de ajuda quando uma carta sugere que alguém pode precisar deles, enviar notificações, tratar denúncias e bloqueios, evitar abusos e limitar a frequência das solicitações, corrigir problemas e responder às suas mensagens. Também usamos as contagens agregadas de links para medir a promoção dos nossos apps. Não vendemos suas informações, não criamos perfis pessoais de publicidade nem direcionamos anúncios a você.",
+          "Usamos estas informações para fazer o app funcionar: para fazer seu login, entregar cartas entre cidades e fusos horários, traduzir cartas, analisar o conteúdo por segurança, mostrar recursos de ajuda quando uma carta sugere que alguém pode precisar deles, enviar notificações, tratar denúncias e bloqueios, evitar abusos e limitar a frequência das solicitações, corrigir problemas e responder às suas mensagens. Também usamos as contagens agregadas de links para medir a promoção dos nossos apps.",
           "Usamos os dados da loja para aplicar os limites diários e de idade, verificar se você terminou de assistir ao anúncio, creditar faíscas e prevenir fraudes e créditos duplicados."
         ]
       },
@@ -248,10 +248,11 @@
           "<strong>Cloudflare</strong> hospeda nosso servidor e nosso banco de dados e estima sua cidade a partir do seu endereço IP.",
           "<strong>OpenAI</strong> analisa e traduz cartas e respostas.",
           "A Apple e o Google fornecem o login. As notificações são enviadas pelo Apple Push Notification service (APNs) e pelo Firebase Cloud Messaging (FCM), sem o texto das cartas.",
-          "O Google AdMob e sua ferramenta de consentimento podem receber seu endereço IP e deduzir uma localização aproximada, além de dados do app e do dispositivo (incluindo identificadores disponíveis do app ou do dispositivo), visualizações e interações com anúncios e dados sobre falhas ou desempenho. O Google usa esses dados para gerenciar o consentimento, veicular e medir anúncios e prevenir fraudes. Solicitamos apenas anúncios não personalizados. Não pedimos permissão de rastreamento, não usamos IDFA nem o ID de publicidade do Android e desativamos o identificador próprio do editor. Para verificar o anúncio, enviamos como dado personalizado apenas um token opaco da tentativa, sem o ID de usuário do app, e-mail ou conteúdo de cartas. O Google trata e conserva os dados do SDK conforme sua <a href=\"https://policies.google.com/privacy\">Política de Privacidade</a>.",
+          "O Google AdMob e a ferramenta de consentimento (UMP) podem receber seu endereço IP, a localização aproximada derivada dele, dados do app e do dispositivo (incluindo identificadores disponíveis), visualizações e interações com anúncios e dados de falhas ou desempenho. O Google usa esses dados para gerenciar o consentimento, exibir e medir anúncios e prevenir fraudes. Desativamos os identificadores próprios do editor. Para verificar uma recompensa, enviamos apenas um token opaco da tentativa como dado personalizado. Não enviamos o ID da conta do app, seu e-mail ou o conteúdo das cartas aos provedores de anúncios. O Google trata e retém os dados do SDK conforme sua <a href=\"https://policies.google.com/privacy\">Política de Privacidade</a>.",
           "<strong>GitHub</strong> processa feedback do app e denúncias de cartas ou respostas como issues em um repositório privado. As denúncias incluem o motivo, o conteúdo como foi visto por quem denunciou, o tipo de conteúdo, o idioma, a data e uma referência da denúncia. Não adicionamos IDs de conta nem endereços de email, embora o texto possa identificar alguém."
         ],
         "after": [
+          "No iOS, solicitamos anúncios personalizados somente se você escolher essa opção, a ferramenta de consentimento do Google permitir a personalização e você autorizar o rastreamento da atividade em apps e sites de outras empresas pelo recurso Transparência no Rastreamento em Apps da Apple (ATT). Se a permissão do ATT e os demais consentimentos necessários permitirem, o Google pode usar o identificador de publicidade do iOS (IDFA) para medir anúncios ou limitar a frequência de exibição, inclusive para anúncios gerais. No Android, bloqueamos o ID de publicidade e as permissões de publicidade do AdServices. Se você escolher anúncios personalizados, o pedido depende das regras do Google e dos dados disponíveis. O Google ainda pode exibir anúncios gerais. Se a personalização não for permitida, solicitamos anúncios gerais quando a ferramenta do Google permitir pedidos de anúncios. Caso contrário, não solicitamos anúncios.",
           "Esses provedores podem processar informações nos Estados Unidos e em outros países. Eles as tratam de acordo com seus próprios termos e políticas de privacidade."
         ]
       },
@@ -263,14 +264,14 @@
           "Após a entrega, apagamos o texto do feedback do banco de dados Cloudflare D1. Excluímos a issue original e as cópias relacionadas em até 90 dias após o encerramento ou 180 dias após o recebimento, o que ocorrer primeiro. Feedback não resolvido é excluído em até 180 dias após o recebimento.",
           "Excluímos as issues de denúncias no GitHub e as cópias relacionadas no primeiro destes prazos: 180 dias após o recebimento, 90 dias após o encerramento da issue ou a resolução da denúncia por um administrador, ou 90 dias após a exclusão da conta. Esse prazo vale para as cópias no GitHub; os registros de segurança descritos acima seguem seu próprio prazo de retenção.",
           "Após concluir um pedido de exclusão, mantemos a prova de verificação e os metadados do pedido até o menor prazo entre 90 dias após a conclusão e 180 dias após o recebimento. Para pedidos pendentes, mantemos o mínimo necessário para concluí-los.",
-          "Guardamos a faixa etária atual, quando foi informada e as recompensas creditadas até a exclusão da conta. Uma tarefa programada apaga os registros de tentativas de anúncio depois de passar um dia do fim do período da recompensa ou na exclusão da conta. Os dados tratados pelo Google seguem as regras de retenção dele."
+          "Sua escolha de anúncios é salva neste dispositivo para sua conta. Guardamos a faixa etária atual, quando foi informada e as recompensas creditadas até a exclusão da conta. Uma tarefa programada apaga os registros de tentativas de anúncio depois de passar um dia do fim do período da recompensa ou na exclusão da conta. Os dados tratados pelo Google seguem as regras de retenção dele."
         ]
       },
       {
         "h": "7. Suas escolhas e direitos",
         "p": [
           "Você pode excluir sua conta em Configurações &gt; Excluir conta. Você pode desativar as notificações nas configurações do seu dispositivo. Você pode bloquear qualquer pessoa que escreva para você.",
-          "Você pode corrigir sua faixa etária nos Ajustes. Quando estiverem disponíveis, use as opções de privacidade de anúncios nos Ajustes para gerenciar o consentimento. Você pode trocar cartas sem assistir a anúncios.",
+          "Nos ajustes do app, você pode corrigir sua faixa etária ou retirar a escolha de anúncios personalizados mudando para anúncios gerais. Quando disponíveis, as opções de privacidade de anúncios permitem gerenciar separadamente o consentimento regional do Google. No iOS, você pode alterar a permissão separada do ATT em Ajustes &gt; Privacidade e Segurança &gt; Rastreamento. Você pode trocar cartas sem assistir a anúncios.",
           "Dependendo de onde você mora, você pode ter o direito de acessar, corrigir, excluir ou exportar suas informações, ou de se opor ao modo como as usamos ou restringi-lo. Para fazer uma solicitação, envie um e-mail para {emailLink}. Você também pode reclamar à autoridade de proteção de dados do seu país."
         ]
       },

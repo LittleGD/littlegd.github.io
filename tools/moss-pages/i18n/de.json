@@ -80,7 +80,7 @@
       },
       {
         "q": "Kostet es etwas?",
-        "a": "Nein. Die App und der Briefwechsel sind kostenlos, und es gibt keine Käufe. Nach dem Öffnen der drei kostenlosen Boxen kannst du bis einschließlich 18 Jahren täglich einen Funken abholen oder ab 19 Jahren freiwillig Werbung mit Belohnung ansehen."
+        "a": "Nein. Die App und der Briefwechsel sind kostenlos, und es gibt keine Käufe. Nach dem Öffnen der drei kostenlosen Boxen kannst du bis einschließlich 18 Jahren täglich einen Funken abholen oder ab 19 Jahren freiwillig Werbung mit Belohnung ansehen. Du kannst personalisierte oder allgemeine Werbung wählen. Die Wahl ändert weder die Gewinnchancen noch das Tageslimit."
       }
     ],
     "deleteTitle": "Konto löschen",
@@ -152,7 +152,7 @@
       {
         "h": "7. Kostenloser Dienst und Änderungen",
         "p": [
-          "Nachdem du die drei kostenlosen Boxen im Shop geöffnet hast, kannst du eine tägliche Belohnung erhalten. Wenn du 18 Jahre oder jünger bist, kannst du täglich einen Funken ohne Werbung abholen. Ab 19 Jahren kannst du, wenn verfügbar, freiwillig eine Anzeige mit Belohnung bis zum Ende ansehen. Die Chancen sind: 1 Funke: 2 %; 2: 20 %; 3: 50 %; 4: 20 %; 5: 8 %. Für beide Wege gilt zusammen eine Belohnung pro Konto und Tag. Das Limit wird um Mitternacht deiner Ortszeit zurückgesetzt. Du kannst deine Altersgruppe in den Einstellungen korrigieren. Mit Funken kannst du Boxen im Shop öffnen. Funken und Gegenstände haben keinen Geldwert. Sie können weder mit echtem Geld gekauft noch übertragen oder gegen Geld eingetauscht werden.",
+          "Nachdem du die drei kostenlosen Boxen im Shop geöffnet hast, kannst du eine tägliche Belohnung erhalten. Wenn du 18 Jahre oder jünger bist, kannst du täglich einen Funken ohne Werbung abholen. Ab 19 Jahren kannst du, wenn verfügbar, freiwillig eine Anzeige mit Belohnung bis zum Ende ansehen. Wähle vor dem Ansehen einer Anzeige mit Belohnung zwischen personalisierter und allgemeiner Werbung. Gewinnchancen und Tageslimit sind bei beiden gleich. Die Chancen sind: 1 Funke: 2 %; 2: 20 %; 3: 50 %; 4: 20 %; 5: 8 %. Für beide Wege gilt zusammen eine Belohnung pro Konto und Tag. Das Limit wird um Mitternacht deiner Ortszeit zurückgesetzt. Du kannst deine Altersgruppe in den Einstellungen korrigieren. Mit Funken kannst du Boxen im Shop öffnen. Funken und Gegenstände haben keinen Geldwert. Sie können weder mit echtem Geld gekauft noch übertragen oder gegen Geld eingetauscht werden.",
           "Die App ist kostenlos. Wir können die App oder einzelne Funktionen ändern, pausieren oder einstellen, einschließlich Briefgrenzen und Zustellzeiten. Briefe, die unterwegs sind, können verloren gehen, wenn der Dienst eingestellt wird. Wir bemühen uns, wesentliche Änderungen in der App oder auf dieser Seite anzukündigen."
         ]
       },
@@ -199,7 +199,7 @@
       "Andere Nutzer sehen nie deinen Namen oder deine E-Mail-Adresse. Sie sehen deinen Brief und eine ungefähre Stadt.",
       "Briefe und Antworten werden zur Sicherheitsprüfung und Übersetzung an OpenAI gesendet. OpenAI schreibt sie nicht.",
       "Deine ungefähre Stadt ergibt sich aus deiner Netzwerkverbindung. Die App nutzt kein GPS.",
-      "Wer angibt, mindestens 19 Jahre alt zu sein, kann im Shop freiwillig nicht personalisierte Werbung ansehen. Wer 18 Jahre oder jünger ist, kann eine tägliche Belohnung ohne Werbung abholen.",
+      "Wenn du angibst, mindestens 19 Jahre alt zu sein, kannst du personalisierte oder allgemeine Werbung mit Belohnung wählen. Bis einschließlich 18 Jahre kannst du dir beim täglichen Check-in einen Funken abholen.",
       "Du kannst dein Konto und deine Briefe jederzeit in der App löschen."
     ],
     "sections": [
@@ -228,7 +228,7 @@
       {
         "h": "3. Wie wir Informationen verwenden",
         "p": [
-          "Wir verwenden diese Informationen, um die App zu betreiben: um dich anzumelden, Briefe zwischen Städten und Zeitzonen zuzustellen, Briefe zu übersetzen, Inhalte auf Sicherheit zu prüfen, Hilfsangebote anzuzeigen, wenn ein Brief darauf hindeutet, dass jemand sie brauchen könnte, Mitteilungen zu senden, Meldungen und Blockierungen zu bearbeiten, Missbrauch zu verhindern und Anfragen zu begrenzen, Probleme zu beheben und deine Nachrichten zu beantworten. Wir verwenden außerdem zusammengefasste Linkzählungen, um die Werbung für unsere eigenen Apps auszuwerten. Wir verkaufen deine Informationen nicht, erstellen keine persönlichen Werbeprofile und richten keine gezielte Werbung an dich.",
+          "Wir verwenden diese Informationen, um die App zu betreiben: um dich anzumelden, Briefe zwischen Städten und Zeitzonen zuzustellen, Briefe zu übersetzen, Inhalte auf Sicherheit zu prüfen, Hilfsangebote anzuzeigen, wenn ein Brief darauf hindeutet, dass jemand sie brauchen könnte, Mitteilungen zu senden, Meldungen und Blockierungen zu bearbeiten, Missbrauch zu verhindern und Anfragen zu begrenzen, Probleme zu beheben und deine Nachrichten zu beantworten. Wir verwenden außerdem zusammengefasste Linkzählungen, um die Werbung für unsere eigenen Apps auszuwerten.",
           "Wir verwenden Shop-Daten, um Altersgrenzen und Tageslimits anzuwenden, den Abschluss einer Anzeige zu prüfen, Funken gutzuschreiben und Missbrauch oder doppelte Gutschriften zu verhindern."
         ]
       },
@@ -248,10 +248,11 @@
           "<strong>Cloudflare</strong> hostet unseren Server und unsere Datenbank und schätzt anhand deiner IP-Adresse deine Stadt;",
           "<strong>OpenAI</strong> prüft und übersetzt Briefe und Antworten;",
           "Apple und Google bieten die Anmeldung an. Apple Push Notification service (APNs) und Firebase Cloud Messaging (FCM) liefern Mitteilungen ohne Brieftext aus.",
-          "Google AdMob und sein Einwilligungstool können deine IP-Adresse und daraus abgeleitet einen ungefähren Standort erhalten, ebenso App- und Geräteinformationen (einschließlich verfügbarer App- oder Gerätekennungen), Anzeigenaufrufe und -interaktionen sowie Absturz- und Leistungsdaten. Google nutzt diese Daten zur Einwilligungsverwaltung, Anzeigenauslieferung und -messung sowie zur Betrugsprävention. Wir fordern nur nicht personalisierte Anzeigen an, bitten nicht um Tracking-Erlaubnis und nutzen weder IDFA noch die Android-Werbe-ID. Die eigene Publisher-ID ist deaktiviert. Zur Anzeigenprüfung senden wir als benutzerdefinierte Daten nur ein nicht aussagekräftiges Versuchstoken, ohne App-Nutzer-ID, E-Mail-Adresse oder Briefinhalte. Google verarbeitet und speichert SDK-Daten nach seiner <a href=\"https://policies.google.com/privacy\">Datenschutzerklärung</a>.",
+          "Google AdMob und das zugehörige Einwilligungstool (UMP) können deine IP-Adresse, den daraus abgeleiteten ungefähren Standort, App- und Geräteinformationen (einschließlich verfügbarer Kennungen), Anzeigenaufrufe und Interaktionen sowie Absturz- oder Leistungsdaten erhalten. Google nutzt diese Daten, um Einwilligungen zu verwalten, Anzeigen auszuspielen und zu messen und Betrug vorzubeugen. Wir deaktivieren die eigenen IDs des Publishers. Als benutzerdefinierte Daten zur Prüfung einer Belohnung senden wir nur ein undurchsichtiges Token für den Versuch. Wir senden Werbeanbietern weder die Kennung deines App-Kontos noch deine E-Mail-Adresse oder den Inhalt deiner Briefe. Google verarbeitet und speichert SDK-Daten nach seiner <a href=\"https://policies.google.com/privacy\">Datenschutzerklärung</a>.",
           "<strong>GitHub</strong> verarbeitet Feedback aus der App und Meldungen zu Briefen oder Antworten als Issues in einem privaten Repository. Meldungen enthalten den Grund, den Inhalt aus Sicht der meldenden Person, die Art des Inhalts, Sprache, Datum und eine Meldungsreferenz. Wir fügen keine Konto-IDs oder E-Mail-Adressen hinzu, der Text kann aber Personen erkennbar machen."
         ],
         "after": [
+          "Unter iOS fordern wir personalisierte Werbung nur an, wenn du sie auswählst, Googles Einwilligungstool die Personalisierung zulässt und du über Apples App-Tracking-Transparenz (ATT) das Tracking deiner Aktivitäten in Apps und auf Websites anderer Unternehmen erlaubst. Wenn die ATT-Berechtigung und weitere erforderliche Einwilligungen vorliegen, kann Google die iOS-Werbekennung (IDFA) auch bei allgemeiner Werbung verwenden, um Anzeigen zu messen oder ihre Häufigkeit zu begrenzen. Unter Android blockieren wir die Werbe-ID und werbebezogene AdServices-Berechtigungen. Wenn du personalisierte Werbung wählst, richtet sich die Anfrage nach Googles Regeln und den verfügbaren Daten. Google kann weiterhin allgemeine Werbung ausspielen. Ist keine Personalisierung erlaubt, fordern wir allgemeine Werbung an, sofern Googles Tool Anzeigenanfragen zulässt. Andernfalls fordern wir keine Anzeigen an.",
           "Diese Dienstleister können Informationen in den USA und in anderen Ländern verarbeiten. Sie behandeln sie nach ihren eigenen Bedingungen und Datenschutzerklärungen."
         ]
       },
@@ -263,14 +264,14 @@
           "Nach der Zustellung löschen wir den Feedbacktext aus unserer Cloudflare-D1-Datenbank. Das Issue mit dem ursprünglichen Feedback und zugehörige Kopien löschen wir spätestens 90 Tage nach dem Schließen oder 180 Tage nach Eingang, je nachdem, welcher Zeitpunkt früher liegt. Ungelöstes Feedback wird innerhalb von 180 Tagen nach Eingang gelöscht.",
           "Wir löschen Meldungs-Issues auf GitHub und zugehörige Kopien bis zum frühesten dieser Zeitpunkte: 180 Tage nach Eingang, 90 Tage nach Schließen des Issues oder Lösung der Meldung durch eine Administration oder 90 Tage nach Kontolöschung. Diese Frist gilt für GitHub-Kopien; für die oben beschriebenen Sicherheitsunterlagen gilt ihre eigene Aufbewahrungsfrist.",
           "Nach Abschluss eines Löschantrags bewahren wir den Verifizierungsnachweis und die Metadaten des Antrags bis zum früheren Zeitpunkt auf: 90 Tage nach Abschluss oder 180 Tage nach Eingang. Bei offenen Anträgen behalten wir das für die Bearbeitung notwendige Minimum.",
-          "Wir speichern die aktuelle Altersgruppe, den Zeitpunkt der Angabe und gutgeschriebene Belohnungen bis zur Kontolöschung. Eine geplante Bereinigung löscht Anzeigenversuche, nachdem seit Ende des betreffenden Belohnungszeitraums ein Tag verstrichen ist. Die Kontolöschung entfernt sie ebenfalls. Für von Google verarbeitete Daten gelten die eigenen Aufbewahrungsregeln von Google."
+          "Deine Anzeigenwahl wird auf diesem Gerät für dein Konto gespeichert. Wir speichern die aktuelle Altersgruppe, den Zeitpunkt der Angabe und gutgeschriebene Belohnungen bis zur Kontolöschung. Eine geplante Bereinigung löscht Anzeigenversuche, nachdem seit Ende des betreffenden Belohnungszeitraums ein Tag verstrichen ist. Die Kontolöschung entfernt sie ebenfalls. Für von Google verarbeitete Daten gelten die eigenen Aufbewahrungsregeln von Google."
         ]
       },
       {
         "h": "7. Deine Wahlmöglichkeiten und Rechte",
         "p": [
           "Du kannst dein Konto unter Einstellungen &gt; Konto löschen löschen. Mitteilungen kannst du in den Geräteeinstellungen ausschalten. Du kannst jeden blockieren, der dir schreibt.",
-          "In den Einstellungen kannst du deine Altersgruppe korrigieren. Soweit verfügbar, kannst du deine Einwilligung unter den Datenschutzoptionen für Werbung in den Einstellungen verwalten. Du kannst Briefe austauschen, ohne Werbung anzusehen.",
+          "In den App-Einstellungen kannst du deine Altersgruppe korrigieren oder deine Wahl personalisierter Werbung widerrufen, indem du zu allgemeiner Werbung wechselst. Falls verfügbar, kannst du die regionale Einwilligung für Google getrennt in den Datenschutzoptionen für Anzeigen verwalten. Unter iOS kannst du die separate ATT-Berechtigung in Einstellungen &gt; Datenschutz &amp; Sicherheit &gt; Tracking ändern. Du kannst Briefe austauschen, ohne Anzeigen anzusehen.",
           "Je nachdem, wo du wohnst, hast du möglicherweise das Recht, auf deine Informationen zuzugreifen, sie zu berichtigen, zu löschen oder zu exportieren oder der Nutzung zu widersprechen oder sie einzuschränken. Für eine Anfrage schreib an {emailLink}. Du kannst dich außerdem bei deiner örtlichen Datenschutzbehörde beschweren."
         ]
       },

@@ -27,6 +27,31 @@ STALE_GLOBAL = re.compile(
 )
 
 
+STALE_AD_PERSONALIZATION = re.compile(
+    r'only non-personalized ads|do not request tracking permission|or target ads to you|'
+    r'solo solicitamos anuncios no personalizados|ni usamos IDFA|'
+    r'apenas anúncios não personalizados|não usamos IDFA|'
+    r'que des annonces non personnalisées|n’utilisons ni l’IDFA|'
+    r'nur nicht personalisierte Anzeigen|weder IDFA|'
+    r'비개인화 광고만|IDFA 또는 Android 광고 ID를 사용하지|'
+    r'非パーソナライズ広告のみ|IDFAやAndroid広告IDを使用しません|'
+    r'只请求非个性化广告|只要求非個人化廣告|不使用 IDFA',
+    re.IGNORECASE,
+)
+# Localized stems are sufficient for grammatical inflections in legal copy.
+AD_CHOICES = {
+    'en': ('personalized', 'general', 'do not request ads', 'withdraw', 'this device'),
+    'es': ('personalizados', 'generales', 'no solicitamos anuncios', 'retirar', 'este dispositivo'),
+    'pt-BR': ('personalizados', 'gerais', 'não solicitamos anúncios', 'retirar', 'neste dispositivo'),
+    'fr': ('personnalisées', 'générales', 'ne demandons aucune publicité', 'retirer', 'cet appareil'),
+    'de': ('personalisierte', 'allgemeine', 'fordern wir keine Anzeigen an', 'widerrufen', 'diesem Gerät'),
+    'ko': ('맞춤 광고', '일반 광고', '광고를 요청하지 않습니다', '철회', '이 기기'),
+    'ja': ('パーソナライズ広告', '一般広告', '広告をリクエストしません', '取り消', 'この端末'),
+    'zh-Hans': ('个性化', '普通', '不会请求广告', '撤回', '这台设备'),
+    'zh-Hant': ('個人化', '一般', '不會要求廣告', '撤回', '這部裝置'),
+}
+
+
 def shape(value):
     if isinstance(value, dict):
         return {key: shape(field) for key, field in value.items()}
@@ -57,24 +82,35 @@ def check():
         assert terms['date'] == privacy['date'] and re.search(r'(?<!\d)5(?!\d)', terms['date']), locale
         providers = sections[4]['list']
         assert all(marker in providers[2] for marker in ('APNs', 'FCM')), locale
-        assert all(marker in providers[3] for marker in ('Google AdMob', 'https://policies.google.com/privacy', 'IP', 'IDFA', 'Android', 'SDK')), locale
+        assert all(marker in providers[3] for marker in ('Google AdMob', 'UMP', 'https://policies.google.com/privacy', 'IP', 'SDK')), locale
+        platform = sections[4]['after'][0]
+        assert all(marker in platform for marker in ('iOS', 'ATT', 'IDFA', 'Android', 'AdServices')), locale
+        assert len(sections[4]['after']) == 2, locale
         assert len(sections[2]['p']) == 2 and len(sections[5]['p']) == 6 and len(sections[6]['p']) == 3, locale
+        personalized, general, no_ads, withdraw, device = AD_CHOICES[locale]
+        for text in (reward, support['faq'][-1]['a'], privacy['summary'][3], platform, sections[6]['p'][1]):
+            assert all(marker in text.casefold() for marker in (personalized, general)), (locale, text)
+        assert no_ads in platform, locale
+        assert withdraw in sections[6]['p'][1] and 'ATT' in sections[6]['p'][1], locale
+        assert device in sections[5]['p'][-1], locale
         base = ROOT / 'moss' / ('' if locale == 'en' else locale.lower())
         evidence = {
             'landing': [landing['description'], landing['facts'][2]],
             'support': [support['faq'][-1]['a']],
             'terms': [terms['date'], reward],
             'privacy': [privacy['date'], privacy['summary'][3], sections[0]['p'][-2], sections[2]['p'][-1],
-                        providers[2], providers[3], sections[5]['p'][-1], sections[6]['p'][1], sections[7]['p'][-1]],
+                        providers[2], providers[3], platform, sections[2]['p'][0], sections[5]['p'][-1],
+                        sections[6]['p'][1], sections[7]['p'][-1]],
         }
         for page, fragments in evidence.items():
             output = (base / PAGES[page] / 'index.html').read_text()
             assert f'<html lang="{locale}">' in output, (locale, page)
             assert not STALE_GLOBAL.search(output), (locale, page, 'stale ad-free claim')
+            assert not STALE_AD_PERSONALIZATION.search(output), (locale, page, 'stale personalization claim')
             for fragment in fragments:
                 assert fragment in output or html.escape(fragment, quote=True) in output, (locale, page, fragment)
     assert len(list((ROOT / 'moss').glob('**/index.html'))) == 36
-    print('PASS: 9 locale structures, 36 generated pages, rewards 2/20/50/20/8%, age/AdMob and APNs/FCM coverage, no global ad-free claims.')
+    print('PASS: 9 locale structures, 36 generated pages, rewards 2/20/50/20/8%, age/AdMob, ad choices and fallbacks, APNs/FCM coverage, no stale ad claims.')
 
 
 if __name__ == '__main__':
