@@ -14,7 +14,7 @@
   },
   "landing": {
     "title": "Moss’s Club house · Anonyme Briefe, die Moss überbringt",
-    "description": "Schreib eine Sorge auf einer Schreibmaschine auf. Moss bringt sie in eine andere Stadt, und ein Fremder schreibt dir zurück. Jeder Brief stammt von einem Menschen. Kostenlos für iPhone und Android, ohne Werbung.",
+    "description": "Schreib eine Sorge auf einer Schreibmaschine auf. Moss bringt sie in eine andere Stadt, und ein Fremder schreibt dir zurück. Jeder Brief stammt von einem Menschen. Kostenlos für iPhone und Android.",
     "h1": "Schreib eine Sorge auf.<br> Moss überbringt sie.",
     "lede": "Jemand in einer anderen Stadt liest sie und schreibt dir zurück.",
     "artAlt": "Moss, ein Gartenzwerg mit roter Zipfelmütze und weißem Bart",
@@ -37,7 +37,7 @@
     "facts": [
       "Jeden Brief schreibt ein Mensch. KI prüft und übersetzt nur.",
       "Andere sehen deinen Brief und eine ungefähre Stadt. Sonst nichts.",
-      "Kostenlos und ohne Werbung."
+      "Kostenlos. Im Shop gibt es freiwillige Werbung mit Belohnung ab 19 Jahren."
     ],
     "safety": "Melde oder blockiere einen Brief direkt im Brief. Wenn du in Gefahr bist, warte nicht auf eine Antwort. Ruf jetzt den Notruf deines Landes an."
   },
@@ -80,7 +80,7 @@
       },
       {
         "q": "Kostet es etwas?",
-        "a": "Nein. Moss’s Club house ist kostenlos, ohne Werbung und ohne kostenpflichtige Funktionen."
+        "a": "Nein. Die App und der Briefwechsel sind kostenlos, und es gibt keine Käufe. Nach dem Öffnen der drei kostenlosen Boxen kannst du bis einschließlich 18 Jahren täglich einen Funken abholen oder ab 19 Jahren freiwillig Werbung mit Belohnung ansehen."
       }
     ],
     "deleteTitle": "Konto löschen",
@@ -152,6 +152,7 @@
       {
         "h": "7. Kostenloser Dienst und Änderungen",
         "p": [
+          "Nachdem du die drei kostenlosen Boxen im Shop geöffnet hast, kannst du eine tägliche Belohnung erhalten. Wenn du 18 Jahre oder jünger bist, kannst du täglich einen Funken ohne Werbung abholen. Ab 19 Jahren kannst du, wenn verfügbar, freiwillig eine Anzeige mit Belohnung bis zum Ende ansehen. Die Chancen sind: 1 Funke: 2 %; 2: 20 %; 3: 50 %; 4: 20 %; 5: 8 %. Für beide Wege gilt zusammen eine Belohnung pro Konto und Tag. Das Limit wird um Mitternacht deiner Ortszeit zurückgesetzt. Du kannst deine Altersgruppe in den Einstellungen korrigieren. Mit Funken kannst du Boxen im Shop öffnen. Funken und Gegenstände haben keinen Geldwert. Sie können weder mit echtem Geld gekauft noch übertragen oder gegen Geld eingetauscht werden.",
           "Die App ist kostenlos. Wir können die App oder einzelne Funktionen ändern, pausieren oder einstellen, einschließlich Briefgrenzen und Zustellzeiten. Briefe, die unterwegs sind, können verloren gehen, wenn der Dienst eingestellt wird. Wir bemühen uns, wesentliche Änderungen in der App oder auf dieser Seite anzukündigen."
         ]
       },
@@ -185,7 +186,8 @@
           "Fragen zu diesen Bedingungen: {emailLink}"
         ]
       }
-    ]
+    ],
+    "date": "5. November 2026"
   },
   "privacy": {
     "title": "Datenschutzerklärung · Moss’s Club house",
@@ -197,7 +199,7 @@
       "Andere Nutzer sehen nie deinen Namen oder deine E-Mail-Adresse. Sie sehen deinen Brief und eine ungefähre Stadt.",
       "Briefe und Antworten werden zur Sicherheitsprüfung und Übersetzung an OpenAI gesendet. OpenAI schreibt sie nicht.",
       "Deine ungefähre Stadt ergibt sich aus deiner Netzwerkverbindung. Die App nutzt kein GPS.",
-      "Keine Werbung Dritter und kein Tracking des individuellen Verhaltens. Wir zählen täglich, wie oft Links zu unseren Apps geöffnet werden, ohne Analyse- oder Werbe-SDKs.",
+      "Wer angibt, mindestens 19 Jahre alt zu sein, kann im Shop freiwillig nicht personalisierte Werbung ansehen. Wer 18 Jahre oder jünger ist, kann eine tägliche Belohnung ohne Werbung abholen.",
       "Du kannst dein Konto und deine Briefe jederzeit in der App löschen."
     ],
     "sections": [
@@ -212,6 +214,7 @@
           "<strong>Werbelinks zu unseren Apps.</strong> Beim Öffnen eines Links zu einer unserer anderen Apps werden App, Linkposition, Plattform und Ziel übermittelt. Die Anfrage nutzt deine angemeldete Sitzung. Die Tabelle mit den Tagessummen speichert Zählwerte nach diesen Feldern, ohne Konto-IDs oder IP-Adressen.",
           "<strong>Nachrichten an uns.</strong> Wenn du uns eine E-Mail schreibst, deine E-Mail-Adresse und was du schreibst.",
           "<strong>Feedback.</strong> In der App gesendetes Feedback umfasst Art und Text, Sprache, Plattform, App-Version, Eingangszeitpunkt und verknüpftes Konto.",
+          "Shop-Belohnungen. Wir speichern deine angegebene Altersgruppe (bis einschließlich 18 oder ab 19 Jahren) und wann du sie ausgewählt oder zuletzt geändert hast. Wir fragen nicht nach deinem Geburtsdatum. Wir erfassen Datum und Betrag täglicher Belohnungen und für Werbeversuche das Konto, die Sitzung, den Anzeigenblock, die Zeitpunkte und bei Gutschrift einen Hash der Google-Transaktionsreferenz.",
           "<strong>Lokale Entwürfe.</strong> Ungesendete Entwürfe liegen auf deinem Gerät und werden erst beim Senden an den Server übermittelt. Die Android-Regeln schließen App-Daten von automatischen Cloud-Sicherungen und Geräteübertragungen aus. Unter iOS wird der Ordner mit den Entwürfen als von Sicherungen ausgeschlossen markiert. Diese Vorgabe an das Betriebssystem garantiert nicht, dass Sicherungen oder Wiederherstellungen verhindert werden. Das Verbrennen eines Entwurfs löscht keine Kopien in früheren Sicherungen."
         ]
       },
@@ -225,7 +228,8 @@
       {
         "h": "3. Wie wir Informationen verwenden",
         "p": [
-          "Wir verwenden diese Informationen, um die App zu betreiben: um dich anzumelden, Briefe zwischen Städten und Zeitzonen zuzustellen, Briefe zu übersetzen, Inhalte auf Sicherheit zu prüfen, Hilfsangebote anzuzeigen, wenn ein Brief darauf hindeutet, dass jemand sie brauchen könnte, Mitteilungen zu senden, Meldungen und Blockierungen zu bearbeiten, Missbrauch zu verhindern und Anfragen zu begrenzen, Probleme zu beheben und deine Nachrichten zu beantworten. Wir verwenden außerdem zusammengefasste Linkzählungen, um die Werbung für unsere eigenen Apps auszuwerten. Wir verkaufen deine Informationen nicht, erstellen keine persönlichen Werbeprofile und richten keine gezielte Werbung an dich."
+          "Wir verwenden diese Informationen, um die App zu betreiben: um dich anzumelden, Briefe zwischen Städten und Zeitzonen zuzustellen, Briefe zu übersetzen, Inhalte auf Sicherheit zu prüfen, Hilfsangebote anzuzeigen, wenn ein Brief darauf hindeutet, dass jemand sie brauchen könnte, Mitteilungen zu senden, Meldungen und Blockierungen zu bearbeiten, Missbrauch zu verhindern und Anfragen zu begrenzen, Probleme zu beheben und deine Nachrichten zu beantworten. Wir verwenden außerdem zusammengefasste Linkzählungen, um die Werbung für unsere eigenen Apps auszuwerten. Wir verkaufen deine Informationen nicht, erstellen keine persönlichen Werbeprofile und richten keine gezielte Werbung an dich.",
+          "Wir verwenden Shop-Daten, um Altersgrenzen und Tageslimits anzuwenden, den Abschluss einer Anzeige zu prüfen, Funken gutzuschreiben und Missbrauch oder doppelte Gutschriften zu verhindern."
         ]
       },
       {
@@ -243,7 +247,8 @@
         "list": [
           "<strong>Cloudflare</strong> hostet unseren Server und unsere Datenbank und schätzt anhand deiner IP-Adresse deine Stadt;",
           "<strong>OpenAI</strong> prüft und übersetzt Briefe und Antworten;",
-          "<strong>Apple und Google</strong> stellen die Anmeldung bereit und liefern Mitteilungen über ihre Push-Dienste aus. Mitteilungen enthalten keinen Brieftext.",
+          "Apple und Google bieten die Anmeldung an. Apple Push Notification service (APNs) und Firebase Cloud Messaging (FCM) liefern Mitteilungen ohne Brieftext aus.",
+          "Google AdMob und sein Einwilligungstool können deine IP-Adresse und daraus abgeleitet einen ungefähren Standort erhalten, ebenso App- und Geräteinformationen (einschließlich verfügbarer App- oder Gerätekennungen), Anzeigenaufrufe und -interaktionen sowie Absturz- und Leistungsdaten. Google nutzt diese Daten zur Einwilligungsverwaltung, Anzeigenauslieferung und -messung sowie zur Betrugsprävention. Wir fordern nur nicht personalisierte Anzeigen an, bitten nicht um Tracking-Erlaubnis und nutzen weder IDFA noch die Android-Werbe-ID. Die eigene Publisher-ID ist deaktiviert. Zur Anzeigenprüfung senden wir als benutzerdefinierte Daten nur ein nicht aussagekräftiges Versuchstoken, ohne App-Nutzer-ID, E-Mail-Adresse oder Briefinhalte. Google verarbeitet und speichert SDK-Daten nach seiner <a href=\"https://policies.google.com/privacy\">Datenschutzerklärung</a>.",
           "<strong>GitHub</strong> verarbeitet Feedback aus der App und Meldungen zu Briefen oder Antworten als Issues in einem privaten Repository. Meldungen enthalten den Grund, den Inhalt aus Sicht der meldenden Person, die Art des Inhalts, Sprache, Datum und eine Meldungsreferenz. Wir fügen keine Konto-IDs oder E-Mail-Adressen hinzu, der Text kann aber Personen erkennbar machen."
         ],
         "after": [
@@ -257,20 +262,23 @@
           "Wenn du dein Konto löschst, löschen wir das Konto, Sitzungen, deine Briefe und deine geschriebenen Antworten. Wir widerrufen die uns verfügbaren Apple-Anmeldetokens und zeigen dir bei Bedarf, wie du den Apple-Zugriff manuell entfernst. Verknüpftes privates GitHub-Feedback entfernen wir innerhalb von 7 Tagen asynchron; erst danach ist die Löschung abgeschlossen. Zur Prüfung von Sicherheitsfragen speichern wir Grund, gemeldeten Inhalt und Bearbeitungsstatus der von dir oder zu deinen Inhalten eingereichten Meldungen bis zu 90 Tage ohne Nutzer-IDs und löschen sie anschließend. Der Text kann weiterhin Personen erkennbar machen. Der Wiederherstellungsverlauf von Cloudflare D1 kann je nach Tarif gelöschte Daten bis zu 30 Tage enthalten. Für andere Anbieter gelten deren eigene Aufbewahrungsregeln.",
           "Nach der Zustellung löschen wir den Feedbacktext aus unserer Cloudflare-D1-Datenbank. Das Issue mit dem ursprünglichen Feedback und zugehörige Kopien löschen wir spätestens 90 Tage nach dem Schließen oder 180 Tage nach Eingang, je nachdem, welcher Zeitpunkt früher liegt. Ungelöstes Feedback wird innerhalb von 180 Tagen nach Eingang gelöscht.",
           "Wir löschen Meldungs-Issues auf GitHub und zugehörige Kopien bis zum frühesten dieser Zeitpunkte: 180 Tage nach Eingang, 90 Tage nach Schließen des Issues oder Lösung der Meldung durch eine Administration oder 90 Tage nach Kontolöschung. Diese Frist gilt für GitHub-Kopien; für die oben beschriebenen Sicherheitsunterlagen gilt ihre eigene Aufbewahrungsfrist.",
-          "Nach Abschluss eines Löschantrags bewahren wir den Verifizierungsnachweis und die Metadaten des Antrags bis zum früheren Zeitpunkt auf: 90 Tage nach Abschluss oder 180 Tage nach Eingang. Bei offenen Anträgen behalten wir das für die Bearbeitung notwendige Minimum."
+          "Nach Abschluss eines Löschantrags bewahren wir den Verifizierungsnachweis und die Metadaten des Antrags bis zum früheren Zeitpunkt auf: 90 Tage nach Abschluss oder 180 Tage nach Eingang. Bei offenen Anträgen behalten wir das für die Bearbeitung notwendige Minimum.",
+          "Wir speichern die aktuelle Altersgruppe, den Zeitpunkt der Angabe und gutgeschriebene Belohnungen bis zur Kontolöschung. Eine geplante Bereinigung löscht Anzeigenversuche, nachdem seit Ende des betreffenden Belohnungszeitraums ein Tag verstrichen ist. Die Kontolöschung entfernt sie ebenfalls. Für von Google verarbeitete Daten gelten die eigenen Aufbewahrungsregeln von Google."
         ]
       },
       {
         "h": "7. Deine Wahlmöglichkeiten und Rechte",
         "p": [
           "Du kannst dein Konto unter Einstellungen &gt; Konto löschen löschen. Mitteilungen kannst du in den Geräteeinstellungen ausschalten. Du kannst jeden blockieren, der dir schreibt.",
+          "In den Einstellungen kannst du deine Altersgruppe korrigieren. Soweit verfügbar, kannst du deine Einwilligung unter den Datenschutzoptionen für Werbung in den Einstellungen verwalten. Du kannst Briefe austauschen, ohne Werbung anzusehen.",
           "Je nachdem, wo du wohnst, hast du möglicherweise das Recht, auf deine Informationen zuzugreifen, sie zu berichtigen, zu löschen oder zu exportieren oder der Nutzung zu widersprechen oder sie einzuschränken. Für eine Anfrage schreib an {emailLink}. Du kannst dich außerdem bei deiner örtlichen Datenschutzbehörde beschweren."
         ]
       },
       {
         "h": "8. Kinder",
         "p": [
-          "Die App richtet sich nicht an Kinder unter {age} Jahren. Wenn du glaubst, dass ein Kind unter diesem Alter die App nutzt, kontaktiere uns, und wir löschen das Konto."
+          "Die App richtet sich nicht an Kinder unter {age} Jahren. Wenn du glaubst, dass ein Kind unter diesem Alter die App nutzt, kontaktiere uns, und wir löschen das Konto.",
+          "Wir fordern keine Anzeigen an und laden keine Werbe-Einwilligungsformulare für Konten, die ein Alter bis einschließlich 18 Jahren angeben."
         ]
       },
       {
@@ -298,6 +306,6 @@
         ]
       }
     ],
-    "date": "4. November 2026"
+    "date": "5. November 2026"
   }
 }

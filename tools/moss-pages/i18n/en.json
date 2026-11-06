@@ -14,7 +14,7 @@
   },
   "landing": {
     "title": "Moss’s Club house · Anonymous letters carried by Moss",
-    "description": "Write a worry on a typewriter. Moss carries it to another city, and a stranger writes back. Every letter is written by a person. Free on iPhone and Android, with no ads.",
+    "description": "Write a worry on a typewriter. Moss carries it to another city, and a stranger writes back. Every letter is written by a person. Free on iPhone and Android.",
     "h1": "Write a worry.<br> Moss delivers it.",
     "lede": "Someone in another city reads it and writes back.",
     "artAlt": "Moss, a garden gnome with a red pointed hat and a white beard",
@@ -37,7 +37,7 @@
     "facts": [
       "People write every letter. AI only checks and translates them.",
       "Others see your letter and an approximate city. Nothing else.",
-      "Free, with no ads."
+      "Free. Optional rewarded ads are available in the shop for ages 19 and up."
     ],
     "safety": "Report or block a letter right from the letter. If you might be in danger, don’t wait for a reply. Contact local emergency services now."
   },
@@ -80,7 +80,7 @@
       },
       {
         "q": "Does it cost anything?",
-        "a": "No. Moss’s Club house is free, with no ads and no paid features."
+        "a": "No. The app and letter exchange are free, and there are no purchases. After opening the free set of three boxes, you can claim one spark a day if you are 18 or younger, or choose to watch a rewarded ad if you are 19 or older."
       }
     ],
     "deleteTitle": "Delete your account",
@@ -152,6 +152,7 @@
       {
         "h": "7. Free service and changes",
         "p": [
+          "After opening your free set of three shop boxes, you can earn one daily reward. If you are 18 or younger, you can claim one spark for checking in, without an ad. If you are 19 or older, you can choose to finish a rewarded ad when available. The chances are 1 spark: 2%; 2: 20%; 3: 50%; 4: 20%; 5: 8%. Both methods share one reward limit per account per day, resetting at local midnight. You can correct your age group in Settings. You can use sparks to open shop boxes. Sparks and items have no cash value and cannot be purchased with real money, transferred or redeemed for cash.",
           "The app is free. We may change, pause or stop the app or any feature, including letter limits and delivery timing. Letters in transit may be lost if the service stops. We will try to give notice of major changes in the app or on this page."
         ]
       },
@@ -185,7 +186,8 @@
           "Questions about these terms: {emailLink}"
         ]
       }
-    ]
+    ],
+    "date": "November 5, 2026"
   },
   "privacy": {
     "title": "Privacy Policy · Moss’s Club house",
@@ -197,7 +199,7 @@
       "Other users never see your name or email. They see your letter and an approximate city.",
       "Letters and replies are sent to OpenAI for safety review and translation. OpenAI does not write them.",
       "Your approximate city comes from your network connection. The app doesn’t use GPS.",
-      "No third-party ads or behavioral tracking. We count links opened to our own apps by day, without analytics or advertising SDKs.",
+      "The shop offers optional non-personalized ads to people who report being 19 or older. People 18 or younger can claim a daily reward without ads.",
       "You can delete your account and letters in the app at any time."
     ],
     "sections": [
@@ -212,6 +214,7 @@
           "<strong>Promotion taps.</strong> When you open a link to one of our other apps, the app sends the app, link placement, platform and destination. The request uses your signed-in session. The daily aggregate table stores counts by those fields without account IDs or IP addresses.",
           "<strong>Messages to us.</strong> If you email us, your email address and what you write.",
           "<strong>Feedback.</strong> In-app feedback includes its type and text, language, platform, app version, receipt time and linked account.",
+          "Shop rewards. We keep the age group you select (18 or younger, or 19 or older) and when you selected or last changed it. We do not ask for a birth date. We record daily reward dates and amounts, and for ad attempts, the account, session, ad unit, timing and a hashed Google transaction reference when credited.",
           "<strong>Local drafts.</strong> Unsent drafts are stored on your device and are not submitted to the server until you send them. Android backup rules exclude app data from automatic cloud backup and device transfer. On iOS, the folder holding drafts is marked as excluded from backup. This setting guides the OS and does not guarantee that backups or restores are prevented. Burning a draft does not erase copies in past backups."
         ]
       },
@@ -225,7 +228,8 @@
       {
         "h": "3. How we use information",
         "p": [
-          "We use this information to run the app: to sign you in, deliver letters between cities and time zones, translate letters, review content for safety, show help resources when a letter suggests someone may need them, send notifications, handle reports and blocks, prevent abuse and rate limit requests, fix problems and answer your messages. We also use aggregate link counts to measure promotion of our own apps. We do not sell your information, build personal advertising profiles or target ads to you."
+          "We use this information to run the app: to sign you in, deliver letters between cities and time zones, translate letters, review content for safety, show help resources when a letter suggests someone may need them, send notifications, handle reports and blocks, prevent abuse and rate limit requests, fix problems and answer your messages. We also use aggregate link counts to measure promotion of our own apps. We do not sell your information, build personal advertising profiles or target ads to you.",
+          "We use shop information to apply the age and daily limits, confirm ad completion, credit sparks and prevent abuse or duplicate rewards."
         ]
       },
       {
@@ -243,7 +247,8 @@
         "list": [
           "<strong>Cloudflare</strong> hosts our server and database and estimates your city from your IP address.",
           "<strong>OpenAI</strong> reviews and translates letters and replies.",
-          "<strong>Apple and Google</strong> provide sign-in, and deliver notifications through their push services. Notifications contain no letter text.",
+          "Apple and Google provide sign-in. Apple Push Notification service (APNs) and Firebase Cloud Messaging (FCM) deliver notifications without letter text.",
+          "Google AdMob and its consent tool may receive your IP address, an approximate location derived from it, app and device information (including available app or device identifiers), ad views and interactions, and crash or performance data. Google uses this data to manage consent, serve and measure ads, and prevent fraud. We request only non-personalized ads, do not request tracking permission or use IDFA or the Android advertising ID, and disable the publisher first-party ID. For ad verification we send only an opaque attempt token as custom data, without your app user ID, email or letter contents. Google handles and retains SDK data under its <a href=\"https://policies.google.com/privacy\">Privacy Policy</a>.",
           "<strong>GitHub</strong> processes in-app feedback and letter or reply reports as issues in a private repository. Reports include the reason, content as the reporter saw it, content type, language, date and a report reference. We do not add account IDs or email addresses, though text may identify someone."
         ],
         "after": [
@@ -257,20 +262,23 @@
           "When you delete your account, we delete the account, sessions, your letters and replies you wrote. We revoke the Apple sign-in tokens available to us and guide you if you need to remove Apple access manually. We remove linked private GitHub feedback asynchronously within 7 days; deletion is complete only after that cleanup. To review safety issues, we retain reports you filed or received, including their reason, reported content and handling status, without user IDs for up to 90 days, then delete them. The text may still identify someone. Cloudflare D1 recovery history may retain deleted data for up to 30 days, depending on the plan. Other provider records follow their own retention rules.",
           "After delivery, we clear feedback text from our Cloudflare D1 database. We delete the raw feedback issue and related copies no later than 90 days after it is closed or 180 days after receipt, whichever comes first. Unresolved feedback is deleted within 180 days of receipt.",
           "We delete GitHub report issues and related copies by the earliest of 180 days after receipt, 90 days after the issue is closed or the report is resolved by an administrator, or 90 days after account deletion. This deadline applies to GitHub copies; the safety records described above follow their own retention period.",
-          "After a deletion request is completed, we keep verification evidence and request metadata until the earlier of 90 days after completion or 180 days after receipt. For unfinished requests, we retain the minimum needed to complete the work."
+          "After a deletion request is completed, we keep verification evidence and request metadata until the earlier of 90 days after completion or 180 days after receipt. For unfinished requests, we retain the minimum needed to complete the work.",
+          "We keep the current age group, when it was set, and awarded reward records until account deletion. A scheduled cleanup removes ad attempt records after one day has passed since the applicable daily reward window closed; account deletion also removes them. Google’s own data follows its retention rules."
         ]
       },
       {
         "h": "7. Your choices and rights",
         "p": [
           "You can delete your account in Settings &gt; Delete account. You can turn notifications off in your device settings. You can block anyone who writes to you.",
+          "You can correct your age group in Settings. Where available, use Ad privacy choices in Settings to manage your ad consent. You can skip ads and still exchange letters.",
           "Depending on where you live, you may have the right to access, correct, delete or export your information, or to object to or restrict how we use it. To make a request, email {emailLink}. You can also complain to your local data protection authority."
         ]
       },
       {
         "h": "8. Children",
         "p": [
-          "The app is not intended for children under {age}. If you believe a child under that age is using the app, contact us and we will delete the account."
+          "The app is not intended for children under {age}. If you believe a child under that age is using the app, contact us and we will delete the account.",
+          "We do not request ads or load ad consent forms for accounts that report being 18 or younger."
         ]
       },
       {
@@ -298,6 +306,6 @@
         ]
       }
     ],
-    "date": "November 4, 2026"
+    "date": "November 5, 2026"
   }
 }

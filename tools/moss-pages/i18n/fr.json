@@ -14,7 +14,7 @@
   },
   "landing": {
     "title": "Moss’s Club house · Des lettres anonymes portées par Moss",
-    "description": "Écrivez un souci sur une machine à écrire. Moss l’emporte dans une autre ville et un inconnu vous répond. Chaque lettre est écrite par une personne. Gratuit sur iPhone et Android, sans publicité.",
+    "description": "Écrivez un souci sur une machine à écrire. Moss l’emporte dans une autre ville et un inconnu vous répond. Chaque lettre est écrite par une personne. Gratuit sur iPhone et Android.",
     "h1": "Écrivez un souci.<br> Moss le livre.",
     "lede": "Quelqu’un, dans une autre ville, le lit et vous répond.",
     "artAlt": "Moss, un nain de jardin au bonnet rouge pointu et à la barbe blanche",
@@ -37,7 +37,7 @@
     "facts": [
       "Chaque lettre est écrite par une personne. L’IA ne fait que les vérifier et les traduire.",
       "Les autres voient votre lettre et une ville approximative. Rien d’autre.",
-      "Gratuit, sans publicité."
+      "Gratuit. La boutique propose des publicités avec récompense, facultatives, à partir de 19 ans."
     ],
     "safety": "Signalez ou bloquez une lettre directement depuis la lettre. Si vous êtes en danger, n’attendez pas une réponse. Appelez tout de suite les secours de votre pays."
   },
@@ -80,7 +80,7 @@
       },
       {
         "q": "Est-ce que ça coûte quelque chose ?",
-        "a": "Non. Moss’s Club house est gratuit, sans publicité et sans fonctions payantes."
+        "a": "Non. L’app et les échanges de lettres sont gratuits, sans achats. Après avoir ouvert les trois coffrets gratuits, vous pouvez obtenir une étincelle par jour si vous avez 18 ans ou moins, ou choisir de regarder une publicité avec récompense si vous avez 19 ans ou plus."
       }
     ],
     "deleteTitle": "Supprimer votre compte",
@@ -152,6 +152,7 @@
       {
         "h": "7. Service gratuit et modifications",
         "p": [
+          "Une fois les trois coffrets gratuits de la boutique ouverts, vous pouvez recevoir une récompense par jour. Si vous avez 18 ans ou moins, vous pouvez réclamer une étincelle chaque jour, sans publicité. À partir de 19 ans, vous pouvez choisir de regarder une publicité avec récompense jusqu’au bout si elle est disponible. Probabilités : 1 étincelle, 2 % ; 2, 20 % ; 3, 50 % ; 4, 20 % ; 5, 8 %. Les deux modes partagent la même limite d’une récompense par jour et par compte, renouvelée à minuit, heure locale. Vous pouvez corriger votre tranche d’âge dans les Réglages. Vous pouvez utiliser des étincelles pour ouvrir des coffrets dans la boutique. Les étincelles et les objets n’ont aucune valeur monétaire. Ils ne peuvent être ni achetés avec de l’argent réel, ni transférés, ni convertis en argent.",
           "L’app est gratuite. Nous pouvons modifier, suspendre ou arrêter l’app ou l’une de ses fonctions, y compris les limites de lettres et les délais de livraison. Les lettres en cours d’acheminement peuvent être perdues si le service s’arrête. Nous essaierons de prévenir des changements importants dans l’app ou sur cette page."
         ]
       },
@@ -185,7 +186,8 @@
           "Questions sur ces conditions : {emailLink}"
         ]
       }
-    ]
+    ],
+    "date": "5 novembre 2026"
   },
   "privacy": {
     "title": "Politique de confidentialité · Moss’s Club house",
@@ -197,7 +199,7 @@
       "Les autres utilisateurs ne voient jamais votre nom ni votre adresse e-mail. Ils voient votre lettre et une ville approximative.",
       "Les lettres et les réponses sont envoyées à OpenAI pour l’examen de sécurité et la traduction. OpenAI ne les écrit pas.",
       "Votre ville approximative est déduite de votre connexion réseau. L’app n’utilise pas le GPS.",
-      "Aucune publicité tierce ni suivi des comportements individuels. Nous comptons par jour les ouvertures de liens vers nos apps, sans SDK d’analyse ou de publicité.",
+      "La boutique propose des publicités non personnalisées et facultatives aux personnes qui déclarent avoir 19 ans ou plus. À 18 ans ou moins, la récompense quotidienne s’obtient sans publicité.",
       "Vous pouvez supprimer votre compte et vos lettres dans l’app à tout moment."
     ],
     "sections": [
@@ -212,6 +214,7 @@
           "<strong>Liens promotionnels.</strong> Lorsque vous ouvrez un lien vers une autre de nos apps, l’app, l’emplacement du lien, la plateforme et la destination sont transmis. La requête utilise votre session connectée. La table des totaux quotidiens conserve les nombres par ces champs, sans identifiant de compte ni adresse IP.",
           "<strong>Messages que vous nous envoyez.</strong> Si vous nous écrivez, votre adresse e-mail et ce que vous écrivez.",
           "<strong>Commentaires.</strong> Les commentaires envoyés dans l’application comprennent leur type et leur texte, la langue, la plateforme, la version de l’application, la date de réception et le compte associé.",
+          "Récompenses de la boutique. Nous conservons la tranche d’âge que vous indiquez (18 ans ou moins, ou 19 ans ou plus), avec la date et l’heure de sa sélection ou de sa dernière modification. Nous ne demandons pas votre date de naissance. Nous enregistrons la date et le montant des récompenses, et, pour les tentatives de visionnage, le compte, la session, le bloc d’annonces, les horodatages et, si une récompense est accordée, une empreinte de la référence de transaction de Google.",
           "<strong>Brouillons locaux.</strong> Les brouillons non envoyés sont conservés sur votre appareil et ne sont transmis au serveur que lorsque vous les envoyez. Les règles Android excluent les données de l’app des sauvegardes automatiques dans le cloud et des transferts entre appareils. Sur iOS, le dossier contenant les brouillons est marqué comme exclu des sauvegardes. Cette indication au système ne garantit pas que les sauvegardes ou restaurations soient empêchées. Brûler un brouillon n’efface pas les copies présentes dans d’anciennes sauvegardes."
         ]
       },
@@ -225,7 +228,8 @@
       {
         "h": "3. Comment nous utilisons les informations",
         "p": [
-          "Nous utilisons ces informations pour faire fonctionner l’app : vous connecter, livrer les lettres entre villes et fuseaux horaires, les traduire, examiner les contenus pour la sécurité, afficher des ressources d’aide quand une lettre laisse penser que quelqu’un peut en avoir besoin, envoyer des notifications, traiter les signalements et les blocages, prévenir les abus et limiter le nombre de requêtes, corriger les problèmes et répondre à vos messages. Nous utilisons aussi les totaux des ouvertures de liens pour mesurer la promotion de nos apps. Nous ne vendons pas vos informations, ne créons pas de profils publicitaires individuels et ne vous adressons pas de publicités ciblées."
+          "Nous utilisons ces informations pour faire fonctionner l’app : vous connecter, livrer les lettres entre villes et fuseaux horaires, les traduire, examiner les contenus pour la sécurité, afficher des ressources d’aide quand une lettre laisse penser que quelqu’un peut en avoir besoin, envoyer des notifications, traiter les signalements et les blocages, prévenir les abus et limiter le nombre de requêtes, corriger les problèmes et répondre à vos messages. Nous utilisons aussi les totaux des ouvertures de liens pour mesurer la promotion de nos apps. Nous ne vendons pas vos informations, ne créons pas de profils publicitaires individuels et ne vous adressons pas de publicités ciblées.",
+          "Nous utilisons les données de la boutique pour appliquer les limites d’âge et de fréquence, vérifier le visionnage complet, créditer les étincelles et éviter la fraude et les doubles versements."
         ]
       },
       {
@@ -243,7 +247,8 @@
         "list": [
           "<strong>Cloudflare</strong> héberge notre serveur et notre base de données et estime votre ville à partir de votre adresse IP ;",
           "<strong>OpenAI</strong> examine et traduit les lettres et les réponses ;",
-          "<strong>Apple et Google</strong> fournissent la connexion et acheminent les notifications via leurs services de notifications push. Les notifications ne contiennent aucun texte de lettre.",
+          "Apple et Google fournissent la connexion. Apple Push Notification service (APNs) et Firebase Cloud Messaging (FCM) acheminent les notifications, qui ne contiennent aucun texte de lettre.",
+          "Google AdMob et son outil de consentement peuvent recevoir votre adresse IP et en déduire une position approximative, ainsi que des informations sur l’app et l’appareil (dont les identifiants d’app ou d’appareil disponibles), les affichages et interactions publicitaires, les plantages et les performances. Google s’en sert pour gérer le consentement, diffuser et mesurer les annonces et prévenir la fraude. Nous ne demandons que des annonces non personnalisées, ne demandons pas d’autorisation de suivi et n’utilisons ni l’IDFA ni l’identifiant publicitaire Android. L’identifiant propriétaire de l’éditeur est désactivé. Pour vérifier l’annonce, nous transmettons comme donnée personnalisée uniquement un jeton opaque de tentative, sans votre identifiant dans l’app, votre adresse e-mail ni le contenu de vos lettres. Google traite et conserve les données du SDK selon ses <a href=\"https://policies.google.com/privacy\">Règles de confidentialité</a>.",
           "<strong>GitHub</strong> traite les commentaires de l’app et les signalements de lettres ou de réponses sous forme de tickets dans un dépôt privé. Les signalements comprennent le motif, le contenu tel que la personne l’a vu, le type de contenu, la langue, la date et une référence. Nous n’ajoutons ni identifiant de compte ni adresse e-mail, mais le texte peut identifier une personne."
         ],
         "after": [
@@ -257,20 +262,23 @@
           "Lorsque vous supprimez votre compte, nous supprimons le compte, les sessions, vos lettres et les réponses que vous avez écrites. Nous révoquons les jetons de connexion Apple dont nous disposons et vous indiquons comment retirer manuellement l’accès Apple si nécessaire. Les commentaires privés GitHub associés sont supprimés de façon asynchrone sous 7 jours ; la suppression n’est complète qu’après ce nettoyage. Pour examiner les questions de sécurité, nous conservons jusqu’à 90 jours le motif, le contenu signalé et l’état du traitement des signalements que vous avez faits ou reçus, sans identifiants utilisateur, puis les supprimons. Le texte peut encore permettre d’identifier une personne. L’historique de restauration Cloudflare D1 peut conserver des données supprimées jusqu’à 30 jours, selon le forfait. Les autres prestataires appliquent leurs propres règles de conservation.",
           "Après leur livraison, nous effaçons le texte des commentaires de notre base Cloudflare D1. Nous supprimons le ticket contenant le commentaire brut et les copies associées au plus tard 90 jours après sa clôture ou 180 jours après sa réception, selon la première échéance. Les commentaires non résolus sont supprimés dans les 180 jours suivant leur réception.",
           "Nous supprimons les tickets de signalement sur GitHub et les copies associées à la première de ces échéances : 180 jours après réception, 90 jours après la clôture du ticket ou la résolution du signalement par un administrateur, ou 90 jours après la suppression du compte. Ce délai concerne les copies sur GitHub ; les dossiers de sécurité décrits ci-dessus suivent leur propre durée de conservation.",
-          "Après la clôture d’une demande de suppression, nous conservons la preuve de vérification et les métadonnées de la demande jusqu’à la première échéance entre 90 jours après la clôture et 180 jours après la réception. Pour une demande non terminée, nous conservons le minimum nécessaire pour la traiter."
+          "Après la clôture d’une demande de suppression, nous conservons la preuve de vérification et les métadonnées de la demande jusqu’à la première échéance entre 90 jours après la clôture et 180 jours après la réception. Pour une demande non terminée, nous conservons le minimum nécessaire pour la traiter.",
+          "Nous conservons la tranche d’âge actuelle, le moment où elle a été définie et l’historique des récompenses créditées jusqu’à la suppression du compte. Une tâche planifiée efface les tentatives de visionnage une fois écoulée une journée après la fin de la période de récompense concernée. La suppression du compte les efface également. Les données traitées par Google suivent ses propres règles de conservation."
         ]
       },
       {
         "h": "7. Vos choix et vos droits",
         "p": [
           "Vous pouvez supprimer votre compte dans Réglages &gt; Supprimer le compte. Vous pouvez désactiver les notifications dans les réglages de votre appareil. Vous pouvez bloquer toute personne qui vous écrit.",
+          "Vous pouvez corriger votre tranche d’âge dans les Réglages. Lorsqu’elles sont disponibles, les options de confidentialité des annonces dans les Réglages vous permettent de gérer votre consentement. Vous pouvez échanger des lettres sans regarder de publicités.",
           "Selon l’endroit où vous vivez, vous pouvez avoir le droit d’accéder à vos informations, de les corriger, de les supprimer ou de les exporter, ou de vous opposer à leur utilisation ou d’en demander la limitation. Pour faire une demande, écrivez à {emailLink}. Vous pouvez aussi déposer une réclamation auprès de votre autorité locale de protection des données."
         ]
       },
       {
         "h": "8. Enfants",
         "p": [
-          "L’app n’est pas destinée aux enfants de moins de {age} ans. Si vous pensez qu’un enfant de moins de cet âge utilise l’app, contactez-nous et nous supprimerons le compte."
+          "L’app n’est pas destinée aux enfants de moins de {age} ans. Si vous pensez qu’un enfant de moins de cet âge utilise l’app, contactez-nous et nous supprimerons le compte.",
+          "Nous ne demandons pas de publicités et ne chargeons pas de formulaires de consentement publicitaire pour les comptes qui déclarent avoir 18 ans ou moins."
         ]
       },
       {
@@ -298,6 +306,6 @@
         ]
       }
     ],
-    "date": "4 novembre 2026"
+    "date": "5 novembre 2026"
   }
 }

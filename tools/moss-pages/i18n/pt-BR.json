@@ -14,7 +14,7 @@
   },
   "landing": {
     "title": "Moss’s Club house · Cartas anônimas levadas pelo Moss",
-    "description": "Escreva uma preocupação numa máquina de escrever. O Moss leva a carta para outra cidade e um desconhecido responde. Cada carta é escrita por uma pessoa. Grátis no iPhone e no Android, sem anúncios.",
+    "description": "Escreva uma preocupação numa máquina de escrever. O Moss leva a carta para outra cidade e um desconhecido responde. Cada carta é escrita por uma pessoa. Grátis no iPhone e no Android.",
     "h1": "Escreva uma preocupação.<br> O Moss entrega.",
     "lede": "Alguém em outra cidade lê e responde.",
     "artAlt": "Moss, um gnomo de jardim com chapéu vermelho pontudo e barba branca",
@@ -37,7 +37,7 @@
     "facts": [
       "Cada carta é escrita por uma pessoa. A IA só revisa e traduz.",
       "Os outros veem sua carta e uma cidade aproximada. Nada mais.",
-      "Grátis e sem anúncios."
+      "Grátis. A loja oferece anúncios premiados opcionais para quem tem 19 anos ou mais."
     ],
     "safety": "Você pode denunciar ou bloquear uma carta direto nela. Se estiver em perigo, não espere uma resposta. Ligue agora para os serviços de emergência da sua região."
   },
@@ -80,7 +80,7 @@
       },
       {
         "q": "Custa alguma coisa?",
-        "a": "Não. O Moss’s Club house é grátis, sem anúncios e sem recursos pagos."
+        "a": "Não. O app e a troca de cartas são grátis e não há compras. Depois de abrir o pacote grátis de três caixas, você pode resgatar uma faísca por dia se tiver 18 anos ou menos ou optar por assistir a um anúncio premiado se tiver 19 anos ou mais."
       }
     ],
     "deleteTitle": "Excluir sua conta",
@@ -152,6 +152,7 @@
       {
         "h": "7. Serviço gratuito e alterações",
         "p": [
+          "Depois de abrir o pacote grátis de três caixas da loja, você pode receber uma recompensa diária. Se tiver 18 anos ou menos, pode resgatar uma faísca pela presença, sem anúncio. Se tiver 19 anos ou mais, pode escolher assistir até o fim a um anúncio premiado quando houver um disponível. As chances são: 1 faísca, 2%; 2, 20%; 3, 50%; 4, 20%; 5, 8%. As duas formas compartilham o limite de uma recompensa por conta por dia, que é renovado à meia-noite no seu horário local. Você pode corrigir a faixa etária nos Ajustes. Você pode usar faíscas para abrir caixas na loja. Faíscas e itens não têm valor em dinheiro e não podem ser comprados com dinheiro real, transferidos nem trocados por dinheiro.",
           "O app é gratuito. Podemos alterar, pausar ou encerrar o app ou qualquer recurso, incluindo limites de cartas e prazos de entrega. Cartas em trânsito podem ser perdidas se o serviço for encerrado. Tentaremos avisar sobre mudanças importantes no app ou nesta página."
         ]
       },
@@ -185,7 +186,8 @@
           "Dúvidas sobre estes termos: {emailLink}"
         ]
       }
-    ]
+    ],
+    "date": "5 de novembro de 2026"
   },
   "privacy": {
     "title": "Política de Privacidade · Moss’s Club house",
@@ -197,7 +199,7 @@
       "Outros usuários nunca veem seu nome nem seu e-mail. Eles veem sua carta e uma cidade aproximada.",
       "Cartas e respostas são enviadas à OpenAI para análise de segurança e tradução. A OpenAI não as escreve.",
       "Sua cidade aproximada vem da sua conexão de rede. O app não usa GPS.",
-      "Não há anúncios de terceiros nem rastreamento do comportamento individual. Contamos por dia as aberturas de links para nossos apps, sem SDKs de análise ou publicidade.",
+      "Na loja, quem declara ter 19 anos ou mais pode escolher assistir a anúncios não personalizados. Quem tem 18 anos ou menos pode resgatar uma recompensa diária sem anúncios.",
       "Você pode excluir sua conta e suas cartas no app a qualquer momento."
     ],
     "sections": [
@@ -212,6 +214,7 @@
           "<strong>Links promocionais.</strong> Ao abrir um link para outro dos nossos apps, são enviados o app, o local do link, a plataforma e o destino. A solicitação usa sua sessão conectada. A tabela de totais diários guarda contagens por esses campos, sem IDs de conta ou endereços IP.",
           "<strong>Mensagens para nós.</strong> Se você nos enviar um e-mail, seu endereço de e-mail e o que você escrever.",
           "<strong>Feedback.</strong> O feedback enviado no app inclui tipo e texto, idioma, plataforma, versão do app, data de recebimento e conta vinculada.",
+          "Recompensas da loja. Guardamos a faixa etária que você declara (18 anos ou menos, ou 19 anos ou mais) e quando você a selecionou ou alterou pela última vez. Não pedimos sua data de nascimento. Registramos a data e o valor das recompensas diárias. Para tentativas de anúncio, guardamos a conta, a sessão, o bloco de anúncios, os horários e, após o crédito, o hash da referência da transação do Google.",
           "<strong>Rascunhos locais.</strong> Os rascunhos não enviados ficam no seu dispositivo e só são enviados ao servidor quando você os manda. As regras do Android excluem os dados do app do backup automático na nuvem e da transferência entre dispositivos. No iOS, a pasta que guarda os rascunhos é marcada para exclusão do backup. Essa indicação ao sistema operacional não garante que backups ou restaurações sejam impedidos. Queimar um rascunho não apaga cópias em backups anteriores."
         ]
       },
@@ -225,7 +228,8 @@
       {
         "h": "3. Como usamos as informações",
         "p": [
-          "Usamos estas informações para fazer o app funcionar: para fazer seu login, entregar cartas entre cidades e fusos horários, traduzir cartas, analisar o conteúdo por segurança, mostrar recursos de ajuda quando uma carta sugere que alguém pode precisar deles, enviar notificações, tratar denúncias e bloqueios, evitar abusos e limitar a frequência das solicitações, corrigir problemas e responder às suas mensagens. Também usamos as contagens agregadas de links para medir a promoção dos nossos apps. Não vendemos suas informações, não criamos perfis pessoais de publicidade nem direcionamos anúncios a você."
+          "Usamos estas informações para fazer o app funcionar: para fazer seu login, entregar cartas entre cidades e fusos horários, traduzir cartas, analisar o conteúdo por segurança, mostrar recursos de ajuda quando uma carta sugere que alguém pode precisar deles, enviar notificações, tratar denúncias e bloqueios, evitar abusos e limitar a frequência das solicitações, corrigir problemas e responder às suas mensagens. Também usamos as contagens agregadas de links para medir a promoção dos nossos apps. Não vendemos suas informações, não criamos perfis pessoais de publicidade nem direcionamos anúncios a você.",
+          "Usamos os dados da loja para aplicar os limites diários e de idade, verificar se você terminou de assistir ao anúncio, creditar faíscas e prevenir fraudes e créditos duplicados."
         ]
       },
       {
@@ -243,7 +247,8 @@
         "list": [
           "<strong>Cloudflare</strong> hospeda nosso servidor e nosso banco de dados e estima sua cidade a partir do seu endereço IP.",
           "<strong>OpenAI</strong> analisa e traduz cartas e respostas.",
-          "<strong>Apple e Google</strong> oferecem o login e entregam as notificações por meio dos serviços de push deles. As notificações não contêm o texto das cartas.",
+          "A Apple e o Google fornecem o login. As notificações são enviadas pelo Apple Push Notification service (APNs) e pelo Firebase Cloud Messaging (FCM), sem o texto das cartas.",
+          "O Google AdMob e sua ferramenta de consentimento podem receber seu endereço IP e deduzir uma localização aproximada, além de dados do app e do dispositivo (incluindo identificadores disponíveis do app ou do dispositivo), visualizações e interações com anúncios e dados sobre falhas ou desempenho. O Google usa esses dados para gerenciar o consentimento, veicular e medir anúncios e prevenir fraudes. Solicitamos apenas anúncios não personalizados. Não pedimos permissão de rastreamento, não usamos IDFA nem o ID de publicidade do Android e desativamos o identificador próprio do editor. Para verificar o anúncio, enviamos como dado personalizado apenas um token opaco da tentativa, sem o ID de usuário do app, e-mail ou conteúdo de cartas. O Google trata e conserva os dados do SDK conforme sua <a href=\"https://policies.google.com/privacy\">Política de Privacidade</a>.",
           "<strong>GitHub</strong> processa feedback do app e denúncias de cartas ou respostas como issues em um repositório privado. As denúncias incluem o motivo, o conteúdo como foi visto por quem denunciou, o tipo de conteúdo, o idioma, a data e uma referência da denúncia. Não adicionamos IDs de conta nem endereços de email, embora o texto possa identificar alguém."
         ],
         "after": [
@@ -257,20 +262,23 @@
           "Ao excluir sua conta, apagamos a conta, as sessões, suas cartas e as respostas que você escreveu. Revogamos os tokens de acesso pela Apple que temos disponíveis e orientamos você a remover o acesso da Apple manualmente, se necessário. Removemos o feedback privado vinculado no GitHub de forma assíncrona em até 7 dias; a exclusão só termina após essa limpeza. Para analisar questões de segurança, mantemos por até 90 dias o motivo, o conteúdo denunciado e o status do tratamento das denúncias feitas por você ou sobre seu conteúdo, sem IDs de usuário, e depois os apagamos. O texto ainda pode identificar alguém. O histórico de recuperação do Cloudflare D1 pode manter dados excluídos por até 30 dias, dependendo do plano. Os demais provedores seguem suas próprias regras de retenção.",
           "Após a entrega, apagamos o texto do feedback do banco de dados Cloudflare D1. Excluímos a issue original e as cópias relacionadas em até 90 dias após o encerramento ou 180 dias após o recebimento, o que ocorrer primeiro. Feedback não resolvido é excluído em até 180 dias após o recebimento.",
           "Excluímos as issues de denúncias no GitHub e as cópias relacionadas no primeiro destes prazos: 180 dias após o recebimento, 90 dias após o encerramento da issue ou a resolução da denúncia por um administrador, ou 90 dias após a exclusão da conta. Esse prazo vale para as cópias no GitHub; os registros de segurança descritos acima seguem seu próprio prazo de retenção.",
-          "Após concluir um pedido de exclusão, mantemos a prova de verificação e os metadados do pedido até o menor prazo entre 90 dias após a conclusão e 180 dias após o recebimento. Para pedidos pendentes, mantemos o mínimo necessário para concluí-los."
+          "Após concluir um pedido de exclusão, mantemos a prova de verificação e os metadados do pedido até o menor prazo entre 90 dias após a conclusão e 180 dias após o recebimento. Para pedidos pendentes, mantemos o mínimo necessário para concluí-los.",
+          "Guardamos a faixa etária atual, quando foi informada e as recompensas creditadas até a exclusão da conta. Uma tarefa programada apaga os registros de tentativas de anúncio depois de passar um dia do fim do período da recompensa ou na exclusão da conta. Os dados tratados pelo Google seguem as regras de retenção dele."
         ]
       },
       {
         "h": "7. Suas escolhas e direitos",
         "p": [
           "Você pode excluir sua conta em Configurações &gt; Excluir conta. Você pode desativar as notificações nas configurações do seu dispositivo. Você pode bloquear qualquer pessoa que escreva para você.",
+          "Você pode corrigir sua faixa etária nos Ajustes. Quando estiverem disponíveis, use as opções de privacidade de anúncios nos Ajustes para gerenciar o consentimento. Você pode trocar cartas sem assistir a anúncios.",
           "Dependendo de onde você mora, você pode ter o direito de acessar, corrigir, excluir ou exportar suas informações, ou de se opor ao modo como as usamos ou restringi-lo. Para fazer uma solicitação, envie um e-mail para {emailLink}. Você também pode reclamar à autoridade de proteção de dados do seu país."
         ]
       },
       {
         "h": "8. Crianças",
         "p": [
-          "O app não é destinado a crianças menores de {age} anos. Se você acredita que uma criança com menos de {age} anos está usando o app, entre em contato conosco e excluiremos a conta."
+          "O app não é destinado a crianças menores de {age} anos. Se você acredita que uma criança com menos de {age} anos está usando o app, entre em contato conosco e excluiremos a conta.",
+          "Não solicitamos anúncios nem carregamos formulários de consentimento para contas que declaram ter 18 anos ou menos."
         ]
       },
       {
@@ -298,6 +306,6 @@
         ]
       }
     ],
-    "date": "4 de novembro de 2026"
+    "date": "5 de novembro de 2026"
   }
 }
