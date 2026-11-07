@@ -80,7 +80,7 @@
       },
       {
         "q": "Does it cost anything?",
-        "a": "No. The app and letter exchange are free, and there are no purchases. After opening the free set of three boxes, you can claim one spark a day if you are 18 or younger, or choose to watch a rewarded ad if you are 19 or older. You can choose personalized or general ads. The choice does not change the reward odds or daily limit."
+        "a": "No. The app and letter exchange are free, and there are no purchases. After opening the free set of three boxes, you can claim one spark a day if you are 18 or younger, or choose to watch a rewarded ad if you are 19 or older. On iOS, ad personalization follows your tracking permission and regional consent. On Android, personalized ads are off by default and can be enabled in Settings. When personalization is not permitted, general ads may be requested. The choice does not change the reward odds or daily limit."
       }
     ],
     "deleteTitle": "Delete your account",
@@ -152,7 +152,7 @@
       {
         "h": "7. Free service and changes",
         "p": [
-          "After opening your free set of three shop boxes, you can earn one daily reward. If you are 18 or younger, you can claim one spark for checking in, without an ad. If you are 19 or older, you can choose to finish a rewarded ad when available. Before watching a rewarded ad, choose personalized or general ads. Both have the same reward odds and daily limit. The chances are 1 spark: 2%; 2: 20%; 3: 50%; 4: 20%; 5: 8%. Both methods share one reward limit per account per day, resetting at local midnight. You can correct your age group in Settings. You can use sparks to open shop boxes. Sparks and items have no cash value and cannot be purchased with real money, transferred or redeemed for cash.",
+          "After opening your free set of three shop boxes, you can earn one daily reward. If you are 18 or younger, you can claim one spark for checking in, without an ad. If you are 19 or older, you can choose to finish a rewarded ad when available. On iOS, ad personalization follows the tracking permission and regional consent. On Android, personalized ads are off by default and can be enabled in Settings. When personalization is not permitted, general ads may be requested. Both have the same reward odds and daily limit. The chances are 1 spark: 2%; 2: 20%; 3: 50%; 4: 20%; 5: 8%. Both methods share one reward limit per account per day, resetting at local midnight. You can correct your age group in Settings. You can use sparks to open shop boxes. Sparks and items have no cash value and cannot be purchased with real money, transferred or redeemed for cash.",
           "The app is free. We may change, pause or stop the app or any feature, including letter limits and delivery timing. Letters in transit may be lost if the service stops. We will try to give notice of major changes in the app or on this page."
         ]
       },
@@ -187,7 +187,7 @@
         ]
       }
     ],
-    "date": "November 5, 2026"
+    "date": "November 6, 2026"
   },
   "privacy": {
     "title": "Privacy Policy · Moss’s Club house",
@@ -199,7 +199,7 @@
       "Other users never see your name or email. They see your letter and an approximate city.",
       "Letters and replies are sent to OpenAI for safety review and translation. OpenAI does not write them.",
       "Your approximate city comes from your network connection. The app doesn’t use GPS.",
-      "If you report being 19 or older, you can choose personalized or general rewarded ads. If you are 18 or younger, you can claim one spark a day by checking in.",
+      "If you report being 19 or older, rewarded ads may be personalized or general. If you are 18 or younger, you can claim one spark a day by checking in.",
       "You can delete your account and letters in the app at any time."
     ],
     "sections": [
@@ -235,7 +235,7 @@
       {
         "h": "4. AI review and translation",
         "p": [
-          "Before a letter or reply is delivered, we send its text, its language and, for replies, the original letter as context, to OpenAI. OpenAI checks it against our letter rules and translates it. AI never writes or edits your letters. Before each letter, reply or revision is sent, the app asks for your agreement to this OpenAI processing, separately from acceptance of the Terms of Use. It sends the content only after you agree.",
+          "Before a letter or reply is delivered, we send its text, its language and, for replies, the original letter as context, to OpenAI. OpenAI checks it against our letter rules and translates it. AI never writes or edits your letters. On newer app versions, we ask for permission on the screen where you accept the Terms of Use, either during setup or when you review the updated agreement. Your permission applies to later letters, replies and revisions. Older versions ask for permission each time you send.",
           "We send requests with OpenAI’s storage option turned off. According to OpenAI’s API policies, API data is not used to train their models by default, but OpenAI may keep it for a limited period to monitor abuse. See <a href=\"https://openai.com/policies/privacy-policy/\">OpenAI’s Privacy Policy</a>."
         ]
       },
@@ -252,7 +252,7 @@
           "<strong>GitHub</strong> processes in-app feedback and letter or reply reports as issues in a private repository. Reports include the reason, content as the reporter saw it, content type, language, date and a report reference. We do not add account IDs or email addresses, though text may identify someone."
         ],
         "after": [
-          "On iOS, we request personalized ads only if you select them, Google’s consent tool allows personalization and you allow the app to track activity across other companies’ apps and websites through Apple’s App Tracking Transparency (ATT). If ATT and any other required consent allow it, Google may use the iOS advertising identifier (IDFA) to measure ads or limit how often you see them, including for general ads. On Android, we block the advertising ID and advertising-related AdServices permissions. If you select personalized ads, the request is subject to Google’s rules and the data available. Google may still serve general ads. When personalization is not allowed, we request general ads if Google’s consent tool permits requests. If it does not permit requests, we do not request ads.",
+          "On iOS, when you first choose to watch an eligible ad, Apple may ask for App Tracking Transparency (ATT) permission. If you allow tracking and Google's regional consent permits personalization, we request personalized ads. If tracking is denied, we request general ads when Google permits ad requests. If ATT and any other required consent allow it, Google may use the iOS advertising identifier (IDFA) to measure ads or limit how often you see them, including for general ads. On Android, the Personalized ads switch in Settings is off by default. On Android, we block the advertising ID and advertising-related AdServices permissions. If you select personalized ads, the request is subject to Google’s rules and the data available. Google may still serve general ads. When personalization is not allowed, we request general ads if Google’s consent tool permits requests. If it does not permit requests, we do not request ads.",
           "These providers may process information in the United States and other countries. They handle it under their own terms and privacy policies."
         ]
       },
@@ -271,7 +271,7 @@
         "h": "7. Your choices and rights",
         "p": [
           "You can delete your account in Settings &gt; Delete account. You can turn notifications off in your device settings. You can block anyone who writes to you.",
-          "In the app’s Settings, you can correct your age group and switch to general ads to withdraw your choice of personalized ads. Where available, Ad privacy choices manages Google’s regional consent separately. On iOS, you can change the separate ATT permission in the device’s Settings &gt; Privacy &amp; Security &gt; Tracking. You can exchange letters without watching ads.",
+          "In the app’s Settings, you can correct your age group; on Android, you can turn personalized ads on or off. When personalization is not permitted, general ads may be requested. Where available, Ad privacy choices manages Google’s regional consent separately. On iOS, you can change the separate ATT permission in the device’s Settings &gt; Privacy &amp; Security &gt; Tracking. You can exchange letters without watching ads.",
           "Depending on where you live, you may have the right to access, correct, delete or export your information, or to object to or restrict how we use it. To make a request, email {emailLink}. You can also complain to your local data protection authority."
         ]
       },
@@ -307,6 +307,6 @@
         ]
       }
     ],
-    "date": "November 5, 2026"
+    "date": "November 6, 2026"
   }
 }

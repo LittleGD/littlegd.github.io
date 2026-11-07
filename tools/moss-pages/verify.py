@@ -44,7 +44,7 @@ AD_CHOICES = {
     'es': ('personalizados', 'generales', 'no solicitamos anuncios', 'retirar', 'este dispositivo'),
     'pt-BR': ('personalizados', 'gerais', 'não solicitamos anúncios', 'retirar', 'neste dispositivo'),
     'fr': ('personnalisées', 'générales', 'ne demandons aucune publicité', 'retirer', 'cet appareil'),
-    'de': ('personalisierte', 'allgemeine', 'fordern wir keine Anzeigen an', 'widerrufen', 'diesem Gerät'),
+    'de': ('personalisiert', 'allgemein', 'fordern wir keine Anzeigen an', 'widerrufen', 'diesem Gerät'),
     'ko': ('맞춤 광고', '일반 광고', '광고를 요청하지 않습니다', '철회', '이 기기'),
     'ja': ('パーソナライズ広告', '一般広告', '広告をリクエストしません', '取り消', 'この端末'),
     'zh-Hans': ('个性化', '普通', '不会请求广告', '撤回', '这台设备'),
@@ -79,7 +79,8 @@ def check():
             assert all(re.search(rf'(?<!\d){age}(?!\d)', text) for age in [18, 19]), (locale, text)
             assert not STALE_GLOBAL.search(text), (locale, text)
         assert re.search(r'(?<!\d)18(?!\d)', sections[7]['p'][-1]), locale
-        assert terms['date'] == privacy['date'] and re.search(r'(?<!\d)5(?!\d)', terms['date']), locale
+        assert terms['date'] == privacy['date'] and re.search(r'(?<!\d)6(?!\d)', terms['date']), locale
+        assert 'OpenAI' in sections[3]['p'][0], locale
         providers = sections[4]['list']
         assert all(marker in providers[2] for marker in ('APNs', 'FCM')), locale
         assert all(marker in providers[3] for marker in ('Google AdMob', 'UMP', 'https://policies.google.com/privacy', 'IP', 'SDK')), locale
@@ -91,14 +92,14 @@ def check():
         for text in (reward, support['faq'][-1]['a'], privacy['summary'][3], platform, sections[6]['p'][1]):
             assert all(marker in text.casefold() for marker in (personalized, general)), (locale, text)
         assert no_ads in platform, locale
-        assert withdraw in sections[6]['p'][1] and 'ATT' in sections[6]['p'][1], locale
+        assert 'ATT' in sections[6]['p'][1] and 'Android' in sections[6]['p'][1], locale
         assert device in sections[5]['p'][-1], locale
         base = ROOT / 'moss' / ('' if locale == 'en' else locale.lower())
         evidence = {
             'landing': [landing['description'], landing['facts'][2]],
             'support': [support['faq'][-1]['a']],
             'terms': [terms['date'], reward],
-            'privacy': [privacy['date'], privacy['summary'][3], sections[0]['p'][-2], sections[2]['p'][-1],
+            'privacy': [privacy['date'], privacy['summary'][3], sections[0]['p'][-2], sections[2]['p'][-1], sections[3]['p'][0],
                         providers[2], providers[3], platform, sections[2]['p'][0], sections[5]['p'][-1],
                         sections[6]['p'][1], sections[7]['p'][-1]],
         }

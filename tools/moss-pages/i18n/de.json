@@ -80,7 +80,7 @@
       },
       {
         "q": "Kostet es etwas?",
-        "a": "Nein. Die App und der Briefwechsel sind kostenlos, und es gibt keine Käufe. Nach dem Öffnen der drei kostenlosen Boxen kannst du bis einschließlich 18 Jahren täglich einen Funken abholen oder ab 19 Jahren freiwillig Werbung mit Belohnung ansehen. Du kannst personalisierte oder allgemeine Werbung wählen. Die Wahl ändert weder die Gewinnchancen noch das Tageslimit."
+        "a": "Nein. Die App und der Briefwechsel sind kostenlos, und es gibt keine Käufe. Nach dem Öffnen der drei kostenlosen Boxen kannst du bis einschließlich 18 Jahren täglich einen Funken abholen oder ab 19 Jahren freiwillig Werbung mit Belohnung ansehen. Unter iOS hängt die Personalisierung von der Tracking-Erlaubnis und der regionalen Einwilligung ab. Unter Android ist personalisierte Werbung standardmäßig aus und kann in den Einstellungen aktiviert werden. Wenn die Personalisierung nicht erlaubt ist, kann allgemeine Werbung angefordert werden. Die Wahl ändert weder die Gewinnchancen noch das Tageslimit."
       }
     ],
     "deleteTitle": "Konto löschen",
@@ -152,7 +152,7 @@
       {
         "h": "7. Kostenloser Dienst und Änderungen",
         "p": [
-          "Nachdem du die drei kostenlosen Boxen im Shop geöffnet hast, kannst du eine tägliche Belohnung erhalten. Wenn du 18 Jahre oder jünger bist, kannst du täglich einen Funken ohne Werbung abholen. Ab 19 Jahren kannst du, wenn verfügbar, freiwillig eine Anzeige mit Belohnung bis zum Ende ansehen. Wähle vor dem Ansehen einer Anzeige mit Belohnung zwischen personalisierter und allgemeiner Werbung. Gewinnchancen und Tageslimit sind bei beiden gleich. Die Chancen sind: 1 Funke: 2 %; 2: 20 %; 3: 50 %; 4: 20 %; 5: 8 %. Für beide Wege gilt zusammen eine Belohnung pro Konto und Tag. Das Limit wird um Mitternacht deiner Ortszeit zurückgesetzt. Du kannst deine Altersgruppe in den Einstellungen korrigieren. Mit Funken kannst du Boxen im Shop öffnen. Funken und Gegenstände haben keinen Geldwert. Sie können weder mit echtem Geld gekauft noch übertragen oder gegen Geld eingetauscht werden.",
+          "Nachdem du die drei kostenlosen Boxen im Shop geöffnet hast, kannst du eine tägliche Belohnung erhalten. Wenn du 18 Jahre oder jünger bist, kannst du täglich einen Funken ohne Werbung abholen. Ab 19 Jahren kannst du, wenn verfügbar, freiwillig eine Anzeige mit Belohnung bis zum Ende ansehen. Unter iOS hängt die Personalisierung von der Tracking-Erlaubnis und der regionalen Einwilligung ab. Unter Android ist personalisierte Werbung standardmäßig aus und kann in den Einstellungen aktiviert werden. Wenn die Personalisierung nicht erlaubt ist, kann allgemeine Werbung angefordert werden. Gewinnchancen und Tageslimit sind bei beiden gleich. Die Chancen sind: 1 Funke: 2 %; 2: 20 %; 3: 50 %; 4: 20 %; 5: 8 %. Für beide Wege gilt zusammen eine Belohnung pro Konto und Tag. Das Limit wird um Mitternacht deiner Ortszeit zurückgesetzt. Du kannst deine Altersgruppe in den Einstellungen korrigieren. Mit Funken kannst du Boxen im Shop öffnen. Funken und Gegenstände haben keinen Geldwert. Sie können weder mit echtem Geld gekauft noch übertragen oder gegen Geld eingetauscht werden.",
           "Die App ist kostenlos. Wir können die App oder einzelne Funktionen ändern, pausieren oder einstellen, einschließlich Briefgrenzen und Zustellzeiten. Briefe, die unterwegs sind, können verloren gehen, wenn der Dienst eingestellt wird. Wir bemühen uns, wesentliche Änderungen in der App oder auf dieser Seite anzukündigen."
         ]
       },
@@ -187,7 +187,7 @@
         ]
       }
     ],
-    "date": "5. November 2026"
+    "date": "6. November 2026"
   },
   "privacy": {
     "title": "Datenschutzerklärung · Moss’s Club house",
@@ -199,7 +199,7 @@
       "Andere Nutzer sehen nie deinen Namen oder deine E-Mail-Adresse. Sie sehen deinen Brief und eine ungefähre Stadt.",
       "Briefe und Antworten werden zur Sicherheitsprüfung und Übersetzung an OpenAI gesendet. OpenAI schreibt sie nicht.",
       "Deine ungefähre Stadt ergibt sich aus deiner Netzwerkverbindung. Die App nutzt kein GPS.",
-      "Wenn du angibst, mindestens 19 Jahre alt zu sein, kannst du personalisierte oder allgemeine Werbung mit Belohnung wählen. Bis einschließlich 18 Jahre kannst du dir beim täglichen Check-in einen Funken abholen.",
+      "Wenn du angibst, mindestens 19 Jahre alt zu sein, kann Werbung mit Belohnung personalisiert oder allgemein sein. Bis einschließlich 18 Jahre kannst du dir beim täglichen Check-in einen Funken abholen.",
       "Du kannst dein Konto und deine Briefe jederzeit in der App löschen."
     ],
     "sections": [
@@ -235,7 +235,7 @@
       {
         "h": "4. KI-Prüfung und Übersetzung",
         "p": [
-          "Bevor ein Brief oder eine Antwort zugestellt wird, senden wir seinen Text, seine Sprache und bei Antworten den ursprünglichen Brief als Kontext an OpenAI. OpenAI prüft ihn anhand unserer Briefregeln und übersetzt ihn. KI schreibt oder bearbeitet deine Briefe nie. Vor jedem Senden eines Briefs, einer Antwort oder einer Überarbeitung bittet die App getrennt von der Annahme der Nutzungsbedingungen um deine Zustimmung zu dieser Verarbeitung durch OpenAI. Sie übermittelt den Inhalt erst nach deiner Zustimmung.",
+          "Bevor ein Brief oder eine Antwort zugestellt wird, senden wir seinen Text, seine Sprache und bei Antworten den ursprünglichen Brief als Kontext an OpenAI. OpenAI prüft ihn anhand unserer Briefregeln und übersetzt ihn. KI schreibt oder bearbeitet deine Briefe nie. In neueren App-Versionen bitten wir dich bei der Annahme der Nutzungsbedingungen um deine Einwilligung, wenn du die App einrichtest oder die aktualisierte Vereinbarung prüfst. Sie gilt auch für spätere Briefe, Antworten und Überarbeitungen. Ältere Versionen fragen bei jedem Senden nach.",
           "Wir senden Anfragen mit ausgeschalteter Speicheroption von OpenAI. Nach den API-Richtlinien von OpenAI werden API-Daten standardmäßig nicht zum Training seiner Modelle verwendet, OpenAI kann sie aber für begrenzte Zeit aufbewahren, um Missbrauch zu erkennen. Siehe die <a href=\"https://openai.com/policies/privacy-policy/\">Datenschutzerklärung von OpenAI</a>."
         ]
       },
@@ -252,7 +252,7 @@
           "<strong>GitHub</strong> verarbeitet Feedback aus der App und Meldungen zu Briefen oder Antworten als Issues in einem privaten Repository. Meldungen enthalten den Grund, den Inhalt aus Sicht der meldenden Person, die Art des Inhalts, Sprache, Datum und eine Meldungsreferenz. Wir fügen keine Konto-IDs oder E-Mail-Adressen hinzu, der Text kann aber Personen erkennbar machen."
         ],
         "after": [
-          "Unter iOS fordern wir personalisierte Werbung nur an, wenn du sie auswählst, Googles Einwilligungstool die Personalisierung zulässt und du über Apples App-Tracking-Transparenz (ATT) das Tracking deiner Aktivitäten in Apps und auf Websites anderer Unternehmen erlaubst. Wenn die ATT-Berechtigung und weitere erforderliche Einwilligungen vorliegen, kann Google die iOS-Werbekennung (IDFA) auch bei allgemeiner Werbung verwenden, um Anzeigen zu messen oder ihre Häufigkeit zu begrenzen. Unter Android blockieren wir die Werbe-ID und werbebezogene AdServices-Berechtigungen. Wenn du personalisierte Werbung wählst, richtet sich die Anfrage nach Googles Regeln und den verfügbaren Daten. Google kann weiterhin allgemeine Werbung ausspielen. Ist keine Personalisierung erlaubt, fordern wir allgemeine Werbung an, sofern Googles Tool Anzeigenanfragen zulässt. Andernfalls fordern wir keine Anzeigen an.",
+          "Unter iOS kann Apple über App-Tracking-Transparenz (ATT) um Erlaubnis bitten, wenn du erstmals eine verfügbare Anzeige ansehen möchtest. Wenn du Tracking erlaubst und Googles regionale Einwilligung die Personalisierung zulässt, fordern wir personalisierte Werbung an. Lehnst du Tracking ab, fordern wir allgemeine Werbung an, sofern Google Anzeigenanfragen zulässt. Wenn die ATT-Berechtigung und weitere erforderliche Einwilligungen vorliegen, kann Google die iOS-Werbekennung (IDFA) auch bei allgemeiner Werbung verwenden, um Anzeigen zu messen oder ihre Häufigkeit zu begrenzen. Unter Android ist der Schalter für personalisierte Werbung in den Einstellungen standardmäßig ausgeschaltet. Unter Android blockieren wir die Werbe-ID und werbebezogene AdServices-Berechtigungen. Wenn du personalisierte Werbung wählst, richtet sich die Anfrage nach Googles Regeln und den verfügbaren Daten. Google kann weiterhin allgemeine Werbung ausspielen. Ist keine Personalisierung erlaubt, fordern wir allgemeine Werbung an, sofern Googles Tool Anzeigenanfragen zulässt. Andernfalls fordern wir keine Anzeigen an.",
           "Diese Dienstleister können Informationen in den USA und in anderen Ländern verarbeiten. Sie behandeln sie nach ihren eigenen Bedingungen und Datenschutzerklärungen."
         ]
       },
@@ -271,7 +271,7 @@
         "h": "7. Deine Wahlmöglichkeiten und Rechte",
         "p": [
           "Du kannst dein Konto unter Einstellungen &gt; Konto löschen löschen. Mitteilungen kannst du in den Geräteeinstellungen ausschalten. Du kannst jeden blockieren, der dir schreibt.",
-          "In den App-Einstellungen kannst du deine Altersgruppe korrigieren oder deine Wahl personalisierter Werbung widerrufen, indem du zu allgemeiner Werbung wechselst. Falls verfügbar, kannst du die regionale Einwilligung für Google getrennt in den Datenschutzoptionen für Anzeigen verwalten. Unter iOS kannst du die separate ATT-Berechtigung in Einstellungen &gt; Datenschutz &amp; Sicherheit &gt; Tracking ändern. Du kannst Briefe austauschen, ohne Anzeigen anzusehen.",
+          "In den App-Einstellungen kannst du deine Altersgruppe korrigieren und unter Android personalisierte Werbung ein- oder ausschalten. Wenn die Personalisierung nicht erlaubt ist, kann allgemeine Werbung angefordert werden. Falls verfügbar, kannst du die regionale Einwilligung für Google getrennt in den Datenschutzoptionen für Anzeigen verwalten. Unter iOS kannst du die separate ATT-Berechtigung in Einstellungen &gt; Datenschutz &amp; Sicherheit &gt; Tracking ändern. Du kannst Briefe austauschen, ohne Anzeigen anzusehen.",
           "Je nachdem, wo du wohnst, hast du möglicherweise das Recht, auf deine Informationen zuzugreifen, sie zu berichtigen, zu löschen oder zu exportieren oder der Nutzung zu widersprechen oder sie einzuschränken. Für eine Anfrage schreib an {emailLink}. Du kannst dich außerdem bei deiner örtlichen Datenschutzbehörde beschweren."
         ]
       },
@@ -307,6 +307,6 @@
         ]
       }
     ],
-    "date": "5. November 2026"
+    "date": "6. November 2026"
   }
 }

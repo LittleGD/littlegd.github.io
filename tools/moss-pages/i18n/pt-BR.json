@@ -80,7 +80,7 @@
       },
       {
         "q": "Custa alguma coisa?",
-        "a": "Não. O app e a troca de cartas são grátis e não há compras. Depois de abrir o pacote grátis de três caixas, você pode resgatar uma faísca por dia se tiver 18 anos ou menos ou optar por assistir a um anúncio premiado se tiver 19 anos ou mais. Você pode escolher anúncios personalizados ou gerais. A escolha não muda as chances de recompensa nem o limite diário."
+        "a": "Não. O app e a troca de cartas são grátis e não há compras. Depois de abrir o pacote grátis de três caixas, você pode resgatar uma faísca por dia se tiver 18 anos ou menos ou optar por assistir a um anúncio premiado se tiver 19 anos ou mais. No iOS, a personalização depende da permissão de rastreamento e do consentimento regional. No Android, anúncios personalizados ficam desativados por padrão e podem ser ativados nos Ajustes. Quando a personalização não é permitida, podem ser solicitados anúncios gerais. A escolha não muda as chances de recompensa nem o limite diário."
       }
     ],
     "deleteTitle": "Excluir sua conta",
@@ -152,7 +152,7 @@
       {
         "h": "7. Serviço gratuito e alterações",
         "p": [
-          "Depois de abrir o pacote grátis de três caixas da loja, você pode receber uma recompensa diária. Se tiver 18 anos ou menos, pode resgatar uma faísca pela presença, sem anúncio. Se tiver 19 anos ou mais, pode escolher assistir até o fim a um anúncio premiado quando houver um disponível. Antes de assistir a um anúncio premiado, escolha anúncios personalizados ou gerais. As chances de recompensa e o limite diário são os mesmos nas duas opções. As chances são: 1 faísca, 2%; 2, 20%; 3, 50%; 4, 20%; 5, 8%. As duas formas compartilham o limite de uma recompensa por conta por dia, que é renovado à meia-noite no seu horário local. Você pode corrigir a faixa etária nos Ajustes. Você pode usar faíscas para abrir caixas na loja. Faíscas e itens não têm valor em dinheiro e não podem ser comprados com dinheiro real, transferidos nem trocados por dinheiro.",
+          "Depois de abrir o pacote grátis de três caixas da loja, você pode receber uma recompensa diária. Se tiver 18 anos ou menos, pode resgatar uma faísca pela presença, sem anúncio. Se tiver 19 anos ou mais, pode escolher assistir até o fim a um anúncio premiado quando houver um disponível. No iOS, a personalização depende da permissão de rastreamento e do consentimento regional. No Android, anúncios personalizados ficam desativados por padrão e podem ser ativados nos Ajustes. Quando a personalização não é permitida, podem ser solicitados anúncios gerais. As chances de recompensa e o limite diário são os mesmos nas duas opções. As chances são: 1 faísca, 2%; 2, 20%; 3, 50%; 4, 20%; 5, 8%. As duas formas compartilham o limite de uma recompensa por conta por dia, que é renovado à meia-noite no seu horário local. Você pode corrigir a faixa etária nos Ajustes. Você pode usar faíscas para abrir caixas na loja. Faíscas e itens não têm valor em dinheiro e não podem ser comprados com dinheiro real, transferidos nem trocados por dinheiro.",
           "O app é gratuito. Podemos alterar, pausar ou encerrar o app ou qualquer recurso, incluindo limites de cartas e prazos de entrega. Cartas em trânsito podem ser perdidas se o serviço for encerrado. Tentaremos avisar sobre mudanças importantes no app ou nesta página."
         ]
       },
@@ -187,7 +187,7 @@
         ]
       }
     ],
-    "date": "5 de novembro de 2026"
+    "date": "6 de novembro de 2026"
   },
   "privacy": {
     "title": "Política de Privacidade · Moss’s Club house",
@@ -199,7 +199,7 @@
       "Outros usuários nunca veem seu nome nem seu e-mail. Eles veem sua carta e uma cidade aproximada.",
       "Cartas e respostas são enviadas à OpenAI para análise de segurança e tradução. A OpenAI não as escreve.",
       "Sua cidade aproximada vem da sua conexão de rede. O app não usa GPS.",
-      "Se você informar que tem 19 anos ou mais, pode escolher anúncios premiados personalizados ou gerais. Com 18 anos ou menos, você pode resgatar uma faísca por dia pelo registro de presença.",
+      "Se você informar que tem 19 anos ou mais, os anúncios premiados podem ser personalizados ou gerais. Com 18 anos ou menos, você pode resgatar uma faísca por dia pelo registro de presença.",
       "Você pode excluir sua conta e suas cartas no app a qualquer momento."
     ],
     "sections": [
@@ -235,7 +235,7 @@
       {
         "h": "4. Análise e tradução por IA",
         "p": [
-          "Antes de uma carta ou resposta ser entregue, enviamos o texto, o idioma e, no caso das respostas, a carta original como contexto, para a OpenAI. A OpenAI verifica o conteúdo de acordo com as nossas regras das cartas e o traduz. A IA nunca escreve nem edita suas cartas. Antes de enviar cada carta, resposta ou revisão, o app pede seu consentimento para esse processamento pela OpenAI, separado da aceitação dos Termos de Uso. O conteúdo só é enviado depois que você concorda.",
+          "Antes de uma carta ou resposta ser entregue, enviamos o texto, o idioma e, no caso das respostas, a carta original como contexto, para a OpenAI. A OpenAI verifica o conteúdo de acordo com as nossas regras das cartas e o traduz. A IA nunca escreve nem edita suas cartas. Nas versões mais novas, pedimos sua permissão na tela de aceite dos Termos de Uso, na configuração inicial ou ao revisar o acordo atualizado. Ela vale para cartas, respostas e revisões posteriores. As versões anteriores pedem permissão a cada envio.",
           "Enviamos as solicitações com a opção de armazenamento da OpenAI desativada. De acordo com as políticas de API da OpenAI, os dados da API não são usados por padrão para treinar os modelos dela, mas a OpenAI pode guardá-los por um período limitado para monitorar abusos. Veja a <a href=\"https://openai.com/policies/privacy-policy/\">Política de Privacidade da OpenAI</a>."
         ]
       },
@@ -252,7 +252,7 @@
           "<strong>GitHub</strong> processa feedback do app e denúncias de cartas ou respostas como issues em um repositório privado. As denúncias incluem o motivo, o conteúdo como foi visto por quem denunciou, o tipo de conteúdo, o idioma, a data e uma referência da denúncia. Não adicionamos IDs de conta nem endereços de email, embora o texto possa identificar alguém."
         ],
         "after": [
-          "No iOS, solicitamos anúncios personalizados somente se você escolher essa opção, a ferramenta de consentimento do Google permitir a personalização e você autorizar o rastreamento da atividade em apps e sites de outras empresas pelo recurso Transparência no Rastreamento em Apps da Apple (ATT). Se a permissão do ATT e os demais consentimentos necessários permitirem, o Google pode usar o identificador de publicidade do iOS (IDFA) para medir anúncios ou limitar a frequência de exibição, inclusive para anúncios gerais. No Android, bloqueamos o ID de publicidade e as permissões de publicidade do AdServices. Se você escolher anúncios personalizados, o pedido depende das regras do Google e dos dados disponíveis. O Google ainda pode exibir anúncios gerais. Se a personalização não for permitida, solicitamos anúncios gerais quando a ferramenta do Google permitir pedidos de anúncios. Caso contrário, não solicitamos anúncios.",
+          "No iOS, ao optar por assistir a um anúncio elegível pela primeira vez, a Apple pode solicitar permissão pela Transparência no Rastreamento em Apps (ATT). Se você permitir o rastreamento e o consentimento regional do Google permitir a personalização, solicitamos anúncios personalizados. Se recusar o rastreamento, solicitamos anúncios gerais quando o Google permitir pedidos de anúncios. Se a permissão do ATT e os demais consentimentos necessários permitirem, o Google pode usar o identificador de publicidade do iOS (IDFA) para medir anúncios ou limitar a frequência de exibição, inclusive para anúncios gerais. No Android, a opção de anúncios personalizados nos Ajustes fica desativada por padrão. No Android, bloqueamos o ID de publicidade e as permissões de publicidade do AdServices. Se você escolher anúncios personalizados, o pedido depende das regras do Google e dos dados disponíveis. O Google ainda pode exibir anúncios gerais. Se a personalização não for permitida, solicitamos anúncios gerais quando a ferramenta do Google permitir pedidos de anúncios. Caso contrário, não solicitamos anúncios.",
           "Esses provedores podem processar informações nos Estados Unidos e em outros países. Eles as tratam de acordo com seus próprios termos e políticas de privacidade."
         ]
       },
@@ -271,7 +271,7 @@
         "h": "7. Suas escolhas e direitos",
         "p": [
           "Você pode excluir sua conta em Configurações &gt; Excluir conta. Você pode desativar as notificações nas configurações do seu dispositivo. Você pode bloquear qualquer pessoa que escreva para você.",
-          "Nos ajustes do app, você pode corrigir sua faixa etária ou retirar a escolha de anúncios personalizados mudando para anúncios gerais. Quando disponíveis, as opções de privacidade de anúncios permitem gerenciar separadamente o consentimento regional do Google. No iOS, você pode alterar a permissão separada do ATT em Ajustes &gt; Privacidade e Segurança &gt; Rastreamento. Você pode trocar cartas sem assistir a anúncios.",
+          "Nos ajustes do app, você pode corrigir sua faixa etária e, no Android, ativar ou desativar anúncios personalizados. Quando a personalização não é permitida, podem ser solicitados anúncios gerais. Quando disponíveis, as opções de privacidade de anúncios permitem gerenciar separadamente o consentimento regional do Google. No iOS, você pode alterar a permissão separada do ATT em Ajustes &gt; Privacidade e Segurança &gt; Rastreamento. Você pode trocar cartas sem assistir a anúncios.",
           "Dependendo de onde você mora, você pode ter o direito de acessar, corrigir, excluir ou exportar suas informações, ou de se opor ao modo como as usamos ou restringi-lo. Para fazer uma solicitação, envie um e-mail para {emailLink}. Você também pode reclamar à autoridade de proteção de dados do seu país."
         ]
       },
@@ -307,6 +307,6 @@
         ]
       }
     ],
-    "date": "5 de novembro de 2026"
+    "date": "6 de novembro de 2026"
   }
 }
