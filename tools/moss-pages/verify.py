@@ -110,7 +110,7 @@ def check():
             assert not STALE_AD_PERSONALIZATION.search(output), (locale, page, 'stale personalization claim')
             for fragment in fragments:
                 assert fragment in output or html.escape(fragment, quote=True) in output, (locale, page, fragment)
-    assert len(list((ROOT / 'moss').glob('**/index.html'))) == 36
+    assert len(list((ROOT / 'moss').glob('**/index.html'))) == 54
     print('PASS: 9 locale structures, 36 generated pages, rewards 2/20/50/20/8%, age/AdMob, ad choices and fallbacks, APNs/FCM coverage, no stale ad claims.')
 
 

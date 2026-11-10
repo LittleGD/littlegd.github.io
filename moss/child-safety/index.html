@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Each language has a stable address. Only an explicit ?lang= request
+   changes language; browser settings never redirect a page. */
+(function () {
+  var here = "en", urls = {"en": "/moss/child-safety/", "es": "/moss/es/child-safety/", "pt-BR": "/moss/pt-br/child-safety/", "fr": "/moss/fr/child-safety/", "de": "/moss/de/child-safety/", "ko": "/moss/ko/child-safety/", "ja": "/moss/ja/child-safety/", "zh-Hans": "/moss/zh-hans/child-safety/", "zh-Hant": "/moss/zh-hant/child-safety/"}, want;
+  function pick(tag) {
+    tag = String(tag || '').toLowerCase();
+    if (/^zh-(hant|tw|hk|mo)/.test(tag)) return 'zh-Hant';
+    if (/^zh/.test(tag)) return 'zh-Hans';
+    return { en: 'en', es: 'es', pt: 'pt-BR', fr: 'fr', de: 'de', ko: 'ko', ja: 'ja' }[tag.split('-')[0]];
+  }
+  try { want = pick(new URLSearchParams(location.search).get('lang')); } catch (e) {}
+  if (want && want !== here) location.replace(urls[want] + location.hash);
+})();
+</script>
+<title>Moss’s Club house Child Safety Standards</title>
+<meta name="description" content="These are the standards Moss’s Club house (the &quot;app&quot;) follows to prevent child sexual abuse and exploitation (CSAE). The app is run by Jongmin Lee, an independent developer at JML.Studio (&quot;we&quot;).">
+<meta name="author" content="Jongmin Lee">
+<link rel="canonical" href="https://littlegd.github.io/moss/child-safety/">
+<link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/child-safety/">
+<link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/child-safety/">
+<link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/child-safety/">
+<link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/child-safety/">
+<link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/child-safety/">
+<link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/child-safety/">
+<link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/child-safety/">
+<link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/child-safety/">
+<link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/child-safety/">
+<link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/child-safety/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ECEEE9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#202521" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JML.Studio">
+<meta property="og:url" content="https://littlegd.github.io/moss/child-safety/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:title" content="Moss’s Club house Child Safety Standards">
+<meta property="og:description" content="These are the standards Moss’s Club house (the &quot;app&quot;) follows to prevent child sexual abuse and exploitation (CSAE). The app is run by Jongmin Lee, an independent developer at JML.Studio (&quot;we&quot;).">
+<meta property="og:image" content="https://littlegd.github.io/assets/moss-icon-512.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta property="og:image:alt" content="Moss, a garden gnome with a red pointed hat and a white beard">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" href="/assets/moss-icon-512.png">
+<link rel="apple-touch-icon" href="/moss/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/moss/moss.css">
+<script src="/moss/moss.js" defer></script>
+<script defer src="/analytics.js"></script>
+</head>
+<body class="page-child-safety">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="top-inner wrap">
+ <a class="brand" href="/moss/"><img src="/assets/moss-icon-512.png" width="36" height="36" alt=""><span translate="no">Moss’s Club house</span></a>
+ <details class="lang"><summary><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M1.75 8h12.5M8 1.75c1.7 1.8 2.6 3.9 2.6 6.25S9.7 12.45 8 14.25C6.3 12.45 5.4 10.35 5.4 8S6.3 3.55 8 1.75z"/></svg><span class="sr">Language: </span>English</summary><ul class="lang-menu" role="list"><li><a href="/moss/child-safety/" hreflang="en" lang="en" aria-current="true">English</a></li><li><a href="/moss/es/child-safety/" hreflang="es" lang="es">Español</a></li><li><a href="/moss/pt-br/child-safety/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li><li><a href="/moss/fr/child-safety/" hreflang="fr" lang="fr">Français</a></li><li><a href="/moss/de/child-safety/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/moss/ko/child-safety/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/moss/ja/child-safety/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/moss/zh-hans/child-safety/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="/moss/zh-hant/child-safety/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li></ul></details>
+</div></header>
+<main id="main" class="wrap narrow doc"><article aria-labelledby="h">
+<div class="page-head"><h1 id="h">Moss’s Club house Child Safety Standards</h1></div>
+<p class="meta">Effective date: November 9, 2026</p>
+<p>These are the standards Moss’s Club house (the &quot;app&quot;) follows to prevent child sexual abuse and exploitation (CSAE). The app is run by Jongmin Lee, an independent developer at JML.Studio (&quot;we&quot;).</p>
+<h2>1. Our principles</h2>
+<ul>
+<li>We do not tolerate child sexual abuse or exploitation in any form.</li>
+<li>You must be 14 or older to use the app. This requirement is part of the Terms of Use, which you accept before you start. If we find an account created by a child under 14, we delete it.</li>
+<li>These standards are part of our <a href="/moss/terms/">Terms of Use</a> and apply to everything exchanged in the app, including worry letters, replies and encouragement letters.</li>
+</ul>
+<h2>2. What is prohibited</h2>
+<p>The following is prohibited. When we find it, we remove the content and restrict or end the account.</p>
+<ul>
+<li>Sending, asking for or pointing to child sexual abuse material (CSAM)</li>
+<li>Content that sexualizes children or teens or treats them as sexual objects</li>
+<li>Building trust with a minor in order to sexually exploit them (grooming)</li>
+<li>Asking a minor for sexual images or conversations, or threatening them with such material, including sextortion</li>
+<li>Asking a minor to meet, exchange contact details or move the conversation to another app or service</li>
+<li>Promoting or facilitating child trafficking or exploitation</li>
+</ul>
+<p>Talking about harm you have experienced is not a violation. We treat letters that share such experiences as stories to protect.</p>
+<h2>3. App design that reduces risk</h2>
+<ul>
+<li><strong>No photos or files.</strong> Letters are text only. You can&#x27;t send photos, videos, files or audio.</li>
+<li><strong>No chat rooms.</strong> Each worry letter can receive only one reply, and there is no ongoing conversation or private messaging after that.</li>
+<li><strong>No identities.</strong> Other users never see your name, email or profile photo. They see only your letter and a wide region name. The app does not store the name or photo your sign-in provider sends.</li>
+<li><strong>Automated review before delivery.</strong> Every letter goes through an automated review before delivery. Exploitation and direct threats are not delivered, and exposed contact details are sent back for changes. Encouragement letters with sexual content, contact details or links are not delivered either. Letters that are hard to judge are held, and our operator checks them directly.</li>
+<li><strong>Ad limits.</strong> We do not request ads for users who say they are 18 or younger, and all ads are limited to the general audience rating (G).</li>
+</ul>
+<h2>4. How to report</h2>
+<ul>
+<li><strong>In the app.</strong> Open the letter, reply or encouragement letter you received and tap &quot;Report letter.&quot; The reason and the content you saw go privately to our operator, so you don&#x27;t need to copy anything. Tap &quot;Block this sender&quot; to stop exchanging letters with that person.</li>
+<li><strong>Contact us.</strong> You can also open Contact us in the app&#x27;s Settings and choose &quot;Reporting a person or a safety concern.&quot;</li>
+<li><strong>Email.</strong> Anyone, including people who don&#x27;t use the app, can report to <a href="mailto:jmjplearner@gmail.com">jmjplearner@gmail.com</a>. Please never attach or copy child sexual abuse material in a report. Just tell us where you saw it.</li>
+<li>If someone is in danger right now, don&#x27;t wait for an in-app report. Contact local emergency services or the police immediately.</li>
+</ul>
+<h2>5. What happens after a report</h2>
+<ul>
+<li>Our operator reviews the reported content and the reason. Our operator tools show the content and the reason, but not user IDs.</li>
+<li>We review child safety reports before other reports and aim to act within 24 hours.</li>
+<li>We remove content that breaks these standards and restrict the account. A restricted account can&#x27;t send, reply to or receive new letters.</li>
+</ul>
+<h2>6. Handling CSAM and exploitation</h2>
+<ul>
+<li>When we become aware of child sexual abuse material or child exploitation, we immediately stop it from being delivered, remove it and restrict the accounts involved.</li>
+<li>As required by law, we report it to the National Center for Missing &amp; Exploited Children (NCMEC) CyberTipline or to the relevant authority in the region concerned. When Korea is involved, we report to the Korean National Police Agency (its cybercrime reporting system, ECRM).</li>
+<li>We cooperate with lawful requests from law enforcement, and where the law requires it, we may preserve relevant material for the period the law sets.</li>
+</ul>
+<h2>7. Compliance with the law</h2>
+<p>We work to comply with child protection laws in each country. Anything these standards don&#x27;t cover follows the relevant laws and Google Play&#x27;s Child Safety Standards policy.</p>
+<h2>8. Child safety contact</h2>
+<ul>
+<li>Contact person: Jongmin Lee (JML.Studio)</li>
+<li>Contact: <a href="mailto:jmjplearner@gmail.com">jmjplearner@gmail.com</a></li>
+<li>This person can answer questions about how the app prevents child sexual abuse material and handles reports.</li>
+</ul>
+<h2>9. Changes</h2>
+<p>If we change these standards, we will update the effective date above. We will tell you about important changes in the app.</p>
+</article></main>
+<footer class="foot"><div class="wrap foot-inner">
+ <nav aria-label="Moss’s Club house"><a href="/moss/" translate="no">Moss’s Club house</a><a href="/moss/support/">Support</a><a href="/moss/terms/">Terms of Use</a><a href="/moss/privacy/">Privacy Policy</a><a href="/moss/child-safety/">Child Safety</a><a href="/">JML.Studio</a></nav>
+ <p>&copy; 2026 JML.Studio</p>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Each language has a stable address. Only an explicit ?lang= request
+   changes language; browser settings never redirect a page. */
+(function () {
+  var here = "ja", urls = {"en": "/moss/account-deletion/", "es": "/moss/es/account-deletion/", "pt-BR": "/moss/pt-br/account-deletion/", "fr": "/moss/fr/account-deletion/", "de": "/moss/de/account-deletion/", "ko": "/moss/ko/account-deletion/", "ja": "/moss/ja/account-deletion/", "zh-Hans": "/moss/zh-hans/account-deletion/", "zh-Hant": "/moss/zh-hant/account-deletion/"}, want;
+  function pick(tag) {
+    tag = String(tag || '').toLowerCase();
+    if (/^zh-(hant|tw|hk|mo)/.test(tag)) return 'zh-Hant';
+    if (/^zh/.test(tag)) return 'zh-Hans';
+    return { en: 'en', es: 'es', pt: 'pt-BR', fr: 'fr', de: 'de', ko: 'ko', ja: 'ja' }[tag.split('-')[0]];
+  }
+  try { want = pick(new URLSearchParams(location.search).get('lang')); } catch (e) {}
+  if (want && want !== here) location.replace(urls[want] + location.hash);
+})();
+</script>
+<title>Moss’s Club house アカウント削除ガイド</title>
+<meta name="description" content="Moss’s Club house のアカウントと手紙のデータは、アプリからすぐに削除できます。アプリを使わずに、ウェブまたはメールで削除を依頼することもできます。アプリを再インストールする必要はありません。">
+<meta name="author" content="Jongmin Lee">
+<link rel="canonical" href="https://littlegd.github.io/moss/ja/account-deletion/">
+<link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/account-deletion/">
+<link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/account-deletion/">
+<link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/account-deletion/">
+<link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/account-deletion/">
+<link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/account-deletion/">
+<link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/account-deletion/">
+<link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/account-deletion/">
+<link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/account-deletion/">
+<link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/account-deletion/">
+<link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/account-deletion/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ECEEE9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#202521" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JML.Studio">
+<meta property="og:url" content="https://littlegd.github.io/moss/ja/account-deletion/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:title" content="Moss’s Club house アカウント削除ガイド">
+<meta property="og:description" content="Moss’s Club house のアカウントと手紙のデータは、アプリからすぐに削除できます。アプリを使わずに、ウェブまたはメールで削除を依頼することもできます。アプリを再インストールする必要はありません。">
+<meta property="og:image" content="https://littlegd.github.io/assets/moss-icon-512.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta property="og:image:alt" content="赤いとんがり帽子をかぶった白いひげの庭の妖精、Moss">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" href="/assets/moss-icon-512.png">
+<link rel="apple-touch-icon" href="/moss/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/moss/moss.css">
+<script src="/moss/moss.js" defer></script>
+<script defer src="/analytics.js"></script>
+</head>
+<body class="page-account-deletion">
+<a class="skip" href="#main">本文へスキップ</a>
+<header class="top"><div class="top-inner wrap">
+ <a class="brand" href="/moss/ja/"><img src="/assets/moss-icon-512.png" width="36" height="36" alt=""><span translate="no">Moss’s Club house</span></a>
+ <details class="lang"><summary><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M1.75 8h12.5M8 1.75c1.7 1.8 2.6 3.9 2.6 6.25S9.7 12.45 8 14.25C6.3 12.45 5.4 10.35 5.4 8S6.3 3.55 8 1.75z"/></svg><span class="sr">言語: </span>日本語</summary><ul class="lang-menu" role="list"><li><a href="/moss/account-deletion/" hreflang="en" lang="en">English</a></li><li><a href="/moss/es/account-deletion/" hreflang="es" lang="es">Español</a></li><li><a href="/moss/pt-br/account-deletion/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li><li><a href="/moss/fr/account-deletion/" hreflang="fr" lang="fr">Français</a></li><li><a href="/moss/de/account-deletion/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/moss/ko/account-deletion/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/moss/ja/account-deletion/" hreflang="ja" lang="ja" aria-current="true">日本語</a></li><li><a href="/moss/zh-hans/account-deletion/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="/moss/zh-hant/account-deletion/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li></ul></details>
+</div></header>
+<main id="main" class="wrap narrow doc"><article aria-labelledby="h">
+<div class="page-head"><h1 id="h">Moss’s Club house アカウント削除ガイド</h1></div>
+<p>Moss’s Club house のアカウントと手紙のデータは、アプリからすぐに削除できます。アプリを使わずに、ウェブまたはメールで削除を依頼することもできます。アプリを再インストールする必要はありません。</p>
+<h2>アプリで削除する</h2>
+<ol>
+<li>アプリの設定を開きます。</li>
+<li>「アカウントを削除」をタップし、案内に従って確認します。</li>
+<li>Apple でサインインしていた場合は、Moss の Appleでサインインの連携もあわせて解除されます。一部の古いアカウントでは、そのために Apple での確認がもう一度求められることがあります。</li>
+</ol>
+<p>削除はすぐに行われ、スマートフォンにあった下書きもあわせて消去されます。元に戻すことはできません。</p>
+<h2>アプリを使わずに削除を依頼する</h2>
+<ul>
+<li><strong>ウェブで依頼する</strong>：<a href="https://moss-clubhouse-api-production.motrix.workers.dev/account-deletion?lang=ja">アカウント削除リクエストページ</a>で、アカウントに登録されたメールアドレスを入力してください。</li>
+<li><strong>メールで依頼する</strong>：アカウントに登録されたメールアドレスから jmjplearner@gmail.com 宛てに、削除を依頼してください。</li>
+<li><strong>本人確認</strong>：アカウントに登録されたメールアドレスに、使い捨ての確認リンクをお送りします。Apple のプライベートリレーのアドレスをお使いの場合は、そのアドレスに送ります。リンクは24時間で期限切れになり、リンクを開いただけでは何も削除されません。リンク先のページで、削除をもう一度確定してください。提供されている場合は、同じサインイン方法（Apple または Google）で再びサインインして確認することもできます。</li>
+<li>身分証明書、パスワード、手紙の内容をお尋ねすることはありません。</li>
+<li>リクエストは、確定する前であれば取り消せます。</li>
+</ul>
+<h2>処理期間</h2>
+<ul>
+<li>登録済みのアカウントであれば、リクエストを受けてから7日以内に確認の案内をお送りします。</li>
+<li>本人確認から7日以内にアカウントを削除することを目指しています。</li>
+<li>すべての手続きは、通常、リクエストから28日以内に完了します。</li>
+<li>アプリから送ったお問い合わせの非公開コピーは別途整理して7日以内に削除し、この処理が終わった時点で削除が完了します。</li>
+</ul>
+<h2>削除される情報</h2>
+<ul>
+<li>アカウント、サインインセッション、プロフィール（言語、タイムゾーン、おおよその都市、規約への同意の記録）、Appleでサインインのリレーメール受信状態</li>
+<li>あなたが書いた悩みの手紙と返信、その翻訳、確認結果、配達の記録</li>
+<li>あなたが他の人に書いた返信（相手の保管箱からも消えます）</li>
+<li>あなたが書いた、または受け取ったはげましの手紙、その翻訳、既読といいねの記録</li>
+<li>ブロックリスト、通知用のプッシュトークン</li>
+<li>ほのお、アイテム、着せ替え、ボックスの記録、選んだ年齢区分、広告報酬の記録</li>
+<li>アプリから送ったお問い合わせと、その非公開コピー</li>
+</ul>
+<h2>保管される情報</h2>
+<p>一部の記録は、安全の確保と法令の遵守のため、定められた期間保管した後に削除します。詳しくは、<a href="/moss/ja/privacy/">プライバシーポリシー</a>の保管期間をご覧ください。</p>
+<ul>
+<li><strong>報告の記録</strong>：あなたが行った報告と、あなたのコンテンツに対する報告は、ユーザー ID を除いた状態で最大90日間保管します。報告の理由と報告時点のコンテンツの写しには、個人を特定できる内容が残っていることがあります。</li>
+<li><strong>アプリ外からの削除リクエストの記録</strong>：リクエストの終了から90日間保管し、受付から180日を超えて保管することはありません。メールアドレスは保存せず、ハッシュ値だけを残します。</li>
+<li><strong>すでに付与されたほのお</strong>：他の人があなたの手紙に返信して受け取ったほのおや、あなたのお礼やいいねで受け取ったほのおは、そのまま残ります。</li>
+<li><strong>メール</strong>：メールでやり取りした内容は、対応完了後90日（受付から最長180日） の間保管します。</li>
+<li><strong>データベースの復元履歴</strong>：サーバーのプランによっては、削除したデータがデータベースの復元履歴に最大30日間残り、その後自動的に消えます。</li>
+<li>法令により保管が必要な情報は、その期間保管します。</li>
+</ul>
+<h2>Appleでサインインの連携解除</h2>
+<p>アプリで削除すると、Moss の Appleでサインインの連携もあわせて解除されます。アプリ外から依頼した場合や連携解除を確認できない場合は、Apple アカウントの設定の「Appleでサインイン」から、ご自身で Moss を削除してください。<a href="https://support.apple.com/ja-jp/102571">Appleでサインインの管理</a>の方法を参考にできます。この操作は、Moss のデータの削除とは別のものです。Moss のアカウントが残っている間にそこで Moss を削除すると、すべての端末で本アプリからサインアウトされますが、Moss のデータは削除されません。Apple アカウントそのものを削除した場合は、Apple から運営者に通知が届き、運営者が Moss のアカウントを削除します。</p>
+<h2>お問い合わせ</h2>
+<p>削除がうまくいかない場合や、サポートが必要な場合は、jmjplearner@gmail.com までお知らせください。</p>
+</article></main>
+<footer class="foot"><div class="wrap foot-inner">
+ <nav aria-label="Moss’s Club house"><a href="/moss/ja/" translate="no">Moss’s Club house</a><a href="/moss/ja/support/">サポート</a><a href="/moss/ja/terms/">利用規約</a><a href="/moss/ja/privacy/">プライバシーポリシー</a><a href="/moss/ja/child-safety/">子どもの安全</a><a href="/">JML.Studio</a></nav>
+ <p>&copy; 2026 JML.Studio</p>
+</div></footer>
+</body>
+</html>

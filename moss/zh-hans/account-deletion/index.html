@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Each language has a stable address. Only an explicit ?lang= request
+   changes language; browser settings never redirect a page. */
+(function () {
+  var here = "zh-Hans", urls = {"en": "/moss/account-deletion/", "es": "/moss/es/account-deletion/", "pt-BR": "/moss/pt-br/account-deletion/", "fr": "/moss/fr/account-deletion/", "de": "/moss/de/account-deletion/", "ko": "/moss/ko/account-deletion/", "ja": "/moss/ja/account-deletion/", "zh-Hans": "/moss/zh-hans/account-deletion/", "zh-Hant": "/moss/zh-hant/account-deletion/"}, want;
+  function pick(tag) {
+    tag = String(tag || '').toLowerCase();
+    if (/^zh-(hant|tw|hk|mo)/.test(tag)) return 'zh-Hant';
+    if (/^zh/.test(tag)) return 'zh-Hans';
+    return { en: 'en', es: 'es', pt: 'pt-BR', fr: 'fr', de: 'de', ko: 'ko', ja: 'ja' }[tag.split('-')[0]];
+  }
+  try { want = pick(new URLSearchParams(location.search).get('lang')); } catch (e) {}
+  if (want && want !== here) location.replace(urls[want] + location.hash);
+})();
+</script>
+<title>Moss’s Club house 账户删除指南</title>
+<meta name="description" content="您可以直接在本应用中删除您的 Moss’s Club house 账户和信件数据，也可以不使用本应用，通过网页或电子邮件申请删除。您无需重新安装本应用。">
+<meta name="author" content="Jongmin Lee">
+<link rel="canonical" href="https://littlegd.github.io/moss/zh-hans/account-deletion/">
+<link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/account-deletion/">
+<link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/account-deletion/">
+<link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/account-deletion/">
+<link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/account-deletion/">
+<link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/account-deletion/">
+<link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/account-deletion/">
+<link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/account-deletion/">
+<link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/account-deletion/">
+<link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/account-deletion/">
+<link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/account-deletion/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ECEEE9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#202521" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JML.Studio">
+<meta property="og:url" content="https://littlegd.github.io/moss/zh-hans/account-deletion/">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:title" content="Moss’s Club house 账户删除指南">
+<meta property="og:description" content="您可以直接在本应用中删除您的 Moss’s Club house 账户和信件数据，也可以不使用本应用，通过网页或电子邮件申请删除。您无需重新安装本应用。">
+<meta property="og:image" content="https://littlegd.github.io/assets/moss-icon-512.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta property="og:image:alt" content="Moss，一个戴红色尖帽、留白胡子的园艺小矮人">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" href="/assets/moss-icon-512.png">
+<link rel="apple-touch-icon" href="/moss/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/moss/moss.css">
+<script src="/moss/moss.js" defer></script>
+<script defer src="/analytics.js"></script>
+</head>
+<body class="page-account-deletion">
+<a class="skip" href="#main">跳到正文</a>
+<header class="top"><div class="top-inner wrap">
+ <a class="brand" href="/moss/zh-hans/"><img src="/assets/moss-icon-512.png" width="36" height="36" alt=""><span translate="no">Moss’s Club house</span></a>
+ <details class="lang"><summary><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M1.75 8h12.5M8 1.75c1.7 1.8 2.6 3.9 2.6 6.25S9.7 12.45 8 14.25C6.3 12.45 5.4 10.35 5.4 8S6.3 3.55 8 1.75z"/></svg><span class="sr">语言: </span>简体中文</summary><ul class="lang-menu" role="list"><li><a href="/moss/account-deletion/" hreflang="en" lang="en">English</a></li><li><a href="/moss/es/account-deletion/" hreflang="es" lang="es">Español</a></li><li><a href="/moss/pt-br/account-deletion/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li><li><a href="/moss/fr/account-deletion/" hreflang="fr" lang="fr">Français</a></li><li><a href="/moss/de/account-deletion/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/moss/ko/account-deletion/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/moss/ja/account-deletion/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/moss/zh-hans/account-deletion/" hreflang="zh-Hans" lang="zh-Hans" aria-current="true">简体中文</a></li><li><a href="/moss/zh-hant/account-deletion/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li></ul></details>
+</div></header>
+<main id="main" class="wrap narrow doc"><article aria-labelledby="h">
+<div class="page-head"><h1 id="h">Moss’s Club house 账户删除指南</h1></div>
+<p>您可以直接在本应用中删除您的 Moss’s Club house 账户和信件数据，也可以不使用本应用，通过网页或电子邮件申请删除。您无需重新安装本应用。</p>
+<h2>在本应用中删除</h2>
+<ol>
+<li>打开本应用的“设置”。</li>
+<li>点按“删除账号”，并按照提示完成确认。</li>
+<li>如果您是通过 Apple 登录的，Moss 的“通过 Apple 登录”授权也会一并撤销。部分较早的账户可能需要为此再向 Apple 确认一次。</li>
+</ol>
+<p>删除会立即进行，您手机上的草稿也会一并删除。删除后无法撤销。</p>
+<h2>不使用本应用申请删除</h2>
+<ul>
+<li><strong>通过网页。</strong> 在我们的<a href="https://moss-clubhouse-api-production.motrix.workers.dev/account-deletion?lang=zh-Hans">账户删除申请页面</a>输入您账户绑定的电子邮箱地址。</li>
+<li><strong>通过电子邮件。</strong> 使用您账户绑定的电子邮箱，发送电子邮件至 jmjplearner@gmail.com 申请删除。</li>
+<li><strong>验证。</strong> 我们会向您账户绑定的电子邮箱发送一次性验证链接。如果您使用的是 Apple 私人中转地址，我们会发送到该地址。链接在24小时后失效，且仅打开链接并不会删除任何内容：您需要在链接页面上再次确认删除。如果可用，您也可以使用相同的登录服务（Apple 或 Google）重新登录来完成验证。</li>
+<li>我们绝不会索要身份证件、密码或信件内容。</li>
+<li>在确认之前，您可以取消申请。</li>
+</ul>
+<h2>需要多长时间</h2>
+<ul>
+<li>对于已注册的账户，我们会在收到申请后7天内发送验证说明。</li>
+<li>我们力求在验证后7天内删除账户。</li>
+<li>整个流程通常在申请后28天内完成。</li>
+<li>您通过本应用发送的消息的私有副本会另行清理，并在7天内删除，清理完成后删除才算完成。</li>
+</ul>
+<h2>我们会删除什么</h2>
+<ul>
+<li>您的账户、登录会话和个人资料（语言、时区、大致城市和条款同意记录），以及“通过 Apple 登录”的中转邮箱接收状态</li>
+<li>您写的心事信和回信、译文、审核结果和投递记录</li>
+<li>您写给他人的回信（也会从对方的存档中消失）</li>
+<li>您写下或收到的鼓励信、译文，以及阅读和点赞记录</li>
+<li>您的屏蔽列表和通知用的推送令牌</li>
+<li>火花、物品、装扮、盒子记录、您选择的年龄段和广告奖励记录</li>
+<li>您通过本应用发送的消息及其私有副本</li>
+</ul>
+<h2>我们会保留什么</h2>
+<p>出于安全和遵守法律的需要，我们会将部分记录保存一段规定的期限，然后删除。详情请参阅<a href="/moss/zh-hans/privacy/">隐私政策</a>中的保存期限部分。</p>
+<ul>
+<li><strong>举报。</strong> 您提交的举报和针对您内容的举报，会在去除用户 ID 的情况下保存最多90天。举报原因和举报时的内容副本仍可能识别出某个人。</li>
+<li><strong>在本应用以外提出的删除请求的记录。</strong> 在请求结束后保存90天，且自我们收到请求起最多不超过180天。我们不保存电子邮箱地址，只保存哈希值。</li>
+<li><strong>已经给出的火花。</strong> 他人因回复您的信件，或因您表示感谢或点赞而获得的火花，仍归对方所有。</li>
+<li><strong>电子邮件。</strong> 我们通过电子邮件往来的内容会保存 至处理完成后 90 天（自收到之日起最长 180 天）。</li>
+<li><strong>数据库恢复历史。</strong> 视我们的服务器套餐而定，已删除的数据会在数据库恢复历史中保留最多30天，之后自动消失。</li>
+<li>法律要求保存的信息，会在法定期限内保存。</li>
+</ul>
+<h2>撤销“通过 Apple 登录”</h2>
+<p>当您在本应用中删除账户时，Moss 的“通过 Apple 登录”授权也会一并撤销。如果您是在本应用以外提出申请的，或者无法确认授权已撤销，请在 Apple 账户设置的“通过 Apple 登录”中自行移除 Moss。请参阅<a href="https://support.apple.com/zh-cn/102571">管理“通过 Apple 登录”</a>。这一操作与删除您的 Moss 数据是分开的。如果您的 Moss 账户仍然存在时在那里移除 Moss，您会在所有设备上退出本应用，但 Moss 数据会保留。如果您删除 Apple 账户本身，Apple 会通知我们，我们会删除您的 Moss 账户。</p>
+<h2>联系我们</h2>
+<p>如果删除未成功或您需要帮助，请发送电子邮件至 jmjplearner@gmail.com。</p>
+</article></main>
+<footer class="foot"><div class="wrap foot-inner">
+ <nav aria-label="Moss’s Club house"><a href="/moss/zh-hans/" translate="no">Moss’s Club house</a><a href="/moss/zh-hans/support/">支持</a><a href="/moss/zh-hans/terms/">使用条款</a><a href="/moss/zh-hans/privacy/">隐私政策</a><a href="/moss/zh-hans/child-safety/">儿童安全</a><a href="/">JML.Studio</a></nav>
+ <p>&copy; 2026 JML.Studio</p>
+</div></footer>
+</body>
+</html>

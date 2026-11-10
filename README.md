@@ -36,7 +36,8 @@
 
 ## Moss’s Club house 페이지
 
-- `/moss/`에 소개·지원·이용약관·개인정보 처리방침이 9개 언어(en, es, pt-BR, fr, de, ko, ja, zh-Hans, zh-Hant)로 있습니다. 언어마다 고정 주소(`/moss/ko/privacy/` 등)이고 `?lang=`으로만 바뀝니다.
+- `/moss/`에 소개·지원·이용약관·개인정보 처리방침·아동 안전 기준·계정 삭제 안내가 9개 언어(en, es, pt-BR, fr, de, ko, ja, zh-Hans, zh-Hant)로 있습니다. 언어마다 고정 주소(`/moss/ko/privacy/` 등)이고 `?lang=`으로만 바뀝니다.
 - HTML은 손으로 고치지 않습니다. 문구는 `tools/moss-pages/i18n/<언어>.json`, 틀은 `tools/moss-pages/build.py`에서 고친 뒤 저장소 루트에서 `python3 tools/moss-pages/build.py .`로 다시 만듭니다. 모든 언어 파일은 `en.json`과 같은 키 구조를 유지합니다.
+- 아동 안전 기준(`child-safety/`)과 계정 삭제 안내(`account-deletion/`)는 `tools/moss-pages/docs/<언어>/*.md`가 원문입니다. 앱 저장소 `docs/policy/`에서 자리표시자를 채워 옮긴 것이고, 같은 `build.py`가 HTML로 만듭니다.
 - 최소 이용 연령(`AGE`)과 스토어 링크(`STORE_IOS`, `STORE_ANDROID`)는 `build.py` 맨 위에 있습니다. 스토어 링크를 넣으면 "곧 출시" 표시가 스토어 버튼으로 바뀝니다.
 - 사용자에게 보이는 문구에 em-dash를 쓰지 않습니다. 빌드가 본문에서 발견하면 멈춥니다.

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Each language has a stable address. Only an explicit ?lang= request
+   changes language; browser settings never redirect a page. */
+(function () {
+  var here = "zh-Hant", urls = {"en": "/moss/account-deletion/", "es": "/moss/es/account-deletion/", "pt-BR": "/moss/pt-br/account-deletion/", "fr": "/moss/fr/account-deletion/", "de": "/moss/de/account-deletion/", "ko": "/moss/ko/account-deletion/", "ja": "/moss/ja/account-deletion/", "zh-Hans": "/moss/zh-hans/account-deletion/", "zh-Hant": "/moss/zh-hant/account-deletion/"}, want;
+  function pick(tag) {
+    tag = String(tag || '').toLowerCase();
+    if (/^zh-(hant|tw|hk|mo)/.test(tag)) return 'zh-Hant';
+    if (/^zh/.test(tag)) return 'zh-Hans';
+    return { en: 'en', es: 'es', pt: 'pt-BR', fr: 'fr', de: 'de', ko: 'ko', ja: 'ja' }[tag.split('-')[0]];
+  }
+  try { want = pick(new URLSearchParams(location.search).get('lang')); } catch (e) {}
+  if (want && want !== here) location.replace(urls[want] + location.hash);
+})();
+</script>
+<title>Moss’s Club house 帳號刪除指南</title>
+<meta name="description" content="您可以直接在本 App 中刪除您的 Moss’s Club house 帳號和信件資料，也可以不使用本 App，透過網頁或電子郵件要求刪除。您不需要重新安裝本 App。">
+<meta name="author" content="Jongmin Lee">
+<link rel="canonical" href="https://littlegd.github.io/moss/zh-hant/account-deletion/">
+<link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/account-deletion/">
+<link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/account-deletion/">
+<link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/account-deletion/">
+<link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/account-deletion/">
+<link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/account-deletion/">
+<link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/account-deletion/">
+<link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/account-deletion/">
+<link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/account-deletion/">
+<link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/account-deletion/">
+<link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/account-deletion/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ECEEE9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#202521" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JML.Studio">
+<meta property="og:url" content="https://littlegd.github.io/moss/zh-hant/account-deletion/">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:title" content="Moss’s Club house 帳號刪除指南">
+<meta property="og:description" content="您可以直接在本 App 中刪除您的 Moss’s Club house 帳號和信件資料，也可以不使用本 App，透過網頁或電子郵件要求刪除。您不需要重新安裝本 App。">
+<meta property="og:image" content="https://littlegd.github.io/assets/moss-icon-512.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta property="og:image:alt" content="Moss，一個戴著紅色尖帽、留著白鬍子的園藝小矮人">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" href="/assets/moss-icon-512.png">
+<link rel="apple-touch-icon" href="/moss/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/moss/moss.css">
+<script src="/moss/moss.js" defer></script>
+<script defer src="/analytics.js"></script>
+</head>
+<body class="page-account-deletion">
+<a class="skip" href="#main">跳至主要內容</a>
+<header class="top"><div class="top-inner wrap">
+ <a class="brand" href="/moss/zh-hant/"><img src="/assets/moss-icon-512.png" width="36" height="36" alt=""><span translate="no">Moss’s Club house</span></a>
+ <details class="lang"><summary><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M1.75 8h12.5M8 1.75c1.7 1.8 2.6 3.9 2.6 6.25S9.7 12.45 8 14.25C6.3 12.45 5.4 10.35 5.4 8S6.3 3.55 8 1.75z"/></svg><span class="sr">語言: </span>繁體中文</summary><ul class="lang-menu" role="list"><li><a href="/moss/account-deletion/" hreflang="en" lang="en">English</a></li><li><a href="/moss/es/account-deletion/" hreflang="es" lang="es">Español</a></li><li><a href="/moss/pt-br/account-deletion/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li><li><a href="/moss/fr/account-deletion/" hreflang="fr" lang="fr">Français</a></li><li><a href="/moss/de/account-deletion/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/moss/ko/account-deletion/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/moss/ja/account-deletion/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/moss/zh-hans/account-deletion/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="/moss/zh-hant/account-deletion/" hreflang="zh-Hant" lang="zh-Hant" aria-current="true">繁體中文</a></li></ul></details>
+</div></header>
+<main id="main" class="wrap narrow doc"><article aria-labelledby="h">
+<div class="page-head"><h1 id="h">Moss’s Club house 帳號刪除指南</h1></div>
+<p>您可以直接在本 App 中刪除您的 Moss’s Club house 帳號和信件資料，也可以不使用本 App，透過網頁或電子郵件要求刪除。您不需要重新安裝本 App。</p>
+<h2>在本 App 中刪除</h2>
+<ol>
+<li>開啟本 App 的「設定」。</li>
+<li>點一下「刪除帳號」，並依照指示完成確認。</li>
+<li>如果您是使用 Apple 登入，Moss 的「使用 Apple 登入」授權也會一併撤銷。部分較早建立的帳號可能需要為此再向 Apple 確認一次。</li>
+</ol>
+<p>刪除會立即進行，您手機上的草稿也會一併刪除。刪除後無法復原。</p>
+<h2>不使用本 App 要求刪除</h2>
+<ul>
+<li><strong>透過網頁。</strong> 在我們的<a href="https://moss-clubhouse-api-production.motrix.workers.dev/account-deletion?lang=zh-Hant">帳號刪除要求頁面</a>輸入您帳號登錄的電子郵件地址。</li>
+<li><strong>透過電子郵件。</strong> 使用您帳號登錄的電子郵件地址，寄電子郵件至 jmjplearner@gmail.com 要求刪除。</li>
+<li><strong>驗證。</strong> 我們會將一次性驗證連結寄到您帳號登錄的電子郵件地址。如果您使用的是 Apple 私密轉寄地址，我們會寄到該地址。連結會在 24 小時後失效，而且只開啟連結並不會刪除任何內容：您需要在連結頁面上再次確認刪除。如果可用，您也可以使用相同的登入服務（Apple 或 Google）重新登入來完成驗證。</li>
+<li>我們絕不會要求身分證件、密碼或信件內容。</li>
+<li>在確認之前，您可以取消要求。</li>
+</ul>
+<h2>需要多久時間</h2>
+<ul>
+<li>對於已註冊的帳號，我們會在收到要求後 7 天內寄送驗證說明。</li>
+<li>我們力求在驗證後 7 天內刪除帳號。</li>
+<li>整個流程通常會在要求後 28 天內完成。</li>
+<li>您透過本 App 傳送的訊息的私人副本會另外清理，並在 7 天內刪除，清理完成後刪除才算完成。</li>
+</ul>
+<h2>我們會刪除什麼</h2>
+<ul>
+<li>您的帳號、登入工作階段和個人檔案（語言、時區、大致城市和條款同意紀錄），以及「使用 Apple 登入」的轉寄郵件接收狀態</li>
+<li>您寫的心事信和回信、譯文、審核結果和投遞紀錄</li>
+<li>您寫給他人的回信（也會從對方的封存區中消失）</li>
+<li>您寫下或收到的鼓勵信、譯文，以及閱讀和按讚紀錄</li>
+<li>您的封鎖清單和通知用的推播權杖</li>
+<li>火花、物品、裝扮、盒子紀錄、您選擇的年齡層和廣告獎勵紀錄</li>
+<li>您透過本 App 傳送的訊息及其私人副本</li>
+</ul>
+<h2>我們會保留什麼</h2>
+<p>基於安全和遵守法律的需要，我們會將部分紀錄保存一段規定的期間，然後刪除。詳情請參閱<a href="/moss/zh-hant/privacy/">隱私權政策</a>中的保存期間部分。</p>
+<ul>
+<li><strong>檢舉。</strong> 您提出的檢舉和針對您內容的檢舉，會在移除使用者 ID 的狀態下保存最多 90 天。檢舉原因和檢舉當時的內容副本仍可能識別出某個人。</li>
+<li><strong>在本 App 以外提出的刪除要求的紀錄。</strong> 在要求結束後保存 90 天，且自我們收到要求起最多不超過 180 天。我們不會儲存電子郵件地址，只會保存雜湊值。</li>
+<li><strong>已經給出的火花。</strong> 他人因回覆您的信件，或因您表達感謝或按讚而獲得的火花，仍歸對方所有。</li>
+<li><strong>電子郵件。</strong> 我們透過電子郵件往來的內容會保存 至處理完成後 90 天（自收到之日起最長 180 天）。</li>
+<li><strong>資料庫還原記錄。</strong> 視我們的伺服器方案而定，已刪除的資料會在資料庫還原記錄中保留最多 30 天，之後自動消失。</li>
+<li>法律要求保存的資訊，會在法定期間內保存。</li>
+</ul>
+<h2>撤銷「使用 Apple 登入」</h2>
+<p>當您在本 App 中刪除帳號時，Moss 的「使用 Apple 登入」授權也會一併撤銷。如果您是在本 App 以外提出要求，或無法確認授權已撤銷，請在 Apple 帳號設定的「使用 Apple 登入」中自行移除 Moss。請參閱<a href="https://support.apple.com/zh-tw/102571">管理「使用 Apple 登入」</a>。這項操作與刪除您的 Moss 資料是分開的。如果您的 Moss 帳號仍然存在時在那裡移除 Moss，您會在所有裝置上登出本 App，但 Moss 資料會保留。如果您刪除 Apple 帳號本身，Apple 會通知我們，我們會刪除您的 Moss 帳號。</p>
+<h2>聯絡我們</h2>
+<p>如果刪除未成功或您需要協助，請寄電子郵件至 jmjplearner@gmail.com。</p>
+</article></main>
+<footer class="foot"><div class="wrap foot-inner">
+ <nav aria-label="Moss’s Club house"><a href="/moss/zh-hant/" translate="no">Moss’s Club house</a><a href="/moss/zh-hant/support/">支援</a><a href="/moss/zh-hant/terms/">使用條款</a><a href="/moss/zh-hant/privacy/">隱私權政策</a><a href="/moss/zh-hant/child-safety/">兒童安全</a><a href="/">JML.Studio</a></nav>
+ <p>&copy; 2026 JML.Studio</p>
+</div></footer>
+</body>
+</html>

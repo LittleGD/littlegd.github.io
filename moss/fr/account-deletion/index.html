@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Each language has a stable address. Only an explicit ?lang= request
+   changes language; browser settings never redirect a page. */
+(function () {
+  var here = "fr", urls = {"en": "/moss/account-deletion/", "es": "/moss/es/account-deletion/", "pt-BR": "/moss/pt-br/account-deletion/", "fr": "/moss/fr/account-deletion/", "de": "/moss/de/account-deletion/", "ko": "/moss/ko/account-deletion/", "ja": "/moss/ja/account-deletion/", "zh-Hans": "/moss/zh-hans/account-deletion/", "zh-Hant": "/moss/zh-hant/account-deletion/"}, want;
+  function pick(tag) {
+    tag = String(tag || '').toLowerCase();
+    if (/^zh-(hant|tw|hk|mo)/.test(tag)) return 'zh-Hant';
+    if (/^zh/.test(tag)) return 'zh-Hans';
+    return { en: 'en', es: 'es', pt: 'pt-BR', fr: 'fr', de: 'de', ko: 'ko', ja: 'ja' }[tag.split('-')[0]];
+  }
+  try { want = pick(new URLSearchParams(location.search).get('lang')); } catch (e) {}
+  if (want && want !== here) location.replace(urls[want] + location.hash);
+})();
+</script>
+<title>Suppression du compte Moss’s Club house</title>
+<meta name="description" content="Vous pouvez supprimer votre compte Moss’s Club house et les données de vos lettres directement dans l’application, ou demander la suppression sur le web ou par e-mail sans l’application. Vous n’avez pas besoin de réinstaller l’application.">
+<meta name="author" content="Jongmin Lee">
+<link rel="canonical" href="https://littlegd.github.io/moss/fr/account-deletion/">
+<link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/account-deletion/">
+<link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/account-deletion/">
+<link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/account-deletion/">
+<link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/account-deletion/">
+<link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/account-deletion/">
+<link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/account-deletion/">
+<link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/account-deletion/">
+<link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/account-deletion/">
+<link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/account-deletion/">
+<link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/account-deletion/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ECEEE9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#202521" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JML.Studio">
+<meta property="og:url" content="https://littlegd.github.io/moss/fr/account-deletion/">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:title" content="Suppression du compte Moss’s Club house">
+<meta property="og:description" content="Vous pouvez supprimer votre compte Moss’s Club house et les données de vos lettres directement dans l’application, ou demander la suppression sur le web ou par e-mail sans l’application. Vous n’avez pas besoin de réinstaller l’application.">
+<meta property="og:image" content="https://littlegd.github.io/assets/moss-icon-512.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta property="og:image:alt" content="Moss, un nain de jardin au bonnet rouge pointu et à la barbe blanche">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" href="/assets/moss-icon-512.png">
+<link rel="apple-touch-icon" href="/moss/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/moss/moss.css">
+<script src="/moss/moss.js" defer></script>
+<script defer src="/analytics.js"></script>
+</head>
+<body class="page-account-deletion">
+<a class="skip" href="#main">Aller au contenu</a>
+<header class="top"><div class="top-inner wrap">
+ <a class="brand" href="/moss/fr/"><img src="/assets/moss-icon-512.png" width="36" height="36" alt=""><span translate="no">Moss’s Club house</span></a>
+ <details class="lang"><summary><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M1.75 8h12.5M8 1.75c1.7 1.8 2.6 3.9 2.6 6.25S9.7 12.45 8 14.25C6.3 12.45 5.4 10.35 5.4 8S6.3 3.55 8 1.75z"/></svg><span class="sr">Langue: </span>Français</summary><ul class="lang-menu" role="list"><li><a href="/moss/account-deletion/" hreflang="en" lang="en">English</a></li><li><a href="/moss/es/account-deletion/" hreflang="es" lang="es">Español</a></li><li><a href="/moss/pt-br/account-deletion/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li><li><a href="/moss/fr/account-deletion/" hreflang="fr" lang="fr" aria-current="true">Français</a></li><li><a href="/moss/de/account-deletion/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/moss/ko/account-deletion/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/moss/ja/account-deletion/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/moss/zh-hans/account-deletion/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="/moss/zh-hant/account-deletion/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li></ul></details>
+</div></header>
+<main id="main" class="wrap narrow doc"><article aria-labelledby="h">
+<div class="page-head"><h1 id="h">Suppression du compte Moss’s Club house</h1></div>
+<p>Vous pouvez supprimer votre compte Moss’s Club house et les données de vos lettres directement dans l’application, ou demander la suppression sur le web ou par e-mail sans l’application. Vous n’avez pas besoin de réinstaller l’application.</p>
+<h2>Supprimer dans l’application</h2>
+<ol>
+<li>Ouvrez les Réglages de l’application.</li>
+<li>Touchez Supprimer le compte et suivez les étapes pour confirmer.</li>
+<li>Si vous vous êtes connecté avec Apple, l’accès de Moss à Se connecter avec Apple est également révoqué. Pour cela, certains comptes plus anciens peuvent devoir confirmer une nouvelle fois auprès d’Apple.</li>
+</ol>
+<p>La suppression est immédiate, et le brouillon présent sur votre téléphone est également effacé. Elle est irréversible.</p>
+<h2>Demander la suppression sans l’application</h2>
+<ul>
+<li><strong>Sur le web.</strong> Saisissez l’adresse e-mail associée à votre compte sur notre <a href="https://moss-clubhouse-api-production.motrix.workers.dev/account-deletion?lang=fr">page de demande de suppression du compte</a>.</li>
+<li><strong>Par e-mail.</strong> Écrivez à jmjplearner@gmail.com depuis l’adresse e-mail associée à votre compte pour demander la suppression.</li>
+<li><strong>Vérification.</strong> Nous envoyons un lien de vérification à usage unique à l’adresse e-mail associée à votre compte. Si vous utilisez une adresse de relais privée d’Apple, nous l’envoyons à cette adresse. Le lien expire au bout de 24 heures, et l’ouvrir ne supprime rien : vous confirmez la suppression une dernière fois sur la page du lien. Lorsque cette option est disponible, vous pouvez aussi vous vérifier en vous reconnectant avec le même fournisseur (Apple ou Google).</li>
+<li>Nous ne vous demandons jamais de pièce d’identité, de mot de passe ni le contenu de vos lettres.</li>
+<li>Vous pouvez annuler votre demande tant que vous ne l’avez pas confirmée.</li>
+</ul>
+<h2>Délais</h2>
+<ul>
+<li>Pour un compte existant, nous envoyons les instructions de vérification dans les 7 jours suivant votre demande.</li>
+<li>Nous nous efforçons de supprimer le compte dans les 7 jours suivant la vérification.</li>
+<li>L’ensemble de la procédure se termine généralement dans les 28 jours suivant votre demande.</li>
+<li>Les copies privées des messages que vous avez envoyés depuis l’application sont nettoyées séparément et supprimées sous 7 jours ; la suppression n’est complète qu’après ce nettoyage.</li>
+</ul>
+<h2>Ce que nous supprimons</h2>
+<ul>
+<li>Votre compte, vos sessions de connexion et votre profil (langue, fuseau horaire, ville approximative et enregistrements d’acceptation des conditions), ainsi que l’état de l’e-mail de relais de Se connecter avec Apple</li>
+<li>Les lettres de souci et les réponses que vous avez écrites, leurs traductions, les résultats de vérification et les enregistrements de livraison</li>
+<li>Les réponses que vous avez écrites à d’autres personnes (elles disparaissent aussi des archives de l’autre personne)</li>
+<li>Les lettres d’encouragement que vous avez écrites ou reçues, leurs traductions et les enregistrements de lecture et de « J’aime »</li>
+<li>Votre liste de blocage et les jetons push des notifications</li>
+<li>Les étincelles, les objets, les tenues, les enregistrements de coffrets, la tranche d’âge que vous avez choisie et les enregistrements des récompenses publicitaires</li>
+<li>Les messages que vous avez envoyés depuis l’application et leurs copies privées</li>
+</ul>
+<h2>Ce que nous conservons</h2>
+<p>Nous conservons certains enregistrements pendant une durée déterminée pour des raisons de sécurité et de conformité légale, puis nous les supprimons. Pour en savoir plus, consultez la section sur les durées de conservation de notre <a href="/moss/fr/privacy/">Politique de confidentialité</a>.</p>
+<ul>
+<li><strong>Signalements.</strong> Les signalements que vous avez effectués et ceux visant votre contenu sont conservés sans identifiant d’utilisateur pendant 90 jours au maximum. Le motif et la copie du contenu au moment du signalement peuvent encore permettre d’identifier une personne.</li>
+<li><strong>Enregistrements des demandes de suppression effectuées hors de l’application.</strong> Conservés pendant 90 jours après la clôture de la demande, et jamais plus de 180 jours après sa réception. Nous ne conservons pas l’adresse e-mail, seulement un hachage.</li>
+<li><strong>Étincelles déjà attribuées.</strong> Les étincelles que d’autres personnes ont reçues en répondant à vos lettres, ou parce que vous les avez remerciées ou avez aimé leur lettre, leur restent acquises.</li>
+<li><strong>E-mail.</strong> Nos échanges par e-mail sont conservés pendant 90 jours après la clôture de la demande, et jamais plus de 180 jours après sa réception.</li>
+<li><strong>Historique de restauration de la base de données.</strong> Selon notre offre d’hébergement, les données supprimées subsistent jusqu’à 30 jours dans l’historique de restauration de la base de données, puis disparaissent automatiquement.</li>
+<li>Les informations que la loi nous impose de conserver sont conservées pendant la durée prévue.</li>
+</ul>
+<h2>Révoquer Se connecter avec Apple</h2>
+<p>Lorsque vous supprimez votre compte dans l’application, l’accès de Moss à Se connecter avec Apple est également révoqué. Si vous avez fait votre demande hors de l’application, ou si la révocation ne peut pas être confirmée, retirez vous-même Moss dans la section Se connecter avec Apple des réglages de votre compte Apple. Consultez <a href="https://support.apple.com/fr-fr/102571">Gérer Se connecter avec Apple</a>. Cette opération est distincte de la suppression de vos données Moss. Si vous y retirez Moss alors que vous avez encore un compte Moss, l’application vous déconnecte sur tous vos appareils, mais vos données Moss sont conservées. Si vous supprimez votre compte Apple lui-même, Apple nous en informe et nous supprimons votre compte Moss.</p>
+<h2>Contact</h2>
+<p>Si la suppression ne fonctionne pas ou si vous avez besoin d’aide, écrivez à jmjplearner@gmail.com.</p>
+</article></main>
+<footer class="foot"><div class="wrap foot-inner">
+ <nav aria-label="Moss’s Club house"><a href="/moss/fr/" translate="no">Moss’s Club house</a><a href="/moss/fr/support/">Aide</a><a href="/moss/fr/terms/">Conditions d’utilisation</a><a href="/moss/fr/privacy/">Politique de confidentialité</a><a href="/moss/fr/child-safety/">Sécurité des enfants</a><a href="/">JML.Studio</a></nav>
+ <p>&copy; 2026 JML.Studio</p>
+</div></footer>
+</body>
+</html>

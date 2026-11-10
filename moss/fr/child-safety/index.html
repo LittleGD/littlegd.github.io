@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Each language has a stable address. Only an explicit ?lang= request
+   changes language; browser settings never redirect a page. */
+(function () {
+  var here = "fr", urls = {"en": "/moss/child-safety/", "es": "/moss/es/child-safety/", "pt-BR": "/moss/pt-br/child-safety/", "fr": "/moss/fr/child-safety/", "de": "/moss/de/child-safety/", "ko": "/moss/ko/child-safety/", "ja": "/moss/ja/child-safety/", "zh-Hans": "/moss/zh-hans/child-safety/", "zh-Hant": "/moss/zh-hant/child-safety/"}, want;
+  function pick(tag) {
+    tag = String(tag || '').toLowerCase();
+    if (/^zh-(hant|tw|hk|mo)/.test(tag)) return 'zh-Hant';
+    if (/^zh/.test(tag)) return 'zh-Hans';
+    return { en: 'en', es: 'es', pt: 'pt-BR', fr: 'fr', de: 'de', ko: 'ko', ja: 'ja' }[tag.split('-')[0]];
+  }
+  try { want = pick(new URLSearchParams(location.search).get('lang')); } catch (e) {}
+  if (want && want !== here) location.replace(urls[want] + location.hash);
+})();
+</script>
+<title>Normes de sécurité des enfants de Moss’s Club house</title>
+<meta name="description" content="Voici les normes que Moss’s Club house (l’« application ») applique pour prévenir les abus et l’exploitation sexuels des enfants (CSAE). L’application est exploitée par Jongmin Lee, développeur indépendant chez JML.Studio (« nous »).">
+<meta name="author" content="Jongmin Lee">
+<link rel="canonical" href="https://littlegd.github.io/moss/fr/child-safety/">
+<link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/child-safety/">
+<link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/child-safety/">
+<link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/child-safety/">
+<link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/child-safety/">
+<link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/child-safety/">
+<link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/child-safety/">
+<link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/child-safety/">
+<link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/child-safety/">
+<link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/child-safety/">
+<link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/child-safety/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ECEEE9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#202521" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JML.Studio">
+<meta property="og:url" content="https://littlegd.github.io/moss/fr/child-safety/">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:title" content="Normes de sécurité des enfants de Moss’s Club house">
+<meta property="og:description" content="Voici les normes que Moss’s Club house (l’« application ») applique pour prévenir les abus et l’exploitation sexuels des enfants (CSAE). L’application est exploitée par Jongmin Lee, développeur indépendant chez JML.Studio (« nous »).">
+<meta property="og:image" content="https://littlegd.github.io/assets/moss-icon-512.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta property="og:image:alt" content="Moss, un nain de jardin au bonnet rouge pointu et à la barbe blanche">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" href="/assets/moss-icon-512.png">
+<link rel="apple-touch-icon" href="/moss/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/moss/moss.css">
+<script src="/moss/moss.js" defer></script>
+<script defer src="/analytics.js"></script>
+</head>
+<body class="page-child-safety">
+<a class="skip" href="#main">Aller au contenu</a>
+<header class="top"><div class="top-inner wrap">
+ <a class="brand" href="/moss/fr/"><img src="/assets/moss-icon-512.png" width="36" height="36" alt=""><span translate="no">Moss’s Club house</span></a>
+ <details class="lang"><summary><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M1.75 8h12.5M8 1.75c1.7 1.8 2.6 3.9 2.6 6.25S9.7 12.45 8 14.25C6.3 12.45 5.4 10.35 5.4 8S6.3 3.55 8 1.75z"/></svg><span class="sr">Langue: </span>Français</summary><ul class="lang-menu" role="list"><li><a href="/moss/child-safety/" hreflang="en" lang="en">English</a></li><li><a href="/moss/es/child-safety/" hreflang="es" lang="es">Español</a></li><li><a href="/moss/pt-br/child-safety/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li><li><a href="/moss/fr/child-safety/" hreflang="fr" lang="fr" aria-current="true">Français</a></li><li><a href="/moss/de/child-safety/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/moss/ko/child-safety/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/moss/ja/child-safety/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/moss/zh-hans/child-safety/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="/moss/zh-hant/child-safety/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li></ul></details>
+</div></header>
+<main id="main" class="wrap narrow doc"><article aria-labelledby="h">
+<div class="page-head"><h1 id="h">Normes de sécurité des enfants de Moss’s Club house</h1></div>
+<p class="meta">Date d’entrée en vigueur : 9 novembre 2026</p>
+<p>Voici les normes que Moss’s Club house (l’« application ») applique pour prévenir les abus et l’exploitation sexuels des enfants (CSAE). L’application est exploitée par Jongmin Lee, développeur indépendant chez JML.Studio (« nous »).</p>
+<h2>1. Nos principes</h2>
+<ul>
+<li>Nous ne tolérons aucune forme d’abus ou d’exploitation sexuels des enfants.</li>
+<li>Vous devez avoir 14 ans ou plus pour utiliser l’application. Cette condition fait partie des Conditions d’utilisation, que vous acceptez avant de commencer. Si nous trouvons un compte créé par un enfant de moins de 14 ans, nous le supprimons.</li>
+<li>Ces normes font partie de nos <a href="/moss/fr/terms/">Conditions d’utilisation</a> et s’appliquent à tout ce qui est échangé dans l’application, y compris les lettres de souci, les réponses et les lettres d’encouragement.</li>
+</ul>
+<h2>2. Ce qui est interdit</h2>
+<p>Les comportements suivants sont interdits. Lorsque nous les constatons, nous retirons le contenu et restreignons ou clôturons le compte.</p>
+<ul>
+<li>Envoyer, demander ou indiquer où trouver du matériel d’abus sexuel sur enfant (CSAM)</li>
+<li>Tout contenu qui sexualise des enfants ou des adolescents ou les traite comme des objets sexuels</li>
+<li>Gagner la confiance d’un mineur dans le but de l’exploiter sexuellement (pédopiégeage ou grooming)</li>
+<li>Demander à un mineur des images ou des conversations sexuelles, ou le menacer au moyen de tels contenus, y compris la sextorsion</li>
+<li>Demander à un mineur une rencontre, un échange de coordonnées ou de poursuivre la conversation dans une autre application ou un autre service</li>
+<li>Promouvoir ou faciliter la traite ou l’exploitation d’enfants</li>
+</ul>
+<p>Parler d’un préjudice que vous avez subi n’est pas une infraction. Nous considérons les lettres qui partagent de telles expériences comme des récits à protéger.</p>
+<h2>3. Une conception de l’application qui réduit les risques</h2>
+<ul>
+<li><strong>Ni photos ni fichiers.</strong> Les lettres sont uniquement textuelles. Il est impossible d’envoyer des photos, des vidéos, des fichiers ou des enregistrements audio.</li>
+<li><strong>Pas de salons de discussion.</strong> Chaque lettre de souci ne peut recevoir qu’une seule réponse, et il n’existe ensuite ni conversation suivie ni messagerie privée.</li>
+<li><strong>Pas d’identités.</strong> Les autres utilisateurs ne voient jamais votre nom, votre adresse e-mail ni votre photo de profil. Ils ne voient que votre lettre et le nom d’une région étendue. L’application ne conserve pas le nom ni la photo envoyés par votre fournisseur de connexion.</li>
+<li><strong>Vérification automatique avant livraison.</strong> Chaque lettre passe par une vérification automatique avant d’être livrée. L’exploitation et les menaces directes ne sont pas livrées, et les lettres qui exposent des coordonnées sont renvoyées pour modification. Les lettres d’encouragement contenant du contenu sexuel, des coordonnées ou des liens ne sont pas non plus livrées. Les lettres difficiles à évaluer sont retenues, et notre administrateur les examine directement.</li>
+<li><strong>Limites publicitaires.</strong> Nous ne demandons pas d’annonces pour les utilisateurs qui déclarent avoir 18 ans ou moins, et toutes les annonces sont limitées à la classification tous publics (G).</li>
+</ul>
+<h2>4. Comment signaler</h2>
+<ul>
+<li><strong>Dans l’application.</strong> Ouvrez la lettre, la réponse ou la lettre d’encouragement reçue et touchez « Signaler la lettre ». Le motif et le contenu que vous avez vu sont transmis de façon confidentielle à notre administrateur ; vous n’avez donc rien à copier. Touchez « Bloquer cet expéditeur » pour ne plus échanger de lettres avec cette personne.</li>
+<li><strong>Nous contacter.</strong> Vous pouvez aussi ouvrir Nous contacter dans les Réglages de l’application et choisir « Signaler une personne ou un risque pour la sécurité ».</li>
+<li><strong>E-mail.</strong> Toute personne, y compris si elle n’utilise pas l’application, peut effectuer un signalement à l’adresse <a href="mailto:jmjplearner@gmail.com">jmjplearner@gmail.com</a>. Ne joignez et ne copiez jamais de matériel d’abus sexuel sur enfant dans un signalement. Indiquez-nous simplement où vous l’avez vu.</li>
+<li>Si quelqu’un est en danger en ce moment, n’attendez pas un signalement dans l’application. Contactez immédiatement les services d’urgence ou la police de votre lieu.</li>
+</ul>
+<h2>5. Ce qui se passe après un signalement</h2>
+<ul>
+<li>Notre administrateur examine le contenu signalé et le motif. Nos outils d’administration affichent le contenu et le motif, mais pas les identifiants des utilisateurs.</li>
+<li>Nous examinons les signalements relatifs à la sécurité des enfants en priorité et nous efforçons d’agir dans un délai de 24 heures.</li>
+<li>Nous retirons les contenus qui enfreignent ces normes et restreignons le compte. Un compte restreint ne peut ni envoyer de nouvelles lettres, ni y répondre, ni en recevoir.</li>
+</ul>
+<h2>6. Traitement du CSAM et de l’exploitation</h2>
+<ul>
+<li>Lorsque nous avons connaissance de matériel d’abus sexuel sur enfant ou d’exploitation d’enfants, nous en empêchons immédiatement la livraison, le retirons et restreignons les comptes concernés.</li>
+<li>Comme la loi l’exige, nous le signalons à la CyberTipline du National Center for Missing &amp; Exploited Children (NCMEC, Centre national pour les enfants disparus et exploités) ou à l’autorité compétente de la région concernée. Lorsque la Corée est concernée, nous le signalons à l’Agence nationale de la police coréenne (système de signalement de la cybercriminalité, ECRM).</li>
+<li>Nous coopérons avec les demandes légales des autorités répressives et, lorsque la loi l’exige, nous pouvons conserver les éléments pertinents pendant la durée qu’elle fixe.</li>
+</ul>
+<h2>7. Respect de la loi</h2>
+<p>Nous nous efforçons de respecter les lois de protection de l’enfance de chaque pays. Tout ce que ces normes ne prévoient pas relève des lois applicables et du règlement de Google Play sur les normes de sécurité des enfants.</p>
+<h2>8. Contact pour la sécurité des enfants</h2>
+<ul>
+<li>Personne à contacter : Jongmin Lee (JML.Studio)</li>
+<li>Contact : <a href="mailto:jmjplearner@gmail.com">jmjplearner@gmail.com</a></li>
+<li>Cette personne peut répondre aux questions sur la manière dont l’application prévient le matériel d’abus sexuel sur enfant et traite les signalements.</li>
+</ul>
+<h2>9. Modifications</h2>
+<p>Si nous modifions ces normes, nous mettrons à jour la date d’entrée en vigueur ci-dessus. Nous vous informerons des modifications importantes dans l’application.</p>
+</article></main>
+<footer class="foot"><div class="wrap foot-inner">
+ <nav aria-label="Moss’s Club house"><a href="/moss/fr/" translate="no">Moss’s Club house</a><a href="/moss/fr/support/">Aide</a><a href="/moss/fr/terms/">Conditions d’utilisation</a><a href="/moss/fr/privacy/">Politique de confidentialité</a><a href="/moss/fr/child-safety/">Sécurité des enfants</a><a href="/">JML.Studio</a></nav>
+ <p>&copy; 2026 JML.Studio</p>
+</div></footer>
+</body>
+</html>

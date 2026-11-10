@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Each language has a stable address. Only an explicit ?lang= request
+   changes language; browser settings never redirect a page. */
+(function () {
+  var here = "en", urls = {"en": "/moss/account-deletion/", "es": "/moss/es/account-deletion/", "pt-BR": "/moss/pt-br/account-deletion/", "fr": "/moss/fr/account-deletion/", "de": "/moss/de/account-deletion/", "ko": "/moss/ko/account-deletion/", "ja": "/moss/ja/account-deletion/", "zh-Hans": "/moss/zh-hans/account-deletion/", "zh-Hant": "/moss/zh-hant/account-deletion/"}, want;
+  function pick(tag) {
+    tag = String(tag || '').toLowerCase();
+    if (/^zh-(hant|tw|hk|mo)/.test(tag)) return 'zh-Hant';
+    if (/^zh/.test(tag)) return 'zh-Hans';
+    return { en: 'en', es: 'es', pt: 'pt-BR', fr: 'fr', de: 'de', ko: 'ko', ja: 'ja' }[tag.split('-')[0]];
+  }
+  try { want = pick(new URLSearchParams(location.search).get('lang')); } catch (e) {}
+  if (want && want !== here) location.replace(urls[want] + location.hash);
+})();
+</script>
+<title>Moss’s Club house Account Deletion</title>
+<meta name="description" content="You can delete your Moss’s Club house account and letter data right in the app, or ask for deletion on the web or by email without the app. You don&#x27;t need to reinstall the app.">
+<meta name="author" content="Jongmin Lee">
+<link rel="canonical" href="https://littlegd.github.io/moss/account-deletion/">
+<link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/account-deletion/">
+<link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/account-deletion/">
+<link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/account-deletion/">
+<link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/account-deletion/">
+<link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/account-deletion/">
+<link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/account-deletion/">
+<link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/account-deletion/">
+<link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/account-deletion/">
+<link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/account-deletion/">
+<link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/account-deletion/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ECEEE9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#202521" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JML.Studio">
+<meta property="og:url" content="https://littlegd.github.io/moss/account-deletion/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:title" content="Moss’s Club house Account Deletion">
+<meta property="og:description" content="You can delete your Moss’s Club house account and letter data right in the app, or ask for deletion on the web or by email without the app. You don&#x27;t need to reinstall the app.">
+<meta property="og:image" content="https://littlegd.github.io/assets/moss-icon-512.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta property="og:image:alt" content="Moss, a garden gnome with a red pointed hat and a white beard">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" href="/assets/moss-icon-512.png">
+<link rel="apple-touch-icon" href="/moss/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/moss/moss.css">
+<script src="/moss/moss.js" defer></script>
+<script defer src="/analytics.js"></script>
+</head>
+<body class="page-account-deletion">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="top-inner wrap">
+ <a class="brand" href="/moss/"><img src="/assets/moss-icon-512.png" width="36" height="36" alt=""><span translate="no">Moss’s Club house</span></a>
+ <details class="lang"><summary><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M1.75 8h12.5M8 1.75c1.7 1.8 2.6 3.9 2.6 6.25S9.7 12.45 8 14.25C6.3 12.45 5.4 10.35 5.4 8S6.3 3.55 8 1.75z"/></svg><span class="sr">Language: </span>English</summary><ul class="lang-menu" role="list"><li><a href="/moss/account-deletion/" hreflang="en" lang="en" aria-current="true">English</a></li><li><a href="/moss/es/account-deletion/" hreflang="es" lang="es">Español</a></li><li><a href="/moss/pt-br/account-deletion/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li><li><a href="/moss/fr/account-deletion/" hreflang="fr" lang="fr">Français</a></li><li><a href="/moss/de/account-deletion/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/moss/ko/account-deletion/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/moss/ja/account-deletion/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/moss/zh-hans/account-deletion/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="/moss/zh-hant/account-deletion/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li></ul></details>
+</div></header>
+<main id="main" class="wrap narrow doc"><article aria-labelledby="h">
+<div class="page-head"><h1 id="h">Moss’s Club house Account Deletion</h1></div>
+<p>You can delete your Moss’s Club house account and letter data right in the app, or ask for deletion on the web or by email without the app. You don&#x27;t need to reinstall the app.</p>
+<h2>Delete in the app</h2>
+<ol>
+<li>Open Settings in the app.</li>
+<li>Tap Delete account and follow the steps to confirm.</li>
+<li>If you signed in with Apple, Moss’s Sign in with Apple access is revoked too. Some older accounts may be asked to confirm with Apple once more to do this.</li>
+</ol>
+<p>Deletion happens right away, and the draft on your phone is erased too. It can&#x27;t be undone.</p>
+<h2>Ask for deletion without the app</h2>
+<ul>
+<li><strong>On the web.</strong> Enter the email address registered with your account on our <a href="https://moss-clubhouse-api-production.motrix.workers.dev/account-deletion?lang=en">account deletion request page</a>.</li>
+<li><strong>By email.</strong> Email jmjplearner@gmail.com from the email address registered with your account and ask for deletion.</li>
+<li><strong>Verification.</strong> We send a single-use verification link to the email registered with your account. If you use an Apple private relay address, we send it there. The link expires after 24 hours, and opening it does not delete anything: you confirm the deletion once more on the link&#x27;s page. Where available, you can also verify by signing in again with the same provider (Apple or Google).</li>
+<li>We never ask for an ID document, password or letter content.</li>
+<li>You can cancel your request before you confirm it.</li>
+</ul>
+<h2>How long it takes</h2>
+<ul>
+<li>For a registered account, we send verification instructions within 7 days of your request.</li>
+<li>We aim to delete the account within 7 days of verification.</li>
+<li>The whole process usually finishes within 28 days of your request.</li>
+<li>Private copies of messages you sent through the app are cleaned up separately and deleted within 7 days, and deletion is complete only after that.</li>
+</ul>
+<h2>What we delete</h2>
+<ul>
+<li>Your account, sign-in sessions and profile (language, time zone, approximate city and terms acceptance records), and the Sign in with Apple relay email status</li>
+<li>Worry letters and replies you wrote, their translations, review results and delivery records</li>
+<li>Replies you wrote to other people (they disappear from the other person&#x27;s archive too)</li>
+<li>Encouragement letters you wrote or received, their translations, and read and like records</li>
+<li>Your block list and push tokens for notifications</li>
+<li>Sparks, items, outfits, box records, the age group you chose and ad reward records</li>
+<li>Messages you sent through the app and their private copies</li>
+</ul>
+<h2>What we keep</h2>
+<p>We keep some records for a set period for safety and legal compliance, then delete them. See the retention section of our <a href="/moss/privacy/">Privacy Policy</a> for details.</p>
+<ul>
+<li><strong>Reports.</strong> Reports you made and reports about your content are kept without user IDs for up to 90 days. The reason and the copy of the content at the time may still identify someone.</li>
+<li><strong>Records of deletion requests made outside the app.</strong> Kept for 90 days after the request is closed, and never more than 180 days after we receive it. We don&#x27;t store the email address, only a hash.</li>
+<li><strong>Sparks already given.</strong> Sparks other people earned by replying to your letters, or from your thank-yous and likes, stay with them.</li>
+<li><strong>Email.</strong> What we exchanged by email is kept for 90 days after we finish handling your request, and never more than 180 days after we receive it.</li>
+<li><strong>Database recovery history.</strong> Depending on our server plan, deleted data stays in database recovery history for up to 30 days, then disappears automatically.</li>
+<li>Information the law requires us to keep is kept for that period.</li>
+</ul>
+<h2>Revoking Sign in with Apple</h2>
+<p>When you delete your account in the app, Moss’s Sign in with Apple access is revoked too. If you asked outside the app, or if revocation can&#x27;t be confirmed, remove Moss yourself under Sign in with Apple in your Apple Account settings. See <a href="https://support.apple.com/en-us/102571">Manage Sign in with Apple</a>. This is separate from deleting your Moss data. If you remove Moss there while you still have a Moss account, the app signs you out on every device but keeps your Moss data. If you delete your Apple Account itself, Apple tells us and we delete your Moss account.</p>
+<h2>Contact</h2>
+<p>If deletion doesn&#x27;t work or you need help, email jmjplearner@gmail.com.</p>
+</article></main>
+<footer class="foot"><div class="wrap foot-inner">
+ <nav aria-label="Moss’s Club house"><a href="/moss/" translate="no">Moss’s Club house</a><a href="/moss/support/">Support</a><a href="/moss/terms/">Terms of Use</a><a href="/moss/privacy/">Privacy Policy</a><a href="/moss/child-safety/">Child Safety</a><a href="/">JML.Studio</a></nav>
+ <p>&copy; 2026 JML.Studio</p>
+</div></footer>
+</body>
+</html>

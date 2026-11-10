@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Each language has a stable address. Only an explicit ?lang= request
+   changes language; browser settings never redirect a page. */
+(function () {
+  var here = "pt-BR", urls = {"en": "/moss/account-deletion/", "es": "/moss/es/account-deletion/", "pt-BR": "/moss/pt-br/account-deletion/", "fr": "/moss/fr/account-deletion/", "de": "/moss/de/account-deletion/", "ko": "/moss/ko/account-deletion/", "ja": "/moss/ja/account-deletion/", "zh-Hans": "/moss/zh-hans/account-deletion/", "zh-Hant": "/moss/zh-hant/account-deletion/"}, want;
+  function pick(tag) {
+    tag = String(tag || '').toLowerCase();
+    if (/^zh-(hant|tw|hk|mo)/.test(tag)) return 'zh-Hant';
+    if (/^zh/.test(tag)) return 'zh-Hans';
+    return { en: 'en', es: 'es', pt: 'pt-BR', fr: 'fr', de: 'de', ko: 'ko', ja: 'ja' }[tag.split('-')[0]];
+  }
+  try { want = pick(new URLSearchParams(location.search).get('lang')); } catch (e) {}
+  if (want && want !== here) location.replace(urls[want] + location.hash);
+})();
+</script>
+<title>Exclusão de conta do Moss’s Club house</title>
+<meta name="description" content="Você pode excluir sua conta do Moss’s Club house e os dados das suas cartas diretamente no app, ou pedir a exclusão pela web ou por e-mail sem o app. Não é preciso reinstalar o app.">
+<meta name="author" content="Jongmin Lee">
+<link rel="canonical" href="https://littlegd.github.io/moss/pt-br/account-deletion/">
+<link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/account-deletion/">
+<link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/account-deletion/">
+<link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/account-deletion/">
+<link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/account-deletion/">
+<link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/account-deletion/">
+<link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/account-deletion/">
+<link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/account-deletion/">
+<link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/account-deletion/">
+<link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/account-deletion/">
+<link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/account-deletion/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ECEEE9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#202521" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JML.Studio">
+<meta property="og:url" content="https://littlegd.github.io/moss/pt-br/account-deletion/">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:title" content="Exclusão de conta do Moss’s Club house">
+<meta property="og:description" content="Você pode excluir sua conta do Moss’s Club house e os dados das suas cartas diretamente no app, ou pedir a exclusão pela web ou por e-mail sem o app. Não é preciso reinstalar o app.">
+<meta property="og:image" content="https://littlegd.github.io/assets/moss-icon-512.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta property="og:image:alt" content="Moss, um gnomo de jardim com chapéu vermelho pontudo e barba branca">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" href="/assets/moss-icon-512.png">
+<link rel="apple-touch-icon" href="/moss/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/moss/moss.css">
+<script src="/moss/moss.js" defer></script>
+<script defer src="/analytics.js"></script>
+</head>
+<body class="page-account-deletion">
+<a class="skip" href="#main">Ir para o conteúdo</a>
+<header class="top"><div class="top-inner wrap">
+ <a class="brand" href="/moss/pt-br/"><img src="/assets/moss-icon-512.png" width="36" height="36" alt=""><span translate="no">Moss’s Club house</span></a>
+ <details class="lang"><summary><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M1.75 8h12.5M8 1.75c1.7 1.8 2.6 3.9 2.6 6.25S9.7 12.45 8 14.25C6.3 12.45 5.4 10.35 5.4 8S6.3 3.55 8 1.75z"/></svg><span class="sr">Idioma: </span>Português (Brasil)</summary><ul class="lang-menu" role="list"><li><a href="/moss/account-deletion/" hreflang="en" lang="en">English</a></li><li><a href="/moss/es/account-deletion/" hreflang="es" lang="es">Español</a></li><li><a href="/moss/pt-br/account-deletion/" hreflang="pt-BR" lang="pt-BR" aria-current="true">Português (Brasil)</a></li><li><a href="/moss/fr/account-deletion/" hreflang="fr" lang="fr">Français</a></li><li><a href="/moss/de/account-deletion/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/moss/ko/account-deletion/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/moss/ja/account-deletion/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/moss/zh-hans/account-deletion/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="/moss/zh-hant/account-deletion/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li></ul></details>
+</div></header>
+<main id="main" class="wrap narrow doc"><article aria-labelledby="h">
+<div class="page-head"><h1 id="h">Exclusão de conta do Moss’s Club house</h1></div>
+<p>Você pode excluir sua conta do Moss’s Club house e os dados das suas cartas diretamente no app, ou pedir a exclusão pela web ou por e-mail sem o app. Não é preciso reinstalar o app.</p>
+<h2>Excluir no app</h2>
+<ol>
+<li>Abra as Configurações no app.</li>
+<li>Toque em Excluir conta e siga as etapas para confirmar.</li>
+<li>Se você entrou com a Apple, o acesso do Moss ao Iniciar sessão com a Apple também é revogado. Algumas contas mais antigas podem precisar confirmar com a Apple mais uma vez para isso.</li>
+</ol>
+<p>A exclusão acontece na hora, e o rascunho no seu celular também é apagado. Não dá para desfazer.</p>
+<h2>Pedir a exclusão sem o app</h2>
+<ul>
+<li><strong>Pela web.</strong> Digite o endereço de e-mail cadastrado na sua conta na nossa <a href="https://moss-clubhouse-api-production.motrix.workers.dev/account-deletion?lang=pt-BR">página de pedido de exclusão de conta</a>.</li>
+<li><strong>Por e-mail.</strong> Envie um e-mail para jmjplearner@gmail.com a partir do endereço cadastrado na sua conta e peça a exclusão.</li>
+<li><strong>Verificação.</strong> Enviamos um link de verificação de uso único para o e-mail cadastrado na sua conta. Se você usa um endereço de retransmissão privado da Apple, enviamos para ele. O link expira em 24 horas, e abri-lo não exclui nada: você confirma a exclusão mais uma vez na página do link. Quando disponível, você também pode fazer a verificação entrando de novo com o mesmo provedor (Apple ou Google).</li>
+<li>Nunca pedimos documento de identidade, senha nem o conteúdo das cartas.</li>
+<li>Você pode cancelar o pedido antes de confirmá-lo.</li>
+</ul>
+<h2>Quanto tempo leva</h2>
+<ul>
+<li>Para uma conta cadastrada, enviamos as instruções de verificação em até 7 dias após o seu pedido.</li>
+<li>Buscamos excluir a conta em até 7 dias após a verificação.</li>
+<li>Todo o processo costuma terminar em até 28 dias após o seu pedido.</li>
+<li>As cópias privadas das mensagens que você enviou pelo app são limpas separadamente e excluídas em até 7 dias, e a exclusão só fica completa depois disso.</li>
+</ul>
+<h2>O que excluímos</h2>
+<ul>
+<li>Sua conta, suas sessões de login e seu perfil (idioma, fuso horário, cidade aproximada e registros de aceitação dos termos), e o status do e-mail de retransmissão do Iniciar sessão com a Apple</li>
+<li>As cartas sobre preocupações e as respostas que você escreveu, as traduções, os resultados da análise e os registros de entrega</li>
+<li>As respostas que você escreveu para outras pessoas (elas também somem do arquivo da outra pessoa)</li>
+<li>As cartas de ânimo que você escreveu ou recebeu, as traduções e os registros de leitura e curtidas</li>
+<li>Sua lista de bloqueios e os tokens push das notificações</li>
+<li>Faíscas, itens, visuais, registros de caixas, a faixa etária que você escolheu e os registros de recompensas de anúncios</li>
+<li>As mensagens que você enviou pelo app e as cópias privadas delas</li>
+</ul>
+<h2>O que guardamos</h2>
+<p>Guardamos alguns registros por um período definido, por motivos de segurança e de cumprimento da lei, e depois os excluímos. Veja a seção de retenção da nossa <a href="/moss/pt-br/privacy/">Política de Privacidade</a> para mais detalhes.</p>
+<ul>
+<li><strong>Denúncias.</strong> As denúncias que você fez e as denúncias sobre o seu conteúdo são guardadas sem identificadores de usuário por até 90 dias. O motivo e a cópia do conteúdo naquele momento ainda podem identificar alguém.</li>
+<li><strong>Registros de pedidos de exclusão feitos fora do app.</strong> Guardados por 90 dias após o encerramento do pedido, e nunca por mais de 180 dias após o recebimento. Não guardamos o endereço de e-mail, apenas um hash.</li>
+<li><strong>Faíscas já dadas.</strong> As faíscas que outras pessoas ganharam por responder às suas cartas, ou porque você agradeceu ou curtiu, continuam com elas.</li>
+<li><strong>E-mail.</strong> O que trocamos por e-mail é guardado por 90 dias após o encerramento do pedido e nunca mais de 180 dias após o recebimento.</li>
+<li><strong>Histórico de recuperação do banco de dados.</strong> Dependendo do nosso plano de servidor, dados excluídos permanecem no histórico de recuperação do banco de dados por até 30 dias e depois desaparecem automaticamente.</li>
+<li>As informações que a lei exige que guardemos são guardadas por esse período.</li>
+</ul>
+<h2>Revogar o Iniciar sessão com a Apple</h2>
+<p>Quando você exclui sua conta no app, o acesso do Moss ao Iniciar sessão com a Apple também é revogado. Se você fez o pedido fora do app, ou se não for possível confirmar a revogação, remova o Moss você mesmo em Iniciar sessão com a Apple, nos ajustes da sua Conta Apple. Veja <a href="https://support.apple.com/pt-br/102571">Gerenciar o Iniciar sessão com a Apple</a>. Isso é separado da exclusão dos seus dados do Moss. Se você remover o Moss ali enquanto ainda tiver uma conta do Moss, o app encerra sua sessão em todos os dispositivos, mas seus dados do Moss continuam guardados. Se você excluir a própria Conta Apple, a Apple nos avisa e excluímos sua conta do Moss.</p>
+<h2>Contato</h2>
+<p>Se a exclusão não funcionar ou se você precisar de ajuda, envie um e-mail para jmjplearner@gmail.com.</p>
+</article></main>
+<footer class="foot"><div class="wrap foot-inner">
+ <nav aria-label="Moss’s Club house"><a href="/moss/pt-br/" translate="no">Moss’s Club house</a><a href="/moss/pt-br/support/">Suporte</a><a href="/moss/pt-br/terms/">Termos de Uso</a><a href="/moss/pt-br/privacy/">Política de Privacidade</a><a href="/moss/pt-br/child-safety/">Segurança infantil</a><a href="/">JML.Studio</a></nav>
+ <p>&copy; 2026 JML.Studio</p>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Each language has a stable address. Only an explicit ?lang= request
+   changes language; browser settings never redirect a page. */
+(function () {
+  var here = "ja", urls = {"en": "/moss/child-safety/", "es": "/moss/es/child-safety/", "pt-BR": "/moss/pt-br/child-safety/", "fr": "/moss/fr/child-safety/", "de": "/moss/de/child-safety/", "ko": "/moss/ko/child-safety/", "ja": "/moss/ja/child-safety/", "zh-Hans": "/moss/zh-hans/child-safety/", "zh-Hant": "/moss/zh-hant/child-safety/"}, want;
+  function pick(tag) {
+    tag = String(tag || '').toLowerCase();
+    if (/^zh-(hant|tw|hk|mo)/.test(tag)) return 'zh-Hant';
+    if (/^zh/.test(tag)) return 'zh-Hans';
+    return { en: 'en', es: 'es', pt: 'pt-BR', fr: 'fr', de: 'de', ko: 'ko', ja: 'ja' }[tag.split('-')[0]];
+  }
+  try { want = pick(new URLSearchParams(location.search).get('lang')); } catch (e) {}
+  if (want && want !== here) location.replace(urls[want] + location.hash);
+})();
+</script>
+<title>Moss’s Club house 子どもの安全に関する基準</title>
+<meta name="description" content="この文書は、Moss’s Club house（以下「本アプリ」）が児童の性的虐待と搾取（CSAE）を防ぐために守る基準です。本アプリは、個人開発者 Jongmin Lee が JML.Studio（以下「運営者」）として運営しています。">
+<meta name="author" content="Jongmin Lee">
+<link rel="canonical" href="https://littlegd.github.io/moss/ja/child-safety/">
+<link rel="alternate" hreflang="en" href="https://littlegd.github.io/moss/child-safety/">
+<link rel="alternate" hreflang="es" href="https://littlegd.github.io/moss/es/child-safety/">
+<link rel="alternate" hreflang="pt-BR" href="https://littlegd.github.io/moss/pt-br/child-safety/">
+<link rel="alternate" hreflang="fr" href="https://littlegd.github.io/moss/fr/child-safety/">
+<link rel="alternate" hreflang="de" href="https://littlegd.github.io/moss/de/child-safety/">
+<link rel="alternate" hreflang="ko" href="https://littlegd.github.io/moss/ko/child-safety/">
+<link rel="alternate" hreflang="ja" href="https://littlegd.github.io/moss/ja/child-safety/">
+<link rel="alternate" hreflang="zh-Hans" href="https://littlegd.github.io/moss/zh-hans/child-safety/">
+<link rel="alternate" hreflang="zh-Hant" href="https://littlegd.github.io/moss/zh-hant/child-safety/">
+<link rel="alternate" hreflang="x-default" href="https://littlegd.github.io/moss/child-safety/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ECEEE9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#202521" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JML.Studio">
+<meta property="og:url" content="https://littlegd.github.io/moss/ja/child-safety/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:title" content="Moss’s Club house 子どもの安全に関する基準">
+<meta property="og:description" content="この文書は、Moss’s Club house（以下「本アプリ」）が児童の性的虐待と搾取（CSAE）を防ぐために守る基準です。本アプリは、個人開発者 Jongmin Lee が JML.Studio（以下「運営者」）として運営しています。">
+<meta property="og:image" content="https://littlegd.github.io/assets/moss-icon-512.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta property="og:image:alt" content="赤いとんがり帽子をかぶった白いひげの庭の妖精、Moss">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" href="/assets/moss-icon-512.png">
+<link rel="apple-touch-icon" href="/moss/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/moss/moss.css">
+<script src="/moss/moss.js" defer></script>
+<script defer src="/analytics.js"></script>
+</head>
+<body class="page-child-safety">
+<a class="skip" href="#main">本文へスキップ</a>
+<header class="top"><div class="top-inner wrap">
+ <a class="brand" href="/moss/ja/"><img src="/assets/moss-icon-512.png" width="36" height="36" alt=""><span translate="no">Moss’s Club house</span></a>
+ <details class="lang"><summary><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="6.25"/><path d="M1.75 8h12.5M8 1.75c1.7 1.8 2.6 3.9 2.6 6.25S9.7 12.45 8 14.25C6.3 12.45 5.4 10.35 5.4 8S6.3 3.55 8 1.75z"/></svg><span class="sr">言語: </span>日本語</summary><ul class="lang-menu" role="list"><li><a href="/moss/child-safety/" hreflang="en" lang="en">English</a></li><li><a href="/moss/es/child-safety/" hreflang="es" lang="es">Español</a></li><li><a href="/moss/pt-br/child-safety/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li><li><a href="/moss/fr/child-safety/" hreflang="fr" lang="fr">Français</a></li><li><a href="/moss/de/child-safety/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/moss/ko/child-safety/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/moss/ja/child-safety/" hreflang="ja" lang="ja" aria-current="true">日本語</a></li><li><a href="/moss/zh-hans/child-safety/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="/moss/zh-hant/child-safety/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li></ul></details>
+</div></header>
+<main id="main" class="wrap narrow doc"><article aria-labelledby="h">
+<div class="page-head"><h1 id="h">Moss’s Club house 子どもの安全に関する基準</h1></div>
+<p class="meta">施行日：2026年11月9日</p>
+<p>この文書は、Moss’s Club house（以下「本アプリ」）が児童の性的虐待と搾取（CSAE）を防ぐために守る基準です。本アプリは、個人開発者 Jongmin Lee が JML.Studio（以下「運営者」）として運営しています。</p>
+<h2>1. 基本方針</h2>
+<ul>
+<li>運営者は、いかなる形の児童の性的虐待と搾取も容認しません。</li>
+<li>本アプリは14歳以上の方のみ利用できます。この条件は利用規約に含まれており、利用者は始める前に利用規約に同意します。14歳未満の方が作成したアカウントを見つけた場合は削除します。</li>
+<li>この基準は<a href="/moss/ja/terms/">利用規約</a>の一部であり、悩みの手紙、返信、はげましの手紙など、本アプリでやり取りされるすべての内容に適用されます。</li>
+</ul>
+<h2>2. 禁止する行為</h2>
+<p>次の行為は禁止されており、見つけた場合は内容を削除し、アカウントを制限または停止します。</p>
+<ul>
+<li>児童性的虐待コンテンツ（CSAM）を送る、求める、またはその所在を教える行為</li>
+<li>子どもや10代を性的に描写する、または性的な対象として扱う内容</li>
+<li>未成年者に近づいて信頼を得たうえで性的に搾取しようとする行為（グルーミング）</li>
+<li>未成年者に性的な画像や会話を求める行為、またはそれを材料に脅す行為（性的脅迫を含む）</li>
+<li>未成年者に、会うこと、連絡先の交換、別のアプリやサービスへの会話の移動を求める行為</li>
+<li>児童の人身取引や搾取を宣伝または助長する行為</li>
+</ul>
+<p>自分が受けた被害を打ち明けることは違反ではありません。被害の経験を語る手紙は、守るべき物語として扱います。</p>
+<h2>3. リスクを減らすアプリの設計</h2>
+<ul>
+<li><strong>写真やファイルはありません</strong>：手紙は文字だけで書くもので、写真、動画、ファイル、音声は送れません。</li>
+<li><strong>チャットルームはありません</strong>：悩みの手紙1通に届く返信は1通だけで、その後に続く会話や個別メッセージの機能はありません。</li>
+<li><strong>身元は明かされません</strong>：他の利用者に名前、メールアドレス、プロフィール写真が表示されることはなく、表示されるのは手紙と広い地域名だけです。本アプリは、サインイン提供者から送られる名前と写真を保存しません。</li>
+<li><strong>配達前の自動確認</strong>：すべての手紙は、配達前に自動確認を経ます。搾取や直接的な脅迫は配達せず、連絡先が書かれた手紙は修正のために戻します。はげましの手紙は、性的な内容、連絡先、リンクを含む場合も配達しません。判断が難しい手紙は保留され、運営者が直接確認します。</li>
+<li><strong>広告の制限</strong>：18歳以下と回答した利用者には広告をリクエストせず、すべての広告を全年齢向けのレーティング（G）に制限しています。</li>
+</ul>
+<h2>4. 報告の方法</h2>
+<ul>
+<li><strong>アプリ内で</strong>：受け取った手紙、返信、はげましの手紙を開き、「手紙を通報」をタップしてください。報告の理由と、あなたが見た内容が非公開で運営者に届くので、内容をコピーする必要はありません。「送信者をブロック」をタップすると、その人とは手紙をやり取りしなくなります。</li>
+<li><strong>お問い合わせ</strong>：本アプリの設定でお問い合わせを開き、「人の通報・安全に関する心配」を選んでお知らせいただくこともできます。</li>
+<li><strong>メール</strong>：本アプリを使っていない方も、<a href="mailto:jmjplearner@gmail.com">jmjplearner@gmail.com</a> に報告できます。報告の際、児童性的虐待コンテンツを添付したりコピーしたりしないでください。どこで見たかだけをお知らせいただければ十分です。</li>
+<li>今まさに誰かが危険な状況にある場合は、アプリでの報告を待たずに、すぐに地域の緊急通報窓口か警察に連絡してください。</li>
+</ul>
+<h2>5. 報告を受けた後の対応</h2>
+<ul>
+<li>運営者は、報告された内容と理由を確認します。管理ツールにはコンテンツと理由だけが表示され、ユーザー ID は表示されません。</li>
+<li>子どもの安全に関わる報告は他の報告より優先して確認し、24時間 以内に対応することを目指します。</li>
+<li>基準に違反する内容は削除し、該当するアカウントを制限します。制限されたアカウントは、新しい手紙を送ること、返信すること、受け取ることができなくなります。</li>
+</ul>
+<h2>6. CSAM と搾取への対応</h2>
+<ul>
+<li>児童性的虐待コンテンツや児童の搾取を把握した場合は、ただちに配達を止めて削除し、関係するアカウントを制限します。</li>
+<li>法令に従い、全米行方不明・被搾取児童センター（NCMEC）の CyberTipline、または該当する地域の所管機関に通報します。韓国に関係する場合は、韓国警察庁（サイバー犯罪申告システム ECRM） に通報します。</li>
+<li>捜査機関からの適法な要請に協力し、法令が求める場合は、関連する資料を法令の定める期間保存することがあります。</li>
+</ul>
+<h2>7. 法令の遵守</h2>
+<p>運営者は、子どもの保護に関する各国の法令を遵守するよう努めます。この基準に定めのない事項は、関連する法令と Google Play の子どもの安全に関する基準のポリシーに従います。</p>
+<h2>8. 子どもの安全に関する担当者</h2>
+<ul>
+<li>担当者：Jongmin Lee（JML.Studio）</li>
+<li>連絡先：<a href="mailto:jmjplearner@gmail.com">jmjplearner@gmail.com</a></li>
+<li>担当者は、本アプリにおける児童性的虐待コンテンツの防止方法と報告への対応についてのご質問にお答えします。</li>
+</ul>
+<h2>9. 変更</h2>
+<p>この基準を変更する場合は、冒頭の施行日を更新します。重要な変更は本アプリでお知らせします。</p>
+</article></main>
+<footer class="foot"><div class="wrap foot-inner">
+ <nav aria-label="Moss’s Club house"><a href="/moss/ja/" translate="no">Moss’s Club house</a><a href="/moss/ja/support/">サポート</a><a href="/moss/ja/terms/">利用規約</a><a href="/moss/ja/privacy/">プライバシーポリシー</a><a href="/moss/ja/child-safety/">子どもの安全</a><a href="/">JML.Studio</a></nav>
+ <p>&copy; 2026 JML.Studio</p>
+</div></footer>
+</body>
+</html>

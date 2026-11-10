@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
 """Builds the Moss's Club house pages (landing, support, terms, privacy) for
-every language from i18n/<lang>.json into <site>/moss/. Usage:
+every language from i18n/<lang>.json into <site>/moss/. The child safety and
+account deletion pages come from docs/<lang>/*.md instead. Usage:
     python3 tools/moss-pages/build.py .   (from the repo root)
 """
-import html, json, pathlib, sys
+import html, json, pathlib, re, sys
 
 SITE = pathlib.Path(sys.argv[1] if len(sys.argv) > 1 else '.')
 SRC = pathlib.Path(__file__).parent / 'i18n'
+DOCS = pathlib.Path(__file__).parent / 'docs'
 BASE = 'https://littlegd.github.io'
 EMAIL = 'jmjplearner@gmail.com'
 AGE = 13  # minimum age in terms and privacy; product decision pending
@@ -25,7 +27,7 @@ LANGS = [
     ('zh-Hans', 'zh-hans', 'zh-Hans', 'zh_CN'),
     ('zh-Hant', 'zh-hant', 'zh-Hant', 'zh_TW'),
 ]
-PAGES = ['', 'support/', 'terms/', 'privacy/']
+PAGES = ['', 'support/', 'terms/', 'privacy/', 'child-safety/', 'account-deletion/']
 
 
 def path(slug, page):
@@ -137,7 +139,7 @@ def footer(t, code):
     c = t['common']
     s = slug_of(code)
     return f'''<footer class="foot"><div class="wrap foot-inner">
- <nav aria-label="Moss’s Club house"><a href="{path(s, '')}" translate="no">Moss’s Club house</a><a href="{path(s, 'support/')}">{esc(c['support'])}</a><a href="{path(s, 'terms/')}">{esc(c['terms'])}</a><a href="{path(s, 'privacy/')}">{esc(c['privacy'])}</a><a href="/">JML.Studio</a></nav>
+ <nav aria-label="Moss’s Club house"><a href="{path(s, '')}" translate="no">Moss’s Club house</a><a href="{path(s, 'support/')}">{esc(c['support'])}</a><a href="{path(s, 'terms/')}">{esc(c['terms'])}</a><a href="{path(s, 'privacy/')}">{esc(c['privacy'])}</a><a href="{path(s, 'child-safety/')}">{esc(c['childSafety'])}</a><a href="/">JML.Studio</a></nav>
  <p>&copy; 2026 JML.Studio</p>
 </div></footer>
 </body>
@@ -236,6 +238,50 @@ def legal(t, key):
     return '\n'.join(out)
 
 
+def inline(s):
+    s = esc(s)
+    s = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', s)
+    return re.sub(r'\[([^\]]+)\]\(([^)]+)\)', r'<a href="\2">\1</a>', s)
+
+
+def markdown(code, name):
+    """One docs/<lang>/<name>.md as (title, description, body). Handles what these
+    files use: one # title, ## headings, paragraphs, - and 1. lists, bold, links."""
+    lines = (DOCS / code / f'{name}.md').read_text().splitlines()
+    assert lines[0].startswith('# '), (code, name)
+    title, out, kind, desc = lines[0][2:], [], None, ''
+
+    def close():
+        nonlocal kind
+        if kind:
+            out.append(f'</{kind}>')
+            kind = None
+
+    for line in lines[1:]:
+        item = re.match(r'(- |\d+\. )(.*)', line)
+        if item:
+            want = 'ul' if item.group(1) == '- ' else 'ol'
+            if kind != want:
+                close()
+                out.append(f'<{want}>')
+                kind = want
+            out.append(f'<li>{inline(item.group(2))}</li>')
+            continue
+        close()
+        if line.startswith('## '):
+            out.append(f'<h2>{inline(line[3:])}</h2>')
+        elif line.strip():
+            assert not line.startswith(('#', '|', '>', ' ')), (code, name, line)
+            first = not out
+            out.append(f'<p class="meta">{inline(line)}</p>' if first and name == 'child-safety' else f'<p>{inline(line)}</p>')
+            if not desc and not (first and name == 'child-safety'):
+                desc = html.unescape(strip_tags(inline(line)))
+    close()
+    body = '\n'.join(['<main id="main" class="wrap narrow doc"><article aria-labelledby="h">',
+                      f'<div class="page-head"><h1 id="h">{esc(title)}</h1></div>', *out, '</article></main>'])
+    return title, desc, body
+
+
 def main():
     all_t = {c: json.loads((SRC / f'{c}.json').read_text()) for c, *_ in LANGS}
     n = 0
@@ -248,8 +294,10 @@ def main():
                 title, desc, body = t['support']['title'], t['support']['description'], support(t, code)
             elif page == 'terms/':
                 title, desc, body = t['terms']['title'], t['terms']['description'], legal(t, 'terms')
-            else:
+            elif page == 'privacy/':
                 title, desc, body = t['privacy']['title'], t['privacy']['description'], legal(t, 'privacy')
+            else:
+                title, desc, body = markdown(code, page.strip('/'))
             doc = '\n'.join([head(t, code, slug, lang, locale, page, title, desc, all_t), header(t, code, page, all_t), body, footer(t, code)])
             assert '—' not in strip_tags(body), (code, page)
             out = SITE / path(slug, page).lstrip('/') / 'index.html'
