@@ -79,7 +79,7 @@ def check():
             assert all(re.search(rf'(?<!\d){age}(?!\d)', text) for age in [18, 19]), (locale, text)
             assert not STALE_GLOBAL.search(text), (locale, text)
         assert re.search(r'(?<!\d)18(?!\d)', sections[7]['p'][-1]), locale
-        assert terms['date'] == privacy['date'] and re.search(r'(?<!\d)6(?!\d)', terms['date']), locale
+        assert terms['date'] == privacy['date'] and re.search(r'(?<!\d)9(?!\d)', terms['date']), locale
         assert 'OpenAI' in sections[3]['p'][0], locale
         providers = sections[4]['list']
         assert all(marker in providers[2] for marker in ('APNs', 'FCM')), locale
