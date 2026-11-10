@@ -11,7 +11,7 @@ SRC = pathlib.Path(__file__).parent / 'i18n'
 DOCS = pathlib.Path(__file__).parent / 'docs'
 BASE = 'https://littlegd.github.io'
 EMAIL = 'jmjplearner@gmail.com'
-AGE = 13  # minimum age in terms and privacy; product decision pending
+AGE = 14  # minimum age in terms and privacy; the app asks for 14 at onboarding
 STORE_IOS = ''      # App Store URL once published
 STORE_ANDROID = ''  # Google Play URL once published
 
