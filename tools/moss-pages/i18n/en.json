@@ -61,7 +61,7 @@
       },
       {
         "q": "How many letters can I write?",
-        "a": "One worry letter a day. Each day Moss also brings you up to three letters from other people. Choose one to answer, and you have 48 hours to write your reply."
+        "a": "One worry letter a day. Each day Moss also brings you up to three letters from other people. You can reply to all of them, one at a time. Once you choose a letter, you have 48 hours to write your reply."
       },
       {
         "q": "My letter came back without a reply",
@@ -80,8 +80,12 @@
         "a": "Holding to burn a draft clears it from your phone without sending it. After a reply comes back, you can also burn the letter and its reply to remove them from your archive. This can’t be undone."
       },
       {
+        "q": "How do I cancel a membership or get a refund?",
+        "a": "Cancel a subscription in the subscription settings of your App Store or Google Play account. You keep the membership until the end of the period you already paid for. Deleting the app or your account does not cancel a subscription, so cancel it in the store first. Ask the store you bought from for a refund. If you changed devices, you can restore your purchase on the membership screen in the app."
+      },
+      {
         "q": "Does it cost anything?",
-        "a": "No. The app and letter exchange are free, and there are no purchases. After opening the free set of three boxes, you can claim one spark a day if you are 18 or younger, or choose to watch a rewarded ad if you are 19 or older. On iOS, ad personalization follows your tracking permission and regional consent. On Android, personalized ads are off by default and can be enabled in Settings. When personalization is not permitted, general ads may be requested. The choice does not change the reward odds or daily limit."
+        "a": "The app and letter exchange are free. You can buy a paid membership if you want one, and every letter feature works without it. After opening the free set of three boxes, you can claim one spark a day if you are 18 or younger, or choose to watch a rewarded ad if you are 19 or older. Members who are 19 or older get sparks with the same odds and no ad. On iOS, ad personalization follows your tracking permission and regional consent. On Android, personalized ads are off by default and can be enabled in Settings. When personalization is not permitted, general ads may be requested. The choice does not change the reward odds or daily limit."
       }
     ],
     "deleteTitle": "Delete your account",
@@ -101,7 +105,7 @@
       {
         "h": "1. What the app is",
         "p": [
-          "The app lets people exchange anonymous letters about their worries. You can write one letter a day. Other people may receive it and write one reply. Letters are reviewed automatically and translated so they can travel between languages.",
+          "The app lets people exchange anonymous letters about their worries. You can write one letter a day. Other people may receive it and write one reply. Each day the app brings you up to three letters from other people, and you can reply to each of them, one at a time, within 48 hours of choosing it. Letters are reviewed automatically and translated so they can travel between languages.",
           "The app is not therapy, medical, legal or crisis support. Replies come from other users, not from professionals, and we don’t check whether their advice is right for you. If you might be in danger, contact local emergency services right away."
         ]
       },
@@ -140,6 +144,7 @@
         "h": "5. Review, reporting and blocking",
         "p": [
           "Every letter and reply is checked before delivery by an automated review that uses AI. A letter may be delivered, returned to you to revise, held, or not delivered. The review can make mistakes, and it doesn’t guarantee that every letter you receive will be appropriate.",
+          "We may use external AI services to review letters for inappropriate content and to translate them. The Privacy Policy explains what is sent and to whom. Letters can’t be delivered without this processing, so by accepting these terms you also consent to it. For letters to your future self, their text is sent to an external AI service only when you ask for a question, a summary card or a lookback. If you do not ask, it is not sent. Your acceptance of these terms covers this too. AI does not write your letters, and summary cards and lookbacks contain only passages chosen from your letters.",
           "You can report any letter or reply you receive, and you can block its sender. We review reports and act on objectionable content as quickly as we can, aiming for within 24 hours. We may remove content, and we may restrict or end accounts that break these terms, with or without notice. A restricted account can’t send, reply or receive new letters."
         ]
       },
@@ -151,10 +156,23 @@
         ]
       },
       {
-        "h": "7. Free service and changes",
+        "h": "7. Sparks, daily rewards, membership and changes",
         "p": [
-          "After opening your free set of three shop boxes, you can earn one daily reward. If you are 18 or younger, you can claim one spark for checking in, without an ad. If you are 19 or older, you can choose to finish a rewarded ad when available. On iOS, ad personalization follows the tracking permission and regional consent. On Android, personalized ads are off by default and can be enabled in Settings. When personalization is not permitted, general ads may be requested. Both have the same reward odds and daily limit. The chances are 1 spark: 2%; 2: 20%; 3: 50%; 4: 20%; 5: 8%. Both methods share one reward limit per account per day, resetting at local midnight. You can correct your age group in Settings. You can use sparks to open shop boxes. Sparks and items have no cash value and cannot be purchased with real money, transferred or redeemed for cash.",
-          "The app is free. We may change, pause or stop the app or any feature, including letter limits and delivery timing. Letters in transit may be lost if the service stops. We will try to give notice of major changes in the app or on this page."
+          "After opening your free set of three shop boxes, you can earn one daily reward. If you are 18 or younger, you can claim one spark for checking in, without an ad. If you are 19 or older, you can choose to finish a rewarded ad when available. On iOS, ad personalization follows the tracking permission and regional consent. On Android, personalized ads are off by default and can be enabled in Settings. When personalization is not permitted, general ads may be requested. Both have the same reward odds and daily limit. The chances are 1 spark: 2%; 2: 20%; 3: 50%; 4: 20%; 5: 8%. Both methods share one reward limit per account per day, resetting at local midnight. If you have a membership and said you are 19 or older, you get sparks with the same odds without watching the ad. The daily limit and the odds are the same as for people without a membership. The app has no way to change a saved age group; to correct it, contact us. You can use sparks to open shop boxes. Sparks and items from boxes have no cash value and cannot be purchased with real money, transferred or redeemed for cash. A membership does not give sparks, boxes or items from boxes.",
+          "Without a membership, you can send 1 letter to your future self a day for 4 sparks. If you said you are 19 or older, you can choose to watch a rewarded ad to the end and send it for 2 sparks instead. This ad is counted separately from the daily reward. With a membership, you can send 3 a day without spending sparks. Deleting a letter does not give back the sparks or that day’s letter. While writing one letter, you can ask for up to 2 questions without a membership and up to 5 with one. A summary card is one per letter that has come back, and you can make up to 3 a day without a membership and up to 10 with one. A lookback can be made for a period that has ended when at least 3 letters came back in it for My week, 8 for My month and 12 for My year. Without a membership you see part of My week, and My month and My year need a membership.",
+          "Writing, receiving and replying to letters, and the shop, are free. You can use all of them without a membership."
+        ],
+        "list": [
+          "<strong>Membership.</strong> You can choose to buy a paid membership. It adds members-only looks and convenience features, and the membership screen in the app shows what is included before you buy. Some benefits may not be available on every device or operating system. A membership does not change how many worry letters, replies or encouragement letters you can send, which letters you receive, the order of delivery or your chance of getting a reply. The limits for letters to your future self, with and without a membership, are those stated above in this section.",
+          "<strong>Products and prices.</strong> Membership is sold as a monthly subscription and a yearly subscription, which both renew automatically. Prices differ by country or region, and the store’s purchase screen shows your price before you pay. A launch or introductory price, when one is offered, applies only to the first period, and the subscription then renews at the regular price shown on the purchase screen.",
+          "<strong>Payment and automatic renewal.</strong> Apple’s App Store or Google Play handles payment through your store account, and we do not receive payment details such as your card number. A subscription renews for the same period, and you are charged, unless you cancel at least 24 hours before the current period ends. If the price changes, you will be told in advance in the way the store requires.",
+          "<strong>Cancelling.</strong> You can cancel a subscription at any time in your store account’s subscription settings. After you cancel, you keep the membership until the end of the period you already paid for. Deleting the app or your app account does not cancel a subscription, so cancel it in the store first.",
+          "<strong>Refunds.</strong> Refunds follow Apple’s or Google’s policies, and you request them from that store. If the law where you live gives you a right to withdraw or to a refund, these terms do not limit that right.",
+          "<strong>When a membership ends.</strong> Members-only outfits, skins, screen looks and members-only features work only while your membership is active. When it ends, looks return to the default. A letter you handed over during your membership is still delivered on its set date after the membership ends.",
+          "<strong>Purchases by minors.</strong> If you are a minor, get permission from a parent or legal guardian before you buy."
+        ],
+        "after": [
+          "We may change, pause or stop the app, any feature or the benefits of a membership, including letter limits and delivery timing. Letters in transit may be lost if the service stops. We will give notice in advance of a change that is worse for people with an active membership, or of ending the service, and we will refund where the law requires it. We will try to give notice of major changes in the app or on this page."
         ]
       },
       {
@@ -172,7 +190,7 @@
       {
         "h": "10. App stores",
         "p": [
-          "If you downloaded the app from Apple’s App Store, Apple’s Licensed Application End User License Agreement also applies, and these terms add to it. Apple and Google are not responsible for the app or its content."
+          "If you downloaded the app from Apple’s App Store, Apple’s Licensed Application End User License Agreement also applies, and these terms add to it. Apple and Google are not responsible for the app or its content. Purchases made in the app are also subject to the payment terms of the store you bought them from."
         ]
       },
       {
@@ -188,7 +206,7 @@
         ]
       }
     ],
-    "date": "November 9, 2026"
+    "date": "November 15, 2026"
   },
   "privacy": {
     "title": "Privacy Policy · Moss’s Club house",
@@ -198,9 +216,10 @@
     "summaryTitle": "Summary",
     "summary": [
       "Other users never see your name or email. They see your letter and an approximate city.",
-      "Letters and replies are sent to OpenAI for safety review and translation. OpenAI does not write them.",
+      "Letters and replies are sent to OpenAI for safety review and translation. OpenAI does not write them. A letter to your future self goes to no one else, and its text is sent to the external AI service only when you ask for a question, a summary card or a lookback.",
       "Your approximate city comes from your network connection. The app doesn’t use GPS.",
       "If you report being 19 or older, rewarded ads may be personalized or general. If you are 18 or younger, you can claim one spark a day by checking in.",
+      "Apple or Google handles payment for a paid membership. We do not receive payment details such as your card number.",
       "You can delete your account and letters in the app at any time."
     ],
     "sections": [
@@ -215,8 +234,10 @@
           "<strong>Promotion taps.</strong> When you open a link to one of our other apps, the app sends the app, link placement, platform and destination. The request uses your signed-in session. The daily aggregate table stores counts by those fields without account IDs or IP addresses.",
           "<strong>Messages to us.</strong> If you email us, your email address and what you write.",
           "<strong>Feedback.</strong> In-app feedback includes its type and text, language, platform, app version, receipt time and linked account.",
+          "<strong>Membership.</strong> When you buy or restore a membership, we receive and check the store’s proof of purchase: on the App Store a transaction signed by Apple, on Google Play a purchase token. From it we store the transaction identifier or purchase token, the product, when it expires and when we last checked it, with your account. Apple tells our server when a subscription renews, expires or is refunded. For an App Store purchase that was refunded or revoked, we keep only the transaction identifier and that time, apart from your account. When you buy, the app passes the store a random-looking identifier made from your account. It is not your account ID or email. Apple or Google handles payment details such as your card number, and we do not receive them. For a canceled Google Play lifetime purchase, we keep only a hash of the purchase token and the time we confirmed the cancellation, without an account link.",
+          "<strong>Focus keepsakes.</strong> The keepsakes you collect by finishing stretches with the focus timer. With your account we store which keepsakes you gathered and when each first came, and, for each focus place, the total focus time you finished there, the latest local date you finished a stretch there, the focus time you finished on that date, the number of days in a row, and, when needed to combine streaks across devices, which days you finished a stretch there in the seven days ending on that date. To check daily and streak keepsake eligibility across devices, we also store when you finished your latest counted stretch at each place and whether you had a membership when you started it. This lets you get your keepsakes back after reinstalling the app and see them on your other devices.",
           "Shop rewards. We keep the age group you select (18 or younger, or 19 or older) and when you selected or last changed it. We do not ask for a birth date. We record daily reward dates and amounts, and for ad attempts, the account, session, ad unit, timing and a hashed Google transaction reference when credited.",
-          "<strong>Local drafts.</strong> Unsent drafts are stored on your device and are not submitted to the server until you send them. Android backup rules exclude app data from automatic cloud backup and device transfer. On iOS, the folder holding drafts is marked as excluded from backup. This setting guides the OS and does not guarantee that backups or restores are prevented. Burning a draft does not erase copies in past backups."
+          "<strong>On your device.</strong> Unsent drafts are stored on your device and are not submitted to the server until you send them. The focus timer’s record (time focused per day) and settings also stay on your device and are not sent to the server. Android backup rules exclude app data from automatic cloud backup and device transfer. On iOS, the folder holding drafts is marked as excluded from backup. This setting guides the OS and does not guarantee that backups or restores are prevented. Burning a draft does not erase copies in past backups."
         ]
       },
       {
@@ -229,14 +250,16 @@
       {
         "h": "3. How we use information",
         "p": [
-          "We use this information to run the app: to sign you in, deliver letters between cities and time zones, translate letters, review content for safety, show help resources when a letter suggests someone may need them, send notifications, handle reports and blocks, prevent abuse and rate limit requests, fix problems and answer your messages. We also use aggregate link counts to measure promotion of our own apps.",
-          "We use shop information to apply the age and daily limits, confirm ad completion, credit sparks and prevent abuse or duplicate rewards."
+          "We use this information to run the app: to sign you in, deliver letters between cities and time zones, translate letters, review content for safety, make a follow-up question, a summary card or a lookback for letters to your future self when you ask, show help resources when a letter suggests someone may need them, send notifications, handle reports and blocks, prevent abuse and rate limit requests, fix problems and answer your messages. We also use aggregate link counts to measure promotion of our own apps.",
+          "We use shop information to apply the age and daily limits, confirm ad completion, credit sparks and prevent abuse or duplicate rewards. We use membership information to confirm a membership purchase and provide its benefits, and to stop a refunded purchase from being used again. We use focus keepsakes to restore them after a reinstall and show them on your other devices."
         ]
       },
       {
         "h": "4. AI review and translation",
         "p": [
           "Before a letter or reply is delivered, we send its text, its language and, for replies, the original letter as context, to OpenAI. OpenAI checks it against our letter rules and translates it. AI never writes or edits your letters. On newer app versions, we ask for permission on the screen where you accept the Terms of Use, either during setup or when you review the updated agreement. Your permission applies to later letters, replies and revisions. Older versions ask for permission each time you send.",
+          "<strong>Letters to your future self.</strong> These letters go to no one else, so they are not reviewed or translated. We send them to the external AI service only when you ask. If you ask for a question while writing, we send what you have written so far, the questions printed on that letter’s paper and the app language, and get one question back. If you ask for a summary card for a letter that has come back, we send that letter’s text and get back up to three passages chosen from it. If you ask for a lookback (My week, My month or My year), we send the text and writing dates of the letters that came back in that period and get back passages chosen from them. Letters that have not come back yet are not sent. A new letter shows one general question printed on the paper. It comes from a list built into the app and is picked by your device’s date, with no AI involved. Picking and printing it sends nothing anywhere. If you later ask for a question, the questions printed on the paper, including this one, are sent with that request. A question you ask for is made by the external AI service from what you have written so far. Until you send the letter, we do not store or log the text and question exchanged with the AI service while you write. When you send the letter, the questions printed on its paper are stored with it, shown again on the letter when it comes back, and deleted with the letter. We store summary cards and lookbacks with your letters, along with how many requests you made. Summary cards and lookbacks are made only from the letter’s own text, and the questions are never sent for them. If you never ask, your letters are not sent to the AI service. Your consent to this processing is recorded together with your acceptance of the terms when you tap “I agree” on first start or when reviewing updated terms.",
+          "To withdraw consent, delete your account in Settings &gt; Delete account or email {emailLink}. Once you withdraw, you can no longer send letters, replies or encouragement letters, because they require processing by the AI service.",
           "We send requests with OpenAI’s storage option turned off. According to OpenAI’s API policies, API data is not used to train their models by default, but OpenAI may keep it for a limited period to monitor abuse. See <a href=\"https://openai.com/policies/privacy-policy/\">OpenAI’s Privacy Policy</a>."
         ]
       },
@@ -247,10 +270,11 @@
         ],
         "list": [
           "<strong>Cloudflare</strong> hosts our server and database and estimates your city from your IP address.",
-          "<strong>OpenAI</strong> reviews and translates letters and replies.",
+          "<strong>OpenAI</strong> reviews and translates letters and replies. For letters to your future self, it makes a question, a summary card or a lookback, and receives their text only when you ask for one.",
           "Apple and Google provide sign-in. Apple Push Notification service (APNs) and Firebase Cloud Messaging (FCM) deliver notifications without letter text.",
           "Google AdMob and its consent tool (UMP) may receive your IP address, an approximate location derived from it, app and device information (including available identifiers), ad views and interactions, and crash or performance data. Google uses this data to manage consent, serve and measure ads, and prevent fraud. We disable publisher first-party IDs. We send only an opaque attempt token as custom data to verify a reward. We do not send your app account ID, email or letter contents to ad providers. Google handles and retains SDK data under its <a href=\"https://policies.google.com/privacy\">Privacy Policy</a>.",
-          "<strong>GitHub</strong> processes in-app feedback and letter or reply reports as issues in a private repository. Reports include the reason, content as the reporter saw it, content type, language, date and a report reference. We do not add account IDs or email addresses, though text may identify someone."
+          "<strong>GitHub</strong> processes in-app feedback and letter or reply reports as issues in a private repository. Reports include the reason, content as the reporter saw it, content type, language, date and a report reference. We do not add account IDs or email addresses, though text may identify someone.",
+          "<strong>Apple (App Store) and Google (Google Play)</strong> process payment when you buy or restore a membership. They receive a random-looking identifier made from your account (not your account ID or email) and, for Google Play, the purchase token and product identifier. For a Google Play purchase, our server also asks Google when it confirms the purchase or checks the subscription again. You give your payment method and payment details to the store directly, and they do not pass through us. Letter content is not sent. Nothing is sent unless you buy a membership."
         ],
         "after": [
           "On iOS, when you first choose to watch an eligible ad, Apple may ask for App Tracking Transparency (ATT) permission. If you allow tracking and Google's regional consent permits personalization, we request personalized ads. If tracking is denied, we request general ads when Google permits ad requests. If ATT and any other required consent allow it, Google may use the iOS advertising identifier (IDFA) to measure ads or limit how often you see them, including for general ads. On Android, the Personalized ads switch in Settings is off by default. On Android, we block the advertising ID and advertising-related AdServices permissions. If you select personalized ads, the request is subject to Google’s rules and the data available. Google may still serve general ads. When personalization is not allowed, we request general ads if Google’s consent tool permits requests. If it does not permit requests, we do not request ads.",
@@ -260,8 +284,8 @@
       {
         "h": "6. How long we keep information",
         "p": [
-          "We keep your account and letters while your account exists. A letter travels for at most 14 days. If nobody replies, it comes back to you. You can burn a returned letter and its reply, which deletes their text, translations and review data and leaves only a minimal record that the letter existed.",
-          "When you delete your account, we delete the account, sessions, your letters and replies you wrote. We revoke the Apple sign-in tokens available to us and guide you if you need to remove Apple access manually. We remove linked private GitHub feedback asynchronously within 7 days; deletion is complete only after that cleanup. To review safety issues, we retain reports you filed or received, including their reason, reported content and handling status, without user IDs for up to 90 days, then delete them. The text may still identify someone. Cloudflare D1 recovery history may retain deleted data for up to 30 days, depending on the plan. Other provider records follow their own retention rules.",
+          "We keep your account and letters while your account exists. A letter travels for at most 14 days. If nobody replies, it comes back to you. You can burn a returned letter and its reply, which deletes their text, translations and review data and leaves only a minimal record that the letter existed. Letters to your future self (their text, the questions printed on the paper, when sent, the return day, when read, the summary card and the passages chosen for lookbacks) are kept until you delete the letter or your account. When you delete a letter, its text, its printed questions, its summary card and the lookback passages chosen from it are removed; a random identifier and the day it was sent stay until you delete your account, so the same letter is not sent twice. We keep the kind and period of each lookback made until you delete your account, and a scheduled job deletes the counts of requests for questions, summary cards and lookbacks after 7 days.",
+          "When you delete your account, we delete the account, sessions, your letters and replies you wrote. We revoke the Apple sign-in tokens available to us and guide you if you need to remove Apple access manually. We remove linked private GitHub feedback asynchronously within 7 days; deletion is complete only after that cleanup. To review safety issues, we retain reports you filed or received, including their reason, reported content and handling status, without user IDs for up to 90 days, then delete them. The text may still identify someone. Membership information (product, transaction identifier or purchase token, expiry) and focus keepsakes are kept until you delete your account and are deleted with it. The transaction identifier and time of a refunded or revoked App Store purchase are kept for 3 years without account information, including after you delete your account, to stop a refunded purchase from being used again. For a canceled Google Play lifetime purchase, the hash of the purchase token and the cancellation confirmation time are kept for 3 years from the latest confirmation, also without account information and after account deletion. Cloudflare D1 recovery history may retain deleted data for up to 30 days, depending on the plan. Other provider records follow their own retention rules.",
           "After delivery, we clear feedback text from our Cloudflare D1 database. We delete the raw feedback issue and related copies no later than 90 days after it is closed or 180 days after receipt, whichever comes first. Unresolved feedback is deleted within 180 days of receipt.",
           "We delete GitHub report issues and related copies by the earliest of 180 days after receipt, 90 days after the issue is closed or the report is resolved by an administrator, or 90 days after account deletion. This deadline applies to GitHub copies; the safety records described above follow their own retention period.",
           "After a deletion request is completed, we keep verification evidence and request metadata until the earlier of 90 days after completion or 180 days after receipt. For unfinished requests, we retain the minimum needed to complete the work.",
@@ -272,7 +296,7 @@
         "h": "7. Your choices and rights",
         "p": [
           "You can delete your account in Settings &gt; Delete account. You can turn notifications off in your device settings. You can block anyone who writes to you.",
-          "In the app’s Settings, you can correct your age group; on Android, you can turn personalized ads on or off. When personalization is not permitted, general ads may be requested. Where available, Ad privacy choices manages Google’s regional consent separately. On iOS, you can change the separate ATT permission in the device’s Settings &gt; Privacy &amp; Security &gt; Tracking. You can exchange letters without watching ads.",
+          "The app has no way to change a saved age group. To correct it, ask as described in section 7. On Android, you can turn personalized ads on or off in the app’s Settings. When personalization is not permitted, general ads may be requested. Where available, Ad privacy choices manages Google’s regional consent separately. On iOS, you can change the separate ATT permission in the device’s Settings &gt; Privacy &amp; Security &gt; Tracking. You can exchange letters without watching ads.",
           "Depending on where you live, you may have the right to access, correct, delete or export your information, or to object to or restrict how we use it. To make a request, email {emailLink}. You can also complain to your local data protection authority."
         ]
       },
@@ -308,6 +332,6 @@
         ]
       }
     ],
-    "date": "November 9, 2026"
+    "date": "November 15, 2026"
   }
 }

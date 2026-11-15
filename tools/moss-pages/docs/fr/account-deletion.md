@@ -8,7 +8,7 @@ Vous pouvez supprimer votre compte Moss’s Club house et les données de vos le
 2. Touchez Supprimer le compte et suivez les étapes pour confirmer.
 3. Si vous vous êtes connecté avec Apple, l’accès de Moss à Se connecter avec Apple est également révoqué. Pour cela, certains comptes plus anciens peuvent devoir confirmer une nouvelle fois auprès d’Apple.
 
-La suppression est immédiate, et le brouillon présent sur votre téléphone est également effacé. Elle est irréversible.
+La suppression est immédiate, et le brouillon et l’historique de concentration présents sur votre téléphone sont également effacés. La collection de concentration conservée avec votre compte sur le serveur est elle aussi supprimée. Elle est irréversible. Si vous avez un abonnement d’adhésion, supprimer votre compte ne le résilie pas : résiliez-le d’abord dans l’App Store ou sur Google Play.
 
 ## Demander la suppression sans l’application
 
@@ -33,6 +33,8 @@ La suppression est immédiate, et le brouillon présent sur votre téléphone es
 - Les lettres d’encouragement que vous avez écrites ou reçues, leurs traductions et les enregistrements de lecture et de « J’aime »
 - Votre liste de blocage et les jetons push des notifications
 - Les étincelles, les objets, les tenues, les enregistrements de coffrets, la tranche d’âge que vous avez choisie et les enregistrements des récompenses publicitaires
+- Collection de concentration (souvenirs obtenus et date d’obtention, temps total par lieu et jours d’affilée)
+- Les informations d’adhésion (produit, identifiant de transaction ou jeton d’achat, expiration). Supprimer votre compte ne résilie pas un abonnement dans la boutique.
 - Les messages que vous avez envoyés depuis l’application et leurs copies privées
 
 ## Ce que nous conservons
@@ -42,6 +44,7 @@ Nous conservons certains enregistrements pendant une durée déterminée pour de
 - **Signalements.** Les signalements que vous avez effectués et ceux visant votre contenu sont conservés sans identifiant d’utilisateur pendant 90 jours au maximum. Le motif et la copie du contenu au moment du signalement peuvent encore permettre d’identifier une personne.
 - **Enregistrements des demandes de suppression effectuées hors de l’application.** Conservés pendant 90 jours après la clôture de la demande, et jamais plus de 180 jours après sa réception. Nous ne conservons pas l’adresse e-mail, seulement un hachage.
 - **Étincelles déjà attribuées.** Les étincelles que d’autres personnes ont reçues en répondant à vos lettres, ou parce que vous les avez remerciées ou avez aimé leur lettre, leur restent acquises.
+- **Enregistrements des achats remboursés.** L’identifiant de transaction et l’horodatage d’un achat sur l’App Store remboursé ou révoqué sont conservés pendant 3 ans, sans informations de compte.
 - **E-mail.** Nos échanges par e-mail sont conservés pendant 90 jours après la clôture de la demande, et jamais plus de 180 jours après sa réception.
 - **Historique de restauration de la base de données.** Selon notre offre d’hébergement, les données supprimées subsistent jusqu’à 30 jours dans l’historique de restauration de la base de données, puis disparaissent automatiquement.
 - Les informations que la loi nous impose de conserver sont conservées pendant la durée prévue.

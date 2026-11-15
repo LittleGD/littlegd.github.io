@@ -8,7 +8,7 @@ You can delete your Moss’s Club house account and letter data right in the app
 2. Tap Delete account and follow the steps to confirm.
 3. If you signed in with Apple, Moss’s Sign in with Apple access is revoked too. Some older accounts may be asked to confirm with Apple once more to do this.
 
-Deletion happens right away, and the draft on your phone is erased too. It can't be undone.
+Deletion happens right away, and the draft and focus record on your phone are erased too. The focus keepsakes stored with your account on the server are deleted too. It can't be undone. If you have a membership subscription, deleting your account does not cancel it, so cancel it in the App Store or Google Play first.
 
 ## Ask for deletion without the app
 
@@ -33,6 +33,8 @@ Deletion happens right away, and the draft on your phone is erased too. It can't
 - Encouragement letters you wrote or received, their translations, and read and like records
 - Your block list and push tokens for notifications
 - Sparks, items, outfits, box records, the age group you chose and ad reward records
+- Focus keepsakes (which keepsakes you gathered and when, and each focus place's total time and days in a row)
+- Membership information (product, transaction identifier or purchase token, expiry). Deleting your account does not cancel a subscription in the store.
 - Messages you sent through the app and their private copies
 
 ## What we keep
@@ -42,6 +44,7 @@ We keep some records for a set period for safety and legal compliance, then dele
 - **Reports.** Reports you made and reports about your content are kept without user IDs for up to 90 days. The reason and the copy of the content at the time may still identify someone.
 - **Records of deletion requests made outside the app.** Kept for 90 days after the request is closed, and never more than 180 days after we receive it. We don't store the email address, only a hash.
 - **Sparks already given.** Sparks other people earned by replying to your letters, or from your thank-yous and likes, stay with them.
+- **Refunded purchase records.** The transaction identifier and time of a refunded or revoked App Store purchase are kept for 3 years, without account information.
 - **Email.** What we exchanged by email is kept for 90 days after we finish handling your request, and never more than 180 days after we receive it.
 - **Database recovery history.** Depending on our server plan, deleted data stays in database recovery history for up to 30 days, then disappears automatically.
 - Information the law requires us to keep is kept for that period.

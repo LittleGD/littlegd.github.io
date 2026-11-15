@@ -8,7 +8,7 @@ Puedes eliminar tu cuenta de Moss’s Club house y los datos de tus cartas direc
 2. Toca Eliminar cuenta y sigue los pasos para confirmar.
 3. Si iniciaste sesión con Apple, también se revoca el acceso de Moss a Iniciar sesión con Apple. A algunas cuentas antiguas se les puede pedir que confirmen una vez más con Apple para hacerlo.
 
-La eliminación se produce al instante, y el borrador de tu teléfono también se borra. No se puede deshacer.
+La eliminación se produce al instante, y el borrador y el registro de concentración de tu teléfono también se borran. La colección de concentración guardada con tu cuenta en el servidor también se elimina. No se puede deshacer. Si tienes una suscripción de membresía, eliminar tu cuenta no la cancela, así que cancélala antes en App Store o Google Play.
 
 ## Pedir la eliminación sin la app
 
@@ -33,6 +33,8 @@ La eliminación se produce al instante, y el borrador de tu teléfono también s
 - Las cartas de ánimo que escribiste o recibiste, sus traducciones y los registros de lectura y "me gusta"
 - Tu lista de bloqueos y los tokens push de las notificaciones
 - Las chispas, los objetos, los atuendos, los registros de cajas, el grupo de edad que elegiste y los registros de recompensas por anuncios
+- Colección de concentración (objetos reunidos y cuándo, tiempo total por lugar y días seguidos)
+- Los datos de membresía (producto, identificador de transacción o token de compra, caducidad). Eliminar tu cuenta no cancela una suscripción en la tienda.
 - Los mensajes que enviaste desde la app y sus copias privadas
 
 ## Qué conservamos
@@ -42,6 +44,7 @@ Conservamos algunos registros durante un periodo determinado por motivos de segu
 - **Denuncias.** Las denuncias que hiciste y las denuncias sobre tu contenido se conservan sin identificadores de usuario durante un máximo de 90 días. El motivo y la copia del contenido en ese momento aún pueden identificar a alguien.
 - **Registros de solicitudes de eliminación hechas fuera de la app.** Se conservan durante 90 días después de cerrar la solicitud, y nunca más de 180 días desde que la recibimos. No guardamos la dirección de correo, solo un hash.
 - **Chispas ya dadas.** Las chispas que otras personas recibieron por responder a tus cartas, o porque les diste las gracias o un Me gusta, se quedan con ellas.
+- **Registros de compras reembolsadas.** El identificador de transacción y la hora de una compra del App Store reembolsada o revocada se conservan durante 3 años, sin datos de la cuenta.
 - **Correo electrónico.** Lo que intercambiamos por correo se conserva durante 90 días después de cerrar la solicitud y nunca más de 180 días desde que la recibimos.
 - **Historial de recuperación de la base de datos.** Dependiendo de nuestro plan de servidor, los datos eliminados permanecen en el historial de recuperación de la base de datos hasta 30 días y después desaparecen automáticamente.
 - La información que la ley nos obliga a conservar se conserva durante ese periodo.

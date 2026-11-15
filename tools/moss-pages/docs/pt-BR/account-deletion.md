@@ -8,7 +8,7 @@ Você pode excluir sua conta do Moss’s Club house e os dados das suas cartas d
 2. Toque em Excluir conta e siga as etapas para confirmar.
 3. Se você entrou com a Apple, o acesso do Moss ao Iniciar sessão com a Apple também é revogado. Algumas contas mais antigas podem precisar confirmar com a Apple mais uma vez para isso.
 
-A exclusão acontece na hora, e o rascunho no seu celular também é apagado. Não dá para desfazer.
+A exclusão acontece na hora, e o rascunho e o registro de foco no seu celular também são apagados. A coleção de foco guardada com a sua conta no servidor também é excluída. Não dá para desfazer. Se você tem uma assinatura de plano de membro, excluir a conta não a cancela, então cancele primeiro na App Store ou no Google Play.
 
 ## Pedir a exclusão sem o app
 
@@ -33,6 +33,8 @@ A exclusão acontece na hora, e o rascunho no seu celular também é apagado. N�
 - As cartas de ânimo que você escreveu ou recebeu, as traduções e os registros de leitura e curtidas
 - Sua lista de bloqueios e os tokens push das notificações
 - Faíscas, itens, visuais, registros de caixas, a faixa etária que você escolheu e os registros de recompensas de anúncios
+- Coleção de foco (itens juntados e quando, tempo total por lugar e dias seguidos)
+- Os dados do plano de membro (produto, identificador de transação ou token de compra, expiração). Excluir a sua conta não cancela uma assinatura na loja.
 - As mensagens que você enviou pelo app e as cópias privadas delas
 
 ## O que guardamos
@@ -42,6 +44,7 @@ Guardamos alguns registros por um período definido, por motivos de segurança e
 - **Denúncias.** As denúncias que você fez e as denúncias sobre o seu conteúdo são guardadas sem identificadores de usuário por até 90 dias. O motivo e a cópia do conteúdo naquele momento ainda podem identificar alguém.
 - **Registros de pedidos de exclusão feitos fora do app.** Guardados por 90 dias após o encerramento do pedido, e nunca por mais de 180 dias após o recebimento. Não guardamos o endereço de e-mail, apenas um hash.
 - **Faíscas já dadas.** As faíscas que outras pessoas ganharam por responder às suas cartas, ou porque você agradeceu ou curtiu, continuam com elas.
+- **Registros de compras reembolsadas.** O identificador de transação e o horário de uma compra da App Store reembolsada ou revogada são guardados por 3 anos, sem dados da conta.
 - **E-mail.** O que trocamos por e-mail é guardado por 90 dias após o encerramento do pedido e nunca mais de 180 dias após o recebimento.
 - **Histórico de recuperação do banco de dados.** Dependendo do nosso plano de servidor, dados excluídos permanecem no histórico de recuperação do banco de dados por até 30 dias e depois desaparecem automaticamente.
 - As informações que a lei exige que guardemos são guardadas por esse período.

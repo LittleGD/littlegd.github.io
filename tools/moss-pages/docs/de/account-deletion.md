@@ -8,7 +8,7 @@ Du kannst dein Moss’s Club house-Konto und deine Briefdaten direkt in der App 
 2. Tippe auf Konto löschen und folge den Schritten zur Bestätigung.
 3. Wenn du dich mit Apple angemeldet hast, wird auch der Zugriff von Moss über „Mit Apple anmelden“ widerrufen. Bei einigen älteren Konten kann dafür eine erneute Bestätigung bei Apple nötig sein.
 
-Die Löschung erfolgt sofort, und auch der Entwurf auf deinem Handy wird gelöscht. Sie lässt sich nicht rückgängig machen.
+Die Löschung erfolgt sofort, und auch der Entwurf und die Fokus-Aufzeichnung auf deinem Handy werden gelöscht. Auch die Fokus-Sammlung, die mit deinem Konto auf dem Server gespeichert ist, wird gelöscht. Sie lässt sich nicht rückgängig machen. Wenn du ein Mitgliedschafts-Abo hast, kündigt das Löschen deines Kontos es nicht, kündige es also zuerst im App Store oder bei Google Play.
 
 ## Löschung ohne die App beantragen
 
@@ -33,6 +33,8 @@ Die Löschung erfolgt sofort, und auch der Entwurf auf deinem Handy wird gelösc
 - Mutmach-Briefe, die du geschrieben oder erhalten hast, ihre Übersetzungen sowie Lese- und „Gefällt mir“-Daten
 - Deine Blockierliste und die Push-Tokens für Benachrichtigungen
 - Funken, Items, Outfits, Box-Datensätze, die von dir gewählte Altersgruppe und Datensätze zu Werbebelohnungen
+- Fokus-Sammlung (gesammelte Andenken mit dem Zeitpunkt, Gesamtzeit je Fokus-Ort und Tage in Folge)
+- Mitgliedschaftsdaten (Produkt, Transaktions-ID oder Kauf-Token, Ablaufdatum). Das Löschen deines Kontos kündigt kein Abo im Store.
 - Nachrichten, die du über die App gesendet hast, und ihre privaten Kopien
 
 ## Was wir aufbewahren
@@ -42,6 +44,7 @@ Einige Datensätze bewahren wir aus Gründen der Sicherheit und der Einhaltung g
 - **Meldungen.** Meldungen, die du gemacht hast, und Meldungen zu deinen Inhalten werden ohne Nutzer-IDs bis zu 90 Tage aufbewahrt. Der Grund und die Kopie des Inhalts zum damaligen Zeitpunkt können eine Person weiterhin identifizierbar machen.
 - **Datensätze zu Löschanfragen außerhalb der App.** Werden 90 Tage nach Abschluss der Anfrage aufbewahrt, aber nie länger als 180 Tage nach ihrem Eingang. Wir speichern nicht die E-Mail-Adresse, sondern nur einen Hash.
 - **Bereits vergebene Funken.** Funken, die andere für Antworten auf deine Briefe erhalten haben oder weil du dich bedankt oder „Gefällt mir“ getippt hast, bleiben bei ihnen.
+- **Datensätze zu erstatteten Käufen.** Die Transaktions-ID und der Zeitpunkt eines erstatteten oder widerrufenen App-Store-Kaufs werden 3 Jahre lang ohne Kontodaten aufbewahrt.
 - **E-Mail.** Was wir per E-Mail ausgetauscht haben, wird für 90 Tage nach Abschluss der Anfrage (höchstens 180 Tage nach Eingang) aufbewahrt.
 - **Wiederherstellungsverlauf der Datenbank.** Je nach unserem Servertarif verbleiben gelöschte Daten bis zu 30 Tage im Wiederherstellungsverlauf der Datenbank und verschwinden dann automatisch.
 - Informationen, die wir gesetzlich aufbewahren müssen, werden für den vorgeschriebenen Zeitraum aufbewahrt.
