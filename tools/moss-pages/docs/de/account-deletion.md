@@ -8,7 +8,7 @@ Du kannst dein Moss’s Club house-Konto und deine Briefdaten direkt in der App 
 2. Tippe auf Konto löschen und folge den Schritten zur Bestätigung.
 3. Wenn du dich mit Apple angemeldet hast, wird auch der Zugriff von Moss über „Mit Apple anmelden“ widerrufen. Bei einigen älteren Konten kann dafür eine erneute Bestätigung bei Apple nötig sein.
 
-Die Löschung erfolgt sofort, und auch der Entwurf und die Fokus-Aufzeichnung auf deinem Handy werden gelöscht. Auch die Fokus-Sammlung, die mit deinem Konto auf dem Server gespeichert ist, wird gelöscht. Sie lässt sich nicht rückgängig machen. Wenn du ein Mitgliedschafts-Abo hast, kündigt das Löschen deines Kontos es nicht, kündige es also zuerst im App Store oder bei Google Play.
+Die Löschung erfolgt sofort, und auch die Entwürfe, die Fokus-Aufzeichnung und das Aussehen deiner Schreibmaschine (Farbe, Modell, Sticker und Effekte) auf deinem Handy werden gelöscht. Auch die Fokus-Sammlung, die mit deinem Konto auf dem Server gespeichert ist, wird gelöscht. Sie lässt sich nicht rückgängig machen. Wenn du ein Mitgliedschafts-Abo hast, kündigt das Löschen deines Kontos es nicht, kündige es also zuerst im App Store oder bei Google Play.
 
 ## Löschung ohne die App beantragen
 
@@ -31,6 +31,7 @@ Die Löschung erfolgt sofort, und auch der Entwurf und die Fokus-Aufzeichnung au
 - Sorgenbriefe und Antworten, die du geschrieben hast, ihre Übersetzungen, Prüfergebnisse und Zustelldaten
 - Antworten, die du anderen geschrieben hast (sie verschwinden auch aus dem Archiv der anderen Person)
 - Mutmach-Briefe, die du geschrieben oder erhalten hast, ihre Übersetzungen sowie Lese- und „Gefällt mir“-Daten
+- Briefe an dein zukünftiges Ich und die Fragen auf ihrem Papier, Zusammenfassungskarten, Rückblicke sowie die Anzahl deiner Anfragen nach Fragen, Zusammenfassungskarten und Rückblicken
 - Deine Blockierliste und die Push-Tokens für Benachrichtigungen
 - Funken, Items, Outfits, Box-Datensätze, die von dir gewählte Altersgruppe und Datensätze zu Werbebelohnungen
 - Fokus-Sammlung (gesammelte Andenken mit dem Zeitpunkt, Gesamtzeit je Fokus-Ort und Tage in Folge)

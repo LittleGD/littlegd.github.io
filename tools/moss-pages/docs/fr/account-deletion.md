@@ -8,7 +8,7 @@ Vous pouvez supprimer votre compte Moss’s Club house et les données de vos le
 2. Touchez Supprimer le compte et suivez les étapes pour confirmer.
 3. Si vous vous êtes connecté avec Apple, l’accès de Moss à Se connecter avec Apple est également révoqué. Pour cela, certains comptes plus anciens peuvent devoir confirmer une nouvelle fois auprès d’Apple.
 
-La suppression est immédiate, et le brouillon et l’historique de concentration présents sur votre téléphone sont également effacés. La collection de concentration conservée avec votre compte sur le serveur est elle aussi supprimée. Elle est irréversible. Si vous avez un abonnement d’adhésion, supprimer votre compte ne le résilie pas : résiliez-le d’abord dans l’App Store ou sur Google Play.
+La suppression est immédiate, et les brouillons, l’historique de concentration et l’apparence de votre machine à écrire (couleur, modèle, autocollants et effets) présents sur votre téléphone sont également effacés. La collection de concentration conservée avec votre compte sur le serveur est elle aussi supprimée. Elle est irréversible. Si vous avez un abonnement d’adhésion, supprimer votre compte ne le résilie pas : résiliez-le d’abord dans l’App Store ou sur Google Play.
 
 ## Demander la suppression sans l’application
 
@@ -31,6 +31,7 @@ La suppression est immédiate, et le brouillon et l’historique de concentratio
 - Les lettres de souci et les réponses que vous avez écrites, leurs traductions, les résultats de vérification et les enregistrements de livraison
 - Les réponses que vous avez écrites à d’autres personnes (elles disparaissent aussi des archives de l’autre personne)
 - Les lettres d’encouragement que vous avez écrites ou reçues, leurs traductions et les enregistrements de lecture et de « J’aime »
+- Les lettres à votre futur vous et les questions sur leur papier, les cartes récapitulatives, les rétrospectives, ainsi que le nombre de vos demandes de questions, de cartes récapitulatives et de rétrospectives
 - Votre liste de blocage et les jetons push des notifications
 - Les étincelles, les objets, les tenues, les enregistrements de coffrets, la tranche d’âge que vous avez choisie et les enregistrements des récompenses publicitaires
 - Collection de concentration (souvenirs obtenus et date d’obtention, temps total par lieu et jours d’affilée)

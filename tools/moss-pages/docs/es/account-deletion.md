@@ -8,7 +8,7 @@ Puedes eliminar tu cuenta de Moss’s Club house y los datos de tus cartas direc
 2. Toca Eliminar cuenta y sigue los pasos para confirmar.
 3. Si iniciaste sesión con Apple, también se revoca el acceso de Moss a Iniciar sesión con Apple. A algunas cuentas antiguas se les puede pedir que confirmen una vez más con Apple para hacerlo.
 
-La eliminación se produce al instante, y el borrador y el registro de concentración de tu teléfono también se borran. La colección de concentración guardada con tu cuenta en el servidor también se elimina. No se puede deshacer. Si tienes una suscripción de membresía, eliminar tu cuenta no la cancela, así que cancélala antes en App Store o Google Play.
+La eliminación se produce al instante, y los borradores, el registro de concentración y el aspecto de tu máquina de escribir (color, modelo, pegatinas y efectos) de tu teléfono también se borran. La colección de concentración guardada con tu cuenta en el servidor también se elimina. No se puede deshacer. Si tienes una suscripción de membresía, eliminar tu cuenta no la cancela, así que cancélala antes en App Store o Google Play.
 
 ## Pedir la eliminación sin la app
 
@@ -31,6 +31,7 @@ La eliminación se produce al instante, y el borrador y el registro de concentra
 - Las cartas sobre preocupaciones y las respuestas que escribiste, sus traducciones, los resultados de la revisión y los registros de entrega
 - Las respuestas que escribiste a otras personas (también desaparecen del archivo de la otra persona)
 - Las cartas de ánimo que escribiste o recibiste, sus traducciones y los registros de lectura y "me gusta"
+- Las cartas a tu yo del futuro y las preguntas de su papel, las tarjetas resumen, los repasos y los recuentos de tus solicitudes de preguntas, tarjetas resumen y repasos
 - Tu lista de bloqueos y los tokens push de las notificaciones
 - Las chispas, los objetos, los atuendos, los registros de cajas, el grupo de edad que elegiste y los registros de recompensas por anuncios
 - Colección de concentración (objetos reunidos y cuándo, tiempo total por lugar y días seguidos)

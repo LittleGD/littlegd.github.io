@@ -8,7 +8,7 @@ You can delete your Moss’s Club house account and letter data right in the app
 2. Tap Delete account and follow the steps to confirm.
 3. If you signed in with Apple, Moss’s Sign in with Apple access is revoked too. Some older accounts may be asked to confirm with Apple once more to do this.
 
-Deletion happens right away, and the draft and focus record on your phone are erased too. The focus keepsakes stored with your account on the server are deleted too. It can't be undone. If you have a membership subscription, deleting your account does not cancel it, so cancel it in the App Store or Google Play first.
+Deletion happens right away, and the drafts, the focus record and your typewriter's look (colour, model, stickers and effects) on your phone are erased too. The focus keepsakes stored with your account on the server are deleted too. It can't be undone. If you have a membership subscription, deleting your account does not cancel it, so cancel it in the App Store or Google Play first.
 
 ## Ask for deletion without the app
 
@@ -31,6 +31,7 @@ Deletion happens right away, and the draft and focus record on your phone are er
 - Worry letters and replies you wrote, their translations, review results and delivery records
 - Replies you wrote to other people (they disappear from the other person's archive too)
 - Encouragement letters you wrote or received, their translations, and read and like records
+- Letters to your future self and the questions on their paper, summary cards, lookbacks, and the counts of your question, summary card and lookback requests
 - Your block list and push tokens for notifications
 - Sparks, items, outfits, box records, the age group you chose and ad reward records
 - Focus keepsakes (which keepsakes you gathered and when, and each focus place's total time and days in a row)
