@@ -8,7 +8,7 @@ Du kannst dein Moss’s Club house-Konto und deine Briefdaten direkt in der App 
 2. Tippe auf Konto löschen und folge den Schritten zur Bestätigung.
 3. Wenn du dich mit Apple angemeldet hast, wird auch der Zugriff von Moss über „Mit Apple anmelden“ widerrufen. Bei einigen älteren Konten kann dafür eine erneute Bestätigung bei Apple nötig sein.
 
-Die Löschung erfolgt sofort, und auch die Entwürfe, die Fokus-Aufzeichnung, das Aussehen deiner Schreibmaschine (Farbe, Modell, Sticker und Effekte) und die Andenkenliste auf deinem Handy werden gelöscht. Auch die Fokus-Sammlung, die mit deinem Konto auf dem Server gespeichert ist, wird gelöscht. Sie lässt sich nicht rückgängig machen. Wenn du ein Mitgliedschafts-Abo hast, kündigt das Löschen deines Kontos es nicht, kündige es also zuerst im App Store oder bei Google Play.
+Die Löschung erfolgt sofort, und auch die Entwürfe, die Fokus-Aufzeichnung, das Aussehen deiner Schreibmaschine (Farbe, Modell, Sticker und Effekte) und die Souvenirliste auf deinem Handy werden gelöscht. Auch die Fokus-Sammlung, die mit deinem Konto auf dem Server gespeichert ist, wird gelöscht. Sie lässt sich nicht rückgängig machen. Wenn du ein Mitgliedschafts-Abo hast, kündigt das Löschen deines Kontos es nicht, kündige es also zuerst im App Store oder bei Google Play.
 
 ## Löschung ohne die App beantragen
 
