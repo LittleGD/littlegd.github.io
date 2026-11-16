@@ -8,7 +8,7 @@ Puedes eliminar tu cuenta de Moss’s Club house y los datos de tus cartas direc
 2. Toca Eliminar cuenta y sigue los pasos para confirmar.
 3. Si iniciaste sesión con Apple, también se revoca el acceso de Moss a Iniciar sesión con Apple. A algunas cuentas antiguas se les puede pedir que confirmen una vez más con Apple para hacerlo.
 
-La eliminación se produce al instante, y los borradores, el registro de concentración y el aspecto de tu máquina de escribir (color, modelo, pegatinas y efectos) de tu teléfono también se borran. La colección de concentración guardada con tu cuenta en el servidor también se elimina. No se puede deshacer. Si tienes una suscripción de membresía, eliminar tu cuenta no la cancela, así que cancélala antes en App Store o Google Play.
+La eliminación se produce al instante, y los borradores, el registro de concentración, el aspecto de tu máquina de escribir (color, modelo, pegatinas y efectos) y la lista de recuerdos de tu teléfono también se borran. La colección de concentración guardada con tu cuenta en el servidor también se elimina. No se puede deshacer. Si tienes una suscripción de membresía, eliminar tu cuenta no la cancela, así que cancélala antes en App Store o Google Play.
 
 ## Pedir la eliminación sin la app
 

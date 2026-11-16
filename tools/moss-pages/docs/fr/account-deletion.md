@@ -8,7 +8,7 @@ Vous pouvez supprimer votre compte Moss’s Club house et les données de vos le
 2. Touchez Supprimer le compte et suivez les étapes pour confirmer.
 3. Si vous vous êtes connecté avec Apple, l’accès de Moss à Se connecter avec Apple est également révoqué. Pour cela, certains comptes plus anciens peuvent devoir confirmer une nouvelle fois auprès d’Apple.
 
-La suppression est immédiate, et les brouillons, l’historique de concentration et l’apparence de votre machine à écrire (couleur, modèle, autocollants et effets) présents sur votre téléphone sont également effacés. La collection de concentration conservée avec votre compte sur le serveur est elle aussi supprimée. Elle est irréversible. Si vous avez un abonnement d’adhésion, supprimer votre compte ne le résilie pas : résiliez-le d’abord dans l’App Store ou sur Google Play.
+La suppression est immédiate, et les brouillons, l’historique de concentration, l’apparence de votre machine à écrire (couleur, modèle, autocollants et effets) et la liste des souvenirs présents sur votre téléphone sont également effacés. La collection de concentration conservée avec votre compte sur le serveur est elle aussi supprimée. Elle est irréversible. Si vous avez un abonnement d’adhésion, supprimer votre compte ne le résilie pas : résiliez-le d’abord dans l’App Store ou sur Google Play.
 
 ## Demander la suppression sans l’application
 

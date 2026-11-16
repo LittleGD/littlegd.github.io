@@ -8,7 +8,7 @@ Você pode excluir sua conta do Moss’s Club house e os dados das suas cartas d
 2. Toque em Excluir conta e siga as etapas para confirmar.
 3. Se você entrou com a Apple, o acesso do Moss ao Iniciar sessão com a Apple também é revogado. Algumas contas mais antigas podem precisar confirmar com a Apple mais uma vez para isso.
 
-A exclusão acontece na hora, e os rascunhos, o registro de foco e a aparência da sua máquina de escrever (cor, modelo, adesivos e efeitos) no seu celular também são apagados. A coleção de foco guardada com a sua conta no servidor também é excluída. Não dá para desfazer. Se você tem uma assinatura de plano de membro, excluir a conta não a cancela, então cancele primeiro na App Store ou no Google Play.
+A exclusão acontece na hora, e os rascunhos, o registro de foco, a aparência da sua máquina de escrever (cor, modelo, adesivos e efeitos) e a lista de lembranças no seu celular também são apagados. A coleção de foco guardada com a sua conta no servidor também é excluída. Não dá para desfazer. Se você tem uma assinatura de plano de membro, excluir a conta não a cancela, então cancele primeiro na App Store ou no Google Play.
 
 ## Pedir a exclusão sem o app
 

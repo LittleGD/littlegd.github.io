@@ -8,7 +8,7 @@ You can delete your Moss’s Club house account and letter data right in the app
 2. Tap Delete account and follow the steps to confirm.
 3. If you signed in with Apple, Moss’s Sign in with Apple access is revoked too. Some older accounts may be asked to confirm with Apple once more to do this.
 
-Deletion happens right away, and the drafts, the focus record and your typewriter's look (colour, model, stickers and effects) on your phone are erased too. The focus keepsakes stored with your account on the server are deleted too. It can't be undone. If you have a membership subscription, deleting your account does not cancel it, so cancel it in the App Store or Google Play first.
+Deletion happens right away, and the drafts, the focus record, your typewriter's look (colour, model, stickers and effects) and the souvenir list on your phone are erased too. The focus keepsakes stored with your account on the server are deleted too. It can't be undone. If you have a membership subscription, deleting your account does not cancel it, so cancel it in the App Store or Google Play first.
 
 ## Ask for deletion without the app
 
